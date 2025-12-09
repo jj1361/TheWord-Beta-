@@ -879,50 +879,73 @@
   background: rgba(102, 126, 234, 0.7);
 }
 
-/* Light theme adjustments */
+/* Light theme adjustments for references */
 [data-theme='light'] .usage-count {
   color: #667eea;
 }
 
 [data-theme='light'] .references-container {
-  background: rgba(102, 126, 234, 0.1);
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
 }
 
 [data-theme='light'] .references-header {
-  background: rgba(102, 126, 234, 0.15);
+  background: #eef2ff;
+  border-bottom: 1px solid #e0e7ff;
 }
 
 [data-theme='light'] .references-count {
-  color: #667eea;
+  color: #4f46e5;
+  font-weight: 600;
 }
 
 [data-theme='light'] .hide-references-btn {
-  background: rgba(0, 0, 0, 0.1);
-  color: #4a5568;
+  background: #e0e7ff;
+  color: #4338ca;
+  border: 1px solid #c7d2fe;
 }
 
 [data-theme='light'] .hide-references-btn:hover {
-  background: rgba(0, 0, 0, 0.15);
+  background: #c7d2fe;
 }
 
 [data-theme='light'] .reference-item {
-  border-bottom-color: rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #e2e8f0;
+  background: #ffffff;
 }
 
 [data-theme='light'] .reference-item:hover {
-  background: rgba(102, 126, 234, 0.1);
+  background: #eef2ff;
 }
 
 [data-theme='light'] .reference-location {
-  color: #667eea;
+  color: #4f46e5;
+  font-weight: 700;
 }
 
 [data-theme='light'] .reference-text {
-  color: #4a5568;
+  color: #1f2937;
+  line-height: 1.6;
 }
 
 [data-theme='light'] .references-loading {
-  color: #667eea;
+  color: #4f46e5;
+}
+
+[data-theme='light'] .references-list {
+  background: #ffffff;
+}
+
+[data-theme='light'] .references-list::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+[data-theme='light'] .references-list::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+[data-theme='light'] .references-list::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
 }
 
 /* Translation Words Styles */
