@@ -464,14 +464,20 @@ class NotesService {
   ): TextFormatting | null {
     const formatting = this.getTextFormatting();
 
-    // Check for overlapping formatting and merge or update
+    // Check for overlapping formatting - find entries that overlap with the selected range
+    // This allows toggling even when the selection isn't exactly the same
     const existingIndex = formatting.findIndex(
       (f) =>
         f.bookId === bookId &&
         f.chapter === chapter &&
         f.verse === verse &&
-        f.startOffset === startOffset &&
-        f.endOffset === endOffset
+        // Check for overlap: ranges overlap if start1 < end2 AND start2 < end1
+        f.startOffset < endOffset &&
+        startOffset < f.endOffset &&
+        // Also check if the selected text matches or is contained in the existing formatting
+        (f.selectedText === selectedText ||
+         f.selectedText.includes(selectedText) ||
+         selectedText.includes(f.selectedText))
     );
 
     if (existingIndex !== -1) {
