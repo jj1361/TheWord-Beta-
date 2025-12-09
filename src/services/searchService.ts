@@ -1,5 +1,5 @@
-import { BIBLE_BOOKS } from '../types/bible';
 import { PATHS } from '../config/paths';
+import { getBookById } from '../utils/bookLookup';
 
 export interface SearchResult {
   bookId: number;
@@ -30,9 +30,6 @@ interface PrebuiltIndex {
   prefixIndex: { [prefix: string]: string[] }; // prefix -> words
 }
 
-// Create a book lookup map for O(1) access
-const BOOK_MAP = new Map<number, typeof BIBLE_BOOKS[0]>();
-BIBLE_BOOKS.forEach(book => BOOK_MAP.set(book.id, book));
 
 export class SearchService {
   private prebuiltIndex: PrebuiltIndex | null = null;
@@ -178,7 +175,7 @@ export class SearchService {
       }
 
       const [bookId, chapter, verse] = verseKey.split(':').map(Number);
-      const book = BOOK_MAP.get(bookId);
+      const book = getBookById(bookId);
 
       if (book) {
         allMatchingResults.push({
