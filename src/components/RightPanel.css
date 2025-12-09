@@ -1,4 +1,5 @@
 /* Right Panel - Fixed position between header and footer */
+/* Default (dark theme) styling */
 .right-panel {
   position: fixed;
   right: 20px;
@@ -8,8 +9,8 @@
   min-width: 350px;
   max-width: 550px;
   height: 95%;
-  background: #2d3748;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  background: #1a202c;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -407,30 +408,123 @@
   border-bottom-color: #4a5568;
 }
 
-/* Light Theme (explicit for clarity) */
-[data-theme='light'] .right-panel,
-.right-panel {
-  background: #2d3748;
+/* Light Theme - Clean white/light gray styling */
+[data-theme='light'] .right-panel {
+  background: #ffffff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
-[data-theme='light'] .lexicon-word,
-.lexicon-word {
-  color: #ffffff;
+[data-theme='light'] .right-panel-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-bottom-color: #e0e7ff;
 }
 
-[data-theme='light'] .lexicon-pronunciation,
-.lexicon-pronunciation {
-  color: #ffffff;
+[data-theme='light'] .right-panel-content {
+  background: #ffffff;
 }
 
-[data-theme='light'] .lexicon-definition,
-.lexicon-definition {
-  color: #ffffff;
+[data-theme='light'] .lexicon-header {
+  border-bottom-color: #e0e7ff;
 }
 
-[data-theme='light'] .lexicon-derivation,
-.lexicon-derivation {
-  color: #ffffff;
+[data-theme='light'] .lexicon-word {
+  color: #1a202c;
+}
+
+[data-theme='light'] .lexicon-strongs {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+[data-theme='light'] .lexicon-section-title {
+  color: #667eea;
+}
+
+[data-theme='light'] .lexicon-pronunciation {
+  color: #4a5568;
+}
+
+[data-theme='light'] .lexicon-definition {
+  color: #374151;
+}
+
+[data-theme='light'] .lexicon-derivation {
+  color: #4b5563;
+}
+
+[data-theme='light'] .lexicon-gloss {
+  color: #667eea;
+}
+
+[data-theme='light'] .stepbible-definition-content {
+  color: #374151;
+}
+
+[data-theme='light'] .stepbible-definition-content b {
+  color: #667eea;
+}
+
+[data-theme='light'] .stepbible-definition-content i {
+  color: #764ba2;
+}
+
+[data-theme='light'] .lexicon-attribution {
+  background: rgba(102, 126, 234, 0.08);
+  border-top-color: rgba(102, 126, 234, 0.2);
+}
+
+[data-theme='light'] .lexicon-attribution small {
+  color: #667eea;
+}
+
+[data-theme='light'] .lexicon-attribution a {
+  color: #764ba2;
+}
+
+[data-theme='light'] .lexicon-attribution a:hover {
+  color: #5b21b6;
+}
+
+/* Light theme - AHLB Section */
+[data-theme='light'] .ahlb-section {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(167, 139, 250, 0.05));
+}
+
+[data-theme='light'] .ahlb-translation {
+  color: #7c3aed;
+}
+
+[data-theme='light'] .ahlb-definition {
+  background: rgba(139, 92, 246, 0.06);
+}
+
+[data-theme='light'] .ahlb-definition p {
+  color: #5b21b6;
+}
+
+[data-theme='light'] .ahlb-relationship {
+  background: rgba(167, 139, 250, 0.06);
+}
+
+[data-theme='light'] .ahlb-relationship p {
+  color: #6d28d9;
+}
+
+/* Light theme - Hebrew letter styles */
+[data-theme='light'] .hebrew-letter-header {
+  border-bottom-color: #e0e7ff;
+}
+
+[data-theme='light'] .hebrew-letter-display {
+  background: linear-gradient(135deg, #f0f4ff 0%, #e0e7ff 100%);
+}
+
+[data-theme='light'] .hebrew-letter-modern {
+  color: #667eea;
+}
+
+[data-theme='light'] .hebrew-letter-ancient {
+  color: #764ba2;
 }
 
 [data-theme='light'] .hebrew-letter-name {
@@ -441,12 +535,49 @@
   color: #4a5568;
 }
 
+[data-theme='light'] .hebrew-letter-pronunciation em {
+  color: #667eea;
+}
+
+[data-theme='light'] .hebrew-section-title {
+  color: #667eea;
+}
+
 [data-theme='light'] .hebrew-letter-meaning {
-  color: #2d3748;
+  color: #374151;
+}
+
+[data-theme='light'] .hebrew-letter-value {
+  color: #667eea;
+}
+
+[data-theme='light'] .script-item {
+  background: #f7fafc;
 }
 
 [data-theme='light'] .script-label {
   color: #4a5568;
+}
+
+[data-theme='light'] .script-display.modern {
+  color: #667eea;
+}
+
+[data-theme='light'] .script-display.ancient {
+  color: #764ba2;
+}
+
+/* Light theme - Scrollbar */
+[data-theme='light'] .right-panel-content::-webkit-scrollbar-track {
+  background: #f7fafc;
+}
+
+[data-theme='light'] .right-panel-content::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+}
+
+[data-theme='light'] .right-panel-content::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
 }
 
 /* Responsive Design */
