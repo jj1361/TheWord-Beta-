@@ -11,4 +11,5 @@ export const PATHS = {
   DATA: `${PUBLIC_URL}/data`,
   APOCRYPHA: `${PUBLIC_URL}/apocrypha`,
   SEARCH_INDEX: `${PUBLIC_URL}/search-index.json`,
+  STRONGS_INDEX: `${PUBLIC_URL}/strongs-index.json`,
 };

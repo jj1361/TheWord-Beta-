@@ -22,8 +22,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm run build:search-index && react-scripts build",
+    "build": "npm run build:indexes && react-scripts build",
+    "build:indexes": "npm run build:search-index && npm run build:strongs-index",
     "build:search-index": "node scripts/buildSearchIndex.js",
+    "build:strongs-index": "node scripts/buildStrongsIndex.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

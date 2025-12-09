@@ -1,5 +1,5 @@
-import { BIBLE_BOOKS } from '../types/bible';
 import { PATHS } from '../config/paths';
+import { getBookById } from '../utils/bookLookup';
 
 interface VerseReference {
   bookId: number;
@@ -10,169 +10,167 @@ interface VerseReference {
   osisRef: string;
 }
 
+// Pre-built Strong's index structure
+interface StrongsIndex {
+  version: number;
+  generatedAt: string;
+  stats: {
+    totalVerses: number;
+    totalStrongsEntries: number;
+    uniqueStrongsIds: number;
+    hebrewIds: number;
+    greekIds: number;
+  };
+  strongsIndex: { [strongsId: string]: Array<[number, number, number]> }; // [bookId, chapter, verse]
+  verseTexts: { [key: string]: string }; // "bookId:chapter:verse" -> text
+}
+
 class StrongsSearchService {
-  private cache: Map<string, VerseReference[]> = new Map();
+  private prebuiltIndex: StrongsIndex | null = null;
+  private indexLoading = false;
+  private indexLoadPromise: Promise<void> | null = null;
 
   /**
-   * Search for all verses containing a specific Strong's number
+   * Load the pre-built Strong's index from JSON file
    */
-  async searchByStrongsId(strongsId: string): Promise<VerseReference[]> {
-    // Check cache first
-    if (this.cache.has(strongsId)) {
-      return this.cache.get(strongsId)!;
+  async loadPrebuiltIndex(): Promise<void> {
+    if (this.prebuiltIndex) {
+      return;
     }
 
-    const results: VerseReference[] = [];
-    const normalizedStrongsId = this.normalizeStrongsId(strongsId);
+    if (this.indexLoading && this.indexLoadPromise) {
+      return this.indexLoadPromise;
+    }
 
-    try {
-      // Determine which testament to search based on prefix
-      const isOldTestament = normalizedStrongsId.startsWith('H');
-      const isNewTestament = normalizedStrongsId.startsWith('G');
+    this.indexLoading = true;
+    console.log('Loading pre-built Strong\'s index...');
+    const startTime = performance.now();
 
-      // If no prefix, we'll search both testaments
-      const booksToSearch = isOldTestament
-        ? BIBLE_BOOKS.filter(b => b.id >= 1 && b.id <= 39)
-        : isNewTestament
-        ? BIBLE_BOOKS.filter(b => b.id >= 40 && b.id <= 66)
-        : BIBLE_BOOKS.filter(b => b.id >= 1 && b.id <= 66); // Search all canonical books
-
-      // Search through each book
-      for (const book of booksToSearch) {
-        for (let chapterNum = 1; chapterNum <= book.chapters; chapterNum++) {
-          const chapterResults = await this.searchChapter(
-            book.id,
-            book.name,
-            chapterNum,
-            normalizedStrongsId
-          );
-          results.push(...chapterResults);
+    this.indexLoadPromise = (async () => {
+      try {
+        const response = await fetch(PATHS.STRONGS_INDEX);
+        if (!response.ok) {
+          throw new Error(`Failed to load Strong's index: ${response.status}`);
         }
+
+        this.prebuiltIndex = await response.json();
+
+        const endTime = performance.now();
+        console.log(`Strong's index loaded in ${((endTime - startTime) / 1000).toFixed(2)}s`);
+        console.log(`Index stats:`, this.prebuiltIndex?.stats);
+      } catch (error) {
+        console.error('Error loading pre-built Strong\'s index:', error);
+        throw error;
+      } finally {
+        this.indexLoading = false;
+        this.indexLoadPromise = null;
       }
+    })();
 
-      // Cache the results
-      this.cache.set(strongsId, results);
-    } catch (error) {
-      console.error('Error searching by Strong\'s ID:', error);
-    }
-
-    return results;
+    return this.indexLoadPromise;
   }
 
   /**
    * Normalize Strong's ID to include prefix (H or G)
    */
   private normalizeStrongsId(strongsId: string): string {
-    const trimmed = strongsId.trim();
+    const trimmed = strongsId.trim().toUpperCase();
     // If it already has a prefix, return it
-    if (trimmed.match(/^[HG]\d+$/i)) {
-      return trimmed.toUpperCase();
+    if (trimmed.match(/^[HG]\d+$/)) {
+      return trimmed;
     }
-    // If it's just a number, we can't determine the prefix
-    // Return as-is and search both testaments
+    // If it's just a number, return as-is (will search both H and G)
     return trimmed;
   }
 
   /**
-   * Search a specific chapter for verses containing the Strong's ID
+   * Search for all verses containing a specific Strong's number
+   * Now uses pre-built index for instant results
    */
-  private async searchChapter(
-    bookId: number,
-    bookName: string,
-    chapterNum: number,
-    strongsId: string
-  ): Promise<VerseReference[]> {
+  async searchByStrongsId(strongsId: string): Promise<VerseReference[]> {
+    // Ensure index is loaded
+    if (!this.prebuiltIndex) {
+      await this.loadPrebuiltIndex();
+    }
+
+    if (!this.prebuiltIndex) {
+      console.error('Strong\'s index not available');
+      return [];
+    }
+
+    const normalizedId = this.normalizeStrongsId(strongsId);
     const results: VerseReference[] = [];
 
-    try {
-      // Construct the path to the KJV chapter XML file
-      const paddedBookId = String(bookId).padStart(2, '0');
-      const bookFolder = `${paddedBookId}-${bookName.replace(/ /g, '-')}`;
-      const chapterFile = `chapter-${String(chapterNum).padStart(3, '0')}.xml`;
-      const xmlPath = `${PATHS.BIBLE_DATA}/KJVs/${bookFolder}/${chapterFile}`;
+    // Determine which IDs to search
+    let idsToSearch: string[] = [];
 
-      // Fetch and parse the XML
-      const response = await fetch(xmlPath);
-      if (!response.ok) {
-        // Chapter file doesn't exist, skip it
-        return results;
-      }
+    if (normalizedId.match(/^[HG]\d+$/)) {
+      // Has prefix - search exact ID
+      idsToSearch = [normalizedId];
+    } else if (normalizedId.match(/^\d+$/)) {
+      // Just a number - search both H and G versions
+      idsToSearch = [`H${normalizedId}`, `G${normalizedId}`];
+    } else {
+      return results;
+    }
 
-      const xmlText = await response.text();
-      const parser = new DOMParser();
-      const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+    // Look up each ID in the index
+    for (const searchId of idsToSearch) {
+      const locations: Array<[number, number, number]> | undefined = this.prebuiltIndex.strongsIndex[searchId];
+      if (!locations) continue;
 
-      // Check for parsing errors
-      const parserError = xmlDoc.querySelector('parsererror');
-      if (parserError) {
-        console.error('XML parsing error:', parserError.textContent);
-        return results;
-      }
+      for (const [bookId, chapter, verse] of locations) {
+        const verseKey = `${bookId}:${chapter}:${verse}`;
+        const text = this.prebuiltIndex.verseTexts[verseKey] || '';
+        const book = getBookById(bookId);
 
-      // Find all verses in this chapter
-      const verses = xmlDoc.querySelectorAll('verse');
-
-      verses.forEach((verse) => {
-        const verseNum = parseInt(verse.getAttribute('num') || '0', 10);
-
-        // Check if any phrase in this verse has the matching Strong's ID
-        const phrases = verse.querySelectorAll('phrase');
-        let hasStrongsId = false;
-        const phraseTexts: string[] = [];
-
-        phrases.forEach((phrase) => {
-          const phraseStrongs = phrase.getAttribute('strongs');
-          const phraseText = phrase.textContent || '';
-          phraseTexts.push(phraseText);
-
-          // Check if this phrase matches the Strong's ID
-          if (phraseStrongs) {
-            // Normalize the Strong's ID from the phrase
-            const normalizedPhraseStrongs = phraseStrongs.match(/^[HG]/)
-              ? phraseStrongs
-              : (bookId <= 39 ? 'H' : 'G') + phraseStrongs;
-
-            // Remove prefix from search if needed for comparison
-            const searchIdWithoutPrefix = strongsId.replace(/^[HG]/, '');
-            const phraseIdWithoutPrefix = normalizedPhraseStrongs.replace(/^[HG]/, '');
-
-            if (
-              normalizedPhraseStrongs === strongsId ||
-              phraseIdWithoutPrefix === searchIdWithoutPrefix
-            ) {
-              hasStrongsId = true;
-            }
-          }
-        });
-
-        if (hasStrongsId) {
-          const verseText = phraseTexts.join(' ').trim();
-          const osisRef = `${bookName.replace(/ /g, '')}.${chapterNum}.${verseNum}`;
-
+        if (book) {
+          const osisRef = `${book.name.replace(/ /g, '')}.${chapter}.${verse}`;
           results.push({
             bookId,
-            bookName,
-            chapter: chapterNum,
-            verse: verseNum,
-            text: verseText,
+            bookName: book.name,
+            chapter,
+            verse,
+            text,
             osisRef,
           });
         }
-      });
-    } catch (error) {
-      // Silently fail for missing chapters
-      // console.error(`Error loading chapter ${bookName} ${chapterNum}:`, error);
+      }
     }
+
+    // Sort by book order, then chapter, then verse
+    results.sort((a, b) => {
+      if (a.bookId !== b.bookId) return a.bookId - b.bookId;
+      if (a.chapter !== b.chapter) return a.chapter - b.chapter;
+      return a.verse - b.verse;
+    });
 
     return results;
   }
 
   /**
-   * Clear the cache
+   * Check if index is ready
    */
-  clearCache(): void {
-    this.cache.clear();
+  isIndexReady(): boolean {
+    return this.prebuiltIndex !== null;
+  }
+
+  /**
+   * Check if index is loading
+   */
+  isIndexing(): boolean {
+    return this.indexLoading;
   }
 }
 
 export const strongsSearchService = new StrongsSearchService();
+
+// Start loading index when the app loads (non-blocking)
+if (typeof window !== 'undefined') {
+  // Delay slightly to prioritize main search index
+  setTimeout(() => {
+    strongsSearchService.loadPrebuiltIndex().catch(err => {
+      console.error('Failed to load Strong\'s index:', err);
+    });
+  }, 1000);
+}
