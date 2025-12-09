@@ -590,6 +590,43 @@ class NotesService {
     this.saveTextFormatting(filtered);
   }
 
+  /**
+   * Clear text formatting for a specific text range (overlapping selections)
+   */
+  clearTextFormattingForRange(
+    bookId: number,
+    chapter: number,
+    verse: number,
+    startOffset: number,
+    endOffset: number,
+    selectedText: string
+  ): boolean {
+    const formatting = this.getTextFormatting();
+    const initialLength = formatting.length;
+
+    // Remove any formatting that overlaps with the selected range
+    const filtered = formatting.filter(
+      (f) => !(
+        f.bookId === bookId &&
+        f.chapter === chapter &&
+        f.verse === verse &&
+        // Check for overlap
+        f.startOffset < endOffset &&
+        startOffset < f.endOffset &&
+        // Also check text match
+        (f.selectedText === selectedText ||
+         f.selectedText.includes(selectedText) ||
+         selectedText.includes(f.selectedText))
+      )
+    );
+
+    if (filtered.length !== initialLength) {
+      this.saveTextFormatting(filtered);
+      return true;
+    }
+    return false;
+  }
+
   // ============ EXPORT/IMPORT ============
 
   /**

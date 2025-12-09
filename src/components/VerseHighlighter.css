@@ -268,3 +268,23 @@
   background: #4b5563;
   border-color: #818cf8;
 }
+
+/* Clear Formatting Button */
+.clear-format-btn {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.clear-format-btn:hover {
+  background: #fef2f2;
+  border-color: #dc2626;
+}
+
+[data-theme="dark"] .clear-format-btn {
+  color: #f87171;
+}
+
+[data-theme="dark"] .clear-format-btn:hover {
+  background: rgba(248, 113, 113, 0.15);
+  border-color: #f87171;
+}

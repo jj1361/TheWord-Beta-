@@ -42,6 +42,7 @@ interface VerseHighlighterProps {
   selectedText?: string;
   textSelection?: TextSelection;
   onApplyTextFormat?: (style: TextFormatStyle) => void;
+  onClearTextFormat?: () => void;
 }
 
 const VerseHighlighter: React.FC<VerseHighlighterProps> = ({
@@ -54,6 +55,7 @@ const VerseHighlighter: React.FC<VerseHighlighterProps> = ({
   selectedText,
   textSelection,
   onApplyTextFormat,
+  onClearTextFormat,
 }) => {
   const popupRef = useRef<HTMLDivElement>(null);
   const [showFontColors, setShowFontColors] = useState(false);
@@ -88,6 +90,13 @@ const VerseHighlighter: React.FC<VerseHighlighterProps> = ({
       applyFormat({ backgroundColor: color });
     }
     setShowTextHighlights(false);
+  };
+
+  const handleClearFormatting = () => {
+    if (onClearTextFormat && hasTextSelection) {
+      onClearTextFormat();
+      onClose();
+    }
   };
 
   useEffect(() => {
@@ -244,6 +253,18 @@ const VerseHighlighter: React.FC<VerseHighlighterProps> = ({
                   </div>
                 )}
               </div>
+
+              <div className="format-divider" />
+
+              {/* Clear Formatting Button */}
+              <button
+                type="button"
+                className="format-btn clear-format-btn"
+                onMouseDown={(e) => { e.preventDefault(); handleClearFormatting(); }}
+                title="Clear Formatting"
+              >
+                ✕
+              </button>
             </div>
           </div>
           <div className="highlighter-divider" />

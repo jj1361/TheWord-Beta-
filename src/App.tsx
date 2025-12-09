@@ -565,6 +565,24 @@ function App() {
     setTextFormatting([...notesService.getTextFormatting()]);
   };
 
+  const handleClearTextFormat = () => {
+    if (!highlighterVerse || !highlighterTextSelection) {
+      return;
+    }
+
+    notesService.clearTextFormattingForRange(
+      currentBookId,
+      currentChapter,
+      highlighterVerse,
+      highlighterTextSelection.startOffset,
+      highlighterTextSelection.endOffset,
+      highlighterTextSelection.text
+    );
+
+    // Refresh text formatting state with a new array reference
+    setTextFormatting([...notesService.getTextFormatting()]);
+  };
+
   const navigateToNoteVerse = (verse: VerseReference) => {
     loadChapter(verse.bookId, verse.chapter).then(() => {
       setHighlightVerse(verse.startVerse);
@@ -1076,6 +1094,7 @@ function App() {
           selectedText={highlighterSelectedText}
           textSelection={highlighterTextSelection || undefined}
           onApplyTextFormat={handleApplyTextFormat}
+          onClearTextFormat={handleClearTextFormat}
         />
       )}
 
