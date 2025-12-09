@@ -1,0 +1,45 @@
+.history-controls {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.history-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  padding: 0;
+}
+
+.history-button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+.history-button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.history-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .history-button {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,423 @@
+/* Sidebar container - wraps the sidebar and hover trigger */
+.sidebar-container {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 90;
+}
+
+/* Hover trigger zone - invisible area on the left edge */
+.sidebar-hover-trigger {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 100vh;
+  z-index: 89;
+}
+
+.sidebar {
+  position: relative;
+  left: 20px;
+  background: #2d3748;
+  border-radius: 16px;
+  padding: 16px 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 90;
+  transition: all 0.3s ease;
+}
+
+/* Collapsible sidebar styles */
+.sidebar-container.collapsible .sidebar.collapsible-sidebar {
+  transform: translateX(-100%);
+  opacity: 0;
+  pointer-events: none;
+  left: 20px;
+}
+
+/* Show sidebar when container is hovered */
+.sidebar-container.collapsible.hovered .sidebar.collapsible-sidebar {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Visual indicator on the edge when collapsed */
+.sidebar-container.collapsible:not(.hovered)::before {
+  content: '';
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 80px;
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.3), rgba(59, 130, 246, 0.6), rgba(59, 130, 246, 0.3));
+  border-radius: 0 4px 4px 0;
+  transition: all 0.3s ease;
+  animation: pulse-indicator 2s ease-in-out infinite;
+}
+
+.sidebar-container.collapsible:not(.hovered):hover::before {
+  width: 6px;
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.5), rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.5));
+}
+
+@keyframes pulse-indicator {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Screen share mode - transparent overlay */
+.sidebar.screen-share-mode {
+  background: rgba(45, 55, 72, 0.12);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.sidebar-btn {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-btn.active {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.5);
+}
+
+.sidebar-divider {
+  width: 32px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1px;
+  margin: 4px 0;
+}
+
+.sidebar-btn.youth-btn.active {
+  background: linear-gradient(135deg, #f472b6 0%, #a855f7 50%, #6366f1 100%);
+  box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.5);
+  animation: youth-pulse 2s ease-in-out infinite;
+}
+
+@keyframes youth-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.3), 0 0 12px rgba(168, 85, 247, 0.4);
+  }
+}
+
+/* Component wrapper for embedded components */
+.sidebar-component-wrapper {
+  position: relative;
+}
+
+/* Override styles for HistoryDropdown in sidebar */
+.sidebar-component-wrapper .history-dropdown-toggle {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 0;
+}
+
+.sidebar-component-wrapper .history-dropdown-toggle:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-component-wrapper .history-dropdown .history-count {
+  display: none;
+}
+
+.sidebar-component-wrapper .history-dropdown-menu {
+  left: 60px;
+  top: 0;
+  right: auto;
+  min-width: 280px;
+}
+
+/* Override styles for BookmarksPanel in sidebar */
+.sidebar-component-wrapper .bookmarks-toggle {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 0;
+}
+
+.sidebar-component-wrapper .bookmarks-toggle:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-component-wrapper .bookmarks-toggle.bookmarked {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.5);
+}
+
+.sidebar-component-wrapper .bookmarks-toggle.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sidebar-component-wrapper .bookmarks-count {
+  display: none;
+}
+
+.sidebar-component-wrapper .bookmarks-dropdown-menu {
+  left: 60px;
+  top: 0;
+  right: auto;
+  min-width: 280px;
+}
+
+.sidebar-component-wrapper .signin-tooltip {
+  left: 60px;
+  top: 0;
+  right: auto;
+}
+
+/* Notes button styling */
+.sidebar-btn.notes-btn.active {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.sidebar-btn.notes-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Theme button styling */
+.sidebar-btn.theme-btn.active {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+}
+
+/* Badge for notes count */
+.sidebar-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #ef4444;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 50%;
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+/* Sign-in tooltip for sidebar */
+.sidebar-signin-tooltip {
+  position: absolute;
+  left: 60px;
+  top: 0;
+  background: white;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  white-space: nowrap;
+}
+
+.sidebar-signin-tooltip p {
+  margin: 0 0 8px 0;
+  color: #374151;
+  font-size: 13px;
+}
+
+.sidebar-signin-tooltip .signin-tooltip-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  width: 100%;
+}
+
+.sidebar-signin-tooltip .signin-tooltip-btn:hover {
+  background: #2563eb;
+}
+
+/* Notes toggle wrapper in sidebar needs relative positioning */
+.sidebar-component-wrapper.notes-toggle-wrapper {
+  position: relative;
+}
+
+.sidebar-component-wrapper.notes-toggle-wrapper .sidebar-btn {
+  position: relative;
+}
+
+/* Dark mode support */
+[data-theme="dark"] .sidebar {
+  background: #1a202c;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .sidebar-signin-tooltip {
+  background: #1f2937;
+}
+
+[data-theme="dark"] .sidebar-signin-tooltip p {
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .sidebar-component-wrapper .bookmarks-dropdown-menu,
+[data-theme="dark"] .sidebar-component-wrapper .history-dropdown-menu {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    left: 10px;
+    padding: 12px 8px;
+  }
+
+  .sidebar-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+  }
+
+  .sidebar-component-wrapper .history-dropdown-toggle,
+  .sidebar-component-wrapper .bookmarks-toggle {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+  }
+
+  .sidebar-container.collapsible .sidebar.collapsible-sidebar {
+    left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar-container {
+    position: static;
+    transform: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sidebar {
+    position: static;
+    left: 0;
+    margin: 0 auto 20px;
+    width: fit-content;
+    border-radius: 12px;
+  }
+
+  .sidebar-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sidebar-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .sidebar-component-wrapper .history-dropdown-toggle,
+  .sidebar-component-wrapper .bookmarks-toggle {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .sidebar-component-wrapper .history-dropdown-menu,
+  .sidebar-component-wrapper .bookmarks-dropdown-menu {
+    left: auto;
+    right: 0;
+    top: 50px;
+  }
+
+  .sidebar-signin-tooltip {
+    left: auto;
+    right: 0;
+    top: 50px;
+  }
+
+  .sidebar-divider {
+    width: 2px;
+    height: 24px;
+    margin: 0 4px;
+  }
+
+  /* Disable collapsible behavior on mobile */
+  .sidebar-container.collapsible .sidebar.collapsible-sidebar {
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+    left: 0;
+  }
+
+  .sidebar-hover-trigger {
+    display: none;
+  }
+
+  .sidebar-container.collapsible:not(.hovered)::before {
+    display: none;
+  }
+}

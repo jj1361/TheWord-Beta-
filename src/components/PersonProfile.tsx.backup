@@ -1,0 +1,318 @@
+import React, { useEffect, useState } from 'react';
+import { PersonData, VerseData, BookData } from '../types/person';
+import { personService } from '../services/personService';
+import './PersonProfile.css';
+
+interface PersonProfileProps {
+  personID: string | null;
+  onClose: () => void;
+  onVerseClick?: (osisRef: string) => void;
+  onPersonClick?: (personID: string) => void;
+}
+
+interface Event {
+  name: string;
+  description?: string;
+  year?: string;
+  place?: string;
+  imageUrl?: string;
+}
+
+const PersonProfile: React.FC<PersonProfileProps> = ({ personID, onClose, onVerseClick, onPersonClick }) => {
+  const [person, setPerson] = useState<PersonData | null>(null);
+  const [verses, setVerses] = useState<VerseData[]>([]);
+  const [books, setBooks] = useState<BookData[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [relatedPeople, setRelatedPeople] = useState<Map<string, PersonData>>(new Map());
+  const [events, setEvents] = useState<Event[]>([]);
+
+  useEffect(() => {
+    if (!personID) {
+      setPerson(null);
+      setVerses([]);
+      setBooks([]);
+      return;
+    }
+
+    const loadPersonData = async () => {
+      setLoading(true);
+      console.log('Loading person profile for ID:', personID);
+      try {
+        const personData = await personService.getPersonByID(personID);
+        console.log('Person data loaded:', personData);
+        setPerson(personData);
+
+        if (personData) {
+          // Parse events from the events field
+          if (personData.events) {
+            const parsedEvents = parseEvents(personData.events);
+            setEvents(parsedEvents);
+          }
+
+          // Load verses
+          const verseData = await personService.getVersesByPerson(personID);
+          setVerses(verseData.slice(0, 50)); // Limit to first 50 verses
+
+          // Load books written by this person
+          const bookData = await personService.getBooksByWriter(personID);
+          setBooks(bookData);
+
+          // Load related people (family members)
+          const relatedIDs = new Set<string>();
+          if (personData.mother) relatedIDs.add(personData.mother);
+          if (personData.father) relatedIDs.add(personData.father);
+
+          const childrenIDs = personService.parsePeopleList(personData.children);
+          childrenIDs.forEach(id => relatedIDs.add(id));
+
+          const siblingsIDs = personService.parsePeopleList(personData.siblings);
+          siblingsIDs.forEach(id => relatedIDs.add(id));
+
+          const relatedMap = new Map<string, PersonData>();
+          const relatedIDsArray = Array.from(relatedIDs);
+          for (let i = 0; i < relatedIDsArray.length; i++) {
+            const id = relatedIDsArray[i];
+            const relatedPerson = await personService.getPersonByID(id);
+            if (relatedPerson) {
+              relatedMap.set(id, relatedPerson);
+            }
+          }
+          setRelatedPeople(relatedMap);
+        }
+      } catch (error) {
+        console.error('Error loading person data:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadPersonData();
+  }, [personID]);
+
+  const parseEvents = (eventsStr: string): Event[] => {
+    // Parse events from comma-separated or pipe-separated list
+    // Format could be: "Event Name|Description|Year|Place|ImageURL" or simpler variations
+    if (!eventsStr) return [];
+
+    const eventList = eventsStr.split(',').map(e => e.trim()).filter(e => e.length > 0);
+    return eventList.map(eventStr => {
+      const parts = eventStr.split('|').map(p => p.trim());
+      return {
+        name: parts[0] || eventStr,
+        description: parts[1] || undefined,
+        year: parts[2] || undefined,
+        place: parts[3] || undefined,
+        imageUrl: parts[4] || undefined
+      };
+    });
+  };
+
+  const getInitials = (name: string): string => {
+    const words = name.split(' ');
+    if (words.length >= 2) {
+      return (words[0][0] + words[words.length - 1][0]).toUpperCase();
+    }
+    return name.substring(0, 2).toUpperCase();
+  };
+
+  if (!personID) return null;
+
+  return (
+    <div className="person-profile-overlay">
+      <div className="person-profile">
+        <div className="person-profile-header">
+          <h2>{person?.displayTitle || 'Loading...'}</h2>
+          <button className="close-person-profile" onClick={onClose}>
+            ✕
+          </button>
+        </div>
+
+        <div className="person-profile-content">
+          {loading && (
+            <div className="person-profile-loading">
+              <div className="loading-spinner-small"></div>
+              <p>Loading profile...</p>
+            </div>
+          )}
+
+          {!loading && person && (
+            <>
+              {/* Basic Info */}
+              <div className="person-info-section">
+                {person.alsoCalled && (
+                  <div className="person-info-row">
+                    <span className="person-label">Also Called:</span>
+                    <span className="person-value">{person.alsoCalled}</span>
+                  </div>
+                )}
+                {person.gender && (
+                  <div className="person-info-row">
+                    <span className="person-label">Gender:</span>
+                    <span className="person-value">{person.gender}</span>
+                  </div>
+                )}
+                {person.birthYear && (
+                  <div className="person-info-row">
+                    <span className="person-label">Birth Year:</span>
+                    <span className="person-value">{person.birthYear}</span>
+                  </div>
+                )}
+                {person.deathYear && (
+                  <div className="person-info-row">
+                    <span className="person-label">Death Year:</span>
+                    <span className="person-value">{person.deathYear}</span>
+                  </div>
+                )}
+                {person.memberOf && (
+                  <div className="person-info-row">
+                    <span className="person-label">Member Of:</span>
+                    <span className="person-value">{person.memberOf}</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Family */}
+              {(person.father || person.mother || person.children || person.siblings) && (
+                <div className="person-section">
+                  <h3>Family</h3>
+                  {person.father && relatedPeople.get(person.father) && (
+                    <div className="person-info-row">
+                      <span className="person-label">Father:</span>
+                      <span
+                        className="person-value person-link"
+                        onClick={() => {
+                          if (onPersonClick) {
+                            onPersonClick(person.father!);
+                          }
+                        }}
+                      >
+                        {relatedPeople.get(person.father)?.displayTitle}
+                      </span>
+                    </div>
+                  )}
+                  {person.mother && relatedPeople.get(person.mother) && (
+                    <div className="person-info-row">
+                      <span className="person-label">Mother:</span>
+                      <span
+                        className="person-value person-link"
+                        onClick={() => {
+                          if (onPersonClick) {
+                            onPersonClick(person.mother!);
+                          }
+                        }}
+                      >
+                        {relatedPeople.get(person.mother)?.displayTitle}
+                      </span>
+                    </div>
+                  )}
+                  {person.siblings && (
+                    <div className="person-info-row">
+                      <span className="person-label">Siblings:</span>
+                      <span className="person-value">
+                        {personService.parsePeopleList(person.siblings).map((id, idx) => (
+                          <span key={id}>
+                            {idx > 0 && ', '}
+                            <span
+                              className="person-link"
+                              onClick={() => {
+                                if (onPersonClick) {
+                                  onPersonClick(id);
+                                }
+                              }}
+                            >
+                              {relatedPeople.get(id)?.displayTitle || id}
+                            </span>
+                          </span>
+                        ))}
+                      </span>
+                    </div>
+                  )}
+                  {person.children && (
+                    <div className="person-info-row">
+                      <span className="person-label">Children:</span>
+                      <span className="person-value">
+                        {personService.parsePeopleList(person.children).map((id, idx) => (
+                          <span key={id}>
+                            {idx > 0 && ', '}
+                            <span
+                              className="person-link"
+                              onClick={() => {
+                                if (onPersonClick) {
+                                  onPersonClick(id);
+                                }
+                              }}
+                            >
+                              {relatedPeople.get(id)?.displayTitle || id}
+                            </span>
+                          </span>
+                        ))}
+                      </span>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Books Written */}
+              {books.length > 0 && (
+                <div className="person-section">
+                  <h3>Books Written</h3>
+                  <div className="person-books-list">
+                    {books.map(book => (
+                      <div key={book.osisName} className="person-book-item">
+                        {book.bookName}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Dictionary Entry */}
+              {person.dictionaryText && (
+                <div className="person-section person-dictionary">
+                  <h3>Dictionary Entry</h3>
+                  <div className="person-dictionary-content">
+                    {person.dictionaryText.split('\n').slice(0, 5).map((line, idx) => (
+                      <p key={idx}>{line.trim()}</p>
+                    ))}
+                    {person.dictionaryLink && (
+                      <a href={person.dictionaryLink} target="_blank" rel="noopener noreferrer">
+                        Read more...
+                      </a>
+                    )}
+                  </div>
+                </div>
+              )}
+
+              {/* Verse References */}
+              {verses.length > 0 && (
+                <div className="person-section person-verses">
+                  <h3>Verse References ({person.verseCount} total, showing first {verses.length})</h3>
+                  <div className="person-verses-list">
+                    {verses.map(verse => (
+                      <div
+                        key={verse.osisRef}
+                        className="person-verse-item"
+                        onClick={() => onVerseClick && onVerseClick(verse.osisRef)}
+                      >
+                        <span className="person-verse-ref">{verse.osisRef}</span>
+                        <span className="person-verse-text">{verse.verseText}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </>
+          )}
+
+          {!loading && !person && (
+            <div className="person-not-found">
+              <p>Person profile not found for ID: {personID}</p>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PersonProfile;

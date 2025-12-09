@@ -1,46 +1,104 @@
-# Getting Started with Create React App
+# Holy Bible Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern Bible reading application built with React and TypeScript, featuring the King James Version with Interlinear support.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Chapter by Chapter Reading**: Navigate through all 66 books of the Bible
+- **Interlinear Support**: Toggle interlinear view for each verse to see:
+  - Original Hebrew/Greek text
+  - Transliteration
+  - Strong's numbers
+  - Part of speech
+  - Detailed grammatical parsing
+- **Interactive Hebrew Letters**: Click any Hebrew letter in the interlinear text to view:
+  - Letter name and transliteration
+  - Numeric value (Gematria)
+  - Meaning and symbolism
+  - Detailed definition
+  - Ancient Proto-Sinaitic script representation
+  - Visual representation with emoticons
+  - Custom images (when provided)
+- **Smart Navigation**:
+  - Quick book and chapter selection
+  - Previous/Next chapter navigation
+  - Direct chapter jumping
+- **Advanced Search**: Full-text search across the entire Bible with highlighted results
+- **Modern UI**: Beautiful, responsive design with gradient colors and smooth animations
+- **Verse Highlighting**: Search results automatically highlight and scroll to the specific verse
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Install dependencies:
+```bash
+npm install
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. The Bible data (XML files) are already included in the `public/xmlBible.org-main` directory.
 
-### `npm test`
+## Running the Application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Start the development server:
+```bash
+npm start
+```
 
-### `npm run build`
+The application will open at [http://localhost:3000](http://localhost:3000)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Building for Production
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create an optimized production build:
+```bash
+npm run build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+```
+bible-app/
+├── src/
+│   ├── components/        # React components
+│   │   ├── Navigation.tsx         # Book/Chapter navigation
+│   │   ├── SearchBox.tsx         # Search functionality
+│   │   ├── ChapterDisplay.tsx    # Chapter container
+│   │   └── VerseDisplay.tsx      # Individual verse with interlinear
+│   ├── services/         # Business logic
+│   │   └── bibleService.ts       # Bible data loading and search
+│   ├── utils/            # Utilities
+│   │   └── xmlParser.ts          # XML parsing utilities
+│   ├── types/            # TypeScript types
+│   │   └── bible.ts              # Type definitions
+│   └── App.tsx           # Main application
+├── public/
+│   └── xmlBible.org-main/        # Bible XML data
+│       ├── KJV/                  # King James Version
+│       ├── KJVs/                 # KJV with Strong's numbers
+│       └── Interlinear/          # Interlinear data
+└── package.json
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Data Source
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Bible data from [xmlBible.org](http://xmlbible.org), including:
+- King James Version (KJV)
+- Strong's numbers
+- Hebrew/Greek interlinear text with transliteration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Technologies Used
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- React 18
+- TypeScript
+- CSS3 (modern gradients, animations, flexbox)
+- XML parsing with DOMParser
 
-## Learn More
+## Browser Support
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Works on all modern browsers:
+- Chrome
+- Firefox
+- Safari
+- Edge
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+
+This project uses Bible data from xmlBible.org. Please refer to their licensing terms for the Bible data.

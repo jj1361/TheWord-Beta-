@@ -1,0 +1,191 @@
+# Visual Example: Clickable Phrases in Action
+
+## Genesis 1:1 - Before Implementation
+┌────────────────────────────────────────────────────────────────┐
+│ 1  In the beginning God created the heaven and the earth.     │
+│    (Plain text - no interaction)                               │
+└────────────────────────────────────────────────────────────────┘
+
+## Genesis 1:1 - After Implementation
+┌────────────────────────────────────────────────────────────────┐
+│ 1  [In the beginning][God][created][the heaven][and][the earth]│
+│     ↑                ↑    ↑        ↑          ↑    ↑          │
+│     H7225           H430  H1254    H8064      H853  H776       │
+│                                                                 │
+│    Hover: Yellow highlight                                     │
+│    Click: Opens lexicon panel with Strong's entry              │
+└────────────────────────────────────────────────────────────────┘
+
+## XML Data Structure
+<verse num="1">
+  <phrase strongs="7225">In the beginning</phrase>  ← One clickable unit
+  <phrase strongs="430">God</phrase>                ← One clickable unit
+  <phrase strongs="1254">created</phrase>           ← One clickable unit
+  <phrase strongs="853"></phrase>                   ← Hidden (empty)
+  <phrase strongs="8064">the heaven</phrase>        ← One clickable unit
+  <phrase strongs="853">and</phrase>                ← One clickable unit
+  <phrase strongs="776">the earth.</phrase>         ← One clickable unit
+</verse>
+
+## User Interaction Flow
+
+STEP 1: User hovers over "beginning"
+┌─────────────────────────────────────────────────────┐
+│ 1  [In the beginning][God][created]...              │
+│     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                                │
+│     └─ Entire phrase highlights in yellow            │
+└─────────────────────────────────────────────────────┘
+
+STEP 2: User clicks "beginning"
+┌─────────────────────────────────────────────────────┐
+│ Main Content                  │ Right Panel         │
+│ ─────────────────────────────│────────────────────  │
+│ 1  In the beginning God...   │ 📖 Lexicon          │
+│                               │                     │
+│                               │ רֵאשִׁית            │
+│                               │ Strong's #7225      │
+│                               │                     │
+│                               │ Pronunciation:      │
+│                               │ re-sheeth'          │
+│                               │                     │
+│                               │ Meaning:            │
+│                               │ the first, in place,│
+│                               │ time, order or rank │
+│                               │ (specifically, a    │
+│                               │ firstfruit)         │
+└─────────────────────────────────────────────────────┘
+
+## Comparison: Current vs. Proposed
+
+┌──────────────────────────────────────────────────────────────┐
+│                    CURRENT APPROACH                          │
+├──────────────────────────────────────────────────────────────┤
+│ To lookup "beginning":                                       │
+│   1. Click verse number (1) → Interlinear expands           │
+│   2. Find word in interlinear grid (7 words to scan)        │
+│   3. Click Hebrew word or Strong's number                   │
+│   4. Lexicon panel opens                                     │
+│                                                              │
+│ TOTAL: 3 clicks, visual scanning required                   │
+└──────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────┐
+│                    PROPOSED APPROACH                         │
+├──────────────────────────────────────────────────────────────┤
+│ To lookup "beginning":                                       │
+│   1. Click "In the beginning" in verse text                 │
+│   2. Lexicon panel opens                                     │
+│                                                              │
+│ TOTAL: 1 click, instant access                              │
+└──────────────────────────────────────────────────────────────┘
+
+## Multi-Word Phrase Example
+
+John 1:1 - "In the beginning" (Greek)
+
+XML:
+<phrase strongs="1722">In</phrase>
+<phrase strongs="746">the beginning</phrase>
+
+Rendering:
+┌──────────────────────────────────────┐
+│ [In][the beginning][was][the Word]  │
+│  ↑   ↑                               │
+│  G1722  G746                         │
+└──────────────────────────────────────┘
+
+Note: "In" and "the beginning" are separate clickable phrases
+      with different Strong's numbers (correct behavior)
+
+## Edge Case: Empty Phrases
+
+Genesis 1:1 with untranslated markers
+
+XML:
+<phrase strongs="853"></phrase>  ← Empty/untranslated particle
+
+Rendering:
+┌──────────────────────────────────────┐
+│ [In the beginning][God][created]    │
+│  [the heaven][and][the earth]       │
+│                                      │
+│  No empty space rendered             │
+└──────────────────────────────────────┘
+
+## Mobile Experience
+
+┌────────────────────────┐
+│  Genesis 1:1           │
+├────────────────────────┤
+│ [In the beginning]     │  ← Large tap target
+│ [God][created]         │  ← Adequate spacing
+│ [the heaven][and]      │  ← Touch-friendly
+│ [the earth]            │
+│                        │
+│ Tap any phrase →       │
+│ Full-screen lexicon    │
+└────────────────────────┘
+
+## CSS Hover States
+
+Normal state:
+  "In the beginning God created"
+
+Hover on "God":
+  "In the beginning [God] created"
+                     ▓▓▓
+  Background: Light yellow gradient
+  Cursor: Pointer
+  Tooltip: "Strong's #430 - Click for lexicon"
+
+Active (clicking):
+  "In the beginning [God] created"
+                     ▓▓▓
+  Slight depression effect (translateY)
+
+## Integration with Existing Features
+
+Person Links (Priority):
+┌──────────────────────────────────────────────────────┐
+│ And [God] said unto [Abraham], I am the Lord...     │
+│      ↑                ↑                               │
+│   Strong's H430    Person Profile (takes precedence) │
+└──────────────────────────────────────────────────────┘
+
+Combined with Interlinear:
+┌──────────────────────────────────────────────────────┐
+│ Verse: [In the beginning][God][created]...          │
+│         ↑ Click for quick lexicon                    │
+│                                                       │
+│ Interlinear (if expanded):                           │
+│  ┌──────┬──────┬──────┐                             │
+│  │ בְּ  │רֵאשִׁית│אֱלֹהִים│                           │
+│  │ In  │beginning│ God │                             │
+│  │ H... │ H7225 │ H430│                              │
+│  └──────┴──────┴──────┘                              │
+│         ↑ Click for detailed word analysis           │
+└──────────────────────────────────────────────────────┘
+
+## Data Flow Diagram
+
+User Action: Click "beginning"
+     ↓
+Identify phrase: "In the beginning"
+     ↓
+Extract Strong's: "7225"
+     ↓
+Call: onStrongsClick("7225")
+     ↓
+App.tsx: handleStrongsClick("7225")
+     ↓
+LexiconService: getLexiconData("7225")
+     ↓
+Parse XML: strongs_hebrew.xml
+     ↓
+Return: LexiconData { strongs: {...}, bdb: {...} }
+     ↓
+RightPanel: Display lexicon content
+     ↓
+User sees: Definition, pronunciation, usage
+
+Total time: < 100ms

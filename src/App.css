@@ -1,38 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-primary);
+  min-height: 100vh;
+  color: var(--text-primary);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #14192f 0%, #394786 100%);
+  padding: 10px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-row-1 {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 20px;
+}
+
+.header-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.header-navigation-wrapper {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+/* Logo and Title Container with Alternating Animation */
+.logo-title-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.app-logo {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  font-size: 35px;
+  font-weight: 700;
   color: white;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.app-subtitle {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+  margin: 2px 0 0 0;
 }
 
-@keyframes App-logo-spin {
+/* Alternating Fade Animation - 15 second cycle */
+@keyframes fadeInOut {
+  0%, 48% {
+    opacity: 1;
+  }
+  50%, 98% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo-title-container .app-logo {
+  animation: fadeInOut 30s ease-in-out infinite;
+}
+
+.logo-title-container .text-content {
+  animation: fadeInOut 30s ease-in-out infinite reverse;
+}
+
+.logo-title-container .footer-logo {
+  animation: fadeInOut 30s ease-in-out infinite;
+}
+
+/* Ensure smooth transitions */
+.fade-element {
+  transition: opacity 2s ease-in-out;
+}
+
+
+.app-container {
+  flex: 1;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 40px 20px 40px 120px;
+  width: 100%;
+}
+
+
+.content-with-webcam {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.content-with-webcam.webcam-fullscreen {
+  justify-content: center;
+  align-items: center;
+}
+
+.verses-section {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 900px;
+  transition: all 0.3s ease;
+}
+
+.webcam-section {
+  width: 475px;
+  flex-shrink: 0;
+  animation: slideIn 0.3s ease;
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.webcam-section.fullscreen {
+  width: 100%;
+  max-width: 100%;
+  height: calc(100vh - 200px);
+  position: static;
+  max-height: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Screen Share Fullscreen Layout */
+.screen-share-fullscreen-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  z-index: 50;
+  background: #000;
+}
+
+.screen-share-fullscreen-wrapper.with-verses {
+  background: var(--bg-primary);
+}
+
+.screen-share-section {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.screen-share-section.full-width {
+  width: 100%;
+}
+
+.screen-share-section.half-width {
+  width: 50%;
+  flex-shrink: 0;
+}
+
+.screen-share-verses-section {
+  width: 50%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  background: var(--bg-primary);
+  border-left: 2px solid var(--border-primary);
+}
+
+.youth-panel-section {
+  position: fixed;
+  right: 20px;
+  top: 130px;
+  bottom: 80px;
+  width: 45%;
+  min-width: 350px;
+  max-width: 550px;
+  height: auto;
+  animation: slideIn 0.3s ease;
+  overflow: hidden;
+  border-radius: 16px;
+  z-index: 100;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateX(20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.app-footer {
+  background: linear-gradient(135deg, #14192f 0%, #394786 100%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  border-top: 1px solid var(--border-primary);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer-subtitle {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+  margin: 4px 0 0 0;
+}
+
+@media (max-width: 1024px) {
+  .content-with-webcam {
+    flex-direction: column;
+  }
+
+  .webcam-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: static;
+    max-height: none;
+  }
+
+  .youth-panel-section {
+    position: fixed;
+    left: 10px;
+    right: 10px;
+    top: auto;
+    bottom: 0;
+    width: auto;
+    max-width: 100%;
+    min-width: unset;
+    height: 60vh;
+    border-radius: 16px 16px 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 8px 15px;
+  }
+
+  .header-row-1 {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .header-left {
+    order: 1;
+    flex: 1 1 auto;
+  }
+
+  .header-right {
+    order: 2;
+    flex: 0 0 auto;
+    min-width: auto;
+  }
+
+  .header-navigation-wrapper {
+    order: 3;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .app-title {
+    font-size: 16px;
+  }
+
+  .app-subtitle {
+    font-size: 10px;
+  }
+
+  .theme-toggle {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .app-container {
+    padding: 20px 10px 20px 10px;
+  }
+
+  .webcam-section {
+    width: 100%;
   }
 }

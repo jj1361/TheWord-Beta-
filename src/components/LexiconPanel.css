@@ -1,0 +1,330 @@
+.lexicon-panel {
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  width: 420px;
+  max-height: calc(100vh - 100px);
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 1000;
+  animation: slideInLeft 0.3s ease;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.lexicon-header {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lexicon-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.close-lexicon {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 24px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.close-lexicon:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotate(90deg);
+}
+
+.lexicon-content {
+  padding: 24px;
+  overflow-y: auto;
+  max-height: calc(100vh - 180px);
+}
+
+.lexicon-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 16px;
+}
+
+.loading-spinner-small {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #d1fae5;
+  border-top: 3px solid #10b981;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.lexicon-word-display {
+  text-align: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%);
+  border-radius: 12px;
+  margin-bottom: 24px;
+  border: 2px solid #10b981;
+}
+
+.lexicon-hebrew {
+  font-size: 72px;
+  font-weight: bold;
+  color: #065f46;
+  direction: rtl;
+  margin-bottom: 12px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lexicon-transliteration {
+  font-size: 24px;
+  color: #047857;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.lexicon-pronunciation {
+  font-size: 16px;
+  color: #059669;
+  font-family: monospace;
+}
+
+.lexicon-info-section {
+  margin-bottom: 24px;
+}
+
+.lexicon-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f0fdf4;
+  border-radius: 8px;
+  border-left: 4px solid #10b981;
+}
+
+.lexicon-label {
+  font-weight: 600;
+  color: #065f46;
+  min-width: 140px;
+}
+
+.lexicon-value {
+  color: #047857;
+  font-weight: 500;
+  text-align: right;
+  flex: 1;
+}
+
+.lexicon-section {
+  margin-bottom: 20px;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border-left: 4px solid #6b7280;
+}
+
+.lexicon-section h3 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.lexicon-section p {
+  margin: 0;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.lexicon-meaning {
+  background: #fffbeb;
+  border-left-color: #f59e0b;
+}
+
+.lexicon-meaning h3 {
+  color: #92400e;
+}
+
+.lexicon-meaning p {
+  color: #78350f;
+  font-weight: 500;
+}
+
+.lexicon-usage {
+  background: #eff6ff;
+  border-left-color: #3b82f6;
+}
+
+.lexicon-usage h3 {
+  color: #1e40af;
+}
+
+.lexicon-usage p {
+  color: #1e3a8a;
+}
+
+.lexicon-divider {
+  margin: 32px 0 20px 0;
+  padding: 16px;
+  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+  border-radius: 8px;
+  border-left: 4px solid #0284c7;
+}
+
+.lexicon-divider h3 {
+  margin: 0;
+  color: #0c4a6e;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.lexicon-bdb-def {
+  background: #f0f9ff;
+  border-left-color: #0284c7;
+}
+
+.lexicon-bdb-def h3 {
+  color: #0c4a6e;
+}
+
+.lexicon-bdb-def p {
+  color: #075985;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.bdb-definition-content {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.bdb-definition-content p {
+  margin: 8px 0;
+}
+
+.bdb-definition-content p:empty {
+  display: none;
+}
+
+.lexicon-not-found {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6b7280;
+}
+
+.lexicon-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.lexicon-content::-webkit-scrollbar-track {
+  background: #f9fafb;
+  border-radius: 4px;
+}
+
+.lexicon-content::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+.lexicon-content::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* STEPBible specific styles */
+.lexicon-gloss {
+  font-size: 20px;
+  color: #047857;
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+.stepbible-definition-content {
+  line-height: 1.8;
+  color: #78350f;
+}
+
+.stepbible-definition-content b {
+  color: #92400e;
+  font-weight: 600;
+}
+
+.stepbible-definition-content i {
+  color: #a16207;
+}
+
+.stepbible-definition-content br {
+  display: block;
+  content: "";
+  margin: 8px 0;
+}
+
+.lexicon-attribution {
+  margin-top: 24px;
+  padding: 12px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  text-align: center;
+  border-top: 2px solid #e5e7eb;
+}
+
+.lexicon-attribution small {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.lexicon-attribution a {
+  color: #10b981;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.lexicon-attribution a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .lexicon-panel {
+    position: fixed;
+    top: 60px;
+    left: 10px;
+    right: 10px;
+    width: auto;
+    max-height: calc(100vh - 80px);
+  }
+
+  .lexicon-hebrew {
+    font-size: 56px;
+  }
+
+  .lexicon-transliteration {
+    font-size: 20px;
+  }
+}

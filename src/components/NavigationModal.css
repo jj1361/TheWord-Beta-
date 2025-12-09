@@ -1,0 +1,343 @@
+.navigation-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.navigation-modal-content {
+  background: white;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 900px;
+  max-height: 85vh;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navigation-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 2px solid #e0e7ff;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.navigation-modal-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.close-modal-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 6px;
+  width: 36px;
+  height: 36px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.close-modal-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.books-view,
+.chapters-view {
+  padding: 24px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.testament-section {
+  margin-bottom: 32px;
+}
+
+.testament-section:last-child {
+  margin-bottom: 0;
+}
+
+.testament-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #667eea;
+  margin: 0 0 16px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e0e7ff;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.book-btn {
+  padding: 12px 16px;
+  background: white;
+  border: 2px solid #e0e7ff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a202c;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.book-btn:hover {
+  background: #f7fafc;
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.2);
+}
+
+.book-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+  font-weight: 600;
+}
+
+.back-to-books-btn {
+  padding: 10px 20px;
+  background: rgba(102, 126, 234, 0.1);
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #667eea;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+}
+
+.back-to-books-btn:hover {
+  background: rgba(102, 126, 234, 0.2);
+  transform: translateX(-4px);
+}
+
+.chapters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 10px;
+}
+
+.chapter-btn {
+  padding: 12px;
+  background: white;
+  border: 2px solid #e0e7ff;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a202c;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.chapter-btn:hover {
+  background: #f7fafc;
+  border-color: #667eea;
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px rgba(102, 126, 234, 0.2);
+}
+
+.chapter-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+  font-weight: 600;
+}
+
+/* Scrollbar styling */
+.books-view::-webkit-scrollbar,
+.chapters-view::-webkit-scrollbar {
+  width: 8px;
+}
+
+.books-view::-webkit-scrollbar-track,
+.chapters-view::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.books-view::-webkit-scrollbar-thumb,
+.chapters-view::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 4px;
+}
+
+.books-view::-webkit-scrollbar-thumb:hover,
+.chapters-view::-webkit-scrollbar-thumb:hover {
+  background: #5568d3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navigation-modal-content {
+    width: 95%;
+    max-height: 90vh;
+  }
+
+  .navigation-modal-header {
+    padding: 16px 20px;
+  }
+
+  .navigation-modal-header h2 {
+    font-size: 20px;
+  }
+
+  .books-view,
+  .chapters-view {
+    padding: 16px;
+  }
+
+  .books-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 10px;
+  }
+
+  .book-btn {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .chapters-grid {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 8px;
+  }
+
+  .chapter-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .testament-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .books-grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  }
+
+  .chapters-grid {
+    grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
+  }
+}
+
+/* Dark Theme Support */
+[data-theme='dark'] .navigation-modal-content {
+  background: #1a202c;
+}
+
+[data-theme='dark'] .navigation-modal-header {
+  border-bottom-color: #4a5568;
+}
+
+[data-theme='dark'] .testament-title {
+  color: #a5b4fc;
+  border-bottom-color: #4a5568;
+}
+
+[data-theme='dark'] .book-btn {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #f7fafc;
+}
+
+[data-theme='dark'] .book-btn:hover {
+  background: #374151;
+  border-color: #a5b4fc;
+  box-shadow: 0 4px 8px rgba(165, 180, 252, 0.2);
+}
+
+[data-theme='dark'] .book-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #a5b4fc;
+}
+
+[data-theme='dark'] .chapter-btn {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #f7fafc;
+}
+
+[data-theme='dark'] .chapter-btn:hover {
+  background: #374151;
+  border-color: #a5b4fc;
+  box-shadow: 0 2px 6px rgba(165, 180, 252, 0.2);
+}
+
+[data-theme='dark'] .chapter-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #a5b4fc;
+}
+
+[data-theme='dark'] .back-to-books-btn {
+  background: rgba(165, 180, 252, 0.1);
+  border-color: #a5b4fc;
+  color: #a5b4fc;
+}
+
+[data-theme='dark'] .back-to-books-btn:hover {
+  background: rgba(165, 180, 252, 0.2);
+}
+
+[data-theme='dark'] .books-view::-webkit-scrollbar-track,
+[data-theme='dark'] .chapters-view::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+[data-theme='dark'] .books-view::-webkit-scrollbar-thumb,
+[data-theme='dark'] .chapters-view::-webkit-scrollbar-thumb {
+  background: #4a5568;
+}
+
+[data-theme='dark'] .books-view::-webkit-scrollbar-thumb:hover,
+[data-theme='dark'] .chapters-view::-webkit-scrollbar-thumb:hover {
+  background: #718096;
+}

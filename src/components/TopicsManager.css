@@ -1,0 +1,332 @@
+.topics-manager-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.topics-manager {
+  background: var(--bg-color, #fff);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.topics-manager-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-color, #e5e5e5);
+}
+
+.topics-manager-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color, #333);
+}
+
+.topics-manager-close {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  color: var(--text-secondary, #666);
+  cursor: pointer;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease;
+}
+
+.topics-manager-close:hover {
+  background: var(--hover-bg, rgba(0, 0, 0, 0.05));
+}
+
+.topics-manager-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Topic Form */
+.topic-form {
+  background: var(--form-bg, #f9fafb);
+  border: 1px solid var(--border-color, #e5e5e5);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.topic-form h3 {
+  margin: 0 0 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color, #333);
+}
+
+.topic-form-field {
+  margin-bottom: 16px;
+}
+
+.topic-form-field label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary, #666);
+}
+
+.topic-form-field input,
+.topic-form-field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: var(--input-bg, #fff);
+  color: var(--text-color, #333);
+  outline: none;
+  transition: border-color 0.15s ease;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.topic-form-field input:focus,
+.topic-form-field textarea:focus {
+  border-color: var(--primary-color, #2563eb);
+}
+
+.topic-color-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+}
+
+.topic-color-option {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.topic-color-option:hover {
+  transform: scale(1.1);
+}
+
+.topic-color-option.active {
+  border-color: var(--text-color, #333);
+  box-shadow: 0 0 0 2px var(--bg-color, #fff);
+}
+
+.topic-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.topic-form-btn {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.topic-form-btn.primary {
+  background: var(--primary-color, #2563eb);
+  color: white;
+}
+
+.topic-form-btn.primary:hover {
+  background: var(--primary-hover, #1d4ed8);
+}
+
+.topic-form-btn.secondary {
+  background: transparent;
+  color: var(--text-secondary, #666);
+  border: 1px solid var(--border-color, #ddd);
+}
+
+.topic-form-btn.secondary:hover {
+  background: var(--hover-bg, rgba(0, 0, 0, 0.05));
+}
+
+/* Topics List */
+.topics-list-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.topics-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topics-list-header h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-color, #333);
+}
+
+.add-topic-btn {
+  padding: 6px 12px;
+  background: var(--primary-color, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.add-topic-btn:hover {
+  background: var(--primary-hover, #1d4ed8);
+}
+
+.topics-empty {
+  text-align: center;
+  padding: 24px;
+  color: var(--text-secondary, #666);
+}
+
+.topics-empty p {
+  margin: 0 0 4px;
+}
+
+.topics-empty-hint {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.topics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.topic-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  background: var(--item-bg, #f9fafb);
+  border: 1px solid var(--border-color, #e5e5e5);
+  border-radius: 8px;
+  transition: all 0.15s ease;
+}
+
+.topic-item:hover {
+  border-color: var(--primary-color, #2563eb);
+}
+
+.topic-item.editing {
+  border-color: var(--primary-color, #2563eb);
+  background: var(--editing-bg, #eff6ff);
+}
+
+.topic-item-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.topic-item-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.topic-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.topic-item-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-color, #333);
+}
+
+.topic-item-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary, #666);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topic-item-actions {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.topic-action-btn {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  transition: all 0.15s ease;
+}
+
+.topic-action-btn:hover {
+  opacity: 1;
+  background: var(--hover-bg, rgba(0, 0, 0, 0.05));
+}
+
+.topic-action-btn.delete:hover {
+  background: #fef2f2;
+}
+
+/* Dark mode */
+:root[data-theme="dark"] .topics-manager {
+  --bg-color: #1e1e1e;
+  --border-color: #444;
+  --text-color: #e0e0e0;
+  --text-secondary: #999;
+  --input-bg: #2d2d2d;
+  --form-bg: #252525;
+  --item-bg: #252525;
+  --hover-bg: rgba(255, 255, 255, 0.05);
+  --editing-bg: #1e3a5f;
+}
