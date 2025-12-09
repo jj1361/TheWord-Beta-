@@ -110,14 +110,17 @@ export interface NotesState {
 
 /**
  * Highlight color configurations with display values
+ * hexLight: color for light mode (pastel)
+ * hexDark: color for dark mode (richer, semi-transparent)
+ * hex: legacy field, same as hexLight for backwards compatibility
  */
-export const HIGHLIGHT_COLORS: { value: HighlightColor; label: string; hex: string }[] = [
-  { value: 'yellow', label: 'Yellow', hex: '#fff3cd' },
-  { value: 'green', label: 'Green', hex: '#d4edda' },
-  { value: 'blue', label: 'Blue', hex: '#cce5ff' },
-  { value: 'pink', label: 'Pink', hex: '#f8d7da' },
-  { value: 'orange', label: 'Orange', hex: '#ffeeba' },
-  { value: 'purple', label: 'Purple', hex: '#e2d5f1' },
+export const HIGHLIGHT_COLORS: { value: HighlightColor; label: string; hex: string; hexLight: string; hexDark: string }[] = [
+  { value: 'yellow', label: 'Yellow', hex: '#fff3cd', hexLight: '#fff3cd', hexDark: 'rgba(250, 204, 21, 0.35)' },
+  { value: 'green', label: 'Green', hex: '#d4edda', hexLight: '#d4edda', hexDark: 'rgba(74, 222, 128, 0.35)' },
+  { value: 'blue', label: 'Blue', hex: '#cce5ff', hexLight: '#cce5ff', hexDark: 'rgba(96, 165, 250, 0.35)' },
+  { value: 'pink', label: 'Pink', hex: '#f8d7da', hexLight: '#f8d7da', hexDark: 'rgba(244, 114, 182, 0.35)' },
+  { value: 'orange', label: 'Orange', hex: '#ffeeba', hexLight: '#ffeeba', hexDark: 'rgba(251, 146, 60, 0.35)' },
+  { value: 'purple', label: 'Purple', hex: '#e2d5f1', hexLight: '#e2d5f1', hexDark: 'rgba(192, 132, 252, 0.35)' },
 ];
 
 /**

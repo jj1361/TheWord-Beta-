@@ -20,8 +20,7 @@
 
 .verse-container.clickable:hover {
   box-shadow: var(--shadow-md);
-  /* background: var(--bg-hover); */
-  background-color: rgba(255, 230, 0, 0.408);
+  background-color: rgba(102, 126, 234, 0.12);
 }
 
 .verse-container.selected {
@@ -76,6 +75,15 @@
 /* User highlight colors - ensure good contrast in both themes */
 .verse-container.user-highlighted {
   position: relative;
+}
+
+/* Highlighted verse hover - slightly darken the highlight color */
+.verse-container.user-highlighted.clickable:hover {
+  filter: brightness(0.95);
+}
+
+[data-theme='dark'] .verse-container.user-highlighted.clickable:hover {
+  filter: brightness(1.1);
 }
 
 /* Interlinear Toggle Button */
@@ -471,7 +479,7 @@
 }
 
 [data-theme='dark'] .verse-container.clickable:hover {
-  background-color: rgba(251, 191, 36, 0.2);
+  background-color: rgba(165, 180, 252, 0.15);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 

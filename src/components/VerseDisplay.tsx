@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { KJVVerse, KJVsVerse, InterlinearVerse } from '../types/bible';
 import { extractHebrewLetters, getHebrewLetterInfo } from '../config/hebrewLetters';
 import { getWordImage, getImagePath, getImageSize, WordImageMapping } from '../config/youthModeConfig';
@@ -24,6 +24,23 @@ interface VerseDisplayProps {
 const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interlinearVerse, onLetterClick, onStrongsClick, onPersonClick, onYouthImageClick, isSelected, onVerseClick, globalUseProtoSinaitic, youthMode, highlightColor, textFormatting }) => {
   const [localUseProtoSinaitic, setLocalUseProtoSinaitic] = useState(false);
   const [forwardInterlinear, setForwardInterlinear] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() =>
+    document.documentElement.getAttribute('data-theme') === 'dark'
+  );
+
+  // Listen for theme changes
+  useEffect(() => {
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === 'data-theme') {
+          setIsDarkMode(document.documentElement.getAttribute('data-theme') === 'dark');
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, { attributes: true });
+    return () => observer.disconnect();
+  }, []);
 
   // Use global setting if provided, otherwise use local state
   const useProtoSinaitic = globalUseProtoSinaitic !== undefined ? globalUseProtoSinaitic : localUseProtoSinaitic;
@@ -417,10 +434,13 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
     );
   };
 
-  // Get the hex color for the highlight
+  // Get the hex color for the highlight based on current theme
   const getHighlightHex = (): string | undefined => {
     if (!highlightColor) return undefined;
-    return HIGHLIGHT_COLORS.find(c => c.value === highlightColor)?.hex;
+    const color = HIGHLIGHT_COLORS.find(c => c.value === highlightColor);
+    if (!color) return undefined;
+
+    return isDarkMode ? color.hexDark : color.hexLight;
   };
 
   return (
