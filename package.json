@@ -22,7 +22,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run build:search-index && react-scripts build",
+    "build:search-index": "node scripts/buildSearchIndex.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

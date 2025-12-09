@@ -1,5 +1,5 @@
 import { BIBLE_BOOKS } from '../types/bible';
-import { bibleService } from './bibleService';
+import { PATHS } from '../config/paths';
 
 export interface SearchResult {
   bookId: number;
@@ -15,148 +15,89 @@ export interface SearchResponse {
   hasMore: boolean;
 }
 
-interface SearchIndex {
-  [word: string]: Array<{
-    bookId: number;
-    chapter: number;
-    verse: number;
-  }>;
+// Pre-built index structure (compact format from build script)
+interface PrebuiltIndex {
+  version: number;
+  generatedAt: string;
+  stats: {
+    totalVerses: number;
+    totalChapters: number;
+    uniqueWords: number;
+    prefixCount: number;
+  };
+  wordIndex: { [word: string]: Array<[number, number, number]> }; // [bookId, chapter, verse]
+  verseCache: { [key: string]: string }; // "bookId:chapter:verse" -> text
+  prefixIndex: { [prefix: string]: string[] }; // prefix -> words
 }
 
-// Build a simple prefix index for fast prefix lookups
-function buildPrefixIndex(words: string[]): Map<string, string[]> {
-  const prefixIndex = new Map<string, string[]>();
-
-  for (const word of words) {
-    // Index prefixes of length 2-4 (most useful for search)
-    for (let len = 2; len <= Math.min(4, word.length); len++) {
-      const prefix = word.substring(0, len);
-      if (!prefixIndex.has(prefix)) {
-        prefixIndex.set(prefix, []);
-      }
-      prefixIndex.get(prefix)!.push(word);
-    }
-  }
-
-  return prefixIndex;
-}
+// Create a book lookup map for O(1) access
+const BOOK_MAP = new Map<number, typeof BIBLE_BOOKS[0]>();
+BIBLE_BOOKS.forEach(book => BOOK_MAP.set(book.id, book));
 
 export class SearchService {
-  private searchIndex: SearchIndex | null = null;
-  private prefixIndex: Map<string, string[]> | null = null;
-  private verseCache: Map<string, string> = new Map();
-  private indexingInProgress = false;
-  private indexingPromise: Promise<void> | null = null;
-  private abortController: AbortController | null = null;
+  private prebuiltIndex: PrebuiltIndex | null = null;
+  private indexLoading = false;
+  private indexLoadPromise: Promise<void> | null = null;
 
   /**
-   * Build search index in the background
-   * This indexes all verses for fast searching
+   * Load the pre-built search index from JSON file
+   * This is MUCH faster than building at runtime
    */
-  async buildSearchIndex(): Promise<void> {
-    // If already indexing, return the existing promise
-    if (this.indexingInProgress && this.indexingPromise) {
-      return this.indexingPromise;
+  async loadPrebuiltIndex(): Promise<void> {
+    // Already loaded
+    if (this.prebuiltIndex) {
+      return;
     }
 
-    // If index already exists, return immediately
-    if (this.searchIndex) {
-      return Promise.resolve();
+    // Already loading
+    if (this.indexLoading && this.indexLoadPromise) {
+      return this.indexLoadPromise;
     }
 
-    this.indexingInProgress = true;
-    this.abortController = new AbortController();
+    this.indexLoading = true;
+    console.log('Loading pre-built search index...');
+    const startTime = performance.now();
 
-    this.indexingPromise = (async () => {
-      const index: SearchIndex = {};
-      const cache = new Map<string, string>();
-
-      console.log('Starting search index build...');
-      const startTime = performance.now();
-
+    this.indexLoadPromise = (async () => {
       try {
-        // Filter out Apocrypha books from indexing
-        const booksToIndex = BIBLE_BOOKS.filter(b => !b.isApocrypha);
-
-        for (const book of booksToIndex) {
-          if (this.abortController?.signal.aborted) {
-            throw new Error('Indexing aborted');
-          }
-
-          for (let chapter = 1; chapter <= book.chapters; chapter++) {
-            try {
-              const chapterData = await bibleService.loadChapter(book.id, chapter);
-
-              chapterData.kjvVerses.forEach(verse => {
-                const cacheKey = `${book.id}:${chapter}:${verse.num}`;
-                cache.set(cacheKey, verse.text);
-
-                // Index each word in the verse
-                const words = verse.text.toLowerCase()
-                  .replace(/[^\w\s]/g, '') // Remove punctuation
-                  .split(/\s+/)
-                  .filter(w => w.length > 0);
-
-                words.forEach(word => {
-                  if (!index[word]) {
-                    index[word] = [];
-                  }
-                  index[word].push({
-                    bookId: book.id,
-                    chapter,
-                    verse: verse.num
-                  });
-                });
-              });
-            } catch (error) {
-              console.error(`Error indexing ${book.name} ${chapter}:`, error);
-            }
-          }
+        const response = await fetch(PATHS.SEARCH_INDEX);
+        if (!response.ok) {
+          throw new Error(`Failed to load search index: ${response.status}`);
         }
 
-        this.searchIndex = index;
-        this.verseCache = cache;
-
-        // Build prefix index for fast partial matching
-        this.prefixIndex = buildPrefixIndex(Object.keys(index));
+        this.prebuiltIndex = await response.json();
 
         const endTime = performance.now();
-        console.log(`Search index built in ${((endTime - startTime) / 1000).toFixed(2)}s`);
-        console.log(`Indexed ${Object.keys(index).length} unique words`);
-        console.log(`Cached ${cache.size} verses`);
-        console.log(`Prefix index has ${this.prefixIndex.size} prefixes`);
+        console.log(`Search index loaded in ${((endTime - startTime) / 1000).toFixed(2)}s`);
+        console.log(`Index stats:`, this.prebuiltIndex?.stats);
+      } catch (error) {
+        console.error('Error loading pre-built search index:', error);
+        throw error;
       } finally {
-        this.indexingInProgress = false;
-        this.indexingPromise = null;
-        this.abortController = null;
+        this.indexLoading = false;
+        this.indexLoadPromise = null;
       }
     })();
 
-    return this.indexingPromise;
+    return this.indexLoadPromise;
   }
 
   /**
-   * Cancel ongoing index building
+   * Fast search using the pre-built index
    */
-  cancelIndexing(): void {
-    if (this.abortController) {
-      this.abortController.abort();
-    }
-  }
-
-  /**
-   * Fast search using the index - returns results with total count
-   */
-  async searchIndexed(query: string, maxResults: number = 100): Promise<SearchResponse> {
-    // Wait for indexing to complete if in progress
-    if (this.indexingInProgress && this.indexingPromise) {
-      await this.indexingPromise;
+  async search(query: string, maxResults: number = 100): Promise<SearchResponse> {
+    if (!query || query.trim().length === 0) {
+      return { results: [], totalCount: 0, hasMore: false };
     }
 
-    // If no index, fall back to sequential search
-    if (!this.searchIndex) {
-      console.warn('Search index not available, using sequential search');
-      return this.searchSequential(query, maxResults);
+    // Ensure index is loaded
+    if (!this.prebuiltIndex) {
+      await this.loadPrebuiltIndex();
+    }
+
+    if (!this.prebuiltIndex) {
+      console.error('Search index not available');
+      return { results: [], totalCount: 0, hasMore: false };
     }
 
     const queryLower = query.toLowerCase().trim();
@@ -174,27 +115,26 @@ export class SearchService {
       const matches = new Set<string>();
 
       // Exact word match
-      if (this.searchIndex![word]) {
-        this.searchIndex![word].forEach(loc => {
-          matches.add(`${loc.bookId}:${loc.chapter}:${loc.verse}`);
-        });
+      const exactMatches = this.prebuiltIndex!.wordIndex[word];
+      if (exactMatches) {
+        for (const [bookId, chapter, verse] of exactMatches) {
+          matches.add(`${bookId}:${chapter}:${verse}`);
+        }
       }
 
       // Fast prefix-based partial matching using prefix index
-      if (this.prefixIndex && word.length >= 2) {
-        // Get the prefix (2-4 chars) to look up
+      if (word.length >= 2) {
         const prefixLen = Math.min(4, word.length);
         const prefix = word.substring(0, prefixLen);
-        const matchingWords = this.prefixIndex.get(prefix);
+        const matchingWords = this.prebuiltIndex!.prefixIndex[prefix];
 
         if (matchingWords) {
-          // Only check words that share the same prefix
           for (const indexedWord of matchingWords) {
             if (indexedWord.startsWith(word) && indexedWord !== word) {
-              const locations = this.searchIndex![indexedWord];
+              const locations = this.prebuiltIndex!.wordIndex[indexedWord];
               if (locations) {
-                for (const loc of locations) {
-                  matches.add(`${loc.bookId}:${loc.chapter}:${loc.verse}`);
+                for (const [bookId, chapter, verse] of locations) {
+                  matches.add(`${bookId}:${chapter}:${verse}`);
                 }
               }
             }
@@ -206,31 +146,39 @@ export class SearchService {
     });
 
     // Intersect all sets to find verses containing all words
-    const intersection = verseSets.reduce((acc, set) => {
-      if (acc.size === 0) return set;
-      const accArray = Array.from(acc);
-      return new Set(accArray.filter(x => set.has(x)));
-    });
+    let intersection: Set<string>;
+    if (verseSets.length === 0) {
+      intersection = new Set();
+    } else if (verseSets.length === 1) {
+      intersection = verseSets[0];
+    } else {
+      // Start with smallest set for efficiency
+      const sortedSets = [...verseSets].sort((a, b) => a.size - b.size);
+      intersection = sortedSets[0];
+      for (let i = 1; i < sortedSets.length && intersection.size > 0; i++) {
+        const nextSet = sortedSets[i];
+        intersection = new Set(Array.from(intersection).filter(x => nextSet.has(x)));
+      }
+    }
 
-    // Build all matching results first to get total count
+    // Build results - early exit when we have enough for display
     const allMatchingResults: SearchResult[] = [];
     const verseKeys = Array.from(intersection);
 
     for (const verseKey of verseKeys) {
-      const text = this.verseCache.get(verseKey);
+      const text = this.prebuiltIndex.verseCache[verseKey];
       if (!text) continue;
 
       // Verify the verse actually contains the full query (case-insensitive)
-      if (!text.toLowerCase().includes(queryLower)) {
+      const textLower = text.toLowerCase();
+      if (!textLower.includes(queryLower)) {
         // Check if it contains all words
-        const containsAllWords = queryWords.every(word =>
-          text.toLowerCase().includes(word)
-        );
+        const containsAllWords = queryWords.every(word => textLower.includes(word));
         if (!containsAllWords) continue;
       }
 
       const [bookId, chapter, verse] = verseKey.split(':').map(Number);
-      const book = BIBLE_BOOKS.find(b => b.id === bookId);
+      const book = BOOK_MAP.get(bookId);
 
       if (book) {
         allMatchingResults.push({
@@ -261,94 +209,35 @@ export class SearchService {
   }
 
   /**
-   * Sequential search (fallback when index not available)
-   * Limited to first N results for performance
-   */
-  async searchSequential(query: string, maxResults: number = 50): Promise<SearchResponse> {
-    const results: SearchResult[] = [];
-    const searchLower = query.toLowerCase();
-    let totalFound = 0;
-
-    // Filter out Apocrypha books from search
-    const booksToSearch = BIBLE_BOOKS.filter(b => !b.isApocrypha);
-
-    for (const book of booksToSearch) {
-      for (let chapter = 1; chapter <= book.chapters; chapter++) {
-        try {
-          const chapterData = await bibleService.loadChapter(book.id, chapter);
-          chapterData.kjvVerses.forEach(verse => {
-            if (verse.text.toLowerCase().includes(searchLower)) {
-              totalFound++;
-              if (results.length < maxResults) {
-                results.push({
-                  bookId: book.id,
-                  bookName: book.name,
-                  chapterNum: chapter,
-                  verseNum: verse.num,
-                  text: verse.text,
-                });
-              }
-            }
-          });
-        } catch (error) {
-          console.error(`Error searching ${book.name} ${chapter}:`, error);
-        }
-      }
-    }
-
-    return {
-      results,
-      totalCount: totalFound,
-      hasMore: totalFound > results.length
-    };
-  }
-
-  /**
-   * Main search method - returns SearchResponse with results and total count
-   */
-  async search(query: string, maxResults: number = 100): Promise<SearchResponse> {
-    if (!query || query.trim().length === 0) {
-      return { results: [], totalCount: 0, hasMore: false };
-    }
-
-    // Use indexed search if available, otherwise sequential
-    if (this.searchIndex) {
-      return this.searchIndexed(query, maxResults);
-    } else {
-      return this.searchSequential(query, maxResults);
-    }
-  }
-
-  /**
    * Search for all results (no limit) - useful for "View All" functionality
    */
   async searchAll(query: string): Promise<SearchResponse> {
-    return this.search(query, 0); // 0 means no limit
+    return this.search(query, 0);
   }
 
   /**
    * Check if index is ready
    */
   isIndexReady(): boolean {
-    return this.searchIndex !== null;
+    return this.prebuiltIndex !== null;
   }
 
   /**
-   * Get indexing progress
+   * Check if index is loading
    */
   isIndexing(): boolean {
-    return this.indexingInProgress;
+    return this.indexLoading;
   }
 }
 
 export const searchService = new SearchService();
 
-// Start building index when the app loads (non-blocking)
+// Start loading index when the app loads (non-blocking)
 if (typeof window !== 'undefined') {
-  // Delay index building slightly to not block initial page load
+  // Small delay to not block initial page render
   setTimeout(() => {
-    searchService.buildSearchIndex().catch(err => {
-      console.error('Failed to build search index:', err);
+    searchService.loadPrebuiltIndex().catch(err => {
+      console.error('Failed to load search index:', err);
     });
-  }, 2000);
+  }, 500);
 }
