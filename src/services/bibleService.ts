@@ -1,11 +1,12 @@
 import { Chapter, BIBLE_BOOKS } from '../types/bible';
 import { XMLParser } from '../utils/xmlParser';
 import { apocryphaService } from './apocryphaService';
+import { PATHS } from '../config/paths';
 
 export class BibleService {
   private basePath: string;
 
-  constructor(basePath: string = '/xmlBible.org-main') {
+  constructor(basePath: string = PATHS.BIBLE_DATA) {
     this.basePath = basePath;
   }
 

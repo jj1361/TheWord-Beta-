@@ -1,4 +1,5 @@
 import { Chapter, KJVVerse, BIBLE_BOOKS } from '../types/bible';
+import { PATHS } from '../config/paths';
 
 export class ApocryphaService {
   private apocryphaData: Map<string, KJVVerse[]> = new Map();
@@ -8,7 +9,7 @@ export class ApocryphaService {
     if (this.dataLoaded) return;
 
     try {
-      const response = await fetch('/apocrypha/apodat.csv');
+      const response = await fetch(`${PATHS.APOCRYPHA}/apodat.csv`);
       const csvText = await response.text();
 
       // Parse CSV: BookCode|Chapter|Verse|Text

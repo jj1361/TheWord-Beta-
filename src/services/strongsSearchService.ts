@@ -1,4 +1,5 @@
 import { BIBLE_BOOKS } from '../types/bible';
+import { PATHS } from '../config/paths';
 
 interface VerseReference {
   bookId: number;
@@ -88,7 +89,7 @@ class StrongsSearchService {
       const paddedBookId = String(bookId).padStart(2, '0');
       const bookFolder = `${paddedBookId}-${bookName.replace(/ /g, '-')}`;
       const chapterFile = `chapter-${String(chapterNum).padStart(3, '0')}.xml`;
-      const xmlPath = `/xmlBible.org-main/KJVs/${bookFolder}/${chapterFile}`;
+      const xmlPath = `${PATHS.BIBLE_DATA}/KJVs/${bookFolder}/${chapterFile}`;
 
       // Fetch and parse the XML
       const response = await fetch(xmlPath);

@@ -1,4 +1,5 @@
 import { PersonData, VerseData, BookData } from '../types/person';
+import { PATHS } from '../config/paths';
 
 export class PersonService {
   private peopleCache: Map<string, PersonData> = new Map();
@@ -34,7 +35,7 @@ export class PersonService {
     if (this.peopleLoaded) return;
 
     try {
-      const response = await fetch('/data/people-completed_records.csv');
+      const response = await fetch(`${PATHS.DATA}/people-completed_records.csv`);
       const csvText = await response.text();
       const lines = csvText.split('\n');
 
@@ -96,7 +97,7 @@ export class PersonService {
     if (this.versesLoaded) return;
 
     try {
-      const response = await fetch('/data/verses-completed_records.csv');
+      const response = await fetch(`${PATHS.DATA}/verses-completed_records.csv`);
       const csvText = await response.text();
       const lines = csvText.split('\n');
 
@@ -143,7 +144,7 @@ export class PersonService {
     if (this.booksLoaded) return;
 
     try {
-      const response = await fetch('/data/books-Grid view.csv');
+      const response = await fetch(`${PATHS.DATA}/books-Grid view.csv`);
       const csvText = await response.text();
       const lines = csvText.split('\n');
 

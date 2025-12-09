@@ -1,4 +1,5 @@
 import { StrongsEntry, BDBEntry, LexiconData, StepBibleEntry, AHLBEntry } from '../types/lexicon';
+import { PATHS } from '../config/paths';
 
 export class LexiconService {
   private strongsCache: Map<string, StrongsEntry> = new Map();
@@ -23,7 +24,7 @@ export class LexiconService {
 
     try {
       // Load Greek dictionary
-      const greekResponse = await fetch('/lexicon/strongs-greek-dictionary.js');
+      const greekResponse = await fetch(`${PATHS.LEXICON}/strongs-greek-dictionary.js`);
       const greekText = await greekResponse.text();
       // Extract the dictionary object from the JavaScript file
       const greekMatch = greekText.match(/var strongsGreekDictionary = (\{[\s\S]*\});/);
@@ -32,7 +33,7 @@ export class LexiconService {
       }
 
       // Load Hebrew dictionary
-      const hebrewResponse = await fetch('/lexicon/strongs-hebrew-dictionary.js');
+      const hebrewResponse = await fetch(`${PATHS.LEXICON}/strongs-hebrew-dictionary.js`);
       const hebrewText = await hebrewResponse.text();
       // Extract the dictionary object from the JavaScript file
       const hebrewMatch = hebrewText.match(/var strongsHebrewDictionary = (\{[\s\S]*\});/);
@@ -121,7 +122,7 @@ export class LexiconService {
     if (this.lexicalIndexLoaded) return;
 
     try {
-      const response = await fetch('/lexicon/LexicalIndex.xml');
+      const response = await fetch(`${PATHS.LEXICON}/LexicalIndex.xml`);
       const xmlText = await response.text();
       const parser = new DOMParser();
       const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
@@ -151,7 +152,7 @@ export class LexiconService {
     }
 
     try {
-      const response = await fetch('/lexicon/BrownDriverBriggs.xml');
+      const response = await fetch(`${PATHS.LEXICON}/BrownDriverBriggs.xml`);
       const xmlText = await response.text();
       const parser = new DOMParser();
       const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
@@ -245,14 +246,14 @@ export class LexiconService {
 
     try {
       // Load Hebrew lexicon
-      const hebrewResponse = await fetch('/lexicon/stepbible-hebrew.json');
+      const hebrewResponse = await fetch(`${PATHS.LEXICON}/stepbible-hebrew.json`);
       const hebrewData = await hebrewResponse.json();
       Object.entries(hebrewData).forEach(([key, value]) => {
         this.stepBibleHebrew.set(key, value as StepBibleEntry);
       });
 
       // Load Greek lexicon
-      const greekResponse = await fetch('/lexicon/stepbible-greek.json');
+      const greekResponse = await fetch(`${PATHS.LEXICON}/stepbible-greek.json`);
       const greekData = await greekResponse.json();
       Object.entries(greekData).forEach(([key, value]) => {
         this.stepBibleGreek.set(key, value as StepBibleEntry);
@@ -308,7 +309,7 @@ export class LexiconService {
     if (this.ahlbLoaded) return;
 
     try {
-      const response = await fetch('/lexicon/ahlb-hebrew.json');
+      const response = await fetch(`${PATHS.LEXICON}/ahlb-hebrew.json`);
       const data = await response.json();
       Object.entries(data).forEach(([key, value]) => {
         this.ahlbHebrew.set(key, value as AHLBEntry);
