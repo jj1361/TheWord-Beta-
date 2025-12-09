@@ -42,42 +42,76 @@ const PresentationViewer: React.FC<PresentationViewerProps> = ({
     }
   }, [presentationUrl]);
 
-  // Convert various OneDrive URL formats to embeddable format
+  // Convert various URL formats to embeddable format
   const convertToEmbedUrl = (url: string): string => {
     try {
-      if (url.includes('/embed?') || url.includes('action=embedview')) {
+      // Already an embed URL
+      if (url.includes('/embed?') || url.includes('action=embedview') || url.includes('action=embed')) {
         return url;
       }
 
+      // OneDrive live.com URLs
       if (url.includes('onedrive.live.com')) {
+        // Check for resid parameter
         const residMatch = url.match(/resid=([^&]+)/i);
         if (residMatch) {
           const resid = decodeURIComponent(residMatch[1]);
-          return `https://onedrive.live.com/embed?resid=${resid}&authkey=&em=2`;
+          // Extract authkey if present
+          const authkeyMatch = url.match(/authkey=([^&]+)/i);
+          const authkey = authkeyMatch ? decodeURIComponent(authkeyMatch[1]) : '';
+          return `https://onedrive.live.com/embed?resid=${resid}&authkey=${authkey}&em=2`;
         }
 
+        // Check for resid in path format
         const pathResidMatch = url.match(/([A-F0-9]{16})!(\d+)/i);
         if (pathResidMatch) {
           const resid = `${pathResidMatch[1]}!${pathResidMatch[2]}`;
-          return `https://onedrive.live.com/embed?resid=${resid}&authkey=&em=2`;
+          const authkeyMatch = url.match(/authkey=([^&]+)/i);
+          const authkey = authkeyMatch ? decodeURIComponent(authkeyMatch[1]) : '';
+          return `https://onedrive.live.com/embed?resid=${resid}&authkey=${authkey}&em=2`;
         }
       }
 
+      // Short OneDrive share links (1drv.ms)
       if (url.includes('1drv.ms')) {
+        // Already has embed parameter
         if (url.includes('em=2') || url.includes('embed')) {
           return url;
         }
+        // OneNote links - handled elsewhere
         if (url.includes('/o/')) {
           return url;
         }
+        // PowerPoint links (/p/)
         if (url.includes('/p/')) {
           const separator = url.includes('?') ? '&' : '?';
           return `${url}${separator}em=2`;
         }
-        return url;
+        // Excel links (/x/)
+        if (url.includes('/x/')) {
+          const separator = url.includes('?') ? '&' : '?';
+          return `${url}${separator}em=2`;
+        }
+        // Word links (/w/)
+        if (url.includes('/w/')) {
+          const separator = url.includes('?') ? '&' : '?';
+          return `${url}${separator}em=2`;
+        }
+        // Generic - try adding em=2
+        const separator = url.includes('?') ? '&' : '?';
+        return `${url}${separator}em=2`;
       }
 
+      // SharePoint URLs
       if (url.includes('sharepoint.com')) {
+        // PowerPoint web URLs
+        if (url.includes('/_layouts/') && url.includes('sourcedoc=')) {
+          if (!url.includes('action=')) {
+            const separator = url.includes('?') ? '&' : '?';
+            return `${url}${separator}action=embedview`;
+          }
+        }
+        // Direct file URLs
         if (!url.includes('action=')) {
           const separator = url.includes('?') ? '&' : '?';
           return `${url}${separator}action=embedview`;
@@ -85,7 +119,15 @@ const PresentationViewer: React.FC<PresentationViewerProps> = ({
         return url;
       }
 
+      // Office.com and Office Online URLs
       if (url.includes('office.com') || url.includes('officeapps.live.com')) {
+        // PowerPoint Online viewer
+        if (url.includes('view.officeapps.live.com') || url.includes('powerpoint')) {
+          if (!url.includes('action=')) {
+            const separator = url.includes('?') ? '&' : '?';
+            return `${url}${separator}action=embedview`;
+          }
+        }
         if (!url.includes('action=')) {
           const separator = url.includes('?') ? '&' : '?';
           return `${url}${separator}action=embedview`;
@@ -93,15 +135,36 @@ const PresentationViewer: React.FC<PresentationViewerProps> = ({
         return url;
       }
 
+      // Google Slides
       if (url.includes('docs.google.com/presentation')) {
         if (url.includes('/edit')) {
-          return url.replace('/edit', '/embed');
+          return url.replace('/edit', '/embed').split('?')[0] + '?start=false&loop=false&delayms=3000';
         }
+        if (url.includes('/view')) {
+          return url.replace('/view', '/embed').split('?')[0] + '?start=false&loop=false&delayms=3000';
+        }
+        if (!url.includes('/embed')) {
+          const baseUrl = url.split('?')[0];
+          return baseUrl + (baseUrl.endsWith('/') ? 'embed' : '/embed') + '?start=false&loop=false&delayms=3000';
+        }
+        return url;
+      }
+
+      // Canva presentations
+      if (url.includes('canva.com')) {
         if (url.includes('/view')) {
           return url.replace('/view', '/embed');
         }
         if (!url.includes('/embed')) {
-          return url + (url.endsWith('/') ? 'embed' : '/embed');
+          return url + '/embed';
+        }
+        return url;
+      }
+
+      // Prezi presentations
+      if (url.includes('prezi.com')) {
+        if (!url.includes('/embed')) {
+          return url.replace('/view/', '/embed/').replace('/present/', '/embed/');
         }
         return url;
       }
