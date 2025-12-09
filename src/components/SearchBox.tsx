@@ -96,10 +96,10 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onSearch, onResultClick, onWordSe
       clearTimeout(debounceTimerRef.current);
     }
 
-    // Set new debounce timer (500ms delay)
+    // Set new debounce timer (300ms delay - responsive with optimized search)
     debounceTimerRef.current = setTimeout(() => {
       performSearch(newQuery);
-    }, 500);
+    }, 300);
   };
 
   // Check if query is a Strong's ID (e.g., "H123", "G456", "123", "0123")

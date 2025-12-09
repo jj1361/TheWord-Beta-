@@ -23,8 +23,27 @@ interface SearchIndex {
   }>;
 }
 
+// Build a simple prefix index for fast prefix lookups
+function buildPrefixIndex(words: string[]): Map<string, string[]> {
+  const prefixIndex = new Map<string, string[]>();
+
+  for (const word of words) {
+    // Index prefixes of length 2-4 (most useful for search)
+    for (let len = 2; len <= Math.min(4, word.length); len++) {
+      const prefix = word.substring(0, len);
+      if (!prefixIndex.has(prefix)) {
+        prefixIndex.set(prefix, []);
+      }
+      prefixIndex.get(prefix)!.push(word);
+    }
+  }
+
+  return prefixIndex;
+}
+
 export class SearchService {
   private searchIndex: SearchIndex | null = null;
+  private prefixIndex: Map<string, string[]> | null = null;
   private verseCache: Map<string, string> = new Map();
   private indexingInProgress = false;
   private indexingPromise: Promise<void> | null = null;
@@ -56,7 +75,10 @@ export class SearchService {
       const startTime = performance.now();
 
       try {
-        for (const book of BIBLE_BOOKS) {
+        // Filter out Apocrypha books from indexing
+        const booksToIndex = BIBLE_BOOKS.filter(b => !b.isApocrypha);
+
+        for (const book of booksToIndex) {
           if (this.abortController?.signal.aborted) {
             throw new Error('Indexing aborted');
           }
@@ -95,10 +117,14 @@ export class SearchService {
         this.searchIndex = index;
         this.verseCache = cache;
 
+        // Build prefix index for fast partial matching
+        this.prefixIndex = buildPrefixIndex(Object.keys(index));
+
         const endTime = performance.now();
         console.log(`Search index built in ${((endTime - startTime) / 1000).toFixed(2)}s`);
         console.log(`Indexed ${Object.keys(index).length} unique words`);
         console.log(`Cached ${cache.size} verses`);
+        console.log(`Prefix index has ${this.prefixIndex.size} prefixes`);
       } finally {
         this.indexingInProgress = false;
         this.indexingPromise = null;
@@ -154,14 +180,27 @@ export class SearchService {
         });
       }
 
-      // Partial word match (for words that start with the query word)
-      Object.keys(this.searchIndex!).forEach(indexedWord => {
-        if (indexedWord.startsWith(word) || indexedWord.includes(word)) {
-          this.searchIndex![indexedWord].forEach(loc => {
-            matches.add(`${loc.bookId}:${loc.chapter}:${loc.verse}`);
-          });
+      // Fast prefix-based partial matching using prefix index
+      if (this.prefixIndex && word.length >= 2) {
+        // Get the prefix (2-4 chars) to look up
+        const prefixLen = Math.min(4, word.length);
+        const prefix = word.substring(0, prefixLen);
+        const matchingWords = this.prefixIndex.get(prefix);
+
+        if (matchingWords) {
+          // Only check words that share the same prefix
+          for (const indexedWord of matchingWords) {
+            if (indexedWord.startsWith(word) && indexedWord !== word) {
+              const locations = this.searchIndex![indexedWord];
+              if (locations) {
+                for (const loc of locations) {
+                  matches.add(`${loc.bookId}:${loc.chapter}:${loc.verse}`);
+                }
+              }
+            }
+          }
         }
-      });
+      }
 
       return matches;
     });
@@ -230,7 +269,10 @@ export class SearchService {
     const searchLower = query.toLowerCase();
     let totalFound = 0;
 
-    for (const book of BIBLE_BOOKS) {
+    // Filter out Apocrypha books from search
+    const booksToSearch = BIBLE_BOOKS.filter(b => !b.isApocrypha);
+
+    for (const book of booksToSearch) {
       for (let chapter = 1; chapter <= book.chapters; chapter++) {
         try {
           const chapterData = await bibleService.loadChapter(book.id, chapter);
