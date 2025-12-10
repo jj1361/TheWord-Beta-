@@ -159,7 +159,7 @@ body {
 }
 
 .webcam-section {
-  width: 475px;
+  width: clamp(400px, 45vw, 830px);
   flex-shrink: 0;
   animation: slideIn 0.3s ease;
   position: sticky;

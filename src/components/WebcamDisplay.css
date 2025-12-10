@@ -21,6 +21,7 @@
   border-radius: 8px;
   overflow: hidden;
   aspect-ratio: 9 / 16;
+  max-height: calc(100vh - 150px);
 }
 
 .webcam-section.fullscreen .webcam-video-container {
