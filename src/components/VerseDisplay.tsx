@@ -461,7 +461,7 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
             }}
             title={isSelected ? 'Hide Interlinear' : 'Show Interlinear'}
           >
-            {isSelected ? '▼' : '▶'}
+            ℹ
           </button>
         )}
       </div>
