@@ -489,6 +489,10 @@ function App() {
           // Get the full text content of the verse (this collapses all nested spans)
           const fullText = verseTextElement.textContent || '';
 
+          // Normalize the selected text to handle any whitespace differences
+          const normalizedSelectedText = selectedText.replace(/\s+/g, ' ').trim();
+          const normalizedFullText = fullText.replace(/\s+/g, ' ');
+
           // Check if the selection is within the verse text element
           if (verseTextElement.contains(range.startContainer)) {
             try {
@@ -507,27 +511,29 @@ function App() {
                   startOffset,
                   endOffset,
                 };
-              } else {
-                // Fallback: search for the selected text in the full verse text
-                const foundIndex = fullText.indexOf(selectedText);
-                if (foundIndex !== -1) {
-                  textSelection = {
-                    text: selectedText,
-                    startOffset: foundIndex,
-                    endOffset: foundIndex + selectedText.length,
-                  };
-                }
               }
             } catch {
-              // If range operations fail, try fallback search
-              const foundIndex = fullText.indexOf(selectedText);
-              if (foundIndex !== -1) {
-                textSelection = {
-                  text: selectedText,
-                  startOffset: foundIndex,
-                  endOffset: foundIndex + selectedText.length,
-                };
-              }
+              // Range operations failed, will use fallback below
+            }
+          }
+
+          // Fallback: search for the selected text in the full verse text
+          // This handles cases where range operations fail or text spans multiple elements
+          if (!textSelection) {
+            // First try exact match
+            let foundIndex = fullText.indexOf(selectedText);
+
+            // If not found, try with normalized whitespace
+            if (foundIndex === -1 && normalizedSelectedText.length > 0) {
+              foundIndex = normalizedFullText.indexOf(normalizedSelectedText);
+            }
+
+            if (foundIndex !== -1) {
+              textSelection = {
+                text: selectedText,
+                startOffset: foundIndex,
+                endOffset: foundIndex + selectedText.length,
+              };
             }
           }
         }
