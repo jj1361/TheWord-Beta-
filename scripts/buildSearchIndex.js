@@ -6,7 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 
-// Bible books configuration (canonical only, no Apocrypha)
+// Bible books configuration (canonical books)
 const BIBLE_BOOKS = [
   { id: 1, name: "Genesis", chapters: 50 },
   { id: 2, name: "Exodus", chapters: 40 },
@@ -76,9 +76,36 @@ const BIBLE_BOOKS = [
   { id: 66, name: "Revelation", chapters: 22 },
 ];
 
+// Apocrypha books with their codes from apodat.csv
+const APOCRYPHA_BOOKS = [
+  { id: 67, name: "Tobit", code: "Tob" },
+  { id: 68, name: "Judith", code: "Jdt" },
+  { id: 69, name: "Additions to Esther", code: "Aes" },
+  { id: 70, name: "Wisdom of Solomon", code: "Wis" },
+  { id: 71, name: "Sirach", code: "Sir" },
+  { id: 72, name: "Baruch", code: "Bar" },
+  { id: 73, name: "Letter of Jeremiah", code: "Epj" },
+  { id: 74, name: "Prayer of Azariah", code: "Aza" },
+  { id: 75, name: "Susanna", code: "Sus" },
+  { id: 76, name: "Bel and the Dragon", code: "Bel" },
+  { id: 77, name: "Prayer of Manasseh", code: "Man" },
+  { id: 78, name: "1 Maccabees", code: "Ma1" },
+  { id: 79, name: "2 Maccabees", code: "Ma2" },
+  { id: 80, name: "1 Esdras", code: "Es1" },
+  { id: 81, name: "2 Esdras", code: "Es2" },
+  { id: 82, name: "Epistle to Laodiceans", code: "Lao" },
+];
+
 const PUBLIC_DIR = path.join(__dirname, '../public');
 const BIBLE_DATA_DIR = path.join(PUBLIC_DIR, 'xmlBible.org-main/KJV');
+const APOCRYPHA_CSV = path.join(PUBLIC_DIR, 'apocrypha/apodat.csv');
 const OUTPUT_FILE = path.join(PUBLIC_DIR, 'search-index.json');
+
+// Create a map from book code to book info for Apocrypha
+const APOCRYPHA_CODE_MAP = {};
+for (const book of APOCRYPHA_BOOKS) {
+  APOCRYPHA_CODE_MAP[book.code] = book;
+}
 
 function getBookFolder(bookId, bookName) {
   const paddedId = bookId.toString().padStart(2, '0');
@@ -87,6 +114,35 @@ function getBookFolder(bookId, bookName) {
 
 function getChapterFileName(chapterNum) {
   return `chapter-${chapterNum.toString().padStart(3, '0')}.xml`;
+}
+
+function parseApocryphaCSV(csvContent) {
+  const verses = [];
+  const lines = csvContent.split('\n');
+
+  for (const line of lines) {
+    if (!line.trim()) continue;
+
+    // Format: BookCode|Chapter|Verse|Text
+    const parts = line.split('|');
+    if (parts.length < 4) continue;
+
+    const [bookCode, chapter, verse, ...textParts] = parts;
+    const text = textParts.join('|').trim(); // Rejoin in case text contains |
+
+    const book = APOCRYPHA_CODE_MAP[bookCode];
+    if (!book) continue;
+
+    verses.push({
+      bookId: book.id,
+      bookName: book.name,
+      chapter: parseInt(chapter, 10),
+      verse: parseInt(verse, 10),
+      text,
+    });
+  }
+
+  return verses;
 }
 
 function parseXMLVerses(xmlContent) {
@@ -189,6 +245,43 @@ async function buildSearchIndex() {
 
   console.log('\n');
 
+  // Process Apocrypha books from CSV
+  console.log('Processing Apocrypha books...');
+  let apocryphaVerses = 0;
+
+  if (fs.existsSync(APOCRYPHA_CSV)) {
+    try {
+      const csvContent = fs.readFileSync(APOCRYPHA_CSV, 'utf8');
+      const apoVerses = parseApocryphaCSV(csvContent);
+
+      for (const apoVerse of apoVerses) {
+        const cacheKey = `${apoVerse.bookId}:${apoVerse.chapter}:${apoVerse.verse}`;
+        verseCache[cacheKey] = apoVerse.text;
+        totalVerses++;
+        apocryphaVerses++;
+
+        // Index each word
+        const words = apoVerse.text.toLowerCase()
+          .replace(/[^\w\s]/g, '') // Remove punctuation
+          .split(/\s+/)
+          .filter(w => w.length > 0);
+
+        for (const word of words) {
+          if (!wordIndex[word]) {
+            wordIndex[word] = [];
+          }
+          wordIndex[word].push([apoVerse.bookId, apoVerse.chapter, apoVerse.verse]);
+        }
+      }
+
+      console.log(`  - Processed ${apocryphaVerses} Apocrypha verses`);
+    } catch (error) {
+      console.error('Error processing Apocrypha:', error.message);
+    }
+  } else {
+    console.warn('Warning: Apocrypha CSV not found:', APOCRYPHA_CSV);
+  }
+
   // Build prefix index for fast partial matching
   const words = Object.keys(wordIndex);
   const prefixIndex = {};
@@ -228,7 +321,7 @@ async function buildSearchIndex() {
   const duration = ((endTime - startTime) / 1000).toFixed(2);
 
   console.log('Search index built successfully!');
-  console.log(`  - Total verses: ${totalVerses}`);
+  console.log(`  - Total verses: ${totalVerses} (${totalVerses - apocryphaVerses} canonical + ${apocryphaVerses} Apocrypha)`);
   console.log(`  - Total chapters: ${totalChapters}`);
   console.log(`  - Unique words: ${words.length}`);
   console.log(`  - Prefix entries: ${Object.keys(prefixIndex).length}`);
