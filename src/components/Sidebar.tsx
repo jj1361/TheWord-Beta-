@@ -44,6 +44,7 @@ interface SidebarProps {
   onToggleNotesPanel: () => void;
   // Presentation props
   onTogglePresentation: () => void;
+  onToggleScripturePresentation: () => void;
   // Auth props
   isSignedIn: boolean;
   onSignInClick: () => void;
@@ -89,6 +90,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   onToggleNotesPanel,
   // Presentation props
   onTogglePresentation,
+  onToggleScripturePresentation,
   // Auth props
   isSignedIn,
   onSignInClick,
@@ -170,6 +172,14 @@ const Sidebar: React.FC<SidebarProps> = ({
           title="View Presentation"
         >
           📊
+        </button>
+
+        <button
+          className="sidebar-btn scripture-presentation-btn"
+          onClick={onToggleScripturePresentation}
+          title="Scripture Presentation View"
+        >
+          🎬
         </button>
 
         <div className="sidebar-divider"></div>

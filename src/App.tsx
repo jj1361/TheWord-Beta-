@@ -19,6 +19,7 @@ import VerseHighlighter from './components/VerseHighlighter';
 import { LoginModal, SignupModal, AuthButton } from './components/Auth';
 import { AdminPanel } from './components/AdminPanel';
 import PresentationViewer from './components/PresentationViewer';
+import ScripturePresentationView from './components/ScripturePresentationView';
 import { useAuth } from './contexts/AuthContext';
 import { bibleService } from './services/bibleService';
 import { searchService } from './services/searchService';
@@ -114,6 +115,7 @@ function App() {
 
   // Presentation viewer state
   const [showPresentation, setShowPresentation] = useState(false);
+  const [showScripturePresentation, setShowScripturePresentation] = useState(false);
   const [presentationUrl, setPresentationUrl] = useState(() => {
     const saved = localStorage.getItem('presentationUrl');
     // Default to the embed URL format from OneDrive's "Embed" share option
@@ -819,6 +821,7 @@ function App() {
         onToggleNotesPanel={() => setShowNotesPanel(!showNotesPanel)}
         // Presentation props
         onTogglePresentation={() => setShowPresentation(true)}
+        onToggleScripturePresentation={() => setShowScripturePresentation(true)}
         // Auth props
         isSignedIn={!!user}
         onSignInClick={() => setShowLoginModal(true)}
@@ -1172,6 +1175,21 @@ function App() {
         presentationUrl={presentationUrl}
         onUpdateUrl={handleUpdatePresentationUrl}
       />
+
+      {/* Scripture Presentation View */}
+      {showScripturePresentation && chapter && (
+        <ScripturePresentationView
+          bookName={chapter.bookName}
+          bookId={currentBookId}
+          chapterNum={chapter.chapterNum}
+          verses={chapter.kjvVerses}
+          onClose={() => setShowScripturePresentation(false)}
+          onNavigate={(bookId, chapterNum) => {
+            loadChapter(bookId, chapterNum);
+          }}
+          initialVerse={selectedVerse || navigatedVerse || 1}
+        />
+      )}
 
       <footer className="app-footer">
         <div className="footer-content">
