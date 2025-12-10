@@ -159,14 +159,14 @@ body {
 }
 
 .webcam-section {
-  width: clamp(400px, 45vw, 830px);
+  width: clamp(300px, 40vw, 600px);
   flex-shrink: 0;
   animation: slideIn 0.3s ease;
   position: sticky;
-  top: 20px;
+  top: 140px;
   align-self: flex-start;
-  max-height: calc(100vh - 100px);
-  overflow-y: auto;
+  max-height: calc(100vh - 160px);
+  overflow: visible;
 }
 
 .webcam-section.fullscreen {

@@ -1,8 +1,6 @@
 .webcam-display {
-  background: white;
+  background: transparent;
   border-radius: 12px;
-  /* padding: 20px; */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   height: fit-content;
 }
 
@@ -21,7 +19,10 @@
   border-radius: 8px;
   overflow: hidden;
   aspect-ratio: 9 / 16;
-  max-height: calc(100vh - 150px);
+  max-height: calc(100vh - 200px);
+  /* Ensure the container respects max-height by allowing width to shrink */
+  max-width: calc((100vh - 200px) * 9 / 16);
+  margin: 0 auto;
 }
 
 .webcam-section.fullscreen .webcam-video-container {
