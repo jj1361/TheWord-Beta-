@@ -1095,7 +1095,7 @@ function App() {
       )}
 
       {/* Verse Highlighter Popup */}
-      {highlighterPosition && highlighterVerse !== null && (
+      {highlighterPosition && highlighterVerse !== null && chapter && (
         <VerseHighlighter
           currentColor={getHighlightForVerse(highlighterVerse)?.color}
           onSelectColor={(color) => handleSetHighlight(highlighterVerse, color)}
@@ -1118,6 +1118,26 @@ function App() {
           textSelection={highlighterTextSelection || undefined}
           onApplyTextFormat={handleApplyTextFormat}
           onClearTextFormat={handleClearTextFormat}
+          verseNum={highlighterVerse}
+          bookName={chapter.bookName}
+          chapterNum={chapter.chapterNum}
+          verseText={chapter.kjvVerses.find(v => v.num === highlighterVerse)?.text || ''}
+          totalVerses={chapter.kjvVerses.length}
+          onCopyVerseRange={async (startVerse, endVerse) => {
+            const versesToCopy = chapter.kjvVerses
+              .filter(v => v.num >= startVerse && v.num <= endVerse)
+              .map(v => `${v.num}. ${v.text}`)
+              .join('\n');
+            const reference = startVerse === endVerse
+              ? `${chapter.bookName} ${chapter.chapterNum}:${startVerse}`
+              : `${chapter.bookName} ${chapter.chapterNum}:${startVerse}-${endVerse}`;
+            const textToCopy = `${reference}\n${versesToCopy}`;
+            try {
+              await navigator.clipboard.writeText(textToCopy);
+            } catch (err) {
+              console.error('Failed to copy verses:', err);
+            }
+          }}
         />
       )}
 

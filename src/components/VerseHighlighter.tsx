@@ -43,6 +43,13 @@ interface VerseHighlighterProps {
   textSelection?: TextSelection;
   onApplyTextFormat?: (style: TextFormatStyle) => void;
   onClearTextFormat?: () => void;
+  // Copy functionality props
+  verseNum: number;
+  bookName: string;
+  chapterNum: number;
+  verseText: string;
+  totalVerses: number;
+  onCopyVerseRange?: (startVerse: number, endVerse: number) => void;
 }
 
 const VerseHighlighter: React.FC<VerseHighlighterProps> = ({
@@ -56,13 +63,59 @@ const VerseHighlighter: React.FC<VerseHighlighterProps> = ({
   textSelection,
   onApplyTextFormat,
   onClearTextFormat,
+  verseNum,
+  bookName,
+  chapterNum,
+  verseText,
+  totalVerses,
+  onCopyVerseRange,
 }) => {
   const popupRef = useRef<HTMLDivElement>(null);
   const [showFontColors, setShowFontColors] = useState(false);
   const [showTextHighlights, setShowTextHighlights] = useState(false);
+  const [showRangeSelector, setShowRangeSelector] = useState(false);
+  const [endVerse, setEndVerse] = useState(verseNum);
+  const [copySuccess, setCopySuccess] = useState<string | null>(null);
 
   // Check if there's text selected in the document
   const hasTextSelection = textSelection && textSelection.text.length > 0;
+
+  // Reset range selector when verse changes
+  useEffect(() => {
+    setEndVerse(verseNum);
+    setShowRangeSelector(false);
+    setCopySuccess(null);
+  }, [verseNum]);
+
+  // Copy single verse to clipboard
+  const handleCopySingleVerse = async () => {
+    const reference = `${bookName} ${chapterNum}:${verseNum}`;
+    const textToCopy = `${reference}\n${verseText}`;
+
+    try {
+      await navigator.clipboard.writeText(textToCopy);
+      setCopySuccess('Copied!');
+      setTimeout(() => {
+        onClose();
+      }, 800);
+    } catch (err) {
+      console.error('Failed to copy verse:', err);
+    }
+  };
+
+  // Copy verse range
+  const handleCopyRange = async () => {
+    const startV = Math.min(verseNum, endVerse);
+    const endV = Math.max(verseNum, endVerse);
+
+    if (onCopyVerseRange) {
+      onCopyVerseRange(startV, endV);
+      setCopySuccess('Copied!');
+      setTimeout(() => {
+        onClose();
+      }, 800);
+    }
+  };
 
   // Apply formatting and save it, then close the popup so the change is visible
   const applyFormat = (style: TextFormatStyle) => {
@@ -299,6 +352,59 @@ const VerseHighlighter: React.FC<VerseHighlighterProps> = ({
         <span className="action-icon">📝</span>
         Add Note
       </button>
+
+      <div className="highlighter-divider" />
+
+      {/* Copy Verse Section */}
+      {copySuccess ? (
+        <div className="copy-success">
+          <span className="copy-success-icon">✓</span>
+          {copySuccess}
+        </div>
+      ) : showRangeSelector ? (
+        <div className="copy-range-section">
+          <div className="range-header">
+            <button className="back-btn" onClick={() => setShowRangeSelector(false)}>
+              ←
+            </button>
+            <span>Copy Range</span>
+          </div>
+          <div className="range-inputs">
+            <div className="range-row">
+              <span className="range-label">From:</span>
+              <span className="range-value">Verse {verseNum}</span>
+            </div>
+            <div className="range-row">
+              <span className="range-label">To:</span>
+              <select
+                value={endVerse}
+                onChange={(e) => setEndVerse(Number(e.target.value))}
+                className="range-select"
+              >
+                {Array.from({ length: totalVerses }, (_, i) => i + 1).map((num) => (
+                  <option key={num} value={num}>
+                    Verse {num}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
+          <button className="copy-range-btn" onClick={handleCopyRange}>
+            Copy {bookName} {chapterNum}:{Math.min(verseNum, endVerse)}-{Math.max(verseNum, endVerse)}
+          </button>
+        </div>
+      ) : (
+        <>
+          <button className="highlighter-action copy" onClick={handleCopySingleVerse}>
+            <span className="action-icon">📋</span>
+            Copy Verse {verseNum}
+          </button>
+          <button className="highlighter-action copy-range" onClick={() => setShowRangeSelector(true)}>
+            <span className="action-icon">📑</span>
+            Copy Verse Range...
+          </button>
+        </>
+      )}
     </div>
   );
 };

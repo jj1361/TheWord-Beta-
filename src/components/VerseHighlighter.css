@@ -288,3 +288,169 @@
   background: rgba(248, 113, 113, 0.15);
   border-color: #f87171;
 }
+
+/* Copy Verse Styles */
+.highlighter-action.copy,
+.highlighter-action.copy-range {
+  font-weight: 500;
+}
+
+.copy-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  color: #16a34a;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.copy-success-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background: #dcfce7;
+  border-radius: 50%;
+  color: #16a34a;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Copy Range Section */
+.copy-range-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.copy-range-section .range-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--text-color, #333);
+  font-size: 0.9rem;
+}
+
+.copy-range-section .back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: 6px;
+  background: var(--hover-bg, rgba(0, 0, 0, 0.05));
+  color: var(--primary-color, #2563eb);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.copy-range-section .back-btn:hover {
+  background: var(--border-color, #e5e5e5);
+}
+
+.copy-range-section .range-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.copy-range-section .range-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.copy-range-section .range-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary, #666);
+  min-width: 40px;
+}
+
+.copy-range-section .range-value {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-color, #333);
+  background: var(--hover-bg, rgba(0, 0, 0, 0.05));
+  padding: 6px 12px;
+  border-radius: 6px;
+  flex: 1;
+  text-align: center;
+}
+
+.copy-range-section .range-select {
+  flex: 1;
+  padding: 6px 12px;
+  border: 1px solid var(--border-color, #e5e5e5);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: var(--text-color, #333);
+  background: var(--bg-color, #fff);
+  cursor: pointer;
+}
+
+.copy-range-section .range-select:focus {
+  outline: none;
+  border-color: var(--primary-color, #2563eb);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.copy-range-section .copy-range-btn {
+  width: 100%;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 4px;
+}
+
+.copy-range-section .copy-range-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* Dark mode copy styles */
+[data-theme="dark"] .copy-success {
+  color: #4ade80;
+}
+
+[data-theme="dark"] .copy-success-icon {
+  background: rgba(74, 222, 128, 0.2);
+  color: #4ade80;
+}
+
+[data-theme="dark"] .copy-range-section .back-btn {
+  background: #374151;
+  color: #818cf8;
+}
+
+[data-theme="dark"] .copy-range-section .back-btn:hover {
+  background: #4b5563;
+}
+
+[data-theme="dark"] .copy-range-section .range-value {
+  background: #374151;
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .copy-range-section .range-select {
+  background: #374151;
+  border-color: #4b5563;
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .copy-range-section .range-select:focus {
+  border-color: #818cf8;
+  box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.2);
+}
