@@ -203,13 +203,13 @@
 .hebrew-letter-name {
   font-size: 28px;
   font-weight: 700;
-  color: #1a202c;
+  color: #667eea;
   margin: 0 0 8px 0;
 }
 
 .hebrew-letter-pronunciation {
   font-size: 16px;
-  color: #4a5568;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -233,7 +233,7 @@
 
 .hebrew-letter-meaning {
   font-size: 15px;
-  color: #2d3748;
+  color: #ffffff;
   line-height: 1.6;
   margin: 0;
 }
