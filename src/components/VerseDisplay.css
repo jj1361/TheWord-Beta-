@@ -52,7 +52,7 @@
 
 .verse-text {
   flex: 1;
-  font-size: 18px;
+  font-size: var(--verse-text-size, 18px);
   color: var(--text-primary);
   line-height: 1.8;
 }
@@ -440,7 +440,7 @@
 
 @media (max-width: 768px) {
   .verse-text {
-    font-size: 16px;
+    font-size: var(--verse-text-size, 16px);
   }
 
   .interlinear-header {

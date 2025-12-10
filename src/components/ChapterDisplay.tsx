@@ -9,6 +9,12 @@ import { WordImageMapping } from '../config/youthModeConfig';
 import { HighlightColor, TextFormatting } from '../types/notes';
 import './ChapterDisplay.css';
 
+// Text size constants
+const MIN_TEXT_SIZE = 12;
+const MAX_TEXT_SIZE = 32;
+const DEFAULT_TEXT_SIZE = 18;
+const TEXT_SIZE_STEP = 2;
+
 interface ChapterDisplayProps {
   chapter: Chapter | null;
   loading: boolean;
@@ -65,6 +71,28 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
 }) => {
   const [isChapterSelectorOpen, setIsChapterSelectorOpen] = useState(false);
   const [isNavigationModalOpen, setIsNavigationModalOpen] = useState(false);
+
+  // Text size state - persisted in localStorage
+  const [textSize, setTextSize] = useState(() => {
+    const saved = localStorage.getItem('verseTextSize');
+    return saved ? parseInt(saved, 10) : DEFAULT_TEXT_SIZE;
+  });
+
+  const handleIncreaseTextSize = () => {
+    setTextSize(prev => {
+      const newSize = Math.min(prev + TEXT_SIZE_STEP, MAX_TEXT_SIZE);
+      localStorage.setItem('verseTextSize', newSize.toString());
+      return newSize;
+    });
+  };
+
+  const handleDecreaseTextSize = () => {
+    setTextSize(prev => {
+      const newSize = Math.max(prev - TEXT_SIZE_STEP, MIN_TEXT_SIZE);
+      localStorage.setItem('verseTextSize', newSize.toString());
+      return newSize;
+    });
+  };
   if (loading) {
     return (
       <div className="chapter-display">
@@ -110,23 +138,46 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
             {chapter.chapterNum}
           </span>
         </h1>
-        {screenShareMode && onSearch && onSearchResultClick ? (
-          <div className="chapter-search-container">
-            <SearchBox
-              onSearch={onSearch}
-              onResultClick={onSearchResultClick}
-              onWordSearch={onWordSearch}
-            />
+        <div className="chapter-header-right">
+          {/* Text Size Controls */}
+          <div className="text-size-controls">
+            <button
+              className="text-size-btn"
+              onClick={handleDecreaseTextSize}
+              disabled={textSize <= MIN_TEXT_SIZE}
+              title="Decrease text size"
+            >
+              A-
+            </button>
+            <span className="text-size-value">{textSize}px</span>
+            <button
+              className="text-size-btn"
+              onClick={handleIncreaseTextSize}
+              disabled={textSize >= MAX_TEXT_SIZE}
+              title="Increase text size"
+            >
+              A+
+            </button>
           </div>
-        ) : (
-          chapter.interlinearVerses && (
-            <div className="chapter-info">
-              <span className="info-badge">
-                Interlinear available
-              </span>
+
+          {screenShareMode && onSearch && onSearchResultClick ? (
+            <div className="chapter-search-container">
+              <SearchBox
+                onSearch={onSearch}
+                onResultClick={onSearchResultClick}
+                onWordSearch={onWordSearch}
+              />
             </div>
-          )
-        )}
+          ) : (
+            chapter.interlinearVerses && (
+              <div className="chapter-info">
+                <span className="info-badge">
+                  Interlinear available
+                </span>
+              </div>
+            )
+          )}
+        </div>
       </div>
 
       {totalChapters && onChapterSelect && (
@@ -153,7 +204,7 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
         />
       )}
 
-      <div className="verses-container">
+      <div className="verses-container" style={{ '--verse-text-size': `${textSize}px` } as React.CSSProperties}>
         {chapter.kjvVerses.map((verse) => {
           const kjvsVerse = chapter.kjvsVerses?.find(
             (kv) => kv.num === verse.num
