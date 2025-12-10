@@ -13,6 +13,7 @@ interface SidebarProps {
   youthMode: boolean;
   studyMode: boolean;
   darkMode: boolean;
+  personProfileEnabled: boolean;
   onToggleProtoSinaitic: () => void;
   onToggleWebcam: () => void;
   onToggleWebcamSettings: () => void;
@@ -22,6 +23,7 @@ interface SidebarProps {
   onToggleYouthMode: () => void;
   onToggleStudyMode: () => void;
   onToggleDarkMode: () => void;
+  onTogglePersonProfile: () => void;
   // History props
   navigationHistory: HistoryEntry[];
   historyIndex: number;
@@ -56,6 +58,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   youthMode,
   studyMode,
   darkMode,
+  personProfileEnabled,
   onToggleProtoSinaitic,
   onToggleWebcam,
   onToggleWebcamSettings,
@@ -65,6 +68,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   onToggleYouthMode,
   onToggleStudyMode,
   onToggleDarkMode,
+  onTogglePersonProfile,
   // History props
   navigationHistory,
   historyIndex,
@@ -176,6 +180,14 @@ const Sidebar: React.FC<SidebarProps> = ({
           title={studyMode ? 'Hide Study Notes' : 'Show Study Notes'}
         >
           {studyMode ? '📚' : '📖'}
+        </button>
+
+        <button
+          className={`sidebar-btn person-profile-btn ${personProfileEnabled ? 'active' : ''}`}
+          onClick={onTogglePersonProfile}
+          title={personProfileEnabled ? 'Disable Person Profiles' : 'Enable Person Profiles'}
+        >
+          {personProfileEnabled ? '👤' : '👥'}
         </button>
 
         <button

@@ -171,9 +171,7 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
           ) : (
             chapter.interlinearVerses && (
               <div className="chapter-info">
-                <span className="info-badge">
-                  Interlinear available
-                </span>
+               
               </div>
             )
           )}

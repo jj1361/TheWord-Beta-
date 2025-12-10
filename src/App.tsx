@@ -96,6 +96,11 @@ function App() {
     const saved = localStorage.getItem('darkMode');
     return saved === 'true';
   });
+  const [personProfileEnabled, setPersonProfileEnabled] = useState(() => {
+    // Load person profile preference from localStorage (default to false/disabled)
+    const saved = localStorage.getItem('personProfileEnabled');
+    return saved === 'true'; // Default to false (disabled) if not set
+  });
 
   // Onboarding tour state
   const [showOnboarding, setShowOnboarding] = useState(() => {
@@ -168,6 +173,11 @@ function App() {
   useEffect(() => {
     localStorage.setItem('studyMode', studyMode.toString());
   }, [studyMode]);
+
+  // Save person profile preference
+  useEffect(() => {
+    localStorage.setItem('personProfileEnabled', personProfileEnabled.toString());
+  }, [personProfileEnabled]);
 
   // Save history to sessionStorage whenever it changes
   useEffect(() => {
@@ -772,6 +782,7 @@ function App() {
         youthMode={youthMode}
         studyMode={studyMode}
         darkMode={darkMode}
+        personProfileEnabled={personProfileEnabled}
         onToggleProtoSinaitic={() => setUseProtoSinaitic(!useProtoSinaitic)}
         onToggleWebcam={() => setWebcamEnabled(!webcamEnabled)}
         onToggleWebcamSettings={() => setWebcamSettings(!webcamSettings)}
@@ -781,6 +792,7 @@ function App() {
         onToggleYouthMode={() => setYouthMode(!youthMode)}
         onToggleStudyMode={() => setStudyMode(!studyMode)}
         onToggleDarkMode={() => setDarkMode(!darkMode)}
+        onTogglePersonProfile={() => setPersonProfileEnabled(!personProfileEnabled)}
         // History props
         navigationHistory={navigationHistory}
         historyIndex={historyIndex}
@@ -870,7 +882,7 @@ function App() {
                     navigatedVerse={navigatedVerse}
                     onLetterClick={handleLetterClick}
                     onStrongsClick={handleStrongsClick}
-                    onPersonClick={handlePersonClick}
+                    onPersonClick={personProfileEnabled ? handlePersonClick : undefined}
                     onVerseClick={handleVerseClick}
                     onYouthImageClick={youthMode ? handleYouthImageClick : undefined}
                     useProtoSinaitic={useProtoSinaitic}
@@ -903,7 +915,7 @@ function App() {
                   navigatedVerse={navigatedVerse}
                   onLetterClick={handleLetterClick}
                   onStrongsClick={handleStrongsClick}
-                  onPersonClick={handlePersonClick}
+                  onPersonClick={personProfileEnabled ? handlePersonClick : undefined}
                   onVerseClick={handleVerseClick}
                   onYouthImageClick={youthMode ? handleYouthImageClick : undefined}
                   onVerseRightClick={handleVerseRightClick}
