@@ -7,15 +7,17 @@ interface WebcamDisplayProps {
   isVisible: boolean;
   showSettings: boolean;
   isFullscreen?: boolean;
+  onExitFullscreen?: () => void;
 }
 
-const WebcamDisplay: React.FC<WebcamDisplayProps> = ({ isVisible, showSettings: externalShowSettings, isFullscreen = false }) => {
+const WebcamDisplay: React.FC<WebcamDisplayProps> = ({ isVisible, showSettings: externalShowSettings, isFullscreen = false, onExitFullscreen }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const hiddenCanvasRef = useRef<HTMLCanvasElement>(null);
   const backgroundImageRef = useRef<HTMLImageElement | null>(null);
   const animationFrameRef = useRef<number | null>(null);
   const selfieSegmentationRef = useRef<SelfieSegmentation | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const [stream, setStream] = useState<MediaStream | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -23,6 +25,23 @@ const WebcamDisplay: React.FC<WebcamDisplayProps> = ({ isVisible, showSettings: 
   const [isProcessing, setIsProcessing] = useState(false);
   const [videoReady, setVideoReady] = useState(false);
   const [segmentationReady, setSegmentationReady] = useState(false);
+
+  // Handle Escape key to exit CSS fullscreen mode
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape' && isFullscreen && onExitFullscreen) {
+        onExitFullscreen();
+      }
+    };
+
+    if (isFullscreen) {
+      document.addEventListener('keydown', handleKeyDown);
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isFullscreen, onExitFullscreen]);
 
   // Apply green screen optimizations to segmentation mask
   const optimizeMaskForGreenScreen = (mask: HTMLCanvasElement | HTMLImageElement, width: number, height: number): HTMLCanvasElement => {
@@ -301,7 +320,7 @@ const WebcamDisplay: React.FC<WebcamDisplayProps> = ({ isVisible, showSettings: 
   const enabledBackgrounds = WEBCAM_BACKGROUNDS.filter(bg => bg.enabled);
 
   return (
-    <div className="webcam-display">
+    <div ref={containerRef} className={`webcam-display ${isFullscreen ? 'css-fullscreen' : ''}`}>
       {externalShowSettings && (
         <div className="webcam-background-selector">
           <label className="background-label">Background:</label>
@@ -351,6 +370,17 @@ const WebcamDisplay: React.FC<WebcamDisplayProps> = ({ isVisible, showSettings: 
           </>
         )}
       </div>
+
+      {/* Exit fullscreen button when in CSS fullscreen mode */}
+      {isFullscreen && (
+        <button
+          className="webcam-exit-fullscreen-btn"
+          onClick={() => onExitFullscreen?.()}
+          title="Exit Fullscreen (Esc)"
+        >
+          ✕
+        </button>
+      )}
     </div>
   );
 };

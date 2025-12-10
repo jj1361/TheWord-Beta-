@@ -908,7 +908,12 @@ function App() {
             </div>
           ) : webcamFullscreen && webcamEnabled ? (
             <div className="webcam-section fullscreen">
-              <WebcamDisplay isVisible={webcamEnabled} showSettings={webcamSettings} isFullscreen={true} />
+              <WebcamDisplay
+                isVisible={webcamEnabled}
+                showSettings={webcamSettings}
+                isFullscreen={true}
+                onExitFullscreen={() => setWebcamFullscreen(false)}
+              />
             </div>
           ) : (
             <>
