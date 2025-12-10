@@ -11,7 +11,7 @@ import './ChapterDisplay.css';
 
 // Text size constants
 const MIN_TEXT_SIZE = 12;
-const MAX_TEXT_SIZE = 32;
+const MAX_TEXT_SIZE = 50;
 const DEFAULT_TEXT_SIZE = 18;
 const TEXT_SIZE_STEP = 2;
 
