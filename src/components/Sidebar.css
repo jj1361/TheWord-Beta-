@@ -4,7 +4,7 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 90;
+  z-index: 1100;
 }
 
 /* Hover trigger zone - invisible area on the left edge */
@@ -14,7 +14,7 @@
   top: 0;
   width: 30px;
   height: 100vh;
-  z-index: 89;
+  z-index: 1099;
 }
 
 .sidebar {
@@ -24,7 +24,7 @@
   border-radius: 16px;
   padding: 16px 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  z-index: 90;
+  z-index: 1100;
   transition: all 0.3s ease;
 }
 
