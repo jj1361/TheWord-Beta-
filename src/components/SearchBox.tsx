@@ -296,30 +296,20 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onSearch, onResultClick, onWordSe
 
           <div className="results-list">
             {results.length > 0 ? (
-              <>
-                {results.map((result, idx) => (
-                  <div
-                    key={idx}
-                    className="result-item"
-                    onClick={() => handleResultClick(result)}
-                  >
-                    <div className="result-reference">
-                      {result.bookName} {result.chapterNum}:{result.verseNum}
-                    </div>
-                    <div className="result-text">
-                      {highlightText(result.text, query)}
-                    </div>
+              results.map((result, idx) => (
+                <div
+                  key={idx}
+                  className="result-item"
+                  onClick={() => handleResultClick(result)}
+                >
+                  <div className="result-reference">
+                    {result.bookName} {result.chapterNum}:{result.verseNum}
                   </div>
-                ))}
-                {results.length > 0 && (
-                  <button
-                    className="view-all-results-btn"
-                    onClick={handleViewAllResults}
-                  >
-                    View All {totalCount} Results
-                  </button>
-                )}
-              </>
+                  <div className="result-text">
+                    {highlightText(result.text, query)}
+                  </div>
+                </div>
+              ))
             ) : (
               !isSearching && (
                 <div className="no-results">
@@ -328,6 +318,17 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onSearch, onResultClick, onWordSe
               )
             )}
           </div>
+
+          {results.length > 0 && (
+            <div className="results-footer">
+              <button
+                className="view-all-results-btn"
+                onClick={handleViewAllResults}
+              >
+                View All {totalCount} Results
+              </button>
+            </div>
+          )}
         </div>
       )}
 
