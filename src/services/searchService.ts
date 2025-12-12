@@ -225,6 +225,37 @@ export class SearchService {
   isIndexing(): boolean {
     return this.indexLoading;
   }
+
+  /**
+   * Get verse text by reference
+   */
+  async getVerseText(bookId: number, chapter: number, verse: number): Promise<string | null> {
+    await this.loadPrebuiltIndex();
+    if (!this.prebuiltIndex) return null;
+
+    const key = `${bookId}:${chapter}:${verse}`;
+    return this.prebuiltIndex.verseCache[key] || null;
+  }
+
+  /**
+   * Get multiple verse texts at once
+   */
+  async getVerseTexts(refs: Array<{ bookId: number; chapter: number; verse: number }>): Promise<Map<string, string>> {
+    await this.loadPrebuiltIndex();
+    const result = new Map<string, string>();
+
+    if (!this.prebuiltIndex) return result;
+
+    for (const ref of refs) {
+      const key = `${ref.bookId}:${ref.chapter}:${ref.verse}`;
+      const text = this.prebuiltIndex.verseCache[key];
+      if (text) {
+        result.set(key, text);
+      }
+    }
+
+    return result;
+  }
 }
 
 export const searchService = new SearchService();

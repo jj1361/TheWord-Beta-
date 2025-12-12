@@ -86,6 +86,44 @@
   filter: brightness(1.1);
 }
 
+/* Cross Reference Toggle Button */
+.cross-ref-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin-left: 8px;
+  border: none;
+  border-radius: 4px;
+  background: rgba(139, 92, 246, 0.1);
+  color: #8b5cf6;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.verse-container:hover .cross-ref-toggle-btn {
+  opacity: 1;
+}
+
+.cross-ref-toggle-btn:hover {
+  background: rgba(139, 92, 246, 0.2);
+  transform: scale(1.1);
+}
+
+[data-theme='dark'] .cross-ref-toggle-btn {
+  background: rgba(167, 139, 250, 0.15);
+  color: #a78bfa;
+}
+
+[data-theme='dark'] .cross-ref-toggle-btn:hover {
+  background: rgba(167, 139, 250, 0.25);
+}
+
 /* Interlinear Toggle Button */
 .interlinear-toggle-btn {
   display: inline-flex;

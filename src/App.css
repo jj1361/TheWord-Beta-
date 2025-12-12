@@ -354,3 +354,32 @@ body {
     width: 100%;
   }
 }
+
+/* Cross Reference Panel Container */
+.cross-ref-panel-container {
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  z-index: 500;
+  animation: slideInRight 0.25s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .cross-ref-panel-container {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

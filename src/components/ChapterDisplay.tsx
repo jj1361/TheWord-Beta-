@@ -27,6 +27,8 @@ interface ChapterDisplayProps {
   onVerseClick?: (verseNum: number) => void;
   onYouthImageClick?: (wordMapping: WordImageMapping) => void;
   onVerseRightClick?: (verseNum: number, event: React.MouseEvent) => void;
+  onCrossRefClick?: (verseNum: number) => void;
+  versesWithCrossRefs?: Set<number>;
   getVerseHighlightColor?: (verseNum: number) => HighlightColor | undefined;
   getVerseTextFormatting?: (verseNum: number) => TextFormatting[];
   useProtoSinaitic?: boolean;
@@ -55,6 +57,8 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
   onVerseClick,
   onYouthImageClick,
   onVerseRightClick,
+  onCrossRefClick,
+  versesWithCrossRefs,
   getVerseHighlightColor,
   getVerseTextFormatting,
   useProtoSinaitic,
@@ -233,6 +237,8 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
                 onYouthImageClick={onYouthImageClick}
                 isSelected={selectedVerse === verse.num}
                 onVerseClick={onVerseClick}
+                onCrossRefClick={onCrossRefClick}
+                hasCrossRefs={versesWithCrossRefs?.has(verse.num)}
                 globalUseProtoSinaitic={useProtoSinaitic}
                 youthMode={youthMode}
                 highlightColor={userHighlightColor}

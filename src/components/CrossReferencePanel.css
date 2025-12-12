@@ -1,0 +1,358 @@
+.cross-ref-panel {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color, #fff);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-height: 80vh;
+  width: 40rem;
+  overflow: hidden;
+  border: 1px solid var(--border-color, #e5e7eb);
+}
+
+.cross-ref-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.cross-ref-title h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cross-ref-verse {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
+.cross-ref-close {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease;
+}
+
+.cross-ref-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.cross-ref-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+}
+
+.cross-ref-loading,
+.cross-ref-empty {
+  padding: 24px;
+  text-align: center;
+  color: var(--text-secondary, #6b7280);
+  font-size: 0.9rem;
+}
+
+.cross-ref-summary {
+  padding: 8px 12px;
+  background: var(--summary-bg, #f3f4f6);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: var(--text-secondary, #6b7280);
+  margin-bottom: 12px;
+}
+
+.cross-ref-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cross-ref-group {
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cross-ref-group-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--group-header-bg, #f9fafb);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.9rem;
+  transition: background 0.15s ease;
+}
+
+.cross-ref-group-header:hover {
+  background: var(--group-header-hover-bg, #f3f4f6);
+}
+
+.cross-ref-word {
+  flex: 1;
+  font-weight: 500;
+  color: var(--text-color, #1f2937);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cross-ref-count {
+  background: var(--count-bg, #667eea);
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.cross-ref-expand-icon {
+  font-size: 0.7rem;
+  color: var(--text-secondary, #6b7280);
+  width: 12px;
+}
+
+.cross-ref-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px 12px;
+  background: var(--list-bg, #fff);
+}
+
+.cross-ref-item-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.cross-ref-item {
+  padding: 6px 10px;
+  background: var(--item-bg, #e0f2fe);
+  color: var(--item-color, #0369a1);
+  border: none;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cross-ref-item:hover {
+  background: var(--item-hover-bg, #bae6fd);
+  transform: translateY(-1px);
+}
+
+/* Tooltip for verse preview - uses fixed positioning to escape overflow */
+.cross-ref-tooltip {
+  position: fixed;
+  z-index: 10000;
+  background: var(--tooltip-bg, #1f2937);
+  color: var(--tooltip-color, #f9fafb);
+  padding: 12px 14px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  max-width: 90vw;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  pointer-events: none;
+  animation: tooltipFadeIn 0.15s ease;
+}
+
+.cross-ref-tooltip::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+}
+
+.cross-ref-tooltip.above::after {
+  top: 100%;
+  border-top-color: var(--tooltip-bg, #1f2937);
+}
+
+.cross-ref-tooltip.below::after {
+  bottom: 100%;
+  border-bottom-color: var(--tooltip-bg, #1f2937);
+}
+
+.cross-ref-tooltip strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--tooltip-title, #93c5fd);
+  font-size: 0.8rem;
+}
+
+.cross-ref-tooltip p {
+  margin: 0;
+}
+
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* All Scriptures Section */
+.cross-ref-all-verses {
+  margin-top: 16px;
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cross-ref-all-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.cross-ref-all-count {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.cross-ref-verses-list {
+  max-height: 300px;
+  overflow-y: auto;
+  background: var(--list-bg, #fff);
+}
+
+.cross-ref-verse-item {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-color, #e5e7eb);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.cross-ref-verse-item:last-child {
+  border-bottom: none;
+}
+
+.cross-ref-verse-item:hover {
+  background: var(--item-hover-bg, #f0f9ff);
+}
+
+.cross-ref-verse-ref {
+  font-weight: 600;
+  color: var(--item-color, #0369a1);
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.cross-ref-verse-text {
+  font-size: 0.85rem;
+  color: var(--text-color, #374151);
+  line-height: 1.5;
+}
+
+.cross-ref-verses-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cross-ref-verses-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cross-ref-verses-list::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+.cross-ref-verses-list::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Scrollbar styling */
+.cross-ref-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cross-ref-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cross-ref-content::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+.cross-ref-content::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Dark mode */
+:root[data-theme="dark"] .cross-ref-panel {
+  --bg-color: #1f2937;
+  --border-color: #374151;
+  --text-color: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --summary-bg: #374151;
+  --group-header-bg: #374151;
+  --group-header-hover-bg: #4b5563;
+  --list-bg: #1f2937;
+  --item-bg: #1e3a5f;
+  --item-color: #7dd3fc;
+  --item-hover-bg: #1e4976;
+  --count-bg: #7c3aed;
+  --tooltip-bg: #374151;
+  --tooltip-color: #f3f4f6;
+  --tooltip-title: #93c5fd;
+}
+
+:root[data-theme="dark"] .cross-ref-verses-list::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+:root[data-theme="dark"] .cross-ref-verses-list::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+:root[data-theme="dark"] .cross-ref-verse-item:hover {
+  background: #374151;
+}
+
+:root[data-theme="dark"] .cross-ref-content::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+:root[data-theme="dark"] .cross-ref-content::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .cross-ref-panel {
+    width: 100%;
+    max-width: none;
+    border-radius: 0;
+    max-height: 60vh;
+  }
+}

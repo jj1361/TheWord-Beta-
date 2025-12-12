@@ -26,6 +26,8 @@ import { searchService } from './services/searchService';
 import { lexiconService } from './services/lexiconService';
 import { personService } from './services/personService';
 import { notesService } from './services/notesService';
+import { crossRefService } from './services/crossRefService';
+import CrossReferencePanel from './components/CrossReferencePanel';
 import { Chapter, BIBLE_BOOKS } from './types/bible';
 import { getHebrewLetterInfo, HebrewLetterInfo } from './config/hebrewLetters';
 import { WordImageMapping } from './config/youthModeConfig';
@@ -136,6 +138,10 @@ function App() {
   const [highlighterSelectedText, setHighlighterSelectedText] = useState<string>('');
   const [highlighterTextSelection, setHighlighterTextSelection] = useState<TextSelection | null>(null);
   const [textFormatting, setTextFormatting] = useState<TextFormatting[]>(() => notesService.getTextFormatting());
+
+  // Cross-reference state
+  const [crossRefVerse, setCrossRefVerse] = useState<number | null>(null);
+  const [versesWithCrossRefs, setVersesWithCrossRefs] = useState<Set<number>>(new Set());
 
   // Navigation History State
   const [navigationHistory, setNavigationHistory] = useState<HistoryEntry[]>(() => {
@@ -617,6 +623,40 @@ function App() {
     loadChapter(currentBookId, currentChapter);
   }, [currentBookId, currentChapter]);
 
+  // Load cross-references for current chapter
+  useEffect(() => {
+    const loadCrossRefs = async () => {
+      const chapterCrossRefs = await crossRefService.getChapterCrossRefs(currentBookId, currentChapter);
+      setVersesWithCrossRefs(new Set(chapterCrossRefs.keys()));
+    };
+    loadCrossRefs();
+    // Close cross-ref panel when chapter changes
+    setCrossRefVerse(null);
+  }, [currentBookId, currentChapter]);
+
+  // Handler for cross-reference button click
+  const handleCrossRefClick = (verseNum: number) => {
+    if (crossRefVerse === verseNum) {
+      setCrossRefVerse(null);
+    } else {
+      setCrossRefVerse(verseNum);
+    }
+  };
+
+  // Navigate to a cross-reference
+  const handleCrossRefNavigate = (bookId: number, chapterNum: number, verse: number) => {
+    setCrossRefVerse(null);
+    loadChapter(bookId, chapterNum).then(() => {
+      setHighlightVerse(verse);
+      setTimeout(() => {
+        const verseElement = document.getElementById(`verse-${verse}`);
+        if (verseElement) {
+          verseElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 300);
+    });
+  };
+
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
       // Only handle number keys when not typing in an input field
@@ -933,6 +973,8 @@ function App() {
                   onVerseClick={handleVerseClick}
                   onYouthImageClick={youthMode ? handleYouthImageClick : undefined}
                   onVerseRightClick={handleVerseRightClick}
+                  onCrossRefClick={handleCrossRefClick}
+                  versesWithCrossRefs={versesWithCrossRefs}
                   getVerseHighlightColor={(verseNum) => getHighlightForVerse(verseNum)?.color}
                   getVerseTextFormatting={getTextFormattingForVerse}
                   useProtoSinaitic={useProtoSinaitic}
@@ -1013,6 +1055,20 @@ function App() {
             });
           }}
         />
+      )}
+
+      {/* Cross Reference Panel */}
+      {crossRefVerse !== null && chapter && (
+        <div className="cross-ref-panel-container">
+          <CrossReferencePanel
+            bookId={currentBookId}
+            bookName={chapter.bookName}
+            chapter={currentChapter}
+            verse={crossRefVerse}
+            onNavigate={handleCrossRefNavigate}
+            onClose={() => setCrossRefVerse(null)}
+          />
+        </div>
       )}
 
       {/* Onboarding Tour */}

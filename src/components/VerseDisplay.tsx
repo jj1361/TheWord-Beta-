@@ -15,13 +15,15 @@ interface VerseDisplayProps {
   onYouthImageClick?: (wordMapping: WordImageMapping) => void;
   isSelected?: boolean;
   onVerseClick?: (verseNum: number) => void;
+  onCrossRefClick?: (verseNum: number) => void;
+  hasCrossRefs?: boolean;
   globalUseProtoSinaitic?: boolean;
   youthMode?: boolean;
   highlightColor?: HighlightColor;
   textFormatting?: TextFormatting[];
 }
 
-const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interlinearVerse, onLetterClick, onStrongsClick, onPersonClick, onYouthImageClick, isSelected, onVerseClick, globalUseProtoSinaitic, youthMode, highlightColor, textFormatting }) => {
+const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interlinearVerse, onLetterClick, onStrongsClick, onPersonClick, onYouthImageClick, isSelected, onVerseClick, onCrossRefClick, hasCrossRefs, globalUseProtoSinaitic, youthMode, highlightColor, textFormatting }) => {
   const [localUseProtoSinaitic, setLocalUseProtoSinaitic] = useState(false);
   const [forwardInterlinear, setForwardInterlinear] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(() =>
@@ -452,6 +454,18 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
       <div className="verse-main">
         <span className="verse-number">{verse.num}</span>
         {renderVerseText()}
+        {hasCrossRefs && onCrossRefClick && (
+          <button
+            className="cross-ref-toggle-btn"
+            onClick={(e) => {
+              e.stopPropagation();
+              onCrossRefClick(verse.num);
+            }}
+            title="Show Cross References"
+          >
+            ✝
+          </button>
+        )}
         {interlinearVerse && onVerseClick && (
           <button
             className={`interlinear-toggle-btn ${isSelected ? 'active' : ''}`}
