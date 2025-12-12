@@ -71,6 +71,11 @@
   border-color: var(--primary-color, #2563eb);
 }
 
+/* Font Size Select */
+.rte-font-size-select {
+  min-width: 85px;
+}
+
 /* Color Picker */
 .rte-color-picker {
   position: relative;

@@ -36,6 +36,9 @@ const ScripturePresentationView: React.FC<ScripturePresentationViewProps> = ({
   const [selectedBook, setSelectedBook] = useState<Book | null>(null);
   const inputTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  // Use refs to avoid stale closures in event handler
+  const inputBufferRef = useRef('');
+  const showInputHintRef = useRef(false);
 
   const currentVerse = verses[currentVerseIndex];
 
@@ -103,6 +106,15 @@ const ScripturePresentationView: React.FC<ScripturePresentationViewProps> = ({
     }
   }, [verses]);
 
+  // Keep refs in sync with state
+  useEffect(() => {
+    inputBufferRef.current = inputBuffer;
+  }, [inputBuffer]);
+
+  useEffect(() => {
+    showInputHintRef.current = showInputHint;
+  }, [showInputHint]);
+
   // Handle keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -141,9 +153,11 @@ const ScripturePresentationView: React.FC<ScripturePresentationViewProps> = ({
       // Number input for direct verse navigation
       if (/^[0-9]$/.test(e.key)) {
         e.preventDefault();
-        const newBuffer = inputBuffer + e.key;
+        const newBuffer = inputBufferRef.current + e.key;
+        inputBufferRef.current = newBuffer;
         setInputBuffer(newBuffer);
         setShowInputHint(true);
+        showInputHintRef.current = true;
 
         // Clear previous timeout
         if (inputTimeoutRef.current) {
@@ -152,49 +166,57 @@ const ScripturePresentationView: React.FC<ScripturePresentationViewProps> = ({
 
         // Set timeout to process the number
         inputTimeoutRef.current = setTimeout(() => {
-          const verseNum = parseInt(newBuffer, 10);
+          const verseNum = parseInt(inputBufferRef.current, 10);
           if (verseNum > 0 && verseNum <= verses.length) {
             goToVerse(verseNum);
           }
+          inputBufferRef.current = '';
           setInputBuffer('');
+          showInputHintRef.current = false;
           setShowInputHint(false);
         }, 1500);
       }
 
       // Backspace to delete last character
-      if (e.key === 'Backspace' && showInputHint) {
+      if (e.key === 'Backspace' && showInputHintRef.current) {
         e.preventDefault();
         if (inputTimeoutRef.current) {
           clearTimeout(inputTimeoutRef.current);
         }
-        const newBuffer = inputBuffer.slice(0, -1);
+        const newBuffer = inputBufferRef.current.slice(0, -1);
+        inputBufferRef.current = newBuffer;
         setInputBuffer(newBuffer);
         if (newBuffer === '') {
+          showInputHintRef.current = false;
           setShowInputHint(false);
         } else {
           // Reset timeout
           inputTimeoutRef.current = setTimeout(() => {
-            const verseNum = parseInt(newBuffer, 10);
+            const verseNum = parseInt(inputBufferRef.current, 10);
             if (verseNum > 0 && verseNum <= verses.length) {
               goToVerse(verseNum);
             }
+            inputBufferRef.current = '';
             setInputBuffer('');
+            showInputHintRef.current = false;
             setShowInputHint(false);
           }, 1500);
         }
       }
 
       // Enter to confirm number immediately
-      if (e.key === 'Enter' && inputBuffer) {
+      if (e.key === 'Enter' && inputBufferRef.current) {
         e.preventDefault();
         if (inputTimeoutRef.current) {
           clearTimeout(inputTimeoutRef.current);
         }
-        const verseNum = parseInt(inputBuffer, 10);
+        const verseNum = parseInt(inputBufferRef.current, 10);
         if (verseNum > 0 && verseNum <= verses.length) {
           goToVerse(verseNum);
         }
+        inputBufferRef.current = '';
         setInputBuffer('');
+        showInputHintRef.current = false;
         setShowInputHint(false);
       }
     };
@@ -206,7 +228,7 @@ const ScripturePresentationView: React.FC<ScripturePresentationViewProps> = ({
         clearTimeout(inputTimeoutRef.current);
       }
     };
-  }, [inputBuffer, showInputHint, goToNextVerse, goToPrevVerse, goToVerse, onClose, verses.length]);
+  }, [goToNextVerse, goToPrevVerse, goToVerse, onClose, verses.length]);
 
   // Focus container on mount
   useEffect(() => {

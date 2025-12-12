@@ -1070,7 +1070,7 @@ function App() {
         </div>
       )}
 
-      {/* Note Editor Modal */}
+      {/* Note Editor Side Panel */}
       {showNoteEditor && (
         <NoteEditor
           note={editingNote}
@@ -1083,6 +1083,7 @@ function App() {
             setNoteVerses(undefined);
           }}
           onDelete={editingNote ? () => handleDeleteNote(editingNote.id) : undefined}
+          mode="panel"
         />
       )}
 

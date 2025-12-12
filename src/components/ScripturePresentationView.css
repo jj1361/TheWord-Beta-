@@ -43,8 +43,10 @@
   position: relative;
   max-width: 85vw;
   width: 1200px;
-  min-height: 300px;
-  max-height: 80vh;
+  /* Fixed height to prevent layout shifts */
+  height: 60vh;
+  min-height: 350px;
+  max-height: 600px;
   padding: 48px 64px;
   display: flex;
   flex-direction: column;
@@ -63,6 +65,8 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.1),
     0 0 80px rgba(102, 126, 234, 0.15);
 
+  /* GPU acceleration */
+  transform: translateZ(0);
   animation: fadeInScale 0.4s ease;
 }
 
@@ -118,10 +122,20 @@
   font-weight: 400;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   max-width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: none;
-  transition: font-size 0.3s ease;
+  /* Smooth transitions to prevent jumps */
+  transition: font-size 0.2s ease-out, opacity 0.15s ease-out;
+  /* Prevent layout thrashing */
+  contain: layout style;
+  /* GPU acceleration for smoother rendering */
+  transform: translateZ(0);
+  will-change: font-size, opacity;
 }
 
 /* Verse progress */
@@ -376,6 +390,10 @@
     padding: 24px 32px;
     gap: 24px;
     border-radius: 24px;
+    /* Adjust height for tablets */
+    height: 55vh;
+    min-height: 300px;
+    max-height: 500px;
   }
 
   .scripture-reference {
@@ -427,6 +445,14 @@
     padding: 20px 24px;
     gap: 20px;
     border-radius: 20px;
+    /* Adjust height for mobile */
+    height: 50vh;
+    min-height: 250px;
+    max-height: 400px;
+  }
+
+  .scripture-text {
+    min-height: 80px;
   }
 
   .scripture-reference {

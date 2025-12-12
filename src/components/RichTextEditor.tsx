@@ -30,6 +30,18 @@ const HIGHLIGHT_COLORS = [
   { name: 'Purple', value: '#e9d5ff' },
 ];
 
+// Font size values use the deprecated fontSize command values (1-7)
+// 1 = 10px, 2 = 13px, 3 = 16px (default), 4 = 18px, 5 = 24px, 6 = 32px, 7 = 48px
+const FONT_SIZES = [
+  { name: 'Tiny', value: '1' },
+  { name: 'Small', value: '2' },
+  { name: 'Normal', value: '3' },
+  { name: 'Large', value: '4' },
+  { name: 'X-Large', value: '5' },
+  { name: 'XX-Large', value: '6' },
+  { name: 'Huge', value: '7' },
+];
+
 const RichTextEditor: React.FC<RichTextEditorProps> = ({
   content,
   onChange,
@@ -102,6 +114,10 @@ const RichTextEditor: React.FC<RichTextEditorProps> = ({
     execCommand('removeFormat');
   };
 
+  const handleFontSize = (size: string) => {
+    execCommand('fontSize', size);
+  };
+
   return (
     <div className="rich-text-editor">
       <div className="rte-toolbar">
@@ -116,6 +132,21 @@ const RichTextEditor: React.FC<RichTextEditorProps> = ({
             <option value="h1">Heading 1</option>
             <option value="h2">Heading 2</option>
             <option value="h3">Heading 3</option>
+          </select>
+        </div>
+
+        <div className="rte-toolbar-group">
+          <select
+            className="rte-select rte-font-size-select"
+            onChange={(e) => handleFontSize(e.target.value)}
+            defaultValue="3"
+            title="Font size"
+          >
+            {FONT_SIZES.map((size) => (
+              <option key={size.value} value={size.value}>
+                {size.name}
+              </option>
+            ))}
           </select>
         </div>
 
