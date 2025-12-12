@@ -18,7 +18,26 @@ interface RightPanelProps {
   hebrewLetterContent: HebrewLetterInfo | null;
   onClose: () => void;
   onVerseClick?: (bookId: number, chapter: number, verse: number) => void;
+  onStrongsClick?: (strongsNumber: string) => void;
 }
+
+/**
+ * Parse text and convert Strong's numbers (H0001, G1234, H6872C, etc.) into clickable spans.
+ * Returns HTML string that should be used with dangerouslySetInnerHTML.
+ */
+const parseStrongsReferences = (text: string, onStrongsClick?: (strongsNumber: string) => void): string => {
+  if (!text || !onStrongsClick) return text;
+
+  // Match Strong's numbers: H or G followed by digits, optionally followed by a letter suffix
+  // Examples: H0001, G1234, H6872C, H7027G, H0001A
+  const strongsPattern = /\b([HG]\d{1,5}[A-Z]?)\b/g;
+
+  return text.replace(strongsPattern, (match, strongsNum) => {
+    // Extract just the base Strong's number (remove suffix letters for lookup)
+    const baseNum = strongsNum.replace(/[A-Z]$/, '');
+    return `<span class="strongs-link" data-strongs="${baseNum}" title="Click to view ${baseNum}">${match}</span>`;
+  });
+};
 
 type TabType = 'strongs' | 'stepbible' | 'bdb' | 'ahlb' | 'hebrew';
 
@@ -33,8 +52,19 @@ const RightPanel: React.FC<RightPanelProps> = ({
   lexiconContent,
   hebrewLetterContent,
   onClose,
-  onVerseClick
+  onVerseClick,
+  onStrongsClick
 }) => {
+  // Handle clicks on Strong's number links
+  const handleStrongsLinkClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    const target = event.target as HTMLElement;
+    if (target.classList.contains('strongs-link') && onStrongsClick) {
+      const strongsNum = target.getAttribute('data-strongs');
+      if (strongsNum) {
+        onStrongsClick(strongsNum);
+      }
+    }
+  };
   // State for verse references (KJV usage)
   const [verseReferences, setVerseReferences] = useState<VerseReference[]>([]);
   const [loadingReferences, setLoadingReferences] = useState(false);
@@ -268,9 +298,9 @@ const RightPanel: React.FC<RightPanelProps> = ({
             {(lexiconContent.strongs.strongs_def || lexiconContent.strongs.meaning) && (
               <div className="lexicon-section">
                 <h3 className="lexicon-section-title">Definition</h3>
-                <div className="lexicon-definition">
+                <div className="lexicon-definition" onClick={handleStrongsLinkClick}>
                   {(lexiconContent.strongs.strongs_def || lexiconContent.strongs.meaning).split('\n').map((line: string, idx: number) => (
-                    <p key={idx}>{line.trim()}</p>
+                    <p key={idx} dangerouslySetInnerHTML={{ __html: parseStrongsReferences(line.trim(), onStrongsClick) }} />
                   ))}
                 </div>
               </div>
@@ -385,7 +415,11 @@ const RightPanel: React.FC<RightPanelProps> = ({
             {(lexiconContent.strongs.derivation || lexiconContent.strongs.source) && (
               <div className="lexicon-section">
                 <h3 className="lexicon-section-title">Derivation</h3>
-                <p className="lexicon-derivation">{lexiconContent.strongs.derivation || lexiconContent.strongs.source}</p>
+                <p
+                  className="lexicon-derivation"
+                  onClick={handleStrongsLinkClick}
+                  dangerouslySetInnerHTML={{ __html: parseStrongsReferences(lexiconContent.strongs.derivation || lexiconContent.strongs.source || '', onStrongsClick) }}
+                />
               </div>
             )}
           </div>
@@ -425,7 +459,8 @@ const RightPanel: React.FC<RightPanelProps> = ({
                 <h3 className="lexicon-section-title">Definition</h3>
                 <div
                   className="lexicon-definition stepbible-definition-content"
-                  dangerouslySetInnerHTML={{ __html: lexiconContent.stepBible.meaning }}
+                  onClick={handleStrongsLinkClick}
+                  dangerouslySetInnerHTML={{ __html: parseStrongsReferences(lexiconContent.stepBible.meaning, onStrongsClick) }}
                 />
               </div>
             )}
@@ -453,8 +488,8 @@ const RightPanel: React.FC<RightPanelProps> = ({
 
             <div className="lexicon-section">
               <h3 className="lexicon-section-title">Definition</h3>
-              <div className="lexicon-definition">
-                <p>{lexiconContent.bdb.definition}</p>
+              <div className="lexicon-definition" onClick={handleStrongsLinkClick}>
+                <p dangerouslySetInnerHTML={{ __html: parseStrongsReferences(lexiconContent.bdb.definition, onStrongsClick) }} />
               </div>
             </div>
           </div>

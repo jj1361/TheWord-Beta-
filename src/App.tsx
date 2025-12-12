@@ -1017,6 +1017,7 @@ function App() {
                       }, 300);
                     });
                   }}
+                  onStrongsClick={handleStrongsClick}
                 />
               )}
 

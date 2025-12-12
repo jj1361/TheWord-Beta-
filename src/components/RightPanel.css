@@ -1045,3 +1045,31 @@
 [data-theme='light'] .show-all-references-btn:hover {
   background: rgba(102, 126, 234, 0.15);
 }
+
+/* Strong's number links in lexicon content */
+.strongs-link {
+  color: #7dd3fc;
+  cursor: pointer;
+  padding: 1px 4px;
+  margin: 0 1px;
+  border-radius: 4px;
+  background: rgba(125, 211, 252, 0.1);
+  transition: all 0.15s ease;
+  font-weight: 500;
+}
+
+.strongs-link:hover {
+  background: rgba(125, 211, 252, 0.25);
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+[data-theme='light'] .strongs-link {
+  color: #0369a1;
+  background: rgba(3, 105, 161, 0.08);
+}
+
+[data-theme='light'] .strongs-link:hover {
+  background: rgba(3, 105, 161, 0.15);
+  color: #0284c7;
+}
