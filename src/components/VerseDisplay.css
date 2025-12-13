@@ -11,7 +11,15 @@
   border-radius: 8px;
   padding: 16px;
   box-shadow: var(--shadow-sm);
-  transition: all 0.3s ease;
+  transition: background-color 0.2s ease;
+}
+
+.verse-container:hover {
+  background-color: rgba(102, 126, 234, 0.08);
+}
+
+[data-theme='dark'] .verse-container:hover {
+  background-color: rgba(139, 92, 246, 0.12);
 }
 
 .verse-container.clickable {
@@ -19,8 +27,11 @@
 }
 
 .verse-container.clickable:hover {
-  box-shadow: var(--shadow-md);
-  background-color: rgba(102, 126, 234, 0.12);
+  background-color: rgba(102, 126, 234, 0.15);
+}
+
+[data-theme='dark'] .verse-container.clickable:hover {
+  background-color: rgba(139, 92, 246, 0.18);
 }
 
 .verse-container.selected {
@@ -108,6 +119,7 @@
 
 .verse-container:hover .cross-ref-toggle-btn {
   opacity: 1;
+  
 }
 
 .cross-ref-toggle-btn:hover {
@@ -456,7 +468,7 @@
 /* Clickable Phrases (Strong's Links) */
 .clickable-phrase {
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: background-color 0.15s ease, color 0.15s ease;
   border-radius: 3px;
   padding: 1px 3px;
   margin: -1px -3px;
@@ -466,14 +478,10 @@
 .clickable-phrase:hover {
   background: var(--phrase-hover);
   color: var(--phrase-hover-text);
-  font-weight: 500;
-  box-shadow: var(--shadow-sm);
-  transform: translateY(-0.5px);
 }
 
 .clickable-phrase:active {
-  transform: translateY(0);
-  box-shadow: 0 1px 2px rgba(245, 158, 11, 0.15);
+  opacity: 0.8;
 }
 
 @media (max-width: 768px) {
@@ -634,7 +642,6 @@
 [data-theme='dark'] .clickable-phrase:hover {
   background: rgba(251, 191, 36, 0.2);
   color: #fbbf24;
-  box-shadow: 0 2px 4px rgba(251, 191, 36, 0.2);
 }
 
 /* Youth Mode Styles */
