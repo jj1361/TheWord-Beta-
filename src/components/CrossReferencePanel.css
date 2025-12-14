@@ -2,10 +2,12 @@
   display: flex;
   flex-direction: column;
   background: var(--bg-color, #fff);
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  max-height: 80vh;
-  width: 40rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  width: 100%;
+  min-width: 380px;
+  max-width: 600px;
   overflow: hidden;
   border: 1px solid var(--border-color, #e5e7eb);
 }
@@ -21,13 +23,13 @@
 
 .cross-ref-title h3 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .cross-ref-verse {
   display: block;
-  font-size: 0.85rem;
+  font-size: 1rem;
   opacity: 0.9;
   margin-top: 4px;
 }
@@ -135,12 +137,13 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-size: 1.5rem;
 }
 
 .topic-count {
   background: var(--count-bg, #667eea);
   color: white;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   padding: 2px 8px;
   border-radius: 10px;
   font-weight: 600;
@@ -155,6 +158,10 @@
 
 /* All Scriptures Section */
 .cross-ref-all-verses {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
   border: 1px solid var(--border-color, #e5e7eb);
   border-radius: 8px;
   overflow: hidden;
@@ -168,7 +175,7 @@
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .cross-ref-all-count {
@@ -179,7 +186,7 @@
 }
 
 .cross-ref-verses-list {
-  max-height: 300px;
+  flex: 1;
   overflow-y: auto;
   background: var(--list-bg, #fff);
 }
@@ -202,12 +209,12 @@
 .cross-ref-verse-ref {
   font-weight: 600;
   color: var(--item-color, #0369a1);
-  font-size: 0.85rem;
+  font-size: 1.5rem;
   margin-bottom: 4px;
 }
 
 .cross-ref-verse-text {
-  font-size: 0.85rem;
+  font-size: 1.5rem;
   color: var(--text-color, #374151);
   line-height: 1.5;
 }
@@ -284,12 +291,30 @@
   background: #6b7280;
 }
 
-/* Responsive */
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+  .cross-ref-panel {
+    width: 50%;
+    min-width: 340px;
+  }
+}
+
+/* Responsive - Mobile Landscape */
+@media (max-width: 768px) {
+  .cross-ref-panel {
+    width: 65%;
+    min-width: 300px;
+    max-width: none;
+  }
+}
+
+/* Responsive - Mobile Portrait */
 @media (max-width: 480px) {
   .cross-ref-panel {
     width: 100%;
-    max-width: none;
-    border-radius: 0;
-    max-height: 60vh;
+    max-width: 100%;
+    min-width: unset;
+    border-radius: 16px 16px 0 0;
+    height: 70vh;
   }
 }

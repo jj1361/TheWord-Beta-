@@ -358,7 +358,8 @@ body {
 /* Cross Reference Panel Container */
 .cross-ref-panel-container {
   position: fixed;
-  top: 200px;
+  top: 130px;
+  bottom: 30px;
   right: 20px;
   z-index: 500;
   animation: slideInRight 0.25s ease-out;
@@ -379,7 +380,7 @@ body {
   .cross-ref-panel-container {
     top: auto;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: 10px;
+    right: 10px;
   }
 }
