@@ -363,6 +363,11 @@ body {
   right: 20px;
   z-index: 500;
   animation: slideInRight 0.25s ease-out;
+  max-width: 600px;
+}
+
+.cross-ref-panel-container.with-notes {
+  max-width: 900px;
 }
 
 @keyframes slideInRight {
@@ -373,6 +378,23 @@ body {
   to {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cross-ref-panel-container.with-notes {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cross-ref-panel-container {
+    left: 20px;
+    max-width: none;
+  }
+
+  .cross-ref-panel-container.with-notes {
+    max-width: none;
   }
 }
 

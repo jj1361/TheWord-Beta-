@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { crossRefService, CrossRefEntry, CrossReference } from '../services/crossRefService';
 import { searchService } from '../services/searchService';
+import { Note, Topic, VerseReference } from '../types/notes';
 import './CrossReferencePanel.css';
 
 interface CrossReferencePanelProps {
@@ -10,6 +11,13 @@ interface CrossReferencePanelProps {
   verse: number;
   onNavigate: (bookId: number, chapter: number, verse: number) => void;
   onClose: () => void;
+  // Notes integration
+  notes?: Note[];
+  topics?: Topic[];
+  onEditNote?: (note: Note) => void;
+  onCreateNote?: (verseRef?: VerseReference) => void;
+  showNotesPanel?: boolean;
+  onToggleNotesPanel?: () => void;
 }
 
 interface VerseWithText extends CrossReference {
@@ -24,12 +32,20 @@ const CrossReferencePanel: React.FC<CrossReferencePanelProps> = ({
   verse,
   onNavigate,
   onClose,
+  notes = [],
+  topics = [],
+  onEditNote,
+  onCreateNote,
+  showNotesPanel = false,
+  onToggleNotesPanel,
 }) => {
   const [crossRefs, setCrossRefs] = useState<CrossRefEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedTopic, setSelectedTopic] = useState<number | null>(null);
   const [verseTexts, setVerseTexts] = useState<Map<string, string>>(new Map());
   const [displayedRefs, setDisplayedRefs] = useState<VerseWithText[]>([]);
+  const [selectedVerses, setSelectedVerses] = useState<Set<string>>(new Set());
+  const [copySuccess, setCopySuccess] = useState(false);
 
   // Get refs for a specific topic with text
   const getRefsForTopic = useCallback((topicIndex: number, texts: Map<string, string>, entries: CrossRefEntry[]): VerseWithText[] => {
@@ -103,29 +119,92 @@ const CrossReferencePanel: React.FC<CrossReferencePanelProps> = ({
   const handleTopicClick = (index: number) => {
     setSelectedTopic(index);
     setDisplayedRefs(getRefsForTopic(index, verseTexts, crossRefs));
+    setSelectedVerses(new Set()); // Clear selections when changing topic
   };
 
   const handleRefClick = (ref: CrossReference) => {
     onNavigate(ref.bookId, ref.chapter, ref.verse);
   };
 
+  const handleSelectAll = () => {
+    const allKeys = new Set(displayedRefs.map(ref => ref.refKey));
+    setSelectedVerses(allKeys);
+  };
+
+  const handleUnselectAll = () => {
+    setSelectedVerses(new Set());
+  };
+
+  const handleCopySelected = async () => {
+    const selectedRefs = displayedRefs.filter(ref => selectedVerses.has(ref.refKey));
+    if (selectedRefs.length === 0) return;
+
+    const textToCopy = selectedRefs
+      .map(ref => `${crossRefService.formatReference(ref)}\n${ref.text || ''}`)
+      .join('\n\n');
+
+    try {
+      await navigator.clipboard.writeText(textToCopy);
+      setCopySuccess(true);
+      setTimeout(() => setCopySuccess(false), 2000);
+    } catch (error) {
+      console.error('Failed to copy:', error);
+    }
+  };
+
   const totalRefs = crossRefs.reduce((sum, entry) => sum + entry.refs.length, 0);
+  const allSelected = displayedRefs.length > 0 && selectedVerses.size === displayedRefs.length;
+
+  // Filter notes for current verse
+  const verseNotes = notes.filter(note =>
+    note.verses?.some(v =>
+      v.bookId === bookId &&
+      v.chapter === chapter &&
+      v.startVerse <= verse &&
+      (v.endVerse || v.startVerse) >= verse
+    )
+  );
+
+  const getTopicById = (id: string) => topics.find(t => t.id === id);
+
+  const formatDate = (timestamp: number): string => {
+    const date = new Date(timestamp);
+    return date.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+    });
+  };
 
   return (
-    <div className="cross-ref-panel">
-      <div className="cross-ref-header">
-        <div className="cross-ref-title">
-          <h3>Cross References</h3>
-          <span
-            className="cross-ref-verse clickable"
-            onClick={() => onNavigate(bookId, chapter, verse)}
-            title="Go to this verse"
-          >
-            {bookName} {chapter}:{verse}
-          </span>
+    <div className={`cross-ref-panel-wrapper ${showNotesPanel ? 'with-notes' : ''}`}>
+      <div className="cross-ref-panel">
+        <div className="cross-ref-header">
+          <div className="cross-ref-title">
+            <h3>Cross References</h3>
+            <span
+              className="cross-ref-verse clickable"
+              onClick={() => onNavigate(bookId, chapter, verse)}
+              title="Go to this verse"
+            >
+              {bookName} {chapter}:{verse}
+            </span>
+          </div>
+          <div className="cross-ref-header-actions">
+            {onToggleNotesPanel && (
+              <button
+                className={`cross-ref-notes-toggle ${showNotesPanel ? 'active' : ''}`}
+                onClick={onToggleNotesPanel}
+                title={showNotesPanel ? 'Hide Notes' : 'Show Notes'}
+              >
+                <span className="notes-icon">📝</span>
+                {verseNotes.length > 0 && (
+                  <span className="notes-badge">{verseNotes.length}</span>
+                )}
+              </button>
+            )}
+            <button className="cross-ref-close" onClick={onClose}>×</button>
+          </div>
         </div>
-        <button className="cross-ref-close" onClick={onClose}>×</button>
-      </div>
 
       <div className="cross-ref-content">
         {loading ? (
@@ -164,6 +243,35 @@ const CrossReferencePanel: React.FC<CrossReferencePanelProps> = ({
                 </span>
                 <span className="cross-ref-all-count">{displayedRefs.length}</span>
               </div>
+
+              {/* Selection Controls */}
+              {displayedRefs.length > 0 && (
+                <div className="cross-ref-selection-controls">
+                  <label className="cross-ref-select-all">
+                    <input
+                      type="checkbox"
+                      checked={allSelected}
+                      onChange={(e) => e.target.checked ? handleSelectAll() : handleUnselectAll()}
+                    />
+                    <span>Select All</span>
+                  </label>
+                  <button
+                    className="cross-ref-unselect-btn"
+                    onClick={handleUnselectAll}
+                    disabled={selectedVerses.size === 0}
+                  >
+                    Unselect All
+                  </button>
+                  <button
+                    className={`cross-ref-copy-btn ${copySuccess ? 'success' : ''}`}
+                    onClick={handleCopySelected}
+                    disabled={selectedVerses.size === 0}
+                  >
+                    {copySuccess ? 'Copied!' : `Copy (${selectedVerses.size})`}
+                  </button>
+                </div>
+              )}
+
               <div className="cross-ref-verses-list">
                 {displayedRefs.length === 0 ? (
                   <div className="cross-ref-empty-topic">
@@ -173,14 +281,36 @@ const CrossReferencePanel: React.FC<CrossReferencePanelProps> = ({
                   displayedRefs.map((ref, index) => (
                     <div
                       key={index}
-                      className="cross-ref-verse-item"
+                      className={`cross-ref-verse-item ${selectedVerses.has(ref.refKey) ? 'selected' : ''}`}
                       onClick={() => handleRefClick(ref)}
                     >
-                      <div className="cross-ref-verse-ref">
-                        {crossRefService.formatReference(ref)}
-                      </div>
-                      <div className="cross-ref-verse-text">
-                        {ref.text || 'Loading...'}
+                      <label
+                        className="cross-ref-checkbox-wrapper"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <input
+                          type="checkbox"
+                          checked={selectedVerses.has(ref.refKey)}
+                          onChange={(e) => {
+                            setSelectedVerses(prev => {
+                              const newSet = new Set(prev);
+                              if (e.target.checked) {
+                                newSet.add(ref.refKey);
+                              } else {
+                                newSet.delete(ref.refKey);
+                              }
+                              return newSet;
+                            });
+                          }}
+                        />
+                      </label>
+                      <div className="cross-ref-verse-content">
+                        <div className="cross-ref-verse-ref">
+                          {crossRefService.formatReference(ref)}
+                        </div>
+                        <div className="cross-ref-verse-text">
+                          {ref.text || 'Loading...'}
+                        </div>
                       </div>
                     </div>
                   ))
@@ -190,6 +320,91 @@ const CrossReferencePanel: React.FC<CrossReferencePanelProps> = ({
           </>
         )}
       </div>
+      </div>
+
+      {/* Notes Panel */}
+      {showNotesPanel && (
+        <div className="cross-ref-notes-panel">
+          <div className="cross-ref-notes-header">
+            <h3>Notes</h3>
+            {onCreateNote && (
+              <button
+                className="cross-ref-notes-add"
+                onClick={() => onCreateNote({
+                  bookId,
+                  bookName,
+                  chapter,
+                  startVerse: verse,
+                  osisRef: `${bookName}.${chapter}.${verse}`,
+                })}
+                title="Add note for this verse"
+              >
+                +
+              </button>
+            )}
+          </div>
+          <div className="cross-ref-notes-content">
+            {verseNotes.length === 0 ? (
+              <div className="cross-ref-notes-empty">
+                <p>No notes for this verse.</p>
+                {onCreateNote && (
+                  <button
+                    className="cross-ref-notes-create-btn"
+                    onClick={() => onCreateNote({
+                      bookId,
+                      bookName,
+                      chapter,
+                      startVerse: verse,
+                      osisRef: `${bookName}.${chapter}.${verse}`,
+                    })}
+                  >
+                    Create Note
+                  </button>
+                )}
+              </div>
+            ) : (
+              <div className="cross-ref-notes-list">
+                {verseNotes.map(note => (
+                  <div
+                    key={note.id}
+                    className="cross-ref-note-item"
+                    onClick={() => onEditNote?.(note)}
+                  >
+                    <div className="cross-ref-note-header">
+                      <span className="cross-ref-note-title">
+                        {note.title || 'Untitled Note'}
+                      </span>
+                      <span className="cross-ref-note-date">
+                        {formatDate(note.updatedAt || note.timestamp)}
+                      </span>
+                    </div>
+                    {note.topicIds && note.topicIds.length > 0 && (
+                      <div className="cross-ref-note-topics">
+                        {note.topicIds.map(topicId => {
+                          const topic = getTopicById(topicId);
+                          return topic ? (
+                            <span
+                              key={topicId}
+                              className="cross-ref-note-topic"
+                              style={{ backgroundColor: topic.color }}
+                            >
+                              {topic.name}
+                            </span>
+                          ) : null;
+                        })}
+                      </div>
+                    )}
+                    <p className="cross-ref-note-preview">
+                      {note.content.plainText.slice(0, 100)}
+                      {note.content.plainText.length > 100 ? '...' : ''}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 };

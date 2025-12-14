@@ -147,6 +147,7 @@ function App() {
     verse: number;
   } | null>(null);
   const [versesWithCrossRefs, setVersesWithCrossRefs] = useState<Set<number>>(new Set());
+  const [showCrossRefNotes, setShowCrossRefNotes] = useState(false);
 
   // Navigation History State
   const [navigationHistory, setNavigationHistory] = useState<HistoryEntry[]>(() => {
@@ -1067,14 +1068,29 @@ function App() {
 
       {/* Cross Reference Panel */}
       {crossRefContext !== null && (
-        <div className="cross-ref-panel-container">
+        <div className={`cross-ref-panel-container ${showCrossRefNotes ? 'with-notes' : ''}`}>
           <CrossReferencePanel
             bookId={crossRefContext.bookId}
             bookName={crossRefContext.bookName}
             chapter={crossRefContext.chapter}
             verse={crossRefContext.verse}
             onNavigate={handleCrossRefNavigate}
-            onClose={() => setCrossRefContext(null)}
+            onClose={() => {
+              setCrossRefContext(null);
+              setShowCrossRefNotes(false);
+            }}
+            notes={notes}
+            topics={topics}
+            onEditNote={handleEditNote}
+            onCreateNote={(verseRef) => {
+              if (verseRef) {
+                setNoteVerses([verseRef]);
+              }
+              setEditingNote(undefined);
+              setShowNoteEditor(true);
+            }}
+            showNotesPanel={showCrossRefNotes}
+            onToggleNotesPanel={() => setShowCrossRefNotes(!showCrossRefNotes)}
           />
         </div>
       )}
