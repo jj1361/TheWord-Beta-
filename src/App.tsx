@@ -139,8 +139,13 @@ function App() {
   const [highlighterTextSelection, setHighlighterTextSelection] = useState<TextSelection | null>(null);
   const [textFormatting, setTextFormatting] = useState<TextFormatting[]>(() => notesService.getTextFormatting());
 
-  // Cross-reference state
-  const [crossRefVerse, setCrossRefVerse] = useState<number | null>(null);
+  // Cross-reference state - stores full context so panel doesn't change when navigating
+  const [crossRefContext, setCrossRefContext] = useState<{
+    bookId: number;
+    bookName: string;
+    chapter: number;
+    verse: number;
+  } | null>(null);
   const [versesWithCrossRefs, setVersesWithCrossRefs] = useState<Set<number>>(new Set());
 
   // Navigation History State
@@ -630,22 +635,24 @@ function App() {
       setVersesWithCrossRefs(new Set(chapterCrossRefs.keys()));
     };
     loadCrossRefs();
-    // Close cross-ref panel when chapter changes
-    setCrossRefVerse(null);
   }, [currentBookId, currentChapter]);
 
   // Handler for cross-reference button click
   const handleCrossRefClick = (verseNum: number) => {
-    if (crossRefVerse === verseNum) {
-      setCrossRefVerse(null);
+    if (crossRefContext?.verse === verseNum && crossRefContext?.bookId === currentBookId && crossRefContext?.chapter === currentChapter) {
+      setCrossRefContext(null);
     } else {
-      setCrossRefVerse(verseNum);
+      setCrossRefContext({
+        bookId: currentBookId,
+        bookName: chapter?.bookName || '',
+        chapter: currentChapter,
+        verse: verseNum
+      });
     }
   };
 
-  // Navigate to a cross-reference
+  // Navigate to a cross-reference (keep panel open)
   const handleCrossRefNavigate = (bookId: number, chapterNum: number, verse: number) => {
-    setCrossRefVerse(null);
     loadChapter(bookId, chapterNum).then(() => {
       setHighlightVerse(verse);
       setTimeout(() => {
@@ -1059,15 +1066,15 @@ function App() {
       )}
 
       {/* Cross Reference Panel */}
-      {crossRefVerse !== null && chapter && (
+      {crossRefContext !== null && (
         <div className="cross-ref-panel-container">
           <CrossReferencePanel
-            bookId={currentBookId}
-            bookName={chapter.bookName}
-            chapter={currentChapter}
-            verse={crossRefVerse}
+            bookId={crossRefContext.bookId}
+            bookName={crossRefContext.bookName}
+            chapter={crossRefContext.chapter}
+            verse={crossRefContext.verse}
             onNavigate={handleCrossRefNavigate}
-            onClose={() => setCrossRefVerse(null)}
+            onClose={() => setCrossRefContext(null)}
           />
         </div>
       )}
