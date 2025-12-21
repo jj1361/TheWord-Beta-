@@ -585,6 +585,42 @@
   line-height: 1.4;
 }
 
+/* Note Actions */
+.cross-ref-note-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-color, #e5e7eb);
+}
+
+.cross-ref-note-action {
+  background: transparent;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.15s ease;
+}
+
+.cross-ref-note-action:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.cross-ref-note-action.delete:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+:root[data-theme="dark"] .cross-ref-note-action:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+:root[data-theme="dark"] .cross-ref-note-action.delete:hover {
+  background: rgba(239, 68, 68, 0.2);
+}
+
 /* Dark mode for notes panel */
 :root[data-theme="dark"] .cross-ref-notes-panel {
   --bg-color: #1f2937;

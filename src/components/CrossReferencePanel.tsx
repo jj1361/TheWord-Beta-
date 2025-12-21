@@ -15,6 +15,7 @@ interface CrossReferencePanelProps {
   notes?: Note[];
   topics?: Topic[];
   onEditNote?: (note: Note) => void;
+  onDeleteNote?: (id: string) => void;
   onCreateNote?: (verseRef?: VerseReference) => void;
   showNotesPanel?: boolean;
   onToggleNotesPanel?: () => void;
@@ -35,6 +36,7 @@ const CrossReferencePanel: React.FC<CrossReferencePanelProps> = ({
   notes = [],
   topics = [],
   onEditNote,
+  onDeleteNote,
   onCreateNote,
   showNotesPanel = false,
   onToggleNotesPanel,
@@ -398,6 +400,32 @@ const CrossReferencePanel: React.FC<CrossReferencePanelProps> = ({
                       {note.content.plainText.slice(0, 100)}
                       {note.content.plainText.length > 100 ? '...' : ''}
                     </p>
+                    <div className="cross-ref-note-actions">
+                      <button
+                        className="cross-ref-note-action"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onEditNote?.(note);
+                        }}
+                        title="Edit note"
+                      >
+                        ✏️
+                      </button>
+                      {onDeleteNote && (
+                        <button
+                          className="cross-ref-note-action delete"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            if (window.confirm('Delete this note?')) {
+                              onDeleteNote(note.id);
+                            }
+                          }}
+                          title="Delete note"
+                        >
+                          🗑️
+                        </button>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>

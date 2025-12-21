@@ -28,6 +28,8 @@ import { personService } from './services/personService';
 import { notesService } from './services/notesService';
 import { crossRefService } from './services/crossRefService';
 import CrossReferencePanel from './components/CrossReferencePanel';
+import MediaControlPanel from './components/MediaControlPanel';
+import MediaDisplayScreen from './components/MediaDisplayScreen';
 import { Chapter, BIBLE_BOOKS } from './types/bible';
 import { getHebrewLetterInfo, HebrewLetterInfo } from './config/hebrewLetters';
 import { WordImageMapping } from './config/youthModeConfig';
@@ -148,6 +150,10 @@ function App() {
   } | null>(null);
   const [versesWithCrossRefs, setVersesWithCrossRefs] = useState<Set<number>>(new Set());
   const [showCrossRefNotes, setShowCrossRefNotes] = useState(false);
+
+  // Media presentation state
+  const [showMediaControl, setShowMediaControl] = useState(false);
+  const [showMediaDisplay, setShowMediaDisplay] = useState(false);
 
   // Navigation History State
   const [navigationHistory, setNavigationHistory] = useState<HistoryEntry[]>(() => {
@@ -870,6 +876,8 @@ function App() {
         // Presentation props
         onTogglePresentation={() => setShowPresentation(true)}
         onToggleScripturePresentation={() => setShowScripturePresentation(true)}
+        // Media control props
+        onToggleMediaControl={() => setShowMediaControl(!showMediaControl)}
         // Auth props
         isSignedIn={!!user}
         onSignInClick={() => setShowLoginModal(true)}
@@ -1082,6 +1090,7 @@ function App() {
             notes={notes}
             topics={topics}
             onEditNote={handleEditNote}
+            onDeleteNote={handleDeleteNote}
             onCreateNote={(verseRef) => {
               if (verseRef) {
                 setNoteVerses([verseRef]);
@@ -1093,6 +1102,21 @@ function App() {
             onToggleNotesPanel={() => setShowCrossRefNotes(!showCrossRefNotes)}
           />
         </div>
+      )}
+
+      {/* Media Control Panel */}
+      {showMediaControl && (
+        <MediaControlPanel
+          onClose={() => setShowMediaControl(false)}
+          onOpenDisplay={() => setShowMediaDisplay(true)}
+        />
+      )}
+
+      {/* Media Display Screen */}
+      {showMediaDisplay && (
+        <MediaDisplayScreen
+          onClose={() => setShowMediaDisplay(false)}
+        />
       )}
 
       {/* Onboarding Tour */}

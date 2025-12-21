@@ -45,6 +45,8 @@ interface SidebarProps {
   // Presentation props
   onTogglePresentation: () => void;
   onToggleScripturePresentation: () => void;
+  // Media control props
+  onToggleMediaControl: () => void;
   // Auth props
   isSignedIn: boolean;
   onSignInClick: () => void;
@@ -91,6 +93,8 @@ const Sidebar: React.FC<SidebarProps> = ({
   // Presentation props
   onTogglePresentation,
   onToggleScripturePresentation,
+  // Media control props
+  onToggleMediaControl,
   // Auth props
   isSignedIn,
   onSignInClick,
@@ -180,6 +184,14 @@ const Sidebar: React.FC<SidebarProps> = ({
           title="Scripture Presentation View"
         >
           🎬
+        </button>
+
+        <button
+          className="sidebar-btn media-control-btn"
+          onClick={onToggleMediaControl}
+          title="Media Control Panel"
+        >
+          🖥️
         </button>
 
         <div className="sidebar-divider"></div>
