@@ -79,7 +79,7 @@ Find more emojis at: https://emojipedia.org
 
 ### 4. Configure Ancient Script
 
-The `ancientScript` property maps to the Proto-Sinaitic font characters. The Proto-Sinaitic 15 font uses English letters (A-Z) to display ancient pictographic forms.
+The `ancientScript` property maps to the Proto-Sinaitic font characters. The PICTOGRAPH-REGULAR font uses English letters (A-Z) to display ancient pictographic forms.
 
 **Character Mappings:**
 ```typescript
@@ -107,7 +107,7 @@ The `ancientScript` property maps to the Proto-Sinaitic font characters. The Pro
 'ת' (Tav)    -> 'T'
 ```
 
-The font file is located at `public/fonts/Proto-Sinaitic-15.ttf` and automatically loads when the Hebrew Letter Panel displays.
+The font file is located at `src/fonts/PICTOGRAPH-REGULAR.OTF` and automatically loads when the Hebrew Letter Panel displays.
 
 ### 5. Add Custom Images
 

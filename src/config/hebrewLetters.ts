@@ -218,7 +218,7 @@ export const HEBREW_LETTERS: Record<string, HebrewLetterInfo> = {
     definition: 'Ayin represents an eye and symbolizes sight, perception, and both physical and spiritual vision.',
     emoticon: '👁️',
     imageUrl: '/images/hebrew-letters/ayin.png',
-    ancientScript: '['
+    ancientScript: 'o'
   },
   'פ': {
     letter: 'פ',

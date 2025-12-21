@@ -18,9 +18,9 @@ Proto-Sinaitic script is one of the earliest known alphabetic writing systems, d
 
 ### Font Integration
 
-**Font File:** `Proto-Sinaitic 15.ttf`
-- **Location:** `/src/fonts/Proto-Sinaitic-15.ttf`
-- **Format:** TrueType Font
+**Font File:** `PICTOGRAPH-REGULAR.OTF`
+- **Location:** `/src/fonts/PICTOGRAPH-REGULAR.OTF`
+- **Format:** OpenType Font
 - **Loading:** Automatically loaded via CSS @font-face declaration
 
 ### Character Mapping
@@ -169,7 +169,7 @@ Potential improvements for this feature:
 
 ## Credits
 
-- **Font:** Proto-Sinaitic 15.ttf
+- **Font:** PICTOGRAPH-REGULAR.OTF
 - **Research:** Based on historical Proto-Sinaitic inscriptions
 - **Implementation:** Custom integration into Bible interlinear application
 
