@@ -134,7 +134,7 @@ body {
   flex: 1;
   max-width: 1800px;
   margin: 0 auto;
-  padding: 40px 20px 40px 120px;
+  padding: 100px 20px 40px 20px; /* Top padding for fixed horizontal sidebar below header */
   width: 100%;
 }
 
@@ -347,7 +347,7 @@ body {
   }
 
   .app-container {
-    padding: 20px 10px 20px 10px;
+    padding: 80px 10px 20px 10px; /* Added top padding for fixed sidebar on mobile */
   }
 
   .webcam-section {

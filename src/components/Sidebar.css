@@ -1,66 +1,54 @@
-/* Sidebar container - wraps the sidebar and hover trigger */
+/* Sidebar container - horizontal navigation bar below header */
 .sidebar-container {
   position: fixed;
+  top: 120px; /* Position below the header (header is ~120px with logo) */
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1100;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
 }
 
-/* Hover trigger zone - invisible area on the left edge */
+/* Hover trigger zone - not needed for horizontal layout */
 .sidebar-hover-trigger {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 30px;
-  height: 100vh;
-  z-index: 1099;
+  display: none;
 }
 
 .sidebar {
   position: relative;
-  left: 20px;
   background: #2d3748;
-  border-radius: 16px;
-  padding: 16px 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  z-index: 1100;
+  border-radius: 0 0 16px 16px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 99;
   transition: all 0.3s ease;
+  width: auto;
+  max-width: calc(100% - 40px);
+  overflow-x: auto;
 }
 
-/* Collapsible sidebar styles */
+/* Collapsible sidebar styles - disabled for horizontal layout */
 .sidebar-container.collapsible .sidebar.collapsible-sidebar {
-  transform: translateX(-100%);
-  opacity: 0;
-  pointer-events: none;
-  left: 20px;
-}
-
-/* Show sidebar when container is hovered */
-.sidebar-container.collapsible.hovered .sidebar.collapsible-sidebar {
-  transform: translateX(0);
+  transform: none;
   opacity: 1;
   pointer-events: auto;
 }
 
-/* Visual indicator on the edge when collapsed */
+/* Show sidebar when container is hovered - not needed for horizontal */
+.sidebar-container.collapsible.hovered .sidebar.collapsible-sidebar {
+  transform: none;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Visual indicator - not needed for horizontal layout */
 .sidebar-container.collapsible:not(.hovered)::before {
-  content: '';
-  position: fixed;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 4px;
-  height: 80px;
-  background: linear-gradient(180deg, rgba(59, 130, 246, 0.3), rgba(59, 130, 246, 0.6), rgba(59, 130, 246, 0.3));
-  border-radius: 0 4px 4px 0;
-  transition: all 0.3s ease;
-  animation: pulse-indicator 2s ease-in-out infinite;
+  display: none;
 }
 
 .sidebar-container.collapsible:not(.hovered):hover::before {
-  width: 6px;
-  background: linear-gradient(180deg, rgba(59, 130, 246, 0.5), rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.5));
+  display: none;
 }
 
 @keyframes pulse-indicator {
@@ -82,9 +70,12 @@
 
 .sidebar-content {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
   align-items: center;
+  justify-content: center;
+  min-width: max-content;
 }
 
 .sidebar-btn {
@@ -115,11 +106,11 @@
 }
 
 .sidebar-divider {
-  width: 32px;
-  height: 2px;
+  width: 2px;
+  height: 32px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 1px;
-  margin: 4px 0;
+  margin: 0 4px;
 }
 
 .sidebar-btn.youth-btn.active {
@@ -171,10 +162,11 @@
 }
 
 .sidebar-component-wrapper .history-dropdown-menu {
-  left: 60px;
-  top: 0;
+  left: 0;
+  top: 100%;
   right: auto;
   min-width: 280px;
+  margin-top: 8px;
 }
 
 /* Override styles for BookmarksPanel in sidebar */
@@ -216,16 +208,18 @@
 }
 
 .sidebar-component-wrapper .bookmarks-dropdown-menu {
-  left: 60px;
-  top: 0;
+  left: 0;
+  top: 100%;
   right: auto;
   min-width: 280px;
+  margin-top: 8px;
 }
 
 .sidebar-component-wrapper .signin-tooltip {
-  left: 60px;
-  top: 0;
+  left: 0;
+  top: 100%;
   right: auto;
+  margin-top: 8px;
 }
 
 /* Notes button styling */
@@ -243,6 +237,50 @@
 .sidebar-btn.theme-btn.active {
   background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
   box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+}
+
+/* Text Size Controls in Sidebar */
+.sidebar-text-size-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+.sidebar-text-size-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sidebar-text-size-btn:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+}
+
+.sidebar-text-size-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.sidebar-text-size-value {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  min-width: 28px;
+  text-align: center;
 }
 
 /* Badge for notes count */
@@ -328,43 +366,66 @@
 
 @media (max-width: 1024px) {
   .sidebar {
-    left: 10px;
-    padding: 12px 8px;
+    padding: 8px 12px;
+    max-width: calc(100% - 20px);
+  }
+
+  .sidebar-content {
+    gap: 6px;
   }
 
   .sidebar-btn {
-    width: 44px;
-    height: 44px;
-    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
   }
 
   .sidebar-component-wrapper .history-dropdown-toggle,
   .sidebar-component-wrapper .bookmarks-toggle {
-    width: 44px;
-    height: 44px;
-    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
   }
 
-  .sidebar-container.collapsible .sidebar.collapsible-sidebar {
-    left: 10px;
+  .sidebar-divider {
+    height: 28px;
+    margin: 0 2px;
+  }
+
+  .sidebar-text-size-controls {
+    padding: 4px 8px;
+    gap: 4px;
+  }
+
+  .sidebar-text-size-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+  }
+
+  .sidebar-text-size-value {
+    font-size: 11px;
+    min-width: 24px;
   }
 }
 
 @media (max-width: 768px) {
   .sidebar-container {
-    position: static;
-    transform: none;
+    position: fixed;
+    top: 70px; /* Smaller header on mobile */
+    left: 0;
+    right: 0;
     width: 100%;
     display: flex;
     justify-content: center;
   }
 
   .sidebar {
-    position: static;
+    position: relative;
     left: 0;
-    margin: 0 auto 20px;
+    margin: 0;
     width: fit-content;
-    border-radius: 12px;
+    border-radius: 0 0 12px 12px;
   }
 
   .sidebar-content {

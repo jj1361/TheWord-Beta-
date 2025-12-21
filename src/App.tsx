@@ -107,6 +107,32 @@ function App() {
     return saved === 'true'; // Default to false (disabled) if not set
   });
 
+  // Text size state
+  const MIN_TEXT_SIZE = 12;
+  const MAX_TEXT_SIZE = 50;
+  const DEFAULT_TEXT_SIZE = 18;
+  const TEXT_SIZE_STEP = 2;
+  const [textSize, setTextSize] = useState(() => {
+    const saved = localStorage.getItem('verseTextSize');
+    return saved ? parseInt(saved, 10) : DEFAULT_TEXT_SIZE;
+  });
+
+  const handleIncreaseTextSize = () => {
+    setTextSize(prev => {
+      const newSize = Math.min(prev + TEXT_SIZE_STEP, MAX_TEXT_SIZE);
+      localStorage.setItem('verseTextSize', newSize.toString());
+      return newSize;
+    });
+  };
+
+  const handleDecreaseTextSize = () => {
+    setTextSize(prev => {
+      const newSize = Math.max(prev - TEXT_SIZE_STEP, MIN_TEXT_SIZE);
+      localStorage.setItem('verseTextSize', newSize.toString());
+      return newSize;
+    });
+  };
+
   // Onboarding tour state
   const [showOnboarding, setShowOnboarding] = useState(() => {
     // Show tour on first visit (if not completed before)
@@ -756,8 +782,13 @@ function App() {
   };
 
   const handleSearchResultClick = (bookId: number, chapterNum: number, verseNum: number) => {
-    loadChapter(bookId, chapterNum).then(() => {
+    loadChapterWithoutHistory(bookId, chapterNum).then(() => {
       setHighlightVerse(verseNum);
+      // Add to history with the verse number
+      const book = BIBLE_BOOKS.find(b => b.id === bookId);
+      if (book) {
+        addToHistory(bookId, book.name, chapterNum, verseNum);
+      }
       setTimeout(() => {
         const verseElement = document.getElementById(`verse-${verseNum}`);
         if (verseElement) {
@@ -818,6 +849,11 @@ function App() {
       setSelectedVerse(undefined);
     } else {
       setSelectedVerse(verseNum);
+      // Record verse selection in history
+      const book = BIBLE_BOOKS.find(b => b.id === currentBookId);
+      if (book) {
+        addToHistory(currentBookId, book.name, currentChapter, verseNum);
+      }
     }
   };
 
@@ -835,54 +871,6 @@ function App() {
 
   return (
     <div className="App">
-      <Sidebar
-        useProtoSinaitic={useProtoSinaitic}
-        webcamEnabled={webcamEnabled}
-        webcamFullscreen={webcamFullscreen}
-        screenShareEnabled={screenShareEnabled}
-        screenShareWithVerses={screenShareWithVerses}
-        youthMode={youthMode}
-        studyMode={studyMode}
-        darkMode={darkMode}
-        personProfileEnabled={personProfileEnabled}
-        onToggleProtoSinaitic={() => setUseProtoSinaitic(!useProtoSinaitic)}
-        onToggleWebcam={() => setWebcamEnabled(!webcamEnabled)}
-        onToggleWebcamSettings={() => setWebcamSettings(!webcamSettings)}
-        onToggleWebcamFullscreen={() => setWebcamFullscreen(!webcamFullscreen)}
-        onToggleScreenShare={() => setScreenShareEnabled(!screenShareEnabled)}
-        onToggleScreenShareWithVerses={() => setScreenShareWithVerses(!screenShareWithVerses)}
-        onToggleYouthMode={() => setYouthMode(!youthMode)}
-        onToggleStudyMode={() => setStudyMode(!studyMode)}
-        onToggleDarkMode={() => setDarkMode(!darkMode)}
-        onTogglePersonProfile={() => setPersonProfileEnabled(!personProfileEnabled)}
-        // History props
-        navigationHistory={navigationHistory}
-        historyIndex={historyIndex}
-        onNavigateToHistoryEntry={navigateToHistoryEntry}
-        onClearHistory={clearHistory}
-        // Bookmarks props
-        bookmarks={bookmarks}
-        currentBookId={currentBookId}
-        currentChapter={currentChapter}
-        currentVerse={selectedVerse}
-        onNavigateToBookmark={navigateToBookmark}
-        onAddBookmark={addBookmark}
-        onRemoveBookmark={removeBookmark}
-        onUpdateBookmarkLabel={updateBookmarkLabel}
-        // Notes props
-        showNotesPanel={showNotesPanel}
-        notesCount={notes.length}
-        onToggleNotesPanel={() => setShowNotesPanel(!showNotesPanel)}
-        // Presentation props
-        onTogglePresentation={() => setShowPresentation(true)}
-        onToggleScripturePresentation={() => setShowScripturePresentation(true)}
-        // Media control props
-        onToggleMediaControl={() => setShowMediaControl(!showMediaControl)}
-        // Auth props
-        isSignedIn={!!user}
-        onSignInClick={() => setShowLoginModal(true)}
-      />
-
       {!screenShareEnabled && (
         <header className="app-header">
           <div className="header-row-1">
@@ -926,6 +914,62 @@ function App() {
         </header>
       )}
 
+      {!screenShareEnabled && (
+        <Sidebar
+          useProtoSinaitic={useProtoSinaitic}
+          webcamEnabled={webcamEnabled}
+          webcamFullscreen={webcamFullscreen}
+          screenShareEnabled={screenShareEnabled}
+          screenShareWithVerses={screenShareWithVerses}
+          youthMode={youthMode}
+          studyMode={studyMode}
+          darkMode={darkMode}
+          personProfileEnabled={personProfileEnabled}
+          onToggleProtoSinaitic={() => setUseProtoSinaitic(!useProtoSinaitic)}
+          onToggleWebcam={() => setWebcamEnabled(!webcamEnabled)}
+          onToggleWebcamSettings={() => setWebcamSettings(!webcamSettings)}
+          onToggleWebcamFullscreen={() => setWebcamFullscreen(!webcamFullscreen)}
+          onToggleScreenShare={() => setScreenShareEnabled(!screenShareEnabled)}
+          onToggleScreenShareWithVerses={() => setScreenShareWithVerses(!screenShareWithVerses)}
+          onToggleYouthMode={() => setYouthMode(!youthMode)}
+          onToggleStudyMode={() => setStudyMode(!studyMode)}
+          onToggleDarkMode={() => setDarkMode(!darkMode)}
+          onTogglePersonProfile={() => setPersonProfileEnabled(!personProfileEnabled)}
+          // History props
+          navigationHistory={navigationHistory}
+          historyIndex={historyIndex}
+          onNavigateToHistoryEntry={navigateToHistoryEntry}
+          onClearHistory={clearHistory}
+          // Bookmarks props
+          bookmarks={bookmarks}
+          currentBookId={currentBookId}
+          currentChapter={currentChapter}
+          currentVerse={selectedVerse}
+          onNavigateToBookmark={navigateToBookmark}
+          onAddBookmark={addBookmark}
+          onRemoveBookmark={removeBookmark}
+          onUpdateBookmarkLabel={updateBookmarkLabel}
+          // Notes props
+          showNotesPanel={showNotesPanel}
+          notesCount={notes.length}
+          onToggleNotesPanel={() => setShowNotesPanel(!showNotesPanel)}
+          // Presentation props
+          onTogglePresentation={() => setShowPresentation(true)}
+          onToggleScripturePresentation={() => setShowScripturePresentation(true)}
+          // Media control props
+          onToggleMediaControl={() => setShowMediaControl(!showMediaControl)}
+          // Auth props
+          isSignedIn={!!user}
+          onSignInClick={() => setShowLoginModal(true)}
+          // Text size props
+          textSize={textSize}
+          minTextSize={MIN_TEXT_SIZE}
+          maxTextSize={MAX_TEXT_SIZE}
+          onIncreaseTextSize={handleIncreaseTextSize}
+          onDecreaseTextSize={handleDecreaseTextSize}
+        />
+      )}
+
       <div className="app-container">
         <div className={`content-with-webcam ${(webcamFullscreen && webcamEnabled) || screenShareEnabled ? 'webcam-fullscreen' : ''}`}>
           {screenShareEnabled ? (
@@ -961,6 +1005,7 @@ function App() {
                     onSearch={handleSearch}
                     onSearchResultClick={handleSearchResultClick}
                     onWordSearch={(strongsId) => setWordSearchStrongsId(strongsId)}
+                    textSize={textSize}
                   />
                 </div>
               )}
@@ -998,6 +1043,7 @@ function App() {
                   studyMode={studyMode}
                   totalChapters={BIBLE_BOOKS.find(b => b.id === currentBookId)?.chapters}
                   onChapterSelect={(chapterNum) => loadChapter(currentBookId, chapterNum)}
+                  textSize={textSize}
                 />
               </div>
 

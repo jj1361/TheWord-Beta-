@@ -9,11 +9,8 @@ import { WordImageMapping } from '../config/youthModeConfig';
 import { HighlightColor, TextFormatting } from '../types/notes';
 import './ChapterDisplay.css';
 
-// Text size constants
-const MIN_TEXT_SIZE = 12;
-const MAX_TEXT_SIZE = 50;
+// Default text size if not provided
 const DEFAULT_TEXT_SIZE = 18;
-const TEXT_SIZE_STEP = 2;
 
 interface ChapterDisplayProps {
   chapter: Chapter | null;
@@ -43,6 +40,8 @@ interface ChapterDisplayProps {
   onSearch?: (query: string) => Promise<SearchResponse>;
   onSearchResultClick?: (bookId: number, chapter: number, verse: number) => void;
   onWordSearch?: (strongsId: string) => void;
+  // Text size prop (controlled from parent)
+  textSize?: number;
 }
 
 const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
@@ -72,31 +71,14 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
   onSearch,
   onSearchResultClick,
   onWordSearch,
+  textSize: textSizeProp,
 }) => {
   const [isChapterSelectorOpen, setIsChapterSelectorOpen] = useState(false);
   const [isNavigationModalOpen, setIsNavigationModalOpen] = useState(false);
 
-  // Text size state - persisted in localStorage
-  const [textSize, setTextSize] = useState(() => {
-    const saved = localStorage.getItem('verseTextSize');
-    return saved ? parseInt(saved, 10) : DEFAULT_TEXT_SIZE;
-  });
+  // Use prop if provided, otherwise fallback to default
+  const textSize = textSizeProp ?? DEFAULT_TEXT_SIZE;
 
-  const handleIncreaseTextSize = () => {
-    setTextSize(prev => {
-      const newSize = Math.min(prev + TEXT_SIZE_STEP, MAX_TEXT_SIZE);
-      localStorage.setItem('verseTextSize', newSize.toString());
-      return newSize;
-    });
-  };
-
-  const handleDecreaseTextSize = () => {
-    setTextSize(prev => {
-      const newSize = Math.max(prev - TEXT_SIZE_STEP, MIN_TEXT_SIZE);
-      localStorage.setItem('verseTextSize', newSize.toString());
-      return newSize;
-    });
-  };
   if (loading) {
     return (
       <div className="chapter-display">
@@ -143,27 +125,6 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
           </span>
         </h1>
         <div className="chapter-header-right">
-          {/* Text Size Controls */}
-          <div className="text-size-controls">
-            <button
-              className="text-size-btn"
-              onClick={handleDecreaseTextSize}
-              disabled={textSize <= MIN_TEXT_SIZE}
-              title="Decrease text size"
-            >
-              A-
-            </button>
-            <span className="text-size-value">{textSize}px</span>
-            <button
-              className="text-size-btn"
-              onClick={handleIncreaseTextSize}
-              disabled={textSize >= MAX_TEXT_SIZE}
-              title="Increase text size"
-            >
-              A+
-            </button>
-          </div>
-
           {screenShareMode && onSearch && onSearchResultClick ? (
             <div className="chapter-search-container">
               <SearchBox

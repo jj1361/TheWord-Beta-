@@ -63,7 +63,7 @@ const HistoryDropdown: React.FC<HistoryDropdownProps> = ({
   });
 
   // Group history by book for better organization
-  const groupedHistory = filteredHistory.reduce((acc, entry, index) => {
+  const groupedHistory = filteredHistory.reduce((acc, entry) => {
     const key = entry.bookName;
     if (!acc[key]) {
       acc[key] = [];
@@ -148,8 +148,7 @@ const HistoryDropdown: React.FC<HistoryDropdownProps> = ({
                     >
                       <div className="history-item-main">
                         <span className="history-item-ref">
-                          Chapter {entry.chapter}
-                          {entry.verse && ` : ${entry.verse}`}
+                          {entry.chapter}:{entry.verse || '1'}
                         </span>
                         {originalIndex === currentIndex && (
                           <span className="history-item-badge">Current</span>

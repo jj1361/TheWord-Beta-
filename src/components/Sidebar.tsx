@@ -50,6 +50,12 @@ interface SidebarProps {
   // Auth props
   isSignedIn: boolean;
   onSignInClick: () => void;
+  // Text size props
+  textSize: number;
+  minTextSize: number;
+  maxTextSize: number;
+  onIncreaseTextSize: () => void;
+  onDecreaseTextSize: () => void;
 }
 
 const Sidebar: React.FC<SidebarProps> = ({
@@ -98,6 +104,12 @@ const Sidebar: React.FC<SidebarProps> = ({
   // Auth props
   isSignedIn,
   onSignInClick,
+  // Text size props
+  textSize,
+  minTextSize,
+  maxTextSize,
+  onIncreaseTextSize,
+  onDecreaseTextSize,
 }) => {
   const [showNotesTooltip, setShowNotesTooltip] = React.useState(false);
   const [isHovered, setIsHovered] = React.useState(false);
@@ -284,6 +296,29 @@ const Sidebar: React.FC<SidebarProps> = ({
         >
           {darkMode ? '☀️' : '🌙'}
         </button>
+
+        <div className="sidebar-divider"></div>
+
+        {/* Text Size Controls */}
+        <div className="sidebar-text-size-controls">
+          <button
+            className="sidebar-text-size-btn"
+            onClick={onDecreaseTextSize}
+            disabled={textSize <= minTextSize}
+            title="Decrease text size"
+          >
+            A-
+          </button>
+          <span className="sidebar-text-size-value">{textSize}</span>
+          <button
+            className="sidebar-text-size-btn"
+            onClick={onIncreaseTextSize}
+            disabled={textSize >= maxTextSize}
+            title="Increase text size"
+          >
+            A+
+          </button>
+        </div>
       </div>
       </div>
     </div>
