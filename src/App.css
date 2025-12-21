@@ -208,17 +208,73 @@ body {
 }
 
 .screen-share-section.half-width {
-  width: 50%;
   flex-shrink: 0;
+  transition: width 0.05s ease;
+}
+
+.screen-share-fullscreen-wrapper.resizing .screen-share-section,
+.screen-share-fullscreen-wrapper.resizing .screen-share-verses-section {
+  transition: none;
+}
+
+.screen-share-fullscreen-wrapper.resizing {
+  user-select: none;
 }
 
 .screen-share-verses-section {
-  width: 50%;
   height: 100%;
   overflow-y: auto;
+  overflow-x: visible;
   padding: 20px;
   background: var(--bg-primary);
-  border-left: 2px solid var(--border-primary);
+  position: relative;
+  flex-shrink: 0;
+  transition: width 0.05s ease;
+}
+
+.screen-share-verses-section .chapter-display {
+  width: 100% !important; /* Fill the verses section width */
+  max-width: none;
+}
+
+/* Resize divider between screen share and verses */
+.screen-share-resize-divider {
+  width: 8px;
+  height: 100%;
+  background: transparent;
+  cursor: ew-resize;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 100;
+  transition: background 0.2s ease;
+}
+
+.screen-share-resize-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 60px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+  opacity: 0.5;
+  transition: opacity 0.2s ease, height 0.2s ease;
+}
+
+.screen-share-resize-divider:hover {
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.screen-share-resize-divider:hover::before {
+  opacity: 0.9;
+  height: 100px;
+}
+
+.screen-share-resize-divider:active::before {
+  opacity: 1;
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
 }
 
 .youth-panel-section {

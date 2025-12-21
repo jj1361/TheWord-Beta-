@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import Navigation from './components/Navigation';
 import SearchBox from './components/SearchBox';
 import ChapterDisplay from './components/ChapterDisplay';
@@ -83,6 +83,14 @@ function App() {
   const [webcamFullscreen, setWebcamFullscreen] = useState(false);
   const [screenShareEnabled, setScreenShareEnabled] = useState(false);
   const [screenShareWithVerses, setScreenShareWithVerses] = useState(false);
+
+  // Screen share verses panel resize state
+  const [screenShareVersesWidth, setScreenShareVersesWidth] = useState(() => {
+    const saved = localStorage.getItem('screenShareVersesWidth');
+    return saved ? parseInt(saved, 10) : 75; // Default 75% width for chapter display
+  });
+  const [isResizingScreenShare, setIsResizingScreenShare] = useState(false);
+  const screenShareWrapperRef = useRef<HTMLDivElement>(null);
   const [useProtoSinaitic, setUseProtoSinaitic] = useState(false);
   const [wordSearchStrongsId, setWordSearchStrongsId] = useState<string | null>(null);
   const [selectedYouthWord, setSelectedYouthWord] = useState<WordImageMapping | null>(null);
@@ -241,6 +249,47 @@ function App() {
     setPresentationUrl(url);
     localStorage.setItem('presentationUrl', url);
   };
+
+  // Screen share resize handlers
+  const handleScreenShareResizeStart = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsResizingScreenShare(true);
+  }, []);
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!isResizingScreenShare || !screenShareWrapperRef.current) return;
+
+      const wrapperRect = screenShareWrapperRef.current.getBoundingClientRect();
+      const wrapperWidth = wrapperRect.width;
+      // Calculate verses section width as percentage (it's on the right side)
+      const versesWidth = ((wrapperRect.right - e.clientX) / wrapperWidth) * 100;
+      // Clamp between 20% and 85%
+      const clampedWidth = Math.min(Math.max(versesWidth, 20), 85);
+      setScreenShareVersesWidth(clampedWidth);
+    };
+
+    const handleMouseUp = () => {
+      if (isResizingScreenShare) {
+        setIsResizingScreenShare(false);
+        localStorage.setItem('screenShareVersesWidth', screenShareVersesWidth.toString());
+      }
+    };
+
+    if (isResizingScreenShare) {
+      document.addEventListener('mousemove', handleMouseMove);
+      document.addEventListener('mouseup', handleMouseUp);
+      document.body.style.cursor = 'ew-resize';
+      document.body.style.userSelect = 'none';
+    }
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseup', handleMouseUp);
+      document.body.style.cursor = '';
+      document.body.style.userSelect = '';
+    };
+  }, [isResizingScreenShare, screenShareVersesWidth]);
 
   // Connect notesService to user and reload notes when user changes
   useEffect(() => {
@@ -914,67 +963,71 @@ function App() {
         </header>
       )}
 
-      {!screenShareEnabled && (
-        <Sidebar
-          useProtoSinaitic={useProtoSinaitic}
-          webcamEnabled={webcamEnabled}
-          webcamFullscreen={webcamFullscreen}
-          screenShareEnabled={screenShareEnabled}
-          screenShareWithVerses={screenShareWithVerses}
-          youthMode={youthMode}
-          studyMode={studyMode}
-          darkMode={darkMode}
-          personProfileEnabled={personProfileEnabled}
-          onToggleProtoSinaitic={() => setUseProtoSinaitic(!useProtoSinaitic)}
-          onToggleWebcam={() => setWebcamEnabled(!webcamEnabled)}
-          onToggleWebcamSettings={() => setWebcamSettings(!webcamSettings)}
-          onToggleWebcamFullscreen={() => setWebcamFullscreen(!webcamFullscreen)}
-          onToggleScreenShare={() => setScreenShareEnabled(!screenShareEnabled)}
-          onToggleScreenShareWithVerses={() => setScreenShareWithVerses(!screenShareWithVerses)}
-          onToggleYouthMode={() => setYouthMode(!youthMode)}
-          onToggleStudyMode={() => setStudyMode(!studyMode)}
-          onToggleDarkMode={() => setDarkMode(!darkMode)}
-          onTogglePersonProfile={() => setPersonProfileEnabled(!personProfileEnabled)}
-          // History props
-          navigationHistory={navigationHistory}
-          historyIndex={historyIndex}
-          onNavigateToHistoryEntry={navigateToHistoryEntry}
-          onClearHistory={clearHistory}
-          // Bookmarks props
-          bookmarks={bookmarks}
-          currentBookId={currentBookId}
-          currentChapter={currentChapter}
-          currentVerse={selectedVerse}
-          onNavigateToBookmark={navigateToBookmark}
-          onAddBookmark={addBookmark}
-          onRemoveBookmark={removeBookmark}
-          onUpdateBookmarkLabel={updateBookmarkLabel}
-          // Notes props
-          showNotesPanel={showNotesPanel}
-          notesCount={notes.length}
-          onToggleNotesPanel={() => setShowNotesPanel(!showNotesPanel)}
-          // Presentation props
-          onTogglePresentation={() => setShowPresentation(true)}
-          onToggleScripturePresentation={() => setShowScripturePresentation(true)}
-          // Media control props
-          onToggleMediaControl={() => setShowMediaControl(!showMediaControl)}
-          // Auth props
-          isSignedIn={!!user}
-          onSignInClick={() => setShowLoginModal(true)}
-          // Text size props
-          textSize={textSize}
-          minTextSize={MIN_TEXT_SIZE}
-          maxTextSize={MAX_TEXT_SIZE}
-          onIncreaseTextSize={handleIncreaseTextSize}
-          onDecreaseTextSize={handleDecreaseTextSize}
-        />
-      )}
+      <Sidebar
+        useProtoSinaitic={useProtoSinaitic}
+        webcamEnabled={webcamEnabled}
+        webcamFullscreen={webcamFullscreen}
+        screenShareEnabled={screenShareEnabled}
+        screenShareWithVerses={screenShareWithVerses}
+        youthMode={youthMode}
+        studyMode={studyMode}
+        darkMode={darkMode}
+        personProfileEnabled={personProfileEnabled}
+        onToggleProtoSinaitic={() => setUseProtoSinaitic(!useProtoSinaitic)}
+        onToggleWebcam={() => setWebcamEnabled(!webcamEnabled)}
+        onToggleWebcamSettings={() => setWebcamSettings(!webcamSettings)}
+        onToggleWebcamFullscreen={() => setWebcamFullscreen(!webcamFullscreen)}
+        onToggleScreenShare={() => setScreenShareEnabled(!screenShareEnabled)}
+        onToggleScreenShareWithVerses={() => setScreenShareWithVerses(!screenShareWithVerses)}
+        onToggleYouthMode={() => setYouthMode(!youthMode)}
+        onToggleStudyMode={() => setStudyMode(!studyMode)}
+        onToggleDarkMode={() => setDarkMode(!darkMode)}
+        onTogglePersonProfile={() => setPersonProfileEnabled(!personProfileEnabled)}
+        // History props
+        navigationHistory={navigationHistory}
+        historyIndex={historyIndex}
+        onNavigateToHistoryEntry={navigateToHistoryEntry}
+        onClearHistory={clearHistory}
+        // Bookmarks props
+        bookmarks={bookmarks}
+        currentBookId={currentBookId}
+        currentChapter={currentChapter}
+        currentVerse={selectedVerse}
+        onNavigateToBookmark={navigateToBookmark}
+        onAddBookmark={addBookmark}
+        onRemoveBookmark={removeBookmark}
+        onUpdateBookmarkLabel={updateBookmarkLabel}
+        // Notes props
+        showNotesPanel={showNotesPanel}
+        notesCount={notes.length}
+        onToggleNotesPanel={() => setShowNotesPanel(!showNotesPanel)}
+        // Presentation props
+        onTogglePresentation={() => setShowPresentation(true)}
+        onToggleScripturePresentation={() => setShowScripturePresentation(true)}
+        // Media control props
+        onToggleMediaControl={() => setShowMediaControl(!showMediaControl)}
+        // Auth props
+        isSignedIn={!!user}
+        onSignInClick={() => setShowLoginModal(true)}
+        // Text size props
+        textSize={textSize}
+        minTextSize={MIN_TEXT_SIZE}
+        maxTextSize={MAX_TEXT_SIZE}
+        onIncreaseTextSize={handleIncreaseTextSize}
+        onDecreaseTextSize={handleDecreaseTextSize}
+      />
 
       <div className="app-container">
         <div className={`content-with-webcam ${(webcamFullscreen && webcamEnabled) || screenShareEnabled ? 'webcam-fullscreen' : ''}`}>
           {screenShareEnabled ? (
-            <div className={`screen-share-fullscreen-wrapper ${screenShareWithVerses ? 'with-verses' : ''}`}>
-              <div className={`screen-share-section ${screenShareWithVerses ? 'half-width' : 'full-width'}`}>
+            <div
+              className={`screen-share-fullscreen-wrapper ${screenShareWithVerses ? 'with-verses' : ''} ${isResizingScreenShare ? 'resizing' : ''}`}
+              ref={screenShareWrapperRef}
+            >
+              <div
+                className={`screen-share-section ${screenShareWithVerses ? 'half-width' : 'full-width'}`}
+                style={screenShareWithVerses ? { width: `${100 - screenShareVersesWidth}%` } : undefined}
+              >
                 <ScreenShareDisplay
                   isVisible={screenShareEnabled}
                   isFullscreen={true}
@@ -982,32 +1035,42 @@ function App() {
                 />
               </div>
               {screenShareWithVerses && (
-                <div className="screen-share-verses-section">
-                  <ChapterDisplay
-                    chapter={chapter}
-                    loading={loading}
-                    highlightVerse={highlightVerse}
-                    selectedVerse={selectedVerse}
-                    navigatedVerse={navigatedVerse}
-                    onLetterClick={handleLetterClick}
-                    onStrongsClick={handleStrongsClick}
-                    onPersonClick={personProfileEnabled ? handlePersonClick : undefined}
-                    onVerseClick={handleVerseClick}
-                    onYouthImageClick={youthMode ? handleYouthImageClick : undefined}
-                    useProtoSinaitic={useProtoSinaitic}
-                    youthMode={youthMode}
-                    studyMode={studyMode}
-                    totalChapters={BIBLE_BOOKS.find(b => b.id === currentBookId)?.chapters}
-                    onChapterSelect={(chapterNum) => loadChapter(currentBookId, chapterNum)}
-                    screenShareMode={true}
-                    currentBookId={currentBookId}
-                    onNavigate={loadChapter}
-                    onSearch={handleSearch}
-                    onSearchResultClick={handleSearchResultClick}
-                    onWordSearch={(strongsId) => setWordSearchStrongsId(strongsId)}
-                    textSize={textSize}
+                <>
+                  <div
+                    className="screen-share-resize-divider"
+                    onMouseDown={handleScreenShareResizeStart}
+                    title="Drag to resize"
                   />
-                </div>
+                  <div
+                    className="screen-share-verses-section"
+                    style={{ width: `${screenShareVersesWidth}%` }}
+                  >
+                    <ChapterDisplay
+                      chapter={chapter}
+                      loading={loading}
+                      highlightVerse={highlightVerse}
+                      selectedVerse={selectedVerse}
+                      navigatedVerse={navigatedVerse}
+                      onLetterClick={handleLetterClick}
+                      onStrongsClick={handleStrongsClick}
+                      onPersonClick={personProfileEnabled ? handlePersonClick : undefined}
+                      onVerseClick={handleVerseClick}
+                      onYouthImageClick={youthMode ? handleYouthImageClick : undefined}
+                      useProtoSinaitic={useProtoSinaitic}
+                      youthMode={youthMode}
+                      studyMode={studyMode}
+                      totalChapters={BIBLE_BOOKS.find(b => b.id === currentBookId)?.chapters}
+                      onChapterSelect={(chapterNum) => loadChapter(currentBookId, chapterNum)}
+                      screenShareMode={true}
+                      currentBookId={currentBookId}
+                      onNavigate={loadChapter}
+                      onSearch={handleSearch}
+                      onSearchResultClick={handleSearchResultClick}
+                      onWordSearch={(strongsId) => setWordSearchStrongsId(strongsId)}
+                      textSize={textSize}
+                    />
+                  </div>
+                </>
               )}
             </div>
           ) : webcamFullscreen && webcamEnabled ? (

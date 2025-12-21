@@ -113,9 +113,21 @@ const Sidebar: React.FC<SidebarProps> = ({
 }) => {
   const [showNotesTooltip, setShowNotesTooltip] = React.useState(false);
   const [isHovered, setIsHovered] = React.useState(false);
+  const [isPinned, setIsPinned] = React.useState(() => {
+    const saved = localStorage.getItem('sidebarPinned');
+    return saved === 'true';
+  });
 
-  // Sidebar is always collapsible
-  const isCollapsible = true;
+  const handleTogglePin = () => {
+    setIsPinned(prev => {
+      const newValue = !prev;
+      localStorage.setItem('sidebarPinned', newValue.toString());
+      return newValue;
+    });
+  };
+
+  // Sidebar is collapsible only when not pinned
+  const isCollapsible = !isPinned;
 
   return (
     <div
@@ -129,6 +141,18 @@ const Sidebar: React.FC<SidebarProps> = ({
       )}
       <div className={`sidebar ${screenShareEnabled ? 'screen-share-mode' : ''} ${isCollapsible ? 'collapsible-sidebar' : ''}`}>
       <div className="sidebar-content">
+        {/* Pin/Unpin Button */}
+        <button
+          className={`sidebar-btn pin-btn ${isPinned ? 'active' : ''}`}
+          onClick={handleTogglePin}
+          title={isPinned ? 'Unpin sidebar' : 'Pin sidebar'}
+          aria-label={isPinned ? 'Unpin sidebar' : 'Pin sidebar'}
+        >
+          📌
+        </button>
+
+        <div className="sidebar-divider"></div>
+
         <button
           className={`sidebar-btn ${useProtoSinaitic ? 'active' : ''}`}
           onClick={onToggleProtoSinaitic}

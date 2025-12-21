@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { Chapter } from '../types/bible';
 import VerseDisplay from './VerseDisplay';
 import ChapterSelector from './ChapterSelector';
@@ -11,6 +11,11 @@ import './ChapterDisplay.css';
 
 // Default text size if not provided
 const DEFAULT_TEXT_SIZE = 18;
+
+// Width constraints (percentage-based)
+const MIN_WIDTH_PERCENT = 30;
+const MAX_WIDTH_PERCENT = 100;
+const DEFAULT_WIDTH_PERCENT = 75;
 
 interface ChapterDisplayProps {
   chapter: Chapter | null;
@@ -76,33 +81,100 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
   const [isChapterSelectorOpen, setIsChapterSelectorOpen] = useState(false);
   const [isNavigationModalOpen, setIsNavigationModalOpen] = useState(false);
 
+  // Resizable width state (percentage-based)
+  const [widthPercent, setWidthPercent] = useState(() => {
+    const saved = localStorage.getItem('chapterDisplayWidthPercent');
+    return saved ? parseInt(saved, 10) : DEFAULT_WIDTH_PERCENT;
+  });
+  const [isResizing, setIsResizing] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
   // Use prop if provided, otherwise fallback to default
   const textSize = textSizeProp ?? DEFAULT_TEXT_SIZE;
 
+  // Handle resize drag
+  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsResizing(true);
+  }, []);
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!isResizing || !containerRef.current) return;
+
+      // Get parent container width for percentage calculation
+      const parent = containerRef.current.parentElement;
+      if (!parent) return;
+
+      const parentRect = parent.getBoundingClientRect();
+      const containerRect = containerRef.current.getBoundingClientRect();
+      const newWidth = e.clientX - containerRect.left;
+      const newWidthPercent = (newWidth / parentRect.width) * 100;
+      const clampedPercent = Math.min(Math.max(newWidthPercent, MIN_WIDTH_PERCENT), MAX_WIDTH_PERCENT);
+
+      setWidthPercent(clampedPercent);
+    };
+
+    const handleMouseUp = () => {
+      if (isResizing) {
+        setIsResizing(false);
+        localStorage.setItem('chapterDisplayWidthPercent', widthPercent.toString());
+      }
+    };
+
+    if (isResizing) {
+      document.addEventListener('mousemove', handleMouseMove);
+      document.addEventListener('mouseup', handleMouseUp);
+      document.body.style.cursor = 'ew-resize';
+      document.body.style.userSelect = 'none';
+    }
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseup', handleMouseUp);
+      document.body.style.cursor = '';
+      document.body.style.userSelect = '';
+    };
+  }, [isResizing, widthPercent]);
+
   if (loading) {
     return (
-      <div className="chapter-display">
+      <div className="chapter-display" style={{ width: `${widthPercent}%` }} ref={containerRef}>
         <div className="loading-container">
           <div className="loading-spinner"></div>
           <p>Loading chapter...</p>
         </div>
+        <div
+          className="resize-handle"
+          onMouseDown={handleMouseDown}
+          title="Drag to resize"
+        />
       </div>
     );
   }
 
   if (!chapter) {
     return (
-      <div className="chapter-display">
+      <div className="chapter-display" style={{ width: `${widthPercent}%` }} ref={containerRef}>
         <div className="empty-state">
           <h2>Welcome to the Bible App</h2>
           <p>Select a book and chapter to begin reading</p>
         </div>
+        <div
+          className="resize-handle"
+          onMouseDown={handleMouseDown}
+          title="Drag to resize"
+        />
       </div>
     );
   }
 
   return (
-    <div className="chapter-display">
+    <div
+      className={`chapter-display ${isResizing ? 'resizing' : ''}`}
+      style={{ width: `${widthPercent}%` }}
+      ref={containerRef}
+    >
       <div className="chapter-header">
         <h1 className="chapter-title">
           {screenShareMode ? (
@@ -209,6 +281,11 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
           );
         })}
       </div>
+      <div
+        className="resize-handle"
+        onMouseDown={handleMouseDown}
+        title="Drag to resize"
+      />
     </div>
   );
 };
