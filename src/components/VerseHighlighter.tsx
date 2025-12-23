@@ -47,9 +47,18 @@ interface VerseHighlighterProps {
   verseNum: number;
   bookName: string;
   chapterNum: number;
+  bookId: number;
   verseText: string;
   totalVerses: number;
   onCopyVerseRange?: (startVerse: number, endVerse: number) => void;
+  // Cross reference props
+  crossRefContext?: {
+    bookId: number;
+    bookName: string;
+    chapter: number;
+    verse: number;
+  } | null;
+  onAddAsCrossRef?: (targetBookId: number, targetBookName: string, targetChapter: number, targetVerseStart: number, targetVerseEnd?: number) => void;
 }
 
 const VerseHighlighter: React.FC<VerseHighlighterProps> = ({
@@ -66,25 +75,36 @@ const VerseHighlighter: React.FC<VerseHighlighterProps> = ({
   verseNum,
   bookName,
   chapterNum,
+  bookId,
   verseText,
   totalVerses,
   onCopyVerseRange,
+  crossRefContext,
+  onAddAsCrossRef,
 }) => {
   const popupRef = useRef<HTMLDivElement>(null);
   const [showFontColors, setShowFontColors] = useState(false);
   const [showTextHighlights, setShowTextHighlights] = useState(false);
   const [showRangeSelector, setShowRangeSelector] = useState(false);
+  const [showCrossRefRangeSelector, setShowCrossRefRangeSelector] = useState(false);
   const [endVerse, setEndVerse] = useState(verseNum);
+  const [crossRefEndVerse, setCrossRefEndVerse] = useState(verseNum);
   const [copySuccess, setCopySuccess] = useState<string | null>(null);
+  const [crossRefSuccess, setCrossRefSuccess] = useState<string | null>(null);
+  const [adjustedPosition, setAdjustedPosition] = useState<{ x: number; y: number } | null>(null);
 
   // Check if there's text selected in the document
   const hasTextSelection = textSelection && textSelection.text.length > 0;
 
-  // Reset range selector when verse changes
+  // Reset range selector and position when verse changes
   useEffect(() => {
     setEndVerse(verseNum);
+    setCrossRefEndVerse(verseNum);
     setShowRangeSelector(false);
+    setShowCrossRefRangeSelector(false);
     setCopySuccess(null);
+    setCrossRefSuccess(null);
+    setAdjustedPosition(null);
   }, [verseNum]);
 
   // Copy single verse to clipboard
@@ -116,6 +136,39 @@ const VerseHighlighter: React.FC<VerseHighlighterProps> = ({
       }, 800);
     }
   };
+
+  // Add single verse as cross reference
+  const handleAddSingleCrossRef = () => {
+    if (onAddAsCrossRef) {
+      onAddAsCrossRef(bookId, bookName, chapterNum, verseNum);
+      setCrossRefSuccess('Added!');
+      setTimeout(() => {
+        onClose();
+      }, 800);
+    }
+  };
+
+  // Add verse range as cross reference
+  const handleAddCrossRefRange = () => {
+    const startV = Math.min(verseNum, crossRefEndVerse);
+    const endV = Math.max(verseNum, crossRefEndVerse);
+
+    if (onAddAsCrossRef) {
+      onAddAsCrossRef(bookId, bookName, chapterNum, startV, startV !== endV ? endV : undefined);
+      setCrossRefSuccess('Added!');
+      setTimeout(() => {
+        onClose();
+      }, 800);
+    }
+  };
+
+  // Check if we can add a cross reference - must have cross ref context and handler
+  // Also ensure the right-clicked verse is different from the cross ref source verse
+  const canAddAsCrossRef = !!(crossRefContext && onAddAsCrossRef) && (
+    bookId !== crossRefContext.bookId ||
+    chapterNum !== crossRefContext.chapter ||
+    verseNum !== crossRefContext.verse
+  );
 
   // Apply formatting and save it, then close the popup so the change is visible
   const applyFormat = (style: TextFormatStyle) => {
@@ -180,33 +233,82 @@ const VerseHighlighter: React.FC<VerseHighlighterProps> = ({
       const rect = popupRef.current.getBoundingClientRect();
       const viewportWidth = window.innerWidth;
       const viewportHeight = window.innerHeight;
+      const padding = 10; // Minimum distance from viewport edges
 
       let adjustedX = position.x;
       let adjustedY = position.y;
 
-      // Adjust horizontal position
-      if (rect.right > viewportWidth - 20) {
-        adjustedX = viewportWidth - rect.width - 20;
+      // Adjust horizontal position - ensure menu stays within viewport
+      if (position.x + rect.width > viewportWidth - padding) {
+        adjustedX = viewportWidth - rect.width - padding;
       }
-      if (rect.left < 20) {
-        adjustedX = 20;
+      if (adjustedX < padding) {
+        adjustedX = padding;
       }
 
-      // Adjust vertical position
-      if (rect.bottom > viewportHeight - 20) {
+      // Adjust vertical position - ensure menu stays within viewport
+      if (position.y + rect.height > viewportHeight - padding) {
+        // Try to show above the click point
         adjustedY = position.y - rect.height - 10;
+
+        // If that would go above the viewport, clamp to top
+        if (adjustedY < padding) {
+          adjustedY = padding;
+        }
       }
 
-      popupRef.current.style.left = `${adjustedX}px`;
-      popupRef.current.style.top = `${adjustedY}px`;
+      // Also check if menu would be above viewport (unlikely but handle it)
+      if (adjustedY < padding) {
+        adjustedY = padding;
+      }
+
+      setAdjustedPosition({ x: adjustedX, y: adjustedY });
     }
   }, [position]);
+
+  // Re-adjust position when menu content changes (e.g., showing range selector)
+  useEffect(() => {
+    // Small delay to allow DOM to update with new content
+    const timeoutId = setTimeout(() => {
+      if (popupRef.current) {
+        const rect = popupRef.current.getBoundingClientRect();
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const padding = 10;
+
+        let newX = rect.left;
+        let newY = rect.top;
+        let needsUpdate = false;
+
+        // Check if menu now extends beyond viewport horizontally
+        if (rect.right > viewportWidth - padding) {
+          newX = Math.max(padding, viewportWidth - rect.width - padding);
+          needsUpdate = true;
+        }
+
+        // Check if menu now extends beyond viewport vertically
+        if (rect.bottom > viewportHeight - padding) {
+          newY = Math.max(padding, viewportHeight - rect.height - padding);
+          needsUpdate = true;
+        }
+
+        if (needsUpdate) {
+          setAdjustedPosition({ x: newX, y: newY });
+        }
+      }
+    }, 0);
+
+    return () => clearTimeout(timeoutId);
+  }, [showRangeSelector, showCrossRefRangeSelector, showFontColors, showTextHighlights]);
+
+  // Use adjusted position if available, otherwise use original position
+  const displayPosition = adjustedPosition || position;
 
   return (
     <div
       ref={popupRef}
       className="verse-highlighter"
-      style={{ left: position.x, top: position.y }}
+      style={{ left: displayPosition.x, top: displayPosition.y }}
     >
       {/* Rich Text Formatting Toolbar - shown when text is selected */}
       {hasTextSelection && (
@@ -403,6 +505,69 @@ const VerseHighlighter: React.FC<VerseHighlighterProps> = ({
             <span className="action-icon">📑</span>
             Copy Verse Range...
           </button>
+        </>
+      )}
+
+      {/* Cross Reference Section - only show when viewing cross refs for a different verse */}
+      {canAddAsCrossRef && (
+        <>
+          <div className="highlighter-divider" />
+          {crossRefSuccess ? (
+            <div className="copy-success crossref-success">
+              <span className="copy-success-icon">✓</span>
+              {crossRefSuccess}
+            </div>
+          ) : showCrossRefRangeSelector ? (
+            <div className="copy-range-section crossref-range-section">
+              <div className="range-header">
+                <button className="back-btn" onClick={() => setShowCrossRefRangeSelector(false)}>
+                  ←
+                </button>
+                <span>Add as Cross Ref</span>
+              </div>
+              <div className="crossref-source-info">
+                <span className="crossref-source-label">Source:</span>
+                <span className="crossref-source-verse">
+                  {crossRefContext!.bookName} {crossRefContext!.chapter}:{crossRefContext!.verse}
+                </span>
+              </div>
+              <div className="range-inputs">
+                <div className="range-row">
+                  <span className="range-label">From:</span>
+                  <span className="range-value">Verse {verseNum}</span>
+                </div>
+                <div className="range-row">
+                  <span className="range-label">To:</span>
+                  <select
+                    value={crossRefEndVerse}
+                    onChange={(e) => setCrossRefEndVerse(Number(e.target.value))}
+                    className="range-select"
+                  >
+                    {Array.from({ length: totalVerses }, (_, i) => i + 1).map((num) => (
+                      <option key={num} value={num}>
+                        Verse {num}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+              <button className="copy-range-btn crossref-add-btn" onClick={handleAddCrossRefRange}>
+                Add {bookName} {chapterNum}:{Math.min(verseNum, crossRefEndVerse)}
+                {crossRefEndVerse !== verseNum ? `-${Math.max(verseNum, crossRefEndVerse)}` : ''}
+              </button>
+            </div>
+          ) : (
+            <>
+              <button className="highlighter-action crossref" onClick={handleAddSingleCrossRef}>
+                <span className="action-icon">🔗</span>
+                Add as Cross Reference
+              </button>
+              <button className="highlighter-action crossref-range" onClick={() => setShowCrossRefRangeSelector(true)}>
+                <span className="action-icon">📖</span>
+                Add Verse Range...
+              </button>
+            </>
+          )}
         </>
       )}
     </div>

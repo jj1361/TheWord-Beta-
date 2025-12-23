@@ -1,7 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { LexiconData } from '../types/lexicon';
 import { HebrewLetterInfo } from '../config/hebrewLetters';
 import { strongsSearchService } from '../services/strongsSearchService';
+import { crossRefService, CrossRefEntry, CrossReference } from '../services/crossRefService';
+import { searchService } from '../services/searchService';
+import { userCrossRefService } from '../services/userCrossRefService';
+import { Note, Topic, VerseReference as NoteVerseReference } from '../types/notes';
+import {
+  CrossRefCategory,
+  UserCrossReference,
+  CrossRefDisplaySettings,
+  CrossRefVerseReference,
+  CATEGORY_COLORS,
+} from '../types/crossRef';
 import './RightPanel.css';
 
 interface VerseReference {
@@ -13,12 +24,35 @@ interface VerseReference {
   osisRef: string;
 }
 
+// Cross reference types
+interface CrossRefVerseWithText extends CrossReference {
+  text?: string;
+  refKey: string;
+}
+
+interface CrossRefContext {
+  bookId: number;
+  bookName: string;
+  chapter: number;
+  verse: number;
+}
+
 interface RightPanelProps {
   lexiconContent: LexiconData | null;
   hebrewLetterContent: HebrewLetterInfo | null;
   onClose: () => void;
   onVerseClick?: (bookId: number, chapter: number, verse: number) => void;
   onStrongsClick?: (strongsNumber: string) => void;
+  // Cross reference props
+  crossRefContext?: CrossRefContext | null;
+  notes?: Note[];
+  topics?: Topic[];
+  onEditNote?: (note: Note) => void;
+  onDeleteNote?: (id: string) => void;
+  onCreateNote?: (verseRef?: NoteVerseReference) => void;
+  // Pre-populated cross reference target from context menu
+  pendingCrossRefTarget?: string | null;
+  onClearPendingCrossRefTarget?: () => void;
 }
 
 /**
@@ -39,7 +73,7 @@ const parseStrongsReferences = (text: string, onStrongsClick?: (strongsNumber: s
   });
 };
 
-type TabType = 'strongs' | 'stepbible' | 'bdb' | 'ahlb' | 'hebrew';
+type TabType = 'strongs' | 'stepbible' | 'bdb' | 'ahlb' | 'hebrew' | 'crossref';
 
 // Interface for translation word with count
 interface TranslationWord {
@@ -53,7 +87,15 @@ const RightPanel: React.FC<RightPanelProps> = ({
   hebrewLetterContent,
   onClose,
   onVerseClick,
-  onStrongsClick
+  onStrongsClick,
+  crossRefContext,
+  notes = [],
+  topics = [],
+  onEditNote,
+  onDeleteNote,
+  onCreateNote,
+  pendingCrossRefTarget,
+  onClearPendingCrossRefTarget,
 }) => {
   // Handle clicks on Strong's number links
   const handleStrongsLinkClick = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -75,9 +117,41 @@ const RightPanel: React.FC<RightPanelProps> = ({
   const [selectedTranslation, setSelectedTranslation] = useState<string | null>(null);
   const [translationVerses, setTranslationVerses] = useState<VerseReference[]>([]);
 
+  // Cross reference state
+  const [crossRefs, setCrossRefs] = useState<CrossRefEntry[]>([]);
+  const [crossRefLoading, setCrossRefLoading] = useState(false);
+  const [selectedCrossRefTopic, setSelectedCrossRefTopic] = useState<number | null>(null);
+  const [crossRefVerseTexts, setCrossRefVerseTexts] = useState<Map<string, string>>(new Map());
+  const [displayedCrossRefs, setDisplayedCrossRefs] = useState<CrossRefVerseWithText[]>([]);
+  const [selectedCrossRefVerses, setSelectedCrossRefVerses] = useState<Set<string>>(new Set());
+  const [crossRefCopySuccess, setCrossRefCopySuccess] = useState(false);
+  const [prevCrossRefContext, setPrevCrossRefContext] = useState<string | null>(null);
+
+  // User cross reference state
+  const [userCrossRefs, setUserCrossRefs] = useState<UserCrossReference[]>([]);
+  const [crossRefCategories, setCrossRefCategories] = useState<CrossRefCategory[]>([]);
+  const [displaySettings, setDisplaySettings] = useState<CrossRefDisplaySettings>(() => userCrossRefService.getDisplaySettings());
+  const [selectedUserCategory, setSelectedUserCategory] = useState<string | null>(null);
+  const [showAddCrossRefModal, setShowAddCrossRefModal] = useState(false);
+  const [showCategoryModal, setShowCategoryModal] = useState(false);
+  const [editingCategory, setEditingCategory] = useState<CrossRefCategory | null>(null);
+  const [newCategoryName, setNewCategoryName] = useState('');
+  const [newCategoryColor, setNewCategoryColor] = useState('#3b82f6');
+  const [newCategoryDescription, setNewCategoryDescription] = useState('');
+  const [addCrossRefTarget, setAddCrossRefTarget] = useState('');
+  const [addCrossRefCategory, setAddCrossRefCategory] = useState<string>('');
+  const [addCrossRefNote, setAddCrossRefNote] = useState('');
+  const [addCrossRefWord, setAddCrossRefWord] = useState('');
+  const [userCrossRefVerseTexts, setUserCrossRefVerseTexts] = useState<Map<string, string>>(new Map());
+
+  // Drag and drop state for user cross refs
+  const [draggedCrossRefId, setDraggedCrossRefId] = useState<string | null>(null);
+  const [dragOverCrossRefId, setDragOverCrossRefId] = useState<string | null>(null);
+
   // Determine initial tab based on which content is available
   // Default to Strong's if available, otherwise first available lexicon
   const getInitialTab = (): TabType => {
+    if (crossRefContext) return 'crossref';
     if (lexiconContent) {
       // Always default to Strong's first
       if (lexiconContent.strongs) return 'strongs';
@@ -93,7 +167,27 @@ const RightPanel: React.FC<RightPanelProps> = ({
   const [prevLexiconId, setPrevLexiconId] = useState<string | null>(null);
   const [prevHebrewLetter, setPrevHebrewLetter] = useState<string | null>(null);
 
-  // Update active tab when content changes to automatically show newly clicked content
+  // Separate effect to handle cross reference context changes
+  // This ensures cross ref tab is shown immediately when crossRefContext is set
+  useEffect(() => {
+    if (crossRefContext) {
+      const currentCrossRefKey = `${crossRefContext.bookId}:${crossRefContext.chapter}:${crossRefContext.verse}`;
+      if (currentCrossRefKey !== prevCrossRefContext) {
+        setActiveTab('crossref');
+        setPrevCrossRefContext(currentCrossRefKey);
+      }
+    } else if (prevCrossRefContext) {
+      // Cross ref was cleared, switch to available content
+      setPrevCrossRefContext(null);
+      if (lexiconContent) {
+        setActiveTab(getInitialTab());
+      } else if (hebrewLetterContent) {
+        setActiveTab('hebrew');
+      }
+    }
+  }, [crossRefContext]);
+
+  // Update active tab when lexicon or hebrew content changes
   useEffect(() => {
     const currentLexiconId = lexiconContent?.strongs?.id || lexiconContent?.stepBible?.eStrong || null;
     const currentHebrewLetter = hebrewLetterContent?.letter || null;
@@ -104,23 +198,35 @@ const RightPanel: React.FC<RightPanelProps> = ({
     // Check if Hebrew letter content changed (new letter was clicked)
     const hebrewChanged = currentHebrewLetter && currentHebrewLetter !== prevHebrewLetter;
 
-    // Update active tab based on what changed most recently
-    if (lexiconChanged) {
-      // Reset to Strong's tab when new word is clicked
-      setActiveTab(getInitialTab());
-      setPrevLexiconId(currentLexiconId);
-    } else if (hebrewChanged) {
-      setActiveTab('hebrew');
-      setPrevHebrewLetter(currentHebrewLetter);
+    // Update active tab based on what changed (only if not showing cross refs)
+    if (activeTab !== 'crossref') {
+      if (lexiconChanged) {
+        // Reset to Strong's tab when new word is clicked
+        setActiveTab(getInitialTab());
+        setPrevLexiconId(currentLexiconId);
+      } else if (hebrewChanged) {
+        setActiveTab('hebrew');
+        setPrevHebrewLetter(currentHebrewLetter);
+      }
+    } else {
+      // Still update prev values so changes are detected when switching back
+      if (lexiconChanged) {
+        setPrevLexiconId(currentLexiconId);
+      }
+      if (hebrewChanged) {
+        setPrevHebrewLetter(currentHebrewLetter);
+      }
     }
 
     // If one type of content is removed, switch to the other if available
-    if (!lexiconContent && hebrewLetterContent) {
+    if (!lexiconContent && !crossRefContext && hebrewLetterContent) {
       setActiveTab('hebrew');
-    } else if (lexiconContent && !hebrewLetterContent) {
+    } else if (lexiconContent && !hebrewLetterContent && !crossRefContext) {
       setActiveTab(getInitialTab());
+    } else if (crossRefContext && !lexiconContent && !hebrewLetterContent) {
+      setActiveTab('crossref');
     }
-  }, [lexiconContent, hebrewLetterContent, prevLexiconId, prevHebrewLetter]);
+  }, [lexiconContent, hebrewLetterContent, crossRefContext, prevLexiconId, prevHebrewLetter, activeTab]);
 
   // Load verse references when Strong's number changes
   useEffect(() => {
@@ -135,6 +241,561 @@ const RightPanel: React.FC<RightPanelProps> = ({
       setTranslationVerses([]);
     }
   }, [lexiconContent?.strongs?.id, lexiconContent?.stepBible?.eStrong]);
+
+  // Cross reference helper functions
+  const getCrossRefsForTopic = useCallback((topicIndex: number, texts: Map<string, string>, entries: CrossRefEntry[]): CrossRefVerseWithText[] => {
+    if (topicIndex < 0 || topicIndex >= entries.length) return [];
+
+    const entry = entries[topicIndex];
+    const refsWithText: CrossRefVerseWithText[] = entry.refs.map(ref => ({
+      ...ref,
+      refKey: `${ref.bookId}:${ref.chapter}:${ref.verse}`,
+      text: texts.get(`${ref.bookId}:${ref.chapter}:${ref.verse}`)
+    }));
+
+    // Sort by book order
+    refsWithText.sort((a, b) => {
+      if (a.bookId !== b.bookId) return a.bookId - b.bookId;
+      if (a.chapter !== b.chapter) return a.chapter - b.chapter;
+      return a.verse - b.verse;
+    });
+
+    return refsWithText;
+  }, []);
+
+  const getAllCrossRefs = useCallback((entries: CrossRefEntry[]): CrossReference[] => {
+    const seen = new Set<string>();
+    const refs: CrossReference[] = [];
+
+    for (const entry of entries) {
+      for (const ref of entry.refs) {
+        const key = `${ref.bookId}:${ref.chapter}:${ref.verse}`;
+        if (!seen.has(key)) {
+          seen.add(key);
+          refs.push(ref);
+        }
+      }
+    }
+
+    return refs;
+  }, []);
+
+  // Load cross references when context changes
+  useEffect(() => {
+    const loadCrossRefs = async () => {
+      if (!crossRefContext) {
+        setCrossRefs([]);
+        setDisplayedCrossRefs([]);
+        return;
+      }
+
+      setCrossRefLoading(true);
+      setSelectedCrossRefTopic(null);
+      setDisplayedCrossRefs([]);
+      setSelectedCrossRefVerses(new Set());
+
+      try {
+        const refs = await crossRefService.getCrossRefs(crossRefContext.bookId, crossRefContext.chapter, crossRefContext.verse);
+        setCrossRefs(refs);
+
+        // Load verse texts for all references
+        const allRefs = getAllCrossRefs(refs);
+        const texts = await searchService.getVerseTexts(allRefs);
+        setCrossRefVerseTexts(texts);
+
+        // Select first topic by default if available
+        if (refs.length > 0) {
+          setSelectedCrossRefTopic(0);
+          setDisplayedCrossRefs(getCrossRefsForTopic(0, texts, refs));
+        }
+      } catch (error) {
+        console.error('Error loading cross-references:', error);
+        setCrossRefs([]);
+      }
+      setCrossRefLoading(false);
+    };
+
+    loadCrossRefs();
+  }, [crossRefContext, getAllCrossRefs, getCrossRefsForTopic]);
+
+  // Load user cross references and categories when context changes
+  useEffect(() => {
+    const loadUserCrossRefs = async () => {
+      if (!crossRefContext) {
+        setUserCrossRefs([]);
+        return;
+      }
+
+      // Load categories
+      const categories = userCrossRefService.getCategories();
+      setCrossRefCategories(categories);
+
+      // Load user cross refs for this verse
+      const refs = userCrossRefService.getCrossRefsForVerse(
+        crossRefContext.bookId,
+        crossRefContext.chapter,
+        crossRefContext.verse
+      );
+      setUserCrossRefs(refs);
+
+      // Load verse texts for user cross refs (including verse ranges)
+      if (refs.length > 0) {
+        // Build list of all individual verses needed (expanding ranges)
+        const allVerseRefs: Array<{ bookId: number; chapter: number; verse: number }> = [];
+        const rangeMap = new Map<string, { start: number; end: number }>();
+
+        for (const r of refs) {
+          const refKey = `${r.targetVerse.bookId}:${r.targetVerse.chapter}:${r.targetVerse.verse}`;
+          const startVerse = r.targetVerse.verse;
+          const endVerse = r.targetVerse.verseEnd || r.targetVerse.verse;
+
+          // Track the range for this reference
+          if (endVerse > startVerse) {
+            rangeMap.set(refKey, { start: startVerse, end: endVerse });
+          }
+
+          // Add all verses in the range
+          for (let v = startVerse; v <= endVerse; v++) {
+            allVerseRefs.push({
+              bookId: r.targetVerse.bookId,
+              chapter: r.targetVerse.chapter,
+              verse: v,
+            });
+          }
+        }
+
+        // Fetch all verse texts
+        const allTexts = await searchService.getVerseTexts(allVerseRefs);
+
+        // Combine texts for ranges
+        const combinedTexts = new Map<string, string>();
+        for (const r of refs) {
+          const refKey = `${r.targetVerse.bookId}:${r.targetVerse.chapter}:${r.targetVerse.verse}`;
+          const range = rangeMap.get(refKey);
+
+          if (range) {
+            // Combine all verses in the range
+            const rangeTexts: string[] = [];
+            for (let v = range.start; v <= range.end; v++) {
+              const verseKey = `${r.targetVerse.bookId}:${r.targetVerse.chapter}:${v}`;
+              const text = allTexts.get(verseKey);
+              if (text) {
+                rangeTexts.push(`${v}. ${text}`);
+              }
+            }
+            combinedTexts.set(refKey, rangeTexts.join(' '));
+          } else {
+            // Single verse
+            const text = allTexts.get(refKey);
+            if (text) {
+              combinedTexts.set(refKey, text);
+            }
+          }
+        }
+
+        setUserCrossRefVerseTexts(combinedTexts);
+      }
+    };
+
+    loadUserCrossRefs();
+  }, [crossRefContext]);
+
+  // Handle pending cross ref target from context menu
+  useEffect(() => {
+    if (pendingCrossRefTarget && crossRefContext) {
+      setAddCrossRefTarget(pendingCrossRefTarget);
+      setShowAddCrossRefModal(true);
+      onClearPendingCrossRefTarget?.();
+    }
+  }, [pendingCrossRefTarget, crossRefContext, onClearPendingCrossRefTarget]);
+
+  // Cross reference handlers
+  const handleCrossRefTopicClick = (index: number) => {
+    setSelectedCrossRefTopic(index);
+    setDisplayedCrossRefs(getCrossRefsForTopic(index, crossRefVerseTexts, crossRefs));
+    setSelectedCrossRefVerses(new Set());
+  };
+
+  const handleCrossRefNavigate = (ref: CrossReference) => {
+    if (onVerseClick) {
+      onVerseClick(ref.bookId, ref.chapter, ref.verse);
+    }
+  };
+
+  const handleCrossRefSelectAll = () => {
+    const allKeys = new Set(displayedCrossRefs.map(ref => ref.refKey));
+    setSelectedCrossRefVerses(allKeys);
+  };
+
+  const handleCrossRefUnselectAll = () => {
+    setSelectedCrossRefVerses(new Set());
+  };
+
+  const handleCrossRefCopy = async () => {
+    const selectedRefs = displayedCrossRefs.filter(ref => selectedCrossRefVerses.has(ref.refKey));
+    if (selectedRefs.length === 0) return;
+
+    const textToCopy = selectedRefs
+      .map(ref => `${crossRefService.formatReference(ref)}\n${ref.text || ''}`)
+      .join('\n\n');
+
+    try {
+      await navigator.clipboard.writeText(textToCopy);
+      setCrossRefCopySuccess(true);
+      setTimeout(() => setCrossRefCopySuccess(false), 2000);
+    } catch (error) {
+      console.error('Failed to copy:', error);
+    }
+  };
+
+  const totalCrossRefs = crossRefs.reduce((sum, entry) => sum + entry.refs.length, 0);
+  const allCrossRefsSelected = displayedCrossRefs.length > 0 && selectedCrossRefVerses.size === displayedCrossRefs.length;
+
+  // User cross reference handlers
+  const handleDisplaySettingsChange = (key: keyof CrossRefDisplaySettings, value: boolean) => {
+    const newSettings = { ...displaySettings, [key]: value };
+    setDisplaySettings(newSettings);
+    userCrossRefService.saveDisplaySettings(newSettings);
+  };
+
+  const handleOpenCategoryModal = (category?: CrossRefCategory) => {
+    if (category) {
+      setEditingCategory(category);
+      setNewCategoryName(category.name);
+      setNewCategoryColor(category.color);
+      setNewCategoryDescription(category.description || '');
+    } else {
+      setEditingCategory(null);
+      setNewCategoryName('');
+      setNewCategoryColor('#3b82f6');
+      setNewCategoryDescription('');
+    }
+    setShowCategoryModal(true);
+  };
+
+  const handleSaveCategory = () => {
+    if (!newCategoryName.trim()) return;
+
+    if (editingCategory) {
+      userCrossRefService.updateCategory(editingCategory.id, {
+        name: newCategoryName.trim(),
+        color: newCategoryColor,
+        description: newCategoryDescription.trim() || undefined,
+      });
+    } else {
+      userCrossRefService.addCategory(
+        newCategoryName.trim(),
+        newCategoryColor,
+        newCategoryDescription.trim() || undefined
+      );
+    }
+
+    setCrossRefCategories(userCrossRefService.getCategories());
+    setShowCategoryModal(false);
+    setEditingCategory(null);
+    setNewCategoryName('');
+    setNewCategoryColor('#3b82f6');
+    setNewCategoryDescription('');
+  };
+
+  const handleDeleteCategory = (categoryId: string) => {
+    if (window.confirm('Delete this category? Cross references in this category will become uncategorized.')) {
+      userCrossRefService.deleteCategory(categoryId);
+      setCrossRefCategories(userCrossRefService.getCategories());
+      if (selectedUserCategory === categoryId) {
+        setSelectedUserCategory(null);
+      }
+    }
+  };
+
+  const parseVerseReference = (input: string): CrossRefVerseReference | null => {
+    // Parse formats like "Genesis 1:1", "Gen 1:1", "1 John 3:16", etc.
+    const pattern = /^(\d?\s*[A-Za-z]+)\s+(\d+):(\d+)(?:-(\d+))?$/;
+    const match = input.trim().match(pattern);
+    if (!match) return null;
+
+    const bookNameMap: Record<string, { id: number; name: string }> = {
+      'genesis': { id: 1, name: 'Genesis' }, 'gen': { id: 1, name: 'Genesis' },
+      'exodus': { id: 2, name: 'Exodus' }, 'exo': { id: 2, name: 'Exodus' },
+      'leviticus': { id: 3, name: 'Leviticus' }, 'lev': { id: 3, name: 'Leviticus' },
+      'numbers': { id: 4, name: 'Numbers' }, 'num': { id: 4, name: 'Numbers' },
+      'deuteronomy': { id: 5, name: 'Deuteronomy' }, 'deu': { id: 5, name: 'Deuteronomy' },
+      'joshua': { id: 6, name: 'Joshua' }, 'jos': { id: 6, name: 'Joshua' },
+      'judges': { id: 7, name: 'Judges' }, 'jdg': { id: 7, name: 'Judges' },
+      'ruth': { id: 8, name: 'Ruth' }, 'rut': { id: 8, name: 'Ruth' },
+      '1 samuel': { id: 9, name: '1 Samuel' }, '1sa': { id: 9, name: '1 Samuel' },
+      '2 samuel': { id: 10, name: '2 Samuel' }, '2sa': { id: 10, name: '2 Samuel' },
+      '1 kings': { id: 11, name: '1 Kings' }, '1ki': { id: 11, name: '1 Kings' },
+      '2 kings': { id: 12, name: '2 Kings' }, '2ki': { id: 12, name: '2 Kings' },
+      '1 chronicles': { id: 13, name: '1 Chronicles' }, '1ch': { id: 13, name: '1 Chronicles' },
+      '2 chronicles': { id: 14, name: '2 Chronicles' }, '2ch': { id: 14, name: '2 Chronicles' },
+      'ezra': { id: 15, name: 'Ezra' }, 'ezr': { id: 15, name: 'Ezra' },
+      'nehemiah': { id: 16, name: 'Nehemiah' }, 'neh': { id: 16, name: 'Nehemiah' },
+      'esther': { id: 17, name: 'Esther' }, 'est': { id: 17, name: 'Esther' },
+      'job': { id: 18, name: 'Job' },
+      'psalms': { id: 19, name: 'Psalms' }, 'psa': { id: 19, name: 'Psalms' }, 'psalm': { id: 19, name: 'Psalms' },
+      'proverbs': { id: 20, name: 'Proverbs' }, 'pro': { id: 20, name: 'Proverbs' },
+      'ecclesiastes': { id: 21, name: 'Ecclesiastes' }, 'ecc': { id: 21, name: 'Ecclesiastes' },
+      'song of solomon': { id: 22, name: 'Song of Solomon' }, 'son': { id: 22, name: 'Song of Solomon' },
+      'isaiah': { id: 23, name: 'Isaiah' }, 'isa': { id: 23, name: 'Isaiah' },
+      'jeremiah': { id: 24, name: 'Jeremiah' }, 'jer': { id: 24, name: 'Jeremiah' },
+      'lamentations': { id: 25, name: 'Lamentations' }, 'lam': { id: 25, name: 'Lamentations' },
+      'ezekiel': { id: 26, name: 'Ezekiel' }, 'eze': { id: 26, name: 'Ezekiel' },
+      'daniel': { id: 27, name: 'Daniel' }, 'dan': { id: 27, name: 'Daniel' },
+      'hosea': { id: 28, name: 'Hosea' }, 'hos': { id: 28, name: 'Hosea' },
+      'joel': { id: 29, name: 'Joel' }, 'joe': { id: 29, name: 'Joel' },
+      'amos': { id: 30, name: 'Amos' }, 'amo': { id: 30, name: 'Amos' },
+      'obadiah': { id: 31, name: 'Obadiah' }, 'oba': { id: 31, name: 'Obadiah' },
+      'jonah': { id: 32, name: 'Jonah' }, 'jon': { id: 32, name: 'Jonah' },
+      'micah': { id: 33, name: 'Micah' }, 'mic': { id: 33, name: 'Micah' },
+      'nahum': { id: 34, name: 'Nahum' }, 'nah': { id: 34, name: 'Nahum' },
+      'habakkuk': { id: 35, name: 'Habakkuk' }, 'hab': { id: 35, name: 'Habakkuk' },
+      'zephaniah': { id: 36, name: 'Zephaniah' }, 'zep': { id: 36, name: 'Zephaniah' },
+      'haggai': { id: 37, name: 'Haggai' }, 'hag': { id: 37, name: 'Haggai' },
+      'zechariah': { id: 38, name: 'Zechariah' }, 'zec': { id: 38, name: 'Zechariah' },
+      'malachi': { id: 39, name: 'Malachi' }, 'mal': { id: 39, name: 'Malachi' },
+      'matthew': { id: 40, name: 'Matthew' }, 'mat': { id: 40, name: 'Matthew' },
+      'mark': { id: 41, name: 'Mark' }, 'mar': { id: 41, name: 'Mark' },
+      'luke': { id: 42, name: 'Luke' }, 'luk': { id: 42, name: 'Luke' },
+      'john': { id: 43, name: 'John' }, 'joh': { id: 43, name: 'John' },
+      'acts': { id: 44, name: 'Acts' }, 'act': { id: 44, name: 'Acts' },
+      'romans': { id: 45, name: 'Romans' }, 'rom': { id: 45, name: 'Romans' },
+      '1 corinthians': { id: 46, name: '1 Corinthians' }, '1co': { id: 46, name: '1 Corinthians' },
+      '2 corinthians': { id: 47, name: '2 Corinthians' }, '2co': { id: 47, name: '2 Corinthians' },
+      'galatians': { id: 48, name: 'Galatians' }, 'gal': { id: 48, name: 'Galatians' },
+      'ephesians': { id: 49, name: 'Ephesians' }, 'eph': { id: 49, name: 'Ephesians' },
+      'philippians': { id: 50, name: 'Philippians' }, 'php': { id: 50, name: 'Philippians' },
+      'colossians': { id: 51, name: 'Colossians' }, 'col': { id: 51, name: 'Colossians' },
+      '1 thessalonians': { id: 52, name: '1 Thessalonians' }, '1th': { id: 52, name: '1 Thessalonians' },
+      '2 thessalonians': { id: 53, name: '2 Thessalonians' }, '2th': { id: 53, name: '2 Thessalonians' },
+      '1 timothy': { id: 54, name: '1 Timothy' }, '1ti': { id: 54, name: '1 Timothy' },
+      '2 timothy': { id: 55, name: '2 Timothy' }, '2ti': { id: 55, name: '2 Timothy' },
+      'titus': { id: 56, name: 'Titus' }, 'tit': { id: 56, name: 'Titus' },
+      'philemon': { id: 57, name: 'Philemon' }, 'phm': { id: 57, name: 'Philemon' },
+      'hebrews': { id: 58, name: 'Hebrews' }, 'heb': { id: 58, name: 'Hebrews' },
+      'james': { id: 59, name: 'James' }, 'jas': { id: 59, name: 'James' },
+      '1 peter': { id: 60, name: '1 Peter' }, '1pe': { id: 60, name: '1 Peter' },
+      '2 peter': { id: 61, name: '2 Peter' }, '2pe': { id: 61, name: '2 Peter' },
+      '1 john': { id: 62, name: '1 John' }, '1jo': { id: 62, name: '1 John' },
+      '2 john': { id: 63, name: '2 John' }, '2jo': { id: 63, name: '2 John' },
+      '3 john': { id: 64, name: '3 John' }, '3jo': { id: 64, name: '3 John' },
+      'jude': { id: 65, name: 'Jude' }, 'jud': { id: 65, name: 'Jude' },
+      'revelation': { id: 66, name: 'Revelation' }, 'rev': { id: 66, name: 'Revelation' },
+    };
+
+    const bookInput = match[1].toLowerCase().trim();
+    const book = bookNameMap[bookInput];
+    if (!book) return null;
+
+    return {
+      bookId: book.id,
+      bookName: book.name,
+      chapter: parseInt(match[2], 10),
+      verse: parseInt(match[3], 10),
+      verseEnd: match[4] ? parseInt(match[4], 10) : undefined,
+    };
+  };
+
+  const handleAddCrossRef = async () => {
+    if (!crossRefContext || !addCrossRefTarget.trim()) return;
+
+    const targetVerse = parseVerseReference(addCrossRefTarget);
+    if (!targetVerse) {
+      alert('Invalid verse reference. Use format like "Genesis 1:1" or "John 3:16"');
+      return;
+    }
+
+    const sourceVerse: CrossRefVerseReference = {
+      bookId: crossRefContext.bookId,
+      bookName: crossRefContext.bookName,
+      chapter: crossRefContext.chapter,
+      verse: crossRefContext.verse,
+    };
+
+    userCrossRefService.addCrossRef(
+      sourceVerse,
+      targetVerse,
+      addCrossRefCategory || undefined,
+      addCrossRefWord.trim() || undefined,
+      addCrossRefNote.trim() || undefined
+    );
+
+    // Reload user cross refs
+    const refs = userCrossRefService.getCrossRefsForVerse(
+      crossRefContext.bookId,
+      crossRefContext.chapter,
+      crossRefContext.verse
+    );
+    setUserCrossRefs(refs);
+
+    // Load verse text(s) for the new cross ref (handle verse ranges)
+    const startVerse = targetVerse.verse;
+    const endVerse = targetVerse.verseEnd || targetVerse.verse;
+    const refKey = `${targetVerse.bookId}:${targetVerse.chapter}:${targetVerse.verse}`;
+
+    if (endVerse > startVerse) {
+      // Verse range - fetch all verses and combine
+      const allVerseRefs: Array<{ bookId: number; chapter: number; verse: number }> = [];
+      for (let v = startVerse; v <= endVerse; v++) {
+        allVerseRefs.push({
+          bookId: targetVerse.bookId,
+          chapter: targetVerse.chapter,
+          verse: v,
+        });
+      }
+      const allTexts = await searchService.getVerseTexts(allVerseRefs);
+
+      // Combine verse texts with verse numbers
+      const rangeTexts: string[] = [];
+      for (let v = startVerse; v <= endVerse; v++) {
+        const verseKey = `${targetVerse.bookId}:${targetVerse.chapter}:${v}`;
+        const text = allTexts.get(verseKey);
+        if (text) {
+          rangeTexts.push(`${v}. ${text}`);
+        }
+      }
+
+      setUserCrossRefVerseTexts(prev => {
+        const merged = new Map(prev);
+        merged.set(refKey, rangeTexts.join(' '));
+        return merged;
+      });
+    } else {
+      // Single verse
+      const texts = await searchService.getVerseTexts([{
+        bookId: targetVerse.bookId,
+        chapter: targetVerse.chapter,
+        verse: targetVerse.verse,
+      }]);
+      setUserCrossRefVerseTexts(prev => {
+        const merged = new Map(prev);
+        texts.forEach((value, key) => merged.set(key, value));
+        return merged;
+      });
+    }
+
+    // Reset form
+    setShowAddCrossRefModal(false);
+    setAddCrossRefTarget('');
+    setAddCrossRefCategory('');
+    setAddCrossRefNote('');
+    setAddCrossRefWord('');
+  };
+
+  const handleDeleteUserCrossRef = (id: string) => {
+    if (window.confirm('Delete this cross reference?')) {
+      userCrossRefService.deleteCrossRef(id);
+      if (crossRefContext) {
+        const refs = userCrossRefService.getCrossRefsForVerse(
+          crossRefContext.bookId,
+          crossRefContext.chapter,
+          crossRefContext.verse
+        );
+        setUserCrossRefs(refs);
+      }
+    }
+  };
+
+  const getCategoryById = (id: string) => crossRefCategories.find(c => c.id === id);
+
+  // Drag and drop handlers for user cross refs
+  const handleCrossRefDragStart = (e: React.DragEvent<HTMLDivElement>, id: string) => {
+    setDraggedCrossRefId(id);
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/plain', id);
+    // Add a slight delay to allow the drag image to be captured
+    setTimeout(() => {
+      (e.target as HTMLElement).classList.add('dragging');
+    }, 0);
+  };
+
+  const handleCrossRefDragEnd = (e: React.DragEvent<HTMLDivElement>) => {
+    (e.target as HTMLElement).classList.remove('dragging');
+    setDraggedCrossRefId(null);
+    setDragOverCrossRefId(null);
+  };
+
+  const handleCrossRefDragOver = (e: React.DragEvent<HTMLDivElement>, id: string) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    if (id !== draggedCrossRefId) {
+      setDragOverCrossRefId(id);
+    }
+  };
+
+  const handleCrossRefDragLeave = () => {
+    setDragOverCrossRefId(null);
+  };
+
+  const handleCrossRefDrop = (e: React.DragEvent<HTMLDivElement>, targetId: string) => {
+    e.preventDefault();
+
+    if (!draggedCrossRefId || draggedCrossRefId === targetId) {
+      setDraggedCrossRefId(null);
+      setDragOverCrossRefId(null);
+      return;
+    }
+
+    // Reorder the cross refs
+    const currentRefs = [...filteredUserCrossRefs];
+    const draggedIndex = currentRefs.findIndex(r => r.id === draggedCrossRefId);
+    const targetIndex = currentRefs.findIndex(r => r.id === targetId);
+
+    if (draggedIndex === -1 || targetIndex === -1) {
+      setDraggedCrossRefId(null);
+      setDragOverCrossRefId(null);
+      return;
+    }
+
+    // Remove dragged item and insert at new position
+    const [draggedItem] = currentRefs.splice(draggedIndex, 1);
+    currentRefs.splice(targetIndex, 0, draggedItem);
+
+    // Get the new order of IDs and persist
+    const newOrder = currentRefs.map(r => r.id);
+    const verseKey = crossRefContext
+      ? `${crossRefContext.bookId}:${crossRefContext.chapter}:${crossRefContext.verse}`
+      : '';
+    userCrossRefService.reorderCrossRefs(verseKey, newOrder);
+
+    // Reload cross refs to reflect new order
+    if (crossRefContext) {
+      const refs = userCrossRefService.getCrossRefsForVerse(
+        crossRefContext.bookId,
+        crossRefContext.chapter,
+        crossRefContext.verse
+      );
+      setUserCrossRefs(refs);
+    }
+
+    setDraggedCrossRefId(null);
+    setDragOverCrossRefId(null);
+  };
+
+  // Filter user cross refs by selected category
+  const filteredUserCrossRefs = selectedUserCategory
+    ? userCrossRefs.filter(r => r.categoryId === selectedUserCategory)
+    : userCrossRefs;
+
+  // Filter notes for current cross reference verse
+  const crossRefVerseNotes = crossRefContext ? notes.filter(note =>
+    note.verses?.some(v =>
+      v.bookId === crossRefContext.bookId &&
+      v.chapter === crossRefContext.chapter &&
+      v.startVerse <= crossRefContext.verse &&
+      (v.endVerse || v.startVerse) >= crossRefContext.verse
+    )
+  ) : [];
+
+  const getTopicById = (id: string) => topics.find(t => t.id === id);
+
+  const formatDate = (timestamp: number): string => {
+    const date = new Date(timestamp);
+    return date.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+    });
+  };
 
   // Parse kjv_def into individual translation words
   const parseKjvDef = (kjvDef: string): string[] => {
@@ -217,8 +878,8 @@ const RightPanel: React.FC<RightPanelProps> = ({
     }
   };
 
-  // If neither content is available, don't render
-  if (!lexiconContent && !hebrewLetterContent) {
+  // If no content is available, don't render
+  if (!lexiconContent && !hebrewLetterContent && !crossRefContext) {
     return null;
   }
 
@@ -264,6 +925,14 @@ const RightPanel: React.FC<RightPanelProps> = ({
               onClick={() => setActiveTab('hebrew')}
             >
               🔤 Hebrew Letter
+            </button>
+          )}
+          {crossRefContext && (
+            <button
+              className={`right-panel-tab ${activeTab === 'crossref' ? 'active' : ''}`}
+              onClick={() => setActiveTab('crossref')}
+            >
+              🔗 Cross Refs
             </button>
           )}
         </div>
@@ -597,6 +1266,539 @@ const RightPanel: React.FC<RightPanelProps> = ({
                 </div>
               </div>
             </div>
+          </div>
+        )}
+
+        {/* Cross References Tab */}
+        {activeTab === 'crossref' && crossRefContext && (
+          <div className="cross-ref-tab-content">
+            <div className="cross-ref-header">
+              <div className="cross-ref-title">
+                <h3>Cross References</h3>
+                <span
+                  className="cross-ref-verse clickable"
+                  onClick={() => onVerseClick?.(crossRefContext.bookId, crossRefContext.chapter, crossRefContext.verse)}
+                  title="Go to this verse"
+                >
+                  {crossRefContext.bookName} {crossRefContext.chapter}:{crossRefContext.verse}
+                </span>
+              </div>
+            </div>
+
+            {/* Source Filters */}
+            <div className="cross-ref-source-filters">
+              <label className="cross-ref-source-filter">
+                <input
+                  type="checkbox"
+                  checked={displaySettings.showTSK}
+                  onChange={(e) => handleDisplaySettingsChange('showTSK', e.target.checked)}
+                />
+                <span>TSK ({totalCrossRefs})</span>
+              </label>
+              <label className="cross-ref-source-filter">
+                <input
+                  type="checkbox"
+                  checked={displaySettings.showUserRefs}
+                  onChange={(e) => handleDisplaySettingsChange('showUserRefs', e.target.checked)}
+                />
+                <span>My References ({userCrossRefs.length})</span>
+              </label>
+              <button
+                className="cross-ref-add-btn"
+                onClick={() => setShowAddCrossRefModal(true)}
+                title="Add cross reference"
+              >
+                + Add
+              </button>
+            </div>
+
+            <div className="cross-ref-content">
+              {/* TSK Cross References Section */}
+              {displaySettings.showTSK && (
+                <>
+                  {crossRefLoading ? (
+                    <div className="cross-ref-loading">Loading cross-references...</div>
+                  ) : crossRefs.length === 0 ? (
+                    <div className="cross-ref-empty">
+                      <p>No TSK cross-references found for this verse.</p>
+                    </div>
+                  ) : (
+                    <>
+                      <div className="cross-ref-section-header">
+                        <span>Treasury of Scripture Knowledge</span>
+                      </div>
+
+                      <div className="cross-ref-summary">
+                        {crossRefs.length} topic{crossRefs.length !== 1 ? 's' : ''} • {totalCrossRefs} reference{totalCrossRefs !== 1 ? 's' : ''}
+                      </div>
+
+                      {/* Topic Buttons */}
+                      <div className="cross-ref-topics">
+                        {crossRefs.map((entry, index) => (
+                          <button
+                            key={index}
+                            className={`cross-ref-topic-btn ${selectedCrossRefTopic === index ? 'selected' : ''}`}
+                            onClick={() => handleCrossRefTopicClick(index)}
+                          >
+                            <span className="topic-word">{entry.word || `Topic ${index + 1}`}</span>
+                            <span className="topic-count">{entry.refs.length}</span>
+                          </button>
+                        ))}
+                      </div>
+
+                      {/* Scriptures List for Selected Topic */}
+                      <div className="cross-ref-all-verses">
+                        <div className="cross-ref-all-header">
+                          <span>
+                            {selectedCrossRefTopic !== null && crossRefs[selectedCrossRefTopic]
+                              ? `"${crossRefs[selectedCrossRefTopic].word || `Topic ${selectedCrossRefTopic + 1}`}" Scriptures`
+                              : 'All Scriptures'}
+                          </span>
+                          <span className="cross-ref-all-count">{displayedCrossRefs.length}</span>
+                        </div>
+
+                        {/* Selection Controls */}
+                        {displayedCrossRefs.length > 0 && (
+                          <div className="cross-ref-selection-controls">
+                            <label className="cross-ref-select-all">
+                              <input
+                                type="checkbox"
+                                checked={allCrossRefsSelected}
+                                onChange={(e) => e.target.checked ? handleCrossRefSelectAll() : handleCrossRefUnselectAll()}
+                              />
+                              <span>Select All</span>
+                            </label>
+                            <button
+                              className="cross-ref-unselect-btn"
+                              onClick={handleCrossRefUnselectAll}
+                              disabled={selectedCrossRefVerses.size === 0}
+                            >
+                              Unselect All
+                            </button>
+                            <button
+                              className={`cross-ref-copy-btn ${crossRefCopySuccess ? 'success' : ''}`}
+                              onClick={handleCrossRefCopy}
+                              disabled={selectedCrossRefVerses.size === 0}
+                            >
+                              {crossRefCopySuccess ? 'Copied!' : `Copy (${selectedCrossRefVerses.size})`}
+                            </button>
+                          </div>
+                        )}
+
+                        <div className="cross-ref-verses-list">
+                          {displayedCrossRefs.length === 0 ? (
+                            <div className="cross-ref-empty-topic">
+                              <p>Select a topic above to view scriptures</p>
+                            </div>
+                          ) : (
+                            displayedCrossRefs.map((ref, index) => (
+                              <div
+                                key={index}
+                                className={`cross-ref-verse-item ${selectedCrossRefVerses.has(ref.refKey) ? 'selected' : ''}`}
+                                onClick={() => handleCrossRefNavigate(ref)}
+                              >
+                                <label
+                                  className="cross-ref-checkbox-wrapper"
+                                  onClick={(e) => e.stopPropagation()}
+                                >
+                                  <input
+                                    type="checkbox"
+                                    checked={selectedCrossRefVerses.has(ref.refKey)}
+                                    onChange={(e) => {
+                                      setSelectedCrossRefVerses(prev => {
+                                        const newSet = new Set(prev);
+                                        if (e.target.checked) {
+                                          newSet.add(ref.refKey);
+                                        } else {
+                                          newSet.delete(ref.refKey);
+                                        }
+                                        return newSet;
+                                      });
+                                    }}
+                                  />
+                                </label>
+                                <div className="cross-ref-verse-content">
+                                  <div className="cross-ref-verse-ref">
+                                    {crossRefService.formatReference(ref)}
+                                  </div>
+                                  <div className="cross-ref-verse-text">
+                                    {ref.text || 'Loading...'}
+                                  </div>
+                                </div>
+                              </div>
+                            ))
+                          )}
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </>
+              )}
+
+              {/* User Cross References Section */}
+              {displaySettings.showUserRefs && (
+                <div className="user-cross-refs-section">
+                  <div className="cross-ref-section-header">
+                    <span>My Cross References</span>
+                    <button
+                      className="manage-categories-btn"
+                      onClick={() => handleOpenCategoryModal()}
+                      title="Manage categories"
+                    >
+                      + Category
+                    </button>
+                  </div>
+
+                  {/* Category Filter */}
+                  {crossRefCategories.length > 0 && (
+                    <div className="user-cross-ref-categories">
+                      <button
+                        className={`user-category-btn ${selectedUserCategory === null ? 'selected' : ''}`}
+                        onClick={() => setSelectedUserCategory(null)}
+                      >
+                        All
+                      </button>
+                      {crossRefCategories.map(category => (
+                        <button
+                          key={category.id}
+                          className={`user-category-btn ${selectedUserCategory === category.id ? 'selected' : ''}`}
+                          onClick={() => setSelectedUserCategory(category.id)}
+                          style={{
+                            '--category-color': category.color,
+                            borderColor: selectedUserCategory === category.id ? category.color : 'transparent',
+                          } as React.CSSProperties}
+                        >
+                          <span
+                            className="category-color-dot"
+                            style={{ backgroundColor: category.color }}
+                          />
+                          {category.name}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* User Cross Refs List */}
+                  {filteredUserCrossRefs.length === 0 ? (
+                    <div className="user-cross-refs-empty">
+                      <p>No custom cross references yet.</p>
+                      <button
+                        className="add-first-crossref-btn"
+                        onClick={() => setShowAddCrossRefModal(true)}
+                      >
+                        Add your first cross reference
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="user-cross-refs-list">
+                      {filteredUserCrossRefs.map(ref => {
+                        const category = ref.categoryId ? getCategoryById(ref.categoryId) : null;
+                        const refKey = `${ref.targetVerse.bookId}:${ref.targetVerse.chapter}:${ref.targetVerse.verse}`;
+                        const verseText = userCrossRefVerseTexts.get(refKey);
+                        const isDragging = draggedCrossRefId === ref.id;
+                        const isDragOver = dragOverCrossRefId === ref.id;
+
+                        return (
+                          <div
+                            key={ref.id}
+                            className={`user-cross-ref-item ${isDragging ? 'dragging' : ''} ${isDragOver ? 'drag-over' : ''}`}
+                            draggable
+                            onDragStart={(e) => handleCrossRefDragStart(e, ref.id)}
+                            onDragEnd={handleCrossRefDragEnd}
+                            onDragOver={(e) => handleCrossRefDragOver(e, ref.id)}
+                            onDragLeave={handleCrossRefDragLeave}
+                            onDrop={(e) => handleCrossRefDrop(e, ref.id)}
+                            onClick={() => onVerseClick?.(ref.targetVerse.bookId, ref.targetVerse.chapter, ref.targetVerse.verse)}
+                          >
+                            <div className="user-cross-ref-header">
+                              <span className="user-cross-ref-drag-handle" title="Drag to reorder">
+                                ⋮⋮
+                              </span>
+                              <span className="user-cross-ref-reference">
+                                {userCrossRefService.formatVerseReference(ref.targetVerse)}
+                              </span>
+                              {category && (
+                                <span
+                                  className="user-cross-ref-category"
+                                  style={{ backgroundColor: category.color }}
+                                >
+                                  {category.name}
+                                </span>
+                              )}
+                              <button
+                                className="user-cross-ref-delete"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  handleDeleteUserCrossRef(ref.id);
+                                }}
+                                title="Delete"
+                              >
+                                ×
+                              </button>
+                            </div>
+                            {ref.word && (
+                              <div className="user-cross-ref-word">
+                                "{ref.word}"
+                              </div>
+                            )}
+                            <div className="user-cross-ref-text">
+                              {verseText || 'Loading...'}
+                            </div>
+                            {ref.note && (
+                              <div className="user-cross-ref-note">
+                                {ref.note}
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Notes section for cross reference verse */}
+              {crossRefVerseNotes.length > 0 && (
+                <div className="cross-ref-notes-section">
+                  <div className="cross-ref-notes-header">
+                    <h4>Notes for this verse</h4>
+                  </div>
+                  <div className="cross-ref-notes-list">
+                    {crossRefVerseNotes.map(note => (
+                      <div
+                        key={note.id}
+                        className="cross-ref-note-item"
+                        onClick={() => onEditNote?.(note)}
+                      >
+                        <div className="cross-ref-note-header">
+                          <span className="cross-ref-note-title">
+                            {note.title || 'Untitled Note'}
+                          </span>
+                          <span className="cross-ref-note-date">
+                            {formatDate(note.updatedAt || note.timestamp)}
+                          </span>
+                        </div>
+                        {note.topicIds && note.topicIds.length > 0 && (
+                          <div className="cross-ref-note-topics">
+                            {note.topicIds.map(topicId => {
+                              const topic = getTopicById(topicId);
+                              return topic ? (
+                                <span
+                                  key={topicId}
+                                  className="cross-ref-note-topic"
+                                  style={{ backgroundColor: topic.color }}
+                                >
+                                  {topic.name}
+                                </span>
+                              ) : null;
+                            })}
+                          </div>
+                        )}
+                        <p className="cross-ref-note-preview">
+                          {note.content.plainText.slice(0, 100)}
+                          {note.content.plainText.length > 100 ? '...' : ''}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Add note button */}
+              {onCreateNote && (
+                <button
+                  className="cross-ref-add-note-btn"
+                  onClick={() => onCreateNote({
+                    bookId: crossRefContext.bookId,
+                    bookName: crossRefContext.bookName,
+                    chapter: crossRefContext.chapter,
+                    startVerse: crossRefContext.verse,
+                    osisRef: `${crossRefContext.bookName}.${crossRefContext.chapter}.${crossRefContext.verse}`,
+                  })}
+                >
+                  + Add Note for {crossRefContext.bookName} {crossRefContext.chapter}:{crossRefContext.verse}
+                </button>
+              )}
+            </div>
+
+            {/* Add Cross Reference Modal */}
+            {showAddCrossRefModal && (
+              <div className="cross-ref-modal-overlay" onClick={() => setShowAddCrossRefModal(false)}>
+                <div className="cross-ref-modal" onClick={(e) => e.stopPropagation()}>
+                  <div className="cross-ref-modal-header">
+                    <h3>Add Cross Reference</h3>
+                    <button
+                      className="cross-ref-modal-close"
+                      onClick={() => setShowAddCrossRefModal(false)}
+                    >
+                      ×
+                    </button>
+                  </div>
+                  <div className="cross-ref-modal-content">
+                    <div className="cross-ref-modal-field">
+                      <label>From Verse</label>
+                      <input
+                        type="text"
+                        value={`${crossRefContext.bookName} ${crossRefContext.chapter}:${crossRefContext.verse}`}
+                        disabled
+                      />
+                    </div>
+                    <div className="cross-ref-modal-field">
+                      <label>Target Verse *</label>
+                      <input
+                        type="text"
+                        placeholder="e.g., John 3:16 or Gen 1:1"
+                        value={addCrossRefTarget}
+                        onChange={(e) => setAddCrossRefTarget(e.target.value)}
+                        autoFocus
+                      />
+                    </div>
+                    <div className="cross-ref-modal-field">
+                      <label>Category</label>
+                      <select
+                        value={addCrossRefCategory}
+                        onChange={(e) => setAddCrossRefCategory(e.target.value)}
+                      >
+                        <option value="">No category</option>
+                        {crossRefCategories.map(cat => (
+                          <option key={cat.id} value={cat.id}>{cat.name}</option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className="cross-ref-modal-field">
+                      <label>Keyword/Phrase</label>
+                      <input
+                        type="text"
+                        placeholder="Word connecting these verses"
+                        value={addCrossRefWord}
+                        onChange={(e) => setAddCrossRefWord(e.target.value)}
+                      />
+                    </div>
+                    <div className="cross-ref-modal-field">
+                      <label>Note</label>
+                      <textarea
+                        placeholder="Explain the connection..."
+                        value={addCrossRefNote}
+                        onChange={(e) => setAddCrossRefNote(e.target.value)}
+                        rows={3}
+                      />
+                    </div>
+                  </div>
+                  <div className="cross-ref-modal-actions">
+                    <button
+                      className="cross-ref-modal-cancel"
+                      onClick={() => setShowAddCrossRefModal(false)}
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      className="cross-ref-modal-save"
+                      onClick={handleAddCrossRef}
+                      disabled={!addCrossRefTarget.trim()}
+                    >
+                      Add Cross Reference
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Category Modal */}
+            {showCategoryModal && (
+              <div className="cross-ref-modal-overlay" onClick={() => setShowCategoryModal(false)}>
+                <div className="cross-ref-modal" onClick={(e) => e.stopPropagation()}>
+                  <div className="cross-ref-modal-header">
+                    <h3>{editingCategory ? 'Edit Category' : 'New Category'}</h3>
+                    <button
+                      className="cross-ref-modal-close"
+                      onClick={() => setShowCategoryModal(false)}
+                    >
+                      ×
+                    </button>
+                  </div>
+                  <div className="cross-ref-modal-content">
+                    <div className="cross-ref-modal-field">
+                      <label>Name *</label>
+                      <input
+                        type="text"
+                        placeholder="Category name"
+                        value={newCategoryName}
+                        onChange={(e) => setNewCategoryName(e.target.value)}
+                        autoFocus
+                      />
+                    </div>
+                    <div className="cross-ref-modal-field">
+                      <label>Color</label>
+                      <div className="category-color-picker">
+                        {CATEGORY_COLORS.map(color => (
+                          <button
+                            key={color.value}
+                            className={`category-color-option ${newCategoryColor === color.value ? 'selected' : ''}`}
+                            style={{ backgroundColor: color.value }}
+                            onClick={() => setNewCategoryColor(color.value)}
+                            title={color.label}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                    <div className="cross-ref-modal-field">
+                      <label>Description</label>
+                      <textarea
+                        placeholder="Optional description"
+                        value={newCategoryDescription}
+                        onChange={(e) => setNewCategoryDescription(e.target.value)}
+                        rows={2}
+                      />
+                    </div>
+
+                    {/* Existing categories list */}
+                    {crossRefCategories.length > 0 && !editingCategory && (
+                      <div className="existing-categories">
+                        <label>Existing Categories</label>
+                        <div className="existing-categories-list">
+                          {crossRefCategories.map(cat => (
+                            <div key={cat.id} className="existing-category-item">
+                              <span
+                                className="existing-category-color"
+                                style={{ backgroundColor: cat.color }}
+                              />
+                              <span className="existing-category-name">{cat.name}</span>
+                              <button
+                                className="existing-category-edit"
+                                onClick={() => handleOpenCategoryModal(cat)}
+                              >
+                                Edit
+                              </button>
+                              <button
+                                className="existing-category-delete"
+                                onClick={() => handleDeleteCategory(cat.id)}
+                              >
+                                ×
+                              </button>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                  <div className="cross-ref-modal-actions">
+                    <button
+                      className="cross-ref-modal-cancel"
+                      onClick={() => setShowCategoryModal(false)}
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      className="cross-ref-modal-save"
+                      onClick={handleSaveCategory}
+                      disabled={!newCategoryName.trim()}
+                    >
+                      {editingCategory ? 'Save Changes' : 'Create Category'}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         )}
       </div>

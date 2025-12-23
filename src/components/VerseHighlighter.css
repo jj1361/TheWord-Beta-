@@ -7,6 +7,9 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   padding: 12px;
   min-width: 200px;
+  max-width: calc(100vw - 20px);
+  max-height: calc(100vh - 20px);
+  overflow-y: auto;
   animation: popIn 0.15s ease;
 }
 
@@ -453,4 +456,106 @@
 [data-theme="dark"] .copy-range-section .range-select:focus {
   border-color: #818cf8;
   box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.2);
+}
+
+/* Cross Reference Styles */
+.highlighter-action.crossref,
+.highlighter-action.crossref-range {
+  font-weight: 500;
+}
+
+.highlighter-action.crossref {
+  color: #667eea;
+}
+
+.highlighter-action.crossref:hover {
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.highlighter-action.crossref-range {
+  color: var(--text-color, #333);
+}
+
+.highlighter-action.crossref-range:hover {
+  background: var(--hover-bg, rgba(0, 0, 0, 0.05));
+}
+
+.crossref-success {
+  color: #667eea;
+}
+
+.crossref-success .copy-success-icon {
+  background: rgba(102, 126, 234, 0.15);
+  color: #667eea;
+}
+
+.crossref-range-section {
+  border-top: none;
+}
+
+.crossref-source-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+.crossref-source-label {
+  color: var(--text-secondary, #666);
+  font-weight: 500;
+}
+
+.crossref-source-verse {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.crossref-add-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: transparent;
+}
+
+.crossref-add-btn:hover {
+  background: linear-gradient(135deg, #5a71e3 0%, #6a429a 100%);
+}
+
+/* Dark theme overrides for cross reference styles */
+[data-theme="dark"] .highlighter-action.crossref {
+  color: #818cf8;
+}
+
+[data-theme="dark"] .highlighter-action.crossref:hover {
+  background: rgba(129, 140, 248, 0.15);
+}
+
+[data-theme="dark"] .highlighter-action.crossref-range {
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .highlighter-action.crossref-range:hover {
+  background: #374151;
+}
+
+[data-theme="dark"] .crossref-success {
+  color: #818cf8;
+}
+
+[data-theme="dark"] .crossref-success .copy-success-icon {
+  background: rgba(129, 140, 248, 0.2);
+  color: #818cf8;
+}
+
+[data-theme="dark"] .crossref-source-info {
+  background: rgba(129, 140, 248, 0.15);
+}
+
+[data-theme="dark"] .crossref-source-label {
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .crossref-source-verse {
+  color: #818cf8;
 }

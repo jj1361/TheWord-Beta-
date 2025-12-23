@@ -27,7 +27,6 @@ import { lexiconService } from './services/lexiconService';
 import { personService } from './services/personService';
 import { notesService } from './services/notesService';
 import { crossRefService } from './services/crossRefService';
-import CrossReferencePanel from './components/CrossReferencePanel';
 import MediaControlPanel from './components/MediaControlPanel';
 import MediaDisplayScreen from './components/MediaDisplayScreen';
 import { Chapter, BIBLE_BOOKS } from './types/bible';
@@ -183,7 +182,8 @@ function App() {
     verse: number;
   } | null>(null);
   const [versesWithCrossRefs, setVersesWithCrossRefs] = useState<Set<number>>(new Set());
-  const [showCrossRefNotes, setShowCrossRefNotes] = useState(false);
+  // Pending cross ref target from context menu (to open modal with pre-populated target)
+  const [pendingCrossRefTarget, setPendingCrossRefTarget] = useState<string | null>(null);
 
   // Media presentation state
   const [showMediaControl, setShowMediaControl] = useState(false);
@@ -733,19 +733,6 @@ function App() {
     }
   };
 
-  // Navigate to a cross-reference (keep panel open)
-  const handleCrossRefNavigate = (bookId: number, chapterNum: number, verse: number) => {
-    loadChapter(bookId, chapterNum).then(() => {
-      setHighlightVerse(verse);
-      setTimeout(() => {
-        const verseElement = document.getElementById(`verse-${verse}`);
-        if (verseElement) {
-          verseElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-      }, 300);
-    });
-  };
-
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
       // Only handle number keys when not typing in an input field
@@ -1122,7 +1109,7 @@ function App() {
                 </div>
               )}
 
-              {(selectedStrongs || selectedLetter) && (
+              {(selectedStrongs || selectedLetter || crossRefContext) && (
                 <RightPanel
                   lexiconContent={lexiconData}
                   hebrewLetterContent={selectedLetter}
@@ -1130,6 +1117,7 @@ function App() {
                     setSelectedStrongs(null);
                     setSelectedLetter(null);
                     setLexiconData(null);
+                    setCrossRefContext(null);
                   }}
                   onVerseClick={(bookId, chapter, verse) => {
                     loadChapter(bookId, chapter).then(() => {
@@ -1143,6 +1131,20 @@ function App() {
                     });
                   }}
                   onStrongsClick={handleStrongsClick}
+                  crossRefContext={crossRefContext}
+                  notes={notes}
+                  topics={topics}
+                  onEditNote={handleEditNote}
+                  onDeleteNote={handleDeleteNote}
+                  onCreateNote={(verseRef) => {
+                    if (verseRef) {
+                      setNoteVerses([verseRef]);
+                    }
+                    setEditingNote(undefined);
+                    setShowNoteEditor(true);
+                  }}
+                  pendingCrossRefTarget={pendingCrossRefTarget}
+                  onClearPendingCrossRefTarget={() => setPendingCrossRefTarget(null)}
                 />
               )}
 
@@ -1181,36 +1183,6 @@ function App() {
             });
           }}
         />
-      )}
-
-      {/* Cross Reference Panel */}
-      {crossRefContext !== null && (
-        <div className={`cross-ref-panel-container ${showCrossRefNotes ? 'with-notes' : ''}`}>
-          <CrossReferencePanel
-            bookId={crossRefContext.bookId}
-            bookName={crossRefContext.bookName}
-            chapter={crossRefContext.chapter}
-            verse={crossRefContext.verse}
-            onNavigate={handleCrossRefNavigate}
-            onClose={() => {
-              setCrossRefContext(null);
-              setShowCrossRefNotes(false);
-            }}
-            notes={notes}
-            topics={topics}
-            onEditNote={handleEditNote}
-            onDeleteNote={handleDeleteNote}
-            onCreateNote={(verseRef) => {
-              if (verseRef) {
-                setNoteVerses([verseRef]);
-              }
-              setEditingNote(undefined);
-              setShowNoteEditor(true);
-            }}
-            showNotesPanel={showCrossRefNotes}
-            onToggleNotesPanel={() => setShowCrossRefNotes(!showCrossRefNotes)}
-          />
-        </div>
       )}
 
       {/* Media Control Panel */}
@@ -1338,6 +1310,7 @@ function App() {
           verseNum={highlighterVerse}
           bookName={chapter.bookName}
           chapterNum={chapter.chapterNum}
+          bookId={currentBookId}
           verseText={chapter.kjvVerses.find(v => v.num === highlighterVerse)?.text || ''}
           totalVerses={chapter.kjvVerses.length}
           onCopyVerseRange={async (startVerse, endVerse) => {
@@ -1354,6 +1327,22 @@ function App() {
             } catch (err) {
               console.error('Failed to copy verses:', err);
             }
+          }}
+          crossRefContext={crossRefContext}
+          onAddAsCrossRef={(_targetBookId, targetBookName, targetChapter, targetVerseStart, targetVerseEnd) => {
+            if (!crossRefContext) return;
+
+            // Format the target verse reference string
+            const targetRef = targetVerseEnd && targetVerseEnd !== targetVerseStart
+              ? `${targetBookName} ${targetChapter}:${targetVerseStart}-${targetVerseEnd}`
+              : `${targetBookName} ${targetChapter}:${targetVerseStart}`;
+
+            // Set the pending target to open the modal in RightPanel
+            setPendingCrossRefTarget(targetRef);
+
+            // Close the highlighter
+            setHighlighterPosition(null);
+            setHighlighterVerse(null);
           }}
         />
       )}
