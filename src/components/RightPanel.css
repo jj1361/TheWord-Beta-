@@ -1,20 +1,20 @@
-/* Right Panel - Fixed position between header and footer */
+/* Right Panel - Inline display next to chapter content */
 /* Default (dark theme) styling */
 .right-panel {
-  position: fixed;
-  right: 20px;
+  position: sticky;
   top: 130px;
-  bottom: 30px;
-  width: 45%;
-  min-width: 350px;
-  max-width: 550px;
+  /* Takes 45% of the container width (minus gap) */
+  flex: 0 0 calc(45% - 10px);
+  width: calc(45% - 10px);
+  min-width: 250px;
+  max-height: calc(100vh - 160px);
   background: #1a202c;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  z-index: 100;
   overflow: hidden;
+  align-self: flex-start;
 }
 
 /* Panel Header */
@@ -194,6 +194,7 @@
   font-size: 56px;
   color: #764ba2;
   line-height: 1;
+  font-weight: 900;
 }
 
 .hebrew-letter-info {
@@ -349,6 +350,7 @@
 
 [data-theme='dark'] .hebrew-letter-ancient {
   color: #c4b5fd;
+    font-weight: 900;
 }
 
 [data-theme='dark'] .hebrew-letter-name {
@@ -524,6 +526,7 @@
 
 [data-theme='light'] .hebrew-letter-ancient {
   color: #764ba2;
+    font-weight: 900;
 }
 
 [data-theme='light'] .hebrew-letter-name {
@@ -590,8 +593,10 @@
     width: auto;
     max-width: 100%;
     min-width: unset;
-    height: 60vh;
+    max-height: 60vh;
+    height: auto;
     border-radius: 16px 16px 0 0;
+    z-index: 200;
   }
 
   .lexicon-word {
