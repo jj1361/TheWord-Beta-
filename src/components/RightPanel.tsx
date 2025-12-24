@@ -53,6 +53,8 @@ interface RightPanelProps {
   // Pre-populated cross reference target from context menu
   pendingCrossRefTarget?: string | null;
   onClearPendingCrossRefTarget?: () => void;
+  // Text size prop (controlled from parent)
+  textSize?: number;
 }
 
 /**
@@ -82,6 +84,9 @@ interface TranslationWord {
   verses: VerseReference[];
 }
 
+// Default text size if not provided
+const DEFAULT_PANEL_TEXT_SIZE = 16;
+
 const RightPanel: React.FC<RightPanelProps> = ({
   lexiconContent,
   hebrewLetterContent,
@@ -96,7 +101,10 @@ const RightPanel: React.FC<RightPanelProps> = ({
   onCreateNote,
   pendingCrossRefTarget,
   onClearPendingCrossRefTarget,
+  textSize: textSizeProp,
 }) => {
+  // Use prop if provided, otherwise fallback to default
+  const textSize = textSizeProp ?? DEFAULT_PANEL_TEXT_SIZE;
   // Handle clicks on Strong's number links
   const handleStrongsLinkClick = (event: React.MouseEvent<HTMLDivElement>) => {
     const target = event.target as HTMLElement;
@@ -147,6 +155,10 @@ const RightPanel: React.FC<RightPanelProps> = ({
   // Drag and drop state for user cross refs
   const [draggedCrossRefId, setDraggedCrossRefId] = useState<string | null>(null);
   const [dragOverCrossRefId, setDragOverCrossRefId] = useState<string | null>(null);
+
+  // Selection state for user cross refs (for copy functionality)
+  const [selectedUserCrossRefs, setSelectedUserCrossRefs] = useState<Set<string>>(new Set());
+  const [userCrossRefCopySuccess, setUserCrossRefCopySuccess] = useState(false);
 
   // Determine initial tab based on which content is available
   // Default to Strong's if available, otherwise first available lexicon
@@ -777,6 +789,39 @@ const RightPanel: React.FC<RightPanelProps> = ({
     ? userCrossRefs.filter(r => r.categoryId === selectedUserCategory)
     : userCrossRefs;
 
+  // User cross reference selection and copy handlers
+  const handleUserCrossRefSelectAll = () => {
+    const allIds = new Set(filteredUserCrossRefs.map(ref => ref.id));
+    setSelectedUserCrossRefs(allIds);
+  };
+
+  const handleUserCrossRefUnselectAll = () => {
+    setSelectedUserCrossRefs(new Set());
+  };
+
+  const handleUserCrossRefCopy = async () => {
+    const selectedRefs = filteredUserCrossRefs.filter(ref => selectedUserCrossRefs.has(ref.id));
+    if (selectedRefs.length === 0) return;
+
+    const textToCopy = selectedRefs
+      .map(ref => {
+        const refKey = `${ref.targetVerse.bookId}:${ref.targetVerse.chapter}:${ref.targetVerse.verse}`;
+        const verseText = userCrossRefVerseTexts.get(refKey) || '';
+        return `${userCrossRefService.formatVerseReference(ref.targetVerse)}\n${verseText}`;
+      })
+      .join('\n\n');
+
+    try {
+      await navigator.clipboard.writeText(textToCopy);
+      setUserCrossRefCopySuccess(true);
+      setTimeout(() => setUserCrossRefCopySuccess(false), 2000);
+    } catch (error) {
+      console.error('Failed to copy:', error);
+    }
+  };
+
+  const allUserCrossRefsSelected = filteredUserCrossRefs.length > 0 && selectedUserCrossRefs.size === filteredUserCrossRefs.length;
+
   // Filter notes for current cross reference verse
   const crossRefVerseNotes = crossRefContext ? notes.filter(note =>
     note.verses?.some(v =>
@@ -884,7 +929,7 @@ const RightPanel: React.FC<RightPanelProps> = ({
   }
 
   return (
-    <div className="right-panel">
+    <div className="right-panel" style={{ '--panel-text-size': `${textSize}px` } as React.CSSProperties}>
       <div className="right-panel-header">
         <div className="right-panel-tabs">
           {lexiconContent?.strongs && (
@@ -1490,69 +1535,122 @@ const RightPanel: React.FC<RightPanelProps> = ({
                       </button>
                     </div>
                   ) : (
-                    <div className="user-cross-refs-list">
-                      {filteredUserCrossRefs.map(ref => {
-                        const category = ref.categoryId ? getCategoryById(ref.categoryId) : null;
-                        const refKey = `${ref.targetVerse.bookId}:${ref.targetVerse.chapter}:${ref.targetVerse.verse}`;
-                        const verseText = userCrossRefVerseTexts.get(refKey);
-                        const isDragging = draggedCrossRefId === ref.id;
-                        const isDragOver = dragOverCrossRefId === ref.id;
-
-                        return (
-                          <div
-                            key={ref.id}
-                            className={`user-cross-ref-item ${isDragging ? 'dragging' : ''} ${isDragOver ? 'drag-over' : ''}`}
-                            draggable
-                            onDragStart={(e) => handleCrossRefDragStart(e, ref.id)}
-                            onDragEnd={handleCrossRefDragEnd}
-                            onDragOver={(e) => handleCrossRefDragOver(e, ref.id)}
-                            onDragLeave={handleCrossRefDragLeave}
-                            onDrop={(e) => handleCrossRefDrop(e, ref.id)}
-                            onClick={() => onVerseClick?.(ref.targetVerse.bookId, ref.targetVerse.chapter, ref.targetVerse.verse)}
+                    <>
+                      {/* Selection Controls */}
+                      <div className="user-cross-ref-selection-controls">
+                        <div className="selection-actions">
+                          {allUserCrossRefsSelected ? (
+                            <button
+                              className="select-action-btn"
+                              onClick={handleUserCrossRefUnselectAll}
+                            >
+                              Unselect All
+                            </button>
+                          ) : (
+                            <button
+                              className="select-action-btn"
+                              onClick={handleUserCrossRefSelectAll}
+                            >
+                              Select All
+                            </button>
+                          )}
+                          {selectedUserCrossRefs.size > 0 && (
+                            <span className="selection-count">
+                              {selectedUserCrossRefs.size} selected
+                            </span>
+                          )}
+                        </div>
+                        {selectedUserCrossRefs.size > 0 && (
+                          <button
+                            className={`copy-selected-btn ${userCrossRefCopySuccess ? 'success' : ''}`}
+                            onClick={handleUserCrossRefCopy}
                           >
-                            <div className="user-cross-ref-header">
-                              <span className="user-cross-ref-drag-handle" title="Drag to reorder">
-                                ⋮⋮
-                              </span>
-                              <span className="user-cross-ref-reference">
-                                {userCrossRefService.formatVerseReference(ref.targetVerse)}
-                              </span>
-                              {category && (
-                                <span
-                                  className="user-cross-ref-category"
-                                  style={{ backgroundColor: category.color }}
-                                >
-                                  {category.name}
+                            {userCrossRefCopySuccess ? 'Copied!' : 'Copy Selected'}
+                          </button>
+                        )}
+                      </div>
+
+                      <div className="user-cross-refs-list">
+                        {filteredUserCrossRefs.map(ref => {
+                          const category = ref.categoryId ? getCategoryById(ref.categoryId) : null;
+                          const refKey = `${ref.targetVerse.bookId}:${ref.targetVerse.chapter}:${ref.targetVerse.verse}`;
+                          const verseText = userCrossRefVerseTexts.get(refKey);
+                          const isDragging = draggedCrossRefId === ref.id;
+                          const isDragOver = dragOverCrossRefId === ref.id;
+                          const isSelected = selectedUserCrossRefs.has(ref.id);
+
+                          return (
+                            <div
+                              key={ref.id}
+                              className={`user-cross-ref-item ${isDragging ? 'dragging' : ''} ${isDragOver ? 'drag-over' : ''} ${isSelected ? 'selected' : ''}`}
+                              draggable
+                              onDragStart={(e) => handleCrossRefDragStart(e, ref.id)}
+                              onDragEnd={handleCrossRefDragEnd}
+                              onDragOver={(e) => handleCrossRefDragOver(e, ref.id)}
+                              onDragLeave={handleCrossRefDragLeave}
+                              onDrop={(e) => handleCrossRefDrop(e, ref.id)}
+                              onClick={() => onVerseClick?.(ref.targetVerse.bookId, ref.targetVerse.chapter, ref.targetVerse.verse)}
+                            >
+                              <div className="user-cross-ref-header">
+                                <input
+                                  type="checkbox"
+                                  className="user-cross-ref-checkbox"
+                                  checked={isSelected}
+                                  onChange={(e) => {
+                                    e.stopPropagation();
+                                    const newSelected = new Set(selectedUserCrossRefs);
+                                    if (isSelected) {
+                                      newSelected.delete(ref.id);
+                                    } else {
+                                      newSelected.add(ref.id);
+                                    }
+                                    setSelectedUserCrossRefs(newSelected);
+                                  }}
+                                  onClick={(e) => e.stopPropagation()}
+                                />
+                                <span className="user-cross-ref-drag-handle" title="Drag to reorder">
+                                  ⋮⋮
                                 </span>
+                                <span className="user-cross-ref-reference">
+                                  {userCrossRefService.formatVerseReference(ref.targetVerse)}
+                                </span>
+                                {category && (
+                                  <span
+                                    className="user-cross-ref-category"
+                                    style={{ backgroundColor: category.color }}
+                                  >
+                                    {category.name}
+                                  </span>
+                                )}
+                                <button
+                                  className="user-cross-ref-delete"
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    handleDeleteUserCrossRef(ref.id);
+                                  }}
+                                  title="Delete"
+                                >
+                                  ×
+                                </button>
+                              </div>
+                              {ref.word && (
+                                <div className="user-cross-ref-word">
+                                  "{ref.word}"
+                                </div>
                               )}
-                              <button
-                                className="user-cross-ref-delete"
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  handleDeleteUserCrossRef(ref.id);
-                                }}
-                                title="Delete"
-                              >
-                                ×
-                              </button>
-                            </div>
-                            {ref.word && (
-                              <div className="user-cross-ref-word">
-                                "{ref.word}"
+                              <div className="user-cross-ref-text">
+                                {verseText || 'Loading...'}
                               </div>
-                            )}
-                            <div className="user-cross-ref-text">
-                              {verseText || 'Loading...'}
+                              {ref.note && (
+                                <div className="user-cross-ref-note">
+                                  {ref.note}
+                                </div>
+                              )}
                             </div>
-                            {ref.note && (
-                              <div className="user-cross-ref-note">
-                                {ref.note}
-                              </div>
-                            )}
-                          </div>
-                        );
-                      })}
-                    </div>
+                          );
+                        })}
+                      </div>
+                    </>
                   )}
                 </div>
               )}

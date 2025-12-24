@@ -1145,6 +1145,7 @@ function App() {
                   }}
                   pendingCrossRefTarget={pendingCrossRefTarget}
                   onClearPendingCrossRefTarget={() => setPendingCrossRefTarget(null)}
+                  textSize={textSize}
                 />
               )}
 

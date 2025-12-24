@@ -2,12 +2,14 @@
 /* Default (dark theme) styling */
 .right-panel {
   position: sticky;
-  top: 130px;
+  /* Position below the fixed horizontal sidebar (header ~120px + sidebar ~70px = ~190px) */
+  top: 190px;
   /* Takes 45% of the container width (minus gap) */
   flex: 0 0 calc(45% - 10px);
   width: calc(45% - 10px);
   min-width: 250px;
-  max-height: calc(100vh - 160px);
+  /* Adjust max-height to account for header + sidebar */
+  max-height: calc(100vh - 210px);
   background: #1a202c;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   border-radius: 16px;
@@ -15,6 +17,8 @@
   flex-direction: column;
   overflow: hidden;
   align-self: flex-start;
+  /* Default text size variable */
+  --panel-text-size: 16px;
 }
 
 /* Panel Header */
@@ -128,14 +132,14 @@
 }
 
 .lexicon-pronunciation {
-  font-size: 18px;
+  font-size: calc(var(--panel-text-size) + 2px);
   font-style: italic;
   color: #ffffff;
   margin: 0;
 }
 
 .lexicon-definition {
-  font-size: 15px;
+  font-size: var(--panel-text-size);
   color: #ffffff;
   line-height: 1.6;
 }
@@ -149,7 +153,7 @@
 }
 
 .lexicon-derivation {
-  font-size: 14px;
+  font-size: calc(var(--panel-text-size) - 2px);
   color: #ffffff;
   line-height: 1.6;
   font-style: italic;
@@ -233,7 +237,7 @@
 }
 
 .hebrew-letter-meaning {
-  font-size: 15px;
+  font-size: var(--panel-text-size);
   color: #ffffff;
   line-height: 1.6;
   margin: 0;
@@ -661,7 +665,7 @@
 
 /* STEPBible specific styles */
 .lexicon-gloss {
-  font-size: 18px;
+  font-size: calc(var(--panel-text-size) + 2px);
   color: #667eea;
   font-weight: 600;
   font-style: italic;
@@ -721,7 +725,7 @@
 }
 
 .ahlb-translation {
-  font-size: 22px;
+  font-size: calc(var(--panel-text-size) + 6px);
   font-weight: 700;
   color: #c4b5fd;
   text-transform: uppercase;
@@ -860,7 +864,7 @@
 }
 
 .reference-text {
-  font-size: 13px;
+  font-size: var(--panel-text-size);
   color: #cbd5e0;
   line-height: 1.5;
 }
@@ -958,6 +962,7 @@
 }
 
 .translation-words-list {
+  font-size: var(--panel-text-size);
   line-height: 2;
   color: #cbd5e0;
 }
@@ -1355,7 +1360,7 @@
 }
 
 .cross-ref-tab-content .cross-ref-verse-text {
-  font-size: 0.9rem;
+  font-size: var(--panel-text-size);
   color: #e0e7ff;
   line-height: 1.5;
 }
@@ -1782,7 +1787,7 @@
 }
 
 .user-cross-ref-text {
-  font-size: 13px;
+  font-size: var(--panel-text-size);
   color: #cbd5e1;
   line-height: 1.5;
 }
@@ -1794,6 +1799,82 @@
   font-size: 12px;
   color: #94a3b8;
   font-style: italic;
+}
+
+/* Selection controls for user cross refs */
+.user-cross-ref-selection-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: rgba(30, 41, 59, 0.5);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.user-cross-ref-selection-controls .selection-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-cross-ref-selection-controls .select-action-btn {
+  background: transparent;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  color: #94a3b8;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.user-cross-ref-selection-controls .select-action-btn:hover {
+  background: rgba(148, 163, 184, 0.1);
+  border-color: rgba(148, 163, 184, 0.5);
+  color: #cbd5e1;
+}
+
+.user-cross-ref-selection-controls .selection-count {
+  font-size: 12px;
+  color: #a5b4fc;
+}
+
+.user-cross-ref-selection-controls .copy-selected-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.user-cross-ref-selection-controls .copy-selected-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.user-cross-ref-selection-controls .copy-selected-btn.success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+/* Checkbox for user cross refs */
+.user-cross-ref-checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  cursor: pointer;
+  accent-color: #667eea;
+  flex-shrink: 0;
+}
+
+/* Selected state for user cross ref items */
+.user-cross-ref-item.selected {
+  background: rgba(102, 126, 234, 0.15);
+  border-color: rgba(102, 126, 234, 0.4);
 }
 
 /* Drag handle for user cross refs */
@@ -2196,6 +2277,30 @@
 [data-theme='light'] .user-cross-ref-item.drag-over {
   border-top: 3px solid #667eea;
   background: rgba(102, 126, 234, 0.08);
+}
+
+[data-theme='light'] .user-cross-ref-selection-controls {
+  background: rgba(243, 244, 246, 0.8);
+}
+
+[data-theme='light'] .user-cross-ref-selection-controls .select-action-btn {
+  border-color: #d1d5db;
+  color: #6b7280;
+}
+
+[data-theme='light'] .user-cross-ref-selection-controls .select-action-btn:hover {
+  background: rgba(107, 114, 128, 0.1);
+  border-color: #9ca3af;
+  color: #374151;
+}
+
+[data-theme='light'] .user-cross-ref-selection-controls .selection-count {
+  color: #667eea;
+}
+
+[data-theme='light'] .user-cross-ref-item.selected {
+  background: rgba(102, 126, 234, 0.1);
+  border-color: rgba(102, 126, 234, 0.3);
 }
 
 [data-theme='light'] .cross-ref-modal {
