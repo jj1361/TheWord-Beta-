@@ -231,12 +231,21 @@ const RightPanel: React.FC<RightPanelProps> = ({
     }
 
     // If one type of content is removed, switch to the other if available
+    // But only switch if the current active tab is no longer valid
     if (!lexiconContent && !crossRefContext && hebrewLetterContent) {
-      setActiveTab('hebrew');
+      if (activeTab !== 'hebrew') {
+        setActiveTab('hebrew');
+      }
+    } else if (!lexiconContent && !hebrewLetterContent && crossRefContext) {
+      if (activeTab !== 'crossref') {
+        setActiveTab('crossref');
+      }
     } else if (lexiconContent && !hebrewLetterContent && !crossRefContext) {
-      setActiveTab(getInitialTab());
-    } else if (crossRefContext && !lexiconContent && !hebrewLetterContent) {
-      setActiveTab('crossref');
+      // Only reset if current tab is not a lexicon tab
+      const lexiconTabs: TabType[] = ['strongs', 'stepbible', 'bdb', 'ahlb'];
+      if (!lexiconTabs.includes(activeTab)) {
+        setActiveTab(getInitialTab());
+      }
     }
   }, [lexiconContent, hebrewLetterContent, crossRefContext, prevLexiconId, prevHebrewLetter, activeTab]);
 
