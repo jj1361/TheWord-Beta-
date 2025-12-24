@@ -446,6 +446,89 @@
   border-radius: 4px;
   font-weight: 500;
   cursor: help;
+  transition: all 0.15s ease;
+}
+
+.word-pos:hover {
+  background: #bfdbfe;
+  transform: translateY(-1px);
+}
+
+/* Modern POS Tooltip */
+.pos-tooltip {
+  z-index: 9999;
+  pointer-events: none;
+  animation: tooltipFadeIn 0.15s ease;
+}
+
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -100%) translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -100%) translateY(0);
+  }
+}
+
+.pos-tooltip-content {
+  position: relative;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px 14px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  min-width: 140px;
+  max-width: 280px;
+}
+
+.pos-tooltip-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.pos-tooltip-abbrev {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.pos-tooltip-meaning {
+  color: #f1f5f9;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.pos-tooltip-parse {
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+/* Tooltip arrow */
+.pos-tooltip-content::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #334155;
 }
 
 .person-link {
@@ -626,6 +709,30 @@
 [data-theme='dark'] .word-pos {
   background: #1e3a8a;
   color: #bfdbfe;
+}
+
+[data-theme='dark'] .word-pos:hover {
+  background: #1d4ed8;
+}
+
+/* Light theme tooltip styles */
+[data-theme='light'] .pos-tooltip-content {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='light'] .pos-tooltip-meaning {
+  color: #1e293b;
+}
+
+[data-theme='light'] .pos-tooltip-parse {
+  color: #64748b;
+  border-top-color: rgba(100, 116, 139, 0.2);
+}
+
+[data-theme='light'] .pos-tooltip-content::after {
+  border-top-color: #f8fafc;
 }
 
 [data-theme='dark'] .person-link {

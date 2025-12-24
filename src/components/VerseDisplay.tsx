@@ -1,9 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { KJVVerse, KJVsVerse, InterlinearVerse } from '../types/bible';
 import { extractHebrewLetters, getHebrewLetterInfo } from '../config/hebrewLetters';
 import { getWordImage, getImagePath, getImageSize, WordImageMapping } from '../config/youthModeConfig';
 import { HighlightColor, HIGHLIGHT_COLORS, TextFormatting } from '../types/notes';
+import { getPartOfSpeechName } from '../utils/partsOfSpeech';
 import './VerseDisplay.css';
+
+// Tooltip state interface
+interface TooltipState {
+  visible: boolean;
+  x: number;
+  y: number;
+  pos: string;
+  parse: string;
+}
 
 interface VerseDisplayProps {
   verse: KJVVerse;
@@ -29,6 +39,47 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
   const [isDarkMode, setIsDarkMode] = useState(() =>
     document.documentElement.getAttribute('data-theme') === 'dark'
   );
+  const [posTooltip, setPosTooltip] = useState<TooltipState>({
+    visible: false,
+    x: 0,
+    y: 0,
+    pos: '',
+    parse: ''
+  });
+  const tooltipTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Handle POS tooltip show
+  const handlePosMouseEnter = (e: React.MouseEvent, pos: string, parse: string) => {
+    const rect = (e.target as HTMLElement).getBoundingClientRect();
+    // Clear any pending hide timeout
+    if (tooltipTimeoutRef.current) {
+      clearTimeout(tooltipTimeoutRef.current);
+      tooltipTimeoutRef.current = null;
+    }
+    setPosTooltip({
+      visible: true,
+      x: rect.left + rect.width / 2,
+      y: rect.top - 8,
+      pos,
+      parse
+    });
+  };
+
+  // Handle POS tooltip hide with delay
+  const handlePosMouseLeave = () => {
+    tooltipTimeoutRef.current = setTimeout(() => {
+      setPosTooltip(prev => ({ ...prev, visible: false }));
+    }, 100);
+  };
+
+  // Cleanup timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (tooltipTimeoutRef.current) {
+        clearTimeout(tooltipTimeoutRef.current);
+      }
+    };
+  }, []);
 
   // Listen for theme changes
   useEffect(() => {
@@ -558,12 +609,39 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
                       #{word.strongs}
                     </div>
                   )}
-                  <div className="word-pos" title={word.parse}>
+                  <div
+                    className="word-pos"
+                    onMouseEnter={(e) => handlePosMouseEnter(e, word.pos, word.parse)}
+                    onMouseLeave={handlePosMouseLeave}
+                  >
                     {word.pos}
                   </div>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      )}
+
+      {/* POS Tooltip */}
+      {posTooltip.visible && (
+        <div
+          className="pos-tooltip"
+          style={{
+            position: 'fixed',
+            left: posTooltip.x,
+            top: posTooltip.y,
+            transform: 'translate(-50%, -100%)'
+          }}
+        >
+          <div className="pos-tooltip-content">
+            <div className="pos-tooltip-main">
+              <span className="pos-tooltip-abbrev">{posTooltip.pos}</span>
+              <span className="pos-tooltip-meaning">{getPartOfSpeechName(posTooltip.pos)}</span>
+            </div>
+            {posTooltip.parse && (
+              <div className="pos-tooltip-parse">{posTooltip.parse}</div>
+            )}
           </div>
         </div>
       )}
