@@ -49,20 +49,24 @@ class KJVStrongsService {
         // This is text - check if it starts with punctuation that should attach to previous phrase
         const leadingPunctMatch = part.match(/^([,;:.!?\-']+)(.*)$/);
 
-        if (leadingPunctMatch && phrases.length > 0) {
-          // Attach leading punctuation to the previous phrase
-          const punctuation = leadingPunctMatch[1];
-          const remainingText = leadingPunctMatch[2];
-
-          // Append punctuation to the last phrase's text
-          phrases[phrases.length - 1].text += punctuation;
-
-          // Save previous phrase if we have one (without the punctuation we just moved)
+        if (leadingPunctMatch) {
+          // First, save the current phrase if we have one
+          // This ensures punctuation attaches to the correct (most recent) word
           if (currentText.trim()) {
             phrases.push({
               strongs: currentStrongs.join(',') || '',
               text: currentText.trim()
             });
+            currentText = '';
+            currentStrongs = [];
+          }
+
+          // Now attach leading punctuation to the previous phrase
+          const punctuation = leadingPunctMatch[1];
+          const remainingText = leadingPunctMatch[2];
+
+          if (phrases.length > 0) {
+            phrases[phrases.length - 1].text += punctuation;
           }
 
           // Continue with remaining text (after punctuation)

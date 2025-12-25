@@ -358,13 +358,20 @@ export class LexiconService {
   }
 
   async getLexiconData(strongsNumber: string): Promise<LexiconData> {
+    // Handle comma-separated Strong's numbers (e.g., "H1254,H853")
+    // Use the first (primary) Strong's number for lookups
+    const primaryStrongs = strongsNumber.includes(',')
+      ? strongsNumber.split(',')[0].trim()
+      : strongsNumber;
+
+    console.log(`[LexiconService] Looking up ${strongsNumber} (primary: ${primaryStrongs})`);
+
     // Load STEPBible data (preferred source)
-    const stepBible = await this.getStepBibleEntry(strongsNumber);
+    const stepBible = await this.getStepBibleEntry(primaryStrongs);
 
     // Load AHLB data (Ancient Hebrew Lexicon - pictographic meanings)
-    const ahlb = await this.getAHLBEntry(strongsNumber);
+    const ahlb = await this.getAHLBEntry(primaryStrongs);
 
-    console.log(`[LexiconService] Looking up ${strongsNumber}`);
     console.log(`[LexiconService] STEPBible entry found:`, stepBible ? 'YES' : 'NO');
     console.log(`[LexiconService] AHLB entry found:`, ahlb ? 'YES' : 'NO');
     if (stepBible) {
@@ -376,17 +383,17 @@ export class LexiconService {
     }
 
     // Load legacy Strong's data (fallback)
-    const strongs = await this.loadStrongs(strongsNumber);
+    const strongs = await this.loadStrongs(primaryStrongs);
 
     // Only load BDB for Hebrew words (not Greek)
-    const isGreek = strongsNumber.startsWith('G');
+    const isGreek = primaryStrongs.startsWith('G');
     let bdb: BDBEntry | undefined;
 
     if (!isGreek) {
       // Load lexical index to map Strong's to BDB (Hebrew only)
       await this.loadLexicalIndex();
 
-      const normalizedNumber = strongsNumber.replace(/^H/, '');
+      const normalizedNumber = primaryStrongs.replace(/^H/, '');
       const strongsId = `H${normalizedNumber}`;
       const bdbId = this.lexicalIndexCache.get(strongsId);
 
