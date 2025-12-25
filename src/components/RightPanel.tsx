@@ -162,7 +162,7 @@ const RightPanel: React.FC<RightPanelProps> = ({
 
   // Determine initial tab based on which content is available
   // Default to Strong's if available, otherwise first available lexicon
-  const getInitialTab = (): TabType => {
+  const getInitialTab = useCallback((): TabType => {
     if (crossRefContext) return 'crossref';
     if (lexiconContent) {
       // Always default to Strong's first
@@ -173,11 +173,16 @@ const RightPanel: React.FC<RightPanelProps> = ({
     }
     if (hebrewLetterContent) return 'hebrew';
     return 'strongs';
-  };
+  }, [crossRefContext, lexiconContent, hebrewLetterContent]);
 
-  const [activeTab, setActiveTab] = useState<TabType>(getInitialTab());
+  const [activeTab, setActiveTab] = useState<TabType>('strongs');
   const [prevLexiconId, setPrevLexiconId] = useState<string | null>(null);
   const [prevHebrewLetter, setPrevHebrewLetter] = useState<string | null>(null);
+
+  // Set initial tab on mount
+  useEffect(() => {
+    setActiveTab(getInitialTab());
+  }, [getInitialTab]);
 
   // Separate effect to handle cross reference context changes
   // This ensures cross ref tab is shown immediately when crossRefContext is set
@@ -197,6 +202,7 @@ const RightPanel: React.FC<RightPanelProps> = ({
         setActiveTab('hebrew');
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [crossRefContext]);
 
   // Update active tab when lexicon or hebrew content changes
@@ -247,6 +253,7 @@ const RightPanel: React.FC<RightPanelProps> = ({
         setActiveTab(getInitialTab());
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lexiconContent, hebrewLetterContent, crossRefContext, prevLexiconId, prevHebrewLetter, activeTab]);
 
   // Load verse references when Strong's number changes
