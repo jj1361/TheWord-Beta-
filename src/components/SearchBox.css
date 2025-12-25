@@ -278,17 +278,19 @@
 
 @media (max-width: 480px) {
   .search-input-wrapper {
-    flex-direction: column;
-    gap: 8px;
+    flex-direction: row;
+    gap: 6px;
   }
 
   .search-input {
     padding: 10px 14px;
+    flex: 1;
   }
 
   .search-button {
-    width: 100%;
-    padding: 10px 16px;
+    width: 6.25rem;
+    padding: 10px 12px;
+    flex-shrink: 0;
   }
 }
 
