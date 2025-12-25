@@ -201,12 +201,14 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onSearch, onResultClick, onWordSe
 
   // Cleanup on unmount
   useEffect(() => {
+    const debounceTimer = debounceTimerRef.current;
+    const abortController = abortControllerRef.current;
     return () => {
-      if (debounceTimerRef.current) {
-        clearTimeout(debounceTimerRef.current);
+      if (debounceTimer) {
+        clearTimeout(debounceTimer);
       }
-      if (abortControllerRef.current) {
-        abortControllerRef.current.abort();
+      if (abortController) {
+        abortController.abort();
       }
     };
   }, []);

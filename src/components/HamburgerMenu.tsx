@@ -141,7 +141,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
   onDecreaseTextSize,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
+  const [, setActiveSubmenu] = useState<string | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
 
   // Close menu when clicking outside

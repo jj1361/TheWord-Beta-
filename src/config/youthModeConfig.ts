@@ -91,7 +91,7 @@ youthModeConfig.forEach(mapping => {
 // Function to check if a word has an image mapping
 export const getWordImage = (word: string): WordImageMapping | undefined => {
   // Remove punctuation and convert to lowercase for matching
-  const cleanWord = word.replace(/[.,;:!?'"()\[\]{}]/g, '').toLowerCase();
+  const cleanWord = word.replace(/[.,;:!?'"()[\]{}]/g, '').toLowerCase();
   return wordImageMap.get(cleanWord);
 };
 

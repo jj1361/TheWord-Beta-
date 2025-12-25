@@ -102,7 +102,7 @@ export class PersonService {
       const lines = csvText.split('\n');
 
       // Skip header (BOM + header line)
-      const headers = this.parseCSVLine(lines[0].replace(/^\uFEFF/, ''));
+      this.parseCSVLine(lines[0].replace(/^\uFEFF/, ''));
 
       for (let i = 1; i < lines.length; i++) {
         const line = lines[i].trim();
@@ -149,7 +149,7 @@ export class PersonService {
       const lines = csvText.split('\n');
 
       // Skip header (BOM + header line)
-      const headers = this.parseCSVLine(lines[0].replace(/^\uFEFF/, ''));
+      this.parseCSVLine(lines[0].replace(/^\uFEFF/, ''));
 
       for (let i = 1; i < lines.length; i++) {
         const line = lines[i].trim();
@@ -248,13 +248,13 @@ export class PersonService {
   }
 
   // Convert markdown text to HTML with clickable person links
-  convertMarkdownToHTML(mdText: string, onPersonClick?: (personID: string) => void): string {
+  convertMarkdownToHTML(mdText: string, _onPersonClick?: (personID: string) => void): string {
     if (!mdText) return '';
 
     // Replace [Name]([/person/personID) with clickable spans
-    const personLinkPattern = /\[([^\]]+)\]\(\[\/person\/([^\)]+)\)/g;
+    const personLinkPattern = /\[([^\]]+)\]\(\[\/person\/([^)]+)\)/g;
 
-    return mdText.replace(personLinkPattern, (match, name, personID) => {
+    return mdText.replace(personLinkPattern, (_match, name, personID) => {
       return `<span class="person-link" data-person-id="${personID}">${name}</span>`;
     });
   }

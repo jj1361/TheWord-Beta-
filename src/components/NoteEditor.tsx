@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import RichTextEditor from './RichTextEditor';
 import { Note, Topic, VerseReference, RichTextContent } from '../types/notes';
 import './NoteEditor.css';

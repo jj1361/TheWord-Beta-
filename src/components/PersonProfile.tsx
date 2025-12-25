@@ -243,7 +243,7 @@ const PersonProfile: React.FC<PersonProfileProps> = ({ personID, onClose, onVers
                       <div className="fb-photo-grid">
                         {personImages.photos.map((photoUrl, idx) => (
                           <div key={idx} className="fb-photo-item">
-                            <img src={photoUrl} alt={`${person.displayTitle} photo ${idx + 1}`} />
+                            <img src={photoUrl} alt={`${person.displayTitle} ${idx + 1}`} />
                           </div>
                         ))}
                       </div>

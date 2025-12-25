@@ -269,8 +269,8 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
       const wordImage = getWordImage(part);
       if (wordImage) {
         // Extract any leading/trailing punctuation
-        const leadingPunct = part.match(/^[.,;:!?'"()\[\]{}]+/)?.[0] || '';
-        const trailingPunct = part.match(/[.,;:!?'"()\[\]{}]+$/)?.[0] || '';
+        const leadingPunct = part.match(/^[.,;:!?'"()[\]{}]+/)?.[0] || '';
+        const trailingPunct = part.match(/[.,;:!?'"()[\]{}]+$/)?.[0] || '';
 
         return (
           <span key={index} className="youth-word-container">
