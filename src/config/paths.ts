@@ -1,16 +1,15 @@
 /**
  * Centralized path configuration for data fetching
- * Uses PUBLIC_URL to ensure paths work in sub-path deployments
+ * All paths are absolute from root to work correctly with client-side routing
  */
 
-const PUBLIC_URL = process.env.PUBLIC_URL || '';
-
 export const PATHS = {
-  BIBLE_DATA: `${PUBLIC_URL}/xmlBible.org-main`,
-  LEXICON: `${PUBLIC_URL}/lexicon`,
-  DATA: `${PUBLIC_URL}/data`,
-  APOCRYPHA: `${PUBLIC_URL}/apocrypha`,
-  TRANSLATIONS: `${PUBLIC_URL}/translations`,
-  SEARCH_INDEX: `${PUBLIC_URL}/search-index.json`,
-  STRONGS_INDEX: `${PUBLIC_URL}/strongs-index.json`,
+  BIBLE_DATA: '/xmlBible.org-main',
+  LEXICON: '/lexicon',
+  DATA: '/data',
+  APOCRYPHA: '/apocrypha',
+  TRANSLATIONS: '/translations',
+  SEARCH_INDEX: '/search-index.json',
+  STRONGS_INDEX: '/strongs-index.json',
+  CROSSREF_INDEX: '/crossref-index.json',
 };

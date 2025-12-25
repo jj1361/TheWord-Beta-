@@ -3,6 +3,8 @@
  * Loads and queries the Treasury of Scripture Knowledge (TSK) cross-reference data
  */
 
+import { PATHS } from '../config/paths';
+
 interface CrossReference {
   bookId: number;
   chapter: number;
@@ -50,7 +52,7 @@ class CrossRefService {
 
     this.loading = (async () => {
       try {
-        const response = await fetch(`${process.env.PUBLIC_URL}/crossref-index.json`);
+        const response = await fetch(PATHS.CROSSREF_INDEX);
         if (!response.ok) {
           throw new Error(`Failed to load cross-reference index: ${response.status}`);
         }
