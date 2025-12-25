@@ -1,0 +1,4370 @@
+{
+  "bookName": "Job",
+  "bookId": 18,
+  "chapters": {
+    "1": [
+      {
+        "num": 1,
+        "text": "May isang lalake sa lupain ng Uz, na ang pangalan ay Iyob; at ang lalaking yaon ay sakdal at matuwid, at natatakot sa Elohim, at humihiwalay sa kasamaan."
+      },
+      {
+        "num": 2,
+        "text": "At may ipinanganak sa kaniya na pitong anak na lalake at tatlong anak na babae."
+      },
+      {
+        "num": 3,
+        "text": "Ang kaniyang pag-aari naman ay pitong libong tupa, at tatlong libong kamelyo, at limang daang magkatuwang na baka, at limang daang asnong babae, at isang totoong malaking sangbahayan; na anopa't siya ang pinaka dakila sa lahat na mga anak ng silanganan."
+      },
+      {
+        "num": 4,
+        "text": "At ang kaniyang mga anak ay nagsiyaon at nagsipagdaos ng kapistahan sa bahay ng bawa't isa sa kani-kaniyang kaarawan; at sila ay nagsugo, at ipinatawag ang kanilang tatlong kapatid na babae upang magsikain at magsiinom na kasalo nila."
+      },
+      {
+        "num": 5,
+        "text": "At nangyari, nang makaraan ang mga kaarawan ng kanilang pagpipista, na si Iyob ay nagsugo, at pinapagbanal sila, at bumangong maaga sa kinaumagahan, at naghandog ng mga handog na susunugin ayon sa bilang nilang lahat: sapagka't sinabi ni Iyob, Marahil ang aking mga anak ay nagkasala, at itinakuwil ang Elohim sa kanilang mga puso. Ganito ang ginawa ni Iyob na palagi."
+      },
+      {
+        "num": 6,
+        "text": "Isang araw nga nang ang mga anak ng Elohim ay magsiparoon na magsiharap kay YAHWEH, na si Satanas ay naparoon din naman na kasama nila."
+      },
+      {
+        "num": 7,
+        "text": "At sinabi ni YAHWEH kay Satanas, Saan ka nanggaling? Nang magkagayo'y sumagot si Satanas kay YAHWEH, at nagsabi, Sa pagparoo't parito sa lupa, at sa pamamanhik manaog doon."
+      },
+      {
+        "num": 8,
+        "text": "At sinabi ni YAHWEH kay Satanas, Iyo bang pinansin ang Aking lingkod na si Iyob? sapagka't walang gaya niya sa lupa, na sakdal at matuwid na lalake, na natatakot sa Akin at humihiwalay sa kasamaan. Awi 25:12"
+      },
+      {
+        "num": 9,
+        "text": "Nang magkagayo'y sumagot si Satanas kay YAHWEH, at nagsabi, Natatakot ba ng walang kabuluhan si Iyob sa Elohim?"
+      },
+      {
+        "num": 10,
+        "text": "Hindi mo ba iniingatan siya, at ang kaniyang sangbahayan, at ang lahat niyang tinatangkilik, sa bawa't dako? Ang gawa ng kaniyang mga kamay ay Iyong pinagpala, at ang kaniyang pag-aari ay dumami sa lupain."
+      },
+      {
+        "num": 11,
+        "text": "Nguni't pagbuhatan mo siya ng iyong kamay ngayon, at galawin mo ang lahat niyang tinatangkilik, at itatakuwil ka niya ng mukhaan,"
+      },
+      {
+        "num": 12,
+        "text": "At sinabi ni YAHWEH kay Satanas, Narito, lahat niyang tinatangkilik ay nasa iyong kapangyarihan; siya lamang ang huwag mong pagbuhatan ng iyong kamay. Sa gayo'y lumabas si Satanas na mula sa harapan ni YAHWEH."
+      },
+      {
+        "num": 13,
+        "text": "At nangyari isang araw, nang ang kaniyang mga anak na lalake at babae ay nagsisikain at nagsisiinom ng alak sa bahay ng kanilang kapatid na panganay."
+      },
+      {
+        "num": 14,
+        "text": "Na dumating ang isang sugo kay Iyob, at nagsabi, Ang mga baka ay nagsisipag-araro at ang mga asno ay nagsisisabsab sa siping nila:"
+      },
+      {
+        "num": 15,
+        "text": "At dinaluhong ng mga Sabeo, at binihag; oo, kanilang pinatay ng talim ng tabak ang mga bataan; at ako lamang ang nakatanang mag-isa upang magsaysay sa iyo."
+      },
+      {
+        "num": 16,
+        "text": "Samantalang siya'y nagsasalita pa, ay dumating naman ang iba, at nagsabi, Ang apoy ng Elohim ay nalaglag mula sa langit, at sinunog ang mga tupa, at ang mga bataan, at pinagsupok; at ako lamang ang nakatanang mag-isa upang magsaysay sa iyo."
+      },
+      {
+        "num": 17,
+        "text": "Samantalang siya'y nagsasalita pa, ay dumating naman ang iba, at nagsabi, Ang mga Caldeo ay nagtatlong pulutong, at dumaluhong sa mga kamelyo, at dinala, oo, at pinatay ng talim ng tabak ang mga bataan; at ako lamang ang nakatanang mag-isa upang magsaysay sa iyo."
+      },
+      {
+        "num": 18,
+        "text": "Samantalang siya'y nagsasalita pa, ay dumating naman ang iba, at nagsabi, Ang iyong mga anak na lalake at babae ay nagsisikain at nagsisiinom ng alak sa bahay ng kanilang kapatid na panganay:"
+      },
+      {
+        "num": 19,
+        "text": "At, narito, dumating ang malakas na hangin na mula sa ilang, at hinampas ang apat na sulok ng bahay, at sila'y namatay; at ako lamang ang nakatanang mag-isa upang magsaysay sa iyo."
+      },
+      {
+        "num": 20,
+        "text": "Nang magkagayo'y bumangon si Iyob, at hinapak ang kaniyang balabal, at inahitan ang kaniyang ulo, at nagpatirapa sa lupa at sumamba;"
+      },
+      {
+        "num": 21,
+        "text": "At sinabi niya, Hubad akong lumabas sa bahay-bata ng aking ina, at hubad na babalik ako roon: Si YAHWEH ang nagbigay, at si YAHWEH ang kumuha; purihin ang Pangalan ni YAHWEH."
+      },
+      {
+        "num": 22,
+        "text": "Sa lahat ng ito ay hindi nagkasala si Iyob, ni inari mang mangmang ang Elohim."
+      }
+    ],
+    "2": [
+      {
+        "num": 1,
+        "text": "Nangyari uli na sa araw nang pagparoon ng mga anak ng Elohim upang magsiharap kay YAHWEH, na nakiparoon din si Satanas, upang humarap kay YAHWEH."
+      },
+      {
+        "num": 2,
+        "text": "At sinabi ni YAHWEH kay Satanas, Saan ka nanggaling? At si Satanas ay sumagot kay YAHWEH, at nagsabi, Sa pagpaparoo't parito sa lupa, at sa pagmamanhik manaog doon."
+      },
+      {
+        "num": 3,
+        "text": "At sinabi ni YAHWEH kay Satanas, Iyo bang pinansin ang Aking lingkod na si Iyob? sapagka't walang gaya niya sa lupa, na sakdal at matuwid na lalake, na natatakot sa Akin, at humihiwalay sa kasamaan: at siya'y namamalagi sa kaniyang pagtatapat, bagaman Ako'y kinilos mo laban sa kaniya, upang ilugmok siya ng walang kadahilanan."
+      },
+      {
+        "num": 4,
+        "text": "At si Satanas ay sumagot kay YAHWEH, at nagsabi, Balat kung balat, oo, lahat na tinatangkilik ng tao ay ibibigay dahil sa kaniyang buhay."
+      },
+      {
+        "num": 5,
+        "text": "Nguni't pagbuhatan mo ngayon ng iyong kamay, at galawin mo ang kaniyang buto at ang kaniyang laman, at kaniyang itatakuwil ka ng mukhaan."
+      },
+      {
+        "num": 6,
+        "text": "At si YAHWEH ay nagsabi kay Satanas, Narito, siya'y nasa iyong kamay; ingatan mo lamang ang kaniyang buhay."
+      },
+      {
+        "num": 7,
+        "text": "Sa gayo'y umalis si Satanas mula sa harapan ni YAHWEH, at pinasibulan si Iyob ng mga masamang bukol na mula sa talampakan ng kaniyang paa hanggang sa kaniyang puyo."
+      },
+      {
+        "num": 8,
+        "text": "At kumuha siya ng isang bibinga ng palayok upang ipangkayod ng sugat; at siya'y naupo sa mga abo."
+      },
+      {
+        "num": 9,
+        "text": "Nang magkagayo'y sinabi ng kaniyang asawa sa kaniya, Namamalagi ka pa ba sa iyong pagtatapat? Itakuwil mo ang Elohim, at mamatay ka."
+      },
+      {
+        "num": 10,
+        "text": "Nguni't sinabi niya sa kaniya, Ikaw ay nagsasalita na gaya ng pagsasalita ng hangal na babae. Ano? tatanggap ba tayo ng mabuti sa kamay ng Elohim, at hindi tayo tatanggap ng masama? Sa lahat ng ito ay hindi nagkasala si Iyob ng kaniyang mga labi."
+      },
+      {
+        "num": 11,
+        "text": "Nang mabalitaan nga ng tatlong kaibigan ni Iyob ang lahat na kasamaang ito na sumapit sa kaniya sila'y naparoon bawa't isa na mula sa kani-kaniyang sariling pook, si Eliphaz na Temanita, at si Bildad na Suhita, at si Zophar na Naamathita: at sila'y nangagkaiisang loob na magsiparoon upang makidamay sa kaniya at aliwin siya."
+      },
+      {
+        "num": 12,
+        "text": "At nang kanilang itanaw ang kanilang mga mata mula sa malayo, at hindi siya makilala, kanilang inilakas ang kanilang tinig, at nagsiiyak at hinapak ng bawa't isa sa kanila ang kani-kaniyang balabal, at nagbuhos ng alabok sa kanilang mga ulo sa dakong langit."
+      },
+      {
+        "num": 13,
+        "text": "Sa gayo'y nakiumpok sila sa kaniya sa ibabaw ng lupa na pitong araw at pitong gabi, at walang nagsalita sa kaniya: sapagka't kanilang nakita na ang kaniyang paghihirap ay totoong malaki."
+      }
+    ],
+    "3": [
+      {
+        "num": 1,
+        "text": "Pagkatapos nito'y ibinuka ni Iyob ang kaniyang bibig at sinumpa ang kaniyang kaarawan."
+      },
+      {
+        "num": 2,
+        "text": "At si Iyob ay sumagot, at nagsabi,"
+      },
+      {
+        "num": 3,
+        "text": "Maparam nawa ang kaarawan ng kapanganakan sa akin, at ang gabi na nagsabi, may lalaking ipinaglihi."
+      },
+      {
+        "num": 4,
+        "text": "Magdilim nawa ang kaarawang yaon; huwag nawang maalaala ng Elohim mula sa itaas, ni silangan man ng liwanag."
+      },
+      {
+        "num": 5,
+        "text": "Ang dilim at ang salimuot na kadiliman ang siyang mag-ari niyaon; pag-ulapan nawa yaon; Pangilabutin nawa yaon ng lahat na nagpapadilim sa araw."
+      },
+      {
+        "num": 6,
+        "text": "Suma gabing yaon nawa ang pagsalimuot ng kadiliman: huwag nawang kagalakan sa mga araw ng mga taon; huwag nawang mapasok sa bilang ng mga buwan."
+      },
+      {
+        "num": 7,
+        "text": "Narito, mapag-isa ang gabing yaon; huwag nawang datnan yaon ng masayang tinig."
+      },
+      {
+        "num": 8,
+        "text": "Sumpain nawa yaong nanunumpa sa araw, ng namimihasang gumalaw sa leviatan."
+      },
+      {
+        "num": 9,
+        "text": "Magdilim nawa ang mga bituin ng pagtatakipsilim niyaon: maghintay nawa ng liwanag, nguni't huwag magkaroon: ni huwag mamalas ang mga bukang liwayway ng umaga:"
+      },
+      {
+        "num": 10,
+        "text": "Sapagka't hindi tinakpan ang mga pinto ng bahay-bata ng aking ina, o ikinubli man ang kabagabagan sa aking mga mata."
+      },
+      {
+        "num": 11,
+        "text": "Bakit hindi pa ako namatay mula sa bahay-bata? Bakit di pa napatid ang aking hininga nang ipanganak ako ng aking ina?"
+      },
+      {
+        "num": 12,
+        "text": "Bakit idinuyan, kinalong pa? O bakit pa ako pinasuso sa dibdib niya?"
+      },
+      {
+        "num": 13,
+        "text": "Sapagka't ngayon ay nahihiga sana ako at tahimik; ako sana ay natutulog; at nagpapahinga na."
+      },
+      {
+        "num": 14,
+        "text": "Na kasama ng mga hari at ng mga kasangguni sa lupa, na nagsisigawa ng mga dakong ilang sa ganang kanila;"
+      },
+      {
+        "num": 15,
+        "text": "O ng mga pangulo na nangagkaroon ng ginto, na pumuno sa kanilang bahay ng pilak:"
+      },
+      {
+        "num": 16,
+        "text": "O gaya sana ng nalagas na nakatago, na hindi nabuhay; gaya sana ng sanggol na kailan man ay hindi nakakita ng liwanag."
+      },
+      {
+        "num": 17,
+        "text": "Sa libinga'y naglilikat ang masama sa pagbagabag; at doo'y nagpapahinga ang pagod."
+      },
+      {
+        "num": 18,
+        "text": "Doo'y ang mga bihag ay nagpapahingang magkakasama; hindi nila naririnig ang tinig ng nagpapaatag."
+      },
+      {
+        "num": 19,
+        "text": "Ang mababa at ang mataas ay naroon; at ang alipin ay laya sa kaniyang amo."
+      },
+      {
+        "num": 20,
+        "text": "Bakit binibigyan ng liwanag ang nasa karalitaan, at ng buhay ang kaluluwang nasa kahirapan;"
+      },
+      {
+        "num": 21,
+        "text": "Na naghihintay ng kamatayan, nguni't hindi dumarating; at hinahangad ng higit kaysa mga nakatagong kayamanan;"
+      },
+      {
+        "num": 22,
+        "text": "Na nagagalak ng di kawasa, at nasasayahan, kapag nasumpungan ang libingan?"
+      },
+      {
+        "num": 23,
+        "text": "Ano ang dahilan at ang tao’y isinilang? At inilihim ng Elohim ang kaniyang patutunguhan?"
+      },
+      {
+        "num": 24,
+        "text": "Sapagka't nagbubuntong hininga ako bago ako kumain, at ang aking mga angal ay bumubugsong parang tubig."
+      },
+      {
+        "num": 25,
+        "text": "Dahil ang bagay na aking kinatatakutan ay dumarating sa akin, at ang aking pinangingilabutan ay nangyari sa akin."
+      },
+      {
+        "num": 26,
+        "text": "Hindi ako tiwasay, ni ako man ay tahimik, ni ako man ay napapahinga; kundi kabagabagan ang dumarating."
+      }
+    ],
+    "4": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sumagot si Eliphaz na Temanita, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Kung subukan ng isa na makipag-usap sa iyo, ikababalisa mo ba? Nguni't sinong makapipigil ng pagsasalita?"
+      },
+      {
+        "num": 3,
+        "text": "Narito, ikaw ay nagturo sa marami, at iyong pinalakas ang mahinang mga kamay."
+      },
+      {
+        "num": 4,
+        "text": "Ang iyong mga salita ay nagsialalay sa nabubuwal, at iyong pinalakas ang mahinang mga tuhod."
+      },
+      {
+        "num": 5,
+        "text": "Nguni't ngayo'y dinaratnan ka ng kasamaan, at ikaw ay nanglulupaypay; ginagalaw ka, at ikaw ay nababagabag."
+      },
+      {
+        "num": 6,
+        "text": "Hindi ba ang iyong takot sa AMA ay ang iyong tiwala, at ang iyong pag-asa ay ang pagtatapat ng iyong mga lakad?"
+      },
+      {
+        "num": 7,
+        "text": "Iyong alalahanin, isinasamo ko sa iyo, kung sino ang namatay, na walang malay? O saan nahiwalay ang mga matuwid?"
+      },
+      {
+        "num": 8,
+        "text": "Ayon sa aking pagkakita yaong nagsisipag-araro ng kasamaan, at naghahasik ng kabagabagan ay gayon din ang inaani."
+      },
+      {
+        "num": 9,
+        "text": "Sa hinga ng AMA sila'y namamatay, at sa bugso ng kaniyang galit sila'y nalilipol."
+      },
+      {
+        "num": 10,
+        "text": "Ang ungal ng leon, at ang tinig ng mabangis na leon, at ang mga ngipin ng mga batang leon, ay nangabali."
+      },
+      {
+        "num": 11,
+        "text": "Ang matandang leon ay namamatay dahil sa kawalan ng huli, at ang mga batang leong babae ay nagsisipangalat."
+      },
+      {
+        "num": 12,
+        "text": "Ngayo'y nadalang lihim sa akin ang isang bagay, at ang aking tainga ay nakakaulinig ng bulong niyaon."
+      },
+      {
+        "num": 13,
+        "text": "Sa mga pag-iisip na mula sa mga pangitain sa gabi, kung ang mahimbing na tulog ay nahuhulog sa mga tao,"
+      },
+      {
+        "num": 14,
+        "text": "Takot ay dumating sa akin, at panginginig, na nagpapanginig ng lahat ng aking mga buto."
+      },
+      {
+        "num": 15,
+        "text": "Nang magkagayo'y dumaan ang isang espiritu sa aking mukha. Ang balahibo ng aking balat ay nanindig."
+      },
+      {
+        "num": 16,
+        "text": "Tumayong nakatigil, nguni't hindi ko mawari ang anyo niyaon; isang anyo ang nasa harap ng aking mga mata: tahimik, at ako'y nakarinig ng tinig, na nagsasabi,"
+      },
+      {
+        "num": 17,
+        "text": "Magiging ganap pa ba ang taong may kamatayan kaysa AMA? Lilinis pa ba kaya ang tao kaysa Maylalang sa kaniya?"
+      },
+      {
+        "num": 18,
+        "text": "Narito, siya ay hindi naglalagak ng tiwala sa kaniyang mga lingkod; at inaari niyang mga mangmang ang kaniyang mga anghel:"
+      },
+      {
+        "num": 19,
+        "text": "Gaano pa kaya sila na nagsisitahan sa mga bahay na putik, na ang pundasyon ay nasa alabok, na napipisang gaya ng paro-paro!"
+      },
+      {
+        "num": 20,
+        "text": "Ang tao’y buhay ngayon, ngunit hindi niya tiyak kung mamaya, siya pala ay patay na, di pa alam nitong madla."
+      },
+      {
+        "num": 21,
+        "text": "Ang lahat niyang taglay sa kaniya’y mawawala, sa kaniyang pagkamatay kulang pa rin sa unawa."
+      }
+    ],
+    "5": [
+      {
+        "num": 1,
+        "text": "Tumawag ka ngayon; may sasagot ba sa iyo? At sa kanino sa mga banal babalik ka?"
+      },
+      {
+        "num": 2,
+        "text": "Sapagka't ang bigat ng loob ay pumapatay sa taong hangal, at ang paninibugho ay pumapatay sa mangmang."
+      },
+      {
+        "num": 3,
+        "text": "Aking nakita ang hangal na umuunlad: nguni't agad kong sinumpa ang kaniyang tahanan."
+      },
+      {
+        "num": 4,
+        "text": "Ang kaniyang mga anak ay malayo sa katiwasayan, at sila'y mangapipisa sa pintuang-bayan, na wala mang magligtas sa kanila."
+      },
+      {
+        "num": 5,
+        "text": "Na ang kaniyang ani ay kinakain ng gutom, at kinukuha na mula sa mga tinik, at ang silo ay nakabuka sa kanilang pag-aari."
+      },
+      {
+        "num": 6,
+        "text": "Dahil ang kadalamhatian ay hindi lumalabas sa alabok, ni bumubukal man sa lupa ang kabagabagan;"
+      },
+      {
+        "num": 7,
+        "text": "Kundi ang tao ay ipinanganak sa kabagabagan. Gaya ng alipato na umiilanglang sa itaas."
+      },
+      {
+        "num": 8,
+        "text": "Nguni't sa ganang akin, ay hahanapin ko ang Elohim, at sa Elohim ay aking ihahabilin ang aking usap:"
+      },
+      {
+        "num": 9,
+        "text": "Na siyang gumagawa ng mga dakilang bagay at ng mga hindi magunita; ng mga kamangha-manghang bagay na walang bilang:"
+      },
+      {
+        "num": 10,
+        "text": "Na siyang nagbibigay ng ulan sa lupa, at nagpapahatid ng tubig sa mga bukid;"
+      },
+      {
+        "num": 11,
+        "text": "Na anopa't kaniyang iniuupo sa mataas yaong nasa mababa; at yaong nagsisitangis ay itinataas sa katiwasayan."
+      },
+      {
+        "num": 12,
+        "text": "Kaniyang sinasayang ang mga katha-katha ng mapagkatha, na anopa't hindi maisagawa ng kanilang mga kamay ang kanilang panukala."
+      },
+      {
+        "num": 13,
+        "text": "Kaniyang hinuhuli ang pantas sa kanilang sariling katha: at ang payo ng suwail ay napapariwara. 1Cor 3:19"
+      },
+      {
+        "num": 14,
+        "text": "Kanilang nasasalubong ang kadiliman sa araw, at nagsisikapa sa katanghaliang tapat na gaya sa gabi."
+      },
+      {
+        "num": 15,
+        "text": "Nguni't kaniyang inililigtas sa tabak ng kanilang bibig, sa makatuwid baga'y ang maralita sa kamay ng malakas."
+      },
+      {
+        "num": 16,
+        "text": "Na anopa't ang dukha ay may pag-asa, at ang kasamaan ay nagtitikom ng kaniyang bibig."
+      },
+      {
+        "num": 17,
+        "text": "Narito, maginhawa ang tao na sinasaway ng AMA: kaya't huwag mong iwalang kabuluhan ang pagsaway ng Maylalang sa lahat."
+      },
+      {
+        "num": 18,
+        "text": "Dahil siya'y gumagalos, at nagtatapal; Siya'y sumusugat at pinagagaling ng kaniyang mga Kamay."
+      },
+      {
+        "num": 19,
+        "text": "Kaniyang ililigtas ka sa anim na kabagabagan. Oo, sa pito, ay walang kasamaang kikilos sa iyo."
+      },
+      {
+        "num": 20,
+        "text": "Sa kagutom ay tutubusin ka niya sa kamatayan; at sa digmaan ay sa kapangyarihan ng tabak."
+      },
+      {
+        "num": 21,
+        "text": "Ikaw ay makukubli sa talas ng dila; na hindi ka matatakot sa paggiba kapag dumarating."
+      },
+      {
+        "num": 22,
+        "text": "Sa kagibaan at sa kasalatan ay tatawa ka; ni hindi ka matatakot sa mga ganid sa lupa."
+      },
+      {
+        "num": 23,
+        "text": "Sapagka't ikaw ay makakasundo ng mga bato sa parang; at ang mga ganid sa parang ay makikipagpayapaan sa iyo."
+      },
+      {
+        "num": 24,
+        "text": "At iyong makikilala na ang iyong tolda ay nasa kapayapaan; at iyong dadalawin ang iyong kulungan, at walang mawawala na anoman."
+      },
+      {
+        "num": 25,
+        "text": "Iyo rin namang makikilala na ang iyong binhi ay magiging dakila, at ang iyong lahi ay gaya ng damo sa lupa."
+      },
+      {
+        "num": 26,
+        "text": "Ikaw ay darating sa iyong libingan sa lubos na katandaan. Gaya ng bigkis ng trigo na dumarating sa kaniyang kapanahunan."
+      },
+      {
+        "num": 27,
+        "text": "Narito, aming siniyasat, at gayon nga; dinggin mo, at talastasin mo sa iyong ikabubuti."
+      }
+    ],
+    "6": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sumagot si Iyob at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Oh timbangin nawa ang aking pagkainip, at ang aking mga kasakunaan ay malagay sa mga timbangan na magkakasama."
+      },
+      {
+        "num": 3,
+        "text": "Sapagka't ngayo'y magiging lalong mabigat kaysa buhangin sa mga dagat: kaya't ang aking pananalita ay napabigla."
+      },
+      {
+        "num": 4,
+        "text": "Sapagka't ang mga palaso ng Maylalang sa lahat ay nasasaksak sa akin, ang lason niyaon ay hinitit ng aking puso; ang mga galit ng Elohim ay nahahanay laban sa akin."
+      },
+      {
+        "num": 5,
+        "text": "Umuungal ba ang mailap na asno pag may damo? O umuungal ba ang baka sa kaniyang pagkain?"
+      },
+      {
+        "num": 6,
+        "text": "Makakain ba ng walang asin ang matabang? O mayroon bang lasa ang puti ng isang itlog?"
+      },
+      {
+        "num": 7,
+        "text": "Tinatanggihang hipuin ng aking kaluluwa; mga marumi na pagkain sa akin."
+      },
+      {
+        "num": 8,
+        "text": "Oh mangyari nawa ang aking kahilingan; at ipagkaloob nawa sa akin ng AMA ang bagay na aking minimithi!"
+      },
+      {
+        "num": 9,
+        "text": "Sa makatuwid baga'y kalugdan nawa ng AMA na pisain ako; na bitawan ang kaniyang kamay, at ihiwalay ako!"
+      },
+      {
+        "num": 10,
+        "text": "Kung magkagayo'y magtataglay pa ako ng kaaliwan; Oo, ako'y makapagbabata sa mga walang awang sakit; dahil hindi ko itinakuwil ang mga salita ng Banal."
+      },
+      {
+        "num": 11,
+        "text": "Ano ang aking lakas, na ako ay maghihintay? At ano ang aking wakas na ako'y magtitiis?"
+      },
+      {
+        "num": 12,
+        "text": "Ang akin bang tibay ay tibay ng mga bato? O ang akin bang laman ay tanso?"
+      },
+      {
+        "num": 13,
+        "text": "Di ba ako'y walang sukat na kaya, at ang karunungan ay lumayo sa akin?"
+      },
+      {
+        "num": 14,
+        "text": "Siyang nanglulupaypay ay dapat pagpakitaang loob ng kaniyang kaibigan; kahit siya na walang takot sa Maylalang sa lahat."
+      },
+      {
+        "num": 15,
+        "text": "Ang aking mga kapatid ay nagsipagdaya na parang batis, na parang daan ng mga batis na nababago;"
+      },
+      {
+        "num": 16,
+        "text": "Na malabo dahil sa yelo, at siyang kinatunawan ng niebe:"
+      },
+      {
+        "num": 17,
+        "text": "Pag-init ay nawawala: kapag mainit, ay nangatutunaw sa kanilang dako."
+      },
+      {
+        "num": 18,
+        "text": "Ang mga pulutong na naglalakbay sa pagsunod sa mga yaon ay naliligaw; nagsisilihis sa ilang at nawawala."
+      },
+      {
+        "num": 19,
+        "text": "Minasdan ng mga pulutong na mula sa Tema, hinintay ang mga yaon ng mga pulutong na mula sa Seba."
+      },
+      {
+        "num": 20,
+        "text": "Sila'y napahiya, sapagka't sila'y nagsiasa; sila'y nagsiparoon at nangatulig."
+      },
+      {
+        "num": 21,
+        "text": "Sapagka't ngayon, kayo'y nauwi sa wala; kayo'y nakakakita ng kakilabutan, at natatakot."
+      },
+      {
+        "num": 22,
+        "text": "Sinabi ko baga: Bigyan mo ako? O, Maghandog ka ng isang kaloob sa akin ng iyong pag-aari?"
+      },
+      {
+        "num": 23,
+        "text": "O, Iligtas mo ako sa kamay ng kaaway? O, tubusin mo ako sa kamay ng mga namimighati?"
+      },
+      {
+        "num": 24,
+        "text": "Turuan mo ako, at ako'y mamamayapa; at ipaunawa mo sa akin kung ano ang aking pagkakasala."
+      },
+      {
+        "num": 25,
+        "text": "Pagkatindi nga ng mga salita ng katuwiran!Nguni't anong sinasaway ng iyong pakikipagtalo?"
+      },
+      {
+        "num": 26,
+        "text": "Iniisip ba ninyong sumaway ng mga salita? Dangang ang mga salita ng walang inaasahan ay parang hangin."
+      },
+      {
+        "num": 27,
+        "text": "Oo, kayo'y magsasapalaran sa ulila, at ginawa ninyong kalakal ang inyong kaibigan."
+      },
+      {
+        "num": 28,
+        "text": "Ngayon nga'y kalugdan mong lingapin ako; sapagka't tunay na hindi ako magbubulaan sa iyong harap."
+      },
+      {
+        "num": 29,
+        "text": "Kayo'y magsibalik isinasamo ko sa inyo, huwag magkaroon ng kalikuan; Oo, kayo'y magsibalik uli, ang aking usap ay matuwid."
+      },
+      {
+        "num": 30,
+        "text": "May di ganap ba sa aking dila? Hindi ba makapapansin ang aking pagwawari ng mga suwail na bagay?"
+      }
+    ],
+    "7": [
+      {
+        "num": 1,
+        "text": "Wala bang kapanahunan ng kaguluhan ang tao sa ibabaw ng lupa? At hindi ba ang kaniyang mga kaarawan ay gaya ng mga kaarawan ng nagpapaupa?"
+      },
+      {
+        "num": 2,
+        "text": "Na gaya ng alipin na ninanasang mainam ang lilim, at gaya ng nagpapaupa na tumitingin sa kaniyang mga kaupahan:"
+      },
+      {
+        "num": 3,
+        "text": "Gayon ako pinapagdaan ng mga buwan na walang kabuluhan at mga gabing nakaiinip ang itinakda sa akin."
+      },
+      {
+        "num": 4,
+        "text": "Kapag ako'y nahihiga, aking sinasabi, kailan ako babangon at nakadaan na ang gabi? At ako'y puspos ng pagkabalisa hanggang sa pagbubukang liwayway ng araw."
+      },
+      {
+        "num": 5,
+        "text": "Ang aking laman ay nabibihisan ng mga uod at ng libag na alabok; ang aking balat ay namamaga at putok putok."
+      },
+      {
+        "num": 6,
+        "text": "Ang aking mga kaarawan ay matulin kaysa panghabi ng manghahabi, at nagugugol na walang pag-asa."
+      },
+      {
+        "num": 7,
+        "text": "Oh alalahanin mo na ang aking buhay ay hinga: Ang aking mata ay hindi na makakakita pa ng mabuti."
+      },
+      {
+        "num": 8,
+        "text": "Ang matang tumingin sa akin ay hindi na ako mamamasdan: ang iyong mga mata ay sasa akin, nguni't wala na ako."
+      },
+      {
+        "num": 9,
+        "text": "Kung paanong ang ulap ay napapawi at nawawala, gayon siyang bumababa sa Sheol ay hindi na aahon pa."
+      },
+      {
+        "num": 10,
+        "text": "Siya'y hindi na babalik sa kaniyang bahay, ni malalaman pa man niya ang kaniyang dako."
+      },
+      {
+        "num": 11,
+        "text": "Kaya't hindi ko pipigilin ang aking bibig; ako'y magsasalita sa kadalamhatian ng aking puso; ako'y dadaing sa kahirapan ng aking kaluluwa."
+      },
+      {
+        "num": 12,
+        "text": "Ako ba'y isang dagat, o isang malaking hayop dagat, na pinababantayan mo ako sa isang bantay?"
+      },
+      {
+        "num": 13,
+        "text": "Kapag aking sinasabi, Aaliwin ako ng aking higaan, papayapain ng aking unan ang aking karamdaman;"
+      },
+      {
+        "num": 14,
+        "text": "Kung magkagayo'y pinupukaw mo ako ng mga panaginip, at pinangingilabot mo ako sa mga pangitain:"
+      },
+      {
+        "num": 15,
+        "text": "Na anopa't pinipili ng aking kaluluwa ang pagkainis, at ang kamatayan kaysa aking buhay."
+      },
+      {
+        "num": 16,
+        "text": "Akin itong kinayayamutan; di ko na ibig mabuhay magpakailan man: bayaan akong mag-isa; sapagka't ang aking mga kaarawan ay walang kabuluhan."
+      },
+      {
+        "num": 17,
+        "text": "Ano ang tao, na iyong padadakilain siya, at iyong ilalagak ang iyong puso sa kaniya?"
+      },
+      {
+        "num": 18,
+        "text": "At iyong dadalawin siya tuwing umaga, at susubukin siya sa tuwi-tuwina?"
+      },
+      {
+        "num": 19,
+        "text": "Hanggang kailan di mo ako iiwan, ni babayaan man hanggang sa aking lunukin ang aking laway?"
+      },
+      {
+        "num": 20,
+        "text": "Kung ako'y nagkasala, ano ang aking magagawa sa iyo, Oh ikaw na bantay sa mga tao? Bakit mo nga inilalagay akong pinakatanda sa iyo. Na anopa't ako'y isang pasan sa aking sarili?"
+      },
+      {
+        "num": 21,
+        "text": "At bakit hindi mo ipinatatawad ang aking pagsalangsang, at inaalis ang aking kasamaan? Dahil ngayo'y mahihimlay ako sa alabok; at ako'y hahanapin mong mainam, nguni't wala na ako."
+      }
+    ],
+    "8": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sumagot si Bildad na Suhita, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Hanggang kailan magsasalita ka ng mga bagay na ito, na gaya ng makapangyarihang hangin ang mga salita ng iyong bibig?"
+      },
+      {
+        "num": 3,
+        "text": "Nagliliko ba ng kahatulan ang AMA? O nagliliko ba ang Makapangyarihan sa lahat ng kaganapan?"
+      },
+      {
+        "num": 4,
+        "text": "Kung ang iyong mga anak ay nagkasala laban sa kaniya, at kaniyang ibinigay sila sa kamay ng kanilang pagkasalangsang:"
+      },
+      {
+        "num": 5,
+        "text": "Kung hanapin mong mainam ang AMA, at iyong pamanhikan ang Makapangyarihan sa lahat;"
+      },
+      {
+        "num": 6,
+        "text": "Kung ikaw ay malinis at matuwid; walang pagsalang ngayo'y gigising siya dahil sa iyo. At pasasaganain ang tahanan ng iyong katuwiran."
+      },
+      {
+        "num": 7,
+        "text": "At bagaman ang iyong pasimula ay maliit, gayon ma'y ang iyong huling wakas ay lalaking mainam."
+      },
+      {
+        "num": 8,
+        "text": "Sapagka't ikaw ay magsisiyasat, isinasamo ko sa iyo, sa unang panahon, at pasiyahan mo ang sinaliksik ng kanilang mga magulang:"
+      },
+      {
+        "num": 9,
+        "text": "Sapagka't tayo'y kahapon lamang, at walang nalalaman, sapagka't ang ating mga kaarawan sa lupa ay anino:"
+      },
+      {
+        "num": 10,
+        "text": "Hindi ka ba nila tuturuan, at sasaysayin sa iyo, at magsasalita ng mga salita mula sa kanilang puso?"
+      },
+      {
+        "num": 11,
+        "text": "Makatataas ba ang yantok ng walang putik? Tutubo ba ang tambo ng walang tubig?"
+      },
+      {
+        "num": 12,
+        "text": "Samantalang nasa kasariwaan, at hindi pinuputol, natutuyong una kaysa alinmang damo."
+      },
+      {
+        "num": 13,
+        "text": "Gayon ang mga landas ng lahat na nagsisilimot sa AMA; at ang pag-asa ng di banal ay mawawala:"
+      },
+      {
+        "num": 14,
+        "text": "Na ang kaniyang pagtitiwala ay mawawala, at ang kaniyang tiwala ay isang bahay gagamba."
+      },
+      {
+        "num": 15,
+        "text": "Siya'y sasandal sa kaniyang bahay, nguni't hindi tatayo; siya'y pipigil na mahigpit dito, nguni't hindi makapagmamatigas."
+      },
+      {
+        "num": 16,
+        "text": "Siya'y sariwa sa harap ng araw, at ang kaniyang mga suwi ay sumisibol sa kaniyang halamanan."
+      },
+      {
+        "num": 17,
+        "text": "Ang kaniyang mga ugat ay nagkahugpong sa palibot ng bunton, kaniyang minamasdan ang dako ng mga bato."
+      },
+      {
+        "num": 18,
+        "text": "Kung siya'y mag-iba sa kaniyang dako, kung magkagayo'y itatakuwil niya siya, na sinasabi: Hindi kita nakita."
+      },
+      {
+        "num": 19,
+        "text": "Narito, ito ang kagalakan ng kaniyang lakad, at mula sa lupa ay sisibol ang mga iba."
+      },
+      {
+        "num": 20,
+        "text": "Narito, hindi itatakuwil ng Elohim ang sakdal na tao, ni aalalayan man niya ang mga manggagawa ng kasamaan."
+      },
+      {
+        "num": 21,
+        "text": "Kaniya namang pupunuin ang iyong bibig ng pagtawa, at ang iyong mga labi ng paghiyaw."
+      },
+      {
+        "num": 22,
+        "text": "Silang napopoot sa iyo ay mabibihisan ng pagkahiya; at ang tolda ng masama ay mawawala."
+      }
+    ],
+    "9": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sumagot si Iyob, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Sa katotohanan ay nalalaman kong ito'y gayon: nguni't paanong magiging matuwid ang tao sa AMA?"
+      },
+      {
+        "num": 3,
+        "text": "Kung kalugdan niyang makipagtalo sa kaniya, siya'y hindi makasasagot sa kaniya ng isa sa isang libo."
+      },
+      {
+        "num": 4,
+        "text": "Siya ay pantas sa puso, at may kaya sa kalakasan: sinong nagmatigas laban sa kaniya at guminhawa?"
+      },
+      {
+        "num": 5,
+        "text": "Na siyang naglilipat ng mga bundok, at hindi nila nalalaman, kapag nililiglig niya sa kaniyang pagkagalit."
+      },
+      {
+        "num": 6,
+        "text": "Na siyang umuuga ng lupa sa kaniyang kinaroroonan, at ang mga haligi nito ay nayayanig."
+      },
+      {
+        "num": 7,
+        "text": "Na siyang nag-uutos sa araw, at hindi sumisikat; at nagtatakda sa mga bituin."
+      },
+      {
+        "num": 8,
+        "text": "Na nag-iisang inuunat ang langit, at tumutungtong sa mga alon ng dagat."
+      },
+      {
+        "num": 9,
+        "text": "Na lumikha sa Oso, sa Orion, at sa mga Pleyades, at sa mga bituin ng timugan."
+      },
+      {
+        "num": 10,
+        "text": "Na gumagawa ng mga dakilang bagay na di malirip; Oo, mga kamangha-manghang bagay na walang bilang."
+      },
+      {
+        "num": 11,
+        "text": "Narito, siya ay dumaraan sa siping ko, at hindi ko siya nakikita: Siya ay nagpapatuloy rin naman, nguni't hindi ko siya namamalas."
+      },
+      {
+        "num": 12,
+        "text": "Narito, siya'y nang-aagaw sinong makapipigil sa kaniya? Sinong magsasabi sa kaniya: Anong ginagawa mo?"
+      },
+      {
+        "num": 13,
+        "text": "Hindi iuurong ng Elohim ang kaniyang galit; ang mga tutulong sa mayayabang ay nagsisiyukod sa ilalim niya."
+      },
+      {
+        "num": 14,
+        "text": "Gaano pa nga kaya kaliit ang maisasagot ko sa kaniya, at mapipiling aking mga salita na maimamatuwid ko sa kaniya?"
+      },
+      {
+        "num": 15,
+        "text": "Na kahiman ako'y matuwid, gayon may hindi ako sasagot sa kaniya; ako ay mamamanhik sa aking hukom."
+      },
+      {
+        "num": 16,
+        "text": "Kung ako'y tumawag, at siya'y sumagot sa akin; gayon ma'y hindi ako maniniwala na kaniyang dininig ang aking tinig."
+      },
+      {
+        "num": 17,
+        "text": "Dahil ako'y ginigiba niya sa pamamagitan ng isang bagyo, at pinararami ang aking mga sugat ng walang kadahilanan."
+      },
+      {
+        "num": 18,
+        "text": "Hindi niya ako tutulutang ako'y huminga, nguni't nililipos niya ako ng hirap."
+      },
+      {
+        "num": 19,
+        "text": "Kung kami ay magsalita tungkol sa kalakasan, narito, siya ay may kapangyarihan! At kung sa kahatulan, sino, sinasabi niya ay magtatakda sa Akin ng panahon?"
+      },
+      {
+        "num": 20,
+        "text": "Bagamat ako'y matuwid, ang aking sariling bibig ay hahatol sa akin: kahit na ako'y sakdal patototohanan niya akong masama."
+      },
+      {
+        "num": 21,
+        "text": "Ako'y walang sala; ngunit hindi na ito mahalaga; aking niwalang kabuluhan ang aking buhay."
+      },
+      {
+        "num": 22,
+        "text": "Lahat ay iisa ang pupuntahan; kaya't aking sinasabi: kaniyang ginigiba ang sakdal at ang masama."
+      },
+      {
+        "num": 23,
+        "text": "Kung ang panghampas ay pumapatay na bigla, tatawanan niya ang paglilitis sa mga walang sala."
+      },
+      {
+        "num": 24,
+        "text": "Ang lupa ay nabigay sa kamay ng masama: kaniyang tinatakpan ang mga mukha ng mga hukom nito; kung hindi siya, sino nga?"
+      },
+      {
+        "num": 25,
+        "text": "Ngayo'y ang mga kaarawan ko ay matulin kaysa isang sugo: dumadaang matulin, walang mabuting matatanto."
+      },
+      {
+        "num": 26,
+        "text": "Sila'y nagsisidaang parang mga matuling sasakyan: parang agila na dumadagit ng huli."
+      },
+      {
+        "num": 27,
+        "text": "Kung aking sabihin: Aking kalilimutan ang aking daing, aking papawiin ang aking malungkot na mukha, at magpapakasaya ako:"
+      },
+      {
+        "num": 28,
+        "text": "Ako'y natatakot sa lahat kong kapanglawan, talastas ko na hindi mo aariin akong walang sala."
+      },
+      {
+        "num": 29,
+        "text": "Ako'y mahahatulan; bakit nga ako gagawa ng walang kabuluhan?"
+      },
+      {
+        "num": 30,
+        "text": "Kung ako'y maligo ng niebeng tubig, at gawin ko ang aking mga kamay na napakalinis;"
+      },
+      {
+        "num": 31,
+        "text": "Gayon ma'y itutulak mo ako sa hukay, at kayayamutan ako ng aking mga sariling kasuutan."
+      },
+      {
+        "num": 32,
+        "text": "Sapagka't siya'y hindi tao, na gaya ko, na sasagot ako sa kaniya, na kami'y pumasok kapuwa sa kahatulan,"
+      },
+      {
+        "num": 33,
+        "text": "Walang hukom sa pagitan namin, na makapaglagay ng kaniyang kamay sa ating dalawa."
+      },
+      {
+        "num": 34,
+        "text": "Ihiwalay niya sa akin ang kaniyang tungkod, at huwag akong takutin ng kaniyang galit:"
+      },
+      {
+        "num": 35,
+        "text": "Kung magkagayo'y magsasalita ako, at hindi matatakot sa kaniya; nguni't hindi gayon ako sa aking sarili."
+      }
+    ],
+    "10": [
+      {
+        "num": 1,
+        "text": "Ang aking kaluluwa ay nalulunos sa aking buhay; aking palalayain ang aking daing; ako'y magsasalita sa kapaitan ng aking kaluluwa."
+      },
+      {
+        "num": 2,
+        "text": "Sasabihin ko sa AMA: Huwag mo akong hatulan; ipakilala mo sa akin kung bakit nakikipagtalo ka sa akin."
+      },
+      {
+        "num": 3,
+        "text": "Mabuti ba sa iyo na ikaw ay mamighati, na iyong itakuwil ang gawa ng iyong mga kaaway, at iyong pasilangin ang payo ng masama?"
+      },
+      {
+        "num": 4,
+        "text": "Ikaw ba'y may mga matang laman, o nakakakita ka bang gaya ng pagkakita ng tao?"
+      },
+      {
+        "num": 5,
+        "text": "Ang iyo bang mga kaarawan ay gaya ng mga araw ng tao, o ang iyong mga taon ay gaya ng mga kaarawan ng tao,"
+      },
+      {
+        "num": 6,
+        "text": "Upang ikaw ay magsiyasat ng aking kasamaan at mag-usisa ng aking kasalanan."
+      },
+      {
+        "num": 7,
+        "text": "Bagaman iyong nalalaman na ako'y hindi masama; at walang makapagliligtas sa iyong kamay?"
+      },
+      {
+        "num": 8,
+        "text": "Ang iyong mga kamay ang siyang lumalang at nagbigay anyo sa akin sa buong palibot; gayon ma'y pinahihirapan mo ako."
+      },
+      {
+        "num": 9,
+        "text": "Iyong alalahanin, isinasamo ko sa iyo, na ako'y iyong binigyang anyo na gaya ng putik; at iuuwi mo ba ako uli sa pagkaalabok?"
+      },
+      {
+        "num": 10,
+        "text": "Hindi mo ba ako ibinuhos na parang gatas, at binuo mo akong parang keso?"
+      },
+      {
+        "num": 11,
+        "text": "Ako'y binihisan mo ng balat at laman, at sinugpong mo ako ng mga buto at mga litid."
+      },
+      {
+        "num": 12,
+        "text": "Ako'y pinagkalooban mo ng buhay at kagandahang-loob, at pinamalagi ang aking puso ng iyong pagdalaw."
+      },
+      {
+        "num": 13,
+        "text": "Gayon ma'y ang mga bagay na ito ay iyong ikinubli sa iyong puso; talastas ko na ito'y sa iyo:"
+      },
+      {
+        "num": 14,
+        "text": "Kung ako'y magkasala, iyo nga akong tinatandaan, at hindi mo ako patatawarin sa aking kasamaan. Rom 16:17"
+      },
+      {
+        "num": 15,
+        "text": "Kung ako'y maging masama, sa aba ko; at kung ako'y maging matuwid, hindi ko man itataas ang aking ulo; yamang puspos ng kakutyaan, at nararanasan ang kadalamhatian."
+      },
+      {
+        "num": 16,
+        "text": "At kung ang aking ulo ay mataas, iyong hinuhuli akong parang leon: at napakikita ka uling kagilagilalas sa akin."
+      },
+      {
+        "num": 17,
+        "text": "Iyong binabago ang iyong mga pagsaksi laban sa akin, at dinaragdagan mo ang iyong galit sa akin; paninibago at pakikipagbaka ang sumasaakin."
+      },
+      {
+        "num": 18,
+        "text": "Bakit mo nga ako inilabas mula sa bahay-bata? Napatid sana ang aking hininga, at wala nang matang nakakita pa sa akin."
+      },
+      {
+        "num": 19,
+        "text": "Ako sana'y naging parang hindi nabuhay; nadala sana ako mula sa bahay-bata hanggang sa libingan,"
+      },
+      {
+        "num": 20,
+        "text": "Hindi ba kaunti ang aking mga araw? Paglikatin mo nga, at ako'y iyong bayaan, upang ako'y maginhawahan ng kaunti,"
+      },
+      {
+        "num": 21,
+        "text": "Bago ako pumanaw doon na hindi ako babalik, sa lupain ng kadiliman at ng anino ng kamatayan;"
+      },
+      {
+        "num": 22,
+        "text": "Ang lupain na dilim, na gaya ng salimuot na kadiliman; lupain ng anino ng kamatayan, na walang anomang ayos, at doon sa ang liwanag ay gaya ng salimuot na kadiliman."
+      }
+    ],
+    "11": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sumagot si Zophar na Naamathita, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Hindi ba sasagutin ang karamihan ng mga salita? At ang lalaking masalita ay aariing ganap?"
+      },
+      {
+        "num": 3,
+        "text": "Pamamayapain ba ang mga tao ng iyong mga paghahambog. At kung ikaw ay nanunuya, wala bang hihiya sa iyo?"
+      },
+      {
+        "num": 4,
+        "text": "Sapagka't iyong sinasabi, Ang aking aral ay dalisay, at ako'y malinis sa iyong mga mata."
+      },
+      {
+        "num": 5,
+        "text": "Nguni't Oh ang AMA nawa'y magsalita, at bukhin ang kaniyang mga labi laban sa iyo;"
+      },
+      {
+        "num": 6,
+        "text": "At ipakilala nawa sa iyo ang mga lihim ng karunungan, sapagka't siya ay masagana sa pagkaunawa. Talastasin mo nga na nilalapatan ka ng AMA ng kulang kaysa nauukol sa iyong kasamaan."
+      },
+      {
+        "num": 7,
+        "text": "Masusumpungan mo ba ang Elohim sa pagsaliksik? Mahahanap mo ba sa kasakdalan ang Makapangyarihan sa lahat?"
+      },
+      {
+        "num": 8,
+        "text": "Mataas na gaya ng langit; anong iyong magagawa? Malalim kaysa Sheol: anong iyong malalaman?"
+      },
+      {
+        "num": 9,
+        "text": "Ang sukat niyao'y mahaba kaysa lupa. At maluwang kaysa dagat."
+      },
+      {
+        "num": 10,
+        "text": "Kung siya'y dumaan at magsara, at tumawag sa kahatulan, sino ngang makapipigil sa kaniya?"
+      },
+      {
+        "num": 11,
+        "text": "Sapagka't nakikilala niya ang mga walang kabuluhang tao: Nakikita rin naman niya ang kasamaan, bagaman hindi niya pinapansin."
+      },
+      {
+        "num": 12,
+        "text": "Nguni't ang walang kabuluhang tao ay walang unawa, Oo, ang tao ay ipinanganak na gaya ng anak ng mabangis na asno."
+      },
+      {
+        "num": 13,
+        "text": "Kung iyong ihahanda ang iyong puso, at iuunat mo ang iyong kamay sa kaniya;"
+      },
+      {
+        "num": 14,
+        "text": "Kung ang kasamaan ay sumaiyong kamay, ilayo mo, at huwag manahan ang kalikuan sa iyong mga tolda;"
+      },
+      {
+        "num": 15,
+        "text": "Walang pagsala ngang iyong itataas ang iyong mukha na walang kapintasan; Oo, ikaw ay matatatag, at hindi matatakot:"
+      },
+      {
+        "num": 16,
+        "text": "Sapagka't iyong malilimutan ang iyong karalitaan; iyong aalalahaning parang tubig na umaagos:"
+      },
+      {
+        "num": 17,
+        "text": "At ang iyong buhay ay magiging lalong maliwanag kaysa katanghaliang tapat; bagaman magkaroon ng kadiliman, ay magiging gaya ng umaga."
+      },
+      {
+        "num": 18,
+        "text": "At ikaw ay matitiwasay sapagka't may pag-asa; Oo, ikaw ay magsiyasat sa palibot mo, at magpapahinga kang tiwasay."
+      },
+      {
+        "num": 19,
+        "text": "Ikaw nama'y hihiga at walang tatakot sa iyo; Oo, maraming liligaw sa iyo."
+      },
+      {
+        "num": 20,
+        "text": "Nguni't ang mga mata ng masama ay mangangalumata, at mawawalan sila ng daang tatakasan, at ang kanilang pag-asa ay pagkalagot ng hininga."
+      }
+    ],
+    "12": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sumagot si Iyob; at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Walang pag-aalinlangan na kayo ang tinig ng bayan, At ang karunungan ay mamamatay na kasama ninyo."
+      },
+      {
+        "num": 3,
+        "text": "Nguni't ako'y may pagkaunawang gaya ninyo: Hindi ako huli sa inyo: Oo, sinong hindi nakaalam ng mga bagay na gaya nito?"
+      },
+      {
+        "num": 4,
+        "text": "Ako'y gaya ng tinatawanan ng kaniyang kapuwa, ako na tumawag sa AMA, at sinagot niya: Ang ganap, ang taong sakdal ay tinatawanan."
+      },
+      {
+        "num": 5,
+        "text": "Sa pag-iisip niyaong nasa katiwasayan ay may pagkakutya sa ikasasawi; nahahanda sa mga iyan yaong nangadudulas ang paa."
+      },
+      {
+        "num": 6,
+        "text": "Ang mga tolda ng mga tulisan ay gumiginhawa, at silang nagmumungkahi sa AMA ay tiwasay; na ang kamay ay pinadadalhan ng AMA ng sagana."
+      },
+      {
+        "num": 7,
+        "text": "Nguni't tanungin mo ngayon ang mga hayop, at tuturuan ka nila: at ang mga ibon sa himpapawid, at kanilang sasaysayin sa iyo:"
+      },
+      {
+        "num": 8,
+        "text": "O magsalita ka sa lupa, at magtuturo sa iyo; at ang mga isda sa dagat ay magsasaysay sa iyo."
+      },
+      {
+        "num": 9,
+        "text": "Sinong hindi nakakaalam sa lahat ng mga ito, na ang kamay ni YAHWEH ang siyang gumawa nito?"
+      },
+      {
+        "num": 10,
+        "text": "Nasa kamay niya ang kaluluwa ng bawa't bagay na may buhay, at ang hininga ng lahat ng mga tao."
+      },
+      {
+        "num": 11,
+        "text": "Hindi ba lumilitis ng mga salita ang pakinig; gaya ng ngalangala na lumalasa ng pagkain?"
+      },
+      {
+        "num": 12,
+        "text": "Nasa mga matanda ang karunungan, at sa kagulangan ang unawa."
+      },
+      {
+        "num": 13,
+        "text": "Nasa Elohim ang karunungan at kakayahan; kaniya ang payo at pagkaunawa."
+      },
+      {
+        "num": 14,
+        "text": "Narito, siya'y nagbabagsak at hindi maitayo uli; siya'y kumulong ng tao at hindi mapagbubuksan."
+      },
+      {
+        "num": 15,
+        "text": "Narito, kaniyang pinipigil ang tubig at natutuyo; muli, kaniyang binibitawan sila at nilulunod nila ang lupa."
+      },
+      {
+        "num": 16,
+        "text": "Nasa kaniya ang kalakasan at ang karunungan, ang nadadaya at ang magdaraya ay kaniya."
+      },
+      {
+        "num": 17,
+        "text": "Kaniyang pinalalakad ang mga kasangguni na hubad sa bait, at ginagawa niyang mga mangmang ang mga hukom."
+      },
+      {
+        "num": 18,
+        "text": "Kaniyang kinakalag ang panali ng mga hari, at binibigkisan ang kanilang mga baywang ng pamigkis."
+      },
+      {
+        "num": 19,
+        "text": "Kaniyang pinalalakad na hubad sa bait ang mga saserdote."
+      },
+      {
+        "num": 20,
+        "text": "Kaniyang pinapagbabago ang pananalita ng napagtitiwalaan. At inaalis ang pagkaunawa ng mga matanda."
+      },
+      {
+        "num": 21,
+        "text": "Siya'y nagbubuhos ng kutya sa mga pangulo, at kinakalag ang pamigkis ng malakas."
+      },
+      {
+        "num": 22,
+        "text": "Siya'y naglilitaw ng mga malalim na bagay mula sa kadiliman, at inilalabas sa liwanag ang lihim ng kamatayan."
+      },
+      {
+        "num": 23,
+        "text": "Kaniyang pinararami ang mga bansa at mga nililipol niya: kaniyang pinalaki ang mga bansa, at mga dinala sa pagkabihag."
+      },
+      {
+        "num": 24,
+        "text": "Kaniyang inaalis ang pang-unawa mula sa mga pinuno ng bayan sa lupa, at kaniyang pinagagala sila sa ilang na doo'y walang lansangan."
+      },
+      {
+        "num": 25,
+        "text": "Sila'y nagsisikapa sa kadiliman, at kaniyang pinagigiray-giray sila na gaya ng lango."
+      }
+    ],
+    "13": [
+      {
+        "num": 1,
+        "text": "Narito, nakita ang lahat na ito ng aking mata, ang aking tainga ay nakarinig at nakaunawa."
+      },
+      {
+        "num": 2,
+        "text": "Kung ano ang iyong nalalaman, ay nalalaman ko rin naman: hindi ako huli sa inyo."
+      },
+      {
+        "num": 3,
+        "text": "Walang pagsalang ako'y magsasalita sa Makapangyarihan sa lahat, at nagnanasa akong makipag-matuwiranan sa AMA."
+      },
+      {
+        "num": 4,
+        "text": "Nguni't kayo'y mapagkatha ng mga kabulaanan. kayong lahat ay mga manggagamot na walang kabuluhan."
+      },
+      {
+        "num": 5,
+        "text": "Mano nawa ay magsitahimik kayong lahat! At magiging inyong karunungan."
+      },
+      {
+        "num": 6,
+        "text": "Dinggin ninyo ngayon ang aking pangangatuwiran, at inyong dinggin ang mga pagsasanggalang ng aking mga labi."
+      },
+      {
+        "num": 7,
+        "text": "Kayo ba'y nagsasalita ng kalikuan dahil sa AMA, at mangungusap ng karayaan dahil sa kaniya?"
+      },
+      {
+        "num": 8,
+        "text": "Inyo bang lilingapin ang kaniyang pagka Elohim? Inyo bang ipakikipagtalo ang AMA?"
+      },
+      {
+        "num": 9,
+        "text": "Mabuti ba na kayo'y siyasatin niya? O kung paanong dinadaya ang isang tao ay inyo bang dadayain siya?"
+      },
+      {
+        "num": 10,
+        "text": "Walang pagsalang sasawayin niya kayo, kung lihim na kayo'y tatangi ng pagkatao."
+      },
+      {
+        "num": 11,
+        "text": "Hindi ba kayo tatakutin ng kaniyang karilagan, at ang gulat sa kaniya ay sasa inyo?"
+      },
+      {
+        "num": 12,
+        "text": "Ang inyong mga ala-alang sabi ay kawikaang abo, ang inyong mga pagsasanggalang ay mga pagsasanggalang na putik."
+      },
+      {
+        "num": 13,
+        "text": "Magsitahimik kayo, bayaan ninyo ako, na ako'y makapagsalita, at paratingin sa akin ang darating."
+      },
+      {
+        "num": 14,
+        "text": "Bakit kakagatin ng aking mga ngipin ang aking laman, at aking ilalagay ang aking buhay sa aking kamay?"
+      },
+      {
+        "num": 15,
+        "text": "Bagaman ako'y patayin niya, akin ding hihintayin siya: gayon ma'y aking aalalayan ang aking mga lakad sa harap niya."
+      },
+      {
+        "num": 16,
+        "text": "Ito man ay magiging aking kaligtasan; dahil ang isang di banal ay hindi makahaharap sa kaniya."
+      },
+      {
+        "num": 17,
+        "text": "Pakinggan ninyong masikap ang aking pananalita, at ang aking pahayag ay sumainyong mga pakinig."
+      },
+      {
+        "num": 18,
+        "text": "Narito, ngayon, aking inayos ang aking usap; talastas ko na ako'y matuwid."
+      },
+      {
+        "num": 19,
+        "text": "Sino ang makikipagtalo sa akin? Dahil ngayo'y tatahimik ako at malalagot ang aking hininga."
+      },
+      {
+        "num": 20,
+        "text": "Dalawang bagay lamang ang huwag mong gawin sa akin, kung magkagayo'y hindi ako magkukubli sa iyong mukha:"
+      },
+      {
+        "num": 21,
+        "text": "Iurong mo ng malayo ang iyong kamay sa akin; at huwag akong takutin ng pangingilabot sa iyo."
+      },
+      {
+        "num": 22,
+        "text": "Kung magkagayo'y tumawag ka, at ako'y sasagot; o papagsalitain mo ako, at sumagot ka sa akin."
+      },
+      {
+        "num": 23,
+        "text": "Ilan ang aking mga kasamaan at mga kasalanan? Ipakilala mo sa akin ang aking pagsalangsang at ang aking kasalanan."
+      },
+      {
+        "num": 24,
+        "text": "Bakit ikinukubli mo ang iyong mukha, at inaari mo akong iyong kaaway?"
+      },
+      {
+        "num": 25,
+        "text": "Iyo bang pangingilabutin ang isang dahong pinapaspas ng hangin? At iyo bang hahabulin ang dayaming tuyo?"
+      },
+      {
+        "num": 26,
+        "text": "Sapagka't ikaw ay sumusulat ng mga mabigat na bagay laban sa akin, at ipinamamana mo sa akin ang mga kasamaan ng aking kabataan:"
+      },
+      {
+        "num": 27,
+        "text": "Iyo ring inilalagay ang aking mga paa sa pangawan, at pinupuna mo ang lahat kong landas: ikaw ay gumuguhit ng isang guhit sa palibot ng mga talampakan ng aking mga paa:"
+      },
+      {
+        "num": 28,
+        "text": "Bagaman ako'y parang bagay na bulok na natutunaw, na parang damit na kinain ng tanga."
+      }
+    ],
+    "14": [
+      {
+        "num": 1,
+        "text": "Taong ipinanganak ng babae ay sa kaunting araw, at lipos ng kabagabagan."
+      },
+      {
+        "num": 2,
+        "text": "Siya'y umuusli na gaya ng bulaklak, at nalalagas: siya rin nama'y tumatakas na gaya ng anino, at hindi namamalagi."
+      },
+      {
+        "num": 3,
+        "text": "At iyo bang idinidilat ang iyong mga mata sa isang gaya nito, at ipinagsasama mo ako upang hatulan mo?"
+      },
+      {
+        "num": 4,
+        "text": "Sinong makakakuha ng malinis na bagay sa marumi? Wala!"
+      },
+      {
+        "num": 5,
+        "text": "Yayamang ang kaniyang mga kaarawan ay nangapasiyahan, ang bilang ng kaniyang mga buwan ay talastas mo, at iyong hinanggahan ang kaniyang mga hangganan upang huwag siyang makaraan;"
+      },
+      {
+        "num": 6,
+        "text": "Ilayo mo sa kaniya ang iyong paningin, upang siya'y makapagpahinga, hanggang sa maganap niya, na gaya ng isang magpapaupa, ang kaniyang araw."
+      },
+      {
+        "num": 7,
+        "text": "Sapagka't may pag-asa sa isang punong kahoy, na kung ito'y putulin, ay sisibol uli, at ang sariwang sanga niyaon ay hindi maglilikat."
+      },
+      {
+        "num": 8,
+        "text": "Bagaman ang kaniyang ugat ay tumanda sa lupa, at ang puno niyao'y mamatay sa lupa;"
+      },
+      {
+        "num": 9,
+        "text": "Gayon ma'y sa pamamagitan ng amoy ng tubig ay sisibol, at magsasanga na gaya ng pananim."
+      },
+      {
+        "num": 10,
+        "text": "Nguni't ang tao ay namamatay at walang lakas; Oo, ang tao ay nalalagutan ng hininga, at nasaan siya?"
+      },
+      {
+        "num": 11,
+        "text": "Kung paanong ang tubig ay lumalabas sa dagat, at ang ilog ay humuhupa at natutuyo;"
+      },
+      {
+        "num": 12,
+        "text": "Gayon ang tao ay nabubuwal at hindi na bumabangon: hanggang sa ang langit ay mawala, sila'y hindi babangon, ni magigising man sa kanilang pagkakatulog."
+      },
+      {
+        "num": 13,
+        "text": "Oh ikubli mo nawa ako sa Sheol. Na ingatan mo nawa akong lihim hanggang sa ang iyong poot ay makaraan, na takdaan mo nawa ako ng takdang panahon, at iyong alalahanin ako!"
+      },
+      {
+        "num": 14,
+        "text": "Kung ang isang tao ay mamatay, mabubuhay pa ba siya? Lahat ng araw ng aking pakikipagbaka ay maghihintay ako, hanggang sa dumating ang pagbabago."
+      },
+      {
+        "num": 15,
+        "text": "Ikaw ay tatawag, at ako'y sasagot sa iyo: Ikaw ay magtataglay ng nasa sa gawa ng iyong mga kamay."
+      },
+      {
+        "num": 16,
+        "text": "Nguni't ngayo'y binibilang mo ang aking mga hakbang: hindi mo ba pinapansin ang aking kasalanan?"
+      },
+      {
+        "num": 17,
+        "text": "Ang aking pagsalangsang ay natatatakan sa isang lalagyan, at iyong inilalapat ang aking kasamaan."
+      },
+      {
+        "num": 18,
+        "text": "At tunay na ang bundok na natitibag, ay nawawala, at ang bato ay napababago mula sa kinaroroonan niyaon;"
+      },
+      {
+        "num": 19,
+        "text": "Inuukit ng tubig ang mga bato; at tinatangay ng mga baha niyaon ang alabok ng lupa: sa gayon iyong sinisira ang pag-asa ng tao."
+      },
+      {
+        "num": 20,
+        "text": "Ikaw ay nananaig kailan man laban sa kaniya at siya'y pumapanaw; iyong binabago ang kaniyang mukha, at iyong pinayayaon siya."
+      },
+      {
+        "num": 21,
+        "text": "Ang kaniyang mga anak ay nagtataglay ng karangalan, at hindi niya nalalaman; at sila'y ibinababa, nguni't hindi niya namamalayan."
+      },
+      {
+        "num": 22,
+        "text": "Ang kaniya lamang nararamdaman ay ang kaniyang kasakitan, at ang kaniyang kaluluwa na namamanglaw."
+      }
+    ],
+    "15": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sumagot si Eliphaz na Temanita, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Sasagot ba ang isang pantas ng walang kabuluhang kaalaman, at pupunuin ang kaniyang tiyan ng hanging silanganan?"
+      },
+      {
+        "num": 3,
+        "text": "Makikipagmatuwiranan ba siya ng walang kapakinabangang pangungusap, o ng mga salita na hindi niya ikagagawa ng mabuti?"
+      },
+      {
+        "num": 4,
+        "text": "Oo, ikaw ay nag-aalis ng katakutan, at iyong pinipigil ang dalangin sa harap ng AMA."
+      },
+      {
+        "num": 5,
+        "text": "Sapagka't ang iyong kasamaan ang nagtuturo sa iyong bibig, at iyong pinipili ang dila ng mapagkatha."
+      },
+      {
+        "num": 6,
+        "text": "Ang iyong sariling bibig ang humahatol laban sa iyo, at hindi ako; Oo, ang iyong sariling mga labi ay nagpapatotoo laban sa iyo."
+      },
+      {
+        "num": 7,
+        "text": "Ikaw ba ang unang tao na ipinanganak? O nalabas ka bang una kaysa mga burol?"
+      },
+      {
+        "num": 8,
+        "text": "Iyo bang narinig ang lihim na payo ng AMA? At ikaw ba'y nagpigil ng karunungan sa iyong sarili?"
+      },
+      {
+        "num": 9,
+        "text": "Anong nalalaman mo na di namin nalalaman? Anong nauunawa mo na wala sa amin?"
+      },
+      {
+        "num": 10,
+        "text": "Kasama namin ay mga ulong may uban, at mga totoong napakatandang tao, matandang makapupo kaysa iyong ama."
+      },
+      {
+        "num": 11,
+        "text": "Ang mga pag-aliw ba ng AMA ay totoong kaunti pa sa ganang iyo, sa makatuwid baga'y ang salitang napakabuti sa iyo?"
+      },
+      {
+        "num": 12,
+        "text": "Bakit ka napadadala sa iyong puso? At bakit kumikindat ang iyong mga mata?"
+      },
+      {
+        "num": 13,
+        "text": "Na tinatalikdan mo ng iyong puso ang Elohim, at binibigkas mo ang ganyang salita sa iyong bibig."
+      },
+      {
+        "num": 14,
+        "text": "Ano ang tao upang maging malinis? At siyang ipinanganak ng babae, upang siya'y maging matuwid?"
+      },
+      {
+        "num": 15,
+        "text": "Narito, siya'y hindi naglalagak ng tiwala sa kaniyang mga banal; Oo, ang langit ay hindi malinis sa kaniyang paningin."
+      },
+      {
+        "num": 16,
+        "text": "Gaano pa nga kaliit ang marumi at hamak, ang taong umiinom ng kasamaan na parang tubig!"
+      },
+      {
+        "num": 17,
+        "text": "Ipakikilala ko sa iyo, dinggin mo ako; at ang aking nakita ay aking ipahahayag:"
+      },
+      {
+        "num": 18,
+        "text": "Ang isinaysay ng mga pantas na mula sa kanilang mga magulang, at hindi inilingid;"
+      },
+      {
+        "num": 19,
+        "text": "Sa mga yaon lamang ibinigay ang lupain at walang taga ibang lupa na dumaan sa gitna nila:"
+      },
+      {
+        "num": 20,
+        "text": "Ang masamang tao ay nagdaramdam ng sakit lahat ng kaniyang araw, sa makatuwid baga'y ang bilang ng mga taon na itinakda sa mamimighati."
+      },
+      {
+        "num": 21,
+        "text": "Ang hugong ng kakilabutan ay nasa kaniyang mga pakinig; sa kaginhawahan ay daratnan siya ng mga mananamsam:"
+      },
+      {
+        "num": 22,
+        "text": "Siya'y hindi naniniwala na babalik siya na mula sa kadiliman, at siya'y hinihintay ng tabak:"
+      },
+      {
+        "num": 23,
+        "text": "Siya'y gumagala dahil sa tinapay, na nagsasabi: Nasaan? Kaniyang nalalaman na ang araw ng kadiliman ay naghihintay sa kaniya:"
+      },
+      {
+        "num": 24,
+        "text": "Kapanglawan at kadalamhatian ay tumatakot sa kaniya: nangananaig laban sa kaniya, na gaya ng isang hari na handa sa pakikipagbaka;"
+      },
+      {
+        "num": 25,
+        "text": "Sapagka't iniuunat niya ang kaniyang kamay laban sa Elohim. At nagpapalalo laban sa Makapangyarihan sa lahat;"
+      },
+      {
+        "num": 26,
+        "text": "Siya ay tumatakbong may mapagmatigas na leeg laban sa Kaniya, sa kakapalan ng kaniyang mga kalasag;"
+      },
+      {
+        "num": 27,
+        "text": "Sapagka't tinakpan niya ang kaniyang mukha ng kaniyang katabaan at nagpangulubot ng kaniyang mga pigi;"
+      },
+      {
+        "num": 28,
+        "text": "At siya'y tumahan sa mga sirang bayan, sa mga bahay na walang taong tumatahan, na madaling magiging mga bunton."
+      },
+      {
+        "num": 29,
+        "text": "Hindi siya yayaman, o mamamalagi man ang kaniyang pag-aari. Ni di lalawak sa lupa ang kaniyang mga tinatangkilik."
+      },
+      {
+        "num": 30,
+        "text": "Siya'y hindi hihiwalay sa kadiliman; tutuyuin ng liyab ang kaniyang mga sanga, at sa pamamagitan ng hininga ng bibig ng AMA ay papanaw siya."
+      },
+      {
+        "num": 31,
+        "text": "Huwag siyang tumiwala sa kalayawan na dayain ang sarili: sapagka't kalayawan ang magiging kagantihan sa kaniya."
+      },
+      {
+        "num": 32,
+        "text": "Magaganap ito bago dumating ang kaniyang kapanahunan, at ang kaniyang sanga ay hindi mananariwa."
+      },
+      {
+        "num": 33,
+        "text": "Lalagasin niya ang kaniyang mga hilaw na ubas na gaya ng puno ng ubas, at lalagasin ang kaniyang bulaklak na gaya ng olibo."
+      },
+      {
+        "num": 34,
+        "text": "Sapagka't ang pulutong ng mga di banal ay hindi lalago, at susupukin ng apoy ang mga toldang suhulan."
+      },
+      {
+        "num": 35,
+        "text": "Sila'y nag-iisip ng pag-api at naglalabas ng kasamaan, at ang kanilang kalooban ay naghahanda ng pagdaraya."
+      }
+    ],
+    "16": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sumagot si Iyob, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Ako'y nakarinig ng maraming ganyang bagay: kayong lahat ay mga mang-aaliw na mangmang."
+      },
+      {
+        "num": 3,
+        "text": "Magkakawakas ba ang mga walang kabuluhang salita? O anong nag-uudyok sa iyo, na ikaw ay sumagot?"
+      },
+      {
+        "num": 4,
+        "text": "Ako nama'y makapangungusap na gaya ng inyong ginagawa; kung ang inyong kaluluwa ay nasa kalagayan ng aking kaluluwa, ako'y makapagdudugtong dugtong ng salita laban sa inyo, at maigagalaw ang aking ulo sa inyo."
+      },
+      {
+        "num": 5,
+        "text": "Nguni't aking palalakasin kayo ng aking bibig, at ang pag-aliw ng aking mga labi ay magpapalikat ng inyong hirap,"
+      },
+      {
+        "num": 6,
+        "text": "Bagaman ako'y nagsasalita, ang aking hirap ay hindi naglilikat: at bagaman ako'y tumatahimik, anong ikinalalayo sa akin?"
+      },
+      {
+        "num": 7,
+        "text": "Nguni't ngayo'y pinanlupaypay niya ako: nilansag mo ang aking buong sangbahayan."
+      },
+      {
+        "num": 8,
+        "text": "At ako'y pinagdalamhati mo, na siyang saksi laban sa akin; at ang aking kapayatan ay bumabangon laban sa akin, nagpapatotoo sa aking mukha."
+      },
+      {
+        "num": 9,
+        "text": "Niluray niya ako sa kaniyang kapootan, at inusig ako; pinagngangalitan niya ako ng kaniyang mga ngipin: pinangdidilatan ako ng mga mata ng aking kaaway."
+      },
+      {
+        "num": 10,
+        "text": "Kanilang pinagbubukahan ako ng kanilang bibig: kanilang sinampal ako sa mukha na kahiyahiya: sila'y nagpipisan laban sa akin."
+      },
+      {
+        "num": 11,
+        "text": "Ibinibigay ako ng AMA sa di banal, at inihahagis niya ako sa mga kamay ng masama."
+      },
+      {
+        "num": 12,
+        "text": "Ako'y nasa kaginhawahan at kaniyang niligalig akong mainam; Oo, sinunggaban niya ako sa leeg, at pinagwaraywaray niya ako: inilagay naman niya akong pinakatanda niya."
+      },
+      {
+        "num": 13,
+        "text": "Kinubkob ako sa palibot ng kaniyang mga mamamana, kaniyang sinaksak ang aking mga bato, at hindi nagluluwat; kaniyang ibinubuhos ang aking apdo sa lupa."
+      },
+      {
+        "num": 14,
+        "text": "Kaniyang binubugbog ako ng bugbog at bugbog; siya'y gaya ng isang higante na dinadaluhong niya ako."
+      },
+      {
+        "num": 15,
+        "text": "Ako'y nanahi ng telang magaspang sa aking katawan, at aking inilugmok ang aking kapalaluan sa alabok."
+      },
+      {
+        "num": 16,
+        "text": "Ang aking mukha ay namamaga sa pag-iyak, at nasa aking mga pilik-mata ang anino ng kamatayan;"
+      },
+      {
+        "num": 17,
+        "text": "Bagaman walang karahasan sa aking mga kamay, at ang aking dalangin ay malinis,"
+      },
+      {
+        "num": 18,
+        "text": "Oh lupa, huwag mong tabunan ang aking dugo, at huwag magkaroon ng pahingahang dako ang aking daing."
+      },
+      {
+        "num": 19,
+        "text": "Kahit na ngayon, narito, ang aking saksi ay nasa langit, at siyang nananagot sa akin ay nasa kaitaasan."
+      },
+      {
+        "num": 20,
+        "text": "Ginagalit ako ng aking mga kaibigan: nguni't ang aking mata ay nagbubuhos ng mga luha sa AMA;"
+      },
+      {
+        "num": 21,
+        "text": "Upang kaniyang alalayan ang katuwiran ng tao sa AMA; at ang anak ng tao sa kaniyang kapuwa."
+      },
+      {
+        "num": 22,
+        "text": "Sapagka't pagsapit ng ilang taon, ako'y papanaw sa daan na hindi ko babalikan."
+      }
+    ],
+    "17": [
+      {
+        "num": 1,
+        "text": "Ang aking puso ay nanglulumo, ang aking mga kaarawan ay natatapos, ang libingan ay handa sa akin."
+      },
+      {
+        "num": 2,
+        "text": "Tunay na may mga manunuya na kasama ko, at ang aking mata ay nananahan sa kanilang pamumungkahi."
+      },
+      {
+        "num": 3,
+        "text": "Magbigay ka ngayon ng sangla, panagutan mo ako ng iyong sarili; sinong magbubuhat ng mga kamay sa akin?"
+      },
+      {
+        "num": 4,
+        "text": "Sapagka't iyong ikinubli ang kanilang puso sa pag-unawa: kaya't hindi mo sila itataas."
+      },
+      {
+        "num": 5,
+        "text": "Ang paglililo sa kaniyang mga kaibigan upang mahuli, ang mga mata nga ng kaniyang mga anak ay mangangalumata."
+      },
+      {
+        "num": 6,
+        "text": "Nguni't ginawa rin niya akong kakutyaan ng bayan: at niluraan nila ako sa mukha."
+      },
+      {
+        "num": 7,
+        "text": "Ang aking mata naman ay nanglalabo dahil sa kapanglawan. At ang madlang sangkap ko ay parang isang anino."
+      },
+      {
+        "num": 8,
+        "text": "Mga matuwid na tao ay matitigilan nito, at ang walang sala ay babangon laban sa di banal."
+      },
+      {
+        "num": 9,
+        "text": "Gayon ma'y magpapatuloy ang matuwid ng kaniyang lakad, at ang may malinis na mga kamay ay lalakas ng lalakas."
+      },
+      {
+        "num": 10,
+        "text": "Nguni't tungkol sa inyong lahat, magsiparito kayo ngayon uli; at hindi ako makakasumpong ng isang pantas sa gitna ninyo."
+      },
+      {
+        "num": 11,
+        "text": "Ang aking mga kaarawan ay lumipas, ang aking mga panukala ay nangasira, sa makatuwid baga'y ang mga akala ng aking puso."
+      },
+      {
+        "num": 12,
+        "text": "Kanilang ipinalit ang araw sa gabi: ang liwanag, wika nila, ay malapit sa kadiliman."
+      },
+      {
+        "num": 13,
+        "text": "Kung aking hanapin ang Sheol na parang aking bahay; kung aking ilatag ang aking higaan sa kadiliman:"
+      },
+      {
+        "num": 14,
+        "text": "Kung sinabi ko sa kapahamakan: ikaw ay aking ama: sa uod: ikaw ay aking ina, at kapatid na babae;"
+      },
+      {
+        "num": 15,
+        "text": "Nasaan nga ang aking pag-asa? At tungkol sa aking pag-asa, sinong makakakita?"
+      },
+      {
+        "num": 16,
+        "text": "Lulusong ba ito sa mga kalaliman ng Sheol? Sasama ba sa alabok na hantungan?"
+      }
+    ],
+    "18": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sumagot si Bildad na Suhita, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Hanggang kailan manghuhuli ka ng mga salita? Iyong bulayin, at pagkatapos ay magsasalita kami."
+      },
+      {
+        "num": 3,
+        "text": "Bakit kami nabibilang na parang mga hayop, at naging marumi sa iyong paningin?"
+      },
+      {
+        "num": 4,
+        "text": "Ikaw na nagpapakabagbag sa iyong galit, pababayaan ba ang lupa dahil sa iyo? O babaguhin ba ang bato mula sa kinaroroonan?"
+      },
+      {
+        "num": 5,
+        "text": "Oo, ang ilaw ng masama ay papatayin, at ang liyab ng kaniyang apoy ay hindi liliwanag."
+      },
+      {
+        "num": 6,
+        "text": "Ang ilaw ay magdidilim sa kaniyang tolda, at ang kaniyang ilawan sa itaas niya ay papatayin."
+      },
+      {
+        "num": 7,
+        "text": "Ang mga hakbang ng kaniyang kalakasan ay mapipigil, at ang kaniyang sariling payo ang magbabagsak sa kaniya."
+      },
+      {
+        "num": 8,
+        "text": "Dahil siya'y inihagis sa lambat ng kaniyang sariling mga paa, at siya'y lumalakad sa mga silo."
+      },
+      {
+        "num": 9,
+        "text": "Isang panghuli ang huhuli sa kaniya sa mga sakong. At isang silo ay huhuli sa kaniya."
+      },
+      {
+        "num": 10,
+        "text": "Ang panali ay nakakubli ukol sa kaniya sa lupa, at isang patibong na ukol sa kaniya ay nasa daan."
+      },
+      {
+        "num": 11,
+        "text": "Mga kakilabutan ay tatakot sa kaniya sa lahat ng dako, at hahabol sa kaniya sa kaniyang mga sakong."
+      },
+      {
+        "num": 12,
+        "text": "Ang kaniyang kalakasan ay manglalata sa gutom, at ang kapahamakan ay mahahanda sa kaniyang tagiliran."
+      },
+      {
+        "num": 13,
+        "text": "Susupukin ang mga sangkap ng kaniyang katawan, Oo, lalamunin ng panganay ng kamatayan ang kaniyang mga sangkap."
+      },
+      {
+        "num": 14,
+        "text": "Siya'y ilalabas sa kaniyang tolda na kaniyang tinitiwalaan; at siya'y dadalhin sa hari ng mga kakilabutan."
+      },
+      {
+        "num": 15,
+        "text": "Tatahan sa kaniyang tolda yaong di niya kaano-ano: asupre ay makakalat sa kaniyang tahanan."
+      },
+      {
+        "num": 16,
+        "text": "Ang kaniyang mga ugat ay matutuyo sa ilalim, at sa ibabaw ay puputulin ang kaniyang sanga."
+      },
+      {
+        "num": 17,
+        "text": "Ang alaala sa kaniya ay mawawala sa lupa, at siya'y mawawalan ng pangalan sa lansangan."
+      },
+      {
+        "num": 18,
+        "text": "Siya'y ihahatid sa kadiliman mula sa liwanag, at itatapon sa labas ng sanglibutan."
+      },
+      {
+        "num": 19,
+        "text": "Siya'y hindi magkakaroon kahit anak, ni anak man ng anak sa gitna ng kaniyang bayan, ni anomang nalabi sa kaniyang pinakipamayanan."
+      },
+      {
+        "num": 20,
+        "text": "Silang nagsisidating pagkatapos ay matitigilan sa kaniyang kaarawan, gaya ng nauna na natakot."
+      },
+      {
+        "num": 21,
+        "text": "Tunay na ganyan ang mga tahanan ng mga liko, at ito ang kalalagyan niya na hindi nakakakilala sa AMA."
+      }
+    ],
+    "19": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sumagot si Iyob, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Hanggang kailan pahihirapan ninyo ang aking kaluluwa, at babagabagin ako ng mga salita?"
+      },
+      {
+        "num": 3,
+        "text": "Nang makasangpung ito ay pinulaan ninyo ako: kayo ay hindi napapahiya na nagpapahirap sa akin."
+      },
+      {
+        "num": 4,
+        "text": "At kahima't ako'y magkamali, ang aking kamalian ay maiwan sa aking sarili."
+      },
+      {
+        "num": 5,
+        "text": "Kung tunay na kayo'y magpapakalaki laban sa akin, at ipakikipagtalo laban sa akin ang kakutyaan ko:"
+      },
+      {
+        "num": 6,
+        "text": "Talastasin ninyo ngayon na inilugmok ako ng AMA, at binitag ako ng kaniyang silo."
+      },
+      {
+        "num": 7,
+        "text": "Narito, ako'y humihiyaw dahil sa kamalian, nguni't hindi ako dinidinig; ako ay humihiyaw ng tulong, nguni't walang kahatulan."
+      },
+      {
+        "num": 8,
+        "text": "Kaniyang pinadiran ang aking daan upang huwag akong makaraan, at naglagay ng kadiliman sa aking mga landas."
+      },
+      {
+        "num": 9,
+        "text": "Ang aking kaluwalhatian ay Kaniyang hinubaran, at inalis ang putong sa aking ulo."
+      },
+      {
+        "num": 10,
+        "text": "Kaniyang inilugmok ako sa bawa't dako, at ako'y nananaw: at ang aking pag-asa ay binunot niyang parang punong kahoy."
+      },
+      {
+        "num": 11,
+        "text": "Kaniya rin namang pinapag-alab ang kaniyang pag-iinit laban sa akin, at ibinilang niya ako sa kaniya na gaya ng isa sa kaniyang mga kaaway,"
+      },
+      {
+        "num": 12,
+        "text": "Ang kaniyang mga hukbo ay dumarating na magkakasama, at ipinagpatuloy ang kanilang lakad laban sa akin, at kinubkob ang palibot ng aking tolda."
+      },
+      {
+        "num": 13,
+        "text": "Inilayo niya ang aking mga kapatid sa akin, at ang aking mga kakilala ay pawang nag-iba sa akin."
+      },
+      {
+        "num": 14,
+        "text": "Ang aking mga kamag-anak ay lumayo, at nilimot ako ng aking mga kaibigan."
+      },
+      {
+        "num": 15,
+        "text": "Silang nagsisitahan sa aking bahay, at ang aking mga lingkod na babae, ay ibinibilang akong manunuluyan; ako'y naging kaiba sa kanilang paningin."
+      },
+      {
+        "num": 16,
+        "text": "Aking tinatawag ang aking lingkod, at walang sumasagot, bagaman sinasamo ko siya ng aking bibig."
+      },
+      {
+        "num": 17,
+        "text": "Ang aking hininga ay iba sa aking asawa, at ang aking pamanhik sa mga anak ng tunay kong ina."
+      },
+      {
+        "num": 18,
+        "text": "Pati ang mga masasama ay humahamak sa akin; kung ako'y bumabangon, sila'y nagsasalita ng laban sa akin:"
+      },
+      {
+        "num": 19,
+        "text": "Lahat ng aking mahal na kaibigan ay nayamot sa akin: at ang aking minamahal ay nagsipihit ng laban sa akin,"
+      },
+      {
+        "num": 20,
+        "text": "Ang aking buto ay dumidikit sa aking balat at sa aking laman, at ako'y nakatanan ng sukat sa balat ng aking mga ngipin."
+      },
+      {
+        "num": 21,
+        "text": "Mahabag kayo sa akin, mahabag kayo sa akin, Oh kayong mga kaibigan ko; sapagka't kinilos ako ng kamay ng Elohim,"
+      },
+      {
+        "num": 22,
+        "text": "Bakit ninyo ako inuusig na gaya ng Elohim. At hindi pa kayo nasisiyahan sa aking laman?"
+      },
+      {
+        "num": 23,
+        "text": "Oh mangasulat nawa ngayon ang aking mga salita! Oh malagda nawa sa isang aklat!"
+      },
+      {
+        "num": 24,
+        "text": "Nang isa nawang panulat na bakal at tingga, na maukit nawa sa bato magpakailan man!"
+      },
+      {
+        "num": 25,
+        "text": "Nguni't talastas ko na Manunubos sa akin ay buhay, at Siya'y tatayo sa lupa sa kahulihulihan:"
+      },
+      {
+        "num": 26,
+        "text": "At pagkatapos na kainin ng uod ang aking buong balat, gayon ma'y makikita ko ang Elohim sa aking laman:"
+      },
+      {
+        "num": 27,
+        "text": "Siyang aking mamamasdan, at makikita ng aking mga mata. Ang aking puso ay nananabik na makita siya."
+      },
+      {
+        "num": 28,
+        "text": "Kung inyong sabihin: paanong aming pag-uusigin siya? Dangang ang kadahilanan ay nasusumpungan sa akin;"
+      },
+      {
+        "num": 29,
+        "text": "Matakot kayo sa tabak: dahil ang kapootan ang nagdadala ng mga parusa ng tabak, upang inyong malaman na may kahatulan."
+      }
+    ],
+    "20": [
+      {
+        "num": 1,
+        "text": "Nang magkagayon ay sumagot si Zophar na Naamathita, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Katotohanang may sagot sa akin ang aking mga pag-iisip, dahil dito ay hindi ko mapigilan."
+      },
+      {
+        "num": 3,
+        "text": "Aking narinig ang saway na inilalagay ako sa kahihiyan, at ang puso ng aking pagkaunawa ay sumasagot sa akin."
+      },
+      {
+        "num": 4,
+        "text": "Hindi mo ba nalalaman ito ng una, mula nang ang tao'y malagay sa lupa,"
+      },
+      {
+        "num": 5,
+        "text": "Na ang pagtatagumpay ng masama ay maikli, at ang kagalakan ng di banal ay sandali lamang?"
+      },
+      {
+        "num": 6,
+        "text": "Bagaman ang kaniyang karilagan ay napaiilanglang hanggang sa langit, at ang kaniyang ulo ay umaabot hanggang sa mga alapaap;"
+      },
+      {
+        "num": 7,
+        "text": "Gayon may matutunaw siya magpakailan man, na gaya ng kaniyang sariling dumi: silang nakakita sa kaniya ay magsasabi: Nasaan siya?"
+      },
+      {
+        "num": 8,
+        "text": "Siya'y mawawala na gaya ng panaginip, at hindi masusumpungan. Oo, siya'y mawawala na parang pangitain sa gabi."
+      },
+      {
+        "num": 9,
+        "text": "Ang mata na nakakita sa kaniya ay hindi na siya makikita pa; ni mamamalas pa man siya sa kaniyang pook."
+      },
+      {
+        "num": 10,
+        "text": "Hahanapin ng kaniyang mga anak ang lingap ng dukha, at ang kaniyang mga kamay ay magsasauli ng kaniyang kayamanan."
+      },
+      {
+        "num": 11,
+        "text": "Ang kaniyang mga buto ay puspos ng kaniyang kabataan, nguni't hihiga na kasama niya sa alabok."
+      },
+      {
+        "num": 12,
+        "text": "Bagaman ang kasamaan ay masarap sa kaniyang bibig, bagaman kaniyang itago sa ilalim ng kaniyang dila;"
+      },
+      {
+        "num": 13,
+        "text": "Bagaman kaniyang patawarin, at hindi niya ito babayaan, kundi ingatan pa sa loob ng kaniyang bibig;"
+      },
+      {
+        "num": 14,
+        "text": "Gayon ma'y ang kaniyang pagkain ay nabago na sa kaniyang tiyan, ubod ng pait, siyang lason sa katawan."
+      },
+      {
+        "num": 15,
+        "text": "Siya'y sumakmal ng mga kayamanan, at kaniyang mga isusuka uli: mga aalisin uli ng AMA sa kaniyang tiyan."
+      },
+      {
+        "num": 16,
+        "text": "Kaniyang hihititin ang kamandag ng mga ahas; papatayin siya ng dila ng ulupong."
+      },
+      {
+        "num": 17,
+        "text": "Hindi niya matitingnan ang mga ilog, ang umaagos na mga bukal ng pulot at mantekilya."
+      },
+      {
+        "num": 18,
+        "text": "Na kaniyang isasauli ang kaniyang pinagpagalan, at hindi lalamunin; ayon sa pag-aari na kaniyang tinangkilik, hindi siya magagalak."
+      },
+      {
+        "num": 19,
+        "text": "Sapagka't kaniyang pinighati at pinabayaan ang dukha; kaniyang kinuhang marahas ang isang bahay; at hindi niya itatayo."
+      },
+      {
+        "num": 20,
+        "text": "Dahil hindi siya nakakilala ng katiwasayan sa loob niya, hindi siya makapagliligtas ng anoman sa kaniyang kinaluluguran."
+      },
+      {
+        "num": 21,
+        "text": "Walang bagay na naiwan na hindi niya sinakmal; kaya't ang kaniyang kaginhawahan ay hindi mananatili."
+      },
+      {
+        "num": 22,
+        "text": "Sa lubos niyang kasaganaan ay magigipit siya; ang kamay ng bawa't karalitaan ay darating sa kaniya."
+      },
+      {
+        "num": 23,
+        "text": "Kapag kaniyang bubusugin ang kaniyang tiyan, ihuhulog ng Elohim ang kaniyang mabangis na poot sa kaniya. At ibubugso sa kaniya samantalang siya'y kumakain."
+      },
+      {
+        "num": 24,
+        "text": "Kaniyang tatakasan ang sandatang bakal, at ang busog na tanso ay hihilagpos sa kaniya."
+      },
+      {
+        "num": 25,
+        "text": "Binubunot niya ang pana, at lumalabas sa kaniyang katawan: Oo, ang makintab na talim ay lumalabas sa kaniyang apdo; mga kakilabutan ang sumasa kaniya."
+      },
+      {
+        "num": 26,
+        "text": "Lahat na kadiliman ay nalalagay na mga pinaka kayamanan niya; isang apoy na hindi hinipan ng tao ay susupok sa kaniya: susupukin niyaon ang naiwan sa kaniyang tolda."
+      },
+      {
+        "num": 27,
+        "text": "Ihahayag ng mga langit ang kaniyang kasamaan, at ang lupa ay babangon laban sa kaniya."
+      },
+      {
+        "num": 28,
+        "text": "Ang pakinabang ng kaniyang bahay ay yayaon, ang kaniyang mga pag-aari ay mapaparam sa kaarawan ng kaniyang kapootan."
+      },
+      {
+        "num": 29,
+        "text": "Ito ang bahagi ng masamang tao mula sa AMA, at ang manang takda sa kaniya ng Elohim."
+      }
+    ],
+    "21": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sumagot si Iyob, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Pakinggan ninyong mainam ang aking pananalita; at ito'y maging inyong mga kaaliwan."
+      },
+      {
+        "num": 3,
+        "text": "Pagtiisan ninyo ako, at ako naman ay magsasalita, at pagkatapos na ako ay makapagsalita, ay manuya kayo."
+      },
+      {
+        "num": 4,
+        "text": "Tungkol sa akin, ay sa tao ba ang aking daing? At bakit hindi ako maiinip?"
+      },
+      {
+        "num": 5,
+        "text": "Tandaan ninyo ako, at matigilan kayo. At ilagay ninyo ang inyong kamay sa inyong bibig,"
+      },
+      {
+        "num": 6,
+        "text": "Kapag aking naaalaala nga ay nababagabag ako, at kikilabutan ang lumulukob sa aking laman."
+      },
+      {
+        "num": 7,
+        "text": "Bakit nabubuhay ang masama, nagiging matanda, oo, nagiging malakas at nananagana?"
+      },
+      {
+        "num": 8,
+        "text": "Ang kanilang binhi ay natatatag na kasama nila sa kanilang paningin, at ang kanilang mga anak ay nasa harap ng kanilang mga mata."
+      },
+      {
+        "num": 9,
+        "text": "Ang kanilang mga bahay ay tiwasay na walangtakot, kahit ang pamalo man ng AMA ay wala sa kanila."
+      },
+      {
+        "num": 10,
+        "text": "Ang kanilang mga hayop ay naglilihi, at hindi nababaog; ang kanilang bakahan ay nanganganak, at hindi napapahamak ang kaniyang guya."
+      },
+      {
+        "num": 11,
+        "text": "Kaniyang inilabas ang kanilang mga bata na gaya ng kawan, at ang kanilang mga anak ay nagsasayawan,"
+      },
+      {
+        "num": 12,
+        "text": "Sila'y nag-aawitan na katugma ng pandereta at alpa, at nagkakatuwa sa tunog ng plauta."
+      },
+      {
+        "num": 13,
+        "text": "Kanilang ginugugol ang kanilang mga kaarawan sa kaginhawahan, at sa isang sandali ay nagsisilusong sila sa Sheol."
+      },
+      {
+        "num": 14,
+        "text": "At sinasabi nila sa Elohim: Lumayo ka sa amin; sapagka't hindi namin ninanasa ang pagkaalam ng inyong mga lakad."
+      },
+      {
+        "num": 15,
+        "text": "Ano ang Elohim sa lahat na siya'y paglilingkuran namin? At anong pakinabang mayroon kami, kung kami ay dadalangin sa kaniya?"
+      },
+      {
+        "num": 16,
+        "text": "Narito, ang kanilang kaginhawahan ay wala sa kanilang kamay: ang payo ng masama ay malayo sa akin."
+      },
+      {
+        "num": 17,
+        "text": "Gaano kadalas pinapatay ang ilawan ng masama? Na ang kanilang kapahamakan ay dumarating ba sa kanila? Na nagbabahagi ba ang AMA ng mga kapanglawan sa kaniyang galit?"
+      },
+      {
+        "num": 18,
+        "text": "Na sila'y gaya ng dayami sa harap ng hangin, at gaya ng ipa na tinatangay ng bagyo?"
+      },
+      {
+        "num": 19,
+        "text": "Inyong sinasabi, Inilalapat ng AMA ang kaniyang parusa sa kaniyang mga anak. Gantihin sa kaniyang sarili upang maalaman niya."
+      },
+      {
+        "num": 20,
+        "text": "Makita ng kaniyang mga mata ang kaniyang pagkagiba, at uminom siya ng poot ng Makapangyarihan sa lahat."
+      },
+      {
+        "num": 21,
+        "text": "Sapagka't anong kasayahan magkakaroon siya sa kaniyang bahay pagkamatay niya, kapag ang bilang ng kaniyang mga buwan ay nahiwalay sa gitna?"
+      },
+      {
+        "num": 22,
+        "text": "May makapagtuturo ba ng kaalaman sa Elohim? Dangang kaniyang hinahatulan yaong nasa mataas."
+      },
+      {
+        "num": 23,
+        "text": "Isa'y namamatay sa kaniyang lubos na kalakasan, palibhasa't walang bahala at tahimik:"
+      },
+      {
+        "num": 24,
+        "text": "Ang kaniyang mga dibdib ay puno ng gatas, at ang pata ng kaniyang mga buto ay halumigmig."
+      },
+      {
+        "num": 25,
+        "text": "At ang iba'y namamatay sa paghihirap ng kaluluwa, at kailan man ay hindi nakakalasa ng mabuti."
+      },
+      {
+        "num": 26,
+        "text": "Sila'y nahihigang magkakasama sa alabok at tinatakpan sila ng uod."
+      },
+      {
+        "num": 27,
+        "text": "Narito, aking nalalaman ang inyong pag-iisip, at mga maling haka ng inyong inaakala laban sa akin."
+      },
+      {
+        "num": 28,
+        "text": "Sapagka't inyong sinasabi, Saan naroon ang bahay ng prinsipe? At saan naroon ang tolda na tinatahanan ng masama?"
+      },
+      {
+        "num": 29,
+        "text": "Hindi ba ninyo itinanong sa kanilang nagdadaan? At hindi ba ninyo nalalaman ang kanilang mga haka?"
+      },
+      {
+        "num": 30,
+        "text": "Na ang masamang tao ay natataan sa kaarawan ng kasakunaan? Na sila'y pinapatnubayan sa kaarawan ng kapootan?"
+      },
+      {
+        "num": 31,
+        "text": "Sinong magpapahayag ng kaniyang lakad sa kaniyang mukha? At sinong magbabayad sa kaniya ng kaniyang ginawa?"
+      },
+      {
+        "num": 32,
+        "text": "Gayon ma'y dadalhin siya sa libingan, at magbabantay ang mga tao sa kaniyang puntod."
+      },
+      {
+        "num": 33,
+        "text": "Ang mga bugal ng libis ay mamabutihin niya, at lahat ng tao ay magsisisunod sa kaniya, gaya ng nauna sa kaniya na walang bilang."
+      },
+      {
+        "num": 34,
+        "text": "Paano ngang inyong aaliwin ako ng walang kabuluhan, dangang sa inyong mga sagot ang naiiwan lamang ay kabulaanan?"
+      }
+    ],
+    "22": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sumagot si Eliphaz na Temanita, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Mapapakinabangan ba ng Elohim ang tao, maging siya'y pantas o dakila?"
+      },
+      {
+        "num": 3,
+        "text": "May kasayahan ba sa Maylalang sa lahat na ikaw ay matuwid? O may pakinabang ba sa kaniya na iyong pinasasakdal ang iyong mga lakad?"
+      },
+      {
+        "num": 4,
+        "text": "Dahil ba sa iyong takot sa kaniya na kaniyang sinasaway ka, na siya'y pumasok sa iyo sa kahatulan?"
+      },
+      {
+        "num": 5,
+        "text": "Hindi ba malaki ang iyong kasamaan? Ni wala mang anomang wakas sa iyong mga kasamaan."
+      },
+      {
+        "num": 6,
+        "text": "Sapagka't ikaw ay kumuha ng sangla ng iyong kapatid sa wala, at iyong hinubdan ng kanilang suot ang hubad."
+      },
+      {
+        "num": 7,
+        "text": "Ikaw ay hindi nagbigay ng tubig sa pagod upang uminom, at ikaw ay nagkait ng tinapay sa gutom."
+      },
+      {
+        "num": 8,
+        "text": "Nguni't tungkol sa makapangyarihang tao, siya'y nagtatangkilik ng lupa; at ang marangal na tao, ay tumatahan doon."
+      },
+      {
+        "num": 9,
+        "text": "Iyong pinayaong walang dala ang mga babaing bao, at ang mga kamay ng ulila ay nabali."
+      },
+      {
+        "num": 10,
+        "text": "Kaya't ang mga silo ay nasa palibot mo, at biglang takot ay bumabagabag sa iyo,"
+      },
+      {
+        "num": 11,
+        "text": "O kadiliman, upang huwag kang makakita. At kasaganaan ng tubig ay tumatabon sa iyo."
+      },
+      {
+        "num": 12,
+        "text": "Hindi ba ang AMA ay nasa kaitaasan ng langit? At, narito, ang kataasan ng mga bituin, pagkataastaas nila!"
+      },
+      {
+        "num": 13,
+        "text": "At iyong sinasabi, Anong nalalaman ng AMA? Makahahatol ba siya sa salisalimuot na kadiliman?"
+      },
+      {
+        "num": 14,
+        "text": "Masinsing alapaap ang tumatakip sa kaniya, na siya'y hindi nakakakita; at siya'y lumalakad sa balantok ng langit."
+      },
+      {
+        "num": 15,
+        "text": "Iyo bang pagpapatuluyan ang dating daan, na nilakaran ng mga masamang tao?"
+      },
+      {
+        "num": 16,
+        "text": "Na siyang mga naalis bago dumating ang kanilang kapanahunan. Na ang pundasyon ay naaagos sa baha:"
+      },
+      {
+        "num": 17,
+        "text": "Na nagsabi sa Elohim: Lumayo ka sa amin; at, anong magagawa sa amin ng Makapangyarihan sa lahat?"
+      },
+      {
+        "num": 18,
+        "text": "Gayon ma'y pinuno niya ang kanilang mga bahay ng mga mabuting bagay; nguni't ang payo ng masama ay malayo sa akin."
+      },
+      {
+        "num": 19,
+        "text": "Nakikita ng mga matuwid at natutuwa; at tinatawanang mainam ng walang sala:"
+      },
+      {
+        "num": 20,
+        "text": "Na nagsasabi, Walang pagsalang silang nagsisibangon laban sa atin ay nahiwalay, at ang nalabi sa kanila ay sinupok ng apoy."
+      },
+      {
+        "num": 21,
+        "text": "Makipagkilala ka sa kaniya, at ikaw ay mapayapa: anopa't ang mabuti ay darating sa iyo."
+      },
+      {
+        "num": 22,
+        "text": "Iyong tanggapin, isinasamo ko sa iyo, ang kautusan mula sa kaniyang bibig, at ilagak mo ang kaniyang mga salita sa iyong puso."
+      },
+      {
+        "num": 23,
+        "text": "Kung ikaw ay bumalik sa Maylalang sa lahat, ay mapapanatag ka; kung iyong ilayo ang kalikuan sa iyong mga tolda."
+      },
+      {
+        "num": 24,
+        "text": "At ilagay mo ang iyong kayamanan sa alabok, at ang ginto ng Ophir sa gitna ng mga bato ng mga batis:"
+      },
+      {
+        "num": 25,
+        "text": "At ang Makapangyarihan sa lahat ay magiging iyong kayamanan, at mahalagang pilak sa iyo."
+      },
+      {
+        "num": 26,
+        "text": "Sapagka't ikaw ay magagalak nga sa iyong sarili sa Makapangyarihan sa lahat, at iyong itataas ang iyong mukha sa Elohim."
+      },
+      {
+        "num": 27,
+        "text": "Ikaw ay dadalangin sa kaniya, at kaniyang didinggin ka: at iyong tutuparin ang iyong mga panata."
+      },
+      {
+        "num": 28,
+        "text": "Ikaw nama'y magpapasiya ng isang bagay, at ito'y matatatag sa iyo; at liwanag ay sisilang sa iyong mga daan."
+      },
+      {
+        "num": 29,
+        "text": "Kapag inilulugmok ka nila, ay iyong sasabihin: Magpakatatag; at ililigtas niya ang mapagpakumbabang tao."
+      },
+      {
+        "num": 30,
+        "text": "Kaniyang bang ililigtas, pati ng hindi banal? Oo, siya'y maliligtas sa kalinisan ng iyong mga kamay."
+      }
+    ],
+    "23": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sumagot si Iyob, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Magpahanggang ngayo'y mapanghimagsik ang aking daing: ang bugbog sa akin ay lalong mabigat kaysa aking hibik."
+      },
+      {
+        "num": 3,
+        "text": "Oh mano nawang maalaman ko kung saan ko masusumpungan Siya, upang ako ay dumating hanggang sa kaniyang kinaroroonan!"
+      },
+      {
+        "num": 4,
+        "text": "Aking aayusin ang aking usap sa harap niya, at pupunuin ko ang aking bibig ng mga pangangatuwiran."
+      },
+      {
+        "num": 5,
+        "text": "Aking malalaman ang mga salita na kaniyang isasagot sa akin, at matatalastas ko kung ano ang kaniyang sasabihin sa akin."
+      },
+      {
+        "num": 6,
+        "text": "Makikipagtalo ba siya sa akin sa kalakhan ng kaniyang kapangyarihan? Hindi; kundi pakikinggan niya ako."
+      },
+      {
+        "num": 7,
+        "text": "Doo'y makapangangatuwiran sa kaniya ang matuwid; sa gayo'y maliligtas ako magpakailan man sa aking hukom."
+      },
+      {
+        "num": 8,
+        "text": "Narito, ako'y nagpapatuloy, nguni't wala siya; at sa dakong likuran, nguni't hindi ko siya mamataan:"
+      },
+      {
+        "num": 9,
+        "text": "Sa kaliwa kapag siya'y gumagawa, nguni't hindi ko mamasdan siya: siya'y nagkukubli sa kanan, na hindi ko siya makita."
+      },
+      {
+        "num": 10,
+        "text": "Nguni't nalalaman niya ang daang aking nilalakaran; kapag kaniyang nasubok ako ay lalabas akong parang ginto."
+      },
+      {
+        "num": 11,
+        "text": "Ang aking paa ay sumunod na lubos sa kaniyang mga hakbang. Ang kaniyang daan ay aking iningatan, at hindi ako lumiko."
+      },
+      {
+        "num": 12,
+        "text": "Ako'y hindi humiwalay sa utos ng kaniyang mga labi; aking pinagyaman ang mga salita ng kaniyang bibig ng higit kaysa aking kailangang pagkain."
+      },
+      {
+        "num": 13,
+        "text": "Nguni't siya'y sa isang akala, at sinong makapagpapabalik sa kaniya? At kung ano ang ninanasa ng kaniyang kaluluwa siya nga niyang ginagawa."
+      },
+      {
+        "num": 14,
+        "text": "Sapagka't kaniyang isinasagawa ang itinakda sa akin: at maraming gayong mga bagay ang nasa kaniya."
+      },
+      {
+        "num": 15,
+        "text": "Kaya't ako'y nababagabag sa kaniyang harapan; kapag aking binubulay, ay natatakot ako sa kaniya."
+      },
+      {
+        "num": 16,
+        "text": "Dahil sa pinapanglupaypay ng Elohim ang aking puso, at binagabag ako ng Makapangyarihan sa lahat:"
+      },
+      {
+        "num": 17,
+        "text": "Sapagka't hindi ako inihiwalay sa harap ng kadiliman, ni tinakpan man niya ang salimuot na kadiliman sa aking mukha."
+      }
+    ],
+    "24": [
+      {
+        "num": 1,
+        "text": "Bakit ang mga kapanahunan ay hindi itinakda ng Makapangyarihan sa lahat? At bakit hindi nakakakita ng kaniyang mga araw ang nakakakilala sa kaniya?"
+      },
+      {
+        "num": 2,
+        "text": "May nagsisipagbago ng hangganan ng lupa; kanilang dinadalang may karahasan ang mga kawan, at pinasasabsab."
+      },
+      {
+        "num": 3,
+        "text": "Kanilang itinataboy ang asno ng ulila, kanilang kinukuha ang baka ng babaing bao na pinaka-sangla."
+      },
+      {
+        "num": 4,
+        "text": "Kanilang inililigaw sa daan ang nangangailangan: ang mga dukha sa lupa ay nagsisikubling magkakasama."
+      },
+      {
+        "num": 5,
+        "text": "Narito, gaya ng mga mabangis na asno sa ilang, sila'y nagsisilabas sa kanilang gawa, na nagsisihanap na masikap ng pagkain; ang ilang ay siyang nagbibigay sa kanila ng pagkaing ukol sa kanilang mga anak."
+      },
+      {
+        "num": 6,
+        "text": "Kanilang pinitas sa bukid ang kanilang pagkain; at kanilang pinamumulutan ang ubasan ng masama."
+      },
+      {
+        "num": 7,
+        "text": "Sila'y hubad na nahihiga buong gabi na walang suot. At sa ginaw walang kumot."
+      },
+      {
+        "num": 8,
+        "text": "Sila'y basa ng ulan sa mga bundok, at niyayakap ang bato sa pagkakailangan ng silungan."
+      },
+      {
+        "num": 9,
+        "text": "May nagsisiagaw ng ulila mula sa suso, at nagsisikuha ng sangla ng dukha:"
+      },
+      {
+        "num": 10,
+        "text": "Na anopa't sila'y yumayaong hubad na walang damit, at palibhasa'y gutom ay kanilang dinadala ang mga bigkis;"
+      },
+      {
+        "num": 11,
+        "text": "Sila'y nagsisigawa ng langis sa loob ng olibohan ng mga taong ito; sila'y nagpipisa sa kanilang pisaan ng ubas, at nagtitiis ng uhaw."
+      },
+      {
+        "num": 12,
+        "text": "Mula sa makapal na bayan ay nagsisidaing ang mga tao, at ang kaluluwa ng may sugat ay humihiyaw; gayon man ay hindi pinapakinggan ng Elohim."
+      },
+      {
+        "num": 13,
+        "text": "Ito'y sa mga nangaghihimagsik laban sa liwanag; Hindi nila nalalaman ang mga daan niyaon, ni tumatahan man sa mga landas niyaon."
+      },
+      {
+        "num": 14,
+        "text": "Ang mamamatay tao ay bumabangon pagliliwanag, pinapatay niya ang dukha at mapagkailangan; at sa gabi ay gaya siya ng magnanakaw."
+      },
+      {
+        "num": 15,
+        "text": "Ang mata naman ng mapangalunya ay naghihintay ng pagtatakipsilim, na sinasabi, Walang matang makakakita sa akin: at nag-iiba ng kaniyang mukha."
+      },
+      {
+        "num": 16,
+        "text": "Sa kadiliman ay nagsisihukay sila sa mga bahay: sila'y nagkukulong sa sarili kung araw; hindi nila nalalaman ang liwanag,"
+      },
+      {
+        "num": 17,
+        "text": "Sapagka't ang umaga sa kanilang lahat ay parang salimuot na kadiliman, sapagka't kanilang nalalaman ang mga kakilabutan ng salimuot na kadiliman."
+      },
+      {
+        "num": 18,
+        "text": "Siya'y matulin sa ibabaw ng tubig; ang kanilang bahagi ay sinumpa sa lupa: siya'y hindi babalik sa daan ng mga ubasan."
+      },
+      {
+        "num": 19,
+        "text": "Katuyuan at kainitan ay tumutunaw ng mga niebeng tubig: gaya ng Sheol ng mga nagkaka-sala."
+      },
+      {
+        "num": 20,
+        "text": "Kalilimutan siya ng bahay-bata: siya'y kakaning maigi ng uod; siya'y hindi na maaalaala pa: at ang kalikuan ay babaliing parang punong kahoy."
+      },
+      {
+        "num": 21,
+        "text": "Kaniyang sinasakmal ang baog na hindi nanganganak; at hindi gumagawa ng mabuti sa babaing bao."
+      },
+      {
+        "num": 22,
+        "text": "Inaagawan naman ng Elohim ang may kaya sa pamamagitan ng kaniyang kapangyarihan: siya ay bumabangon na walang katiwasayan sa buhay."
+      },
+      {
+        "num": 23,
+        "text": "Pinagkakalooban sila ng Elohim na malagay sa katiwasayan, at sila'y nagpapahinga roon; at ang kaniyang mga mata ay nasa kanilang mga lakad."
+      },
+      {
+        "num": 24,
+        "text": "Sila'y nataas, gayon ma'y isang sandali pa, at sila'y wala na. Oo, sila'y ibinaba, sila'y nangaalis sa daan na gaya ng lahat, at naputol na gaya ng mga uhay."
+      },
+      {
+        "num": 25,
+        "text": "At kung hindi gayon ngayon, sinong magpapatotoo na ako'y sinungaling, at magwawala ng kabuluhan ng aking pananalita?"
+      }
+    ],
+    "25": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sumagot si Bildad na Suhita, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Kapangyarihan at takot ay sumasa kaniya; siya ay gumagawa ng kapayapaan sa kaniyang mga mataas na dako."
+      },
+      {
+        "num": 3,
+        "text": "May anomang bilang ba sa kaniyang mga hukbo? At doon sa hindi sinisikatan ng kaniyang liwanag?"
+      },
+      {
+        "num": 4,
+        "text": "Paano ngang makapagiging ganap ang tao sa AMA? O paanong magiging malinis siya na ipinanganak ng isang babae."
+      },
+      {
+        "num": 5,
+        "text": "Narito, pati ng buwan ay walang liwanag, at ang mga bituin ay hindi dalisay sa kaniyang paningin:"
+      },
+      {
+        "num": 6,
+        "text": "Gaano pa nga kaliit ang tao, na isang uod! At ang anak ng tao, na isang uod!"
+      }
+    ],
+    "26": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sumagot si Iyob, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Paano mong tinulungan siya na walang kapangyarihan! Paano mong iniligtas ang kamay na walang lakas!"
+      },
+      {
+        "num": 3,
+        "text": "Paano mong pinayuhan siya na walang karunungan, at saganang ipinahayag mo ang mabuting kaalaman!"
+      },
+      {
+        "num": 4,
+        "text": "Kanino mo binigkas ang mga salita? At kanino ang puso na lumabas sa iyo?"
+      },
+      {
+        "num": 5,
+        "text": "Ang mga patay ay naghihintay - sa ilalim ng tubig, at ang mga nananahan doon."
+      },
+      {
+        "num": 6,
+        "text": "Ang Sheol ay hubad sa harap ng Elohim, at ang Abaddon ay walang takip."
+      },
+      {
+        "num": 7,
+        "text": "Kaniyang iniuunat ang hilagaan sa pagitang walang laman, at ibinibitin ang lupa sa wala."
+      },
+      {
+        "num": 8,
+        "text": "Kaniyang itinatali ang tubig sa kaniyang masinsing alapaap; at ang alapaap ay hindi nahahapak sa ilalim nila."
+      },
+      {
+        "num": 9,
+        "text": "Kaniyang tinatakpan ang ibabaw ng kaniyang upuan, at iniladlad ang kaniyang mga alapaap sa ibabaw niyaon."
+      },
+      {
+        "num": 10,
+        "text": "Siya'y gumuguhit ng isang hangganan sa ibabaw ng tubig, hanggang sa pinagsasalikupan ng liwanag at kadiliman."
+      },
+      {
+        "num": 11,
+        "text": "Ang mga haligi ng langit ay nanginginig. At natitigilan sa kaniyang saway."
+      },
+      {
+        "num": 12,
+        "text": "Kaniyang pinapag-iinalon ang dagat ng kaniyang kapangyarihan, at sa kaniyang kaalaman ay sinasaktan niya ang Rahab."
+      },
+      {
+        "num": 13,
+        "text": "Sa pamamagitan ng kaniyang Espiritu ay ginayakan niya ang langit; sinalikop ng kaniyang mga kamay ang maliksing ahas."
+      },
+      {
+        "num": 14,
+        "text": "Narito, ang mga ito ay mga gilid lamang ng kaniyang mga daan: at pagkarahan ng bulong na ating naririnig sa kaniya! Nguni't sinong makakaunawa ng kulog ng kaniyang kapangyarihan?"
+      }
+    ],
+    "27": [
+      {
+        "num": 1,
+        "text": "At muling sinambit ni Iyob ang kaniyang talinhaga, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Buhay ang AMA, na siyang nag-alis ng aking katuwiran, at ang Makapangyarihan sa lahat na siyang nagpapanglaw ng aking kaluluwa;"
+      },
+      {
+        "num": 3,
+        "text": "Sapagka't ang aking buhay ay buo pa sa akin, at ang espiritu ng AMA ay nasa butas ng aking ilong;"
+      },
+      {
+        "num": 4,
+        "text": "Tunay na ang aking mga labi ay hindi magsasalita ng kalikuan, ni ang aking dila man ay magsasaysay ng karayaan."
+      },
+      {
+        "num": 5,
+        "text": "Malayo nawa sa aking kayo'y ariin kong ganap: Hanggang sa ako'y mamatay ay hindi ko aalisin sa akin ang aking pagtatapat."
+      },
+      {
+        "num": 6,
+        "text": "Ang aking katuwiran ay aking pinanghahawakan at hindi ko bibitiwan: hindi ako aalipustain ng aking puso habang ako'y buhay."
+      },
+      {
+        "num": 7,
+        "text": "Ang aking kaaway ay maging gaya nawa ng masama, at ang bumangon laban sa akin ay maging gaya nawa ng liko."
+      },
+      {
+        "num": 8,
+        "text": "Sapagka't ano ang pag-asa ng di banal, bagaman siya'y makikinabang sa kaniya, kapag kinuha ng Elohim ang kaniyang kaluluwa?"
+      },
+      {
+        "num": 9,
+        "text": "Didinggin ba ng AMA ang kaniyang iyak, kapag ang kabagabagan ay dumating sa kaniya?"
+      },
+      {
+        "num": 10,
+        "text": "Makapagsasaya ba siya sa Maylalang sa lahat, at tatawag sa Elohim sa lahat ng mga panahon?"
+      },
+      {
+        "num": 11,
+        "text": "Aking tuturuan kayo ng tungkol sa kamay ng Elohim; ang nasa Makapangyarihan sa lahat ay hindi ko ililihim."
+      },
+      {
+        "num": 12,
+        "text": "Narito, kayong lahat ay nakakita; bakit nga kayo ay lubos na nawalan ng kabuluhan?"
+      },
+      {
+        "num": 13,
+        "text": "Ito ang bahagi ng masamang tao sa AMA, at ang mana ng mga mamimighati, na kanilang tinatanggap sa Makapangyarihan sa lahat."
+      },
+      {
+        "num": 14,
+        "text": "Kung ang kaniyang mga anak ay dumami, ay para sa tabak, at ang kaniyang lahi ay hindi mabubusog ng tinapay."
+      },
+      {
+        "num": 15,
+        "text": "Yaong nangaiwan sa kaniya ay malilibing sa kamatayan, at ang kaniyang mga bao ay hindi magsisipanaghoy."
+      },
+      {
+        "num": 16,
+        "text": "Bagaman siya'y magbunton ng pilak na parang alabok, at maghahanda ng bihisan na parang putik;"
+      },
+      {
+        "num": 17,
+        "text": "Maihahanda niya, nguni't ang ganap ang magsusuot niyaon. At babahagihin ng walang sala ang pilak."
+      },
+      {
+        "num": 18,
+        "text": "Siya'y nagtatayo ng kaniyang bahay na gaya ng tanga, at gaya ng bantayan na ginagawa ng bantay."
+      },
+      {
+        "num": 19,
+        "text": "Siya'y nahihigang mayaman, nguni't hindi pagbangon niya; kaniyang ididilat ang kaniyang mga mata, nguni't wala na siya."
+      },
+      {
+        "num": 20,
+        "text": "Mga kakilabutan ang tumatabon sa kaniya na gaya ng tubig; bagyo ang umaagaw sa kaniya sa kinagabihan,"
+      },
+      {
+        "num": 21,
+        "text": "Tinangay siya ng hanging silanganan, at siya ay wala na; at pinapalis siya sa kaniyang kinaroroonang dako."
+      },
+      {
+        "num": 22,
+        "text": "Sapagka't itatakuwil siya ng AMA, at hindi magpapatawad; siya'y magpupumilit na tumakas sa kaniyang kamay."
+      },
+      {
+        "num": 23,
+        "text": "Ipapakpak ng mga tao ang kanilang mga kamay sa kaniya. At hihiyawan siya mula sa kaniyang kinaroroonang dako."
+      }
+    ],
+    "28": [
+      {
+        "num": 1,
+        "text": "Tunay na may mina na mayroong pilak, at dako na ukol sa ginto na kanilang pinagdadalisayan."
+      },
+      {
+        "num": 2,
+        "text": "Bakal ay hinuhukay sa lupa, at tanso ay binububo mula sa bato."
+      },
+      {
+        "num": 3,
+        "text": "Ang tao'y naglalagay ng wakas sa kadiliman, at sumisiyasat hanggang sa kalayulayuang hangganan ng mga bato ng kadiliman at salimuot na kadiliman."
+      },
+      {
+        "num": 4,
+        "text": "Siya'y humuhukay ng malayo sa tinatahanan ng mga tao: nililimot ng paa na dumadaan nagbibitin doong malayo sa mga tao, sila'y umuugoy na paroo't parito."
+      },
+      {
+        "num": 5,
+        "text": "Tungkol sa lupa, mula rito'y nanggagaling ang tinapay: at sa ilalim ay wari tinutuklap ng apoy."
+      },
+      {
+        "num": 6,
+        "text": "Ang mga bato nito'y kinaroroonan ng mga sapiro. At ito'y may alabok na ginto."
+      },
+      {
+        "num": 7,
+        "text": "Yaong landas na walang ibong mangdadagit ay nakakaalam. Ni nakita man ng mata ng agila:"
+      },
+      {
+        "num": 8,
+        "text": "Hindi natungtungan ng mga palalong hayop, ni naraanan man ng mabangis na leon."
+      },
+      {
+        "num": 9,
+        "text": "Kaniyang inilalabas ang kaniyang kamay sa batong pingkian; binabaligtad ng mga ugat ang mga bundok."
+      },
+      {
+        "num": 10,
+        "text": "Siya'y gumagawa ng ilog sa gitna ng mga bato; at ang kaniyang mata ay nakakakita ng bawa't mahalagang bagay."
+      },
+      {
+        "num": 11,
+        "text": "Kaniyang tinatalian ang mga lagaslas upang huwag umagos; at ang bagay na nakukubli ay inililitaw niya sa liwanag."
+      },
+      {
+        "num": 12,
+        "text": "Nguni't saan mahahanap ang karunungan? At saan naroon ang dako ng pagkaunawa?"
+      },
+      {
+        "num": 13,
+        "text": "Hindi nalalaman ng tao ang halaga niyaon; ni nasusumpungan man sa lupain ng may buhay."
+      },
+      {
+        "num": 14,
+        "text": "Sinasabi ng kalaliman. Wala sa akin: at sinasabi ng dagat: Hindi sumasaakin."
+      },
+      {
+        "num": 15,
+        "text": "Hindi mabibili ng ginto, ni matitimbangan man ng pilak ang halaga niyaon."
+      },
+      {
+        "num": 16,
+        "text": "Hindi mahahalagahan ng ginto sa Ophir, ng mahalagang onix, o ng sapiro."
+      },
+      {
+        "num": 17,
+        "text": "Ginto at salamin ay hindi maihahalintulad doon: ni maipagpapalit man sa mga hiyas na dalisay na ginto."
+      },
+      {
+        "num": 18,
+        "text": "Hindi mabibilang ang perlas o ang kristal; Oo, ang halaga ng karunungan ay higit sa mga rubi."
+      },
+      {
+        "num": 19,
+        "text": "Ang topacio sa Etiopia ay hindi maipapantay doon, ni mahahalagahan man ng dalisay na ginto."
+      },
+      {
+        "num": 20,
+        "text": "Saan nanggagaling nga ang karunungan? At saan naroon ang dako ng pagkaunawa?"
+      },
+      {
+        "num": 21,
+        "text": "Palibhasa't nakukubli sa mga mata ng lahat na may buhay, at natatago sa mga ibon sa himpapawid."
+      },
+      {
+        "num": 22,
+        "text": "Ang kapahamakan at ang kamatayan ay nagsasabi, narinig namin ng aming mga pakinig ang bulungbulungan niyaon."
+      },
+      {
+        "num": 23,
+        "text": "Nauunawa ng AMA ang daan niyaon, at nalalaman niya ang dako niyaon."
+      },
+      {
+        "num": 24,
+        "text": "Sapagka't tumitingin siya hanggang sa mga wakas ng lupa, at nakikita ang silong ng buong langit;"
+      },
+      {
+        "num": 25,
+        "text": "Upang bigyan ng timbang ang hangin; Oo, kaniyang tinatakal ang tubig sa takalan."
+      },
+      {
+        "num": 26,
+        "text": "Nang siya'y gumawa ng pasiya sa ulan, at ng daan sa kidlat ng kulog:"
+      },
+      {
+        "num": 27,
+        "text": "Nang magkagayo'y nakita niya ito, at inihayag; kaniyang itinatag ito, oo, at siniyasat."
+      },
+      {
+        "num": 28,
+        "text": "At sa tao ay sinabi niya, Narito, ang pagkatakot sa AMA ay siyang karunungan; at ang paghiwalay sa kasamaan ay pagkaunawa."
+      }
+    ],
+    "29": [
+      {
+        "num": 1,
+        "text": "At muling ipinagbadya ni Iyob ang kaniyang talinghaga, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Oh ako nawa'y napasa mga araw noong dakong una, gaya noong mga kaarawan ng binabantayan ako ng AMA;"
+      },
+      {
+        "num": 3,
+        "text": "Nang ang kaniyang ilawan ay sumisilang sa aking ulo at sa pamamagitan ng kaniyang liwanag ay lumalakad ako sa kadiliman;"
+      },
+      {
+        "num": 4,
+        "text": "Gaya noong ako'y nasa kabutihan ng aking mga kaarawan, noong ang pagkasi ng AMA ay nasa aking tolda;"
+      },
+      {
+        "num": 5,
+        "text": "Noong ang Makapangyarihan sa lahat ay sumasaakin pa, at ang aking mga anak ay nasa palibot ko;"
+      },
+      {
+        "num": 6,
+        "text": "Noong ang aking mga hakbang ay naliligo sa gatas, at ang bato ay nagbubuhos para sa akin ng mga ilog ng langis!"
+      },
+      {
+        "num": 7,
+        "text": "Noong ako'y lumalabas sa pintuang-bayan hanggang sa bayan, noong aking inihahanda ang aking upuan sa lansangan."
+      },
+      {
+        "num": 8,
+        "text": "Nakikita ako ng mga binata, at nagsisipagkubli, at ang mga matanda ay nagsisitindig at nagsisitayo:"
+      },
+      {
+        "num": 9,
+        "text": "Ang mga pangulo ay nagpipigil ng pangu-ngusap, at inilalagay ang kanilang kamay sa kanilang bibig;"
+      },
+      {
+        "num": 10,
+        "text": "Ang tinig ng mga mahal na tao ay tumatahimik, at ang kanilang dila ay dumidikit sa ngalangala ng kanilang bibig."
+      },
+      {
+        "num": 11,
+        "text": "Sapagka't kapag naririnig ako ng pakinig, ay pinagpapala nga ako; at kapag nakikita ako ng mata, ay sumasaksi sa akin:"
+      },
+      {
+        "num": 12,
+        "text": "Sapagka't aking iniligtas ang dukha na dumadaing, ang ulila rin naman na walang tumutulong sa kaniya."
+      },
+      {
+        "num": 13,
+        "text": "Ang basbas ng malapit nang mamamatay ay sumaakin: at aking pinaawit sa kagalakan ang puso ng babaing bao."
+      },
+      {
+        "num": 14,
+        "text": "Ako'y nagbibihis ng katuwiran, at sinusuutan niya ako: ang aking kaganapan ay parang isang balabal at isang korona."
+      },
+      {
+        "num": 15,
+        "text": "Ako'y naging mga mata sa bulag, at naging mga paa ako sa pilay."
+      },
+      {
+        "num": 16,
+        "text": "Ako'y naging ama sa mapagkailangan; at ang usap niyaong hindi ko nakikilala ay aking sinisiyasat."
+      },
+      {
+        "num": 17,
+        "text": "At aking binali ang mga pangil ng liko, at inagaw ko ang huli sa kaniyang mga ngipin."
+      },
+      {
+        "num": 18,
+        "text": "Nang magkagayon ay sinabi ko, ako'y magiging tuwid na parang tambo, Ililigtas ko ang mga dukha, at aking pararamihin ang aking mga kaarawan na gaya ng buhangin sa dagat:"
+      },
+      {
+        "num": 19,
+        "text": "Ang aking ugat ay nakalat sa tubig, at ang hamog ay lumalapag buong gabi sa aking sanga:"
+      },
+      {
+        "num": 20,
+        "text": "Ang aking kaluwalhatian ay sariwa sa akin, at ang aking busog ay nababago sa aking kamay."
+      },
+      {
+        "num": 21,
+        "text": "Sa akin ay nakikinig ang mga tao, at naghihintay, at nagsisitahimik sa aking payo."
+      },
+      {
+        "num": 22,
+        "text": "Pagkatapos ng aking mga salita ay hindi na sila nagsasalita pa uli; at ang aking pananalita ay tumutulo sa kanila."
+      },
+      {
+        "num": 23,
+        "text": "At kanilang hinihintay ako, na gaya ng paghihintay sa ulan, at kanilang ibinubuka ang kanilang bibig na maluwang na gaya sa huling ulan."
+      },
+      {
+        "num": 24,
+        "text": "Ako'y ngumingiti sa kanila kapag sila'y hindi nanganiniwala: at ang liwanag ng aking mukha ay hindi nila hinahamak."
+      },
+      {
+        "num": 25,
+        "text": "Ako'y namimili sa kanilang daan, at nauupong gaya ng puno, at tumatahang gaya ng hari sa hukbo, gaya ng nang-aaliw sa nananangis."
+      }
+    ],
+    "30": [
+      {
+        "num": 1,
+        "text": "Nguni't silang bata kaysa akin ay nagsisitawa sa akin, na ang mga magulang ay di ko ibig na malagay na kasama ng mga aso ng aking kawan."
+      },
+      {
+        "num": 2,
+        "text": "Oo, ang kalakasan ng kanilang kamay, sa ano ko mapapakinabangan? Mga taong ang kalusugan ng gulang ay lumipas na."
+      },
+      {
+        "num": 3,
+        "text": "Sila'y lata sa pangangailangan at sa kagutom; kanilang nginangata ang tuyong lupa, sa kadiliman ng kasalatan at kapahamakan."
+      },
+      {
+        "num": 4,
+        "text": "Sila'y nagsisibunot ng mga usbong sa tabi ng mabababang punong kahoy; at ang mga ugat ng tambo ay siyang kanilang pinakapagkain."
+      },
+      {
+        "num": 5,
+        "text": "Sila'y pinalayas mula sa gitna ng mga tao; sila'y sumisigaw sa likuran nila, na gaya ng sa likuran ng isang magnanakaw."
+      },
+      {
+        "num": 6,
+        "text": "Upang sila'y magsitahan sa nakatatakot na mga libis, sa mga puwang ng lupa, at ng mga bato."
+      },
+      {
+        "num": 7,
+        "text": "Sa gitna ng mabababang punong kahoy ay nagsisiangal; sa ilalim ng mga tinikan ay nangapipisan."
+      },
+      {
+        "num": 8,
+        "text": "Mga anak ng mga mangmang, oo, mga anak ng mga walang puring tao; sila'y mga itinapon mula sa lupain."
+      },
+      {
+        "num": 9,
+        "text": "At ngayon ay naging kantahin nila ako, Oo, ako'y kasabihan sa kanila."
+      },
+      {
+        "num": 10,
+        "text": "Kanilang kinayayamutan ako, nilalayuan nila ako, at hindi sila nagpipigil ng paglura sa aking mukha."
+      },
+      {
+        "num": 11,
+        "text": "Sapagka't kinalag niya ang kaniyang panali, at pinighati ako, at kanilang inalis ang paningkaw sa harap ko."
+      },
+      {
+        "num": 12,
+        "text": "Sa aking kanan ay tumatayo ang mangmang; itinutulak nila ang aking mga paa, at kanilang pinapatag laban sa akin ang kanilang mga paraan ng paghamak."
+      },
+      {
+        "num": 13,
+        "text": "Kanilang sinisira ang aking landas, ang aking kapahamakan ay kanilang isinusulong, mga taong walang tumulong."
+      },
+      {
+        "num": 14,
+        "text": "Tila dumarating sila sa isang maluwang na pasukan: sa gitna ng kasiraan ay nagsisigulong sila."
+      },
+      {
+        "num": 15,
+        "text": "Mga kakilabutan ay dumadagan sa akin, kanilang tinatangay ang aking karangalan na gaya ng hangin; at ang aking kaginhawahan ay napaparam na parang alapaap."
+      },
+      {
+        "num": 16,
+        "text": "At ngayo'y nanglulupaypay ang aking kaluluwa sa loob ko; mga kaarawan ng pagkapighati ay humawak sa akin."
+      },
+      {
+        "num": 17,
+        "text": "Sa gabi ay kumikirot ang aking mga buto, at ang mga kirot na nagpapahirap sa akin ay hindi nagpapahinga."
+      },
+      {
+        "num": 18,
+        "text": "Sa matinding karahasan ng aking sakit ay nagiging katuwa ang aking suot: tumatali sa akin sa palibot na gaya ng leeg ng aking damit."
+      },
+      {
+        "num": 19,
+        "text": "Inihahagis niya ako sa banlik, at ako'y naging parang alabok at mga abo."
+      },
+      {
+        "num": 20,
+        "text": "Ako'y dumadaing sa iyo, at hindi mo ako sinasagot: ako'y tumatayo, at minamasdan mo ako."
+      },
+      {
+        "num": 21,
+        "text": "Ikaw ay naging mabagsik sa akin: sa pamamagitan ng kapangyarihan ng iyong kamay ay hinahabol mo ako."
+      },
+      {
+        "num": 22,
+        "text": "Itinataas mo ako sa hangin, pinasasakay mo ako roon; at tinutunaw mo ako sa bagyo."
+      },
+      {
+        "num": 23,
+        "text": "Sapagka't talastas ko na iyong dadalhin ako sa kamatayan, at sa bahay na takda sa lahat na may buhay."
+      },
+      {
+        "num": 24,
+        "text": "Gayon man ang isa ay di ba nag-uunat ng kamay sa kaniyang pagkahulog? O sa kaniyang kasakunaan kung kaya sisigaw ng tulong?"
+      },
+      {
+        "num": 25,
+        "text": "Hindi ko ba iniyakan yaong nasa kabagabagan? Hindi ba ang aking kaluluwa ay nakikidamay sa mapagkailangan?"
+      },
+      {
+        "num": 26,
+        "text": "Kapag ako'y humahanap ng mabuti, ang kasamaan nga ang dumarating: at kapag ako ay naghihintay ng liwanag ay kadiliman ang dumarating."
+      },
+      {
+        "num": 27,
+        "text": "Ang aking puso'y nababagabag at walang pahinga; mga araw ng kapighatian ay dumating sa akin."
+      },
+      {
+        "num": 28,
+        "text": "Ako'y yumayaong tumatangis na walang araw; ako'y tumatayo sa kapulungan at humihinging tulong."
+      },
+      {
+        "num": 29,
+        "text": "Ako'y kapatid ng mga asong gubat, at mga kasama ng mga kuwago."
+      },
+      {
+        "num": 30,
+        "text": "Ang aking balat ay maitim, at natutuklap, at ang aking mga buto ay nagpapaltos."
+      },
+      {
+        "num": 31,
+        "text": "Kaya't ang aking alpa ay naging panangis, at ang aking plauta ay naging tinig ng umiiyak."
+      }
+    ],
+    "31": [
+      {
+        "num": 1,
+        "text": "Ako'y nakipagtipan sa aking mga mata; paano nga akong titingin sa isang dalaga?"
+      },
+      {
+        "num": 2,
+        "text": "Sapagka't ano ang bahagi sa ganang akin sa Elohim mula sa itaas, at ang mana sa Makapangyarihan sa lahat mula sa kaitaasan?"
+      },
+      {
+        "num": 3,
+        "text": "Hindi ba kasakunaan sa liko, at kasawiang palad sa mga manggagawa ng kasamaan?"
+      },
+      {
+        "num": 4,
+        "text": "Hindi ba niya nakikita ang aking mga lakad, at binibilang ang lahat ng aking mga hakbang?"
+      },
+      {
+        "num": 5,
+        "text": "Kung ako'y lumakad na walang kabuluhan, at ang aking paa ay nagmadali sa pagdaraya;"
+      },
+      {
+        "num": 6,
+        "text": "Timbangin ako sa matuwid na timbangan, upang mabatid ng Elohim ang aking katapatan;"
+      },
+      {
+        "num": 7,
+        "text": "Kung ang aking hakbang ay lumiko sa daan, at ang aking puso ay lumakad ayon sa aking mga mata, at kung ang anomang dungis ay kumapit sa aking mga kamay:"
+      },
+      {
+        "num": 8,
+        "text": "Kung gayo'y papaghasikin mo ako, at bayaang kanin ng iba; Oo, bunutin ang bunga ng aking bukid."
+      },
+      {
+        "num": 9,
+        "text": "Kung ang aking puso ay napadaya sa babae, at ako'y bumakay sa pintuan ng aking kapuwa:"
+      },
+      {
+        "num": 10,
+        "text": "Kung magkagayo'y iba ang ipaggiling ng aking asawa, at iba ang yumuko sa kaniya."
+      },
+      {
+        "num": 11,
+        "text": "Sapagka't iya'y isang mabigat na sala; Oo, isang kasamaan na parurusahan ng mga hukom:"
+      },
+      {
+        "num": 12,
+        "text": "Sapagka't isang apoy na namumugnaw hanggang sa pagkapahamak, at bubunutin ang lahat ng aking bunga."
+      },
+      {
+        "num": 13,
+        "text": "Kung hinamak ko ang katuwiran ng aking aliping lalake o aliping babae, nang sila'y makipagtalo sa akin:"
+      },
+      {
+        "num": 14,
+        "text": "Ano nga ang aking gagawin kapag bumabangon ang Elohim? At kapag kaniyang dinadalaw, anong isasagot ko sa kaniya?"
+      },
+      {
+        "num": 15,
+        "text": "Hindi ba siyang lumalang sa akin sa bahay-bata ang lumalang sa kaniya; at hindi ba iisa ang humugis sa atin sa bahay-bata?"
+      },
+      {
+        "num": 16,
+        "text": "Kung pinagkaitan ko ang dukha sa kanilang nasa, o pinangalumata ko ang mga mata ng babaing bao:"
+      },
+      {
+        "num": 17,
+        "text": "O kumain akong mag-isa ng aking subo, at ang ulila ay hindi kumain niyaon;"
+      },
+      {
+        "num": 18,
+        "text": "Nguni't, mula sa aking kabataan ay lumaki siyang kasama ko, na gaya ng may isang ama, at aking pinatnubayan siya mula sa bahay-bata ng aking ina;"
+      },
+      {
+        "num": 19,
+        "text": "Kung ako'y nakakita ng nangangailangan ng kasuutan, o ng mapagkailangan ng walang kumot;"
+      },
+      {
+        "num": 20,
+        "text": "Kung hindi ako pinagpala ng kaniyang mga balakang, at kung siya'y hindi nainitan ng balahibo ng aking mga tupa:"
+      },
+      {
+        "num": 21,
+        "text": "Kung binuhat ko ang aking kamay laban sa ulila, sapagka't nakita ko ang tulong sa akin sa pintuang-bayan:"
+      },
+      {
+        "num": 22,
+        "text": "Kung nagkagayo'y malaglag ang aking balikat sa abot-agawin, at ang aking kamay ay mabali ang buto."
+      },
+      {
+        "num": 23,
+        "text": "Sapagka't ang kasakunaang mula sa AMA ay kakilabutan sa akin, at dahil sa kaniyang karilagan ay wala akong magawa."
+      },
+      {
+        "num": 24,
+        "text": "Kung aking pinapaging ginto ang aking pag-asa, at sinabi ko sa dalisay na ginto, ikaw ay aking tiwala;"
+      },
+      {
+        "num": 25,
+        "text": "Kung ako'y nagalak sapagka't ang aking kayamanan ay malaki, at sapagka't ang aking kamay ay nagtamo ng marami;"
+      },
+      {
+        "num": 26,
+        "text": "Kung ako'y tumingin sa araw kapag sumisikat, o sa buwan na lumalakad sa kakinangan;"
+      },
+      {
+        "num": 27,
+        "text": "At ang aking puso ay napadayang lihim, at hinagkan ng aking bibig ang aking kamay:"
+      },
+      {
+        "num": 28,
+        "text": "Ito may isang kasamaang marapat parusahan ng mga hukom: sapagka't itinakuwil ko ang Elohim na nasa itaas."
+      },
+      {
+        "num": 29,
+        "text": "Kung ako'y nagalak sa kasakunaan niyaong nagtatanim ng loob sa akin, o nagmataas ako ng datnan siya ng kasamaan;"
+      },
+      {
+        "num": 30,
+        "text": "Oo, hindi ko tiniis ang aking bibig sa kasalanan sa paghingi ng kaniyang buhay na may sumpa;"
+      },
+      {
+        "num": 31,
+        "text": "Kung ang mga tao sa aking tolda ay hindi nagsabi, sinong makakasumpong ng isa na hindi nabusog sa kaniyang pagkain?"
+      },
+      {
+        "num": 32,
+        "text": "Ang taga-ibang lupa ay hindi tumigil sa lansangan; kundi aking ibinukas ang aking mga pinto sa manglalakbay,"
+      },
+      {
+        "num": 33,
+        "text": "Kung aking tinakpan na gaya ni Adam ang aking mga pagsalangsang, sa pagkukubli ng aking kasamaan sa aking sinapupunan;"
+      },
+      {
+        "num": 34,
+        "text": "Sapagka't aking kinatakutan ang lubhang karamihan, at pinangilabot ako ng paghamak ng mga angkan. Na anopa't ako'y tumahimik, at hindi lumabas sa pintuan?"
+      },
+      {
+        "num": 35,
+        "text": "O mano nawang may duminig sa akin! Narito ang aking tala, sagutin ako ng Makapangyarihan sa lahat; At mano nawang magkaroon ako ng sumbong na isinulat ng aking kaaway!"
+      },
+      {
+        "num": 36,
+        "text": "Tunay na aking papasanin ito sa aking balikat; aking itatali sa akin na gaya ng isang putong."
+      },
+      {
+        "num": 37,
+        "text": "Aking ipahahayag sa kaniya ang bilang ng aking mga hakbang, gaya ng isang pangulo na lalapitan ko siya."
+      },
+      {
+        "num": 38,
+        "text": "Kung ang aking lupa ay humiyaw laban sa akin, at ang mga bungkal niyaon ay umiyak na magkakasama;"
+      },
+      {
+        "num": 39,
+        "text": "Kung kumain ako ng bunga niyaon na walang bayad, o ipinahamak ko ang buhay ng mga may-ari niyaon:"
+      },
+      {
+        "num": 40,
+        "text": "Tubuan ng dawag sa halip ng trigo, at ng mga masamang damo sa halip ng sebada. Ang mga salita ni Iyob ay natapos."
+      }
+    ],
+    "32": [
+      {
+        "num": 1,
+        "text": "Sa gayo'y ang tatlong lalaking ito ay nagsitigil ng pagsagot kay Iyob, sapagka't siya'y matuwid sa kaniyang sariling paningin. 2Cor 10:12"
+      },
+      {
+        "num": 2,
+        "text": "Nang magkagayo'y nag-alab ang poot ni Eliyu, na anak ni Barachel na Bucita, na angkan ni Ram: laban kay Iyob ay nag-alab ang kaniyang poot, sapagka't siya'y nagpapanggap na ganap kaysa Elohim."
+      },
+      {
+        "num": 3,
+        "text": "Laban din naman sa kaniyang tatlong kaibigan ay nag-alab ang kaniyang poot, sapagka't sila'y hindi nakasumpong ng sagot, at gayon man ay hinatulan si Iyob."
+      },
+      {
+        "num": 4,
+        "text": "Si Eliyu nga ay naghintay upang magsalita kay Iyob, sapagka't sila'y matanda kaysa kaniya."
+      },
+      {
+        "num": 5,
+        "text": "At nang makita ni Eliyu na walang kasagutan sa bibig ng tatlong lalaking ito, ay nag-alab ang kaniyang poot."
+      },
+      {
+        "num": 6,
+        "text": "At si Eliyu na anak ni Barachel na Bucita ay sumagot at nagsabi, Ako'y bata, at kayo'y totoong matatanda; kaya't ako'y nagpigil at hindi ako nangahas magpatalastas sa inyo ng aking haka."
+      },
+      {
+        "num": 7,
+        "text": "Aking sinabi, Ang mga kaarawan ang nagsasalita, at ang karamihan ng mga taon ay magtuturo ng karunungan."
+      },
+      {
+        "num": 8,
+        "text": "Nguni't may espiritu sa tao, at ang hinga ng Makapangyarihan sa lahat ay nagbibigay sa kanila ng unawa."
+      },
+      {
+        "num": 9,
+        "text": "Hindi lahat ng dakila ay siyang pantas, ni ang matanda man ang siyang nakakaunawa ng kahatulan."
+      },
+      {
+        "num": 10,
+        "text": "Kaya't aking sinabi, Dinggin ninyo ako; akin namang ipakikilala ang aking haka."
+      },
+      {
+        "num": 11,
+        "text": "Narito, aking hinintay ang inyong mga salita, aking dininig ang inyong mga pangangatuwiran, samantalang kayo'y naghahagilap ng masasabi."
+      },
+      {
+        "num": 12,
+        "text": "Oo, aking inulinig kayo, at, narito, walang isang makahikayat kay Iyob, o sa inyo'y may makasagot sa kaniyang mga salita."
+      },
+      {
+        "num": 13,
+        "text": "Magpigil nga kayo, baka kayo'y magsabi, Kami ay nakasumpong ng karunungan; madadaig siya ng AMA, hindi ng tao;"
+      },
+      {
+        "num": 14,
+        "text": "Sapagka't hindi itinukoy ang kaniyang mga salita sa akin; ni hindi ko sasagutin siya ng inyong mga pananalita."
+      },
+      {
+        "num": 15,
+        "text": "Sila'y nalito, sila'y hindi na nagsisagot pa; Sila'y walang salitang masabi,"
+      },
+      {
+        "num": 16,
+        "text": "At ako'y naghihintay, dahil sila'y hindi nagsalita, sapagka't sila'y nagsitigil, at hindi na nagsisisagot."
+      },
+      {
+        "num": 17,
+        "text": "Ako nama'y sasagot ng ganang akin, akin namang ipakikilala ang aking haka."
+      },
+      {
+        "num": 18,
+        "text": "Sapagka't ako'y puspos ng mga salita; ang puso na sumasaloob ko ay pumipigil sa akin,"
+      },
+      {
+        "num": 19,
+        "text": "Narito, ang aking dibdib ay parang alak na walang pahingahan: parang mga bagong sisidlang-balat na handa sa pagkahapak."
+      },
+      {
+        "num": 20,
+        "text": "Ako'y magsasalita, upang ako'y maginhawahan: aking ibubuka ang aking mga labi at sasagot ako."
+      },
+      {
+        "num": 21,
+        "text": "Huwag itulot sa akin na pakundanganan ko, isinasamo ko sa inyo, ang pagkatao ninoman; ni gumamit man sa kanino man ng mga pakunwaring papuring salita."
+      },
+      {
+        "num": 22,
+        "text": "Sapagka't hindi ako marunong sumambit ng mga pakunwaring papuring salita; na kung dili ay madaling papanawin ako ng Elohim sa akin."
+      }
+    ],
+    "33": [
+      {
+        "num": 1,
+        "text": "Gayon man, Iyob, isinasamo ko sa iyo na, dinggin mo ang aking pananalita, at pakinggan mo ang lahat ng aking mga salita."
+      },
+      {
+        "num": 2,
+        "text": "Narito, ngayon ay aking ibinuka ang aking bibig; nagsalita ang aking dila sa aking bibig."
+      },
+      {
+        "num": 3,
+        "text": "Sasaysayin ng aking mga salita ang katuwiran ng aking puso; at ang nalalaman ng aking mga labi ay sasalitaing may pagtatapat."
+      },
+      {
+        "num": 4,
+        "text": "Nilalang ako ng Espiritu ng AMA, at ang hinga ng Makapangyarihan sa lahat ay nagbibigay sa akin ng buhay."
+      },
+      {
+        "num": 5,
+        "text": "Kung ikaw ay makasasagot ay sumagot ka; ayusin mo ang iyong mga salita sa harap ko, tumayo ka."
+      },
+      {
+        "num": 6,
+        "text": "Narito, ako’y sa AMA na gaya mo: ako ma’y nilalang mula rin sa putik."
+      },
+      {
+        "num": 7,
+        "text": "Narito, hindi ka tatakutin ng aking kakilabutan, ni ang aking kalakhan man ay magiging mabigat sa iyo."
+      },
+      {
+        "num": 8,
+        "text": "Tunay na ikaw ay nagsalita sa aking pakinig, at aking narinig ang tinig ng iyong mga salita, na nagsasabi,"
+      },
+      {
+        "num": 9,
+        "text": "Ako’y malinis na walang pagsalangsang; ako’y walang sala, ni may kasamaan man sa akin:"
+      },
+      {
+        "num": 10,
+        "text": "Narito, siya’y nakasumpong ng kadahilanan laban sa akin, ibinilang niya ako na pinaka-kaaway:"
+      },
+      {
+        "num": 11,
+        "text": "Inilagay niya ang aking mga paa sa mga pangawan, kaniyang pinupuna ang lahat na aking landas."
+      },
+      {
+        "num": 12,
+        "text": "Narito, ako’y sasagot sa iyo, dito’y hindi ka ganap; dahil ang Elohim ay dakila kaysa tao."
+      },
+      {
+        "num": 13,
+        "text": "Bakit ka nakikilaban sa kaniya? Sapagka’t hindi siya nagbibigay alam ng anoman sa kaniyang mga usap."
+      },
+      {
+        "num": 14,
+        "text": "Dahil ang AMA ay minsang nagsasalita, Oo, makalawa, bagaman hindi pinakikinggan ng tao."
+      },
+      {
+        "num": 15,
+        "text": "Sa isang panaginip, sa isang pangitain sa gabi, kapag ang mahimbing na pagkakatulog ay nahuhulog sa mga tao, sa mga natutulog sa higaan;"
+      },
+      {
+        "num": 16,
+        "text": "Kung magkagayo’y ibinubukas niya ang mga pakinig ng mga tao, at itinatatak ang kanilang turo."
+      },
+      {
+        "num": 17,
+        "text": "Upang ihiwalay ang tao sa kaniyang panukala, at ikubli ang kapalaluan sa tao;"
+      },
+      {
+        "num": 18,
+        "text": "Kaniyang pinipigil ang kaniyang kaluluwa sa pagbulusok sa hukay, at ang kaniyang buhay sa pagkamatay sa pamamagitan ng tabak."
+      },
+      {
+        "num": 19,
+        "text": "Siya nama’y pinarurusahan ng sakit sa kaniyang higaan, at ng palaging kirot sa kaniyang mga buto:"
+      },
+      {
+        "num": 20,
+        "text": "Na anopa’t kinayayamutan ng kaniyang buhay ang tinapay, at ng kaniyang kaluluwa ang pagkaing pinakamasarap,"
+      },
+      {
+        "num": 21,
+        "text": "Ang kaniyang laman ay natutunaw, na hindi makita; at ang kaniyang mga buto na hindi nakita ay nakalitaw."
+      },
+      {
+        "num": 22,
+        "text": "Oo, ang kaniyang kaluluwa ay nalalapit sa hukay, at ang kaniyang buhay sa mga mangwawasak."
+      },
+      {
+        "num": 23,
+        "text": "Kung doroong kasama niya ang isang anghel, isang tagapag-paaninaw, na isa sa gitna ng isang libo, upang ipakilala sa tao kung ano ang matuwid sa kaniya;"
+      },
+      {
+        "num": 24,
+        "text": "Kung magkagayo’y binibiyayaan niya siya at nagsasabi, Iligtas mo siya sa pagbaba sa hukay, ako’y nakasumpong ng katubusan."
+      },
+      {
+        "num": 25,
+        "text": "Ang kaniyang laman ay magiging sariwa kaysa laman ng isang bata; siya’y bumabalik sa mga kaarawan ng kaniyang kabataan:"
+      },
+      {
+        "num": 26,
+        "text": "Siya’y dumadalangin sa AMA, at nililingap niya siya: na anopa’t kaniyang nakikita ang kaniyang mukha na may kagalakan: at kaniyang isinasatao ang kaniyang katuwiran."
+      },
+      {
+        "num": 27,
+        "text": "Siya’y umaawit sa harap ng mga tao, at nagsasabi, Ako’y nagkasala, at sumira ng matuwid, at hindi ko napakinabangan:"
+      },
+      {
+        "num": 28,
+        "text": "Kaniyang tinubos ang aking kaluluwa sa pagyao sa hukay, at ang aking buhay ay makakakita ng liwanag."
+      },
+      {
+        "num": 29,
+        "text": "Narito, ang lahat ng mga bagay na ito ay gawa ng AMA, makalawa, oo makaitlo sa tao."
+      },
+      {
+        "num": 30,
+        "text": "Upang ibalik ang kaniyang kaluluwa mula sa hukay, upang siya’y maliwanagan ng liwanag ng buhay."
+      },
+      {
+        "num": 31,
+        "text": "Pansinin mong mabuti, Oh Iyob, dinggin mo ako: tumahimik ka, at ako ay magsasalita."
+      },
+      {
+        "num": 32,
+        "text": "Kung ikaw ay may anomang bagay na sasabihin, sagutin mo ako: ikaw ay magsalita, sapagka’t ibig kong ariin kang ganap."
+      },
+      {
+        "num": 33,
+        "text": "Kung hindi, dinggin mo ako: tumahimik ka, at tuturuan kita ng karunungan."
+      }
+    ],
+    "34": [
+      {
+        "num": 1,
+        "text": "Bukod dito'y sumagot si Eliyu, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Dinggin ninyo ang aking mga salita, kayong mga pantas; at pakinggan ninyo ako, ninyong may kaalaman."
+      },
+      {
+        "num": 3,
+        "text": "Dahil ang pakinig ay tumitikim ng mga salita, gaya ng ngala-ngala na lumalasa ng pagkain."
+      },
+      {
+        "num": 4,
+        "text": "Ating piliin sa ganang atin ang matuwid: ating alamin sa gitna natin kung ano ang mabuti."
+      },
+      {
+        "num": 5,
+        "text": "Sapagka't sinabi ni Iyob, Ako'y matuwid, at inalis ng AMA ang aking katuwiran:"
+      },
+      {
+        "num": 6,
+        "text": "Gayon ma'y akong may matuwid ay nabilang akong sinungaling; at ang aking sugat ay walang kagamutan, bagaman ako'y walang pagsalangsang."
+      },
+      {
+        "num": 7,
+        "text": "Sinong tao ang gaya ni Iyob, na umiinom ng kabagabagan na tila tubig,"
+      },
+      {
+        "num": 8,
+        "text": "Na yumayaon na kasama ng mga manggagawa ng kasamaan, at lumalakad na kasama ng mga masamang tao?"
+      },
+      {
+        "num": 9,
+        "text": "Dahil kaniyang sinabi, Walang napapakinabang ang tao na siya'y malugod sa AMA."
+      },
+      {
+        "num": 10,
+        "text": "Kaya't dinggin ninyo ako, ninyong mga lalaking may unawa: malayo nawa sa AMA na siya'y gumawa ng masama; at sa Maylalang sa lahat, na siya'y magkamit ng kasamaan."
+      },
+      {
+        "num": 11,
+        "text": "Sapagka't ang gawa ng tao ay tutuusin niya sa kaniya, at ipatatagpo sa bawa't tao ang ayon sa kaniyang mga lakad."
+      },
+      {
+        "num": 12,
+        "text": "Oo, sa katotohanan, ang Elohim ay hindi gagawa ng kasamaan, ni ang Maylalang sa lahat ay sisira ng kahatulan."
+      },
+      {
+        "num": 13,
+        "text": "Sinong nagbigay sa kaniya ng bilin sa lupa? O sinong nag-ayos ng buong sanglibutan?"
+      },
+      {
+        "num": 14,
+        "text": "Kung kaniyang ilagak ang kaniyang puso sa tao, kung kaniyang pisanin sa kaniyang sarili ang kaniyang Espiritu at ang kaniyang hininga;"
+      },
+      {
+        "num": 15,
+        "text": "Lahat ng laman ay mamamatay na magkakasama, at ang tao ay mababalik uli sa alabok."
+      },
+      {
+        "num": 16,
+        "text": "Kung ngayon ay mayroon kang unawa ay dinggin mo ito: Dinggin mo ang tinig ng aking mga salita."
+      },
+      {
+        "num": 17,
+        "text": "Mamamahala ba ang nagtatanim sa katuwiran? At iyo bang parurusahan siyang ganap at may kaya?"
+      },
+      {
+        "num": 18,
+        "text": "Siya na nagsabi sa isang hari: ikaw ay hamak? O sa mga mahal na tao: Kayo'y masasama?"
+      },
+      {
+        "num": 19,
+        "text": "Na hindi gumagalang sa mga pagkatao ng mga pangulo, ni nagpakundangan man sa mayaman ng higit kaysa mahirap; sapagka't silang lahat ay gawa ng kaniyang mga kamay."
+      },
+      {
+        "num": 20,
+        "text": "Sa isang sangdali ay namamatay sila, kahit sa hating gabi; ang bayan ay inuuga at nawawala, at inaalis ang may kaya ng wala man lamang kamay."
+      },
+      {
+        "num": 21,
+        "text": "Sapagka't ang kaniyang mga mata ay nasa lakad ng tao, at nakikita niya ang lahat niyang pagyaon."
+      },
+      {
+        "num": 22,
+        "text": "Walang kadiliman, ni makapal man na pangungulimlim, na mapagtataguan ng mga manggagawa ng kasamaan."
+      },
+      {
+        "num": 23,
+        "text": "Sapagka't hindi na niya pakukundanganan ang tao, upang siya'y humarap sa AMA sa kahatulan."
+      },
+      {
+        "num": 24,
+        "text": "Kaniyang niluluray ang mga marangal tao ng mga paraang di masayod, at naglalagay ng mga iba na kahalili nila."
+      },
+      {
+        "num": 25,
+        "text": "Kaya't siya'y kumukuhang kaalaman sa kanilang mga gawa; at kaniyang binabaligtad sila sa gabi, na anopa't sila'y nalilipol."
+      },
+      {
+        "num": 26,
+        "text": "Kaniyang hinahampas sila na parang masasamang tao sa hayag na paningin ng mga iba,"
+      },
+      {
+        "num": 27,
+        "text": "Sapagka't sila'y nagsilihis ng pagsunod sa kaniya, at hindi binulay ang anoman sa kaniyang mga lakad:"
+      },
+      {
+        "num": 28,
+        "text": "Na anopa't kaniyang pinadating ang daing ng dukha sa kaniya, at dininig niya ang daing ng napipighati."
+      },
+      {
+        "num": 29,
+        "text": "Kapag siya'y nagbibigay ng katahimikan, sino ngang makahahatol? At kapag kaniyang ikinukubli ang kaniyang mukha, sinong makakakita sa kaniya? Maging gawin sa isang bansa, o sa isang tao:"
+      },
+      {
+        "num": 30,
+        "text": "Upang ang taong di banal ay huwag maghari, upang huwag maging silo sa bayan."
+      },
+      {
+        "num": 31,
+        "text": "Sapagka't may nagsabi ba sa Elohim: Aking tinitiis ang parusa, hindi na ako magkakasala pa:"
+      },
+      {
+        "num": 32,
+        "text": "Yaong hindi ko nakikita ay ituro mo sa akin: kung ako'y nakagawa ng kasamaan hindi ko na ito gagawin pa?"
+      },
+      {
+        "num": 33,
+        "text": "Mangyayari pa ba ang kaniyang ganti na gaya ng iyong ibig na iyong tinatanggihan? Sapagka't ikaw ang marapat pumili at hindi ako: kaya't salitain mo kung ano ang iyong nalalaman."
+      },
+      {
+        "num": 34,
+        "text": "Mga taong may unawa ay magsasabi sa akin, Oo, bawa't pantas na taong nakakarinig sa akin:"
+      },
+      {
+        "num": 35,
+        "text": "Si Iyob ay nagsasalita ng walang kaalaman. At ang kaniyang mga salita ay walang karunungan."
+      },
+      {
+        "num": 36,
+        "text": "Si Iyob nawa'y subukin hanggang sa wakas, dahil ang kaniyang sagot ay gaya ng mga masamang tao."
+      },
+      {
+        "num": 37,
+        "text": "Dahil siya'y nagdadagdag ng panghihimagsik sa kaniyang kasalanan, kaniyang pinagagalaw ang kaniyang mga kamay sa gitna natin, at pinararami ang kaniyang mga salita laban sa Elohim."
+      }
+    ],
+    "35": [
+      {
+        "num": 1,
+        "text": "Bukod dito'y sumagot si Eliyu, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Iniisip mo bang ito'y matuwid? O sinasabi mong: Ang aking katuwiran ay higit kaysa Elohim,"
+      },
+      {
+        "num": 3,
+        "text": "Na iyong sinasabi, Anong pakinabang ang tatamuhin mo? At, anong pakinabang ang tataglayin kong higit kung ako'y nagkasala?"
+      },
+      {
+        "num": 4,
+        "text": "Sasagutin kita, at ang iyong mga kasama mo."
+      },
+      {
+        "num": 5,
+        "text": "Tumingala ka sa mga langit at iyong tingnan; at masdan ang mga alapaap na lalong mataas kaysa iyo."
+      },
+      {
+        "num": 6,
+        "text": "Kung ikaw ay nagkasala, anong iyong ginagawa laban sa kaniya? At kung ang iyong mga pagsalangsang ay dumami, anong iyong ginagawa sa kaniya?"
+      },
+      {
+        "num": 7,
+        "text": "Kung ikaw ay matuwid anong ibinibigay mo sa kaniya? O anong tinatanggap niya sa iyong kamay?"
+      },
+      {
+        "num": 8,
+        "text": "Ang iyong kasamaan ay makapagpapahamak sa iyong kapuwa; at ang iyong katuwiran ay mapapakinabangan sa anak ng tao."
+      },
+      {
+        "num": 9,
+        "text": "Dahil sa karamihan ng mga kapighatian, sila'y humihiyaw: sila'y humihingi ng tulong dahil sa kamay ng makapangyarihan."
+      },
+      {
+        "num": 10,
+        "text": "Nguni't walang nagsasabing, Saan nandoon ang AMA na Elohim sa akin, na siyang nagbibigay ng awit kung gabi;"
+      },
+      {
+        "num": 11,
+        "text": "Na siyang nagtuturo sa atin ng higit kaysa mga hayop sa lupa. At ginagawa tayong lalong pantas kaysa mga ibon sa himpapawid?"
+      },
+      {
+        "num": 12,
+        "text": "Doo'y tumatawag sila, nguni't walang sumasagot, dahil sa kapalaluan ng mga masamang tao."
+      },
+      {
+        "num": 13,
+        "text": "Tunay na hindi didinggin ng Elohim ang walang kabuluhan, ni pakukundanganan man ito ng Makapangyarihan sa lahat."
+      },
+      {
+        "num": 14,
+        "text": "Gaano pa kaliit kung iyong sinasabing hindi mo nakikita siya. Ang usap ay nasa harap niya, at iyong hinihintay siya!"
+      },
+      {
+        "num": 15,
+        "text": "Nguni't ngayon sapagka't hindi niya dinalaw sa kaniyang galit, ni ginunita mang maigi;"
+      },
+      {
+        "num": 16,
+        "text": "Kaya't ibinubuka ni Iyob ang kaniyang bibig sa walang kabuluhan; siya'y maraming mga salita na walang kaalaman."
+      }
+    ],
+    "36": [
+      {
+        "num": 1,
+        "text": "Si Eliyu rin naman ay nagpatuloy at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Pagdalitaan mo akong sandali, at aking ipaki-kilala sa iyo; sapagka't mayroon pa akong masasalita sa pagsasanggalang sa Elohim."
+      },
+      {
+        "num": 3,
+        "text": "Dadalhin ko ang aking kaalaman mula sa malayo, at aking itutungkol ang katuwiran sa Elohim sa akin."
+      },
+      {
+        "num": 4,
+        "text": "Sapagka't tunay na ang aking mga salita ay hindi kabulaanan: Siyang sakdal sa kaalaman ay sumasaiyo."
+      },
+      {
+        "num": 5,
+        "text": "Narito ang Elohim ay makapangyarihan, at hindi humahamak sa kanino man; siya'y makapangyarihan sa lakas ng unawa."
+      },
+      {
+        "num": 6,
+        "text": "Hindi niya pinanatili ang buhay ng masama: nguni't nagbibigay ng matuwid sa napipighati."
+      },
+      {
+        "num": 7,
+        "text": "Hindi niya inihihiwalay ang kaniyang mga mata sa matuwid: kundi kasama ng mga hari sa upuan, kaniyang itinatatag sila magpakailan man, at sila'y natataas."
+      },
+      {
+        "num": 8,
+        "text": "At kung sila'y magagapos, at mapipigil sa mga panali ng kapighatian;"
+      },
+      {
+        "num": 9,
+        "text": "Itinuturo nga niya sa kanila ang kanilang gawa, at ang kanilang mga pagsalangsang na kanilang pinalalo."
+      },
+      {
+        "num": 10,
+        "text": "Ibinubuka rin naman niya ang kanilang pakinig sa turo, at iniuutos na sila'y magsihiwalay sa kasamaan."
+      },
+      {
+        "num": 11,
+        "text": "Kung sila'y makinig at maglingkod sa kaniya, kanilang gugugulin ang kanilang mga kaarawan sa kaginhawahan, at ang kanilang mga taon sa kasayahan."
+      },
+      {
+        "num": 12,
+        "text": "Nguni't kung hindi sila makinig, sila'y mamatay sa pamamagitan ng tabak, at sila'y mamatay na walang kaalaman."
+      },
+      {
+        "num": 13,
+        "text": "Nguni't ang di banal sa puso ay nagbubunton ng galit: hindi sila humihiyaw ng saklolo kapag tinatalian niya sila."
+      },
+      {
+        "num": 14,
+        "text": "Sila'y namamatay sa kabataan, at ang kanilang buhay ay napapahamak sa gitna ng masama."
+      },
+      {
+        "num": 15,
+        "text": "Inililigtas niya ang mga dukha sa kanilang pagkapighati, at ibinubuka ang kanilang mga pakinig sa pagkapighati."
+      },
+      {
+        "num": 16,
+        "text": "Oo, hahanguin ka niya mula sa kagipitan, hanggang sa luwal na dako na walang kagipitan; at ang malalagay sa iyong dulang ay mapupuno ng katabaan."
+      },
+      {
+        "num": 17,
+        "text": "Nguni't ikaw ay puspos ng kahatulan ng masama: kahatulan at kaganapan ang dumating sa iyo."
+      },
+      {
+        "num": 18,
+        "text": "Dahil may poot, mag-ingat ka baka ikaw ay iligaw ng iyong kasiyahan; ni mailigaw ka man ng kalakhan ng katubusan."
+      },
+      {
+        "num": 19,
+        "text": "Mapapaari ba ang iyong sigaw na ikaw ay hindi mapapasa kapanglawan, O ang madlang lakas man ng iyong kalakasan?"
+      },
+      {
+        "num": 20,
+        "text": "Huwag mong nasain ang gabi, kapag ang bayan ay nahiwalay sa kanilang bayan."
+      },
+      {
+        "num": 21,
+        "text": "Ikaw ay mag-ingat, huwag mong lingunin ang kasamaan; sapagka't ito'y iyong pinili sa halip ng kadalamhatian."
+      },
+      {
+        "num": 22,
+        "text": "Narito, ang AMA ay gumagawa ng mainam sa kaniyang kapangyarihan: sinong tagapagturo ang gaya niya?"
+      },
+      {
+        "num": 23,
+        "text": "Sinong gumuhit sa kaniya ng kaniyang daan? O sinong magsasabi, ikaw ay gumawa ng kalikuan?"
+      },
+      {
+        "num": 24,
+        "text": "Alalahanin mo na iyong dinakila ang kaniyang gawa, na inawit ng mga tao."
+      },
+      {
+        "num": 25,
+        "text": "Lahat ng mga tao'y nakakita noon; makikita ito ng tao sa malayo."
+      },
+      {
+        "num": 26,
+        "text": "Narito, ang AMA ay dakila, at hindi natin nakikilala siya; hindi masayod ang bilang ng kaniyang mga taon."
+      },
+      {
+        "num": 27,
+        "text": "Sapagka't pinailanglang niya ang mga patak ng tubig, na nagiging ulan mula sa singaw na yaon:"
+      },
+      {
+        "num": 28,
+        "text": "Na ibinubuhos ng mga langit at ipinapatak na sagana sa tao."
+      },
+      {
+        "num": 29,
+        "text": "Oo, may makakaunawa ba ng paglaganap ng mga alapaap, ng mga kulog ng kaniyang kulandong?"
+      },
+      {
+        "num": 30,
+        "text": "Narito, pinalalaganap niya ang kaniyang liwanag sa palibot niya; at inaapawan ang kalaliman ng dagat."
+      },
+      {
+        "num": 31,
+        "text": "Sapagka't sa pamamagitan ng mga ito ay hinahatulan niya ang mga bayan; siya'y nagbibigay ng pagkaing sagana."
+      },
+      {
+        "num": 32,
+        "text": "Tinatakpan niya ang kaniyang mga kamay ng kidlat; at ibinilin sa kidlat na tumama sa pinakatanda."
+      },
+      {
+        "num": 33,
+        "text": "Ang hugong niyaon ay nagsasaysay ng tungkol sa kaniya, ang hayop nama'y ng tungkol sa bagyo na dumarating."
+      }
+    ],
+    "37": [
+      {
+        "num": 1,
+        "text": "Oo, dahil din dito'y nanginginig ang aking puso, at napapabago sa kaniyang kinaroroonang dako."
+      },
+      {
+        "num": 2,
+        "text": "Dinggin ninyo oh dinggin ang hiyaw ng kaniyang tinig, at ang sigaw na lumalabas sa kaniyang bibig."
+      },
+      {
+        "num": 3,
+        "text": "Kaniyang ipinadadala sa silong ng buong langit, at ang kidlat niya'y sa mga wakas ng lupa."
+      },
+      {
+        "num": 4,
+        "text": "Sumunod nito'y isang hugong na dumadagundong; siya'y kumukulog ng hugong ng kaniyang karilagan: at hindi tumitigil doon kung naririnig ang kaniyang tinig."
+      },
+      {
+        "num": 5,
+        "text": "Ang Elohim ay kumukulog na kagilagilalas ng kaniyang tinig; dakilang mga bagay ang ginawa niya, na hindi natin matalastas."
+      },
+      {
+        "num": 6,
+        "text": "Sapagka't sinabi niya sa niebe, Lumagpak ka sa lupa; gayon din sa ambon, at sa bugso ng kaniyang malakas na ulan,"
+      },
+      {
+        "num": 7,
+        "text": "Tinatatakan niya ang kamay ng bawa't tao: upang maalaman ng lahat ng mga tao na kaniyang nilalang."
+      },
+      {
+        "num": 8,
+        "text": "Kung gayo'y nagsisipasok ang mga hayop sa mga lungga, at namamalagi sa kanilang mga tahanan."
+      },
+      {
+        "num": 9,
+        "text": "Mula sa timog nanggagaling ang bagyo: at ang ginaw ay mula sa hilagaan."
+      },
+      {
+        "num": 10,
+        "text": "Sa pamamagitan ng hinga ng Elohim ay nayayari ang yelo: at ang kaluwangan ng tubig ay naiipit."
+      },
+      {
+        "num": 11,
+        "text": "Oo, kaniyang nilalagyan ang masinsing ulap ng halumigmig; kaniyang pinangangalat ang alapaap ng kaniyang kidlat:"
+      },
+      {
+        "num": 12,
+        "text": "At pumipihit sa palibot sa pamamagitan ng kaniyang patnubay, upang kanilang gawin ang anomang iutos niya sa kanila, sa ibabaw ng balat ng sanglibutang natatahanan:"
+      },
+      {
+        "num": 13,
+        "text": "Maging sa saway, o maging sa kaniyang lupain, o maging sa kaawaan ay pinalilitaw niya."
+      },
+      {
+        "num": 14,
+        "text": "Dinggin mo ito, Oh Iyob: Tumigil ka, at bulayin ang kagilagilalas na mga gawa ng Elohim."
+      },
+      {
+        "num": 15,
+        "text": "Nalalaman mo ba kung paanong inilagay sila ng AMA, at pinasisilang ang kidlat ng kaniyang alapaap?"
+      },
+      {
+        "num": 16,
+        "text": "Nalalaman mo ba ang mga pagtitimbang ng mga alapaap, ang kagilagilalas na mga gawa niya na sakdal sa kaalaman?"
+      },
+      {
+        "num": 17,
+        "text": "Paanong umiinit ang inyong mga suot, kapag tumatahimik ang lupa sa pamamagitan ng hanging timugan?"
+      },
+      {
+        "num": 18,
+        "text": "Mailalatag mo ba na kasama niya ang langit, na matibay na gaya ng isang salaming binubo?"
+      },
+      {
+        "num": 19,
+        "text": "Ituro mo sa amin kung anong aming sasabihin sa kaniya; sapagka't hindi namin maayos ang aming pananalita dahil sa kadiliman."
+      },
+      {
+        "num": 20,
+        "text": "Sasaysayin ba sa kaniya na ako'y magsasalita? O iisipin ba ng isang tao na siya'y sasakmalin."
+      },
+      {
+        "num": 21,
+        "text": "At ngayo'y hindi nakikita ng mga tao ang makinang na liwanag na nasa mga langit: nguni't ang hangin ay dumadaan, at pinapalis ang mga yaon."
+      },
+      {
+        "num": 22,
+        "text": "Karilagang ginto ay nagmumula sa hilagaan; may taglay ang Elohim na kakila-kilabot na karilagan."
+      },
+      {
+        "num": 23,
+        "text": "Tungkol sa Makapangyarihan sa lahat, hindi natin mauunawa; siya'y marilag sa kapangyarihan; at sa kahatulan at saganang kaganapan siya'y hindi pipighati."
+      },
+      {
+        "num": 24,
+        "text": "Kinatatakutan nga siya ng mga tao: hindi niya binibigyang pitagan ang sinomang pantas sa puso."
+      }
+    ],
+    "38": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo’y sumagot si YAHWEH kay Iyob mula sa ipoipo, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Sino ito na nagpapadilim ng payo sa pamama-gitan ng mga salita na walang kaalaman?"
+      },
+      {
+        "num": 3,
+        "text": "Bigkisan mo ngayon ang iyong mga balakang na parang lalake: sapagka’t tatanungin kita at magpahayag ka sa Akin."
+      },
+      {
+        "num": 4,
+        "text": "Saan ka nandoon nang ilagay ko ang mga pundasyon ng lupa? Ipahayag mo, kung mayroon kang unawa."
+      },
+      {
+        "num": 5,
+        "text": "Sinong naglagay ng mga sukat niyaon, kung iyong nalalaman? O sinong nag-unat ng panukat diyan?"
+      },
+      {
+        "num": 6,
+        "text": "Sa ano nalagay ang kaniyang mga pundasyon? O sinong naglagay ng batong panulok niyaon;"
+      },
+      {
+        "num": 7,
+        "text": "Nang magsiawit na magkakasama ang mga bituin pang-umaga. At ang lahat ng mga anak ng Elohim ay naghihiyawan sa kagalakan?"
+      },
+      {
+        "num": 8,
+        "text": "O sinong nagsara ng mga pinto sa dagat, nang magpumiglas na gaya ng pagpiglas mula sa bahay-bata?"
+      },
+      {
+        "num": 9,
+        "text": "Nang gawin ko ang alapaap na bihisan niyaon, at ang salimuot na kadiliman na pinakabalot niyaon,"
+      },
+      {
+        "num": 10,
+        "text": "At Aking itinatag doon ang Aking pasiya, at nilagyan ko ng mga halang at mga pinto,"
+      },
+      {
+        "num": 11,
+        "text": "At Aking sinabi, Hanggang dito ay darating ka, nguni’t hindi ka na lalagpas: at dito’y titigil ang iyong mga palalong alon?"
+      },
+      {
+        "num": 12,
+        "text": "Nag-utos ka ba sa umaga mula sa iyong mga kaarawan, at ipinabatid mo ba sa bukang liwayway ang kaniyang dako;"
+      },
+      {
+        "num": 13,
+        "text": "Upang humawak sa mga wakas ng lupa, at ang masasama ay maugoy doon?"
+      },
+      {
+        "num": 14,
+        "text": "Nababagong parang putik sa ilalim ng tatak; at lahat ng mga bagay ay nagiging gaya ng bihisan:"
+      },
+      {
+        "num": 15,
+        "text": "At sa masama ay inalis ang kanilang liwanag, at ang mataas na kamay ay mababali."
+      },
+      {
+        "num": 16,
+        "text": "Pumasok ka ba sa mga bukal ng dagat? O lumakad ka ba sa mga landas ng kalaliman?"
+      },
+      {
+        "num": 17,
+        "text": "Nangahayag ba sa iyo ang mga pintuan ng kamatayan? O nakita mo ba ang mga pinto ng anino ng kamatayan?"
+      },
+      {
+        "num": 18,
+        "text": "Iyo bang nabatid ang kaluwangan ng lupa? Ipahayag mo, kung iyong nalalamang lahat."
+      },
+      {
+        "num": 19,
+        "text": "Saan nandoon ang daan na patungo sa tahanan ng liwanag, at tungkol sa kadiliman, saan nandoon ang dako niyaon;"
+      },
+      {
+        "num": 20,
+        "text": "Upang iyong madala sa hangganan niyaon, at upang iyong gunitain ang mga landas hanggang sa bahay niyaon?"
+      },
+      {
+        "num": 21,
+        "text": "Marahil nalalaman mo, sapagka’t ikaw nga’y ipinanganak noon, at ang bilang ng iyong mga kaarawan ay marami?"
+      },
+      {
+        "num": 22,
+        "text": "Pumasok ka ba sa mga tipunan ng niebe, o nakita mo ba ang mga tipunan ng granizo,"
+      },
+      {
+        "num": 23,
+        "text": "Na Aking itinaan laban sa panahon ng kabagabagan, laban sa kaarawan ng pagbaka at pagdidigma?"
+      },
+      {
+        "num": 24,
+        "text": "Sa aling daan naghiwalay ang liwanag, o sa hanging silanganan na lumalaganap sa ibabaw ng lupa?"
+      },
+      {
+        "num": 25,
+        "text": "Sinong humukay ng bangbang sa mga bugso ng tubig, o ng daanan ng kidlat ng kulog;"
+      },
+      {
+        "num": 26,
+        "text": "Upang magpaulan sa lupa, na hindi tinatahanan ng tao, sa ilang na doon ay walang tao."
+      },
+      {
+        "num": 27,
+        "text": "Upang busugin ang giba at sirang lupa; at upang pasibulin ang sariwang damo?"
+      },
+      {
+        "num": 28,
+        "text": "May ama ba ang ulan? O sinong nanganak sa mga patak ng hamog?"
+      },
+      {
+        "num": 29,
+        "text": "Sa kaninong bahay-bata nagmula ang yelo? At ang lamig sa himpapawid, ay ipinanganak nino?"
+      },
+      {
+        "num": 30,
+        "text": "Ang mga tubig ay nakukubling gaya ng bato, at ang ibabaw ng kalaliman ay namumuno."
+      },
+      {
+        "num": 31,
+        "text": "Matatalian mo ba ang pagkakaumpukan ng mga bituin na Pleyades, o makakalagan ang tali ng mga bituin na Orion?"
+      },
+      {
+        "num": 32,
+        "text": "Mailalabas mo ba ang mga bituin na mga tanda ng Zodiaco sa kanilang kapanahunan? O mapapatnubayan mo ba ang Oso na kasama ng kaniyang mga anak?"
+      },
+      {
+        "num": 33,
+        "text": "Nalalaman mo ba ang mga alituntunin ng langit? Maitatatag mo ba ang kapangyarihan niyaon sa lupa?"
+      },
+      {
+        "num": 34,
+        "text": "Mailalakas mo ba ang iyong tinig hanggang sa mga alapaap, upang takpan ka ng saganang tubig?"
+      },
+      {
+        "num": 35,
+        "text": "Makapagsusugo ka ba ng mga kidlat, upang magsiyaon, at magsabi sa iyo: Narito kami?"
+      },
+      {
+        "num": 36,
+        "text": "Sinong naglagay ng karunungan sa mga pinakaloob na bahagi? O sinong nagbigay ng kaalaman sa pag-iisip?"
+      },
+      {
+        "num": 37,
+        "text": "Sinong makabibilang ng mga alapaap sa pamamagitan ng karunungan? O sinong makatutuyo ng mga botelya ng langit,"
+      },
+      {
+        "num": 38,
+        "text": "Kapag ang alabok ay napuputik, at ang mga putik ay tumitigas na maigi?"
+      },
+      {
+        "num": 39,
+        "text": "Huhuli ka ba ng mahuhuli na ukol sa leong babae? O bubusugin mo baga ang kagutoman ng mga batang leon,"
+      },
+      {
+        "num": 40,
+        "text": "Kapag sila’y nagsisihilig sa kanilang mga lungga, at nagsisitahan sa guwang upang bumakay?"
+      },
+      {
+        "num": 41,
+        "text": "Sinong naghahanda sa uwak ng pagkain niya, kapag ang kaniyang mga inakay ay nagsisidaing sa Akin, at nagsisigala sa kakulangan ng pagkain."
+      }
+    ],
+    "39": [
+      {
+        "num": 1,
+        "text": "Nalalaman mo ba ang panahong ipinanganganak ang mga kambing bundok? O matatandaan mo ba ang mga pagdaramdam ng mga usa?"
+      },
+      {
+        "num": 2,
+        "text": "Mabibilang mo ba ang mga buwan ng kanilang kagampanan? O nalalaman mo ba ang panahong kanilang ipinanganak?"
+      },
+      {
+        "num": 3,
+        "text": "Sila'y nagsisiyuko, kanilang inilalabas ang kanilang mga anak, kaniyang iniwawaksi ang kanilang kapanglawan."
+      },
+      {
+        "num": 4,
+        "text": "Ang kanilang mga anak ay nagiging malakas, sila ay nagsisilaki sa kaparangan; sila ay nagsisiyao at hindi na nagsisibalik."
+      },
+      {
+        "num": 5,
+        "text": "Sinong nagpakawala sa mabangis na asno? O sinong nagkalag ng mga tali ng mailap na asno?"
+      },
+      {
+        "num": 6,
+        "text": "Na ginawa kong bahay niya ang ilang, at ang lupaing maasin na kaniyang tahanan."
+      },
+      {
+        "num": 7,
+        "text": "Kaniyang nililibak ang kaguluhan ng bayan. Ni hindi niya dinidinig ang sigaw ng nagpapatakbo ng hayop."
+      },
+      {
+        "num": 8,
+        "text": "Ang libot ng mga bundok ay kaniyang pastulan, at kaniyang sinasaliksik ang bawa't sariwang bagay."
+      },
+      {
+        "num": 9,
+        "text": "Matutuwa ba ang bakang gubat na maglingkod sa iyo? O matitira ba sa siping ng iyong pasabsaban?"
+      },
+      {
+        "num": 10,
+        "text": "Matatalian mo ba ang bakang gubat ng iyong panali sa pangbukid? O magbubungkal ba ng mga libis sa likuran mo?"
+      },
+      {
+        "num": 11,
+        "text": "Aasa ka ba sa kaniya, dahil sa siya'y totoong malakas? O iiwan mo ba ang iyong gawain sa kaniya?"
+      },
+      {
+        "num": 12,
+        "text": "Ipagkakatiwala mo ba sa kaniya na iuuwi sa bahay ang iyong binhi, at pipisanin ang mga butil sa iyong giikan?"
+      },
+      {
+        "num": 13,
+        "text": "Ang pakpak ng avestrus ay nagagalak; nguni't may kagandahang loob ba ang kanilang mga pakpak at mga balahibo?"
+      },
+      {
+        "num": 14,
+        "text": "Sapagka't nag-iiwan ng kaniyang mga itlog sa lupa, at pinaiinit ang mga yaon sa alabok,"
+      },
+      {
+        "num": 15,
+        "text": "At kinalilimutang mapipisa ng paa, o mayuyurakan ng mabangis na hayop."
+      },
+      {
+        "num": 16,
+        "text": "Siya'y nagmamatigas laban sa kaniyang mga sisiw na tila hindi kaniya: bagaman ang kaniyang gawa ay mawalang kabuluhan, hindi niya ikinatatakot;"
+      },
+      {
+        "num": 17,
+        "text": "Sapagka't binawian siya ng Elohim ng karunungan, ni hindi siya binahaginan ng unawa."
+      },
+      {
+        "num": 18,
+        "text": "Anomang panahon na siya'y napaiitaas, hinahamak niya ang kabayo at ang sakay nito."
+      },
+      {
+        "num": 19,
+        "text": "Nagbigay ka ba sa kabayo ng kalakasan? Binihisan mo ba ang kaniyang leeg ng buhok na gumagalaw?"
+      },
+      {
+        "num": 20,
+        "text": "Pinalulukso mo ba siya na parang balang? Ang kaluwalhatian ng kaniyang bahin ay kakila-kilabot."
+      },
+      {
+        "num": 21,
+        "text": "Siya'y kumukutkot sa libis, at nagagalak sa kaniyang kalakasan, siya'y sumasagupa sa mga taong may sandata."
+      },
+      {
+        "num": 22,
+        "text": "Hindi siya natatakot at nanglulupaypay: ni hindi tinatalikuran ang tabak."
+      },
+      {
+        "num": 23,
+        "text": "Ang suksukan ng pana ay tumutunog laban sa kaniya, ang makintab na sibat at ang kalasag."
+      },
+      {
+        "num": 24,
+        "text": "Kaniyang sinasakmal ang lupa na may kabangisan at poot; ni hindi siya naniniwala na yao'y tunog ng pakakak."
+      },
+      {
+        "num": 25,
+        "text": "Kaniyang sinasabi sa tuwing tutunog ang mga pakakak: Aha! At kaniyang naaamoy ang pagbabaka sa malayo, ang sigaw ng mga kapitan at ang hiyaw."
+      },
+      {
+        "num": 26,
+        "text": "Lumilipad ba ang uwak sa pamamagitan ng inyong karunungan, at iniuunat ba ang kaniyang mga pakpak sa dakong timugan?"
+      },
+      {
+        "num": 27,
+        "text": "Napaiilanglang ba ang agila sa iyong utos, at gumagawa ba ng kaniyang pugad sa itaas?"
+      },
+      {
+        "num": 28,
+        "text": "Sila'y nananahan sa malaking bato, at doon tumitira, sa taluktok ng burol at sa katibayan."
+      },
+      {
+        "num": 29,
+        "text": "Mula roo'y tumitingin siya ng madadagit; ang kaniyang mga mata ay tumatanaw sa malayo."
+      },
+      {
+        "num": 30,
+        "text": "Ang mga anak naman niya ay nagsisihitit ng dugo: at kung saan naroon ang pinatay ay naroon siya."
+      }
+    ],
+    "40": [
+      {
+        "num": 1,
+        "text": "Bukod dito'y sumagot si YAHWEH kay Iyob, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Magmamatapang ba siya na makipagtalo sa Makapangyarihan sa lahat? Siyang nakikipagkatuwiranan sa Akin, ay sagutin niya ito."
+      },
+      {
+        "num": 3,
+        "text": "Nang magkagayo'y sumagot si Iyob kay YAHWEH, at nagsabi,"
+      },
+      {
+        "num": 4,
+        "text": "Ako'y walang kabuluhan; anong isasagot ko sa iyo? Aking inilalagay ang aking kamay sa aking bibig,"
+      },
+      {
+        "num": 5,
+        "text": "Minsan ay nagsalita ako, at hindi ako sasagot: Oo, makalawa, nguni't hindi ako magpapatuloy."
+      },
+      {
+        "num": 6,
+        "text": "Nang magkagayo'y sumagot si YAHWEH kay Iyob mula sa ipo-ipo, at nagsabi,"
+      },
+      {
+        "num": 7,
+        "text": "Magbigkis ka ng iyong mga balakang ngayon na parang lalake: Ako'y magtatanong sa iyo at magpahayag ka sa Akin."
+      },
+      {
+        "num": 8,
+        "text": "Iyo bang wawaling kabuluhan ang Aking kahatulan? Iyo bang hahatulan Ako, upang ikaw ay ariing ganap?"
+      },
+      {
+        "num": 9,
+        "text": "O mayroon ka bang kamay na parang Elohim? At makakukulog ka ba ng tinig na gaya niya?"
+      },
+      {
+        "num": 10,
+        "text": "Magpakagayak ka ngayon ng karilagan at karapatan; at magbihis ka ng karangalan at kalakhan."
+      },
+      {
+        "num": 11,
+        "text": "Ibugso mo ang mga alab ng iyong galit: at tunghan mo ang bawa't palalo, at abain mo siya."
+      },
+      {
+        "num": 12,
+        "text": "Masdan mo ang bawa't palalo, at pangumbabain mo siya; at iyong tungtungan ang masama sa kaniyang kinalalagyan."
+      },
+      {
+        "num": 13,
+        "text": "Ikubli mo silang magkakasama sa alabok; talian mo ang kanilang mukha sa lihim na dako."
+      },
+      {
+        "num": 14,
+        "text": "Kung magkagayo'y ipahayag naman kita; na maililigtas ka ng iyong kanan."
+      },
+      {
+        "num": 15,
+        "text": "Narito ngayon, ang hayop na behemot na Aking ginawang kasama mo: siya'y kumakain ng damo na gaya ng baka."
+      },
+      {
+        "num": 16,
+        "text": "Narito, ngayon, ang kaniyang lakas ay nasa kaniyang mga balakang, at ang kaniyang kalakasan ay nasa kalamnan ng kaniyang tiyan."
+      },
+      {
+        "num": 17,
+        "text": "Kaniyang iginagalaw ang kaniyang buntot na parang isang sedro: at ang mga litid ng kaniyang mga hita ay nangagsusugpong."
+      },
+      {
+        "num": 18,
+        "text": "Ang kaniyang mga buto ay parang mga tubong tanso; ang kaniyang mga paa ay parang mga halang na bakal."
+      },
+      {
+        "num": 19,
+        "text": "Siya ang pinakapangulo sa mga daan ng Elohim: ang lumalang sa kaniya, ang makapag-lalapit lamang ng tabak sa kaniya."
+      },
+      {
+        "num": 20,
+        "text": "Tunay na ang mga bundok ay naglalabas sa kaniya ng pagkain; na pinaglalaruan ng lahat ng mga hayop sa parang."
+      },
+      {
+        "num": 21,
+        "text": "Siya'y humihiga sa ilalim ng punong loto, sa puwang ng mga tambo, at mga lumbak."
+      },
+      {
+        "num": 22,
+        "text": "Nilililiman siya ng mga puno ng loto ng kanilang lilim; nililigid sa palibot ng mga sanga sa batis."
+      },
+      {
+        "num": 23,
+        "text": "Narito, kung bumubugso ang isang ilog hindi nanginginig: siya'y tiwasay bagaman umapaw ang Yarden hanggang sa kaniyang bunganga."
+      },
+      {
+        "num": 24,
+        "text": "May kukuha ba sa kaniya kapag siya'y natatanod, o may tutuhog ba ng kaniyang ilong sa pamamagitan ng isang silo."
+      }
+    ],
+    "41": [
+      {
+        "num": 1,
+        "text": "Mahuhuli mo ba ang leviatan ng isang bingwit? O mailalabas mo ba ang kaniyang dila ng isang panali? Isa 27:1"
+      },
+      {
+        "num": 2,
+        "text": "Makapaglalagay ka ba ng tali sa kaniyang ilong? O makabubutas sa kaniyang panga ng isang taga ng bingwit?"
+      },
+      {
+        "num": 3,
+        "text": "Mamamanhik ba siya ng marami sa iyo? O magsasalita ba siya ng mga malumanay na salita?"
+      },
+      {
+        "num": 4,
+        "text": "Makikipagtipan ba siya sa iyo, upang ariin mo siyang alipin magpakailan man?"
+      },
+      {
+        "num": 5,
+        "text": "Makikipaglaro ka ba sa kaniya na gaya sa isang ibon? O iyong tatalian ba siya para sa iyong mga dalaga?"
+      },
+      {
+        "num": 6,
+        "text": "Makakalakal ba siya ng mga pulutong ng mangingisda? Mababahagi ba siya nila sa mga mangangalakal?"
+      },
+      {
+        "num": 7,
+        "text": "Mahihiwa mo ba ang kaniyang balat ng sundang na bakal, o ang kaniyang ulo ng panaksak ng isda?"
+      },
+      {
+        "num": 8,
+        "text": "Ipatong mo ang iyong kamay sa kaniya; alalahanin mo ang pagbabaka at huwag mo nang gawin."
+      },
+      {
+        "num": 9,
+        "text": "Narito, ang pag-asa riyan ay walang kabuluhan: hindi ba malulugmok ang sinoman makita lamang yaon?"
+      },
+      {
+        "num": 10,
+        "text": "Walang malakas na makapangahas kumilos niyaon: sino ngang makatatayo sa harap ko?"
+      },
+      {
+        "num": 11,
+        "text": "Sinong naunang nagbigay sa Akin upang Aking bayaran siya? Anomang nasa silong ng buong langit ay Akin."
+      },
+      {
+        "num": 12,
+        "text": "Hindi Ako tatahimik tungkol sa kaniyang mga sangkap ng katawan, ni sa kaniya mang dakilang kapangyarihan, ni sa kaniya mang mainam na hugis."
+      },
+      {
+        "num": 13,
+        "text": "Sinong makapaglilitaw na karayagan ng kaniyang mga damit? Sinong makalalapit sa kaniyang magkasaping pangil?"
+      },
+      {
+        "num": 14,
+        "text": "Sinong makapagbubukas ng mga pinto ng kaniyang mukha? Sa palibot ng kaniyang ngipin ay kakilabutan."
+      },
+      {
+        "num": 15,
+        "text": "Ang kaniyang mga matibay na palikpik ay kaniyang kapalaluan, nangagkakadikit na maigi na gaya sa isang tatak na mahigpit."
+      },
+      {
+        "num": 16,
+        "text": "Nagkakadikit sa isa't isa, na ang hangin ay hindi makaraan sa pagitan sa mga yaon."
+      },
+      {
+        "num": 17,
+        "text": "Sila'y nagkakasugpungan sa isa't isa; Nagkakalakip na magkasama, na hindi maihihiwalay."
+      },
+      {
+        "num": 18,
+        "text": "Ang kanilang mga bahin ay kumikislap ng apoy, at ang kanilang mga mata ay gaya ng mga bukang liwayway kung umaga."
+      },
+      {
+        "num": 19,
+        "text": "Mula sa kaniyang bibig ay lumalabas ang nagliliyab na sulo, at mga alipatong apoy."
+      },
+      {
+        "num": 20,
+        "text": "Mula sa kaniyang mga butas ng ilong ay lumalabas ang usok, na gaya ng isang kumukulong talyasi at nagniningas na mga talahib."
+      },
+      {
+        "num": 21,
+        "text": "Ang kaniyang hinga ay nagpapaningas ng mga baga, at isang alab ay lumalabas sa kaniyang bibig."
+      },
+      {
+        "num": 22,
+        "text": "Sa kaniyang leeg ay tumitira ang kalakasan at ang kakilabutan ay sumasayaw sa harap niya."
+      },
+      {
+        "num": 23,
+        "text": "Ang mga kaliskis ng kaniyang laman ay nagkakadikitan; nagtutumibay sa kaniya; hindi magagalaw."
+      },
+      {
+        "num": 24,
+        "text": "Ang kaniyang puso ay matatag na gaya ng isang bato; Oo, matatag na gaya ng batong pang-ibaba ng gilingan."
+      },
+      {
+        "num": 25,
+        "text": "Kapag siya'y tumitindig ay natatakot ang makapangyarihan: dahil sa pagkagulat ay nalilito sila."
+      },
+      {
+        "num": 26,
+        "text": "Kung siya'y tagain ninoman ng tabak ay hindi tumatalab; ni ng sibat man, ng pana, ni ng matalas na tulis man."
+      },
+      {
+        "num": 27,
+        "text": "Kaniyang ipinalalagay ang bakal na parang dayami, at ang tanso na parang lapok na kahoy."
+      },
+      {
+        "num": 28,
+        "text": "Hindi niya mapatakas ng palaso: ang mga batong panghilagpos ay nagiging sa kaniya'y parang pinagputulan ng trigo."
+      },
+      {
+        "num": 29,
+        "text": "Ang mga panakbat ay napapalagay na parang pinagputulan ng trigo: kaniyang tinatawanan ang galaw ng sibat."
+      },
+      {
+        "num": 30,
+        "text": "Ang kaniyang mga sangkap sa ibaba ay gaya ng mga matulis na kaliskis: Ikinakalat na tila tabak sa putik."
+      },
+      {
+        "num": 31,
+        "text": "Kaniyang pinagpapakuluan ang kalaliman na parang palyok: kaniyang ginagawa ang dagat na parang pamahid."
+      },
+      {
+        "num": 32,
+        "text": "Kaniyang pinasisilang ang landas sa likuran niya; aakalain ng sinoman na mauban ang kalaliman."
+      },
+      {
+        "num": 33,
+        "text": "Sa ibabaw ng lupa ay walang gaya niya, na likhang walang takot."
+      },
+      {
+        "num": 34,
+        "text": "Kaniyang minamasdan ang bawa't mataas na bagay: siya'y hari sa lahat ng mga anak na palalo."
+      }
+    ],
+    "42": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sumagot si Iyob kay YAHWEH, at nagsabi,"
+      },
+      {
+        "num": 2,
+        "text": "Nalalaman ko na magagawa mo ang lahat ng mga bagay, at wala kang akala na mapipigil."
+      },
+      {
+        "num": 3,
+        "text": "Sino itong nagkukubli ng payo na walang kaalaman? Kaya't aking sinambit na hindi ko nauunawa, mga bagay na totoong kagila-gilalas sa akin na hindi ko nalalaman."
+      },
+      {
+        "num": 4,
+        "text": "Dinggin mo, isinasamo ko sa iyo, at ako'y magsasalita; ako'y magtatanong sa iyo, at magpahayag ka sa akin."
+      },
+      {
+        "num": 5,
+        "text": "Narinig kita sa pakikinig ng pakinig; nguni't ngayo'y nakikita ka ng aking mata,"
+      },
+      {
+        "num": 6,
+        "text": "Kaya't ako ay nayayamot sa sarili, at nagsisisi ako sa alabok at mga abo."
+      },
+      {
+        "num": 7,
+        "text": "At nangyari, na pagkatapos na masalita ni YAHWEH ang mga salitang ito kay Iyob, sinabi ni YAHWEH kay Eliphaz na Temanita, Ang Aking poot ay nag-aalab laban sa iyo, at laban sa iyong dalawang kaibigan: Dahil hindi kayo nagsalita tungkol sa Akin ng bagay na matuwid, na gaya ng ginawa ng Aking lingkod na si Iyob."
+      },
+      {
+        "num": 8,
+        "text": "Kaya't magsikuha kayo sa inyo ngayon ng pitong guyang baka, at pitong lalaking tupa, at magsiparoon kayo sa Aking lingkod na kay Iyob, at ihandog ninyo sa ganang inyo na pinakahandog na susunugin: at idadalangin kayo ng Aking lingkod na si Iyob: sapagka't siya'y Aking tatanggapin, baka kayo'y Aking gawan ng ayon sa inyong kamangmangan; sapagka't hindi kayo nagsasalita tungkol sa Akin ng bagay na matuwid, na gaya ng Aking lingkod na si Iyob."
+      },
+      {
+        "num": 9,
+        "text": "Sa gayo'y nagsiyaon si Eliphaz na Temanita, at si Bildad na Suhita, at si Zophar na Naamatita, at ginawa ang ayon sa iniutos sa kanila ni YAHWEH: at nilingap ni YAHWEH si Iyob."
+      },
+      {
+        "num": 10,
+        "text": "At inalis ni YAHWEH ang pagkabihag ni Iyob, nang kaniyang idalangin ang kaniyang mga kaibigan; at binigyan ni YAHWEH si Iyob na makalawa ang higit ng dami kaysa tinatangkilik niya ng dati."
+      },
+      {
+        "num": 11,
+        "text": "Nang magkagayo'y nagsiparoon sa kaniya ang lahat niyang mga kapatid na lalake at babae, at lahat na naging kakilala niya ng una, at nagsikain ng tinapay na kasalo niya sa kaniyang bahay; at nakipagdamdam sa kaniya, at inaliw siya tungkol sa lahat na kasamaan na pinasapit sa kaniya ni YAHWEH: bawa't tao nama'y nagbigay sa kaniya ng isang putol na salapi, at bawa't isa'y ng isang singsing na ginto."
+      },
+      {
+        "num": 12,
+        "text": "Sa gayo'y pinagpala ni YAHWEH ang huling wakas ni Iyob na higit kaysa kaniyang pasimula: at siya'y nagkaroon ng labing apat na libong tupa, at anim na libong kamelyo, at isang libong tuwang na baka, at isang libong asnong babae."
+      },
+      {
+        "num": 13,
+        "text": "Siya nama'y nagkaroon din ng pitong anak na lalake at tatlong anak na babae."
+      },
+      {
+        "num": 14,
+        "text": "At tinawag niya ang pangalan ng una na Yemima; at ang pangalan ng ikalawa, Qetsi’ah, at ang pangalan ng ikatlo, Keren-hapuch."
+      },
+      {
+        "num": 15,
+        "text": "At sa buong lupain ay walang mga babaing masumpungan na totoong maganda na gaya ng mga anak na babae ni Iyob: at binigyan sila ng kanilang ama ng mana sa kasamahan ng kanilang mga kapatid."
+      },
+      {
+        "num": 16,
+        "text": "At pagkatapos nito'y nabuhay si Iyob na isang daan at apat na pung taon, at nakita niya ang kaniyang mga anak, at ang mga anak ng kaniyang mga anak, hanggang sa apat na saling lahi."
+      },
+      {
+        "num": 17,
+        "text": "Gayon namatay si Iyob, na matanda at puspos ng mga kaarawan."
+      }
+    ]
+  }
+}

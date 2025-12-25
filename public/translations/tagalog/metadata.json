@@ -1,0 +1,13 @@
+{
+  "id": "tagalog",
+  "name": "Tagalog Bible",
+  "abbreviation": "TAG",
+  "language": "Filipino/Tagalog",
+  "languageCode": "tl",
+  "books": 68,
+  "totalChapters": 1220,
+  "totalVerses": 32580,
+  "hasStrongsNumbers": false,
+  "hasInterlinear": false,
+  "generatedAt": "2025-12-25T00:50:39.139Z"
+}

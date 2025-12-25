@@ -1,10 +1,25 @@
-import { Chapter, BIBLE_BOOKS } from '../types/bible';
+import { Chapter, BIBLE_BOOKS, KJVVerse } from '../types/bible';
 import { XMLParser } from '../utils/xmlParser';
 import { apocryphaService } from './apocryphaService';
 import { PATHS } from '../config/paths';
+import { TranslationId, TAGALOG_BOOK_NAMES, getTranslationById } from '../types/translation';
+
+// Cache for loaded translation data
+interface TranslationCache {
+  [translationId: string]: {
+    [bookId: number]: {
+      bookName: string;
+      chapters: {
+        [chapterNum: number]: Array<{ num: number; text: string }>;
+      };
+    };
+  };
+}
 
 export class BibleService {
   private basePath: string;
+  private translationCache: TranslationCache = {};
+  private loadingPromises: Map<string, Promise<void>> = new Map();
 
   constructor(basePath: string = PATHS.BIBLE_DATA) {
     this.basePath = basePath;
@@ -22,7 +37,68 @@ export class BibleService {
     return `chapter-${chapterNum.toString().padStart(3, '0')}.xml`;
   }
 
-  async loadChapter(bookId: number, chapterNum: number): Promise<Chapter> {
+  /**
+   * Load a translation's book data (lazy loading per book)
+   */
+  private async loadTranslationBook(translationId: TranslationId, bookId: number): Promise<void> {
+    const cacheKey = `${translationId}-${bookId}`;
+
+    // Return existing promise if loading is in progress
+    if (this.loadingPromises.has(cacheKey)) {
+      return this.loadingPromises.get(cacheKey);
+    }
+
+    // Check if already cached
+    if (this.translationCache[translationId]?.[bookId]) {
+      return;
+    }
+
+    const loadPromise = (async () => {
+      try {
+        const paddedBookId = bookId.toString().padStart(2, '0');
+        const response = await fetch(`${PATHS.TRANSLATIONS}/${translationId}/books/book-${paddedBookId}.json`);
+
+        if (!response.ok) {
+          throw new Error(`Failed to load ${translationId} book ${bookId}`);
+        }
+
+        const bookData = await response.json();
+
+        // Initialize cache structure
+        if (!this.translationCache[translationId]) {
+          this.translationCache[translationId] = {};
+        }
+
+        this.translationCache[translationId][bookId] = bookData;
+      } finally {
+        this.loadingPromises.delete(cacheKey);
+      }
+    })();
+
+    this.loadingPromises.set(cacheKey, loadPromise);
+    return loadPromise;
+  }
+
+  /**
+   * Load chapter for a specific translation
+   */
+  async loadChapter(bookId: number, chapterNum: number, translationId: TranslationId = 'kjv'): Promise<Chapter> {
+    console.log('[BibleService] loadChapter called with:', { bookId, chapterNum, translationId });
+    // For KJV, use the original XML-based loading
+    if (translationId === 'kjv') {
+      console.log('[BibleService] Using KJV loader');
+      return this.loadKJVChapter(bookId, chapterNum);
+    }
+
+    // For other translations, load from JSON
+    console.log('[BibleService] Using translation loader for:', translationId);
+    return this.loadTranslationChapter(bookId, chapterNum, translationId);
+  }
+
+  /**
+   * Load chapter from KJV (original XML format)
+   */
+  private async loadKJVChapter(bookId: number, chapterNum: number): Promise<Chapter> {
     const book = BIBLE_BOOKS.find(b => b.id === bookId);
     if (!book) throw new Error(`Book with id ${bookId} not found`);
 
@@ -76,6 +152,83 @@ export class BibleService {
     } catch (error) {
       throw new Error(`Failed to load chapter: ${error}`);
     }
+  }
+
+  /**
+   * Load chapter from a non-KJV translation (JSON format)
+   */
+  private async loadTranslationChapter(
+    bookId: number,
+    chapterNum: number,
+    translationId: TranslationId
+  ): Promise<Chapter> {
+    // Load the book data if not cached
+    await this.loadTranslationBook(translationId, bookId);
+
+    const bookData = this.translationCache[translationId]?.[bookId];
+    if (!bookData) {
+      throw new Error(`Book ${bookId} not found in ${translationId} translation`);
+    }
+
+    const chapterData = bookData.chapters[chapterNum];
+    if (!chapterData) {
+      throw new Error(`Chapter ${chapterNum} not found in ${translationId} book ${bookId}`);
+    }
+
+    // Get the appropriate book name for this translation
+    const bookName = this.getBookNameForTranslation(bookId, translationId);
+
+    // Convert to KJVVerse format for compatibility
+    const kjvVerses: KJVVerse[] = chapterData.map(v => ({
+      num: v.num,
+      text: v.text
+    }));
+
+    return {
+      bookName,
+      bookId,
+      chapterNum,
+      kjvVerses,
+      // Non-KJV translations don't have Strong's or interlinear data
+      kjvsVerses: undefined,
+      interlinearVerses: undefined,
+    };
+  }
+
+  /**
+   * Get appropriate book name for a translation
+   */
+  private getBookNameForTranslation(bookId: number, translationId: TranslationId): string {
+    if (translationId === 'tagalog') {
+      return TAGALOG_BOOK_NAMES[bookId] || BIBLE_BOOKS.find(b => b.id === bookId)?.name || `Book ${bookId}`;
+    }
+
+    // Default to English book names
+    return BIBLE_BOOKS.find(b => b.id === bookId)?.name || `Book ${bookId}`;
+  }
+
+  /**
+   * Check if a translation has a specific book
+   */
+  async hasBook(bookId: number, translationId: TranslationId): Promise<boolean> {
+    if (translationId === 'kjv') {
+      const book = BIBLE_BOOKS.find(b => b.id === bookId);
+      return !!book;
+    }
+
+    try {
+      await this.loadTranslationBook(translationId, bookId);
+      return !!this.translationCache[translationId]?.[bookId];
+    } catch {
+      return false;
+    }
+  }
+
+  /**
+   * Get translation metadata
+   */
+  getTranslationInfo(translationId: TranslationId) {
+    return getTranslationById(translationId);
   }
 
   async searchBible(searchText: string): Promise<Array<{

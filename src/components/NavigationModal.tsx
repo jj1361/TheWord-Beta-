@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { BIBLE_BOOKS, Book } from '../types/bible';
+import { useTranslation } from '../contexts/TranslationContext';
+import { TAGALOG_BOOK_NAMES } from '../types/translation';
 import './NavigationModal.css';
 
 interface NavigationModalProps {
@@ -17,8 +19,17 @@ const NavigationModal: React.FC<NavigationModalProps> = ({
   currentBookId,
   currentChapter
 }) => {
+  const { currentTranslation } = useTranslation();
   const [selectedBook, setSelectedBook] = useState<Book | null>(null);
   const [view, setView] = useState<'books' | 'chapters'>('books');
+
+  // Get book name for current translation
+  const getBookName = (book: Book): string => {
+    if (currentTranslation === 'tagalog') {
+      return TAGALOG_BOOK_NAMES[book.id] || book.name;
+    }
+    return book.name;
+  };
 
   // Old Testament: Genesis (1) to Malachi (39)
   const oldTestamentBooks = BIBLE_BOOKS.filter(book => book.id >= 1 && book.id <= 39);
@@ -59,7 +70,7 @@ const NavigationModal: React.FC<NavigationModalProps> = ({
       <div className="navigation-modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="navigation-modal-header">
           <h2>
-            {view === 'books' ? 'Select Book' : selectedBook?.name}
+            {view === 'books' ? 'Select Book' : selectedBook ? getBookName(selectedBook) : ''}
           </h2>
           <button className="close-modal-btn" onClick={handleClose}>
             ✕
@@ -77,7 +88,7 @@ const NavigationModal: React.FC<NavigationModalProps> = ({
                     className={`book-btn ${book.id === currentBookId ? 'active' : ''}`}
                     onClick={() => handleBookClick(book)}
                   >
-                    {book.name}
+                    {getBookName(book)}
                   </button>
                 ))}
               </div>
@@ -92,7 +103,7 @@ const NavigationModal: React.FC<NavigationModalProps> = ({
                     className={`book-btn ${book.id === currentBookId ? 'active' : ''}`}
                     onClick={() => handleBookClick(book)}
                   >
-                    {book.name}
+                    {getBookName(book)}
                   </button>
                 ))}
               </div>
@@ -107,7 +118,7 @@ const NavigationModal: React.FC<NavigationModalProps> = ({
                     className={`book-btn ${book.id === currentBookId ? 'active' : ''}`}
                     onClick={() => handleBookClick(book)}
                   >
-                    {book.name}
+                    {getBookName(book)}
                   </button>
                 ))}
               </div>

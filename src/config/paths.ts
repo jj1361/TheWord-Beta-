@@ -10,6 +10,7 @@ export const PATHS = {
   LEXICON: `${PUBLIC_URL}/lexicon`,
   DATA: `${PUBLIC_URL}/data`,
   APOCRYPHA: `${PUBLIC_URL}/apocrypha`,
+  TRANSLATIONS: `${PUBLIC_URL}/translations`,
   SEARCH_INDEX: `${PUBLIC_URL}/search-index.json`,
   STRONGS_INDEX: `${PUBLIC_URL}/strongs-index.json`,
 };

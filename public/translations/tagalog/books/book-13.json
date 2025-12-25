@@ -1,0 +1,3832 @@
+{
+  "bookName": "1 Cronicas",
+  "bookId": 13,
+  "chapters": {
+    "1": [
+      {
+        "num": 1,
+        "text": "Si Adam, si Seth, si Enos;"
+      },
+      {
+        "num": 2,
+        "text": "Si Cainan, si Mahalaleel, si Yered;"
+      },
+      {
+        "num": 3,
+        "text": "Si Enoch, si Mathusalem, si Lamech,"
+      },
+      {
+        "num": 4,
+        "text": "Si Noe, si Shem, si Ham, at si Yapheth."
+      },
+      {
+        "num": 5,
+        "text": "Ang mga anak ni Yapheth: si Gomer, at si Magog, at si Dadai, at si Yawan, at si Tubal, at si Mesec, at si Tiras."
+      },
+      {
+        "num": 6,
+        "text": "At ang mga anak ni Gomer: si Askenaz at si Riphath, at si Thogorma."
+      },
+      {
+        "num": 7,
+        "text": "At ang mga anak ni Yawan: si Elisa, at si Tharsis, si Chithim at si Dodanim."
+      },
+      {
+        "num": 8,
+        "text": "Ang mga anak ni Ham: si Cus, at si Misraim, si Phuth, at si Canaan."
+      },
+      {
+        "num": 9,
+        "text": "At ang mga anak ni Cus: si Seba, at si Havila, at si Sabtha, at si Racma, at si Sabtecha. At ang mga anak ni Racma: si Seba, at si Dedan."
+      },
+      {
+        "num": 10,
+        "text": "At naging anak ni Cus si Nimrod: siya ang nagpasimulang naging makapangyarihan sa lupa."
+      },
+      {
+        "num": 11,
+        "text": "At naging anak ni Mitsrayim si Ludim, at si Ananim, at si Laabim, at si Nephtuim,"
+      },
+      {
+        "num": 12,
+        "text": "At si Phetrusim, at si Chasluim, na pinanggalingan ng mga Pilisteo, at si Caphtorim."
+      },
+      {
+        "num": 13,
+        "text": "At naging anak ni Canaan si Sidon, na kaniyang panganay, at si Heth,"
+      },
+      {
+        "num": 14,
+        "text": "At ang Yebuseo, at ang Amorrheo, at ang Gergeseo,"
+      },
+      {
+        "num": 15,
+        "text": "At ang Heveo, at ang Araceo, at ang Sineo,  At ang Arwadeo, at ang Samareo, at ang Hamatheo."
+      },
+      {
+        "num": 16,
+        "text": "Ang mga anak ni Shem: si Elam, at si Assur, at si Arphaxad, at si Lud, at si Aram, at si Hus, at si Hul, at si Gether, at si Mesec."
+      },
+      {
+        "num": 17,
+        "text": "At naging anak ni Arphaxad si Sela, at naging anak ni Sela si Heber."
+      },
+      {
+        "num": 18,
+        "text": "At si Heber ay nagkaanak ng dalawang lalake: ang pangalan ng isa'y Peleg; sapagka't sa kaniyang mga kaarawan ay nakalatan ng tao ang lupa; at ang pangalan ng kaniyang kapatid ay Yoqtan."
+      },
+      {
+        "num": 19,
+        "text": "At naging anak ni Yoqtan si Elmodad, at si Seleph, at si Asarmaweth, at si Yera,"
+      },
+      {
+        "num": 20,
+        "text": "At si Adoram, at si Uzal, at si Dicla;"
+      },
+      {
+        "num": 21,
+        "text": "At si Hebal, at si Abimael, at si Seba;"
+      },
+      {
+        "num": 22,
+        "text": "At si Ophir, at si Havila, at si Yobab. Lahat"
+      },
+      {
+        "num": 23,
+        "text": "ng ito'y mga anak ni Yoqtan."
+      },
+      {
+        "num": 24,
+        "text": "Si Shem, si Arphaxad, si Sela;"
+      },
+      {
+        "num": 25,
+        "text": "Si Heber, si Peleg, si Reu;"
+      },
+      {
+        "num": 26,
+        "text": "Si Serug, si Nachor, si Thare;"
+      },
+      {
+        "num": 27,
+        "text": "Si Abram, (na siyang Abraham.)"
+      },
+      {
+        "num": 28,
+        "text": "Ang mga anak ni Abraham: si Yitshaq, at si Yishma’el."
+      },
+      {
+        "num": 29,
+        "text": "Ito ang kanilang mga lahi: ang panganay ni Yishma’el, si Nabayot; saka si Cedar, at si Adbeel, at si Misam,"
+      },
+      {
+        "num": 30,
+        "text": "Si Misma, at si Duma, si Maasa; si Hadad, at si Thema,"
+      },
+      {
+        "num": 31,
+        "text": "Si Yetur, si Naphis, at si Cedma. Ito ang mga anak ni Yishma’el."
+      },
+      {
+        "num": 32,
+        "text": "At ang mga anak ni Ketura, na babae ni Abraham: kaniyang ipinanganak si Zimram, at si Yoqsan, at si Medan, at si Madian, at si Isbac, at si Sua. At ang mga anak ni Yoqsan: si Seba at si Dan."
+      },
+      {
+        "num": 33,
+        "text": "At ang mga anak ni Madian: si Epha, at si Epher, at si Henoch, at si Abida, at si Eldaa. Lahat ng ito'y mga anak ni Ketura."
+      },
+      {
+        "num": 34,
+        "text": "At naging anak ni Abraham si Yitshaq. Ang mga anak ni Yitshaq: si Esau, at si Israel."
+      },
+      {
+        "num": 35,
+        "text": "Ang mga anak ni Esau: si Eliphas, si Rehuel, at si Ye’ush, at si Yalam, at si Cora."
+      },
+      {
+        "num": 36,
+        "text": "Ang mga anak ni Eliphas: si Theman, at si Omar, si Sephi, at si Gatham, si Chenas, at si Timna, at si Amalec."
+      },
+      {
+        "num": 37,
+        "text": "Ang mga anak ni Rehuel: si Nahath, si Zera, si Samma, at si Mizza."
+      },
+      {
+        "num": 38,
+        "text": "At ang mga anak ni Seir: si Lotan at si Sobal at si Sibeon at si Ana at si Dison at si Eser at si Disan."
+      },
+      {
+        "num": 39,
+        "text": "At ang mga anak ni Lotan: si Hori at si Homam: at si Timna ay kapatid na babae ni Lotan."
+      },
+      {
+        "num": 40,
+        "text": "Ang mga anak ni Sobal: si Alian at si Manahach at si Ebal, si Sephi at si Onam. At ang mga anak ni Sibeon: si Ayah at si Hannah."
+      },
+      {
+        "num": 41,
+        "text": "Ang mga anak ni Hannah: si Dison. At ang mga anak ni Dison: si Hamran at si Hesban at si Ithran at si Cheran."
+      },
+      {
+        "num": 42,
+        "text": "Ang mga anak ni Eser: si Bilham, at si Zaawan, at si Yaaqan. Ang mga anak ni Disan: si Hus at si Aran."
+      },
+      {
+        "num": 43,
+        "text": "Ang mga ito nga ang mga hari na nagsipaghari sa lupain ng Edom bago naghari ang sinomang hari sa mga anak ni Israel: si Belah na anak ni Beor: at ang pangalan ng kaniyang bayan ay Dinaba."
+      },
+      {
+        "num": 44,
+        "text": "At namatay si Belah, at si Yobab na anak ni Zera na taga Bosra ay naghari na kahalili niya."
+      },
+      {
+        "num": 45,
+        "text": "At namatay si Yobab, at si Husam sa lupain ng mga Themaneo ay naghari na kahalili niya."
+      },
+      {
+        "num": 46,
+        "text": "At namatay si Husam, at si Adad na anak ni Bedad na sumakit kay Madian sa parang ng Moab, ay naghari na kahalili niya; at ang pangalan ng kaniyang bayan ay Awith."
+      },
+      {
+        "num": 47,
+        "text": "At namatay si Adad, at si Samla na taga Masreca ay naghari na kahalili niya."
+      },
+      {
+        "num": 48,
+        "text": "At namatay si Samla, at si Saul na taga Rehoboth sa tabi ng ilog ay naghari na kahalili niya."
+      },
+      {
+        "num": 49,
+        "text": "At namatay si Saul, at si Baal-hanan na anak ni Achbor ay naghari na kahalili niya."
+      },
+      {
+        "num": 50,
+        "text": "At namatay si Baal-hanan, at si Adad ay naghari na kahalili niya; at ang pangalan ng kaniyang bayan ay Pai: at ang pangalan ng kaniyang asawa ay Meetabel, na anak na babae ni Matred, na anak na babae ni Mezaab."
+      },
+      {
+        "num": 51,
+        "text": "At namatay si Adad. At narito ang mga pangulo ng Edom: ang pangulong Timna, ang pangulong Alia, ang pangulong Yetheh;"
+      },
+      {
+        "num": 52,
+        "text": "Ang pangulong Oholibama, at si Ela, at si Phinon;"
+      },
+      {
+        "num": 53,
+        "text": "Ang pangulong Chenaz, ang pangulong Theman, ang pangulong Mibzar;"
+      },
+      {
+        "num": 54,
+        "text": "Ang pangulong Magdiel, ang pangulong Iram. Ito ang mga pangulo ng Edom."
+      }
+    ],
+    "2": [
+      {
+        "num": 1,
+        "text": "Ito ang mga anak ni Israel: si Ruben, si Simeon, si Lewi, at si Yehudah, at si Issachar, at si Zabulon;"
+      },
+      {
+        "num": 2,
+        "text": "Si Dan, si Yoseph, at si Binyamin, si Nephtali, si Gad at si Aser."
+      },
+      {
+        "num": 3,
+        "text": "Ang mga anak ni Yehudah: si Er, at si Onan, at si Sela: na siyang tatlong ipinanganak sa kaniya ng anak na babae ni Sua, na Cananea. At si Er, na panganay ni Yehudah, ay masama sa paningin ni YAHWEH; at pinatay niya siya."
+      },
+      {
+        "num": 4,
+        "text": "At ipinanganak sa kaniya ni Thamar na kaniyang manugang na babae si Phares at si Zara. Lahat na anak ni Yehudah ay lima."
+      },
+      {
+        "num": 5,
+        "text": "Ang mga anak ni Phares: si Hesron at si Hamul."
+      },
+      {
+        "num": 6,
+        "text": "At ang mga anak ni Zara: si Zimri, at si Ethan, at si Heman, at si Calcol, at si Darda: lima silang lahat."
+      },
+      {
+        "num": 7,
+        "text": "At ang mga anak ni Carmi: si Achar, na nagbagabag sa Israel, na gumawa ng pagsalangsang sa itinalagang bagay."
+      },
+      {
+        "num": 8,
+        "text": "At ang mga anak ni Ethan: si Azarayah."
+      },
+      {
+        "num": 9,
+        "text": "Ang mga anak naman ni Hesron, na mga ipinanganak sa kaniya: si Yehrame’el, at si Ram, at si Chelubai."
+      },
+      {
+        "num": 10,
+        "text": "At naging anak ni Ram si Aminadab; at naging anak ni Aminadab si Nahason, na prinsipe ng mga anak ng Yehudah;"
+      },
+      {
+        "num": 11,
+        "text": "At naging anak ni Nahason si Salma, at naging anak ni Salma si Boaz;"
+      },
+      {
+        "num": 12,
+        "text": "At naging anak ni Boaz si Obed, at naging anak ni Obed si Yishai;"
+      },
+      {
+        "num": 13,
+        "text": "At naging anak ni Yishai ang kaniyang panganay na si Eliyab, at si Abinadab ang ikalawa, at si Sima ang ikatlo;"
+      },
+      {
+        "num": 14,
+        "text": "Si Nathanael ang ikaapat, si Radai ang ikalima;"
+      },
+      {
+        "num": 15,
+        "text": "Si Oshem ang ikaanim, si Dawid ang ikapito:"
+      },
+      {
+        "num": 16,
+        "text": "At ang kanilang mga kapatid na babae si Sarwiyah at si Abigail. At ang mga naging anak ni Sarwiyah; si Abisai, at si Yo’ab, at si Asael, tatlo."
+      },
+      {
+        "num": 17,
+        "text": "At ipinanganak ni Abigail si Amasa: at ang ama ni Amasa ay si Yether na Ismaelita."
+      },
+      {
+        "num": 18,
+        "text": "At nagkaanak si Caleb na anak ni Hesron kay Azuba, at kay Yerioth: at ang mga ito ang kaniyang mga anak: si Yesher, at si Sobad, at si Ardon."
+      },
+      {
+        "num": 19,
+        "text": "At namatay si Azuba, at nag-asawa si Caleb kay Ephrata, na siyang nanganak kay Hur sa kaniya."
+      },
+      {
+        "num": 20,
+        "text": "At naging anak ni Hur si Uri, at naging anak ni Uri si Bezaleel."
+      },
+      {
+        "num": 21,
+        "text": "At pagkatapos ay sumiping si Hesron sa anak na babae ni Machir na ama ni Galaad; na siya niyang naging asawa, nang siya ay may anim na pung taong gulang; at ipinanganak niya si Segub sa kaniya."
+      },
+      {
+        "num": 22,
+        "text": "At naging anak ni Segub si Yair, na nagkaroon ng dalawang pu't tatlong bayan sa lupain ng Galaad."
+      },
+      {
+        "num": 23,
+        "text": "At sinakop ni Gesur at ni Aram ang mga bayan ni Yair sa kanila, pati ng Cenath, at ang mga nayon, sa makatuwid baga'y anim na pung bayan. Lahat ng ito'y mga anak ni Machir na ama ni Galaad."
+      },
+      {
+        "num": 24,
+        "text": "At pagkamatay ni Hesron sa Caleb-ephrata ay ipinanganak nga ni Abiyah na asawa ni Hesron sa kaniya si Ashur na ama ni Tecoa."
+      },
+      {
+        "num": 25,
+        "text": "At ang mga anak ni Yehrame’el na panganay ni Hesron ay si Ram ang panganay, at si Buna, at si Orem, at si Oshem, si Achia."
+      },
+      {
+        "num": 26,
+        "text": "At si Yehrame’el ay nag-asawa ng iba, na ang pangalan ay Atara; siya ang ina ni Onam."
+      },
+      {
+        "num": 27,
+        "text": "At ang mga anak ni Ram na panganay ni Yehrame’el ay si Maas, at si Yamin, at si Acar."
+      },
+      {
+        "num": 28,
+        "text": "At ang mga anak ni Onam ay si Sammai, at si Yada. At ang mga anak ni Sammai: si Nadab, at si Abisur."
+      },
+      {
+        "num": 29,
+        "text": "At ang pangalan ng asawa ni Abisur ay Abihail; at ipinanganak niya sa kaniya si Aban, at si Molib."
+      },
+      {
+        "num": 30,
+        "text": "At ang mga anak ni Nadab: si Seled, at si Aphaim: nguni't si Seled ay namatay na walang anak."
+      },
+      {
+        "num": 31,
+        "text": "At ang mga anak ni Aphaim: si Isi. At ang mga anak ni Isi; si Sesan. At ang mga anak ni Sesan: si Alai."
+      },
+      {
+        "num": 32,
+        "text": "At ang mga anak ni Yada, na kapatid ni Sammai: si Yether, at si Yehonathan: at si Yether ay namatay na walang anak."
+      },
+      {
+        "num": 33,
+        "text": "At ang mga anak ni Yehonathan: si Peleth, at si Zaza. Ito ang mga anak ni Yehrame’el."
+      },
+      {
+        "num": 34,
+        "text": "Si Sesan nga ay hindi nagkaanak ng mga lalake, kundi mga babae. At si Sesan ay may isang alipin na taga Mitsrayim (Egipto), na ang pangalan ay Yarha."
+      },
+      {
+        "num": 35,
+        "text": "At pinapag-asawa ni Sesan ang kaniyang anak na babae kay Yarha na kaniyang alipin at ipinanganak niya si Athai sa kaniya."
+      },
+      {
+        "num": 36,
+        "text": "At naging anak ni Athai si Nathan, at naging anak ni Nathan si Zabad;"
+      },
+      {
+        "num": 37,
+        "text": "At naging anak ni Zabad si Ephlal, at naging anak ni Ephlal, si Obed."
+      },
+      {
+        "num": 38,
+        "text": "At naging anak ni Obed si Yehu, at naging anak ni Yehu si Azarayah;"
+      },
+      {
+        "num": 39,
+        "text": "At naging anak ni Azarayah si Heles, at naging anak ni Heles si Elasa;"
+      },
+      {
+        "num": 40,
+        "text": "At naging anak ni Elasa si Sismai, at naging anak ni Sismai si Sallum;"
+      },
+      {
+        "num": 41,
+        "text": "At naging anak ni Sallum si Yeqamyah, at naging anak ni Yeqamyah si Elisama."
+      },
+      {
+        "num": 42,
+        "text": "At ang mga anak ni Caleb na kapatid ni Yehrame’el ay si Mesa na kaniyang panganay, na siyang ama ni Ziph; at ang mga anak ni Maresa na ama ni Hebron."
+      },
+      {
+        "num": 43,
+        "text": "At ang mga anak ni Hebron: si Core, at si Thaphua, at si Recem, at si Shema."
+      },
+      {
+        "num": 44,
+        "text": "At naging anak ni Shema si Raham, na ama ni Yerqe’am; at naging anak ni Recem si Sammai."
+      },
+      {
+        "num": 45,
+        "text": "At ang anak ni Sammai ay si Maon; at si Maon ay ama ni Beth-zur."
+      },
+      {
+        "num": 46,
+        "text": "At ipinanganak ni Epha, na babae ni Caleb, si Haran, at si Mosa, at si Gazez: at naging anak ni Haran si Gazez."
+      },
+      {
+        "num": 47,
+        "text": "At ang mga anak ni Yoddai: si Regem, at si Yotham, at si Gesan, at si Pelet, at si Epha, at si Saaph."
+      },
+      {
+        "num": 48,
+        "text": "Ipinanganak ni Maacha, na babae ni Caleb, si Sebet, at si Thirana."
+      },
+      {
+        "num": 49,
+        "text": "Ipinanganak din niya si Saaph na ama ni Madmannah, si Sewa na ama ni Macbena, at ang ama ni Ghiba; at ang anak na babae ni Caleb ay si Acha."
+      },
+      {
+        "num": 50,
+        "text": "Ito ang mga naging anak ni Caleb, na anak ni Hur, na panganay ni Ephrata: si Sobal na ama ni Chiriath-Ye’arim;"
+      },
+      {
+        "num": 51,
+        "text": "Si Salma na ama ni Bethlehem, si Hareph na ama ni Beth-gader."
+      },
+      {
+        "num": 52,
+        "text": "At si Sobal na ama ni Chiriath-Ye’arim ay nagkaanak; si Haroeh, na kalahati ng mga Manahethita."
+      },
+      {
+        "num": 53,
+        "text": "At ang mga angkan ni Chiriath-Ye’arim: ang mga Ithreo, at ang mga Phuteo, at ang mga Samateo, at ang mga Misraiteo; na mula sa kanila ang mga Soratita at ang mga Estaolita."
+      },
+      {
+        "num": 54,
+        "text": "Ang mga anak ni Salma: ang Bethlehem, at ang mga Netophatita, ang Atroth-beth-Yo’ab, at ang kalahati ng mga Manahethita, ang mga Soraita."
+      },
+      {
+        "num": 55,
+        "text": "At ang mga angkan ng mga kalihim na nagsisitahan sa Yabesh: ang mga Thiratheo, ang mga Simatheo, at ang mga Sucatheo. Ito ang mga Cineo na nagsipagmula kay Hamath, na ama ng sangbahayan ni Rechab."
+      }
+    ],
+    "3": [
+      {
+        "num": 1,
+        "text": "Ang mga ito nga ang mga anak ni Dawid, na mga ipinanganak sa kaniya sa Hebron: ang panganay ay si Amnon, ni Achinoam na Israelita; ang ikalawa’y si Dani’el, ni Abigail na Carmelita;"
+      },
+      {
+        "num": 2,
+        "text": "Ang ikatlo ay si Absalom, na anak ni Maacha na anak na babae ni Talmai na hari sa Gesur; ang ikaapat ay si Adoniyah na anak ni Aggith;"
+      },
+      {
+        "num": 3,
+        "text": "Ang ikalima’y si Sephatyah, ni Abithal; ang ikaanim ay si Itream, ni Egla na asawa niya."
+      },
+      {
+        "num": 4,
+        "text": "Anim ang ipinanganak sa kaniya sa Hebron; at doo’y naghari siyang pitong taon at anim na buwan: At sa Yerushalayim ay naghari siyang tatlong pu’t tatlong taon."
+      },
+      {
+        "num": 5,
+        "text": "At ito ang mga ipinanganak sa kaniya sa Yerushalayim: si Simma, at si Sobab, at si Nathan, at si Solomon, apat, ni Beth-sua na anak na babae ni Ammiel:"
+      },
+      {
+        "num": 6,
+        "text": "At si Ibaar, at si Elisama, at si Eliphelet;"
+      },
+      {
+        "num": 7,
+        "text": "At si Noga, at si Nepheg, at si Yaphiyah;"
+      },
+      {
+        "num": 8,
+        "text": "At si Elisama, at si Eliyahda, at si Eliphelet, siyam;"
+      },
+      {
+        "num": 9,
+        "text": "Lahat ng ito’y mga anak ni Dawid, bukod pa ang mga anak ng mga babae; at si Thamar ay kanilang kapatid na babae."
+      },
+      {
+        "num": 10,
+        "text": "At ang anak ni Solomon ay si Roboam, si Abiya na kaniyang anak, si Asa na kaniyang anak, si Yehosaphat na kaniyang anak;"
+      },
+      {
+        "num": 11,
+        "text": "Si Yoram na kaniyang anak, si Ahazyah na kaniyang anak, si Yeho’ash na kaniyang anak;"
+      },
+      {
+        "num": 12,
+        "text": "Si Amasiyah na kaniyang anak, si Azarayah na kaniyang anak, si Yotham na kaniyang anak;"
+      },
+      {
+        "num": 13,
+        "text": "Si Achaz na kaniyang anak, si Hezekiyah na kaniyang anak, si Manases na kaniyang anak;"
+      },
+      {
+        "num": 14,
+        "text": "Si Amon at si Yoshiyah na kaniyang anak."
+      },
+      {
+        "num": 15,
+        "text": "At ang mga anak ni Yoshiyah: ang panganay ay si Yohanan, ang ikalawa’y si Yehoyaqim, ang ikatlo’y si Zedekiyah, ang ikaapat ay si Sallum."
+      },
+      {
+        "num": 16,
+        "text": "At ang mga anak ni Yehoyaqim: si Yekonyah na kaniyang anak, si Zedekiyah na kaniyang anak."
+      },
+      {
+        "num": 17,
+        "text": "At ang mga anak ni Yekonyah, na bihag: si Salathiel na kaniyang anak,"
+      },
+      {
+        "num": 18,
+        "text": "At si Mechiram, at si Pedayah at si Seneaser, si Yeqamyah, si Hosama, at si Nedabiyah."
+      },
+      {
+        "num": 19,
+        "text": "At ang mga anak, ni Pedayah: si Zorobabel, at si Simi. At ang mga anak ni Zerubabel; si Mesullam, at si Hananayah; at si Selomith, na kapatid na babae:"
+      },
+      {
+        "num": 20,
+        "text": "At si Hasuba, at si Ohel, at si Berechyah, at si Hasadiyah, at si Yushab-hesed, lima."
+      },
+      {
+        "num": 21,
+        "text": "At ang mga anak ni Hananayah: si Pelatiyah, at si Yeshayah; ang mga anak ni Rephayah, ang mga anak ni Arnan, ang mga anak ni Obdiyah, ang mga anak ni Sechanyah."
+      },
+      {
+        "num": 22,
+        "text": "At ang mga anak ni Sechanyah: si Shemayah; at ang mga anak ni Shemayah: si Hattus, at si Igheal, at si Baryah, at si Nearyah, at si Saphat, anim."
+      },
+      {
+        "num": 23,
+        "text": "At ang mga anak ni Nearyah: si Elioenai, at si Hezekiyah, at si Azricam, tatlo."
+      },
+      {
+        "num": 24,
+        "text": "At ang mga anak ni Elioenai: si Odawiyah at si Eliyahib, at si Pelayah, at si Accub, at si Yohanan at si Delayah, at si Anani, pito."
+      }
+    ],
+    "4": [
+      {
+        "num": 1,
+        "text": "Ang mga anak ni Yehudah: si Phares, si Hesron, at si Carmi, at si Hur, at si Sobal."
+      },
+      {
+        "num": 2,
+        "text": "At naging anak ni Reayah na anak ni Sobal si Yahath: at naging anak ni Yahath si Ahumai; at si Laad. Ito ang mga angkan ng mga Sorathita."
+      },
+      {
+        "num": 3,
+        "text": "At ito ang mga anak ng ama ni Etham: si Yizreel, at si Isma, at si Idbas: at ang pangalan ng kanilang kapatid na babae ay Haslelponi:"
+      },
+      {
+        "num": 4,
+        "text": "At si Penuel na ama ni Gedor, at si Ezer na ama ni Husa. Ito ang mga anak ni Hur, na panganay ni Ephrata, na ama ni Bethlehem."
+      },
+      {
+        "num": 5,
+        "text": "At si Asur na ama ni Tecoa ay nag-asawa ng dalawa: si Helea, at si Naara."
+      },
+      {
+        "num": 6,
+        "text": "At ipinanganak sa kaniya ni Naara si Auzam, at si Hepher, at si Themeni, at si Ahastari. Ito ang mga anak ni Naara."
+      },
+      {
+        "num": 7,
+        "text": "At ang mga anak ni Helea ay si Sereth, at si Yesohar, at si Ethnan."
+      },
+      {
+        "num": 8,
+        "text": "At naging anak ni Coz si Anob, at si Sobeba, at ang mga angkan ni Aharhel na anak ni Arum."
+      },
+      {
+        "num": 9,
+        "text": "At si Yabesh ay bantog kaysa kaniyang mga kapatid: at tinawag ng kaniyang ina ang kaniyang pangalan na Yabesh, na sinasabi, Sapagka't ipinanganak kong may kahirapan siya."
+      },
+      {
+        "num": 10,
+        "text": "At si Yabesh ay dumalangin sa Elohim ng Israel, na nagsasabi, Oh ako nawa'y iyong pagpalain, at palakihin ang aking hangganan, at ang iyong kamay ay suma akin, at ingatan mo ako sa kasamaan, na huwag akong maghirap! At ipinagkaloob ng Elohim sa kaniya ang kaniyang hiniling."
+      },
+      {
+        "num": 11,
+        "text": "At naging anak ni Celub na kapatid ni Sua si Machir, na siyang ama ni Esthon."
+      },
+      {
+        "num": 12,
+        "text": "At naging anak ni Esthon si Beth-rapha, at si Phasea, at si Tehinna, na ama ni Irnaas. Ito ang mga lalake ni Recha."
+      },
+      {
+        "num": 13,
+        "text": "At ang mga anak ni Cenez: si Othniel, at si Serayah; at ang anak ni Othniel; si Hathath."
+      },
+      {
+        "num": 14,
+        "text": "At naging anak ni Maonathi si Ophra: at naging anak ni Serayah si Yo’ab, na ama ng Geharasim; sapagka't sila'y mga manggagawa."
+      },
+      {
+        "num": 15,
+        "text": "At ang mga anak ni Caleb na anak ni Yephunneh; si Iru, si Ela, at si Naham; at ang anak ni Ela; at si Cenez."
+      },
+      {
+        "num": 16,
+        "text": "At ang mga anak ni Yaleleel: si Ziph, at si Zipha, si Tiryah, at si Asareel."
+      },
+      {
+        "num": 17,
+        "text": "At ang mga anak ni Ezra: si Yeter, at si Mered, at si Epher, at si Yalon; at ipinanganak niya si Miryam, at si Sammai, at si Isba, na ama ni Esthemoa."
+      },
+      {
+        "num": 18,
+        "text": "At ipinanganak ng kaniyang asawang Yudia si Yered, na ama ni Gedor, at si Heber na ama ni Socho, at si Icuthiel na ama ni Zanoa. At ito ang mga anak ni Bethiyah na anak na babae ni Paraon, na naging asawa ni Mered."
+      },
+      {
+        "num": 19,
+        "text": "At ang mga anak ng asawa ni Odiyah, na kapatid na babae ni Naham, ay ang ama ni Keila na Garmita, at ni Esthemoa na Maachateo."
+      },
+      {
+        "num": 20,
+        "text": "At ang mga anak ni Simon: si Amnon, at si Rinna, si Benhanan, at si Tilon. At ang mga anak ni Isi: si Zoheth, at si Benzoheth."
+      },
+      {
+        "num": 21,
+        "text": "Ang mga anak ni Sela na anak ni Yehudah: si Er na ama ni Lecha, at si Laada na ama ni Maresa, at ang mga angkan ng sangbahayan ng nagsisigawa ng mainam na damit na lino, sa sangbahayan ni Asbea;"
+      },
+      {
+        "num": 22,
+        "text": "At si Yaocim, at ang mga lalake ni Chozeba, at si Yeho’ash, at si Saraph, na siyang mga nagpasuko sa Moab, at si Yashubi-lehem. At ang alaalang ito'y matanda na."
+      },
+      {
+        "num": 23,
+        "text": "Ang mga ito'y mga magpapalyok, at mga taga Netaim at Gedera: doo'y nagsisitahan sila na kasama ng hari para sa kaniyang gawain."
+      },
+      {
+        "num": 24,
+        "text": "Ang mga anak ni Simeon: si Nemuel, at si Yamin, si Yarib, si Zera, si Saul:"
+      },
+      {
+        "num": 25,
+        "text": "Si Sallum na kaniyang anak, si Mibsam na kaniyang anak, si Misma na kaniyang anak."
+      },
+      {
+        "num": 26,
+        "text": "At ang mga anak ni Misma: si Hamuel na kaniyang anak, si Sachur na kaniyang anak, si Simi na kaniyang anak."
+      },
+      {
+        "num": 27,
+        "text": "At si Simi ay nagkaanak ng labing anim na lalake at anim na anak na babae; nguni't ang kaniyang mga kapatid ay di nagkaanak ng marami, o dumami man ang buong angkan nila na gaya ng mga anak ni Yehudah."
+      },
+      {
+        "num": 28,
+        "text": "At sila'y nagsitahan sa Beer-seba, at sa Molada, at sa Hasar-sual;"
+      },
+      {
+        "num": 29,
+        "text": "At sa Bala, at sa Eshem, at sa Tholad;"
+      },
+      {
+        "num": 30,
+        "text": "At sa Bethuel, at sa Horma, at sa Siclag;"
+      },
+      {
+        "num": 31,
+        "text": "At sa Beth-marchaboth, at sa Hasa-susim, at sa Beth-birai, at sa Saaraim. Ito ang kanilang mga bayan hanggang sa paghahari ni Dawid."
+      },
+      {
+        "num": 32,
+        "text": "At ang kanilang mga nayon ay Etam, at Ain, Rimmon, at Tochen, at Asan, limang bayan:"
+      },
+      {
+        "num": 33,
+        "text": "At ang lahat ng kanilang mga nayon ay nasa palibot ng mga bayang yaon, hanggang sa Baal. Ang mga ito ang naging kanilang mga tahanan, at sila'y mayroong kanilang talaan ng lahi."
+      },
+      {
+        "num": 34,
+        "text": "At si Mesobab, at si Yamlech, at si Yoshiyah na anak ni Amasiyah;"
+      },
+      {
+        "num": 35,
+        "text": "At si Yo’el at si Yehu na anak ni Yosibyah, na anak ni Serayah, na anak ni Aziel;"
+      },
+      {
+        "num": 36,
+        "text": "At si Elioenai, at si Ya’aqoba, at si Yesohayah, at si Asayah, at si Adiel, at si Yesimiel, at si Benayah;"
+      },
+      {
+        "num": 37,
+        "text": "At si Ziza, na anak ni Siphi, na anak ni Allon, na anak ni Yedaia, na anak ni Simri, na anak ni Shemayah."
+      },
+      {
+        "num": 38,
+        "text": "Ang mga itong nangabanggit sa pangalan ay mga prinsipe sa kanilang mga angkan: at ang mga sangbahayan ng kanilang mga magulang ay lumaking mainam."
+      },
+      {
+        "num": 39,
+        "text": "At sila'y nagsiparoon sa pasukan ng Gador, hanggang sa dakong silanganan ng libis, upang ihanap ng pastulan ang kanilang mga kawan."
+      },
+      {
+        "num": 40,
+        "text": "At sila'y nakasumpong ng mainam na pastulan at mabuti, at ang lupain ay maluwang, at tahimik, at payapa; sapagka't ang nagsisitahan nang una roon ay kay Ham."
+      },
+      {
+        "num": 41,
+        "text": "At ang mga itong nasusulat sa pangalan ay nagsiparoon sa mga kaarawan ni Hezekiyah na hari sa Yehudah, at iniwasak ang kanilang mga tolda, at ang mga Meunim na nasumpungan doon, at nilipol na lubos, hanggang sa araw na ito, at sila'y nagsitahan na kahalili nila: sapagka't may pastulan doon sa kanilang mga kawan."
+      },
+      {
+        "num": 42,
+        "text": "At ang iba sa kanila, sa makatuwid baga'y sa mga anak ni Simeon, na limang daang lalake, ay nagsiparoon sa bundok ng Seir, na ang kanilang mga punong kawal ay si Pelatyah, at si Nearyah, at si Rephayah, at si Uzziel, na mga anak ni Isi."
+      },
+      {
+        "num": 43,
+        "text": "At kanilang sinaktan ang nalabi sa mga Amalekita na nakatanan, at tumahan doon hanggang sa araw na ito."
+      }
+    ],
+    "5": [
+      {
+        "num": 1,
+        "text": "At ang mga anak ni Ruben na panganay ni Israel, sapagka't siya ang panganay; nguni't sa paraang kaniyang dinumihan ang higaan ng kaniyang ama, ang kaniyang pagka-panganay ay ibinigay sa mga anak ni Yoseph na anak ni Israel; at sa talaan ng lahi ay hindi marapat ibilang ayon sa pagkapanganay."
+      },
+      {
+        "num": 2,
+        "text": "Sapagka't si Yehudah ay nanaig sa kaniyang mga kapatid, at sa kaniya nanggaling ang pangulo; nguni't ang pagiging panganay ay kay Yoseph:"
+      },
+      {
+        "num": 3,
+        "text": "Ang mga anak ni Ruben na panganay ni Israel: si Enoch, at si Phallu, at si Esron, at si Charmi."
+      },
+      {
+        "num": 4,
+        "text": "Ang mga anak ni Yo’el: si Shemayah, si Gog, at si Simi."
+      },
+      {
+        "num": 5,
+        "text": "Si Micha na kaniyang anak, si Recayah na kaniyang anak, si Baal na kaniyang anak,"
+      },
+      {
+        "num": 6,
+        "text": "Si Beera na kaniyang anak, na dinalang bihag ni Tilgath-pilneser na hari sa Asiria: siya'y prinsipe ng mga Rubenita."
+      },
+      {
+        "num": 7,
+        "text": "At ang kaniyang mga kapatid ayon sa kanilang mga angkan nang bilangin sa talaan ng kanilang mga lahi; ang pinuno'y si Yeiel, at si Zekarayah,"
+      },
+      {
+        "num": 8,
+        "text": "At si Bela, na anak ni Azaz, na anak ni Shema, na anak ni Yo’el, na tumatahan sa Aroer, hanggang sa Nebo at Baal-meon:"
+      },
+      {
+        "num": 9,
+        "text": "At sa silanganan ay tumahan hanggang sa pasukan sa ilang na mula sa ilog Euprates, at ang kanilang mga hayop ay dumami sa lupain ng Galaad."
+      },
+      {
+        "num": 10,
+        "text": "At sa mga kaarawan ni Saul ay nakipagdigma sila sa mga Hagreo, na nangahulog sa kanilang kamay; at sila'y nagsitahan sa kanilang mga tolda sa buong lupaing silanganan ng Galaad."
+      },
+      {
+        "num": 11,
+        "text": "At ang mga anak ni Gad ay nagsitahan sa tapat nila, sa lupain ng Basan hanggang sa Salca:"
+      },
+      {
+        "num": 12,
+        "text": "Si Yo’el ang pinuno, at si Sepham ang ikalawa, at si Yanai, at si Saphat sa Basan:"
+      },
+      {
+        "num": 13,
+        "text": "At ang kanilang mga kapatid sa mga sang-bahayan ng kanilang mga magulang: si Michael, at si Mesullam, at si Seba, at si Yorai, si Yachan, at si Zia, at si Heber, pito."
+      },
+      {
+        "num": 14,
+        "text": "Ang mga ito ang mga anak ni Abihail na anak ni Huri, na anak ni Yaroa, na anak ni Galaad, na anak ni Michael, na anak ni Yesiai, na anak ni Yaddo, na anak ni Buz;"
+      },
+      {
+        "num": 15,
+        "text": "Si Ahi na anak ni Abdiel, na anak ni Guni, na pinuno sa mga sangbahayan ng kanilang mga magulang."
+      },
+      {
+        "num": 16,
+        "text": "At sila'y nagsitahan sa Galaad sa Basan, at sa kaniyang mga bayan, at sa lahat ng palibot ng Saron, na kasinglayo ng kanilang mga hangganan."
+      },
+      {
+        "num": 17,
+        "text": "Ang lahat ng mga ito'y nangasulat sa pamamagitan ng mga talaan ng lahi sa mga kaarawan ni Yotham na hari sa Yehudah, at sa mga kaarawan ni Yaro’bam na hari sa Israel."
+      },
+      {
+        "num": 18,
+        "text": "Ang mga anak ni Ruben, at ang mga Gadita, at ang kalahating lipi ni Manases, na mga matapang na lalake na mga lalaking makadadala ng kalasag at tabak, at makapagpapahilagpos ng busog, at bihasa sa pakikipagdigma, ay apat na pu't apat na libo, at pitong daan at anim na pu na makalalabas sa pakikipagdigma."
+      },
+      {
+        "num": 19,
+        "text": "At sila'y nakipagdigma sa mga Hagreo, kay Yethur, at kay Naphis, at kay Nodab."
+      },
+      {
+        "num": 20,
+        "text": "At sila'y tinulungan sa pakikilaban sa kanila, at ang mga Hagreo ay ibinigay sa kanilang kamay, at ang lahat sa nasa kanila: dahil sila'y nagsidalangin sa Elohim sa pagbabaka, at kaniyang inayunan sila; dahil sila'y naglagak ng kanilang tiwala sa kaniya."
+      },
+      {
+        "num": 21,
+        "text": "At kanilang dinala ang kanilang mga hayop; sa kanilang mga kamelyo ay limangpung libo, at sa mga tupa ay dalawang daan at limangpung libo, at sa mga asno ay dalawang libo, at sa mga lalake ay isang daang libo."
+      },
+      {
+        "num": 22,
+        "text": "Sapagka't maraming napatay na nabuwal, sapagka't ang pagdidigma ay sa Elohim. At sila'y nagsitahan na kahalili nila hanggang sa pagkabihag."
+      },
+      {
+        "num": 23,
+        "text": "At ang mga anak ng kalahating lipi ni Manases ay tumahan sa lupain: sila ay dumami mula sa Basan hanggang sa Baal-hermon at sa Senir at sa bundok ng Hermon."
+      },
+      {
+        "num": 24,
+        "text": "At ang mga ito ang mga pangulo ng mga sangbahayan ng kanilang mga magulang: sa makatuwid baga'y si Epher, at si Isi, at si Eliel, at si Azriel, at si Yirmeyah, at si Odawiyah, at si Yadiel, na mga lalaking makapangyarihan at may tapang, na mga bantog na lalake, na mga pangulo sa mga sangbahayan ng kanilang mga magulang."
+      },
+      {
+        "num": 25,
+        "text": "At sila'y nagsisuway laban sa Elohim ng kanilang mga magulang, at sila'y sumamba sa mga diyos ng mga bayan ng lupain, na nilipol ng Elohim sa harap nila."
+      },
+      {
+        "num": 26,
+        "text": "At hinikayat ng Elohim ng Israel ang puso ni Phul na hari sa Asiria, at ang puso ni Tilgath-pilneser na hari sa Asiria, at dinalang bihag sila, sa makatuwid baga'y ang mga Rubenita, at ang mga Gadita, at ang kalahati ng lipi ni Manases, at dinala hanggang sa Hala, at sa Habor, at sa Hara, at sa ilog ng Gozan, hanggang sa araw na ito."
+      }
+    ],
+    "6": [
+      {
+        "num": 1,
+        "text": "Ang mga anak ni Lewi: si Gerson, si Coath, at si Merari."
+      },
+      {
+        "num": 2,
+        "text": "At ang mga anak ni Coath: si Amram, si Ishar, at si Hebron, at si Uzziel."
+      },
+      {
+        "num": 3,
+        "text": "At ang mga anak ni Amram: si Aaron, at si Moises, at si Miryam. At ang mga anak ni Aaron: si Nadab, at si Abiyu, si Eleazar, at si Ithamar."
+      },
+      {
+        "num": 4,
+        "text": "Naging anak ni Eleazar si Phinees, naging anak ni Phinees si Abisua;"
+      },
+      {
+        "num": 5,
+        "text": "At naging anak ni Abisua si Bucci, at naging anak ni Bucci si Uzzi;"
+      },
+      {
+        "num": 6,
+        "text": "At naging anak ni Uzzi si Zerayah, at naging anak ni Zerayah si Meraioth;"
+      },
+      {
+        "num": 7,
+        "text": "Naging anak ni Meraioth si Amariyah, at naging anak ni Amariyah si Achitob;"
+      },
+      {
+        "num": 8,
+        "text": "At naging anak ni Achitob si Sadoc, at naging anak ni Sadoc si Achimaas;"
+      },
+      {
+        "num": 9,
+        "text": "At naging anak ni Achimaas si Azarayah, at naging anak ni Azarayah si Yohanan;"
+      },
+      {
+        "num": 10,
+        "text": "At naging anak ni Yohanan si Azarayah, na siyang pangulong saserdote sa bahay na itinayo ni Solomon sa Yerushalayim:"
+      },
+      {
+        "num": 11,
+        "text": "At naging anak ni Azarayah si Amariyah, at naging anak ni Amariyah si Achitob;"
+      },
+      {
+        "num": 12,
+        "text": "At naging anak ni Achitob si Sadoc, at naging anak ni Sadoc si Sallum;"
+      },
+      {
+        "num": 13,
+        "text": "At naging anak ni Sallum si Hilkiyah, at naging anak ni Hilkiyah si Azarayah;"
+      },
+      {
+        "num": 14,
+        "text": "At naging anak ni Azarayah si Serayah, at naging anak ni Serayah si Yosadec;"
+      },
+      {
+        "num": 15,
+        "text": "At si Yosadec ay nabihag nang dalhing bihag ni YAHWEH ang Yehudah at ang Yerushalayim sa pamamagitan ng kamay ni Nebucadrezar."
+      },
+      {
+        "num": 16,
+        "text": "Ang mga anak ni Lewi: si Gersom, si Coath, at si Merari."
+      },
+      {
+        "num": 17,
+        "text": "At ang mga ito ang mga pangalan ng mga anak ni Gersom: si Libni at si Simi."
+      },
+      {
+        "num": 18,
+        "text": "At ang mga anak ni Coath ay si Amram, at si Ishar at si Hebron, at si Uzziel."
+      },
+      {
+        "num": 19,
+        "text": "Ang mga anak ni Merari: si Mahali at si Musi. At ang mga ito ang mga angkan ng mga Lewita ayon sa mga sangbahayan ng kanilang mga magulang."
+      },
+      {
+        "num": 20,
+        "text": "Kay Gerson: si Libni na kaniyang anak, si Yoath na kaniyang anak, si Zimma na kaniyang anak;"
+      },
+      {
+        "num": 21,
+        "text": "Si Yo’ab na kaniyang anak, si Iddo na kaniyang anak, si Zera na kaniyang anak, si Yeothrai na kaniyang anak."
+      },
+      {
+        "num": 22,
+        "text": "Ang mga anak ni Coath: si Aminadab na kaniyang anak, si Core na kaniyang anak, si Asir na kaniyang anak;"
+      },
+      {
+        "num": 23,
+        "text": "Si Elcana na kaniyang anak, at si Abiyahaph na kaniyang anak, at si Asir na kaniyang anak;"
+      },
+      {
+        "num": 24,
+        "text": "Si Thahath na kaniyang anak, si Uriel na kaniyang anak, si Uzziyah na kaniyang anak, at si Saul na kaniyang anak."
+      },
+      {
+        "num": 25,
+        "text": "At ang mga anak ni Elcana: si Amasai at si Achimoth."
+      },
+      {
+        "num": 26,
+        "text": "Tungkol kay Elcana, ang mga anak ni Elcana: si Sophai na kaniyang anak, at si Nahath na kaniyang anak;"
+      },
+      {
+        "num": 27,
+        "text": "Si Eliyab na kaniyang anak, si Yeroham na kaniyang anak, si Elcana na kaniyang anak."
+      },
+      {
+        "num": 28,
+        "text": "At ang mga anak ni Shemu’el: ang panganay ay si Yo’el, at ang ikalawa'y si Abiyah."
+      },
+      {
+        "num": 29,
+        "text": "Ang mga anak ni Merari: si Mahali, si Libni na kaniyang anak, si Simi na kaniyang anak, si Uzza na kaniyang anak;"
+      },
+      {
+        "num": 30,
+        "text": "Si Sima na kaniyang anak, si Haggiyah na kaniyang anak, si Assiyah na kaniyang anak."
+      },
+      {
+        "num": 31,
+        "text": "At ang mga ito ang mga inilagay ni Dawid sa pag-awit sa Bahay ni YAHWEH, pagkatapos na maipagpahinga ang Kaban."
+      },
+      {
+        "num": 32,
+        "text": "At sila'y nagsipangasiwa sa pamamagitan ng awit sa harap ng tolda ng Tabernakulo ng kapisanan hanggang sa itinayo ni Solomon ang Bahay ni YAHWEH sa Yerushalayim: at sila'y naglingkod sa kanilang katungkulan ayon sa kanilang pagkakahali-halili."
+      },
+      {
+        "num": 33,
+        "text": "At ang mga ito ang naglingkod at ang kanilang mga anak. Sa mga anak ng mga Coathita: si Heman, na mang-aawit, na anak ni Yo’el, na anak ni Shemu’el;"
+      },
+      {
+        "num": 34,
+        "text": "Na anak ni Elcana, na anak ni Yeroham, na anak ni Eliel, na anak ni Thoa;"
+      },
+      {
+        "num": 35,
+        "text": "Na anak ni Suph, na anak ni Elcana, na anak ni Mahath, na anak ni Amasai;"
+      },
+      {
+        "num": 36,
+        "text": "Na anak ni Elcana, na anak ni Yo’el, na anak ni Azarayah, na anak ni Sophonyah;"
+      },
+      {
+        "num": 37,
+        "text": "Na anak ni Thahat, na anak ni Asir, na anak ni Ahiasaph, na anak ni Core;"
+      },
+      {
+        "num": 38,
+        "text": "Na anak ni Ishar, na anak ni Coath, na anak ni Lewi, na anak ni Israel."
+      },
+      {
+        "num": 39,
+        "text": "At ang kaniyang kapatid na si Asaph, na siyang nakatayo sa kaniyang kanan, sa makatuwid baga'y si Asaph na anak ni Berachiyah, na anak ni Sima;"
+      },
+      {
+        "num": 40,
+        "text": "Na anak ni Michael, na anak ni Baasiyah, na anak ni Malchiyah;"
+      },
+      {
+        "num": 41,
+        "text": "Na anak ni Athanai, na anak ni Zera, na anak ni Adayah;"
+      },
+      {
+        "num": 42,
+        "text": "Na anak ni Ethan, na anak ni Zimma, na anak ni Simi;"
+      },
+      {
+        "num": 43,
+        "text": "Na anak ni Yahat, na anak ni Gersom, na anak ni Lewi."
+      },
+      {
+        "num": 44,
+        "text": "At sa kaliwa ay ang kanilang mga kapatid na mga anak ni Merari: si Ethan na anak ni Chisi, na anak ni Abdi, na anak ni Maluch;"
+      },
+      {
+        "num": 45,
+        "text": "Na anak ni Hasabiyah, na anak ni Amasiyah, na anak ni Hilkiyah;"
+      },
+      {
+        "num": 46,
+        "text": "Na anak ni Amasiyah, na anak ni Bani, na anak ni Shemer;"
+      },
+      {
+        "num": 47,
+        "text": "Na anak ni Mahali, na anak ni Musi, na anak ni Merari, na anak ni Lewi."
+      },
+      {
+        "num": 48,
+        "text": "At ang kanilang mga kapatid na mga Lewita ay nangahalal sa buong paglilingkod sa Tabernakulo ng Bahay ng Elohim."
+      },
+      {
+        "num": 49,
+        "text": "Nguni't si Aaron at ang kaniyang mga anak ay nagsipaghandog sa ibabaw ng dambana ng handog na susunugin, at sa ibabaw ng dambana ng kamangyan, para sa buong gawain sa kabanal-banalang dako, at upang tubusin sa sala ang Israel, ayon sa lahat na iniutos ni Moises na lingkod ng Elohim."
+      },
+      {
+        "num": 50,
+        "text": "At ang mga ito ang mga anak ni Aaron: si Eleazar na kaniyang anak, si Phinees na kaniyang anak, si Abisua na kaniyang anak,"
+      },
+      {
+        "num": 51,
+        "text": "Si Bucci na kaniyang anak, si Uzzi na kaniyang anak, si Zerayah na kaniyang anak."
+      },
+      {
+        "num": 52,
+        "text": "Si Meraioth na kaniyang anak, si Amariyah na kaniyang anak, si Achitob na kaniyang anak,"
+      },
+      {
+        "num": 53,
+        "text": "Si Sadoc na kaniyang anak, si Achimaas na kaniyang anak."
+      },
+      {
+        "num": 54,
+        "text": "Ang mga ito nga ang kanilang mga tahanang dako ayon sa kanilang mga kampamento sa kanilang mga hangganan; sa mga anak ni Aaron, na sa mga angkan ng mga Coathita, sapagka't sa kanila ang unang palad."
+      },
+      {
+        "num": 55,
+        "text": "Sa kanila ibinigay nila ang Hebron sa lupain ng Yehudah, at ang mga nayon niyaon sa palibot,"
+      },
+      {
+        "num": 56,
+        "text": "Nguni't ang mga bukid ng bayan, at ang mga nayon niyaon, ay kanilang ibinigay kay Caleb na anak ni Yephunneh."
+      },
+      {
+        "num": 57,
+        "text": "At sa mga anak ni Aaron ay kanilang ibinigay ang mga bayang ampunan, ang Hebron; gayon din ang Libna pati ng mga nayon niyaon, at ang Yathir, at ang Esthemoa pati ng mga nayon niyaon:"
+      },
+      {
+        "num": 58,
+        "text": "At ang Hilem pati ng mga nayon niyaon, ang Debir pati ng mga nayon niyaon;"
+      },
+      {
+        "num": 59,
+        "text": "At ang Asan pati ng mga nayon niyaon, at ang Beth-shemes pati ng mga nayon niyaon:"
+      },
+      {
+        "num": 60,
+        "text": "At mula sa lipi ni Binyamin; ang Geba pati ng mga nayon niyaon, at ang Alemeth pati ng mga nayon niyaon, at ang Anathoth pati ng mga nayon niyaon. Ang lahat na kanilang bayan sa lahat na kanilang angkan ay labing tatlong bayan."
+      },
+      {
+        "num": 61,
+        "text": "At sa nalabi sa mga anak ni Coath ay nabigay sa pamamagitan ng sapalaran, sa angkan ng lipi, sa kalahating lipi, na kalahati ng Manases, sangpung bayan."
+      },
+      {
+        "num": 62,
+        "text": "At sa mga anak ni Gerson, ayon sa kanilang mga angkan, sa lipi ni Issachar, at sa lipi ni Aser, at sa lipi ni Nephtali, at sa lipi ni Manases sa Basan, labing tatlong bayan."
+      },
+      {
+        "num": 63,
+        "text": "Sa mga anak ni Merari ay nabigay sa pamamagitan ng sapalaran, ayon sa kanilang mga angkan sa lipi ni Ruben, at sa lipi ni Gad, at sa lipi ni Zabulon, labing dalawang bayan."
+      },
+      {
+        "num": 64,
+        "text": "At ibinigay ng mga anak ni Israel sa mga Lewita ang mga bayan pati ng mga nayon niyaon."
+      },
+      {
+        "num": 65,
+        "text": "At kanilang ibinigay sa pamamagitan ng sapalaran sa lipi ng mga anak ni Yehudah, at sa lipi ng mga anak ni Simeon, at sa lipi ng mga anak ni Binyamin, ang mga bayang ito na binanggit sa pangalan."
+      },
+      {
+        "num": 66,
+        "text": "At ang ilan sa mga angkan ng mga anak ni Coath ay may mga bayan sa kanilang mga hangganan na mula sa lipi ni Ephraim."
+      },
+      {
+        "num": 67,
+        "text": "At ibinigay nila sa kanila ang mga bayang ampunan: ang Sichem sa lupaing maburol ng Ephraim pati ng mga nayon niyaon; gayon din ang Gezer pati ng mga nayon niyaon."
+      },
+      {
+        "num": 68,
+        "text": "At ang Yocmeam pati ng mga nayon niyaon, at ang Bet-horon pati ng mga nayon niyaon;"
+      },
+      {
+        "num": 69,
+        "text": "At ang Ayalon pati ng mga nayon niyaon; at ang Gath-rimmon pati ng mga nayon niyaon:"
+      },
+      {
+        "num": 70,
+        "text": "At mula sa kalahating lipi ni Manases; ang Aner pati ng mga nayon niyaon, at ang Bilam pati ng mga nayon niyaon, sa ganang nangalabi sa angkan ng mga anak ng Coath."
+      },
+      {
+        "num": 71,
+        "text": "Sa mga anak ng Gerson ay nabigay, mula sa angkan ng kalahating lipi ni Manases, ang Golan sa Basan pati ng mga nayon niyaon, at ang Astharoth pati ng mga nayon niyaon;"
+      },
+      {
+        "num": 72,
+        "text": "At mula sa lipi ni Issachar, ang Cedes at mga nayon niyaon, ang Dobrath at mga nayon niyaon;"
+      },
+      {
+        "num": 73,
+        "text": "At ang Ramoth pati ng mga nayon niyaon, at ang Anem pati ng mga nayon niyaon:"
+      },
+      {
+        "num": 74,
+        "text": "At mula sa lipi ni Aser; ang Masal pati ng mga nayon, at ang Abdon pati ang mga nayon;"
+      },
+      {
+        "num": 75,
+        "text": "At ang Ucoc pati ng mga nayon niyaon, at ang Rehob pati ng mga nayon niyaon:"
+      },
+      {
+        "num": 76,
+        "text": "At mula sa lipi ni Nephtali; ang Cedes sa Galilea pati ng mga nayon niyaon, at ang Ammon pati ng mga nayon niyaon, at ang Chiriat-haim pati ng mga nayon niyaon."
+      },
+      {
+        "num": 77,
+        "text": "Sa nangalabi sa mga Lewita, na mga anak ni Merari, ay nabigay mula sa lipi ni Zabulon, ang Rimmono pati ng mga nayon niyaon, ang Thabor pati ng mga nayon niyaon:"
+      },
+      {
+        "num": 78,
+        "text": "At sa dako roon ng Yarden sa Yericho sa dakong silanganan ng Yarden nabigay sa kanila, mula sa lipi ni Ruben, ang Beser sa ilang pati ng mga nayon niyaon, at ang Yahtsah pati ng mga nayon niyaon,"
+      },
+      {
+        "num": 79,
+        "text": "At ang Chedemoth pati ng mga nayon niyaon, at ang Mephaath pati ng mga nayon niyaon:"
+      },
+      {
+        "num": 80,
+        "text": "At mula sa lipi ni Gad; ang Ramot sa Galaad pati ng mga nayon niyaon, at ang Mahanaim pati ng mga nayon niyaon,"
+      },
+      {
+        "num": 81,
+        "text": "At ang Hesbon pati ng mga nayon nito, at ang Yacer pati ng mga nayon niyaon."
+      }
+    ],
+    "7": [
+      {
+        "num": 1,
+        "text": "At sa mga anak ni Issachar; si Thola, at si Phua, si Yabsub, at si Simron, apat."
+      },
+      {
+        "num": 2,
+        "text": "At sa mga anak ni Thola: si Uzzi, at si Rephayah, at si Yeriel, at si Yamai, at si Yibsam, at si Shemu’el, mga pangulo sa mga sangbahayan ng kanilang mga magulang, sa makatuwid baga'y ni Thola; mga makapangyarihang lalaking may tapang sa kanilang mga lahi: ang kanilang bilang sa mga kaarawan ni Dawid ay dalawang pu't dalawang libo at anim na raan."
+      },
+      {
+        "num": 3,
+        "text": "At ang mga anak ni Uzzi: si Izrahiyah: at ang mga anak ni Izrahiyah: si Michael, at si Obadiyah, at si Yo’el, si Isyah, lima: silang lahat ay mga pinuno."
+      },
+      {
+        "num": 4,
+        "text": "At sa kasamahan nila, ayon sa kanilang mga lahi, ayon sa mga sangbahayan ng kanilang mga magulang, may mga pulutong ng hukbo sa pakikipagdigma, tatlongpu't anim na libo: dahil sila'y nagkaroon ng maraming asawa at mga anak."
+      },
+      {
+        "num": 5,
+        "text": "At ang kanilang mga kapatid sa lahat na angkan ni Issachar, na mga lalaking makapangyarihan at matapang, na nabilang silang lahat, ayon sa talaan ng lahi, ay walongpu't pitong libo."
+      },
+      {
+        "num": 6,
+        "text": "Ang mga anak ni Binyamin: si Bela, at si Becher, at si Yediael, tatlo."
+      },
+      {
+        "num": 7,
+        "text": "At ang mga anak ni Bela: si Esbon, at si Uzzi, at si Uzziel, at si Yerimoth, at si Iri, lima; mga pangulo sa mga sangbahayan ng mga magulang, mga makapangyarihang lalaking may tapang; at sila'y nabilang ayon sa talaan ng lahi, ay dalawangpu't dalawang libo at tatlong pu't apat."
+      },
+      {
+        "num": 8,
+        "text": "At ang mga anak ni Becher: si Zemira, at si Yeho’ash, at si Eliezer, at si Elioenai, at si Omri, at si Yerimoth, at si Abiyah, at si Anathoth, at si Alemeth. Lahat ng ito'y mga anak ni Becher."
+      },
+      {
+        "num": 9,
+        "text": "At sila'y nabilang ayon sa talaan ng lahi, ayon sa kanilang lahi, na mga pangulo sa mga sangbahayan ng kanilang mga magulang, na mga makapangyarihang lalaking may tapang, dalawangpung libo at dalawang daan."
+      },
+      {
+        "num": 10,
+        "text": "At ang mga anak ni Yediael: si Bilhan: at ang mga anak ni Bilhan: si Yebus, at si Binyamin, at si Aod, at si Chenaana, at si Zethan, at si Tharsis, at si Ahisahar."
+      },
+      {
+        "num": 11,
+        "text": "Lahat ng ito'y mga anak ni Yediael, ayon sa mga pangulo ng mga sangbahayan ng kanilang mga magulang, na mga lalaking makapangyarihang may tapang labing pitong libo at dalawang daan na nakalalabas sa hukbo upang makidigma."
+      },
+      {
+        "num": 12,
+        "text": "Si Suppim rin naman, at si Huppim na mga anak ni Hir, si Husim na mga anak ni Aher."
+      },
+      {
+        "num": 13,
+        "text": "Ang mga anak ni Nephtali: si Yaoel, at si Guni, at si Yezer, at si Sallum, na mga anak ni Bilha."
+      },
+      {
+        "num": 14,
+        "text": "Ang mga anak ni Manases: si Asriel, na siyang ipinanganak ng kaniyang babae na Aramita; ipinanganak niya si Machir na ama ni Galaad."
+      },
+      {
+        "num": 15,
+        "text": "At si Machir ay nag-asawa kay Huppim at kay Suppim, na ang pangalan ng kapatid na babae nila ay Maacha; at ang pangalan ng ikalawa ay Salphaad: at si Salphaad ay nagkaanak ng mga babae."
+      },
+      {
+        "num": 16,
+        "text": "At si Maacha na asawa ni Machir ay nanganak ng isang lalake, at tinawag niya ang kaniyang pangalan na Peres; at ang pangalan ng kaniyang kapatid ay Seres; at ang kaniyang mga anak ay si Ulam at si Recem."
+      },
+      {
+        "num": 17,
+        "text": "At ang mga anak ni Ulam; si Bedan. Ito ang mga anak ni Galaad na anak ni Machir, na anak ni Manases."
+      },
+      {
+        "num": 18,
+        "text": "At ipinanganak ng kaniyang kapatid na babae na si Molechet si Ichod, at si Abiezer, at si Mahala."
+      },
+      {
+        "num": 19,
+        "text": "At ang mga anak ni Shemida ay si Ahian, at si Sechem at si Licci, at si Aniam."
+      },
+      {
+        "num": 20,
+        "text": "At ang mga anak ni Ephraim: si Suthela, at si Bered na kaniyang anak, at si Thahath na kaniyang anak, at si Elada na kaniyang anak, at si Thahath na kaniyang anak."
+      },
+      {
+        "num": 21,
+        "text": "At si Zabad na kaniyang anak, at si Suthela na kaniyang anak, at si Ezer, at si Elad, na siyang mga pinatay ng mga lalake ng Gath na mga ipinanganak sa lupain, sapagka't sila'y nagsilusong upang kunin ang kanilang mga hayop."
+      },
+      {
+        "num": 22,
+        "text": "At si Ephraim na kanilang ama ay tumangis na maraming araw, at ang kaniyang mga kapatid ay nagsiparoon upang aliwin siya."
+      },
+      {
+        "num": 23,
+        "text": "At siya'y sumiping sa kaniyang asawa, at siya'y naglihi, at nagkaanak ng isang lalake, at tinawag niya ang kaniyang pangalan na Beria, sapagka't sumakaniyang bahay ang kasamaan."
+      },
+      {
+        "num": 24,
+        "text": "At ang kaniyang anak na babae ay si Seera, na siyang nagtayo ng Bet-horon sa ibaba at sa itaas, at ng Uzzen-seera."
+      },
+      {
+        "num": 25,
+        "text": "At naging anak niya si Repha, at si Reseph, at si Thela, at si Taan;"
+      },
+      {
+        "num": 26,
+        "text": "Si Laadan na kaniyang anak, si Ammiud na kaniyang anak, si Elisama na kaniyang anak;"
+      },
+      {
+        "num": 27,
+        "text": "Si Nun na kaniyang anak, si Yehoshua na kaniyang anak."
+      },
+      {
+        "num": 28,
+        "text": "At ang kanilang mga pag-aari at mga tahanan ay ang Beth-el at ang mga nayon niyaon, at ang dakong silanganan ng Naaran, at ang dakong kanluran ng Gezer pati ng mga nayon niyaon; ang Sichem rin naman at ang mga nayon niyaon, hanggang sa Asa at ang mga nayon niyaon:"
+      },
+      {
+        "num": 29,
+        "text": "At sa siping ng mga hangganan ng mga anak ni Manases, ang Beth-sean at ang mga nayon niyaon, ang Thanach at ang mga nayon niyaon, ang Megiddo at ang mga nayon niyaon, ang Dor at ang mga nayon niyaon. Sa mga ito nagsitahan ang mga anak ni Yoseph na anak ni Israel."
+      },
+      {
+        "num": 30,
+        "text": "Ang mga anak ni Aser: si Imna, at si Isua, at si Isui, at si Beriyah, at si Sera na kanilang kapatid na babae."
+      },
+      {
+        "num": 31,
+        "text": "At ang mga anak ni Beriyah: si Heber, at si Machiel na siyang ama ni Birzabith."
+      },
+      {
+        "num": 32,
+        "text": "At naging anak ni Heber si Yaphlet, at si Shemer, at si Hotham, at si Sua na kapatid na babae nila."
+      },
+      {
+        "num": 33,
+        "text": "At ang mga anak ni Yaphlet si Pasac, at si Bimhal, at si Aswath. Ang mga ito ang mga anak ni Yaphlet."
+      },
+      {
+        "num": 34,
+        "text": "At ang mga anak ni Shemer, si Ahi, at si Roga, si Yehubba, at si Aram."
+      },
+      {
+        "num": 35,
+        "text": "At ang mga anak ni Helem na kaniyang kapatid: si Sopha, at si Imna, at si Selles, at si Amal."
+      },
+      {
+        "num": 36,
+        "text": "Ang mga anak ni Sopha: si Sua, at si Harnapher, at si Sual, at si Beri; at si Imra:"
+      },
+      {
+        "num": 37,
+        "text": "Si Beser, at si Hod, at si Samma, at si Silsa, at si Ithram, at si Beera."
+      },
+      {
+        "num": 38,
+        "text": "At ang mga anak ni Yether: si Pispa, at si Yephunneh, at si Ara."
+      },
+      {
+        "num": 39,
+        "text": "At ang mga anak ni Ulla: si Ara, at si Haniel, at si Resia."
+      },
+      {
+        "num": 40,
+        "text": "Ang lahat na ito ay mga anak ni Aser, mga pangulo sa mga sangbahayan ng mga magulang, mga pili at makapangyarihang lalake na may tapang, mga pinuno ng mga prinsipe. At ang bilang nilang nabilang ayon sa talaan ng lahi sa paglilingkod sa pagdidigma ay dalawang pu’t anim na libong lalake."
+      }
+    ],
+    "8": [
+      {
+        "num": 1,
+        "text": "At naging anak ni Binyamin si Bela na kaniyang panganay, si Asbel ang ikalawa, at si Ara ang ikatlo;"
+      },
+      {
+        "num": 2,
+        "text": "Si Noha ang ikaapat, at si Rapha ang ikalima."
+      },
+      {
+        "num": 3,
+        "text": "At ang mga naging anak ni Bela: si Addar, at si Gera, at si Abiyud;"
+      },
+      {
+        "num": 4,
+        "text": "At si Abisua, at si Naaman, at si Ahoa,"
+      },
+      {
+        "num": 5,
+        "text": "At si Gera, at si Sephuphim, at si Huram."
+      },
+      {
+        "num": 6,
+        "text": "At ang mga ito ang mga anak ni Ehud; ang mga ito ang mga pangulo sa mga sangbahayan ng mga magulang ng mga taga Gabaa, at dinala nila silang bihag sa Manahath."
+      },
+      {
+        "num": 7,
+        "text": "At si Naaman, at si Achiyah, at si Gera, ay kaniyang dinalang bihag; at kaniyang ipinanganak si Uzza at si Ahihud."
+      },
+      {
+        "num": 8,
+        "text": "At si Saharaim ay nagkaanak sa parang ng Moab, pagkatapos na kaniyang mapagpaalam sila; si Husim, at si Baara ay ang kaniyang mga asawa."
+      },
+      {
+        "num": 9,
+        "text": "At ipinanganak sa kaniya ni Chodes na kaniyang asawa, si Yobab, at si Sibiyah, at si Mesa, at si Malcham,"
+      },
+      {
+        "num": 10,
+        "text": "At si Ye’ush, at si Sochiyah, at si Mirma. Ang mga ito ang kaniyang mga anak na mga pangulo sa mga sangbahayan ng mga magulang."
+      },
+      {
+        "num": 11,
+        "text": "At ipinanganak sa kaniya ni Husim si Abitob, at si Elphaal."
+      },
+      {
+        "num": 12,
+        "text": "At ang mga anak ni Elphaal: si Heber, at si Misam, at si Shemeb, na siyang nagtayo ng Ono at ng Loth, pati ng mga nayon niyaon:"
+      },
+      {
+        "num": 13,
+        "text": "At si Beriyah, at si Shema na mga pangulo sa mga sangbahayan ng mga magulang ng mga taga Ayalon na siyang nagpatakas sa mga taga Gath;"
+      },
+      {
+        "num": 14,
+        "text": "At si Ahio, si Sasac, at si Yeremoth;"
+      },
+      {
+        "num": 15,
+        "text": "At si Zebadyah, at si Arad, at si Heder;"
+      },
+      {
+        "num": 16,
+        "text": "At si Michael, at si Ispha, at si Yoa, na mga anak ni Beriyah;"
+      },
+      {
+        "num": 17,
+        "text": "At si Zebadyah, at si Mesullam, at si Hizchi, at si Heber."
+      },
+      {
+        "num": 18,
+        "text": "At si Ismari, at si Izliyah, at si Yobab, na mga anak ni Elphaal;"
+      },
+      {
+        "num": 19,
+        "text": "At si Yacim, at si Zichri, at si Zabdi;"
+      },
+      {
+        "num": 20,
+        "text": "At si Elioenai, at si Silithai, at si Eliel;"
+      },
+      {
+        "num": 21,
+        "text": "At si Adayah, at si Barayah, at si Simrath, na mga anak ni Simi;"
+      },
+      {
+        "num": 22,
+        "text": "At si Isphan, at si Heber, at si Eliel;"
+      },
+      {
+        "num": 23,
+        "text": "At si Adon, at si Zichri, at si Hanan;"
+      },
+      {
+        "num": 24,
+        "text": "At si Hananyah, at si Belam, at si Antho-thiyah;"
+      },
+      {
+        "num": 25,
+        "text": "At si Iphdayah, at si Peniel, na mga anak ni Sasac;"
+      },
+      {
+        "num": 26,
+        "text": "At si Samseri, at si Seharyah, at si Atalyah;"
+      },
+      {
+        "num": 27,
+        "text": "At si Yaarsyah, at si Eliyah, at si Ziri, na mga anak ni Yeroham."
+      },
+      {
+        "num": 28,
+        "text": "Ang mga ito ang mga pangulo sa mga sangbahayan ng mga magulang ayon sa kanilang lahi, na mga pinunong lalake: ang mga ito'y nagsitahan sa Yerushalayim."
+      },
+      {
+        "num": 29,
+        "text": "At sa Gabaon ay tumahan ang ama ni Gabaon, si Yeiel, na ang pangalan ng asawa ay Maacha:"
+      },
+      {
+        "num": 30,
+        "text": "At ang kaniyang anak na panganay si Abdon, at si Sur, at si Cis, at si Baal, at si Nadab;"
+      },
+      {
+        "num": 31,
+        "text": "At si Gedor, at si Ahio, at si Zecher."
+      },
+      {
+        "num": 32,
+        "text": "At naging anak ni Micloth si Simea. At sila nama'y nagsitahang kasama ng kanilang mga kapatid sa Yerushalayim, sa tapat ng kanilang mga kapatid."
+      },
+      {
+        "num": 33,
+        "text": "At naging anak ni Ner si Cis; at naging anak ni Cis si Saul; at naging anak ni Saul si Yehonathan, at si Malchi-sua, at si Abinadab, at si Esbaal."
+      },
+      {
+        "num": 34,
+        "text": "At ang anak ni Yehonathan ay si Merib-baal; at naging anak ni Merib-baal si Micha."
+      },
+      {
+        "num": 35,
+        "text": "At ang mga anak ni Micha: si Phiton, at si Melech, at si Thaarea, at si Ahaz."
+      },
+      {
+        "num": 36,
+        "text": "At naging anak ni Ahaz si Yoadda; at naging anak ni Yoadda si Alemeth, at si Azmaweth, at si Zimri; at naging anak ni Zimri si Mosa;"
+      },
+      {
+        "num": 37,
+        "text": "At naging anak ni Mosa si Bina; si Rapha anak niya, si Elasa na anak niya, si Asel na anak niya:"
+      },
+      {
+        "num": 38,
+        "text": "At si Asel ay nagkaroon ng anim na anak, na ang mga pangalan ay ito: si Azricam, si Bochru, at si Yishma’el, at si Searyah, at si Obadayah, at si Hanan. Lahat ng ito'y ang mga anak ni Asel."
+      },
+      {
+        "num": 39,
+        "text": "At ang mga anak ni Esec na kaniyang kapatid: si Ulam na kaniyang panganay, si Yehu na ikalawa, at si Elipheleth na ikatlo."
+      },
+      {
+        "num": 40,
+        "text": "At ang mga anak ni Ulam ay mga may tapang at makapangyarihang lalaki, na mga mamamana, at nagkaroon ng maraming anak, at mga anak ng mga anak, na isang daan at limangpu. Lahat, ng ito'y ang mga anak ni Binyamin."
+      }
+    ],
+    "9": [
+      {
+        "num": 1,
+        "text": "Sa gayo'y ang buong Israel ay nabilang ayon sa mga talaan ng lahi; at, narito, sila'y nasusulat sa aklat ng mga hari sa Israel. At ang Yehudah ay dinalang bihag sa Babilonia dahil sa kanilang pagsalangsang."
+      },
+      {
+        "num": 2,
+        "text": "Ang mga unang mananahanan na nagsitahan sa kanilang mga pag-aari sa kanilang mga bayan ay ang Israel, ang mga saserdote, ang mga Lewita, at ang mga Nethineo."
+      },
+      {
+        "num": 3,
+        "text": "At sa Yerushalayim ay tumahan ang mga anak ni Yehudah, at ang mga anak ni Binyamin, at ang mga anak ni Ephraim at Manases;"
+      },
+      {
+        "num": 4,
+        "text": "Si Urai, na anak ni Amiud, na anak ni Omri, na anak ni Imrai, na anak ni Bani, sa mga anak ni Phares na anak ni Yehudah."
+      },
+      {
+        "num": 5,
+        "text": "At sa mga Silonita: si Asayah na panganay, at ang kaniyang mga anak."
+      },
+      {
+        "num": 6,
+        "text": "At sa mga anak ni Zara: si Ye’u’el, at ang kanilang mga kapatid, na anim na raan at siyam na pu."
+      },
+      {
+        "num": 7,
+        "text": "At sa mga anak ni Binyamin: si Sallu, na anak ni Mesullam, na anak ni Odawiyah, na anak ni Asenua;"
+      },
+      {
+        "num": 8,
+        "text": "At si Ibniyah na anak ni Yeroham, at si Ela na anak ni Uzzi, na anak ni Michri, at si Mesullam na anak ni Sephatyah, na anak ni Rehuel, na anak ni Ibniyah;"
+      },
+      {
+        "num": 9,
+        "text": "At ang kanilang mga kapatid, ayon sa kanilang mga lahi, na siyam na raan at limangpu't anim. Lahat ng mga lalaking ito ay mga pangulo sa mga sangbahayan ng mga magulang ayon sa mga sangbahayan ng kanilang mga magulang."
+      },
+      {
+        "num": 10,
+        "text": "At sa mga saserdote: si Yedayah, at si Yoiarib, at si Yoachim."
+      },
+      {
+        "num": 11,
+        "text": "At si Azarayah na anak ni Hilkiyah, na anak ni Mesullam, na anak ni Sadoc, na anak ni Meraioth, na anak ni Achitob, na tagapamahala sa Bahay ng Elohim;"
+      },
+      {
+        "num": 12,
+        "text": "At si Adayah na anak ni Yeroham, na anak ni Phasur, na anak ni Machiyah, at si Mahsai na anak ni Adiel, na anak ni Yazera, na anak ni Mesullam, na anak ni Mesillemith, na anak ni Immer;"
+      },
+      {
+        "num": 13,
+        "text": "At ang kanilang mga kapatid, na mga pangulo sa mga sangbahayan ng kanilang mga magulang, na isang libo at pitong daan at animnapu; na mga lalaking totoong bihasa sa gawaing paglilingkod sa Bahay ng Elohim."
+      },
+      {
+        "num": 14,
+        "text": "At sa mga Lewita: si Shemeyah na anak ni Hassub, na anak ni Azricam, na anak ni Hasabiyah sa mga anak ni Merari;"
+      },
+      {
+        "num": 15,
+        "text": "At si Bacbacar, si Heres, at si Galal, at si Mattanyah na anak ni Michas, na anak ni Zichri, na anak ni Asaph;"
+      },
+      {
+        "num": 16,
+        "text": "At si Obadayah na anak ni Shemeyah, na anak ni Galal, na anak ni Iduthum, at si Berekyah na anak ni Asa na anak ni Elcana, na tumahan sa mga nayon ng mga Nethophatita."
+      },
+      {
+        "num": 17,
+        "text": "At ang mga tagatanod-pinto: si Sallum, at si Accub, at si Talmon, at si Ahiman: at ang kanilang mga kapatid, si Sallum ang puno."
+      },
+      {
+        "num": 18,
+        "text": "Na hanggang ngayo'y namamalagi sa pintuang-daan ng hari na dakong silanganan: sila ang mga tagatanod-pinto sa kampamento ng mga anak ni Lewi."
+      },
+      {
+        "num": 19,
+        "text": "At si Sallum na anak ni Core, na anak ni Abiyahath, na anak ni Corah, at ang kaniyang mga kapatid, sa sangbahayan ng kaniyang magulang, ang mga Coraita ay namamahala sa gawaing paglilingkod, na mga tagapag-ingat ng mga pintuang-daan ng Tabernakulo; at ang kanilang mga magulang ay napasa kampamento ni YAHWEH na mga tagapag-ingat ng pasukan."
+      },
+      {
+        "num": 20,
+        "text": "At si Phinees na anak ni Eleazar ay pinuno sa kanila, at si YAHWEH ay sumasa kaniya."
+      },
+      {
+        "num": 21,
+        "text": "Si Zekarayah na anak ni Meselemyah ay tagatanod-pinto ng Tabernakulo ng kapisanan."
+      },
+      {
+        "num": 22,
+        "text": "Lahat ng mga ito na mga napili upang maging mga tagatanod pinto sa mga pintuang-daan ay dalawang daan at labing dalawa. Ang mga ito'y nabilang ayon sa talaan ng lahi sa kanilang mga nayon, na siyang pinagkatiwalaan sa kanilang mga katungkulan ni Dawid at ni Shemu’el na tagakita."
+      },
+      {
+        "num": 23,
+        "text": "Sa gayo'y sila, at ang kanilang mga anak ay namahala na pinakabantay sa mga pintuang-daan ng Bahay ni YAHWEH, sa makatuwid baga'y ng Bahay ng Tabernakulo, ayon sa paghahalinhinan."
+      },
+      {
+        "num": 24,
+        "text": "Na sa apat na sulok ang mga tagatanod- pinto, sa dakong silanganan, kanluran, hilagaan, at timugan."
+      },
+      {
+        "num": 25,
+        "text": "At ang kanilang mga kapatid, sa kanilang mga nayon, ay paroroon sa bawa't pitong araw, tuwing kapanahunan upang sumakanila:"
+      },
+      {
+        "num": 26,
+        "text": "Dahil ang apat na punong tagatanod-pinto, na mga Lewita, ay nasa takdang katungkulan, at nasa mga silid at sa mga ingatang-yaman sa Bahay ng Elohim."
+      },
+      {
+        "num": 27,
+        "text": "At sila'y nagsitahan sa palibot ng Bahay ng Elohim, sapagka't ang katungkulan doon ay kanila, at sa kanila nauukol ang pagbubukas tuwing umaga."
+      },
+      {
+        "num": 28,
+        "text": "At ang ilan sa kanila ay may katungkulan sa mga kasangkapan na ipinaglilingkod; sapagka't ayon sa bilang ipinapasok, at ayon sa bilang inilalabas."
+      },
+      {
+        "num": 29,
+        "text": "Ang ilan naman sa kanila ay nangahalal sa kasangkapan, at sa lahat ng mga kasangkapan ng santuariyo, at sa mainam na harina, at sa alak, at sa langis, at sa kamangyan, at sa mga espesia."
+      },
+      {
+        "num": 30,
+        "text": "At ang ilan sa mga anak ng mga saserdote ay nagsisipaghanda ng paghahalo-halo ng mga espesia."
+      },
+      {
+        "num": 31,
+        "text": "At si Mathathias, na isa sa mga Lewita, na siyang panganay ni Sallum na Coraita, may takdang katungkulan sa mga bagay na niluluto sa kawali."
+      },
+      {
+        "num": 32,
+        "text": "At ang ilan sa kanilang mga kapatid sa mga anak ng mga Coatita, ay nasa tinapay na handog upang ihanda bawa't Sabbath."
+      },
+      {
+        "num": 33,
+        "text": "At ang mga ito ang mga mang-aawit, na mga pangulo sa mga sangbahayan ng mga magulang ng mga Lewita, na mga nagsisitahan sa mga silid, at mga laya sa ibang katungkulan: sapagka't sila'y nalalagay sa kanilang gawain araw at gabi."
+      },
+      {
+        "num": 34,
+        "text": "Ang mga ito ay mga pangulo sa mga sangbahayan ng mga magulang ng mga Lewita, ayon sa kanilang lahi na mga lalaking pinuno: ang mga ito'y nagsitahan sa Yerushalayim."
+      },
+      {
+        "num": 35,
+        "text": "At sa Gabaon ay tumahan ang ama ni Gabaon, si Yehiel, na ang pangalan ng kaniyang asawa ay Maacha:"
+      },
+      {
+        "num": 36,
+        "text": "At ang anak niyang panganay si Abdon, at si Sur, at si Cis, at si Baal, at si Ner, at si Nadab;"
+      },
+      {
+        "num": 37,
+        "text": "At si Gedor, at si Ahio, at si Zekarayah, at si Micloth."
+      },
+      {
+        "num": 38,
+        "text": "At naging anak ni Micloth si Samaam. At sila nama'y nagsitahan na kasama ng kanilang mga kapatid sa Yerushalayim, sa tapat ng kanilang mga kapatid."
+      },
+      {
+        "num": 39,
+        "text": "At naging anak ni Ner si Cis; at naging anak ni Cis si Saul; at naging anak ni Saul si Yehonathan, at si Malchi-sua, at si Abinadab, at si Esbaal."
+      },
+      {
+        "num": 40,
+        "text": "At ang anak ni Yehonathan ay si Merib-baal; at naging anak ni Merib-baal si Micha."
+      },
+      {
+        "num": 41,
+        "text": "At ang mga anak ni Micha: si Phiton, at si Melech, at si Tharea, at si Ahaz."
+      },
+      {
+        "num": 42,
+        "text": "At naging anak ni Ahaz si Yara; at naging anak ni Yara si Alemeth, at si Azmaweth, at si Zimri; at naging anak ni Zimri si Mosa;"
+      },
+      {
+        "num": 43,
+        "text": "At naging anak ni Mosa si Bina; at si Rephayah na kaniyang anak, si Elasa na kaniyang anak, si Asel na kaniyang anak:"
+      },
+      {
+        "num": 44,
+        "text": "At si Asel ay nagkaroon ng anim na anak, na ito ang kanilang mga pangalan: si Azricam, si Bochru, at si Yishma’el, at si Serayah, at si Obadiyah, at si Hanan: ang mga ito ang mga naging anak ni Asel."
+      }
+    ],
+    "10": [
+      {
+        "num": 1,
+        "text": "Ang mga Pilisteo nga ay nakipaglaban sa Israel: at ang mga lalake ng Israel ay nagsitakas sa harap ng mga Pilisteo, at nabuwal na patay sa bundok ng Gilboa."
+      },
+      {
+        "num": 2,
+        "text": "At ang mga Pilisteo ay sumunod na mainam sa likuran ni Saul at ng kaniyang mga anak; at pinatay ng mga Pilisteo si Yehonathan, at si Abinadab, at si Malchi-sua, na mga anak ni Saul."
+      },
+      {
+        "num": 3,
+        "text": "At ang pagbabaka ay lumalang mainam laban kay Saul, at inabutan siya ng mga mamamana; at siya'y nahirapan dahil sa mga mamamana."
+      },
+      {
+        "num": 4,
+        "text": "Nang magkagayo'y sinabi ni Saul sa kaniyang tagadala ng sandata: Bunutin mo ang iyong tabak, at iyong palagpasin sa akin; baka ang mga hindi tuling ito ay magsiparito at pahirapan ako. Nguni't hindi inibig ng kaniyang tagadala ng sandata; sapagka't siya'y totoong natakot. Kaya't kinuha ni Saul ang kaniyang tabak, at nagpatibuwal doon."
+      },
+      {
+        "num": 5,
+        "text": "At nang makita ng kaniyang tagadala ng sandata na si Saul ay patay, siya nama'y nagpatibuwal sa kaniyang tabak, at namatay."
+      },
+      {
+        "num": 6,
+        "text": "Gayon namatay si Saul, at ang kaniyang tatlong anak; at ang kaniyang buong angkan ay namatay na magkakasama."
+      },
+      {
+        "num": 7,
+        "text": "At nang makita ng lahat na lalake ng Israel na nasa libis na sila'y nagsitakas, at si Saul at ang kaniyang mga anak ay patay, ay kanilang iniwan ang kanilang mga bayan at nagsitakas; at ang mga Pilisteo ay nagsiparoon at nagsitahan sa mga yaon."
+      },
+      {
+        "num": 8,
+        "text": "At nangyari nang kinaumagahan nang magsiparoon upang hubaran ng mga Pilisteo ang napatay, na kanilang nasumpungan si Saul at ang kaniyang mga anak na buwal sa bundok ng Gilboa."
+      },
+      {
+        "num": 9,
+        "text": "At hinubaran nila siya at pinugot ang kaniyang ulo, at ang kaniyang sandata, at ipinadala sa lupain ng mga Pilisteo sa palibot, upang ibalita sa kanilang mga diyos na rebulto, at sa bayan."
+      },
+      {
+        "num": 10,
+        "text": "At inilagay nila ang kaniyang sandata sa bahay ng kanilang mga diyos, at ipinako ang kaniyang ulo sa bahay ni Dagon."
+      },
+      {
+        "num": 11,
+        "text": "At nang mabalitaan ng buong Yabesh-galaad ang buong ginawa ng mga Pilisteo kay Saul,"
+      },
+      {
+        "num": 12,
+        "text": "Ang lahat na matapang na lalake ay nagsitindig, at kinuha ang bangkay ni Saul, at ang mga bangkay ng kaniyang mga anak, at dinala sa Yabesh, at inilibing ang kanilang mga buto sa ilalim ng ensina sa Yabesh, at nag-ayunong pitong araw."
+      },
+      {
+        "num": 13,
+        "text": "Sa gayo'y namatay si Saul dahil sa kaniyang kasalanan na kaniyang nagawa laban kay YAHWEH, dahil sa salita ni YAHWEH na hindi niya iningatan; at dahil naman na siya ay nakipagsanggunian sa masamang espiritu, upang pagsiyasatan."
+      },
+      {
+        "num": 14,
+        "text": "At hindi nagsiyasat kay YAHWEH: kaya't pinatay niya siya, at inilipat ang kaharian kay Dawid na anak ni Yishai."
+      }
+    ],
+    "11": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y ang buong Israel ay nagpipisan kay Dawid sa Hebron, na nagsasabi, Narito, kami ay iyong buto at iyong laman."
+      },
+      {
+        "num": 2,
+        "text": "Nang mga panahong nakaraan, sa makatuwid baga'y nang si Saul ay hari, ikaw ang pumapatnubay at nagpapasok sa Israel: at sinabi sa iyo ni YAHWEH mong Elohim, Iyong aalagaan ang Aking bayang Israel, at ikaw ay magiging pangulo ng Aking bayang Israel."
+      },
+      {
+        "num": 3,
+        "text": "Sa gayo'y lahat ng mga matanda sa Israel ay nagsiparoon sa hari sa Hebron; at si Dawid ay nakipagtipan sa kanila sa Hebron sa harap ni YAHWEH, at kanilang pinahiran ng langis si Dawid na hari sa Israel, ayon sa salita ni YAHWEH sa pamamagitan ni Shemu’el."
+      },
+      {
+        "num": 4,
+        "text": "At si Dawid at ang buong Israel ay naparoon sa Yerushalayim, na siyang tinatawag na Yebus; at ang mga Yebuseo na mga tagaroon sa lupain, ay nandoon."
+      },
+      {
+        "num": 5,
+        "text": "At sinabi ng mga taga Yebus kay Dawid, Ikaw ay hindi makapapasok rito. Gayon ma'y sinakop ni Dawid ang katibayan ng Sion; na siyang bayan ni Dawid."
+      },
+      {
+        "num": 6,
+        "text": "At sinabi ni Dawid, Sinomang sumakit sa mga Yebuseo na una ay magiging pinuno at kapitan. At si Yo’ab na anak ni Sarwia ay sumampang una, at naging pinuno."
+      },
+      {
+        "num": 7,
+        "text": "At si Dawid ay tumahan sa katibayan; kaya't kanilang tinawag na bayan ni Dawid."
+      },
+      {
+        "num": 8,
+        "text": "At kaniyang itinayo ang bayan sa palibot, mula sa Millo hanggang sa palibot: at hinusay ni Yo’ab ang nalabi sa bayan."
+      },
+      {
+        "num": 9,
+        "text": "At si Dawid ay dumakila ng dumakila; dahil si YAHWEH ng mga hukbo ay sumasa kaniya."
+      },
+      {
+        "num": 10,
+        "text": "Ang mga ito ang mga pinuno ng mga makapangyarihang lalake na nasa kay Dawid, na napakilala na malakas na kasama niya sa kaniyang kaharian, na kasama ng buong Israel, upang gawin siyang hari, ayon sa salita ni YAHWEH tungkol sa Israel."
+      },
+      {
+        "num": 11,
+        "text": "At ito ang bilang ng mga lalaking makapangyarihan na nasa kay Dawid: si Yasobam, na anak ng isang Hachmonita, na pinuno ng tatlongpu; siya ang nagtaas ng kaniyang sibat laban sa tatlong daan, at pinatay niya sila na paminsan."
+      },
+      {
+        "num": 12,
+        "text": "At pagkatapos niya ay si Eleazar na anak ni Dodo, na Ahohita, na isa sa tatlong makapangyarihang lalake."
+      },
+      {
+        "num": 13,
+        "text": "Siya'y kasama ni Dawid sa Pasdammin, at doo'y ang mga Pilisteo ay nagpipisan upang bumaka, na kinaroroonan ng isang putol na lupa na puno ng sebada; at ang bayan ay tumakas sa harap ng mga Pilisteo."
+      },
+      {
+        "num": 14,
+        "text": "At sila'y nagsitayo sa gitna ng putol na lupa at ipinagtanggol, at pinatay ang mga Pilisteo; at iniligtas ni YAHWEH sila sa pamamagitan ng isang dakilang pagtatagumpay."
+      },
+      {
+        "num": 15,
+        "text": "At binaba sa malaking bato si Dawid ng tatlo sa tatlongpung pinuno, sa loob ng yungib ni Adullam; at ang hukbo ng mga Pilisteo ay humantong sa libis ng Raphaim."
+      },
+      {
+        "num": 16,
+        "text": "At si Dawid nga ay nasa katibayan, at ang pulutong ng mga Pilisteo ay nasa Bethlehem noon."
+      },
+      {
+        "num": 17,
+        "text": "At si Dawid ay nagbuntong hininga, at nagsabi, Oh may magbigay sana sa akin ng tubig sa balon ng Bethlehem na mainom, na nasa siping ng pintuang-bayan!"
+      },
+      {
+        "num": 18,
+        "text": "At ang tatlo'y nagsisagasa sa hukbo ng mga Pilisteo, at nagsiigib ng tubig sa balon ng Bethlehem na nasa siping ng pintuang-bayan, at kinuha at dinala kay Dawid: nguni't hindi ininom ni Dawid yaon, kundi ibinuhos na pinakainuming handog kay YAHWEH."
+      },
+      {
+        "num": 19,
+        "text": "At sinabi, Huwag itulot sa akin ng Aking Elohim na aking gawin ito; iinumin ko ba ang dugo ng mga lalaking ito na ipinain ang kanilang buhay sa pagkamatay? Sapagka't sa pagpapain ng kanilang mga buhay ay kanilang dinala. Kaya't hindi niya ininom. Ang mga bagay na ito ay ginawa ng tatlong makapangyarihang lalake."
+      },
+      {
+        "num": 20,
+        "text": "At si Abisai na kapatid ni Yo’ab, siyang pinuno ng tatlo: sapagka't kaniyang itinaas ang kaniyang sibat laban sa tatlong daan, at pinatay niya sila, at nagkaroon ng pangalan sa tatlo."
+      },
+      {
+        "num": 21,
+        "text": "Sa tatlo, siya'y lalong marangal kaysa dalawa, at ginawang kanilang pinunong kawal: gayon ma'y hindi siya umabot sa unang tatlo."
+      },
+      {
+        "num": 22,
+        "text": "Si Benayah na anak ni Yehoyada, na anak ng isang matapang na lalake sa Cabseel, na gumawa ng mga makapangyarihang gawa, ay kaniyang pinatay ang dalawang anak ni Ariel na taga Moab: siya'y bumaba rin naman at pumatay ng isang leon sa gitna ng isang hukay sa panahon ng niebe."
+      },
+      {
+        "num": 23,
+        "text": "At siya'y pumatay ng isang taga Egipto, na isang lalaking may malaking bulas, na limang siko ang taas; at sa kamay ng taga Egipto ay may isang sibat na gaya ng panghabi ng manghahabi; at binaba niya siya na may isang tungkod, at inagaw ang sibat sa kamay ng taga Egipto, at pinatay niya siya ng kaniyang sariling sibat."
+      },
+      {
+        "num": 24,
+        "text": "Ang mga bagay na ito ay ginawa ni Benayah na anak ni Yehoyada, at nagkapangalan sa tatlong makapangyarihang lalake."
+      },
+      {
+        "num": 25,
+        "text": "Narito, siya'y lalong marangal kaysa tatlongpu, nguni't hindi siya umabot sa unang tatlo: at inilagay ni Dawid sa kaniya na bantay."
+      },
+      {
+        "num": 26,
+        "text": "Ang mga makapangyarihang lalake naman sa mga hukbo; si Asael na kapatid ni Yo’ab, si Elchanan na anak ni Dodo na taga Bethlehem:"
+      },
+      {
+        "num": 27,
+        "text": "Si Samoth na Arorita, si Helles na Pelonita;"
+      },
+      {
+        "num": 28,
+        "text": "Si Ira na anak ni Acces na Tecoita, si Abiezer na Anathothita;"
+      },
+      {
+        "num": 29,
+        "text": "Si Sibbecai na Husatita, si Ilai na Ahohita;"
+      },
+      {
+        "num": 30,
+        "text": "Si Maharai na Nethophatita, si Heled na anak ni Baana na Nethophatita;"
+      },
+      {
+        "num": 31,
+        "text": "Si Ithai na anak ni Ribai na taga Gabaath, sa mga anak ni Binyamin, si Benayah na Phirathita."
+      },
+      {
+        "num": 32,
+        "text": "Si Hurai sa mga batis ng Gaas, si Abiel na Arbathonita;"
+      },
+      {
+        "num": 33,
+        "text": "Si Azmaweth na Baharumita, si Elyahba na Saalbonita;"
+      },
+      {
+        "num": 34,
+        "text": "Ang mga anak ni Ashem na Gizonita, si Yehonathan na anak ni Saye na Hararita;"
+      },
+      {
+        "num": 35,
+        "text": "Si Ahiyam na anak ni Sachar, na Ararita, si Eliphal na anak ni Ur;"
+      },
+      {
+        "num": 36,
+        "text": "Si Hepher na Mecherathita, si Ahiyah na Phelonita;"
+      },
+      {
+        "num": 37,
+        "text": "Si Hesro na Carmelita, si Nahari na anak ni Ezbai;"
+      },
+      {
+        "num": 38,
+        "text": "Si Yo’el na kapatid ni Nathan, si Mibhar na anak ni Agrai,"
+      },
+      {
+        "num": 39,
+        "text": "Si Selec na Ammonita, si Naarai na Berothita, na tagadala ng sandata ni Yo’ab na anak ni Sarwia;"
+      },
+      {
+        "num": 40,
+        "text": "Si Ira na Ithrita, si Yared na Ithrita:"
+      },
+      {
+        "num": 41,
+        "text": "Si Uriyah na Hetheo, si Zabad na anak ni Ahli;"
+      },
+      {
+        "num": 42,
+        "text": "Si Adina na anak ni Siza na Rubenita, na pinuno ng mga Rubenita, at tatlongpu ang kasama niya;"
+      },
+      {
+        "num": 43,
+        "text": "Si Hanan na anak ni Maacha, at si Yehosaphat na Mithnita;"
+      },
+      {
+        "num": 44,
+        "text": "Si Uzziyah na Astarothita, si Samma at si Yehiel na mga anak ni Hotham na Arorita;"
+      },
+      {
+        "num": 45,
+        "text": "Si Yedia'el na anak ni Simri; at si Yoha na kaniyang kapatid, na Thisaita;"
+      },
+      {
+        "num": 46,
+        "text": "Si Eli'el na Mahawita, at si Yeribai, at si Yosabiyah na mga anak ni Elnaam, at si Ithma na Moabita;"
+      },
+      {
+        "num": 47,
+        "text": "Si Eliel, at si Obed, at si Yaasi'el, na taga Mesobiata."
+      }
+    ],
+    "12": [
+      {
+        "num": 1,
+        "text": "Ang mga ito nga ang pumaroon kay Dawid sa Siclag, samantalang siya ay nagkukubli pa dahil kay Saul na anak ni Cis: at sila'y nasa mga makapangyarihang lalake, na kaniyang mga katulong sa pakikipagdigma."
+      },
+      {
+        "num": 2,
+        "text": "Sila'y nasasakbatan ng mga busog, at kanilang ginagamit kapuwa ang kanang kamay at kaliwa sa pagpapahilagpos ng mga bato, at sa pagpapahilagpos ng mga pana mula sa busog; sila'y sa mga kapatid ni Saul sa Binyamin."
+      },
+      {
+        "num": 3,
+        "text": "Ang pinuno ay si Ahiezer, saka si Yeho’ash, na mga anak ni Shemaa na Gaba-athita; at si Yeziel, at si Pheleth, na mga anak ni Azmaweth; at si Beraca, at si Yehu na Anathothita;"
+      },
+      {
+        "num": 4,
+        "text": "At si Ismayah na Gabaonita, na lalaking makapangyarihang sa tatlongpu, at pinuno ng tatlongpu; at si Yirmeyah, at si Yahatziel, at si Yohanan, at si Yozabad na Gederathita;"
+      },
+      {
+        "num": 5,
+        "text": "Si Eluzai, at si Yeremoth, at si Bealyah, at si Shemaryah, at si Sephatiyah na Haruphita;"
+      },
+      {
+        "num": 6,
+        "text": "Si Elcana, at si Isiyah, at si Azareel, at si Yoezer, at si Yasobam, na mga Corita:"
+      },
+      {
+        "num": 7,
+        "text": "At si Yo’ela, at si Zebadyah, na mga anak ni Yeroham na taga Gedor."
+      },
+      {
+        "num": 8,
+        "text": "At sa mga Gadita ay nagsihiwalay na nagsilakip kay Dawid sa katibayan sa ilang, ang mga makapangyarihang lalaking may tapang, na mga lalaking bihasa sa pakikidigma, na makahahawak ng kalasag at sibat; na ang mga mukha nila ay gaya ng mga mukha ng mga leon, at sila'y maliliksing gaya ng mga usa sa mga bundok;"
+      },
+      {
+        "num": 9,
+        "text": "Si Eser ang pinuno, si Obadiyah ang ikalawa, si Eliyab ang ikatlo;"
+      },
+      {
+        "num": 10,
+        "text": "Si Mismana ang ikaapat, si Yirmeyah ang ikalima;"
+      },
+      {
+        "num": 11,
+        "text": "Si Attai ang ikaanim, si Eliel ang ikapito;"
+      },
+      {
+        "num": 12,
+        "text": "Si Yohanan ang ikawalo, si Elzabad ang ikasiyam;"
+      },
+      {
+        "num": 13,
+        "text": "Si Yirmeyah ang ikasangpu, si Mach-bani ang ikalabing-isa."
+      },
+      {
+        "num": 14,
+        "text": "Ang mga ito sa mga anak ni Gad ay mga pinunong kawal ng hukbo; ang pinakamaliit ay katimbang ng isang daan, at ang pinakamalaki ay ng isang libo."
+      },
+      {
+        "num": 15,
+        "text": "Ang mga ito ang nagsitawid sa Yarden sa unang buwan, nang apawan ang lahat niyang mga pangpang; at kanilang pinatakas ang lahat na sa mga libis, ang sa dakong silanganan, at gayon din ang sa dakong kanluran."
+      },
+      {
+        "num": 16,
+        "text": "At nagsiparoon ang ilan sa mga anak ni Binyamin at ni Yehudah sa katibayan kay Dawid."
+      },
+      {
+        "num": 17,
+        "text": "At si Dawid ay lumabas na sinalubong sila, at sumagot at nagsabi sa kanila, Kung kayo'y nagsisiparitong payapa sa akin upang tulungan ako, ang aking puso ay malalakip sa inyo: nguni't kung upang pagliluhan ako sa aking mga kaaway, dangang walang kasamaan sa aking mga kamay, masdan ng Elohim ng ating mga magulang, at sawayin."
+      },
+      {
+        "num": 18,
+        "text": "Nang magkagayo'y ang Espiritu ay dumating kay Amasai, na siyang pinuno ng tatlongpu, at sinabi niya, Iyo kami, Dawid, at para sa iyo, ikaw anak ni Yishai: kapayapaan, kapayapaan ang sumaiyo, at kapayapaan ang sumaiyong mga katulong; sapagka't tinutulungan ka ng iyong Elohim. Nang magkagayo'y tinanggap ni Dawid sila, at ginawa silang mga pinunong kawal ng pulutong."
+      },
+      {
+        "num": 19,
+        "text": "Sa Manases naman ay nagsihilig ang ilan kay Dawid, nang siya'y pumaroong kasama ng mga Pilisteo laban kay Saul upang bumaka: nguni't hindi nila tinulungan: sapagka't pinapag-paalam siya ng mga pinuno ng mga Pilisteo sa payo na sinasabi, Siya'y kakampi sa kaniyang hari, kay Saul, sa kapanganiban ng ating mga ulo."
+      },
+      {
+        "num": 20,
+        "text": "Sa pagparoon niya sa Siclag, ay nagsihilig sa kaniya mula sa Manases, si Adnas, at si Yozabad, at si Yediaiel, at si Michael, at si Yozabad at si Eliu, at si Sillethai, na mga pinunong kawal ng mga lilibuhin na nasa Manases."
+      },
+      {
+        "num": 21,
+        "text": "At kanilang tinulungan si Dawid laban sa pulutong ng mga magnanakaw: sapagka't silang lahat ay mga makapangyarihang lalake na may tapang, at mga pinunong kawal sa hukbo."
+      },
+      {
+        "num": 22,
+        "text": "Sapagka't araw-araw ay may naparoon kay Dawid upang tumulong sa kaniya, hanggang sa naging malaking hukbo, na gaya ng hukbo ng Elohim."
+      },
+      {
+        "num": 23,
+        "text": "At ito ang bilang ng mga ulo nila na mga may sandata na handa sa pakikidigma, na nagsiparoon kay Dawid sa Hebron, upang ibalik ang kaharian ni Saul sa kaniya, ayon sa salita ni YAHWEH."
+      },
+      {
+        "num": 24,
+        "text": "Ang mga anak ni Yehudah na nagsisihawak ng kalasag at sibat ay anim na libo at walong daan, na may mga sandata sa pakikipagdigma."
+      },
+      {
+        "num": 25,
+        "text": "Sa mga anak ni Simeon, na mga makapangyarihang lalake na may tapang na handa sa pakikipagdigma, pitong libo at isang daan."
+      },
+      {
+        "num": 26,
+        "text": "Sa mga anak ni Lewi; apat na libo at anim na raan."
+      },
+      {
+        "num": 27,
+        "text": "At si Yehoyada ang tagapamatnugot ng sangbahayan ni Aaron, at kasama niya'y tatlong libo at pitong daan;"
+      },
+      {
+        "num": 28,
+        "text": "At si Sadoc, na isang binatang may kapangyarihan at tapang, at sa sangbahayan ng kaniyang magulang ay dalawang pu at dalawang pinunong kawal."
+      },
+      {
+        "num": 29,
+        "text": "At sa mga anak ni Binyamin, na mga kapatid ni Saul, tatlong libo: sapagka't ang kalakhang bahagi sa kanila ay nag-iingat ng kanilang kasunduan sa sangbahayan ni Saul."
+      },
+      {
+        "num": 30,
+        "text": "At sa mga anak ni Ephraim, dalawang pung libo at walong daan, na mga lalaking makapangyarihang may tapang, mga bantog na lalake sa mga sangbahayan ng kanilang mga magulang."
+      },
+      {
+        "num": 31,
+        "text": "At sa kalahating lipi ng Manases ay labing walong libo, na mga nasaysay sa pamamagitan ng pangalan, upang magsiparoon at gawing hari si Dawid."
+      },
+      {
+        "num": 32,
+        "text": "At sa mga anak ni Issachar, na mga lalaking maalam ng mga panahon, upang matalastas kung ano ang marapat gawin ng Israel; ang mga pinuno sa kanila ay dalawang daan; at ang lahat nilang kapatid ay nasa kanilang utos."
+      },
+      {
+        "num": 33,
+        "text": "Sa Zabulon, yaong mga makalalabas sa hukbo, na makahahanay sa pagbabaka na may sari-saring kasangkapang pangdigma, ay limangpung libo; at makapag-aayos sa hanay sa pagbabaka at hindi, nagaalinlangan ang loob."
+      },
+      {
+        "num": 34,
+        "text": "At sa Nephtali ay isang libong pinunong kawal, at may kasama silang mga may kalasag at sibat na tatlong pu't pitong libo."
+      },
+      {
+        "num": 35,
+        "text": "At sa mga Danita na makahahanay sa pagbabaka ay dalawangpu't walong libo at anim na raan."
+      },
+      {
+        "num": 36,
+        "text": "At sa Aser, yaong mga makalalabas sa hukbo, na makahahanay sa pagbabaka, apat na pung libo."
+      },
+      {
+        "num": 37,
+        "text": "At sa kabilang dako ng Yarden, sa mga Rubenita, at sa mga Gadita, at sa kalahating lipi ni Manases, na may mga kasangkapang pangdigma sa pakikipagbaka, isang daan at dalawang-pung libo."
+      },
+      {
+        "num": 38,
+        "text": "Lahat ng mga ito na mga lalaking mandidigma na makahahanay sa pagbabaka, ay nagsiparoong may sakdal na puso sa Hebron, upang gawing hari si Dawid sa buong Israel: at ang lahat na nalabi sa Israel ay nagkaisang loob din naman upang gawing hari si Dawid."
+      },
+      {
+        "num": 39,
+        "text": "At sila'y dumoong kasama ni Dawid na tatlong araw, na kumain at uminom: dahil ipinaghanda sila ng kanilang mga kapatid."
+      },
+      {
+        "num": 40,
+        "text": "Bukod dito'y silang malapit sa kaniya, sa makatuwid baga'y hanggang sa Issachar, at Zabulon at Nephtali, ay nagsipagdala ng tinapay na nasa ibabaw ng mga asno, at ng mga kamelyo, at ng mga mula, at ng mga baka, mga pagkaing harina, at mga binilong igos, at mga buwig ng pasas, at alak, at langis, at mga baka, at mga tupa na sagana: sapagka't may kagalakan sa Israel."
+      }
+    ],
+    "13": [
+      {
+        "num": 1,
+        "text": "At sumangguni si Dawid sa mga pinunong kawal ng mga lilibuhin, at mga dadaanin, sa bawa't tagapamatnugot."
+      },
+      {
+        "num": 2,
+        "text": "At sinabi ni Dawid sa buong kapisanan ng Israel, Kung inaakala ninyong mabuti, at kung kay YAHWEH nating AMA, ay pasuguan natin sa bawa't dako ang ating mga kapatid na naiwan sa buong lupain ng Israel, na makasama nila ang mga saserdote at mga Lewita sa kanilang mga bayan na may mga nayon, upang sila'y mapisan sa atin;"
+      },
+      {
+        "num": 3,
+        "text": "At ating dalhin uli ang Kaban ng ating Elohim sa atin: sapagka't hindi natin hinanap ng mga kaarawan ni Saul."
+      },
+      {
+        "num": 4,
+        "text": "At ang buong kapulungan ay nagsabi na kanilang gagawing gayon: sapagka't ang bagay ay matuwid sa harap ng mga mata ng buong bayan."
+      },
+      {
+        "num": 5,
+        "text": "Sa gayo'y pinisan ni Dawid ang buong Israel, mula sa Sihor, na batis ng Egipto hanggang sa pasukan sa Hamath, upang dalhin ang Kaban ng AMA mula sa Chiriath-Ye’arim."
+      },
+      {
+        "num": 6,
+        "text": "At si Dawid ay umahon, at ang buong Israel sa Baala, sa makatuwid baga'y sa Chiriath-Ye’arim, na nauukol sa Yehudah, upang iahon mula roon ang Kaban ng AMA, ni YAHWEH na nauupo sa mga anghel, na tinatawag ayon sa Pangalan."
+      },
+      {
+        "num": 7,
+        "text": "At kanilang dinala ang Kaban ng AMA na nakasakay sa isang bagong karwahe, at inilabas sa bahay ni Abinadab: at pinalakad ni Uzza at ni Ahio ang karwahe."
+      },
+      {
+        "num": 8,
+        "text": "At si Dawid at ang buong Israel ay tumugtog sa harap ng AMA ng kanilang buong lakas: sa pamamagitan ng mga awit, at ng mga alpa, at ng mga salterio, at ng mga pandereta at ng mga simbalo, at ng mga pakakak."
+      },
+      {
+        "num": 9,
+        "text": "At nang sila'y dumating sa giikan ng Chidon, ay iniunat ni Uzza ang kaniyang kamay upang hawakan ang Kaban; sapagka't ang mga baka ay natisod."
+      },
+      {
+        "num": 10,
+        "text": "At ang galit ni YAHWEH ay nag-alab laban kay Uzza, at sinaktan niya siya, dahil kaniyang iniunat ang kaniyang kamay sa Kaban; at doo'y namatay siya sa harap ng Elohim."
+      },
+      {
+        "num": 11,
+        "text": "At sumama ang loob ni Dawid, sapagka't nagalit si YAHWEH kay Uzza: at kaniyang tinawag ang dakong yaon na Perez-uzza hanggang sa araw na ito."
+      },
+      {
+        "num": 12,
+        "text": "At si Dawid ay natakot sa Elohim nang araw na yaon, na nagsasabi, Paanong aking iuuwi ang Kaban ng Elohim?"
+      },
+      {
+        "num": 13,
+        "text": "Sa gayo'y hindi inilipat ni Dawid ang Kaban sa kaniya sa bayan ni Dawid, kundi nilihisan ang daan at dinala sa bahay ni Obed-edom na Getheo."
+      },
+      {
+        "num": 14,
+        "text": "At ang Kaban ng AMA ay naiwan sa sangbahayan ni Obed-edom sa kaniyang bahay na tatlong buwan: at pinagpala ni YAHWEH ang sangbahayan ni Obed-edom, at ang buo niyang tinatangkilik."
+      }
+    ],
+    "14": [
+      {
+        "num": 1,
+        "text": "At si Hiram na hari sa Tiro ay nagsugo ng mga sugo kay Dawid, at nagpadala ng mga puno ng sedro, at mga mananabas ng bato, at mga anluwagi, upang ipagtayo siya ng bahay."
+      },
+      {
+        "num": 2,
+        "text": "At naalaman ni Dawid na itinatag siyang hari ni YAHWEH sa Israel; sapagka't ang kaniyang kaharian ay itinaas ng mataas, dahil sa kaniyang bayang Israel."
+      },
+      {
+        "num": 3,
+        "text": "At si Dawid ay kumuha pa ng mga asawa sa Yerushalayim: at si Dawid ay nagkaanak pa ng mga lalake at mga babae."
+      },
+      {
+        "num": 4,
+        "text": "At ito ang mga pangalan ng mga naging anak niya sa Yerushalayim: si Shammua, at si Sobab, si Nathan, at si Solomon."
+      },
+      {
+        "num": 5,
+        "text": "At si Ibhar, at si Elisua, at si Elphelet;"
+      },
+      {
+        "num": 6,
+        "text": "At si Noga, at si Nepheg, at si Yaphiyah;"
+      },
+      {
+        "num": 7,
+        "text": "At si Elisama, at si Beliyahda, at si Eliphelet."
+      },
+      {
+        "num": 8,
+        "text": "At nang mabalitaan ng mga Pilisteo na si Dawid ay pinahiran ng langis na maging hari sa buong Israel, ay nagsiahon ang lahat ng Pilisteo upang hanapin si Dawid: at nabalitaan ni Dawid, at nilabas sila."
+      },
+      {
+        "num": 9,
+        "text": "Ang mga Pilisteo nga ay nagsidating at nagsamsam sa libis ng Raphaim."
+      },
+      {
+        "num": 10,
+        "text": "At si Dawid ay sumangguni sa AMA, na nagsasabi, Aahon ba ako laban sa mga Pilisteo? at iyo bang ibibigay sila sa aking kamay? At sinabi ni YAHWEH sa kaniya, Umahon ka: sapagka't Aking ibibigay sila sa iyong kamay."
+      },
+      {
+        "num": 11,
+        "text": "Sa gayo'y nagsiahon sila sa Baal-perasim, at sinaktan sila ni Dawid doon; at sinabi ni Dawid, Nilansag ng AMA ang aking mga kaaway na gaya ng baha ng tubig. Kaya't kanilang tinawag ang pangalan ng dakong yaon na Baal-perasim."
+      },
+      {
+        "num": 12,
+        "text": "At kanilang iniwan doon ang kanilang mga diyos; at nag-utos si Dawid, at sinunog sa apoy ang mga yaon."
+      },
+      {
+        "num": 13,
+        "text": "At nagsamsam pa uli ang mga Pilisteo sa libis."
+      },
+      {
+        "num": 14,
+        "text": "At si Dawid ay sumangguni uli sa AMA; at sinabi ng AMA sa kaniya, Huwag kang aahong kasunod nila; lihisan mo sila, at pumaroon ka sa kanila sa tapat ng mga puno ng morales."
+      },
+      {
+        "num": 15,
+        "text": "At mangyayari, na kapag iyong narinig ang hugong ng lakad sa mga dulo ng mga puno ng morales, na ikaw ay lalabas sa pakikipagbaka: dahil ang Elohim ay yumaon sa unahan mo upang saktan ang hukbo ng mga Pilisteo."
+      },
+      {
+        "num": 16,
+        "text": "At ginawa ni Dawid kung ano ang iniutos sa kaniya ng Elohim: at kanilang sinaktan ang hukbo ng mga Pilisteo mula sa Gabaon hanggang sa Gezer."
+      },
+      {
+        "num": 17,
+        "text": "At ang kabantugan ni Dawid ay lumaganap sa lahat ng lupain; at sinidlan ni YAHWEH ng takot sa kaniya ang lahat na bansa."
+      }
+    ],
+    "15": [
+      {
+        "num": 1,
+        "text": "At gumawa si Dawid ng mga bahay sa bayan ni Dawid; at ipinaghanda niya ng isang dako ang Kaban ng AMA, at ipinaglagay roon ng isang tolda."
+      },
+      {
+        "num": 2,
+        "text": "Nang magkagayo'y sinabi ni Dawid, Walang makapagdadala ng Kaban ng AMA kundi ang mga Lewita: dahil sila ang pinili ni YAHWEH upang magsipagdala ng Kaban ng AMA, at upang mangasiwa sa kaniya magpakailan man."
+      },
+      {
+        "num": 3,
+        "text": "At pinisan ni Dawid ang buong Israel sa Yerushalayim, upang iahon ang Kaban ni YAHWEH sa dakong pinaghandaan."
+      },
+      {
+        "num": 4,
+        "text": "At pinisan ni Dawid ang mga anak ni Aaron, at ang mga Lewita:"
+      },
+      {
+        "num": 5,
+        "text": "Sa mga anak ni Coath: si Uriel na pinuno, at ang kaniyang mga kapatid, isang daan at dalawangpu;"
+      },
+      {
+        "num": 6,
+        "text": "Sa mga anak ni Merari: si Asayah na pinuno, at ang kaniyang mga kapatid, dalawang daan at dalawangpu;"
+      },
+      {
+        "num": 7,
+        "text": "Sa mga anak ni Gersom: si Yo’el na pinuno, at ang kaniyang mga kapatid, isang daan at tatlongpu;"
+      },
+      {
+        "num": 8,
+        "text": "Sa mga anak ni Elisaphan: si Shemeyah na pinuno, at ang kaniyang mga kapatid, dalawang daan."
+      },
+      {
+        "num": 9,
+        "text": "Sa mga anak ni Hebron: si Eliel na pinuno, at ang kaniyang mga kapatid, walongpu;"
+      },
+      {
+        "num": 10,
+        "text": "Sa mga anak ni Uzziel: si Aminadab na pinuno, at ang kaniyang mga kapatid, isang daan at labing dalawa."
+      },
+      {
+        "num": 11,
+        "text": "At ipinatawag ni Dawid si Sadoc at si Abiathar na mga saserdote, at ang mga Lewita, si Uriel, si Asayah, at si Yo’el, si Shemeyah, at si Eliel, at si Aminadab,"
+      },
+      {
+        "num": 12,
+        "text": "At sinabi sa kanila, Kayo ang mga pinuno sa mga sangbahayan ng mga magulang ng mga Lewita: magpakabanal kayo, at gayon din ang inyong mga kapatid, upang inyong maiahon ang Kaban ni YAHWEH, ang Elohim ng Israel, hanggang sa dakong aking pinaghandaan."
+      },
+      {
+        "num": 13,
+        "text": "Sapagka't dahil sa hindi ninyo dinala nang una, Si YAHWEH nating Elohim ay nagalit sa atin, sapagka't hindi natin hinanap siya ayon sa utos."
+      },
+      {
+        "num": 14,
+        "text": "Sa gayo'y ang mga saserdote at ang mga Lewita ay nagpakabanal, upang iahon ang Kaban ni YAHWEH, ang Elohim ng Israel."
+      },
+      {
+        "num": 15,
+        "text": "At pinisan ng mga anak ng mga Lewita ang Kaban ng AMA sa kanilang mga balikat sa pamamagitan ng mga pasan niyaon, gaya ng iniutos ni Moises ayon sa salita ni YAHWEH."
+      },
+      {
+        "num": 16,
+        "text": "At si Dawid ay nagsalita sa pinuno ng mga Lewita, na ihalal ang kanilang mga kapatid na mang-aawit, na may mga panugtog ng tugtugin, mga salterio, at mga alpa, at mga simbalo, upang magsitugtog ng malakas, at maglakas ng tinig na may kagalakan."
+      },
+      {
+        "num": 17,
+        "text": "Sa gayo'y inihalal ng mga Lewita si Heman na anak ni Yo’el; at sa kaniyang mga kapatid ay si Asaph na anak ni Berekyah; at sa mga anak ni Merari na kanilang mga kapatid ay si Ethan na anak ni Cusayah;"
+      },
+      {
+        "num": 18,
+        "text": "At kasama nila, ang kanilang mga kapatid sa ikalawang hanay, si Zekarayah, si Ben, at si Yaaziel, at si Shemiramoth, at si Yehiel, at si Unni, si Eliyab, at si Benayah, at si Maasyah, at si Mathithyah, at si Eliphelehu, at si Micniyah, at si Obed-edom, at si Yehiel, na mga tagatanod-pinto."
+      },
+      {
+        "num": 19,
+        "text": "Sa gayo'y ang mga mang-aawit, si Heman, si Asaph, at si Ethan, ay nahalal na may mga simbalong tanso upang patunuging malakas;"
+      },
+      {
+        "num": 20,
+        "text": "At si Zekarayah, at si Yaaziel, at si Shemira-moth, at si Yehiel, at si Unni, at si Eliyab, at si Maasiyah, at si Benayah, na may mga salterio na itinugma sa Alamoth;"
+      },
+      {
+        "num": 21,
+        "text": "At si Mathithiyah, at si Eliphelehu, at si Micniyah, at si Obed-edom, at si Yehiel, at si Azaziyah, na may mga alpa na itinugma sa Sheminit upang mag-ayos sa pag-awit."
+      },
+      {
+        "num": 22,
+        "text": "At si Chenanayah, na pinuno ng mga Lewita, nasa pamamahala sa awitan: siya ang nagtuturo tungkol sa pag-awit, sapagka't siya'y bihasa."
+      },
+      {
+        "num": 23,
+        "text": "At si Berekyah, at si Elcana ay mga tagatanod sa Kaban."
+      },
+      {
+        "num": 24,
+        "text": "At si Sebanyah, at si Yehosaphat, at si Nathanael, at si Amasai, at si Zekarayah, at si Benayah at si Eliezer na mga saserdote, ay nagsihihip ng mga pakakak sa harap ng AMA: at si Obed-edom, at si Yehiyah ay mga tagatanod sa Kaban."
+      },
+      {
+        "num": 25,
+        "text": "Sa gayo'y si Dawid, at ang mga matanda sa Israel, at ang mga punong kawal sa mga lilibuhin, ay nagsiyaon upang iahong may kasayahan ang Kaban ng Tipan ni YAHWEH mula sa bahay ni Obed-edom:"
+      },
+      {
+        "num": 26,
+        "text": "At nangyari, na kapag tinulungan ng Elohim ang mga Lewita na nagdadala ng Kaban ng Tipan ni YAHWEH, na sila'y naghahain ng pitong baka at pitong tupa."
+      },
+      {
+        "num": 27,
+        "text": "At si Dawid ay nababalot ng isang balabal na mainam na damit na lino, at ang lahat na Lewita na nagsisipasan ng Kaban, at ang mga mang-aawit, at si Chenanayah na tagapagturo ng awit na kasama ng mga mang-aawit: at si Dawid ay mayroong isang epod na lino."
+      },
+      {
+        "num": 28,
+        "text": "Gayon iniahon ng buong Israel ang Kaban ng Tipan ni YAHWEH na may mga hiyawan, at may mga tunog ng korneta, at mga pakakak, at may mga simbalo, na tumutunog ng malakas na may mga salterio at mga alpa."
+      },
+      {
+        "num": 29,
+        "text": "At nangyari, samantalang ang Kaban ng Tipan ni YAHWEH ay dumarating sa bayan ni Dawid, na si Michal na anak ni Saul ay tumanaw sa dungawan, at nakita niya ang haring Dawid na sumasayaw at tumutugtog; at kaniyang niwalang kabuluhan siya sa kaniyang puso."
+      }
+    ],
+    "16": [
+      {
+        "num": 1,
+        "text": "At kanilang ipinasok ang Kaban ng AMA, at inilagay sa gitna ng tolda na itinayo ni Dawid para roon: at sila'y nagsipaghandog ng mga handog na susunugin, at mga handog tungkol sa kapayapaan sa harap ng AMA."
+      },
+      {
+        "num": 2,
+        "text": "At nang si Dawid ay matapos na maghandog ng handog na susunugin at ng mga handog tungkol sa kapayapaan, ay kaniyang binasbasan ang bayan sa Pangalan ni YAHWEH."
+      },
+      {
+        "num": 3,
+        "text": "At siya'y nagbigay sa bawa't isa sa Israel, sa lalake at gayon din sa babae, sa bawa't isa ng isang tinapay, at ng isang bahaging laman, at isang binilong pasas."
+      },
+      {
+        "num": 4,
+        "text": "At siya'y naghalal ng ilan sa mga Lewita upang mangasiwa sa harap ng Kaban ni YAHWEH, at upang magdiwang at magpasalamat, at magpuri kay YAHWEH, sa AMA ng Israel:"
+      },
+      {
+        "num": 5,
+        "text": "Si Asaph ang pinuno, at ang ikalawa niya'y si Zekarayah, si Yeiel, at si Shemiramoth, at si Yehiel, at si Eliyab, at si Benayah, at si Obed-edom, at si Yeiel, na may mga salterio at mga alpa; at si Asaph na may mga simbalo, na tumutunog ng malakas;"
+      },
+      {
+        "num": 6,
+        "text": "At si Benayah at si Yahatziel na mga saserdote na mga may pakakak na palagi, sa harap ng Kaban ng Tipan ng AMA."
+      },
+      {
+        "num": 7,
+        "text": "Nang magkagayo'y nang araw na yao'y unang iniutos ni Dawid ang magpasalamat kay YAHWEH, sa pamamagitan ng kamay ni Asaph at ng kaniyang mga kapatid."
+      },
+      {
+        "num": 8,
+        "text": "Oh kayo'y magpasalamat kay YAHWEH, magsitawag kayo sa kaniyang Pangalan; Ipakilala ninyo sa mga bayan ang kaniyang mga gawa."
+      },
+      {
+        "num": 9,
+        "text": "Magsiawit kayo sa kaniya, magsiawit kayo ng mga pagpuri sa kaniya; Salitain ninyo ang lahat niyang mga kamangha-manghang gawa."
+      },
+      {
+        "num": 10,
+        "text": "Magpakaluwalhati kayo sa kaniyang banal na Pangalan: magalak ang puso niyaong nagsisihanap kay YAHWEH."
+      },
+      {
+        "num": 11,
+        "text": "Hanapin ninyo si YAHWEH at ang kaniyang lakas; Hanapin ninyo ang kaniyang mukha na palagi."
+      },
+      {
+        "num": 12,
+        "text": "Alalahanin ninyo ang kaniyang gawang kamangha-mangha na kaniyang ginawa; Ang kaniyang mga kababalaghan, at ang mga kahatulan ng kaniyang bibig;"
+      },
+      {
+        "num": 13,
+        "text": "Oh kayong binhi ng Israel na kaniyang lingkod, kayong mga anak ni Ya’aqob na kaniyang pinili."
+      },
+      {
+        "num": 14,
+        "text": "Siya si YAHWEH, ating Elohim; Ang kaniyang mga kahatulan ay nasa sangkalupaan."
+      },
+      {
+        "num": 15,
+        "text": "Alalahanin ninyo ang kaniyang Tipan magpakailan man, Ang salita na aniyang iniutos sa libo-libong sali't saling lahi;"
+      },
+      {
+        "num": 16,
+        "text": "Ang Tipan na kaniyang ginawa kay Abraham, At ang kaniyang sumpa kay Yitshaq."
+      },
+      {
+        "num": 17,
+        "text": "At pinatotohanan din kay Ya’aqob na pinaka palatuntunan, kay Israel na pinaka walang hanggang Tipan:"
+      },
+      {
+        "num": 18,
+        "text": "Na sinasabi, Sa iyo'y ibibigay ko ang lupain ng Canaan, Ang kapalaran ng inyong mana:"
+      },
+      {
+        "num": 19,
+        "text": "Noong kayo'y kakaunting tao sa bilang; Oo, totoong kaunti, at nakikipamayan doon."
+      },
+      {
+        "num": 20,
+        "text": "At sila'y yumaon sa bansa at bansa, At mula sa isang kaharian hanggang sa ibang bayan."
+      },
+      {
+        "num": 21,
+        "text": "Hindi niya tiniis na gawan sila nino man ng kasamaan; Oo, kaniyang sinaway ang mga hari dahil sa kanila; Na sinasabi:"
+      },
+      {
+        "num": 22,
+        "text": "Huwag ninyong salingin ang Aking mga pinahiran ng langis, At huwag saktan ang Aking mga propeta."
+      },
+      {
+        "num": 23,
+        "text": "Kayo'y magsiawit kay YAHWEH, buong lupa, Ihayag ninyo ang kaniyang pagliligtas sa araw-araw."
+      },
+      {
+        "num": 24,
+        "text": "Ang kaniyang kaluwalhatian ay ipahayag ninyo sa gitna ng mga bansa, Ang kaniyang mga kamangha-manghang gawa sa lahat ng mga bayan."
+      },
+      {
+        "num": 25,
+        "text": "Sapagka't dakila si YAHWEH, at marapat na purihing mainam: Siya rin nama'y marapat na katakutan ng higit sa lahat na diyos."
+      },
+      {
+        "num": 26,
+        "text": "Sapagka't lahat ng diyos ng mga bayan ay mga rebultong larawan: Nguni't nilikha ni YAHWEH ang mga langit."
+      },
+      {
+        "num": 27,
+        "text": "Karangalan at kamahalan ang nasa harap niya: Kalakasan at kasayahan ang nasa kaniyang tahanan."
+      },
+      {
+        "num": 28,
+        "text": "Magbigay kayo sa Elohim, kayong mga angkan ng mga bayan, Magbigay kayo kay YAHWEH ng kaluwalhatian at ng kalakasan."
+      },
+      {
+        "num": 29,
+        "text": "Inyong ibigay kay YAHWEH ang kaluwalhatiang marapat sa kaniyang Pangalan: Magdala kayo ng handog, at magsiparoon kayo sa harap niya: Inyong sambahin si YAHWEH sa ganda ng kabanalan."
+      },
+      {
+        "num": 30,
+        "text": "Manginig sa harap niya ang buong lupa: Ang sanglibutan nama'y natatatag na hindi makikilos."
+      },
+      {
+        "num": 31,
+        "text": "Magsaya ang mga langit, at magalak ang lupa; At sabihin nila sa gitna ng mga bansa, Si YAHWEH ay naghahari."
+      },
+      {
+        "num": 32,
+        "text": "Umugong ang dagat at ang kapunuan niyaon; Matuwa ang parang at ang lahat na nandoon;"
+      },
+      {
+        "num": 33,
+        "text": "Kung magkagayo'y aawit ang mga puno ng kahoy sa gubat dahil sa kagalakan sa harap ni YAHWEH, Sapagka't siya'y naparirito upang hatulan ang lupa."
+      },
+      {
+        "num": 34,
+        "text": "Oh magpasalamat kayo kay YAHWEH; dahil siya'y mabuti: Dahil ang kaniyang kaawaan ay magpakailan man."
+      },
+      {
+        "num": 35,
+        "text": "At sabihin ninyo, Iligtas mo kami, Oh AMA ng aming kaligtasan, At pisanin mo kami, at iligtas mo kami sa mga bansa, Upang kami ay pasalamat sa iyong Banal na Pangalan, At magtagumpay sa iyong kapurihan."
+      },
+      {
+        "num": 36,
+        "text": "Purihin si YAHWEH, ang AMA ng Israel, Mula sa walang pasimula hanggang sa walang hanggan. At sinabi ng buong bayan, Siya nawa: at pinuri si YAHWEH."
+      },
+      {
+        "num": 37,
+        "text": "Sa gayo'y iniwan niya roon sa harap ng Kaban ng Tipan ni YAHWEH, si Asaph at ang kaniyang mga kapatid upang magsipangasiwang palagi sa harap ng Kaban, gaya ng kinakailangan ng gawain sa araw-araw."
+      },
+      {
+        "num": 38,
+        "text": "At si Obed-edom pati ng kanilang mga kapatid, ay anim na pu't walo; si Obed-edom din na anak ni Yeduthun at si Asa ay upang maging mga tagatanod-pinto:"
+      },
+      {
+        "num": 39,
+        "text": "At si Sadoc na saserdote, at ang kaniyang mga kapatid na saserdote, sa harap ng Tabernakulo ni YAHWEH sa mataas na dako na nasa Gabaon,"
+      },
+      {
+        "num": 40,
+        "text": "Upang maghandog na palagi ng mga handog na susunugin kay YAHWEH sa ibabaw ng dambana ng handog na susunugin sa umaga at hapon, ayon sa lahat na nasusulat sa kautusan ni YAHWEH na kaniyang iniutos sa Israel;"
+      },
+      {
+        "num": 41,
+        "text": "At kasama nila si Heman at si Yeduthun, at ang nalabi sa mga pinili, na nasaysay sa pangalan upang pasalamat kay YAHWEH, sapagka't ang kaniyang kaawaan ay magpakailan man;"
+      },
+      {
+        "num": 42,
+        "text": "At kasama nila si Heman at si Yeduthun na may mga pakakak at mga simbalo sa magpapatunog ng malakas, at mga may panugtog sa mga awit sa AMA: at ang mga anak ni Yeduthun upang mangalagay sa pintuang-daan."
+      },
+      {
+        "num": 43,
+        "text": "At ang buong bayan ay nagsiuwi bawa't tao sa kani-kaniyang bahay: at si Dawid ay bumalik upang basbasan ang kaniyang sangbahayan."
+      }
+    ],
+    "17": [
+      {
+        "num": 1,
+        "text": "At nangyari, nang si Dawid ay tumahan sa kaniyang bahay, na sinabi ni Dawid kay Nathan na propeta, Narito, ako'y tumatahan sa isang bahay na sedro, nguni't ang Kaban ng Tipan ni YAHWEH ay sa ilalim ng mga kubong."
+      },
+      {
+        "num": 2,
+        "text": "At sinabi ni Nathan kay Dawid, Gawin mo ang buong nasa iyong kalooban; sapagka't ang AMA ay sumasaiyo."
+      },
+      {
+        "num": 3,
+        "text": "At nangyari, nang gabing yaon, na ang salita ng AMA ay dumating kay Nathan na sinasabi,"
+      },
+      {
+        "num": 4,
+        "text": "Ikaw ay yumaon at saysayin mo kay Dawid na Aking lingkod, Ganito ang sabi ni YAHWEH, Huwag mo Akong ipagtatayo ng bahay na matatahanan:"
+      },
+      {
+        "num": 5,
+        "text": "Sapagka't hindi Ako tumahan sa bahay mula nang araw na Aking iahon ang Israel, hanggang sa araw na ito; kundi Ako'y yumaon sa tolda at tolda, at sa Tabernakulo, at Tabernakulo."
+      },
+      {
+        "num": 6,
+        "text": "Sa lahat ng mga dako na Aking nilakaran na kasama ang buong Israel, Ako ba'y nagsalita ng isang salita sa sinoman sa mga hukom ng Israel, na siyang Aking inutusang maging pastol sa Aking bayan, na nagsasabi, Bakit hindi ninyo Ako ipinagtayo ng bahay na sedro?"
+      },
+      {
+        "num": 7,
+        "text": "Ngayon nga'y ganito ang iyong sasabihin sa Aking lingkod na kay Dawid. Ganito ang sabi ni YAHWEH ng mga Hukbo, Ikaw ay kinuha sa pasabsaban, sa pagsunod sa mga tupa upang ikaw ay maging pangulo sa Aking bayang Israel:"
+      },
+      {
+        "num": 8,
+        "text": "At Ako'y sumaiyo saan ka man naparoon, at Aking inihiwalay ang lahat na iyong mga kaaway sa harap mo; at gagawin kitang isang pangalan, na gaya ng pangalan ng mga dakila na nasa lupa."
+      },
+      {
+        "num": 9,
+        "text": "At Aking ipagtataan ng isang dako ang Aking bayang Israel, at itatatag sila, upang sila'y makatahan sa kanilang sariling dako, at huwag ng mabago pa; ni sisirain pa man sila ng mga anak ng kasamaan, na gaya ng una,"
+      },
+      {
+        "num": 10,
+        "text": "At gaya ng araw na maghalal Ako ng mga hukom upang malagay sa Aking bayang Israel; at Aking pasusukuin ang lahat mong mga kaaway. Bukod dito'y isinaysay ko sa iyo na ipagtatayo ka ni YAHWEH ng isang bahay."
+      },
+      {
+        "num": 11,
+        "text": "At mangyayari, kapag ang iyong mga araw ay nalubos na ikaw ay marapat yumaon na makasama ng iyong mga magulang, na Aking patatatagin ang iyong binhi pagkamatay mo, na magiging sa iyong mga anak; at Aking itatatag ang kaniyang kaharian."
+      },
+      {
+        "num": 12,
+        "text": "Kaniyang ipagtatayo Ako ng isang bahay, at Aking itatatag ang kaniyang upuan magpakailan man."
+      },
+      {
+        "num": 13,
+        "text": "Ako'y magiging kaniyang AMA, at siya'y magiging Aking anak: at hindi ko na aalisin ang Aking kaawaan sa kaniya, gaya ng Aking pagkakuha roon sa nauna sa iyo:"
+      },
+      {
+        "num": 14,
+        "text": "Kundi siya'y Aking ilalagay sa Aking Bahay at sa Aking kaharian magpakailan man: at ang kaniyang upuan ay matatatag magpakailan man."
+      },
+      {
+        "num": 15,
+        "text": "Ayon sa lahat na salitang ito, at ayon sa buong pangitaing ito, ay gayon sinalita ni Nathan kay Dawid."
+      },
+      {
+        "num": 16,
+        "text": "Nang magkagayo'y yumaon ang haring Dawid at naupo sa harap ni YAHWEH; at kaniyang sinabi, Sino ako, Oh YAHWEH Elohim, at ano ang aking bahay na ako'y dinala mo sa ganyang kalayo?"
+      },
+      {
+        "num": 17,
+        "text": "At ito'y munting bagay sa harap ng iyong mga mata, Oh AMA; nguni't iyong sinalita tungkol sa sangbahayan ng iyong lingkod ang hanggang sa malaong panahong darating, at ako'y iyong nilingap na ayon sa kalagayan ng isang tao na may mataas na kalagayan, Oh YAHWEH Elohim."
+      },
+      {
+        "num": 18,
+        "text": "Ano pa ang masasabi ni Dawid sa iyo, tungkol sa karangalang ginawa sa iyong lingkod? Dahil iyong kilala ang iyong lingkod."
+      },
+      {
+        "num": 19,
+        "text": "Oh YAHWEH, dahil sa iyong lingkod, at ayon sa iyong sariling puso, ay iyong ginawa ang buong kadakilaang ito, upang ipakilala ang lahat na dakilang bagay na ito."
+      },
+      {
+        "num": 20,
+        "text": "Oh YAHWEH, walang gaya mo, ni mayroon mang sinomang Elohim liban sa iyo, ayon sa lahat naming narinig ng aming mga pakinig."
+      },
+      {
+        "num": 21,
+        "text": "At anong bansa sa lupa ang gaya ng iyong bayang Israel, na tinubos ng Elohim upang maging kaniyang sariling bayan, upang gawin kang Pangalan sa pamamagitan ng malaki at kakilakilabot na mga bagay, sa pagpapalayas ng mga bansa sa harap ng iyong bayan, na iyong tinubos sa Egipto?"
+      },
+      {
+        "num": 22,
+        "text": "Sapagka't ang iyong bayang Israel ay iyong ginawang iyong sariling bayan magpakailan man; at ikaw, YAHWEH, ay naging kanilang Elohim."
+      },
+      {
+        "num": 23,
+        "text": "At ngayon, Oh YAHWEH, matatag nawa ang salita na iyong sinalita tungkol sa iyong lingkod, at tungkol sa kaniyang sangbahayan magpakailan man, at gawin mo nawa na gaya ng iyong sinalita."
+      },
+      {
+        "num": 24,
+        "text": "At ang iyong Pangalan ay mamalagi nawa, at dakilain magpakailan man, na sabihin, Si YAHWEH ng mga Hukbo ay AMA ng Israel, sa makatuwid baga'y Elohim sa Israel: at ang sangbahayan ni Dawid na iyong lingkod ay natatag sa harap mo."
+      },
+      {
+        "num": 25,
+        "text": "Dahil ikaw, Oh aking Elohim, nagpakilala sa iyong lingkod na iyong ipagtatayo siya ng bahay: kaya't nangahas ang iyong lingkod sa kaniyang puso na dumalangin sa harap mo."
+      },
+      {
+        "num": 26,
+        "text": "At ngayon, Oh YAHWEH, ikaw ang Elohim, at iyong ipinangako ang dakilang bagay na ito sa iyong lingkod:"
+      },
+      {
+        "num": 27,
+        "text": "At ngayo'y kinalugdan mong pagpalain ang sangbahayan ng iyong lingkod, upang mamalagi magpakailan sa harap mo: dahil iyong pinagpala, Oh YAHWEH, at magiging mapalad magpakailan man."
+      }
+    ],
+    "18": [
+      {
+        "num": 1,
+        "text": "At pagkatapos nito'y nangyari na pinasuko sila, at sinakop ang Gath, at ang mga nayon niyaon sa kamay ng mga Pilisteo."
+      },
+      {
+        "num": 2,
+        "text": "At sinaktan niya ang Moab; at ang mga Moabita ay naging alipin ni Dawid, at nagsipagdala ng mga kaloob."
+      },
+      {
+        "num": 3,
+        "text": "At sinaktan ni Dawid sa Hamath si Adarezer na hari sa Soba samantalang itinatatag ang kaniyang kapangyarihan sa tabi ng ilog Euprates."
+      },
+      {
+        "num": 4,
+        "text": "At kumuha si Dawid sa kaniya ng isang libong karwahe, at pitong libong nakasakay sa kabayo, at dalawang pung libong naglalakad: at pinilayan ni Dawid ang lahat ng mga kabayo ng mga karwahe, nguni't nagtira siya ng isang daan."
+      },
+      {
+        "num": 5,
+        "text": "At nang ang mga taga Siria sa Damasco ay magsiparoon upang magsisaklolo kay Adarezer na hari sa Soba, sumakit si Dawid sa mga taga Siria ng dalawangpu't dalawang libong lalake."
+      },
+      {
+        "num": 6,
+        "text": "Nang magkagayo'y naglagay si Dawid ng mga pulutong sa Siria ng Damasco; at ang mga taga Siria ay naging mga alipin ni Dawid, at nagsipagdala ng mga kaloob. At binigyan ni YAHWEH ng pagtatagumpay si Dawid saan man siya naparoon."
+      },
+      {
+        "num": 7,
+        "text": "At kinuha ni Dawid ang mga kalasag na ginto, na nasa mga lingkod ni Adarezer, at pinagdadala sa Yerushalayim."
+      },
+      {
+        "num": 8,
+        "text": "At mula sa Thibath at mula sa Chun, na mga bayan ni Adarezer; ay kumuha si Dawid ng totoong maraming tanso, na siyang ginawa ni Solomon na dagatdagatan na tanso, at mga haligi, at mga kasangkapang tanso."
+      },
+      {
+        "num": 9,
+        "text": "At nang mabalitaan ni Tou na hari sa Hamath na sinaktan ni Dawid ang buong hukbo ni Adarezer na hari sa Soba,"
+      },
+      {
+        "num": 10,
+        "text": "Kaniyang sinugo si Adoram na kaniyang anak sa haring Dawid, upang bumati sa kaniya, at purihin siya, dahil siya'y lumaban kay Adarezer at sinaktan niya siya, sapagka't si Adarezer ay may mga pakikipagdigma kay Tou; at siya'y nagdala ng lahat na sari-saring kasangkapang ginto, at pilak, at tanso."
+      },
+      {
+        "num": 11,
+        "text": "Ang mga ito naman ay itinalaga ng haring Dawid kay YAHWEH, pati ng pilak at ginto na kaniyang kinuha sa lahat na bansa; na mula sa Edom, at mula sa Moab, at mula sa mga anak ni Ammon, at mula sa mga Pilisteo, at mula sa Amalec."
+      },
+      {
+        "num": 12,
+        "text": "Bukod dito'y si Abisai na anak ni Sarwia ay sumakit sa mga Idumeo sa Libis ng Asin, ng labingwalong libo."
+      },
+      {
+        "num": 13,
+        "text": "At naglagay siya ng mga pulutong sa Edom; at lahat ng mga Idumeo ay naging mga alipin ni Dawid. At binigyan ng pagtatagumpay ni YAHWEH si Dawid saan man siya naparoon."
+      },
+      {
+        "num": 14,
+        "text": "At si Dawid ay naghari sa buong Israel; at siya'y gumawa ng kahatulan at ng katuwiran sa buong bayan niya."
+      },
+      {
+        "num": 15,
+        "text": "At si Yo’ab na anak ni Sarwia ay nasa pamamahala sa hukbo; at si Yehosaphat na anak ni Ahilud ay kasangguni."
+      },
+      {
+        "num": 16,
+        "text": "At si Sadoc na anak ni Achitob, at si Abimelec na anak ni Abiathar, ay mga saserdote; at si Sausa ay kalihim;"
+      },
+      {
+        "num": 17,
+        "text": "At si Benayah na anak ni Yehoyada ay nasa pamamahala sa mga Ceretheo at sa mga Peletheo; at ang mga anak ni Dawid ay mga pinuno sa siping ng hari."
+      }
+    ],
+    "19": [
+      {
+        "num": 1,
+        "text": "At nangyari, pagkatapos nito, na si Naas na hari ng mga anak ni Ammon ay namatay, at ang kaniyang anak ay naghari na kahalili niya."
+      },
+      {
+        "num": 2,
+        "text": "At sinabi ni Dawid, Ako'y magpapakita ng kagandahang loob kay Hanan na anak ni Naas, sapagka't ang kaniyang ama ay nagpakita ng kagandahang loob sa akin. Sa gayo'y nagsugo si Dawid ng mga sugo upang aliwin siya tungkol sa kaniyang ama. At ang mga lingkod ni Dawid ay naparoon sa lupain ng mga anak ni Ammon kay Hanan, upang aliwin siya."
+      },
+      {
+        "num": 3,
+        "text": "Nguni't sinabi ng mga prinsipe ng mga anak ni Ammon kay Hanan: Inaakala mo bang pinararangalan ni Dawid ang iyong ama, na siya'y nagsugo ng mga mang-aaliw sa iyo? hindi ba ang kaniyang mga lingkod ay nagsiparito sa iyo upang kilalanin, at gibain, at tiktikan ang lupain?"
+      },
+      {
+        "num": 4,
+        "text": "Sa gayo'y sinunggaban ni Hanan ang mga lingkod ni Dawid, at inahitan, at pinutol ang kanilang mga suot sa gitna hanggang sa kanilang pigi, at sila'y pinayaon."
+      },
+      {
+        "num": 5,
+        "text": "Nang magkagayo'y may nagsiparoong ilan at nagsipagsaysay kay Dawid kung paanong dinuwahagi ang mga lalake. At kaniyang sinugong salubungin sila; sapagka't ang mga lalake ay nangapahiyang mainam. At sinabi ng hari, Kayo'y magsipaghintay sa Yericho hanggang sa ang inyong balbas ay tumubo, at magkagayo'y magsibalik kayo."
+      },
+      {
+        "num": 6,
+        "text": "At nang makita ng mga anak ni Ammon na sila'y naging nakapopoot kay Dawid, si Hanan at ang mga anak ni Ammon ay nagpadala ng isang libong talentong pilak, upang mangupahan sila ng mga karwahe at mga mangangabayo mula sa Mesopotamia, at mula sa Arammaacha, at sa Soba."
+      },
+      {
+        "num": 7,
+        "text": "Sa gayo'y nangupahan sila ng tatlongpu't dalawang libong karwahe, at sa hari sa Maacha at sa kaniyang bayan; na siyang pumaroon at humantong sa harap ng Medeba. At ang mga anak ni Ammon ay nagpipisan mula sa kanilang mga bayan, at nagsiparoon upang makipagbaka."
+      },
+      {
+        "num": 8,
+        "text": "At nang mabalitaan ni Dawid, ay kaniyang sinugo si Yo’ab at ang buong hukbo ng makapangyarihang mga lalake."
+      },
+      {
+        "num": 9,
+        "text": "At ang mga anak ni Ammon, ay nagsilabas, at nagsihanay ng pakikipagbaka sa pintuan ng bayan: at ang mga hari na nagsiparoon ay nagkaisa sa parang."
+      },
+      {
+        "num": 10,
+        "text": "Nang makita nga ni Yo’ab na ang pagbabaka ay nahahanay laban sa kaniya sa harapan at sa likuran, pinili niya yaong mga piling lalake ng Israel, at inihanay laban sa mga taga Siria."
+      },
+      {
+        "num": 11,
+        "text": "At ang nalabi sa bayan ay kaniyang ipinamahala sa kapangyarihan ng kaniyang kapatid na si Abisai, at sila'y nagsihanay laban sa mga anak ni Ammon."
+      },
+      {
+        "num": 12,
+        "text": "At sinabi niya, Kung ang mga taga Siria ay manaig sa akin, iyo ngang tutulungan ako: nguni't kung ang mga anak ni Ammon ay manaig sa iyo, akin ngang tutulungan ka."
+      },
+      {
+        "num": 13,
+        "text": "Magpakatapang kang mabuti, at tayo'y magpakalalake para sa ating bayan, at sa mga bayan ng ating AMA: at gawin ni YAHWEH ang inaakala niyang mabuti."
+      },
+      {
+        "num": 14,
+        "text": "Sa gayo'y si Yo’ab at ang bayan na nasa kaniya ay nagsilapit sa harap ng mga taga Siria sa pakikipagbaka; at sila'y nagsitakas sa harap niya."
+      },
+      {
+        "num": 15,
+        "text": "At nang makita ng mga anak ni Ammon na ang mga taga Siria ay nagsitakas, sila ma'y nagsitakas sa harap ni Abisai na kaniyang kapatid, at nagsipasok sa bayan. Nang magkagayo'y si Yo’ab ay naparoon sa Yerushalayim."
+      },
+      {
+        "num": 16,
+        "text": "At nang makita ng mga taga Siria na sila'y nalagay sa kasamaan sa harap ng Israel, sila'y nagsipagsugo ng mga sugo, at dinala ang mga taga Siria na nandoon sa dako roon ng Ilog, na kasama ni Sophach na punong kawal ng hukbo ni Adarezer sa kanilang unahan."
+      },
+      {
+        "num": 17,
+        "text": "At nasaysay kay Dawid; at kaniyang pinisan ang buong Israel, at tumawid sa Yarden, at naparoon sa kanila, at humanay laban sa kanila. Sa gayo'y nang humanay sa pakikipagbaka si Dawid laban sa mga taga Siria, sila'y nakipag-laban sa kaniya."
+      },
+      {
+        "num": 18,
+        "text": "At ang mga taga Siria ay nagsitakas sa harap ng Israel; at si Dawid ay pumatay sa mga taga Siria ng mga tao sa pitong libong karwahe, at apat na pung libong naglalakad, at pinatay si Sophach na pinunong kawal ng hukbo."
+      },
+      {
+        "num": 19,
+        "text": "At nang makita ng mga lingkod ni Adarezer na sila'y nangalagay sa kasamaan sa harap ng Israel, sila'y nakipagpayapaan kay Dawid, at naglingko sa kaniya: ni hindi na tumulong pa ang mga taga Siria sa mga anak ni Ammon."
+      }
+    ],
+    "20": [
+      {
+        "num": 1,
+        "text": "At nangyari sa panahon ng pagpihit ng taon, sa panahong ang mga hari ay nagsisilabas sa pakikipagbaka, na pinatnubayan ni Yo’ab ang hukbo, at sinira ang lupain ng mga anak ni Ammon, at naparoon at kinubkob ang Rabba. Nguni't si Dawid ay naghintay sa Yerushalayim. At sinaktan ni Yo’ab ang Rabba, at sinira."
+      },
+      {
+        "num": 2,
+        "text": "At kinuha ni Dawid ang putong ng kanilang hari sa ibabaw ng kaniyang ulo, at nalamang may timbang na isang talentong ginto, at may mga mahalagang bato roon: at naputong sa ulo ni Dawid at kaniyang inilabas ang samsam sa bayan, na totoong marami."
+      },
+      {
+        "num": 3,
+        "text": "At kaniyang inilabas ang bayan na nandoon, at pinutol sila ng mga lagari, at ng mga suyod na bakal, at ng mga palakol. At ganito ang ginawa ni Dawid sa lahat ng mga bayan ng mga anak ni Ammon. At si Dawid at ang buong bayan ay bumalik sa Yerushalayim."
+      },
+      {
+        "num": 4,
+        "text": "At nangyari, pagkatapos nito, na nagkaroon ng pagdidigma sa Gezer laban sa mga Pilisteo: nang magkagayo'y pinatay ni Sibbecai na Husathita si Sippai, sa mga anak ng mga higante; at sila'y sumuko."
+      },
+      {
+        "num": 5,
+        "text": "At nagkaroon uli ng pakikipagdigma laban sa mga Pilisteo; at pinatay ni Elhanan na anak ni Yair si Lahmi na kapatid ni Goliath na Getheo, na ang puluhan ng sibat niya ay gaya ng panghabi ng manghahabi."
+      },
+      {
+        "num": 6,
+        "text": "At nagkaroon uli ng pagdidigma sa Gath, na doo'y may isang lalaking may malaking bulas, na ang mga daliri ng kamay at paa ay dalawangpu't apat, anim sa bawa't kamay at anim sa bawa't paa; at siya rin nama'y ipinanganak sa higante."
+      },
+      {
+        "num": 7,
+        "text": "At nang kaniyang hamunin ang Israel, pinatay siya ni Yehonathan na anak ni Sima na kapatid ni Dawid."
+      },
+      {
+        "num": 8,
+        "text": "Ang mga ito ang ipinanganak sa higante sa Gath, at sila'y nabuwal sa kamay ni Dawid, at sa pamamagitan ng kamay ng mga lingkod niya."
+      }
+    ],
+    "21": [
+      {
+        "num": 1,
+        "text": "At tumayo si Satanas at kinilos si Dawid upang bilangin ang Israel at Yehudah."
+      },
+      {
+        "num": 2,
+        "text": "At sinabi ni Dawid kay Yo’ab, at sa mga prinsipe ng bayan, Kayo'y magsiyaon, bilangin ninyo ang Israel mula sa Beer-seba hanggang sa Dan; at dalhan ninyo ako ng salita; upang aking maalaman ang bilang nila."
+      },
+      {
+        "num": 3,
+        "text": "At sinabi ni Yo’ab, Gawin nawa ni YAHWEH ang kaniyang bayan na higit sa makasandaang dami nila; nguni't, mahal ko na hari, di ba silang lahat ay mga lingkod ng aking hari? bakit kinakailangan ng Kamahalan ang bagay na ito? bakit siya'y magiging sanhi ng ipagkakasala ng Israel?"
+      },
+      {
+        "num": 4,
+        "text": "Gayon ma'y ang salita ng hari ay nanaig laban kay Yo’ab. Kaya't si Yo’ab ay yumaon, at naparoon sa buong Israel, at dumating sa Yerushalayim."
+      },
+      {
+        "num": 5,
+        "text": "At ibinigay ni Yo’ab ang kabuuan ng bilang ng bayan kay Dawid. At silang lahat na taga Israel ay labing isang daan libo na nagsisihawak ng tabak: at ang Yehudah ay apat na raan at pitongpung libong lalake na nagsisihawak ng tabak."
+      },
+      {
+        "num": 6,
+        "text": "Nguni't ang Lewi at ang Binyamin ay hindi binilang; sapagka't ang pananalita ng hari ay kahalay-halay kay Yo’ab."
+      },
+      {
+        "num": 7,
+        "text": "At sumama ang loob ni YAHWEH sa bagay na ito; kaya't kaniyang sinaktan ang Israel."
+      },
+      {
+        "num": 8,
+        "text": "At sinabi ni Dawid sa AMA, Ako'y nagkasala ng mabigat sa aking paggawa ng bagay na ito: nguni't ngayo'y alisin mo, ipinamamanhik ko sa iyo, ang kasamaan ng iyong lingkod, sapagka't aking ginawang may lubhang kamangmangan."
+      },
+      {
+        "num": 9,
+        "text": "At si YAHWEH ay nagsalita kay Gad na tagakita ni Dawid, na sinasabi."
+      },
+      {
+        "num": 10,
+        "text": "Yumaon ka at magsalita kay Dawid na sasabihin, Ganito ang sabi ni YAHWEH, Pinagpapalagayan kita ng tatlong bagay; pumili ka ng isa sa mga iyan, upang Aking magawa sa iyo."
+      },
+      {
+        "num": 11,
+        "text": "Sa gayo'y naparoon si Gad kay Dawid, at nagsabi sa kaniya, Ganito ang sabi ni YAHWEH, Piliin mo ang iniibig mo:"
+      },
+      {
+        "num": 12,
+        "text": "Tatlong taong kagutom; o tatlong buwan na pagkalipol sa harap ng iyong mga kaaway, samantalang ang tabak ng iyong mga kaaway ay umabot sa iyo; o kung dili ay tatlong araw na ang tabak ni YAHWEH, sa makatuwid baga'y ang salot sa lupain, at ang anghel ni YAHWEH ay mangwawasak sa lahat na hangganan ng Israel. Ngayon nga'y akalain mo kung anong sagot ang ibabalik ko sa kaniya na nagsugo sa akin."
+      },
+      {
+        "num": 13,
+        "text": "At sinabi ni Dawid kay Gad, Ako'y totoong nasa kagipitan: ipinamamanhik ko na ihulog mo ako ngayon sa kamay ni YAHWEH; sapagka't totoong malaki ang kaniyang kaawaan; at huwag akong mahulog sa kamay ng tao."
+      },
+      {
+        "num": 14,
+        "text": "Sa gayo'y nagsugo si YAHWEH ng salot sa Israel: at nabuwal sa Israel ay pitongpung libong lalake."
+      },
+      {
+        "num": 15,
+        "text": "At ang Elohim ay nagsugo ng isang anghel sa Yerushalayim, upang gibain; at nang kaniyang lilipulin, ang AMA ay tumingin, at nagsisi siya tungkol sa kasamaan, at sinabi sa manglilipol na anghel, Siya na, ngayo'y itigil mo ang iyong kamay. At ang anghel ni YAHWEH ay tumayo sa giikan ni Ornan na Yebuseo."
+      },
+      {
+        "num": 16,
+        "text": "At itinanaw ni Dawid ang kaniyang mga mata, at nakita ang anghel ni YAHWEH na nakatayo sa pagitan ng lupa at ng langit, na may hawak na tabak sa kaniyang kamay na nakaunat sa Yerushalayim. Nang magkagayo'y si Dawid at ang mga matanda, na nakapanamit ng telang magaspang ay nagpatirapa. Bil 22:23"
+      },
+      {
+        "num": 17,
+        "text": "At sinabi ni Dawid sa AMA, Hindi ba ako ang nagpabilang sa bayan? sa makatuwid baga'y ako yaong nagkasala at gumawa ng totoong kasamaan; nguni't ang mga tupang ito, ano ang kanilang ginawa? Idinadalangin ko sa iyo, Oh YAHWEH kong AMA, na ang iyong kamay ay maging laban sa akin, at laban sa sangbahayan ng aking ama; nguni't huwag laban sa iyong bayan, na sila'y masasalot."
+      },
+      {
+        "num": 18,
+        "text": "Nang magkagayo'y inutusan ng anghel ni YAHWEH si Gad upang sabihin kay Dawid na siya'y sumampa, at magtayo ng isang dambana kay YAHWEH sa giikan ni Ornan na Yebuseo."
+      },
+      {
+        "num": 19,
+        "text": "At si Dawid ay sumampa sa sabi ni Gad na kaniyang sinalita sa Pangalan ni YAHWEH."
+      },
+      {
+        "num": 20,
+        "text": "At si Ornan ay bumalik at nakita ang anghel; at ang kaniyang apat na anak na kasama niya ay nagtago. Si Ornan nga ay gumigiik ng trigo."
+      },
+      {
+        "num": 21,
+        "text": "At samantalang si Dawid ay naparoroon kay Ornan, si Ornan ay tumanaw at nakita si Dawid, at lumabas sa giikan, at iniyukod kay Dawid ang kaniyang mukha sa lupa."
+      },
+      {
+        "num": 22,
+        "text": "Nang magkagayo'y sinabi ni Dawid kay Ornan, Ibigay mo sa akin ang dako ng giikang ito, upang aking mapagtayuan ng isang dambana kay YAHWEH: sa buong halaga ay ibibigay mo sa akin: upang ang salot ay tumigil sa bayan."
+      },
+      {
+        "num": 23,
+        "text": "At sinabi ni Ornan kay Dawid, Kunin mo, at gawin ng mahal kong hari ang mabuti sa harap ng kaniyang mga mata: narito, aking ibinibigay sa iyo ang mga baka na mga pinakahandog na susunugin, at ang mga kasangkapan ng giikan na pinaka kahoy, at ang trigo na pinakahandog na harina; aking ibinibigay sa lahat."
+      },
+      {
+        "num": 24,
+        "text": "At sinabi ng haring Dawid kay Ornan, Huwag; kundi katotohanang aking bibilhin ng buong halaga: sapagka't hindi ko kukunin ang iyo para kay YAHWEH, o maghahandog man ng handog na susunugin na walang bayad."
+      },
+      {
+        "num": 25,
+        "text": "Sa gayo'y ibinigay ni Dawid kay Ornan dahil sa dakong yaon ang anim na raang siklong ginto na pinakatimbang."
+      },
+      {
+        "num": 26,
+        "text": "At ipinagtayo roon ni Dawid ng isang dambana si YAHWEH, at naghandog ng mga handog na susunugin, at ng mga handog tungkol sa kapayapaan, at tumawag kay YAHWEH; at sinagot niya siya mula sa langit sa pamamagitan ng apoy sa ibabaw ng dambana ng handog na susunugin."
+      },
+      {
+        "num": 27,
+        "text": "At inutusan ni YAHWEH ang anghel; at kaniyang isinuksok sa kaluban ang kaniyang tabak."
+      },
+      {
+        "num": 28,
+        "text": "Nang panahong yaon, nang makita ni Dawid na sinagot siya ni YAHWEH sa giikan ni Ornan na Yebuseo, siya nga'y naghain doon."
+      },
+      {
+        "num": 29,
+        "text": "Sapagka't ang Tabernakulo ni YAHWEH na ginawa ni Moises sa ilang at ang dambana ng handog na susunugin, ay nasa mataas na dako nang panahong yaon sa Gabaon."
+      },
+      {
+        "num": 30,
+        "text": "Nguni't si Dawid ay hindi makaparoon sa harap niyaon upang mag-usisa sa AMA: sapagka't siya'y natakot dahil sa tabak ng anghel ni YAHWEH."
+      }
+    ],
+    "22": [
+      {
+        "num": 1,
+        "text": "Nang magkagayo'y sinabi ni Dawid, Ito ang Bahay ni YAHWEH Elohim, at ito ang dambana ng handog na susunugin para sa Israel."
+      },
+      {
+        "num": 2,
+        "text": "At iniutos ni Dawid na pisanin ang mga taga ibang bayan na nasa lupain ng Israel; at siya'y naglagay ng mga kantero upang magsitabas ng mga yaring bato, upang itayo ang Bahay ng Elohim."
+      },
+      {
+        "num": 3,
+        "text": "At si Dawid ay naghanda ng bakal na sagana na mga pinaka pako sa mga pinto ng mga pintuang-daan, at sa mga sugpong; at tanso na sagana na walang timbang;"
+      },
+      {
+        "num": 4,
+        "text": "At mga puno ng sedro na walang bilang; sapagka't ang mga Sidonio at ang mga taga Tiro ay nangagdala kay Dawid ng mga puno ng sedro na sagana."
+      },
+      {
+        "num": 5,
+        "text": "At sinabi ni Dawid, Si Solomon na aking anak ay bata at mura, at ang bahay na matatayo na laan kay YAHWEH ay marapat na totoong mainam, na bantog at maluwalhati sa lahat na lupain: akin ngang ipaghahanda. Sa gayo'y naghanda si Dawid ng sagana bago sumapit ang kaniyang kamatayan."
+      },
+      {
+        "num": 6,
+        "text": "Nang magkagayo'y ipinatawag niya si Solomon na kaniyang anak, at binilinan niyang magtayo ng isang bahay na laan kay YAHWEH, sa AMA ng Israel."
+      },
+      {
+        "num": 7,
+        "text": "At sinabi ni Dawid kay Solomon na kaniyang anak, Tungkol sa akin, na sa aking kalooban ang magtayo ng isang bahay sa Pangalan ni YAHWEH kong Elohim. 1Har 8:18-19"
+      },
+      {
+        "num": 8,
+        "text": "Nguni't ang salita ni YAHWEH ay dumating sa akin, na nagsasabi, Ikaw ay nagbubo ng dugo na sagana, at gumawa ng malaking pagdidigma: huwag mong ipagtatayo ng bahay ang Aking Pangalan, dahil ikaw ay nagbubo ng maraming dugo sa lupa sa Aking paningin:"
+      },
+      {
+        "num": 9,
+        "text": "Narito, isang lalake ay ipanganganak sa iyo, na siyang magiging lalaking mapayapa; at bibigyan ko siya ng kapahingahan sa lahat ng kaniyang mga kaaway sa palibot: sapagka't ang kaniyang magiging pangalan ay Solomon, at bibigyan ko ng kapayapaan at katahimikan ang Israel sa kaniyang mga kaarawan:"
+      },
+      {
+        "num": 10,
+        "text": "Kaniyang ipagtatayo ng Bahay ang Aking Pangalan; at siya'y magiging Aking anak, at Ako ay magiging kaniyang AMA; at Aking itatatag ang upuan ng kaniyang kaharian sa Israel magpakailan man."
+      },
+      {
+        "num": 11,
+        "text": "Ngayon, anak ko, Si YAHWEH ay sumaiyo; at guminhawa ka, at iyong itayo ang Bahay ni YAHWEH mong Elohim, gaya ng kaniyang sinalita sa iyo."
+      },
+      {
+        "num": 12,
+        "text": "Pagkalooban ka lamang ni YAHWEH ng pagmumunimuni, at pagkakilala, at bigyan ka niya ng bilin tungkol sa Israel; na anopa't iyong maingatan ang kautusan ni YAHWEH mong AMA."
+      },
+      {
+        "num": 13,
+        "text": "Kung magkagayo'y giginhawa ka, kung isasagawa mo ang mga palatuntunan at ang mga kahatulan na ibinilin ni YAHWEH kay Moises tungkol sa Israel: ikaw ay magpakalakas at magpakatapang; huwag kang matakot o manglupaypay man."
+      },
+      {
+        "num": 14,
+        "text": "Ngayon, narito, sa aking karalitaan ay ipinaghanda ko ang Bahay ni YAHWEH ng isang daang libong talentong ginto, at isang libong libong talentong pilak; at ng tanso at bakal na walang timbang; dahil sa kasaganaan: gayon din ng kahoy at bato ay naghanda ako; at iyong madadagdagan."
+      },
+      {
+        "num": 15,
+        "text": "Bukod dito'y may kasama kang mga manggagawa na sagana, mga mananabas ng bato at manggagawa sa bato at sa kahoy, at lahat ng mga tao na bihasa sa anoman gawain;"
+      },
+      {
+        "num": 16,
+        "text": "Sa ginto, sa pilak, at sa tanso, at sa bakal, walang bilang. Ikaw ay bumangon at iyong gawin, at si YAHWEH ay sumaiyo."
+      },
+      {
+        "num": 17,
+        "text": "Iniutos naman ni Dawid sa lahat na prinsipe ng Israel na tulungan si Solomon na kaniyang anak, na sinasabi,"
+      },
+      {
+        "num": 18,
+        "text": "Hindi ba si YAHWEH ninyong Elohim ay sumasainyo? at hindi ba binigyan niya kayo ng kapahingahan sa lahat na dako? Sapagka't kaniyang ibinigay ang mga nananahan sa lupain sa aking kamay; at ang lupain ay suko sa harap ni YAHWEH, at sa harap ng kaniyang bayan."
+      },
+      {
+        "num": 19,
+        "text": "Ngayo'y inyong ilagak ang inyong puso at ang inyong kaluluwa upang hanaping sundin si YAHWEH ninyong AMA; kayo'y bumangon nga, at itayo ninyo ang santuariyo ni YAHWEH Elohim, upang dalhin ang Kaban ng Tipan ni YAHWEH, at ang mga banal na kasangkapan ng AMA, sa loob ng bahay na itatayo sa Pangalan ni YAHWEH."
+      }
+    ],
+    "23": [
+      {
+        "num": 1,
+        "text": "Si Dawid nga ay matanda na at puspos ng mga araw: at ginawa niyang hari si Solomon na kaniyang anak sa Israel."
+      },
+      {
+        "num": 2,
+        "text": "At pinisan niya ang lahat na prinsipe ng Israel, pati ang mga saserdote at ng mga Lewita."
+      },
+      {
+        "num": 3,
+        "text": "At ang mga Lewita ay binilang mula sa tatlongpung taon na patanda: at ang kanilang bilang, ayon sa kanilang mga ulo, lalake't lalake, ay tatlongpu't walong libo."
+      },
+      {
+        "num": 4,
+        "text": "Sa mga ito, dalawangpu't apat na libo ang nagsisitingin ng gawa sa Bahay ni YAHWEH; at anim na libo ay mga pinuno at mga hukom:"
+      },
+      {
+        "num": 5,
+        "text": "At apat na libo ay tagatanod-pinto: at apat na libo ay mang-aawit kay YAHWEH na may mga panugtog na aking ginawa, sabi ni Dawid, upang ipangpuri."
+      },
+      {
+        "num": 6,
+        "text": "At hinati sila ni Dawid sa mga hanay ayon sa mga anak ni Lewi; si Gerson, si Coath, at si Merari."
+      },
+      {
+        "num": 7,
+        "text": "Sa mga Gersonita: si Ladan, at si Simi."
+      },
+      {
+        "num": 8,
+        "text": "Ang mga anak ni Ladan: si Yehiel na pinuno, at si Zetham, at si Yo’el, tatlo."
+      },
+      {
+        "num": 9,
+        "text": "Ang mga anak ni Simi: si Selomith, at si Haziel, at si Aran, tatlo. Ang mga ito ang mga pangulo sa mga sangbahayan ng mga magulang ni Ladan."
+      },
+      {
+        "num": 10,
+        "text": "At ang mga anak ni Simi: si Yahath, si Zinat, at si Ye’ush, at si Beriyah. Ang apat na ito ang mga anak ni Simi."
+      },
+      {
+        "num": 11,
+        "text": "At si Yahath ay siyang pinuno, at si Zinat ang ikalawa: nguni't si Ye’ush at si Beriyah ay hindi nagkaroon ng maraming anak; kaya't sila'y naging sangbahayan ng mga magulang sa isang bilang."
+      },
+      {
+        "num": 12,
+        "text": "Ang mga anak ni Coath: si Amram, si Ishar, si Hebron, at si Uzziel, apat."
+      },
+      {
+        "num": 13,
+        "text": "Ang mga anak ni Amram: si Aaron at si Moises: at si Aaron ay nahiwalay, upang kaniyang ariing banal ang mga kabanal-banalang bagay, niya at ng kaniyang mga anak magpakailan man, upang magsunog ng kamangyan sa harap ni YAHWEH, upang mangasiwa sa kaniya, at upang bumasbas sa pamamagitan ng Kaniyang Pangalan, magpakailan man."
+      },
+      {
+        "num": 14,
+        "text": "Nguni't tungkol kay Moises na lingkod ng AMA, ang kaniyang mga anak ay ibinilang na lipi ni Lewi."
+      },
+      {
+        "num": 15,
+        "text": "Ang mga anak ni Moises: si Gerson at si Eliezer."
+      },
+      {
+        "num": 16,
+        "text": "Ang mga anak ni Gerson: si Sebuel na pinuno."
+      },
+      {
+        "num": 17,
+        "text": "At ang mga anak ni Eliezer: si Rehabiyah na pinuno. At si Eliezer ay hindi nagkaroon ng ibang mga anak; nguni't ang mga anak ni Rehabiyah ay totoong marami."
+      },
+      {
+        "num": 18,
+        "text": "Ang mga anak ni Ishar: si Selomith na pinuno."
+      },
+      {
+        "num": 19,
+        "text": "Ang mga anak ni Hebron: si Yeria ang pinuno, si Amariyah ang ikalawa, si Yahatziel ang ikatlo, at si Yecaman ang ikaapat."
+      },
+      {
+        "num": 20,
+        "text": "Ang mga anak ni Uzziel: si Micha ang pinuno, at si Isiyah ang ikalawa."
+      },
+      {
+        "num": 21,
+        "text": "Ang mga anak ni Merari: si Mahali at si Musi. Ang mga anak ni Mahali: si Eleazar at si Cis."
+      },
+      {
+        "num": 22,
+        "text": "At si Eleazar ay namatay, at walang anak na lalake, kundi mga babae lamang: at nag-asawa sa kanila ang kanilang mga kapatid na mga anak ni Cis."
+      },
+      {
+        "num": 23,
+        "text": "Ang mga anak ni Musi: si Mahali, at si Eder, at si Yerimoth, tatlo."
+      },
+      {
+        "num": 24,
+        "text": "Ang mga ito ang mga anak ni Lewi, ayon sa mga sangbahayan ng kanilang mga magulang, sa makatuwid baga'y mga pangulo sa mga sangbahayan ng mga magulang doon sa mga nabilang, sa mga pangalan, ayon sa kanilang mga pangulo, na nagsigawa ng gawain sa pagli-lingkod sa Bahay ni YAHWEH, mula sa dalawang pung taong gulang na patanda."
+      },
+      {
+        "num": 25,
+        "text": "Sapagka't sinabi ni Dawid, Si YAHWEH, ang AMA ng Israel ay nagbigay ng kapahingahan sa kaniyang bayan; at siya'y tumatahan sa Yerushalayim magpakailan man:"
+      },
+      {
+        "num": 26,
+        "text": "At ang mga Lewita naman ay hindi na magkakailangan pang pasanin ang Tabernakulo at lahat na kasangkapan niyaon sa paglilingkod doon."
+      },
+      {
+        "num": 27,
+        "text": "Sapagka't ayon sa mga huling salita ni Dawid ay nabilang ang mga anak ni Lewi, mula sa dalawangpung taong gulang na patanda."
+      },
+      {
+        "num": 28,
+        "text": "Sapagka't ang kanilang katungkulan ay tumulong sa mga anak ni Aaron sa paglilingkod sa Bahay ni YAHWEH, sa mga looban, at sa mga silid, at sa paglilinis ng lahat na banal na bagay, sa gawain na paglilingkod sa Bahay ng AMA;"
+      },
+      {
+        "num": 29,
+        "text": "Gayon din sa tinapay na handog, at sa mainam na harina na pinakahandog na harina, maging sa mga manipis na tinapay na walang lebadura, at doon sa niluto sa kawali, at doon sa pinirito; at sa lahat na sari-saring takalan at panakal;"
+      },
+      {
+        "num": 30,
+        "text": "At upang tumayo tuwing umaga na pasalamat at pumuri kay YAHWEH, at gayon din naman sa hapon;"
+      },
+      {
+        "num": 31,
+        "text": "At upang maghandog ng lahat na handog kay YAHWEH na susunugin sa mga Sabbath, sa mga bagong buwan, at sa mga takdang kapistahan, sa bilang alinsunod sa utos tungkol sa kanila, na palagi sa harap ni YAHWEH:"
+      },
+      {
+        "num": 32,
+        "text": "At sila ang magsisipag-ingat ng gawain sa Tabernakulo ng kapisanan, at ng mga katungkulan sa banal na dako, at ng katungkulan ng mga anak ni Aaron na kanilang mga kapatid, sa paglilingkod sa Bahay ni YAHWEH."
+      }
+    ],
+    "24": [
+      {
+        "num": 1,
+        "text": "At ang pagkabahagi ng mga anak ni Aaron ay ito. Ang mga anak ni Aaron; si Nadab at si Abiyu, si Eleazar at si Ithamar."
+      },
+      {
+        "num": 2,
+        "text": "Nguni't si Nadab at si Abiyu ay namatay na una sa kanilang ama, at hindi nagkaanak: kaya't si Eleazar at si Ithamar ang gumawa ng katungkulang pagkasaserdote."
+      },
+      {
+        "num": 3,
+        "text": "At si Dawid na kasama ni Sadoc sa mga anak ni Eleazar, at si Ahimelech sa mga anak ni Ithamar, ay siyang bumahagi sa kanila ayon sa kanilang paglilingkod."
+      },
+      {
+        "num": 4,
+        "text": "At may higit na mga pinuno na natagpuan sa mga anak ni Eleazar kaysa mga anak ni Ithamar: at ganito nila binahagi: sa mga anak ni Eleazar ay may labing anim, na mga pangulo sa mga sangbahayan ng mga magulang; at sa mga anak ni Ithamar, ayon sa mga sangbahayan ng kanilang mga magulang, walo."
+      },
+      {
+        "num": 5,
+        "text": "Ganito nila binahagi sa pamamagitan ng sapalaran; sapagka't may mga prinsipe sa santuariyo, at mga prinsipe ng AMA, sa mga anak ni Eleazar, at gayon din sa mga anak ni Ithamar."
+      },
+      {
+        "num": 6,
+        "text": "At si Shemeyah na anak ni Nathanael na kalihim, na sa mga Lewita ay isinulat sila sa harapan ng hari, at ng mga prinsipe, at si Sadoc na saserdote, at ni Ahimelech na anak ni Abiathar, at ng mga pangulo sa mga sangbahayan ng mga magulang ng mga saserdote, at ng mga Lewita: isang angkan ng mga magulang ay kinuha para sa kay Eleazar, at isa'y kinuha para sa kay Ithamar."
+      },
+      {
+        "num": 7,
+        "text": "Ang una ngang kapalaran ay lumabas kay Yoyahrib, ang ikalawa'y kay Yedayah;"
+      },
+      {
+        "num": 8,
+        "text": "Ang ikatlo ay kay Harim, ang ikaapat ay kay Seorim;"
+      },
+      {
+        "num": 9,
+        "text": "Ang ikalima ay kay Malchiyah, ang ikaanim ay kay Miamim;"
+      },
+      {
+        "num": 10,
+        "text": "Ang ikapito ay kay Cos, ang ikawalo ay kay Abiyah;"
+      },
+      {
+        "num": 11,
+        "text": "Ang ikasiyam ay kay Yeshua, ang ikasangpu ay kay Sechanyah;"
+      },
+      {
+        "num": 12,
+        "text": "Ang ikalabing isa ay kay Eliyahib, ang ikalabing dalawa ay kay Yacim;"
+      },
+      {
+        "num": 13,
+        "text": "Ang ikalabing tatlo ay kay Uppa, ang ikalabing apat ay kay Isebeab;"
+      },
+      {
+        "num": 14,
+        "text": "Ang ikalabing lima ay kay Bilga, ang ikalabing anim ay kay Immer;"
+      },
+      {
+        "num": 15,
+        "text": "Ang ikalabing pito ay kay Hezir, ang ika- labing walo ay kay Aphses;"
+      },
+      {
+        "num": 16,
+        "text": "Ang ikalabing siyam ay kay Pethayah, ang ikadalawangpu ay kay Hezeciel;"
+      },
+      {
+        "num": 17,
+        "text": "Ang ikadalawangpu't isa ay kay Yachin, ang ikadalawangpu't dalawa ay kay Hamul;"
+      },
+      {
+        "num": 18,
+        "text": "Ang ikadalawangpu't tatlo ay kay Delayah, ang ikadalawangpu't apat ay kay Maaziyah."
+      },
+      {
+        "num": 19,
+        "text": "Ito ang ayos nila sa kanilang paglilingkod, upang pumasok sa Bahay ni YAHWEH ayon sa alituntunin na ibinigay sa kanila sa pamamagitan ng kamay ni Aaron na kanilang magulang, gaya ng iniutos sa kaniya ni YAHWEH, ang AMA ng Israel."
+      },
+      {
+        "num": 20,
+        "text": "At sa nalabi sa mga anak ni Lewi: sa mga anak ni Amram: si Subael; sa mga anak ni Subael, si Yehedyah."
+      },
+      {
+        "num": 21,
+        "text": "Kay Rehabiyah: sa mga anak ni Rehabiyah, si Isiyah ang pinuno."
+      },
+      {
+        "num": 22,
+        "text": "Sa mga Isharita, si Selomoth; sa mga anak ni Selomoth, si Yath."
+      },
+      {
+        "num": 23,
+        "text": "At sa mga anak ni Hebron: si Yeriyah ang pinuno, si Amariyah ang ikalawa, si Yahatziel ang ikatlo, si Yecaman ang ikaapat."
+      },
+      {
+        "num": 24,
+        "text": "Ang mga anak ni Uzziel; si Micha; sa mga anak ni Micha, si Samir."
+      },
+      {
+        "num": 25,
+        "text": "Ang kapatid ni Micha, si Isiyah; sa mga anak ni Isiyah, si Zekarayah."
+      },
+      {
+        "num": 26,
+        "text": "Ang mga anak ni Merari: si Mahali at si Musi: ang mga anak ni Yaaziyah: si Benno."
+      },
+      {
+        "num": 27,
+        "text": "Ang mga anak ni Merari: kay Yaaziyah, si Benno, at si Soam, at si Zachur, at si Ibri."
+      },
+      {
+        "num": 28,
+        "text": "Kay Mahali: si Eleazar, na hindi nagkaanak."
+      },
+      {
+        "num": 29,
+        "text": "Kay Cis: ang mga anak ni Cis, si Yehrame’el."
+      },
+      {
+        "num": 30,
+        "text": "At ang mga anak ni Musi: si Mahali, at si Eder, at si Yerimoth. Ang mga ito ang mga anak ng mga Lewita ayon sa mga angkan ng kanilang mga magulang."
+      },
+      {
+        "num": 31,
+        "text": "Ang mga ito nama'y nagsapalaran din na gaya ng kanilang mga kapatid na mga anak ni Aaron, sa harap ni Dawid na hari, at ni Sadoc, at ni Ahimelech at ng mga pangulo sa mga sangbahayan ng mga magulang ng mga saserdote at ng mga Lewita: ang mga sangbahayan ng mga magulang ng pinuno, gaya ng kaniyang batang kapatid."
+      }
+    ],
+    "25": [
+      {
+        "num": 1,
+        "text": "Bukod dito'y si Dawid at ang mga punong kawal ng hukbo ay nagsipaghiwalay sa paglilingkod ng ilan sa mga anak ni Asaph, at ni Heman, at ni Yeduthun; na magsisipuri na may mga alpa, at mga salterio, at may mga simbalo: at ang bilang ng nagsigawa ng ayon sa kanilang paglilingkod."
+      },
+      {
+        "num": 2,
+        "text": "Sa mga anak ni Asaph: si Zachur, at si Yoseph, at si Methaniyah, at si Asareela, na mga anak ni Asaph; sa ilalim ng kapangyarihan ni Asaph na siyang pumuri ayon sa utos ng hari."
+      },
+      {
+        "num": 3,
+        "text": "Kay Yeduthun: ang mga anak ni Yeduthun; si Gedaliyah, at si Sesi, at si Yeshayah, si Hasabiyah, at si Mathithiyah, anim; sa ilalim ng kapangyarihan ng kanilang ama na si Yeduthun na may alpa, na siyang pumuri na may pagpapa-salamat at pagpapaunlak kay YAHWEH."
+      },
+      {
+        "num": 4,
+        "text": "Kay Heman: ang mga anak ni Heman: si Buccia, at si Mathaniyah, si Uzziel, si Sebuel, at si Yerimoth, si Hananayah, si Hanani, si Eliyatha, si Gidalthi, at si Romamti-ezer, si Yosbecasa, si Mallothi, si Othir, si Mahazioth:"
+      },
+      {
+        "num": 5,
+        "text": "Lahat ng mga ito'y mga anak ni Haman na tagakita ng hari sa mga salita ng Elohim, upang magtaas ng sungay. At ibinigay ng Elohim kay Heman ay labing apat na anak na lalake at tatlong anak na babae."
+      },
+      {
+        "num": 6,
+        "text": "Lahat ng mga ito ay nasa ilalim ng kapangyarihan ng kanilang ama sa pag-awit sa Bahay ni YAHWEH, na may mga simbalo, mga salterio, at mga alpa, sa paglilingkod sa Bahay ng AMA; sa ilalim ng kapangyarihan ng hari, sa makatuwid baga'y si Asaph, si Yeduthun, at si Heman."
+      },
+      {
+        "num": 7,
+        "text": "At ang bilang nila, pati ng kanilang mga kapatid na mga tinuruan sa pag-awit kay YAHWEH, lahat na bihasa ay dalawang daan at walongpu't walo."
+      },
+      {
+        "num": 8,
+        "text": "At sila'y nagsapalaran sa ganang kanilang mga katungkulan, silang lahat na para-para, kung paano ang maliit ay gayon din ang malaki, ang guro na gaya ng mga alagad."
+      },
+      {
+        "num": 9,
+        "text": "Ang una ngang kapalaran ay kay Asaph na nahulog kay Yoseph; ang ikalawa'y kay Gedaliyah; siya at ang kaniyang mga kapatid at mga anak ay labing dalawa:"
+      },
+      {
+        "num": 10,
+        "text": "Ang ikatlo ay kay Zachur, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 11,
+        "text": "Ang ikaapat ay kay Isri, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 12,
+        "text": "Ang ikalima ay kay Nethaniyah, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 13,
+        "text": "Ang ikaanim ay kay Bucciyah, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 14,
+        "text": "Ang ikapito ay kay Yesarela, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 15,
+        "text": "Ang ikawalo ay kay Yesahiyah, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 16,
+        "text": "Ang ikasiyam ay kay Mathaniyah, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 17,
+        "text": "Ang ikasangpu ay kay Simi, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 18,
+        "text": "Ang ikalabing isa ay kay Azareel, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa."
+      },
+      {
+        "num": 19,
+        "text": "Ang ikalabing dalawa ay kay Hasabiyah, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa."
+      },
+      {
+        "num": 20,
+        "text": "Ang ikalabing tatlo ay kay Subael, sa kaniyang mga anak at mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 21,
+        "text": "Ang ikalabing apat ay kay Mathithyah, sa kaniyang mga anak at mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 22,
+        "text": "Ang ikalabing lima ay kay Yerimoth, sa kaniyang mga anak at mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 23,
+        "text": "Ang ikalabing anim ay kay Hananayah sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 24,
+        "text": "Ang ikalabing pito ay kay Yosbecasa, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 25,
+        "text": "Ang ikalabing walo ay kay Hanani, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 26,
+        "text": "Ang ikalabing siyam ay kay Mallothi, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 27,
+        "text": "Ang ikadalawangpu ay kay Elyahtha, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 28,
+        "text": "Ang ikadalawangpu't isa ay kay Othir, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 29,
+        "text": "Ang ikadalawangpu't dalawa'y kay Giddalthi, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 30,
+        "text": "Ang ikadalawangpu't tatlo ay kay Maha-zioth, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa:"
+      },
+      {
+        "num": 31,
+        "text": "Ang ikadalawang pu't apat ay kay Romam-tiezer, sa kaniyang mga anak at sa kaniyang mga kapatid, labing dalawa."
+      }
+    ],
+    "26": [
+      {
+        "num": 1,
+        "text": "Sa pagka bahagi ng mga taga-tanod-pinto: sa mga Coraita: si Meselemyah na anak ni Core, sa mga anak ni Asaph."
+      },
+      {
+        "num": 2,
+        "text": "At si Meselemyah ay nagkaanak; si Zekarayah ang panganay, si Yediael ang ikalawa, si Zebadiyah ang ikatlo, si Yatnael ang ikaapat;"
+      },
+      {
+        "num": 3,
+        "text": "Si Elam ang ikalima, si Yohanam ang ikaanim, si Elioenai ang ikapito."
+      },
+      {
+        "num": 4,
+        "text": "Si Obed-edom ay nagkaanak; si Shemeyah ang panganay, si Yozabad ang ikalawa, si Yo’ab ang ikatlo, at si Sachar ang ikaapat, at si Nathanael ang ikalima;"
+      },
+      {
+        "num": 5,
+        "text": "Si Anmiel ang ikaanim, si Issachar ang ikapito, si Peullethai ang ikawalo; sapagka't pinagpala siya ng Elohim."
+      },
+      {
+        "num": 6,
+        "text": "Kay Shemeyah namang kaniyang anak ay nagkaanak ng mga lalake na nagsipagpuno sa sangbahayan ng kanilang magulang: sapagka't sila'y mga mahuhusay at lalaking matatapang."
+      },
+      {
+        "num": 7,
+        "text": "Ang mga anak ni Shemeyah: si Othni, at si Raphael at si Obed, si Elzabad, na ang mga kapatid ay matatapang na lalake, si Eliyuh, at si Samachiyah."
+      },
+      {
+        "num": 8,
+        "text": "Lahat ng mga ito'y sa mga anak ni Obed-edom: sila at ang kanilang mga anak at ang kanilang mga kapatid, mga bihasang lalake sa kalakasan ukol sa paglilingkod; anim na pu't dalawa kay Obed-edom."
+      },
+      {
+        "num": 9,
+        "text": "At si Meselemyah ay nagkaroon ng mga anak at mga kapatid na matatapang na lalake, labing walo."
+      },
+      {
+        "num": 10,
+        "text": "Si Hosa naman sa mga anak ni Merari ay nagkaroon ng mga anak; si Simri ang pinuno, sapagka't bagaman hindi siya panganay, gayon ma'y ginawa siyang pinuno ng kaniyang ama."
+      },
+      {
+        "num": 11,
+        "text": "Si Hilkiyah ang ikalawa, si Tebeliyah ang ikatlo, si Zekarayah ang ikaapat; lahat ng mga anak at mga kapatid ni Hosa ay labing tatlo."
+      },
+      {
+        "num": 12,
+        "text": "Sa mga ito ang mga bahagi ng mga taga-tanod-pinto, sa makatuwid baga'y ng mga pinuno na may mga katungkulang gaya ng kanilang mga kapatid na magsipangasiwa sa Bahay ni YAHWEH."
+      },
+      {
+        "num": 13,
+        "text": "At sila'y nagsapalaran, gayon ang maliit na gaya ng malaki, ayon sa mga sangbahayan ng kanilang mga magulang na ukol sa bawa't pintuang-daan."
+      },
+      {
+        "num": 14,
+        "text": "At ang kapalaran sa dakong silanganan ay nahulog kay Selemiyah. Sa ganang kay Zekarayah nga na kaniyang anak na matalinong kasangguni, sila ay nagsapalaran; at ang kaniyang kapalaran ay nahulog sa dakong hilagaan."
+      },
+      {
+        "num": 15,
+        "text": "Kay Obed-edom ay dakong timugan; at sa kaniyang mga anak ay ang kamalig."
+      },
+      {
+        "num": 16,
+        "text": "Kay Suppim at kay Hosa ay dakong kanluran, sa tabi ng pintuang-daan ng Sallechet, sa daanang paahon, na pulutong at pulutong."
+      },
+      {
+        "num": 17,
+        "text": "Sa dakong silanganan ay anim na Lewita, sa dakong hilagaan ay apat araw-araw, sa dakong timugan ay apat araw-araw, at sa kamalig ay dalawa't dalawa."
+      },
+      {
+        "num": 18,
+        "text": "Sa Parbar sa dakong kanluran, apat sa daanan, at dalawa sa Parbar."
+      },
+      {
+        "num": 19,
+        "text": "Ito ang mga bahagi ng mga tagatanod-pinto; sa mga anak ng mga Coraita, at sa mga anak ni Merari."
+      },
+      {
+        "num": 20,
+        "text": "At sa mga Lewita, si Achiyah ay nasa mga kayamanan ng Bahay ng AMA, at nasa mga kayamanan ng mga itinalagang bagay."
+      },
+      {
+        "num": 21,
+        "text": "Ang mga anak ni Ladan: ang mga anak ng mga Gersonita na nauukol kay Ladan; ang mga pangulo ng mga sangbahayan ng mga magulang na ukol kay Ladan na Gersonita; si Yehieli."
+      },
+      {
+        "num": 22,
+        "text": "Ang mga anak ni Yehieli: si Zethan at si Yo’el na kaniyang kapatid, sa mga ingatang-yaman ng Bahay ni YAHWEH."
+      },
+      {
+        "num": 23,
+        "text": "Sa mga Amramita, sa mga Isharita, sa mga Hebronita, sa mga Uzzielita:"
+      },
+      {
+        "num": 24,
+        "text": "At si Sebuel na anak ni Gerson, na anak ni Moises, ay puno sa mga ingatang-yaman."
+      },
+      {
+        "num": 25,
+        "text": "At ang kaniyang mga kapatid kay Eliezer ay nanggaling si Rehabiyah na kaniyang anak, at si Yeshayah na kaniyang anak, at si Yoram na kaniyang anak, at si Zichri na kaniyang anak, at si Selomith na kaniyang anak."
+      },
+      {
+        "num": 26,
+        "text": "Ang Selomith na ito at ang kaniyang mga kapatid ay nasa lahat ng ingatang-yaman ng natalagang mga bagay na itinalaga ni Dawid na hari, at ng mga pangulo ng mga sangbahayan ng mga magulang, ng mga pinunong kawal ng lilibuhin at ng dadaanin, at ng mga pinunong kawal ng hukbo."
+      },
+      {
+        "num": 27,
+        "text": "Ang samsam na pinanalunan sa pakikipag-baka, ay kanilang itinalaga upang ayusin ang Bahay ni YAHWEH."
+      },
+      {
+        "num": 28,
+        "text": "At lahat na itinalaga ni Shemu’el na tagakita, at ni Saul na anak ni Cis, at ni Abner na anak ni Ner, at ni Yo’ab na anak ni Sarwia; ang anomang bagay na itinalaga ninoman ay nasa ilalim ng pamamahala ni Selomith, at ng kaniyang mga kapatid."
+      },
+      {
+        "num": 29,
+        "text": "Sa mga Isharita, si Chenaniyah at ang kaniyang mga anak ay mga tagapamahala at hukom sa mga gawain sa labas ng Israel."
+      },
+      {
+        "num": 30,
+        "text": "Sa mga Hebronita, si Hasabiyah, at ang kaniyang mga kapatid na lalaking matapang, na isang libo't pitong daan, ay namamahala sa Israel sa dako roon ng Yarden sa dakong kanluran, na ukol sa lahat ng gawain kay YAHWEH, at sa paglilingkod sa hari."
+      },
+      {
+        "num": 31,
+        "text": "Sa mga Hebronita ay si Yeriyah ang pinuno, sa makatuwid baga'y sa mga Hebronita, ayon sa kanilang mga lahi ayon sa mga sangbahayan ng mga magulang. Nang ikaapat na pung taon ng paghahari ni Dawid, sila'y hinanapan, at may natagpuan, sa kanilang mga makapangyarihang lalaking matapang sa Yazer ng Galaad."
+      },
+      {
+        "num": 32,
+        "text": "At ang kaniyang mga kapatid na mga lalaking matapang, ay dalawang libo at pitong daan, na mga pangulo ng mga angkan ng mga magulang na siyang ginawa ni Dawid na mga tagapamahala sa mga Rubenita, at sa mga Gadita, at sa kalahating lipi ng mga Manasita, sa lahat ng usap na ukol sa Elohim, at sa mga bagay ng hari."
+      }
+    ],
+    "27": [
+      {
+        "num": 1,
+        "text": "Ang mga anak nga ni Israel ayon sa kanilang bilang, sa makatuwid baga'y ang mga pangulo ng mga sangbahayan ng mga magulang at ang mga pinunong kawal ng lilibuhin at ng dadaanin, at ang kanilang mga pinuno na nangaglilingkod sa hari, sa anomang bagay sa mga bahagi ng pumapasok at lumalabas buwan-buwan sa lahat ng mga buwan ng taon, sa bawa't bahagi ay dalawang pu't apat na libo."
+      },
+      {
+        "num": 2,
+        "text": "Sa unang pagka bahagi na ukol sa unang buwan ay si Yasobam na anak ni Zabdiel: at sa kaniyang bahagi ay dalawang pu't apat na libo."
+      },
+      {
+        "num": 3,
+        "text": "Siya'y sa mga anak ni Phares, na pinuno sa lahat na punong kawal ng hukbo na ukol sa unang buwan."
+      },
+      {
+        "num": 4,
+        "text": "At sa bahagi sa ikalawang buwan ay si Dodai na Ahohita, at ang kaniyang bahagi, at si Miclot na tagapamahala: at sa kaniyang bahagi ay dalawang pu't apat na libo."
+      },
+      {
+        "num": 5,
+        "text": "Ang ikatlong pinuno ng pulutong na ukol sa ikatlong buwan ay si Benayah, na anak ni Yehoyada na saserdote, pinuno: at sa kaniyang bahagi ay dalawang pu't apat na libo."
+      },
+      {
+        "num": 6,
+        "text": "Ito yaong Benayah na siyang lalaking makapangyarihan sa tatlong pu, at pinuno sa tatlong pu; at sa kaniyang bahagi ay si Amisabad na kaniyang anak."
+      },
+      {
+        "num": 7,
+        "text": "Ang ikaapat na pinuno sa ikaapat na buwan ay si Asael na kapatid ni Yo’ab, at si Zebadiyah na kaniyang kapatid ang sumusunod sa kaniya: at sa kaniyang bahagi ay dalawang pu't apat na libo."
+      },
+      {
+        "num": 8,
+        "text": "Ang ikalimang pinuno sa ikalimang buwan ay si Sambuth na Izrita: at sa kaniyang bahagi ay dalawang pu't apat na libo."
+      },
+      {
+        "num": 9,
+        "text": "Ang ikaanim na pinuno sa ikaanim na buwan ay si Ira na anak ni Icces na Tecoita: at sa kaniyang bahagi ay dalawang pu't apat na libo."
+      },
+      {
+        "num": 10,
+        "text": "Ang ikapitong pinuno sa ikapitong buwan ay si Helles na Pelonita, sa mga anak ni Ephraim: at sa kanilang bahagi ay dalawang pu't apat na libo."
+      },
+      {
+        "num": 11,
+        "text": "Ang ikawalong pinuno sa ikawalong buwan ay si Sibbecai na Husatita, sa mga Zarahita; at sa kaniyang bahagi ay dalawang pu't apat na libo."
+      },
+      {
+        "num": 12,
+        "text": "Ang ikasiyam na pinuno sa ikasiyam na buwan ay si Abiezer na Anathothita sa mga Binyamita; at sa kaniyang bahagi ay dala wang pu't apat na libo."
+      },
+      {
+        "num": 13,
+        "text": "Ang ikasangpung pinuno sa ikasangpung buwan ay si Maharai na Nethophathita sa mga Zarahita: at sa kaniyang bahagi ay dalawang pu't apat na libo."
+      },
+      {
+        "num": 14,
+        "text": "Ang ikalabing isang pinuno sa ikalabing isang buwan ay si Benayah na Piratonita, sa mga anak ni Ephraim: at sa kaniyang bahagi ay dalawang pu't apat na libo."
+      },
+      {
+        "num": 15,
+        "text": "Ang ikalabing dalawang pinuno sa ikalabing dalawang buwan ay si Heldai na Nethophatita, sa Othniel: at sa kaniyang bahagi ay dalawang pu't apat na libo."
+      },
+      {
+        "num": 16,
+        "text": "Bukod dito'y sa mga lipi ng Israel: sa mga Rubenita, si Eliezer, na anak ni Zichri, na tagapamahala; sa mga Simeonita, si Sephatiyah na anak ni Maacha."
+      },
+      {
+        "num": 17,
+        "text": "Sa Lewi, si Hasabiyah, na anak ni Camuel; sa Aaron, si Sadoc;"
+      },
+      {
+        "num": 18,
+        "text": "Sa Yehudah, si Eliu, isa sa mga kapatid ni Dawid; si Issachar, si Omri na anak ni Michael:"
+      },
+      {
+        "num": 19,
+        "text": "Sa Zabulon, si Ismayah na anak ni Abdiyah: sa Nephtali, si Yerimoth na anak ni Azriel:"
+      },
+      {
+        "num": 20,
+        "text": "Sa mga anak ni Ephraim, si Hosea na anak ni Azaziyah: sa kalahating lipi ni Manases, si Yo’el na anak ni Pedayah:"
+      },
+      {
+        "num": 21,
+        "text": "Sa kalahating lipi ni Manases sa Galaad, si Iddo na anak ni Zekarayah: sa Binyamin, si Yaaciel na anak ni Abner."
+      },
+      {
+        "num": 22,
+        "text": "Sa Dan, si Azarael na anak ni Yeroam. Ang mga ito ang mga pinunong kawal ng mga lipi ng Israel."
+      },
+      {
+        "num": 23,
+        "text": "Nguni't hindi tinuos ni Dawid ang bilang nila mula sa dalawang pung taon na paibaba: dahil sinabi ni YAHWEH na kaniyang pararamihin ang Israel na gaya ng mga bituin sa langit."
+      },
+      {
+        "num": 24,
+        "text": "Si Yo’ab na anak ni Sarwia ay nagpasimulang bumilang, nguni't hindi natapos; at dumating sa Israel ang pag-iinit dahil dito: ni hindi nalagda ang bilang sa mga alaala ng haring Dawid."
+      },
+      {
+        "num": 25,
+        "text": "At nasa mga ingatang-yaman ng hari, si Azmaweth na anak ni Adiel: at sa mga ingatang-yaman sa mga bukid, sa mga bayan, at sa mga nayon, at sa mga kastilyo ay si Yehonathan na anak ni Uzziyah:"
+      },
+      {
+        "num": 26,
+        "text": "At sa nagsisigawa sa bukiran, na ukol sa pagbubukid sa lupa ay si Izri na anak ni Chelud:"
+      },
+      {
+        "num": 27,
+        "text": "At sa mga ubasan ay si Simi na Ramathita: at sa mga pakinabang sa mga ubasan na ukol sa mga kamalig ng alak ay si Zabdiyah na Siphmita:"
+      },
+      {
+        "num": 28,
+        "text": "At sa mga puno ng olibo at sa mga puno ng sikomoro na nasa mababang lupa ay si Baal-hanan na Gederita: at sa mga kamalig ng langis ay si Yeho’ash:"
+      },
+      {
+        "num": 29,
+        "text": "At sa mga bakahan na pinasasabsab sa Saron ay si Sitrai na Saronita: at sa mga bakahan na nasa mga libis ay si Saphat na anak ni Adlai:"
+      },
+      {
+        "num": 30,
+        "text": "At sa mga kamelyo ay si Obil na Yishma’elita: at sa mga asno ay si Yediyah na Meronothita: At sa mga kawan ay si Yaziz na Hagrita."
+      },
+      {
+        "num": 31,
+        "text": "Lahat ng mga ito'y mga katiwala sa mga pag-aari ng haring Dawid."
+      },
+      {
+        "num": 32,
+        "text": "At si Yehonathan na amain ni Dawid ay kasangguni at lalaking matalino, at kalihim; at si Yehiel na anak ni Hacmoni ay sa mga anak ng hari:"
+      },
+      {
+        "num": 33,
+        "text": "At si Achitophel ay kasangguni ng hari: at si Husai na Archita ay kaibigan ng hari:"
+      },
+      {
+        "num": 34,
+        "text": "At sumusunod kay Achitophel ay si Yehoyada na anak ni Benayah, at si Abiyathar: at ang pinunong kawal sa hukbo ng hari ay si Yo’ab."
+      }
+    ],
+    "28": [
+      {
+        "num": 1,
+        "text": "At pinulong ni Dawid ang lahat na prinsipe sa Israel, ang mga prinsipe ng mga lipi, at ang mga punong kawal ng mga pulutong na nagsisipaglingkod sa hari ayon sa halinhinan, at ang mga punong kawal ng lilibuhin, at ang mga punong kawal ng dadaanin, at ang mga katiwala sa lahat ng tinatangkilik at pag-aari ng hari at ng kaniyang mga anak, na kasama ng mga pinuno at ng mga makapangyarihang lalake, lahat na makapangyarihang lalaking matapang, sa Yerushalayim."
+      },
+      {
+        "num": 2,
+        "text": "Nang magkagayo'y tumayo si Dawid na hari sa kaniyang mga paa, at nagsabi, Dinggin ninyo ako: mga kapatid ko, at bayan ko sa ganang akin, na sa aking puso ang ipagtayo ng isang bahay na pahingahan ang Kaban ng Tipan ni YAHWEH, at upang tungtungan ng mga paa ng ating AMA; at ako'y humanda sa pagtatayo."
+      },
+      {
+        "num": 3,
+        "text": "Nguni't sinabi ng AMA sa akin, Huwag mong ipagtatayo ng Bahay ang Aking Pangalan, dahil ikaw ay lalaking mangdidigma, at nagbubo ka ng dugo."
+      },
+      {
+        "num": 4,
+        "text": "Gayon ma'y pinili ako ni YAHWEH, ang AMA ng Israel, sa buong sangbahayan ng aking ama upang maging hari sa Israel magpakailan man: sapagka't kaniyang pinili ang Yehudah upang maging pangulo: at sa sangbahayan ng Yehudah, ang sangbahayan ng aking ama; at sa gitna ng mga anak ng aking ama ay kinaluguran niya ako upang gawin akong hari sa buong Israel:"
+      },
+      {
+        "num": 5,
+        "text": "At sa lahat ng aking mga anak, sapagka't binigyan ako ni YAHWEH ng maraming anak, pinili niya si Solomon na aking anak upang umupo sa upuan ng kaharian ni YAHWEH sa Israel."
+      },
+      {
+        "num": 6,
+        "text": "At kaniyang sinabi sa akin, Si Solomon na iyong anak ay siyang magtatayo ng Aking bahay at ng Aking mga looban; sapagka't Aking pinili siya upang maging anak ko, at Ako'y magiging kaniyang AMA."
+      },
+      {
+        "num": 7,
+        "text": "At Aking itatatag ang kaniyang kaharian magpakailan man, kung kaniyang susundin ang Aking mga utos at ang Aking mga kahatulan, gaya sa araw na ito."
+      },
+      {
+        "num": 8,
+        "text": "Ngayon nga'y sa paningin ng buong Israel, ng kapisanan ni YAHWEH, at sa pakinig ng ating AMA, sundin at suriin ang lahat na utos ni YAHWEH ninyong AMA: upang inyong ariin ang mabuting lupaing ito, at maiwang pinakamana sa inyong mga anak pagkamatay ninyo, magpakailan man."
+      },
+      {
+        "num": 9,
+        "text": "At ikaw, Solomon na aking anak, kilalanin mo ang Elohim ng iyong ama, at paglingkuran mo siya ng sakdal na puso at ng kusang pag-iisip: sapagka't sinasaliksik ni YAHWEH ang lahat na puso, at naaalaman ang lahat na akala ng pag-iisip: kung iyong hanapin siya, ay matatagpuan siya sa iyo; nguni't kung pabayaan mo siya, kaniyang itatakwil ka magpakailan man."
+      },
+      {
+        "num": 10,
+        "text": "Mag-ingat ka ngayon; sapagka't pinili ka ni YAHWEH upang ipagtayo mo ng bahay ang santuariyo; magpakalakas ka, at gawin mo."
+      },
+      {
+        "num": 11,
+        "text": "Nang magkagayo'y ibinigay ni Dawid kay Solomon na kaniyang anak ang anyo ng portiko ng templo, at ng mga kabahayan niyaon, at ng mga ingatang-yaman niyaon, at ng mga mataas na silid niyaon, at ng mga pinakaloob na silid niyaon, at ng dakong upuan ng awa:"
+      },
+      {
+        "num": 12,
+        "text": "At ang anyo ng lahat na kaniyang naisip sa pamamagitan ng Espiritu tungkol sa mga looban ng Bahay ni YAHWEH, at tungkol sa lahat ng silid sa palibot, tungkol sa mga ingatang-yaman ng Bahay ng Elohim, at tungkol sa mga ingatang-yaman ng mga natalagang bagay:"
+      },
+      {
+        "num": 13,
+        "text": "Tungkol din naman sa mga bahagi ng mga saserdote at ng mga Lewita, at tungkol sa lahat na gawain sa paglilingkod sa Bahay ni YAHWEH, at tungkol sa lahat na kasangkapan na ipinaglilingkod sa Bahay ni YAHWEH."
+      },
+      {
+        "num": 14,
+        "text": "Sa ginto na ang timbang na ukol sa mga kasangkapang ginto, sa lahat na kasangkapan ng sarisaring paglilingkod; sa pilak na ukol sa lahat ng kasangkapan na pilak ang timbang, sa lahat na kasangkapan ng sari-saring paglilingkod:"
+      },
+      {
+        "num": 15,
+        "text": "Na ang timbang din naman na ukol sa mga kandelero na ginto, at sa mga ilawan niyaon, na ginto: na ang timbang sa bawa't kandelero at sa mga ilawan niyaon: at sa mga kandelerong pilak, pilak na ang timbang sa bawa't kandelero, at sa mga ilawan niyaon, ayon sa kagamitan sa bawa't kandelero:"
+      },
+      {
+        "num": 16,
+        "text": "At ang ginto na ang timbang na ukol sa mga dulang ng tinapay na handog, na ukol sa bawa't dulang; at pilak na ukol sa mga dulang na pilak:"
+      },
+      {
+        "num": 17,
+        "text": "At ang mga panduro, at mga mangkok, at mga saro, na taganas na ginto: at sa mga gintong mangkok ay ang timbang sa bawa't mangkok; at sa mga pilak na mangkok ay ang timbang sa bawa't mangkok;"
+      },
+      {
+        "num": 18,
+        "text": "At sa dambana ng kamangyan ay gintong dalisay ayon sa timbang: at ginto sa anyo ng karwahe, sa makatuwid baga'y ang mga anghel na nakabuka ang mga pakpak at lumililim sa Kaban ng Tipan ni YAHWEH."
+      },
+      {
+        "num": 19,
+        "text": "Lahat ng ito'y, sabi ni Dawid, aking naalaman sa sulat na mula sa kamay ni YAHWEH, sa makatuwid baga'y lahat ng gawain sa anyong ito."
+      },
+      {
+        "num": 20,
+        "text": "At sinabi ni Dawid kay Solomon na kaniyang anak, Ikaw ay magpakalakas at magpakatapang, at gawin mo: huwag kang matakot, o manglupaypay man; sapagka't si YAHWEH, na aking Elohim, ay sumasaiyo; hindi ka niya iiwan, o pababayaan man, hanggang sa ang lahat na gawain sa paglilingkod sa Bahay ni YAHWEH ay matapos."
+      },
+      {
+        "num": 21,
+        "text": "At, narito, may mga bahagi sa mga saserdote at sa mga Lewita, na ukol sa lahat na paglilingkod sa Bahay ng AMA: at magkakaroon sa iyo sa lahat ng sari-saring gawain ng bawa't may kusang kaloobang tao na bihasa sa sari-saring paglilingkod: ang mga punong kawal naman at ang buong bayan ay lubos na sasa iyong utos."
+      }
+    ],
+    "29": [
+      {
+        "num": 1,
+        "text": "At sinabi ni Dawid na hari sa buong kapisanan, si Solomon na aking anak na siya lamang pinili ng AMA ay bata pa at sariwa, at ang gawain ay malaki; sapagka't ang Templo ay hindi ukol sa tao, kundi kay YAHWEH Elohim."
+      },
+      {
+        "num": 2,
+        "text": "Akin ngang ipinaghanda ng aking buong kaya ang Bahay ng aking AMA, ng ginto na ukol sa mga bagay na ginto, at ng pilak na ukol sa mga bagay na pilak, at ng tanso na ukol sa mga bagay na tanso, ng bakal na ukol sa mga bagay na bakal, at ng kahoy na ukol sa mga bagay na kahoy; ng mga batong onix, at mga batong pangkalupkop, ng mga batong panggayak, at may sarisaring kulay, at ng lahat na sarisaring mahalagang bato, at ng mga batong marmol na sagana."
+      },
+      {
+        "num": 3,
+        "text": "Bukod din naman dito, sapagka't aking inilagak ang aking loob sa Bahay ng aking AMA, na yamang may tinatangkilik ako na aking sariling ginto at pilak, ay aking ibinibigay sa Bahay ng aking AMA, bukod sa lahat na aking inihanda na ukol sa banal na bahay;"
+      },
+      {
+        "num": 4,
+        "text": "Sa makatuwid baga'y tatlong libong talentong ginto, na ginto sa Ophir, at pitong libong talentong dalisay na pilak upang ibalot sa mga panig ng mga bahay:"
+      },
+      {
+        "num": 5,
+        "text": "Ginto na ukol sa mga bagay na ginto, at pilak na ukol sa mga bagay na pilak at sa lahat na sarisaring gawain na yayariin ng mga kamay ng mga manggagawa. Sino nga ang naghahandog na kusa upang magtalaga kay YAHWEH sa araw na ito?"
+      },
+      {
+        "num": 6,
+        "text": "Nang magkagayo'y naghandog na kusa ang mga prinsipe ng mga sangbahayan ng mga magulang, at ang mga prinsipe ng mga lipi ng Israel, at ang mga pinunong kawal ng lilibuhin at ng dadaanin, pati ng mga tagapamahala sa gawain ng hari;"
+      },
+      {
+        "num": 7,
+        "text": "At ibinigay nila sa paglilingkod sa Bahay ng AMA, ay ginto, na limang libong talento, at sangpung libong dariko, at pilak na sangpung libong talento, at tanso na labing walong libong talento, at bakal na isang daang libong talento."
+      },
+      {
+        "num": 8,
+        "text": "At sila na nakitang may mga mahalagang bato, ay nagsipagbigay sa kayamanan ng Bahay ni YAHWEH, sa ilalim ng kapangyarihan ng kamay ni Yehiel na Gersonita."
+      },
+      {
+        "num": 9,
+        "text": "Nang magkagayo'y nagalak ang bayan, dahil sa sila'y naghandog na kusa, sapagka't sila'y may dalisay na puso na naghandog na kusa kay YAHWEH: at si Dawid naman na hari ay nagalak ng dakilang pagkagalak."
+      },
+      {
+        "num": 10,
+        "text": "Kaya't pinuri ni Dawid si YAHWEH sa harap ng buong kapisanan; at sinabi ni Dawid, Purihin ka, Oh YAHWEH, na Elohim ng Israel na aking AMA, magpakailan kailan man."
+      },
+      {
+        "num": 11,
+        "text": "Iyo, Oh YAHWEH ang kadakilaan, at ang kapangyarihan, at ang kaluwalhatian, at ang pagtatagumpay, at ang karangalan: sapagka't lahat na nasa langit at nasa lupa ay iyo: iyo ang kaharian, Oh YAHWEH, at ikaw ay nataas na Pangulo sa lahat."
+      },
+      {
+        "num": 12,
+        "text": "Ang mga kayamanan at gayon din ang karangalan ay nagmumula sa iyo, at ikaw ang nagpupuno sa lahat; at nasa iyong kamay ang kapangyarihan at kalakasan; at nasa iyong kamay ang pagpapadakila, at pagpapalakas sa lahat."
+      },
+      {
+        "num": 13,
+        "text": "Kaya't ngayon, aming Elohim, kami ay nagpasasalamat sa iyo, at aming pinupuri ang iyong maluwalhating Pangalan."
+      },
+      {
+        "num": 14,
+        "text": "Nguni't sino ako, at ano ang aking bayan, na makapaghahandog na ganyang kusa ayon sa ganitong paraan? sapagka't ang lahat na bagay ay nangagmumula sa iyo, at ang iyong sarili ay aming ibinigay sa iyo."
+      },
+      {
+        "num": 15,
+        "text": "Sapagka't kami ay mga taga ibang lupa sa harap mo, at mga nakikipamayan, gaya ng lahat naming mga magulang: ang aming mga kaarawan sa lupa ay gaya ng anino, at hindi nagtatagal."
+      },
+      {
+        "num": 16,
+        "text": "Oh YAHWEH naming AMA, lahat ng bagay na ito na aming inihanda upang ipagtayo ka ng bahay na ukol sa iyong banal na Pangalan ay nangagmumula sa iyong kamay, at iyong sariling lahat."
+      },
+      {
+        "num": 17,
+        "text": "Talastas ko rin, AMA ko na iyong sinusubok ang puso, at nalulugod sa katuwiran. Sa ganang akin, sa katuwiran ng aking puso ay aking inihandog na kusa ang lahat na bagay na ito: at ngayo'y nakita kong may kagalakan ang iyong bayan na nahaharap dito, na naghahandog na kusa sa iyo."
+      },
+      {
+        "num": 18,
+        "text": "Oh YAHWEH, na AMA ni Abraham, ni Yitshaq, at ni Israel na aming mga magulang, ingatan mo ito magpakailan man sa akala ng mga pag-iisip ng puso ng iyong bayan, at ihanda mo ang puso nila sa iyo:"
+      },
+      {
+        "num": 19,
+        "text": "At bigyan mo naman si Solomon na aking anak ng sakdal na puso, upang ingatan ang iyong mga utos, ang iyong mga patotoo, at mga palatuntunan, at upang gawin ang lahat na bagay na ito, at upang itayo ang Templo, na siyang aking ipinaghanda."
+      },
+      {
+        "num": 20,
+        "text": "At sinabi ni Dawid sa buong kapisanan, Ngayo'y purihin ninyo si YAHWEH ninyong AMA. At ang buong kapisanan ay pumuri kay YAHWEH, sa Elohim ng kanilang mga magulang at iniyukod ang kanilang mga ulo, at sumamba kay YAHWEH, at sa hari."
+      },
+      {
+        "num": 21,
+        "text": "At sila'y nagsipaghain ng mga hain kay YAHWEH, at nagsipaghandog kay YAHWEH ng mga handog na susunugin sa kinabukasan, pagkatapos nang araw na yaon, sa makatuwid baga'y isang libong baka, at isang libong tupang lalake, at isang libong kordero, pati ng mga inuming handog na ukol sa mga yaon, at ng mga hain na sagana ukol sa buong Israel;"
+      },
+      {
+        "num": 22,
+        "text": "At nagkainan at nag-inuman sa harap ni YAHWEH nang araw na yaon na may malaking kasayahan. At kanilang ginawang hari na ikalawa si Solomon na anak ni Dawid, at pinahiran ng langis siya kay YAHWEH upang maging pangulo, at si Sadoc upang maging saserdote."
+      },
+      {
+        "num": 23,
+        "text": "Nang magkagayo'y naupo si Solomon sa upuan na itinatag ni YAHWEH na pinaka hari na kahalili ni Dawid na kaniyang ama, at guminhawa; at ang buong Israel ay tumalima sa kaniya."
+      },
+      {
+        "num": 24,
+        "text": "At ang lahat na prinsipe at mga matapang na lalake, at ang lahat ding anak ng haring Dawid, ay sumailalim sa kapangyarihan ng haring Solomon."
+      },
+      {
+        "num": 25,
+        "text": "At pinadakilang mainam ni YAHWEH si Solomon sa paningin ng buong Israel, at isinakaniya ang gayong karangalang pagkahari na hindi napasa kanino mang hari na nauna sa kaniya sa Israel."
+      },
+      {
+        "num": 26,
+        "text": "Si Dawid nga na anak ni Yishai ay naghari sa buong Israel."
+      },
+      {
+        "num": 27,
+        "text": "At ang panahon na kaniyang ipinaghari sa Israel ay apat na pung taon; pitong taon na naghari siya sa Hebron, at tatlong pu't tatlong taon na naghari siya sa Yerushalayim."
+      },
+      {
+        "num": 28,
+        "text": "At siya'y namatay sa mabuting katandaan, puspos ng mga araw, mga kayamanan, at karangalan: at si Solomon na kaniyang anak ay naghari na kahalili niya."
+      },
+      {
+        "num": 29,
+        "text": "Ang mga gawa nga ni Dawid na hari, na una at huli, narito, nasusulat sa kasaysayan ni Shemu’el na tagakita, at sa kasaysayan ni Nathan na propeta, at sa kasaysayan ni Gad na tagakita;"
+      },
+      {
+        "num": 30,
+        "text": "Pati ng buo niyang paghahari, at kapangyarihan at ang mga panahong dinaanan niya, at ng Israel, at ng lahat ng mga kaharian ng mga lupain."
+      }
+    ]
+  }
+}

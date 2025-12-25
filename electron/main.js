@@ -19,7 +19,7 @@ function createWindow() {
       preload: path.join(__dirname, 'preload.js'),
     },
     icon: path.join(__dirname, '../public/Logo.png'),
-    title: 'The Book - Bible Study App',
+    title: 'ASMY - Bible Study App',
     backgroundColor: '#1a202c',
     show: false, // Don't show until ready
   });

@@ -1,0 +1,614 @@
+{
+  "bookName": "Galatia",
+  "bookId": 48,
+  "chapters": {
+    "1": [
+      {
+        "num": 1,
+        "text": "Si Saulo, na Apostol - hindi mula sa mga tao, ni sa pamamagitan man ng tao, kundi sa pamamagitan ni YAHSHUA Messias, at ni YAHWEH Elohim, na siyang sa kaniya'y muling bumuhay."
+      },
+      {
+        "num": 2,
+        "text": "At ang lahat ng mga kapatid na mga kasama ko, sa mga Assembliya ng Galatia:"
+      },
+      {
+        "num": 3,
+        "text": "Sumainyo nawa ang kapayapaan at biyaya mula kay YAHWEH na Elohim, at sa ating Rabbi YAHSHUA Messias,"
+      },
+      {
+        "num": 4,
+        "text": "Na siyang nagbigay sa kaniyang sarili dahil sa ating mga kasalanan, upang tayo'y mailigtas dito sa kasalukuyang masamang sanglibutan, ayon sa kalooban ng ating Elohim at AMA:"
+      },
+      {
+        "num": 5,
+        "text": "Na sumakaniya ang kaluwalhatian magpakailan man. Siya nawa."
+      },
+      {
+        "num": 6,
+        "text": "Ako'y namamangha na kay dali ninyong nagsilipat sa ibang Magandang Balita buhat sa tumawag sa inyo sa biyaya ng Messias;"
+      },
+      {
+        "num": 7,
+        "text": "Na ito'y hindi ibang Magandang Balita: kundi mayroong ilan na sa inyo ay nagsisiligalig, at nag-iibig na pasamain ang Magandang Balita ng Messias."
+      },
+      {
+        "num": 8,
+        "text": "Datapuwa't kahima't kami, o isang anghel na mula sa langit, ang mangaral sa inyo ng anomang Magandang Balita na iba sa aming ipinangangaral sa inyo, ay matakuwil."
+      },
+      {
+        "num": 9,
+        "text": "Ayon sa aming sinabi nang una, ay muling gayon ang aking sinasabi ngayon, Kung ang sinoman ay mangaral sa inyo ng anomang Magandang Balita na iba kaysa inyong tinanggap na, ay matakuwil."
+      },
+      {
+        "num": 10,
+        "text": "Sapagka't ako baga'y nanghihikayat ngayon sa mga tao o sa AMA? o ako baga'y nagsisikap na magbigay-lugod sa mga tao? kung ako'y magbibigay-lugod sa mga tao, ay hindi ako magiging alipin ng Messias."
+      },
+      {
+        "num": 11,
+        "text": "Sapagka't aking ipinatatalastas sa inyo, mga kapatid, tungkol sa Magandang Balita na aking ipinangaral, na ito'y hindi ayon sa tao."
+      },
+      {
+        "num": 12,
+        "text": "Sapagka't hindi ko tinanggap ito sa tao, ni itinuro man sa akin, kundi aking tinanggap sa pamamagitan ng pahayag ni YAHSHUA Messias."
+      },
+      {
+        "num": 13,
+        "text": "Sapagka't inyong nabalitaan ang aking pamumuhay nang nakaraang panahon sa relihiyon ng mga Hudyo, kung paanong aking inuusig na malabis, at nilipol ang Assembliya ni YAHWEH:"
+      },
+      {
+        "num": 14,
+        "text": "At ako'y nangunguna sa relihiyon ng mga Hudyo ng higit kaysa marami sa aking mga kasing gulang sa aking mga kababayan, palibhasa'y totoong masikap ako sa mga sali't-saling sabi ng aking mga magulang."
+      },
+      {
+        "num": 15,
+        "text": "Nguni't nang magalingin ng AMA na siyang sa akin ay nagbukod, buhat pa sa tiyan ng aking ina, at ako'y tawagin sa pamamagitan ng kaniyang biyaya,"
+      },
+      {
+        "num": 16,
+        "text": "Na ihayag ang kaniyang ANAK sa akin, upang siya'y aking ipangaral sa gitna ng mga Hentil; nguni't hindi ako sumangguni agad sa laman at sa dugo:"
+      },
+      {
+        "num": 17,
+        "text": "Ni inahon ko man sa Yerushalayim silang mga Apostol na nauna sa akin: kundi sa Arabia ako naparoon; at muling nagbalik ako sa Damasco."
+      },
+      {
+        "num": 18,
+        "text": "Nang makaraan nga ang tatlong taon ay umahon ako sa Yerushalayim upang dalawin si Kepha, at natira akong kasama niyang labing-limang araw."
+      },
+      {
+        "num": 19,
+        "text": "Nguni't wala akong nakita sa mga ibang apostol, maliban na kay Ya'aqob na kapatid ng Rabbi."
+      },
+      {
+        "num": 20,
+        "text": "Tungkol nga sa mga bagay na isinusulat ko sa inyo, narito, sa harapan ng AMA, hindi ako nagsisinungaling."
+      },
+      {
+        "num": 21,
+        "text": "Pagkatapos ay naparoon ako sa mga lupain ng Siria at Cilicia."
+      },
+      {
+        "num": 22,
+        "text": "At hindi pa ako nakikilala sa mukha ng mga Assembliya sa Yehudah na pawang kay Messias."
+      },
+      {
+        "num": 23,
+        "text": "Kundi ang kanila lamang naririnig na pinag-uusapan ay, Yaong umuusig sa atin nang una, ngayo'y nangangaral ng pananampalataya na noon ay kaniyang sinisira;"
+      },
+      {
+        "num": 24,
+        "text": "At kanilang niluluwalhati ang AMA sa akin."
+      }
+    ],
+    "2": [
+      {
+        "num": 1,
+        "text": "Nang makaraan nga ang labing-apat na taon ay umahon akong muli sa Yerushalayim na kasama si Bernabe, at isinama ko rin naman si Tito."
+      },
+      {
+        "num": 2,
+        "text": "At ako'y umahon dahil sa pahayag; at isinaysay ko sa harapan nila ang Magandang Balita na aking ipinangangaral sa gitna ng mga Hentil, datapuwa't sa harapan ng mga may dangal ay sa lihim, baka sa anomang paraan ako'y tatakbo, o tumakbo, ng walang kabuluhan."
+      },
+      {
+        "num": 3,
+        "text": "Datapuwa't maging si Tito man na kasama ko, bagama't Griego, ay hindi napilit na patuli."
+      },
+      {
+        "num": 4,
+        "text": "At yaon ay dahil sa mga hindi tunay na kapatid na ipinasok ng lihim, na nagsipasok ng lihim upang tiktikan ang aming kalayaan na taglay namin kay YAHSHUA Messias, upang kami'y ilagay nila sa pagkaalipin:"
+      },
+      {
+        "num": 5,
+        "text": "Sa mga yaon ay hindi kami napahinuhod na supilin kami, kahit isang oras; upang ang katotohanan ng Magandang Balita ay manatili sa inyo."
+      },
+      {
+        "num": 6,
+        "text": "Datapuwa't ang mga wari'y may dangal ng kaunti, maging anoman sila, ay walang anoman sa akin: ang AMA ay hindi tumatanggap ng anyo ninoman, silang may dangal, sinasabi ko, ay hindi nagbahagi sa akin ng anoman:"
+      },
+      {
+        "num": 7,
+        "text": "Kundi bagkus nang makita nila na sa akin ay ipinagkatiwala ang Magandang Balita sa mga Hentil, gaya rin naman ng pagkakatiwala kay Kepha ng Magandang Balita sa mga Hudyo;"
+      },
+      {
+        "num": 8,
+        "text": "Sapagka't ang naghanda kay Kepha sa pagka-apostol sa mga Hudyo ay naghanda rin naman sa akin sa pagka-apostol sa mga Hentil;"
+      },
+      {
+        "num": 9,
+        "text": "At nang makita nila ang biyayang sa akin ay ipinagkaloob, ang mga kanang kamay ng pakikisama ay ibinigay sa akin at kay Bernabe ni Ya'aqob at ni Keppa at ni Yohanan, sila na mga inaaring haligi, upang kami ay magsiparoon sa mga Hentil, at sila'y sa mga Hudyo;"
+      },
+      {
+        "num": 10,
+        "text": "Ang kanila lamang hinihiling ay aming alalahanin ang mga dukha; na ang bagay ring ito'y aking pinagsisikapang gawin."
+      },
+      {
+        "num": 11,
+        "text": "Nguni't nang dumating si Keppa sa Antioquia, ay sumalansang ako sa kaniya ng harapan, dahil siya'y nararapat hatulan."
+      },
+      {
+        "num": 12,
+        "text": "Sapagka't bago nagsidating ang ilang mula kay Ya'aqob, ay nakisalo siya sa mga Hentil; nguni't nang sila'y magsidating na, siya'y umurong, at humiwalay sa mga Hentil, palibhasa'y natatakot sa mga Hudyo."
+      },
+      {
+        "num": 13,
+        "text": "At nagpakunwari din ang ibang mga Hudyo na kasama niya: ano pa't pati si Bernabe ay nabuyo sa kanilang pagkukunwari."
+      },
+      {
+        "num": 14,
+        "text": "Nguni't nang aking makita na hindi sila lumalakad ng matuwid ayon sa katotohanan ng Magandang Balita, sinabi ko kay Kepha sa harapan nilang lahat, Kung ikaw, na Hudyo, ay namumuhay gaya ng mga Hentil, at di gaya ng mga Hudyo, bakit mo pinipilit ang mga Hentil na mamuhay na gaya ng mga Hudyo?"
+      },
+      {
+        "num": 15,
+        "text": "Tayo'y mga Hudyo sa katutubo, at hindi mga makasalanang Hentil,"
+      },
+      {
+        "num": 16,
+        "text": "Bagama't naaalaman na ang tao ay hindi inaaring-ganap sa mga gawang ayon sa Kautusan, maliban na sa pamamagitan ng pananampalataya kay YAHSHUA Messias, tayo rin ay nagsisampalataya kay YAHSHUA Messias, upang tayo'y ariing-ganap sa pamamagitan ng pananampalataya kay Messias, at hindi dahil sa mga gawang ayon sa Kautusan: sapagka't sa mga gawang ayon sa Kautusan ay hindi aariing-ganap ang sinomang laman."
+      },
+      {
+        "num": 17,
+        "text": "Nguni't kung, samantalang ating pinagsisikapan na tayo ay ariing-ganap kay Messias, ay tayo rin naman ay nasusumpungang mga makasalanan, ang Messias baga ay ministro ng kasalanan? Huwag nawang mangyari."
+      },
+      {
+        "num": 18,
+        "text": "Kung akin ngang muling itayo ang mga bagay na aking sinira, sa aking sarili ay pinatutunayan ko na ako'y suwail."
+      },
+      {
+        "num": 19,
+        "text": "Sapagka't ako sa pamamagitan ng Kautusan, ay namatay sa Kautusan, upang ako'y mabuhay sa AMA."
+      },
+      {
+        "num": 20,
+        "text": "Ako'y napako na kasama ng Messias; at hindi na ako ang nabubuhay, kundi ang Messias ang nabubuhay sa akin: at ang buhay na ikinabubuhay ko ngayon sa laman ay ikinabubuhay ko sa pananampalataya, ang pananampalataya na ito'y sa ANAK ng AMA, na sa akin ay umibig, at ibinigay ang Kaniyang sarili dahil sa akin."
+      },
+      {
+        "num": 21,
+        "text": "Hindi ko niwawalan ng halaga ang biyaya ng AMA: sapagka't kung sa pamamagitan ng Kautusan ay ang katuwiran, kung gayo'y si Messias ay namatay ng walang kabuluhan."
+      }
+    ],
+    "3": [
+      {
+        "num": 1,
+        "text": "Oh mga mangmang na taga Galatia, sino ang mga nagsigayuma sa inyo, na ayaw paniwalaan ang katotohanan, na sa harapan ng inyong mga mata ay si YAHSHUA Messias, na napako, ay maliwanag na inihayag?"
+      },
+      {
+        "num": 2,
+        "text": "Ito lamang ang ibig kong maalaman sa inyo, Tinanggap baga ninyo ang Espiritu sa pamamagitan ng mga gawang ayon sa kautusan, o sa pamamagitan ng pakikinig ng tungkol sa pananampalataya?"
+      },
+      {
+        "num": 3,
+        "text": "Nagpakamangmang na baga kayo? kayong nagsimula sa Espiritu, ngayon ay nagpapakasakdal kayo sa laman?"
+      },
+      {
+        "num": 4,
+        "text": "Tiniis baga ninyong walang kabuluhan ang lubhang maraming mga bagay? Kung tunay na walang kabuluhan."
+      },
+      {
+        "num": 5,
+        "text": "Siya na nagbibigay nga sa inyo ng Espiritu, at gumagawa ng mga himala sa gitna ninyo, ginagawa baga sa pamamagitan ng mga gawang ayon sa Kautusan, o sa pakikinig ng tungkol sa pananampalataya?"
+      },
+      {
+        "num": 6,
+        "text": "Gaya nga ni Abraham na sumampalataya sa AMA, at ito'y ibinilang sa kaniya na katuwiran."
+      },
+      {
+        "num": 7,
+        "text": "Talastasin nga ninyo na ang mga sa pananampalataya, ang mga yaon ay mga anak ni Abraham."
+      },
+      {
+        "num": 8,
+        "text": "At sapagka't ipinakita na ng kasulatan, na aariing-ganap ng AMA ang mga Hentil sa pamamagitan ng pananampalataya, ay ipinangaral na nang una ang Magandang Balita kay Abraham, na sinasabi, sa iyo ay pagpapalain ang lahat ng mga bansa."
+      },
+      {
+        "num": 9,
+        "text": "Kaya't ang mga sa pananampalataya ay pinagpapala kay Abraham na may pananampalataya."
+      },
+      {
+        "num": 10,
+        "text": "Sapagka't ang lahat na sa mga gawang ayon sa Kautusan ay nasa ilalim ng sumpa: sapagka't nasusulat, Sinusumpa ang bawa't hindi nananatili sa lahat ng mga bagay na nasusulat sa aklat ng Kautusan, upang gawin nila."
+      },
+      {
+        "num": 11,
+        "text": "Maliwanag nga na sinoman ay hindi inaaring-ganap sa Kautusan sa harapan ng AMA; dahil, Ang ganap ay mabubuhay sa pananampalataya."
+      },
+      {
+        "num": 12,
+        "text": "At ang Kautusan ay hindi sa pananampalataya; kundi, Ang gumaganap ng mga yaon ay mabubuhay sa mga yaon."
+      },
+      {
+        "num": 13,
+        "text": "Sa sumpa ng Kautusan ay tinubos tayo ng Messias, na naging sumpa sa ganang atin; sapagka't nasusulat, Sinusumpa ang bawa't binibitay sa puno:"
+      },
+      {
+        "num": 14,
+        "text": "Upang sa mga Hentil ay dumating ang pagpapala ni Abraham na kay YAHSHUA Messias; upang sa pamamagitan ng pananampalataya ay tanggapin natin ang pangako ng Espiritu."
+      },
+      {
+        "num": 15,
+        "text": "Mga kapatid, nagsasalita ako ayon sa kaugalian ng mga tao: Bagama't ang pakikipagtipan ay gawa lamang ng tao, gayon ma'y kapag pinagtibay, sinoman ay hindi makapagpapawalang kabuluhan, o makapagdaragdag man."
+      },
+      {
+        "num": 16,
+        "text": "Ngayon kay Abraham nga sinabi ang mga pangako, at sa kaniyang binhi. Hindi sinabi ng AMA, At sa mga binhi, na gaya baga sa marami; kundi sa iisa lamang, At sa iyong binhi, na si Messias."
+      },
+      {
+        "num": 17,
+        "text": "Ito nga ang aking sinasabi: Ang isang pakikipagtipang pinagtibay na nang una ng AMA, ay hindi mapawawalang kabuluhan ng Kautusan, na sumipot nang makaraan ang apat na raan at tatlongpung taon, ano pa't upang pawalang kabuluhan ang pangako."
+      },
+      {
+        "num": 18,
+        "text": "Sapagka't kung ang mana ay sa pamamagitan ng Kautusan, ay hindi na sa pamamagitan ng pangako: datapuwa't ipinagkaloob ng AMA kay Abraham sa pamamagitan ng pangako."
+      },
+      {
+        "num": 19,
+        "text": "Ano nga ang kabuluhan ng Kautusan? Idinagdag dahil sa mga pagsalangsang, hanggang sa pumarito ang Binhi na siyang pinangakuan; at ito'y iniutos sa pamamagitan ng mga anghel sa kamay ng isang tagapamagitan."
+      },
+      {
+        "num": 20,
+        "text": "Ngayon ang isang tagapamagitan ay hindi tagapamagitan ng iisa; datapuwa't ang Elohim ay iisa."
+      },
+      {
+        "num": 21,
+        "text": "Ang Kautusan nga baga ay laban sa mga pangako ng AMA? Huwag nawang mangyari: sapagka't kung ibinigay sana ang isang kautusang may kapangyarihang magbigay buhay, tunay ngang ang katuwiran sana ay naging dahil sa Kautusan."
+      },
+      {
+        "num": 22,
+        "text": "Datapuwa't kinulong ng kasulatan ang lahat ng mga bagay sa ilalim ng kasalanan, upang ang pangako sa pamamagitan ng pananampalataya kay YAHSHUA Messias ay maibigay sa mga nagsisisampalataya."
+      },
+      {
+        "num": 23,
+        "text": "Nguni't bago dumating ang pananampalataya, ay nabibilanggo tayo sa ilalim ng Kautusan, na nakukulong tayo hanggang sa ang pananampalataya ay ipahahayag pagkatapos."
+      },
+      {
+        "num": 24,
+        "text": "Ano pa't ang Kautusan ay siyang naging tagapagturo natin upang ihatid tayo kay Messias, upang tayo'y ariing-ganap sa pamamagitan ng pananampalataya."
+      },
+      {
+        "num": 25,
+        "text": "Datapuwa't ngayong dumating na ang pananampalataya, ay wala na tayo sa ilalim ng tagapagturo."
+      },
+      {
+        "num": 26,
+        "text": "Sapagka't kayong lahat ay mga anak ng AMA sa pamamagitan ng pananampalataya, kay YAHSHUA Messias."
+      },
+      {
+        "num": 27,
+        "text": "Dahil ang lahat na sa inyo ay binautismuhan kay Messias ay ibinihis ang Messias."
+      },
+      {
+        "num": 28,
+        "text": "Walang magiging Hudyo o Griego man, walang magiging alipin o malaya man, walang magiging lalake o babae man; sapagka't kayong lahat ay iisa kay YAHSHUA Messias."
+      },
+      {
+        "num": 29,
+        "text": "At kung kayo'y kay Messias, kayo nga'y binhi ni Abraham, at mga tagapagmana ayon sa pangako."
+      }
+    ],
+    "4": [
+      {
+        "num": 1,
+        "text": "Nguni't sinasabi ko na samantalang ang tagapagmana ay bata, ay walang pagkakaibang anoman sa alipin bagama't siya'y amo ng lahat;"
+      },
+      {
+        "num": 2,
+        "text": "Datapuwa't nasa ilalim ng mga tagapag-ampon at ng mga tagapangasiwa hanggang sa panahong itinakda ng ama."
+      },
+      {
+        "num": 3,
+        "text": "Gayon din naman tayo, nang tayo'y mga bata pa, tayo'y nasasakop ng pagkaalipin sa ilalim ng mga pasimulang aral ng sanglibutan."
+      },
+      {
+        "num": 4,
+        "text": "Nguni't nang dumating ang kapanahunan, ay sinugo ng AMA ang kaniyang ANAK, na ipinanganak ng isang babae, na ipinanganak sa ilalim ng Kautusan."
+      },
+      {
+        "num": 5,
+        "text": "Upang matubos niya ang nasa ilalim ng Kautusan, upang matanggap natin ang pagkukupkop sa mga anak."
+      },
+      {
+        "num": 6,
+        "text": "At sapagka't kayo'y mga anak, ay sinugo ng AMA ang Espiritu ng kaniyang ANAK sa ating mga puso, na sumisigaw, Abba, AMA."
+      },
+      {
+        "num": 7,
+        "text": "Ano pa't hindi ka na alipin, kundi anak; at kung anak, ay tagapagmana ka nga ng Elohim sa pamamagitan ng Messias."
+      },
+      {
+        "num": 8,
+        "text": "Gayon man nang panahong yaon, sa hindi ninyo pagkakilala sa Elohim, kayo'y nasa pagkaalipin sa mga imahe (diyos):"
+      },
+      {
+        "num": 9,
+        "text": "Datapuwa't ngayon yamang nakikilala na ninyo ang Elohim, o ang lalong mabuting sabihin, kayo'y nakikilala ng Elohim, bakit muling nagbabalik kayo doon sa mahihina at walang bisang mga pasimulang aral, na sa mga yao'y ninanasa ninyong magbalik sa pagkaalipin?"
+      },
+      {
+        "num": 10,
+        "text": "Ipinangingilin ninyo ang mga araw, at mga buwan, at mga panahon, at mga taon."
+      },
+      {
+        "num": 11,
+        "text": "Ako'y natatakot tungkol sa inyo, baka sa anomang paraan ay nagpagal ako sa inyo ng walang kabuluhan."
+      },
+      {
+        "num": 12,
+        "text": "Ipinamamanhik ko sa inyo, mga kapatid, na kayo'y magsitulad sa akin, sapagka't ako'y katulad din ninyo. Wala kayong ginawa sa aking anomang kasamaan."
+      },
+      {
+        "num": 13,
+        "text": "Datapuwa't nalalaman ninyo na dahil sa sakit ng laman, ay ipinangaral ko sa inyo ang Magandang Balita nang pasimula:"
+      },
+      {
+        "num": 14,
+        "text": "At yaong sa inyo'y isang tukso sa aking laman ay hindi ninyo inalipusta, ni itinakuwil man; kundi ako'y tinanggap ninyong tulad sa isang anghel ng AMA, tulad kay YAHSHUA Messias."
+      },
+      {
+        "num": 15,
+        "text": "Saan nga naroon yaong inyong pagpapala? sapagka't pinatototohanan ko sa inyo, na, kung mangyayari, ay inyong dinukit sana ang inyong mga mata at ibinigay sa akin."
+      },
+      {
+        "num": 16,
+        "text": "Kaya nga ako baga'y naging kaaway ninyo, sa pagsasabi ko sa inyo ng katotohanan?"
+      },
+      {
+        "num": 17,
+        "text": "May nagmamalasakit sa inyo sa hindi mabuting akala; subali't, ang ibig nila ay ihiwalay kayo, upang ipagmalasakit ninyo sila."
+      },
+      {
+        "num": 18,
+        "text": "Subali't mabuti ang ipagmalasakit sa mabuting bagay sa lahat ng panahon, at hindi lamang samantalang ako'y kaharap ninyo."
+      },
+      {
+        "num": 19,
+        "text": "Maliliit kong mga anak, na muli kong ipinagdaramdam sa panganganak hanggang si Messias ay masumpungan sa inyo."
+      },
+      {
+        "num": 20,
+        "text": "Datapuwa't, ibig kong makaharap ninyo ako ngayon, at baguhin ang aking tinig; sapagka't ako'y nag-aalinlangan tungkol sa inyo."
+      },
+      {
+        "num": 21,
+        "text": "Sabihin ninyo sa akin, kayong nagnanasang mapasa ilalim ng Kautusan, hindi baga ninyo naririnig ang kautusan?"
+      },
+      {
+        "num": 22,
+        "text": "Sapagka't nasusulat, na si Abraham ay nagkaroon ng dalawang anak, ang isa'y sa aliping babae, at ang isa'y sa babaing malaya."
+      },
+      {
+        "num": 23,
+        "text": "Gayon man ang anak sa alipin ay ipinanganak ayon sa laman; nguni't ang anak sa babaing malaya ay sa pamamagitan ng pangako."
+      },
+      {
+        "num": 24,
+        "text": "Ang mga bagay na ito'y may lamang talinghaga: sapagka't ang mga babaing ito'y dalawang tipan; ang isa'y mula sa bundok ng Sinai, na nanganak ng mga anak sa pagkaalipin, na ito'y si Hagar."
+      },
+      {
+        "num": 25,
+        "text": "Ang Hagar ngang ito ay bundok ng Sinai sa Arabia, at ito'y katulad ng Yerushalayim ngayon: dahil ito'y nasa pagkaalipin kasama ng kaniyang mga anak."
+      },
+      {
+        "num": 26,
+        "text": "Nguni't ang Yerushalayim na nasa itaas ay malaya, na siyang ina natin."
+      },
+      {
+        "num": 27,
+        "text": "Sapagka't nasusulat, Magsaya ka, Oh baog na hindi nanganganak; Magbiglang umawit at humiyaw ka, ikaw na hindi nagdaramdam sa panganganak: Sapagka't higit pa ang mga anak ng pinabayaan kaysa mga anak ng may asawa."
+      },
+      {
+        "num": 28,
+        "text": "At tayo, mga kapatid, tulad ni Yitshaq, ay mga anak sa pangako."
+      },
+      {
+        "num": 29,
+        "text": "Subali't kung papaanong yaong ipinanganak ayon sa laman ay nag-usig sa ipinanganak ayon sa Espiritu, ay gayon din naman ngayon."
+      },
+      {
+        "num": 30,
+        "text": "Gayon man ano ang sinasabi ng kasulatan? Palayasin ang aliping babae at ang kaniyang anak: dahil hindi magmamana ang anak ng babaing alipin na kasama ng anak ng babaing malaya."
+      },
+      {
+        "num": 31,
+        "text": "Kaya nga, mga kapatid, hindi tayo mga anak ng babaing alipin, kundi ng babaing malaya."
+      }
+    ],
+    "5": [
+      {
+        "num": 1,
+        "text": "Sa kalayaan ay pinalaya tayo ng Messias: magsitibay nga kayo, at huwag na kayong pasakop na muli sa pamatok ng pagkaalipin."
+      },
+      {
+        "num": 2,
+        "text": "Narito, akong si Saulo ay nagsasabi sa inyo, na, kung inyong tinatanggap ang pagtutuli, ay wala kayong mapapakinabang na anoman sa Messias."
+      },
+      {
+        "num": 3,
+        "text": "Oo, pinatotohanan kong muli sa bawa't taong tumatanggap ng pagtutuli, na siya'y may kautangang tumupad ng buong Kautusan."
+      },
+      {
+        "num": 4,
+        "text": "Kayo'y hiwalay sa Messias, kayong nag-iibig na ariing-ganap ng Kautusan; nahulog kayo mula sa biyaya."
+      },
+      {
+        "num": 5,
+        "text": "Dahil tayo sa pamamagitan ng Espiritu sa pananampalataya ay naghihintay ng pangako ng katuwiran."
+      },
+      {
+        "num": 6,
+        "text": "Sapagka't kay YAHSHUA Messias, kahit ang pagtutuli ay walang kabuluhan, kahit man ang di-pagtutuli; kundi ang pananampalataya na gumagawa sa pamamagitan ng pag-ibig."
+      },
+      {
+        "num": 7,
+        "text": "Nagsisitakbo kayong mabuti nang una; sino ang gumambala sa inyo upang kayo'y huwag magsisunod sa katotohanan?"
+      },
+      {
+        "num": 8,
+        "text": "Ang paghikayat na ito ay hindi nagmula doon sa tumawag sa inyo."
+      },
+      {
+        "num": 9,
+        "text": "Ang kaunting lebadura ay nagpapaalsa sa buong limpak."
+      },
+      {
+        "num": 10,
+        "text": "Ako'y may pagkakatiwala sa inyo sa Rabbi, na hindi kayo nagsipag-isip ng ibang paraan: datapuwa't ang gumagambala sa inyo ay magtataglay ng kaniyang kahatulan, maging sinoman siya."
+      },
+      {
+        "num": 11,
+        "text": "Nguni't ako, mga kapatid, kung ipinangangaral ko pa ang pagtutuli, bakit ako'y pinag-uusig pa? kung gayon ay natapos na ang katitisuran sa tulos."
+      },
+      {
+        "num": 12,
+        "text": "Ibig ko sana na ang mga nagsisigulo sa inyo ay gumawa ng higit sa pagtutuli."
+      },
+      {
+        "num": 13,
+        "text": "Sapagka't kayo, mga kapatid, ay tinawag sa kalayaan; huwag gamitin ang inyong kalayaan, upang magbigay kadahilanan sa laman, kundi sa pamamagitan ng pag-ibig ay maglingkuran kayo."
+      },
+      {
+        "num": 14,
+        "text": "Dahil ang buong Kautusan ay natutupad sa isang salita, sa makatuwid ay dito: Iibigin mo ang inyong kapuwa na gaya ng inyong sarili."
+      },
+      {
+        "num": 15,
+        "text": "Nguni't kung kayo-kayo rin ang nagkakagatan at nagsasakmalan, mag-ingat kayo na baka kayo'y magpatayan sa isa't isa."
+      },
+      {
+        "num": 16,
+        "text": "Sinasabi ko nga, Magsilakad kayo ayon sa Espiritu, at huwag gagawin ang mga pita ng laman."
+      },
+      {
+        "num": 17,
+        "text": "Sapagka't ang laman ay nagnanasa ng laban sa Espiritu, at ang Espiritu ay laban sa laman; dahil ang mga ito ay magkalaban; upang huwag ninyong gawin ang bagay na inyong ibigin."
+      },
+      {
+        "num": 18,
+        "text": "Datapuwa't kung kayo'y pinapatnubayan ng Espiritu, ay wala kayo sa ilalim ng Kautusan."
+      },
+      {
+        "num": 19,
+        "text": "At hayag ang mga gawa ng laman, sa makatuwid ay ang mga ito: pakikiapid, karumihan, kalibugan,"
+      },
+      {
+        "num": 20,
+        "text": "Pagsamba sa imahe, pangkukulam1, mga kamuhian, mga pagtatalo, mga paninibugho, mga pagkakaalitan, mga pagkakampi-kampi, mga pagkakabaha-bahagi, mga hidwang pananampalataya, 1(pharmakea)"
+      },
+      {
+        "num": 21,
+        "text": "Mga kapanaghilian, mga paglalasing, mga kalayawan, at ang mga katulad nito; tungkol sa mga bagay na ito ay aking ipinagpapaunang ipaalaala sa inyo, tulad sa aking aking pagpapa-alaala nang una sa inyo, na ang mga nagsisigawa ng gayong mga bagay ay hindi magsisipagmana ng kaharian ng AMA."
+      },
+      {
+        "num": 22,
+        "text": "Nguni't ang bunga ng Espiritu ay pag-ibig, katuwaan, kapayapaan, pagpahinuhod, kagandahang-loob, kabutihan, pagtatapat,"
+      },
+      {
+        "num": 23,
+        "text": "Kaamuan, at pagpipigil; laban sa mga gayong bagay ay walang Kautusan."
+      },
+      {
+        "num": 24,
+        "text": "At ipinako sa tulos ng mga na kay YAHSHUA Messias ang laman na kasama ang mga masasamang pita at mga kahalayan nito."
+      },
+      {
+        "num": 25,
+        "text": "Kung tayo'y nabubuhay sa pamamagitan ng Espiritu, ay magsilakad naman tayo ayon sa Espiritu."
+      },
+      {
+        "num": 26,
+        "text": "Huwag tayong maging mga palalo, na tayo-tayo'y ginagalit ang isa't isa, naiinggit sa isa't isa."
+      }
+    ],
+    "6": [
+      {
+        "num": 1,
+        "text": "Mga kapatid, kung ang sinoman ay masumpungan sa anomang pagsuway, kayong mga sa espiritu, ay inyong papanumbalikin ang gayon sa espiritu ng kahinhinan; na iyong pagwariin ang iyong sarili, baka ikaw naman ay matukso."
+      },
+      {
+        "num": 2,
+        "text": "Magdalahan kayo ng mga pasanin ng isa't isa, at tuparin ninyong gayon ang Kautusan ng Messias."
+      },
+      {
+        "num": 3,
+        "text": "Sapagka't kung ang sinoman ay nag-aakala na siya'y may kabuluhan bagaman siya ay walang kabuluhan, ang kaniyang sarili ang dinadaya niya."
+      },
+      {
+        "num": 4,
+        "text": "Nguni't siyasatin ng bawa't isa ang kaniyang sariling gawa, at kung magkagayon ay magkakaroon siya ng kaniyang kapurihan tungkol sa kaniyang sarili lamang, at hindi tungkol sa kapuwa."
+      },
+      {
+        "num": 5,
+        "text": "Sapagka't ang bawa't tao ay magpapasan ng kaniyang sariling pasan."
+      },
+      {
+        "num": 6,
+        "text": "Datapuwa't ang tinuturuan sa aral ng AMA ay makidamay doon sa nagtuturo sa lahat ng mga bagay na mabuti."
+      },
+      {
+        "num": 7,
+        "text": "Huwag kayong padaya; ang AMA ay hindi napabibiro: sapagka't ang lahat na ihasik ng tao, ay siya namang aanihin niya."
+      },
+      {
+        "num": 8,
+        "text": "Sapagka't ang naghahasik ng sa kaniyang sariling laman ay sa laman mag-aani ng kasiraan; datapuwa't ang naghahasik ng sa Espiritu ay sa Espiritu mag-aani ng buhay na walang hanggan."
+      },
+      {
+        "num": 9,
+        "text": "At huwag tayong mapagod sa paggawa ng mabuti: sapagka't sa kapanahunan ay magsisipag-ani tayo, kung hindi tayo manghihimagod."
+      },
+      {
+        "num": 10,
+        "text": "Kaya nga, samantalang tayo'y may pagkakataon, ay magsigawa tayo ng mabuti sa lahat, at lalong lalo na sa mga kasangbahay sa pananampalataya."
+      },
+      {
+        "num": 11,
+        "text": "Tingnan ninyo kung gaano kalalaking mga titik ang isinulat ko sa inyo ng aking sariling kamay."
+      },
+      {
+        "num": 12,
+        "text": "Yaong lahat na may ibig magkaroon ng isang mabuting anyo sa laman, ay siyang pumipilit sa inyo na magtuli; upang huwag lamang silang pag-usigin dahil sa tulos ng Messias."
+      },
+      {
+        "num": 13,
+        "text": "Dahil yaon mang natuli na ay hindi rin nagsisitupad ng Kautusan; nguni't ibig nilang kayo'y ipatuli, upang sila'y magmapuri sa inyong laman."
+      },
+      {
+        "num": 14,
+        "text": "Datapuwa't malayo nawa sa akin ang pagmamapuri, maliban na sa tulos ng ating Rabbi YAHSHUA Messias, na sa pamamagitan niyao'y ang sanglibutan ay napako sa ganang akin, at ako'y sa sanglibutan."
+      },
+      {
+        "num": 15,
+        "text": "Dahil ang pagtutuli ay walang anoman, kahit man ang di-pagtutuli, kundi ang binagong nilalang."
+      },
+      {
+        "num": 16,
+        "text": "At ang lahat na magsisilakad ayon sa alituntuning ito, kapayapaan at kaawaan nawa ang sumakanila, at sa Israel ng Elohim."
+      },
+      {
+        "num": 17,
+        "text": "Buhat ngayon sinoman ay huwag bumagabag sa akin; sapagka't dala kong nakalimbag sa aking katawan ang mga tanda ni Rabbi YAHSHUA."
+      },
+      {
+        "num": 18,
+        "text": "Mga kapatid, ang biyaya ng ating Rabbi YAHSHUA Messias ay sumainyo nawang espiritu. Siya nawa."
+      }
+    ]
+  }
+}

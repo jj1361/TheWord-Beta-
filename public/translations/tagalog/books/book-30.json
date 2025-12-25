@@ -1,0 +1,608 @@
+{
+  "bookName": "Amos",
+  "bookId": 30,
+  "chapters": {
+    "1": [
+      {
+        "num": 1,
+        "text": "Ang mga salita ni Amos, na nasa gitna ng mga pastol sa Tecoa, na nakita niya tungkol sa Israel, nang mga kaarawan ni Uzziyah na hari sa Yehudah, at nang mga kaarawan ni Yaro’bam na anak ni Yeho’ash na hari sa Israel, na dalawang taon bago lumindol."
+      },
+      {
+        "num": 2,
+        "text": "At kaniyang sinabi, Si YAHWEH ay aangal mula sa Sion, at sisigaw ng kaniyang tinig mula sa Yerushalayim; at ang mga pastulan ng mga pastol ay mananambitan, at ang taluktok ng Carmelo ay matutuyo."
+      },
+      {
+        "num": 3,
+        "text": "Ganito ang sabi ni YAHWEH: Dahil sa tatlong pagsalangsang ng Damasco, oo, dahil sa apat, hindi ko ihihiwalay ang kaparusahan sa kaniya; sapagka't kanilang giniik ang Galaad ng panggiik na bakal."
+      },
+      {
+        "num": 4,
+        "text": "Nguni't Aking susuguin ang isang apoy sa loob ng bahay ni Hazael, at susupukin niyaon ang mga palasyo ni Ben-hadad."
+      },
+      {
+        "num": 5,
+        "text": "At Aking iwawasak ang harang ng Damasco, at Aking ihihiwalay ang mananahan mula sa libis ng Awen, at siyang humahawak ng setro mula sa bahay ng Eden; at ang bayan ng Siria ay papasok sa pagkabihag hanggang sa Chir, sabi ni YAHWEH."
+      },
+      {
+        "num": 6,
+        "text": "Ganito ang sabi ni YAHWEH: Dahil sa tatlong pagsalangsang ng Gaza, oo, dahil sa apat, hindi ko ihihiwalay ang kaparusahan sa kaniya; dahil kanilang dinalang bihag ang buong bayan, upang ibigay sa Edom."
+      },
+      {
+        "num": 7,
+        "text": "Nguni't Ako'y magsusugo ng isang apoy sa kuta ng Gaza, at susupukin niyaon ang mga palasyo niyaon:"
+      },
+      {
+        "num": 8,
+        "text": "At Aking ihihiwalay ang mananahan mula sa Asdod, at siyang humahawak ng setro mula sa Ascalon; at Aking ipipihit ang Aking kamay laban sa Ecron, at ang nalabi sa mga Pilisteo ay malilipol, sabi ni YAHWEH Elohim."
+      },
+      {
+        "num": 9,
+        "text": "Ganito ang sabi ni YAHWEH: Dahil sa tatlong pagsalangsang ng Tiro, oo, dahil sa apat, hindi ko ihihiwalay ang kaparusahan sa kaniya; sapagka't kanilang ibinigay ang buong bayan sa Edom, at hindi inalaala ang tipan ng pagkakapatiran."
+      },
+      {
+        "num": 10,
+        "text": "Nguni't Ako'y magsusugo ng isang apoy sa kuta ng Tiro, at susupukin niyaon ang mga palasyo niyaon."
+      },
+      {
+        "num": 11,
+        "text": "Ganito ang sabi ni YAHWEH: Dahil sa tatlong pagsalangsang ng Edom, oo, dahil sa apat, hindi ko ihihiwalay ang kaparusahan sa kaniya; sapagka't hinabol niya ng tabak ang kaniyang kapatid, at ipinagkait ang buong habag, at ang kaniyang galit ay laging nanglilipol, at taglay niya ang kaniyang poot magpakailan man."
+      },
+      {
+        "num": 12,
+        "text": "Nguni't magsusugo Ako ng isang apoy sa Teman, at susupukin niyaon ang mga palasyo sa Bozra."
+      },
+      {
+        "num": 13,
+        "text": "Ganito ang sabi ni YAHWEH: Dahil sa tatlong pagsalangsang ng mga anak ni Ammon, oo, dahil sa apat, hindi ko ihihiwalay ang kaparusahan sa kanila; dahil kanilang pinaluwa ang bituka ng mga babaing nagdadalang tao sa Galaad, upang kanilang mapalapad ang kanilang hangganan."
+      },
+      {
+        "num": 14,
+        "text": "Nguni't Aking papagniningasin ang isang apoy sa kuta ng Rabba, at susupukin niyaon ang mga palasyo niyaon, na may hiyawan sa kaarawan ng pagbabaka, na may bagyo sa kaarawan ng ipo-ipo."
+      },
+      {
+        "num": 15,
+        "text": "At ang kanilang hari ay papasok sa pagkabihag, siya at ang kaniyang mga prinsipe na magkakasama, sabi ni YAHWEH."
+      }
+    ],
+    "2": [
+      {
+        "num": 1,
+        "text": "Ganito ang sabi ni YAHWEH: Dahil sa tatlong pagsalangsang ng Moab, oo, dahil sa apat, hindi ko ihihiwalay ang kaparusahan sa kaniya; sapagka't kaniyang sinunog ang mga buto ng hari sa Edom na pinapaging apog."
+      },
+      {
+        "num": 2,
+        "text": "Nguni't Ako'y magsusugo ng isang apoy sa Moab, at susupukin niyaon ang mga palasyo ng Cherioth; at ang Moab ay mamamatay na may kaingay, may hiyawan, at may tunog ng pakakak."
+      },
+      {
+        "num": 3,
+        "text": "At Aking ihihiwalay ang hukom sa gitna niyaon at papatayin ko ang lahat na prinsipe niyaon na kasama niya, sabi ni YAHWEH."
+      },
+      {
+        "num": 4,
+        "text": "Ganito ang sabi ni YAHWEH: Dahil sa tatlong pagsalangsang ng Yehudah, oo, dahil sa apat, hindi ko ihihiwalay ang kaparusahan sa kaniya; dahil kanilang itinakuwil ang Kautusan ni YAHWEH, at hindi iningatan ang kaniyang mga palatuntunan, at iniligaw sila ng kanilang mga pagbubulaan, ayon sa inilakad ng kanilang mga magulang."
+      },
+      {
+        "num": 5,
+        "text": "Nguni't magsusugo Ako ng isang apoy sa Yehudah; at susupukin niyaon ang mga palasyo ng Yerushalayim."
+      },
+      {
+        "num": 6,
+        "text": "Ganito ang sabi ni YAHWEH, Dahil sa tatlong pagsalangsang ng Israel, oo, dahil sa apat, hindi ko ihihiwalay ang kaparusahan sa kaniya; sapagka't kanilang ipinagbili ang matuwid dahil sa pilak, at ang mga dukha sa dalawang paang panyapak;"
+      },
+      {
+        "num": 7,
+        "text": "Na iniimbot ang alabok sa lupa na nasa ulo ng dukha, at inililiko ang lakad ng maamo: at ang mag-ama ay sumisiping sa isang dalaga, upang lapastanganin ang Aking Banal na Pangalan:"
+      },
+      {
+        "num": 8,
+        "text": "At sila'y nangahihiga sa tabi ng lahat na dambana, sa ibabaw ng mga kasuutang sangla; at sa bahay ng kanilang diyos ay nagsisiinom ng alak ng mga multa."
+      },
+      {
+        "num": 9,
+        "text": "Gayon ma'y nililipol ko ang Amorrheo sa harap nila, na ang taas ay gaya ng taas ng mga sedro, at siya'y malakas na gaya ng mga ensina; gayon ma'y nilipol ko ang kaniyang bunga sa itaas, at ang kaniyang mga ugat sa ilalim."
+      },
+      {
+        "num": 10,
+        "text": "Iniahon ko rin kayo sa lupain ng Egipto, at pinatnubayan ko kayong apat na pung taon sa ilang, upang ariin ninyo ang lupain ng Amorrheo."
+      },
+      {
+        "num": 11,
+        "text": "At nagbangon Ako sa inyong mga anak ng mga propeta, at sa inyong mga binata ng mga Nazareno. Di baga gayon, Oh kayong mga anak ng Israel? sabi ni YAHWEH."
+      },
+      {
+        "num": 12,
+        "text": "Nguni't binigyan ninyo ang mga Nazareno ng alak na maiinom, at inutusan ninyo ang mga propeta, na sinasabi, Huwag kayong manghuhula."
+      },
+      {
+        "num": 13,
+        "text": "Narito, Aking ibabagsak kayo sa inyong dako, na gaya ng isang karwaheng nawawasak na puno ng mga bigkis."
+      },
+      {
+        "num": 14,
+        "text": "At ang pagtakas ay mapapawi dahil sa paghabol; at ang malakas ay hindi makaaasa sa kaniyang kalakasan; ni ang mga pinuno ay makapagliligtas sa sarili."
+      },
+      {
+        "num": 15,
+        "text": "Ni makatitindig man siyang humahawak ng busog; at siyang matulin sa paa ay hindi makaliligtas; ni siya mang nakasakay sa kabayo ay makaliligtas:"
+      },
+      {
+        "num": 16,
+        "text": "At siya na makapangyarihan sa mga matapang ay tatakas na hubad sa araw na yaon, sabi ni YAHWEH."
+      }
+    ],
+    "3": [
+      {
+        "num": 1,
+        "text": "Dinggin ninyo ang salitang ito na sinalita ni YAHWEH laban sa inyo, Oh mga anak ni Israel, laban sa buong angkan na Aking iniahon mula sa lupain ng Egipto, na sinasabi,"
+      },
+      {
+        "num": 2,
+        "text": "Kayo lamang ang Aking nakilala sa lahat ng angkan sa lupa: kaya't Aking dadalawin sa inyo ang lahat ninyong kasamaan."
+      },
+      {
+        "num": 3,
+        "text": "Makalalakad baga ang dalawa na magkasama, liban na sila'y magkasundo?"
+      },
+      {
+        "num": 4,
+        "text": "Uungal baga ang leon sa gubat, kung wala siyang huli? sisigaw baga ang batang leon sa kaniyang yungib, kung wala siyang huling anoman?"
+      },
+      {
+        "num": 5,
+        "text": "Malalaglag baga ang ibon sa silo sa ibabaw ng lupa, ng walang silo sa kaniya? lulukso baga ang panghuli mula sa lupa, at walang nahuling anoman?"
+      },
+      {
+        "num": 6,
+        "text": "Tutunog baga ang pakakak sa bayan, at ang bayan ay hindi manginginig? sasapit baga ang kasamaan sa bayan, at hindi ginawa ni YAHWEH?"
+      },
+      {
+        "num": 7,
+        "text": "Tunay na si YAHWEH Elohim ay walang gagawin, kundi kaniyang ihahayag ang kaniyang lihim sa kaniyang mga lingkod na mga propeta."
+      },
+      {
+        "num": 8,
+        "text": "Ang leon ay umungal, sinong di matatakot? Si YAHWEH Elohim ay nagsalita; sinong hindi manghuhula?"
+      },
+      {
+        "num": 9,
+        "text": "Ihayag ninyo sa mga palasyo sa Asdod, at sa mga palasyo sa lupain ng Egipto, at inyong sabihin, Magpipisan kayo sa mga bundok ng Samaria, at inyong masdan kung anong laking ingay ang nandoon, at kung anong pahirap ang nasa gitna niyaon."
+      },
+      {
+        "num": 10,
+        "text": "Sapagka't hindi sila marunong magsigawa ng matuwid, sabi ni YAHWEH, na nag-iimbak ng pangdadahas at pagnanakaw sa kanilang mga palasyo."
+      },
+      {
+        "num": 11,
+        "text": "Kaya't ganito ang sabi ni YAHWEH Elohim: Kaaway ay paririto sa palibot ng lupain; at kaniyang ibabagsak ang lakas mo sa iyo, at ang iyong mga palasyo ay sasamsaman."
+      },
+      {
+        "num": 12,
+        "text": "Ganito ang sabi ni YAHWEH: Kung paanong inaagaw ng pastol sa bibig ng leon ang dalawang hita, o ang isang putol ng tainga; gayon ililigtas ang mga anak ni Israel na nangauupo sa Samaria sa sulok ng hiligan, at sa mga sedang malambot ng higaan."
+      },
+      {
+        "num": 13,
+        "text": "Dinggin ninyo, at patotohanan ninyo laban sa sangbahayan ni Ya’aqob, sabi ni YAHWEH Elohim, ng Hari ng mga hukbo."
+      },
+      {
+        "num": 14,
+        "text": "Sapagka't sa araw na Aking dadalawin ang mga pagsalangsang ng Israel sa kaniya, Aking dadalawin din ang mga dambana ng Beth-el, at ang mga sungay ng dambana ay mahihiwalay, at malalaglag sa lupa."
+      },
+      {
+        "num": 15,
+        "text": "At Aking sisirain ang bahay na pangtagginaw na kasabay ng bahay na pangtag-init; at ang mga bahay na garing ay mawawala, at ang mga malaking bahay ay babagsak, sabi ni YAHWEH."
+      }
+    ],
+    "4": [
+      {
+        "num": 1,
+        "text": "Dinggin ninyo ang salitang ito, Oh mga baka ng Basan, na nasa bundok ng Samaria, na nagsisipighati sa mga dukha, na nagsisigipit sa mga mapagkailangan, na nagsasabi sa kanilang mga hari, Dalhin ninyo rito, at ating inumin."
+      },
+      {
+        "num": 2,
+        "text": "Si YAHWEH Elohim ay sumumpa sa pamamagitan ng kaniyang kabanalan, na, narito, ang mga kaarawan ay darating sa inyo, na kanilang huhulihin kayo ng mga taga ng bingwit, at ang nalabi sa inyo ay ng mga pamingwit."
+      },
+      {
+        "num": 3,
+        "text": "At kayo'y magsisilabas sa mga sira, na sunod-sunod bawa't isa; at kayo ay matatapon sa Harmon, sabi ni YAHWEH."
+      },
+      {
+        "num": 4,
+        "text": "Magsiparoon kayo sa Beth-el, at magsisalangsang kayo; sa Gilgal, at paramihin ninyo ang pagsalangsang; at inyong dalhin ang inyong mga hain tuwing umaga, at ang inyong mga ikasangpung bahagi tuwing tatlong araw;"
+      },
+      {
+        "num": 5,
+        "text": "At kayo'y maghandog ng hain ng pasasalamat na may lebadura, at kayo'y maghayag ng kusang mga handog at inyong itanyag; sapagka't ito'y nakalulugod sa inyo, Oh ninyong mga anak ni Israel, sabi ni YAHWEH Elohim."
+      },
+      {
+        "num": 6,
+        "text": "At binigyan ko naman kayo ng kalinisan ng mga ngipin sa lahat ninyong mga bayan, at kakulangan ng tinapay sa lahat ninyong mga dako; gayon man ay hindi kayo nanumbalik sa Akin, sabi ni YAHWEH."
+      },
+      {
+        "num": 7,
+        "text": "At Akin namang pinigil ang ulan sa inyo, nang tatlong buwan na lamang at pag-aani na; at Aking pinaulan sa isang bayan, at hindi ko pinaulan sa kabilang bayan: isang bahagi ay inulanan, at ang bahagi na hindi inulanan ay natuyo."
+      },
+      {
+        "num": 8,
+        "text": "Sa gayo'y dalawa o tatlong bayan ay nagsigala sa isang bayan upang magsiinom ng tubig, at hindi napawi ang uhaw: gayon ma'y hindi kayo nanumbalik sa Akin, sabi ni YAHWEH."
+      },
+      {
+        "num": 9,
+        "text": "Aking sinalot kayo ng pagkalanta at ng amag: ang karamihan ng inyong mga halaman, at ng inyong mga ubasan, at ng inyong mga igusan, at ng inyong mga olibohan ay nilipol ng tipaklong: gayon ma'y hindi kayo nanumbalik sa Akin, sabi ni YAHWEH."
+      },
+      {
+        "num": 10,
+        "text": "Aking pinarating sa gitna ninyo ang salot na gaya ng sa Egipto: ang inyong mga binata ay pinatay ko ng tabak, at dinala ko ang inyong mga kabayo; at Aking pinaalingasaw ang baho ng inyong kampamento hanggang sa inyong mga butas ng ilong; gayon ma'y hindi kayo nanumbalik sa Akin, sabi ni YAHWEH."
+      },
+      {
+        "num": 11,
+        "text": "Aking ibinuwal ang iba sa inyo, gaya nang Aking ibuwal ang Sodoma at Gomorra, at kayo'y naging gaya ng dupong na naagaw sa apoy: gayon ma'y hindi kayo nanumbalik sa Akin, sabi ni YAHWEH."
+      },
+      {
+        "num": 12,
+        "text": "Kaya't ganito ang gagawin ko sa iyo, Oh Israel; at yamang Aking gagawin ito sa iyo, humanda kang salubungin mo ang iyong Elohim, Oh Israel."
+      },
+      {
+        "num": 13,
+        "text": "Sapagka't, narito, siyang nag-aanyo ng mga bundok, at lumilikha ng hangin, at nagpapahayag sa tao kung ano ang kaniyang pag-iisip; na nagpapadilim ng umaga, at yumayapak sa mga mataas na dako ng lupa, si YAHWEH, ang Elohim ng mga hukbo ay siya niyang Pangalan."
+      }
+    ],
+    "5": [
+      {
+        "num": 1,
+        "text": "Dinggin ninyo ang salitang ito na aking itinataghoy sa inyo, Oh sangbahayan ni Israel."
+      },
+      {
+        "num": 2,
+        "text": "Ang dalaga ng Israel ay nabuwal; siya'y hindi na magbabangon pa, siya'y nahagis sa kaniyang lupain; walang magbangon sa kaniya."
+      },
+      {
+        "num": 3,
+        "text": "Sapagka't ganito ang sabi ni YAHWEH Elohim: Ang bayan na lalabas na isang libo, maiiwang isang daan, at ang lalabas na isang daan ay maiiwang sangpu, sa sangbahayan ni Israel."
+      },
+      {
+        "num": 4,
+        "text": "Sapagka't ganito ang sabi ni YAHWEH sa sangbahayan ni Israel; Hanapin ninyo Ako, at kayo'y mabubuhay."
+      },
+      {
+        "num": 5,
+        "text": "Nguni't huwag ninyong hanapin ang Beth-el, ni magsipasok man sa Gilgal, at huwag kayong magsidaan sa Beer-seba: sapagka't walang pagsala ang Gilgal ay papasok sa pagkabihag, at ang Beth-el ay mauuwi sa wala."
+      },
+      {
+        "num": 6,
+        "text": "Inyong hanapin si YAHWEH, at kayo'y mabubuhay; baka siya'y sumigalbong parang apoy sa sangbahayan ni Yoseph, at supukin yaon, at sa Beth-el ay walang makapapatay niyaon:"
+      },
+      {
+        "num": 7,
+        "text": "Kayong nagiging ahenho sa kahatulan, at nagwawaksi ng katuwiran sa lupa."
+      },
+      {
+        "num": 8,
+        "text": "Inyong hanapin ang Elohim ng mga Pleyades at ng Orion, at ang lilim ng kamatayan ay pinapaging umaga, pinapagdilim ang araw sa pamamagitan ng gabi; yaong tumatawag sa tubig sa dagat, at nagbubugso ng mga yaon sa ibabaw ng lupa - YAHWEH ang siya niyang Pangalan;"
+      },
+      {
+        "num": 9,
+        "text": "Yaong nagdadala ng biglang kabuwalan sa malakas, na anopa't ang pagkasira ay dumarating sa katibayan."
+      },
+      {
+        "num": 10,
+        "text": "Kanilang kinapopootan ang nananaway sa pintuang bayan, at kanilang kinasusuklaman ang nagsasalita ng matuwid."
+      },
+      {
+        "num": 11,
+        "text": "Palibhasa nga't inyong niyayapakan ang dukha, at inyong hinihingan siya ng trigo: kayo'y nangagtayo ng mga bahay na batong tinabas, nguni't hindi ninyo tatahanan; kayo'y nagtanim ng mga maligayang ubasan, nguni't hindi kayo magsisiinom ng alak niyaon."
+      },
+      {
+        "num": 12,
+        "text": "Sapagka't talastas ko kung gaano karami ang inyong mga pagsalangsang, at kung gaano kalaki ang inyong mga kasalanan: kayong nagsisidalamhati sa ganap, na kinukunan ninyo ng suhol, at inyong inililigaw sa kanilang matuwid ang mapagkailangan sa pintuang bayan."
+      },
+      {
+        "num": 13,
+        "text": "Kaya't siya na mabait ay tatahimik sa panahong yaon; sapagka't masamang panahon."
+      },
+      {
+        "num": 14,
+        "text": "Magsihanap kayo ng kabutihan, at huwag kasamaan, upang kayo'y mabuhay; at sa gayo'y si YAHWEH, ang Elohim ng mga hukbo, ay sasa inyo, gaya ng inyong sinasabi."
+      },
+      {
+        "num": 15,
+        "text": "Inyong kapootan ang masama, at ibigin ang mabuti, at kayo'y magtatatag ng kahatulan sa pintuang bayan: marahil si YAHWEH, ang Elohim ng mga hukbo ay magiging mapagbiyaya sa nalabi sa Yoseph."
+      },
+      {
+        "num": 16,
+        "text": "Kaya't ganito ang sabi ni YAHWEH, ang Elohim ng mga hukbo, ni YAHWEH: Panaghoy ay sa lahat na daan; at sila'y magsasabi sa lahat na lansangan, Sa aba! sa aba! at kanilang tatawagin ang mangbubukid sa pananambitan, at ang lahat na bihasa sa pananaghoy sa pagtaghoy."
+      },
+      {
+        "num": 17,
+        "text": "At sa lahat ng ubasan ay magkakaroon ng panaghoy; sapagka't Ako'y daraan sa gitna mo, sabi ni YAHWEH."
+      },
+      {
+        "num": 18,
+        "text": "Sa aba ninyo na nagnanasa ng Kaarawan ni YAHWEH! bakit ninyo ninanasa ang Kaarawan ni YAHWEH? kadiliman nga, at hindi kaliwanagan."
+      },
+      {
+        "num": 19,
+        "text": "Gaya ng kung ang tao ay tumatakas sa leon, at isang oso ang sumasalubong sa kaniya; o pumapasok sa bahay at ikinakapit ang kaniyang kamay sa pinid, at isang ahas ang tumutuka sa kaniya."
+      },
+      {
+        "num": 20,
+        "text": "Hindi baga magiging kadiliman ang kaarawan ni YAHWEH, at hindi kaliwanagan? na totoong madilim, at walang ningning?"
+      },
+      {
+        "num": 21,
+        "text": "Aking kinapopootan, Aking hinahamak ang inyong mga kapistahan, at hindi Ako malulugod sa inyong mga takdang kapulungan."
+      },
+      {
+        "num": 22,
+        "text": "Oo, bagaman inyong ihandog sa Akin ang inyong mga handog na susunugin at mga handog na harina, hindi ko tatanggapin; ni Akin mang kalulugdan ang mga handog tungkol sa kapayapaan na inyong mga matabang hayop."
+      },
+      {
+        "num": 23,
+        "text": "Ihiwalay mo sa Akin ang ingay ng iyong mga awit; sapagka't hindi ko didinggin ang tinig ng iyong mga biola."
+      },
+      {
+        "num": 24,
+        "text": "Kundi bumugso ang katarungan na parang tubig, at ang katuwiran na parang malakas na agos."
+      },
+      {
+        "num": 25,
+        "text": "Nagdala baga kayo sa Akin ng mga hain, at ng mga handog sa ilang na apat na pung taon, Oh sangbahayan ni Israel?"
+      },
+      {
+        "num": 26,
+        "text": "Oo, inyong pinasan ang Tabernakulo ng inyong hari at ang dambana ng inyong mga larawan, ang bituin ng inyong diyos, na inyong ginawa para sa inyong sarili."
+      },
+      {
+        "num": 27,
+        "text": "Kaya't kayo'y Aking papapasukin sa pagkabihag sa dako roon ng Damasco, sabi ng Elohim, na ang Pangala'y YAHWEH ng mga hukbo."
+      }
+    ],
+    "6": [
+      {
+        "num": 1,
+        "text": "Sa aba nila na nagwawalang bahala sa Sion, at nila na mga tiwasay sa bundok ng Samaria, na magigiting na lalake sa mga pangulong bansa, ng mga pinupuntahan ng sangbahayan ni Israel!"
+      },
+      {
+        "num": 2,
+        "text": "Magsidaan kayo sa Calne, at inyong tingnan; at mula roon ay magsiparoon kayo sa Hamath na malaki; kung magkagayo'y magsibaba kayo sa Gath ng mga Pilisteo: magaling baga sila kaysa mga kahariang ito? o malaki baga ang kanilang hangganan kaysa inyong hangganan?"
+      },
+      {
+        "num": 3,
+        "text": "Kayong naglalayo ng masamang araw at nagpapalit ng likmuan ng karahasan;"
+      },
+      {
+        "num": 4,
+        "text": "Na nahihiga sa mga higaang garing, at nagsisiunat sa kanilang mga hiligan, at nagsisikain ng mga batang tupa na mula sa kawan, at ng mga guya na mula sa gitna ng kulungan;"
+      },
+      {
+        "num": 5,
+        "text": "Na nagsisiawit ng mga pagayon-gayong awit sa tinig ng biola; na nagsisikatha sa ganang kanilang sarili ng mga panugtog ng tugtugin, na gaya ni Dawid;"
+      },
+      {
+        "num": 6,
+        "text": "Na nagsisiinom ng alak sa mga mangkok, at nagsisipagpahid ng mga mainam na pabango; nguni't hindi nahahapis sa pagdadalamhati ng Yoseph."
+      },
+      {
+        "num": 7,
+        "text": "Sila nga ngayo'y magsisiyaong bihag na kasama ng unang nagsiyaong bihag, at ang kasayahan nila na nagsisihiga ay mapaparam."
+      },
+      {
+        "num": 8,
+        "text": "Si YAHWEH Elohim ay sumumpa sa kaniyang sarili, sabi ni YAHWEH, ng Elohim ng mga hukbo: Aking kinayayamutan ang karilagan ng Ya’aqob, at Aking kinapopootan ang kaniyang mga palasyo; kaya't Aking ibibigay ang bayan sangpu ng lahat na nandoon."
+      },
+      {
+        "num": 9,
+        "text": "At mangyayari, kung may matirang sangpung tao sa isang bahay, na pawang mamamatay."
+      },
+      {
+        "num": 10,
+        "text": "At kapag itataas siya ng amain, sa makatuwid baga'y ng sumusunog sa kaniya, upang ilabas ang mga buto sa bahay, at sasabihin doon sa nasa pinakaloob ng bahagi ng bahay, May kasama ka pa bagang sinoman? at kaniyang sasabihin: Wala; kung magkagayon ay sasabihin niya: Tumahimik ka; dahil hindi natin mababanggit ang Pangalan ni YAHWEH."
+      },
+      {
+        "num": 11,
+        "text": "Sapagka't narito, nag-uutos si YAHWEH, at ang malaking bahay ay magkakasira, at ang munting bahay ay magkakabutas."
+      },
+      {
+        "num": 12,
+        "text": "Tatakbo baga ang mga kabayo sa malaking bato? mag-aararo baga roon ang sino man sa pamamagitan ng mga toro? inyo ngang ginagawang kapaitan ang katarungan, at ahenho ang bunga ng katuwiran,"
+      },
+      {
+        "num": 13,
+        "text": "Kayong nagagalak sa isang bagay na walang kabuluhan na nagsasabi; Di baga kami ay nagtaglay para sa amin ng mga sungay sa pamamagitan ng aming sariling kalakasan?"
+      },
+      {
+        "num": 14,
+        "text": "Sapagka't, narito, Aking ititindig laban sa inyo ang isang bansa, Oh sangbahayan ni Israel, sabi ni YAHWEH, ang AMA ng mga hukbo; at kanilang pagdadalamhatiin kayo mula sa pasukan sa Hamath hanggang sa batis ng Araba."
+      }
+    ],
+    "7": [
+      {
+        "num": 1,
+        "text": "Ganito nagpakita sa akin si YAHWEH Elohim: at, narito, siya'y Elohim ng mga balang sa pasimula ng huling pagsibol ng ani; at, narito, na siyang huling ani pagkatapos ng mga gapas para sa hari."
+      },
+      {
+        "num": 2,
+        "text": "At nangyari, na nang kanilang matapos makain ang pananim sa lupain, akin ngang sinabi, Oh YAHWEH Elohim, isinasamo ko sa iyo, na magpatawad ka: paanong tatayo ang Ya’aqob? sapagka't siya'y maliit."
+      },
+      {
+        "num": 3,
+        "text": "Ang Elohim ay nagsisi tungkol dito, Hindi mangyayari, sabi ni YAHWEH."
+      },
+      {
+        "num": 4,
+        "text": "Ganito nagpakita sa akin si YAHWEH Elohim: at, narito, si YAHWEH Elohim ay tumawag, upang humatol sa pamamagitan ng apoy; at sinupok ang malaking kalaliman, at susupukin sana ang lupain."
+      },
+      {
+        "num": 5,
+        "text": "Nang magkagayon ay sinabi ko, Oh YAHWEH Elohim, itigil mo, isinasamo ko sa iyo: paanong makatatayo ang Ya’aqob? dahil siya'y maliit."
+      },
+      {
+        "num": 6,
+        "text": "Ang Elohim ay nagsisi tungkol dito: Ito'y hindi rin mangyayari, sabi ni YAHWEH Elohim."
+      },
+      {
+        "num": 7,
+        "text": "Ganito siya nagpakita sa akin: at, narito, si YAHWEH ay nakatayo sa tabi ng isang kuta na ang pagkayari ay ayon sa pabatong tingga, na may pabatong tingga sa kaniyang kamay."
+      },
+      {
+        "num": 8,
+        "text": "At sinabi ni YAHWEH sa akin, Amos, anong iyong nakikita? At aking sinabi, Isang pabatong tingga. Nang magkagayo'y sinabi ni YAHWEH, Narito, Ako'y maglalagay ng pabatong tingga sa gitna ng Aking bayang Israel; hindi na Ako magdadaan pa sa kanila;"
+      },
+      {
+        "num": 9,
+        "text": "At ang mga mataas na dako ng Yitshaq ay magiging sira, at ang mga santuariyo ng Israel ay mahahandusay na wasak; at Ako'y babangon na may tabak laban sa sangbahayan ni Yaro’bam."
+      },
+      {
+        "num": 10,
+        "text": "Nang magkagayo'y nagsugo si Amasiyah na saserdote sa Beth-el kay Yaro’bam na hari sa Israel, na nagsasabi, Si Amos ay nagbanta laban sa iyo sa gitna ng angkan ni Israel: hindi mababata ng lupain ang lahat niyang mga salita."
+      },
+      {
+        "num": 11,
+        "text": "Sapagka't ganito ang sabi ni Amos, Si Yaro’bam ay mamamatay sa pamamagitan ng tabak at ang Israel ay walang pagsalang dadalhing bihag mula sa kaniyang lupain."
+      },
+      {
+        "num": 12,
+        "text": "Sinabi rin ni Amasiyah kay Amos, Oh ikaw na tagakita, yumaon ka, at tumakas ka sa lupain ng Yehudah, at doo'y kumain ka ng tinapay, at manghula ka roon:"
+      },
+      {
+        "num": 13,
+        "text": "Nguni't huwag ka nang manghula pa sa Beth-el: sapagka't siyang santuariyo ng hari, at siyang bahay-hari."
+      },
+      {
+        "num": 14,
+        "text": "Nang magkagayo'y sumagot si Amos, at nagsabi kay Amasiyah, Ako'y hindi propeta, o anak man ng propeta; kundi ako'y pastol, at manggagawa sa mga puno ng sikomoro:"
+      },
+      {
+        "num": 15,
+        "text": "At kinuha ako ni YAHWEH mula sa pagsunod sa kawan, at sinabi ni YAHWEH sa akin, Ikaw ay yumaon, manghula ka sa Aking bayang Israel."
+      },
+      {
+        "num": 16,
+        "text": "Kaya't ngayo'y dinggin mo ang salita ni YAHWEH, Iyong sinasabi, Huwag kang manghula laban sa Israel, at huwag mong ihulog ang iyong salita laban sa angkan ni Yitshaq:"
+      },
+      {
+        "num": 17,
+        "text": "Kaya't ganito ang sabi ni YAHWEH, Ang iyong asawa ay magiging patutot sa bayan, at ang iyong mga anak na lalake at babae ay mabubuwal sa pamamagitan ng tabak, at ang iyong lupain ay mababahagi sa pamamagitan ng pising panukat; at ikaw ay mamamatay sa isang lupaing marumi, at ang Israel ay walang pagsalang dadalhing bihag mula sa kaniyang lupain."
+      }
+    ],
+    "8": [
+      {
+        "num": 1,
+        "text": "Ganito nagpakita si YAHWEH Elohim sa akin: at, narito, ang isang bakol ng bunga ng tag-init."
+      },
+      {
+        "num": 2,
+        "text": "At kaniyang sinabi, Amos, anong iyong nakikita? At aking sinabi, Isang bakol ng bunga ng tag-init. Nang magkagayo'y sinabi ni YAHWEH sa akin, Ang wakas ay dumating sa Aking bayang Israel; hindi na Ako daraan pa uli sa kanila."
+      },
+      {
+        "num": 3,
+        "text": "At ang mga awit sa Templo ay magiging mga pananambitan sa araw na yaon, sabi ni YAHWEH Elohim: ang mga bangkay ay magiging marami; sa bawa't dako ay tahimik silang itatapon."
+      },
+      {
+        "num": 4,
+        "text": "Pakinggan ninyo ito, Oh kayong nang-aapi sa mga nangangailangan, at inyong pinagkukulang ang dukha sa lupain,"
+      },
+      {
+        "num": 5,
+        "text": "Na sinasabi, Kailan daraan ang bagong buwan, upang tayo'y makapagbili ng gugulayin at ang Sabbath, upang ating mailabas ang trigo? na gawing munti ang epha, at malaki ang siklo, at gumawa ng karayaan sa magdarayang timbangan;"
+      },
+      {
+        "num": 6,
+        "text": "Upang ating mabili ng pilak ang dukha, at ng dalawang paang panyapak ang api, at maipagbili ang ipa ng trigo."
+      },
+      {
+        "num": 7,
+        "text": "Si YAHWEH ay sumumpa alang-alang sa karilagan ng Ya’aqob, Tunay na hindi ko kalilimutan kailan man ang alin man sa kanilang mga gawa."
+      },
+      {
+        "num": 8,
+        "text": "Hindi baga manginginig ang lupain dahil dito, at mananaghoy ang bawa't tumatahan doon? oo, sasampang buo na gaya ng Ilog; at mababagabag at lulubog uli, gaya ng Ilog ng Egipto."
+      },
+      {
+        "num": 9,
+        "text": "At mangyayari sa araw na yaon, sabi ni YAHWEH Elohim, na Aking palulubugin ang araw sa katanghaliang tapat, at Aking padidilimin ang lupa sa maliwanag na araw."
+      },
+      {
+        "num": 10,
+        "text": "At Aking papalitan ng panaghoy ang inyong mga kapistahan, at taghoy ang lahat ninyong awit; at Ako'y maglalagay ng telang magaspang sa lahat na balakang, at kakalbuhan sa bawa't ulo; at Aking gagawing gaya ng pagtaghoy sa isang bugtong na anak, at ang wakas niyaon ay gaya ng mapanglaw na araw."
+      },
+      {
+        "num": 11,
+        "text": "Narito, ang mga araw ay dumarating, sabi ni YAHWEH Elohim, na Ako ay magpapasapit ng kagutom sa lupain, hindi kagutom sa tinapay, o kauhawan man dahil sa tubig, kundi sa pagkarinig ng mga Salita ni YAHWEH."
+      },
+      {
+        "num": 12,
+        "text": "At sila'y magsisilaboy sa dagat at dagat, at mula sa hilagaan hanggang sa silanganan; sila'y magsisitakbo ng paroo't parito upang hanapin ang Salita ni YAHWEH, at hindi masusumpungan."
+      },
+      {
+        "num": 13,
+        "text": "Sa araw na yaon ay manglulupaypay sa uhaw ang mga magandang dalaga at ang mga binata."
+      },
+      {
+        "num": 14,
+        "text": "Silang nagsisisumpa sa pamamagitan ng kasalanan ng Samaria, at nagsasabi, Buhay ang diyos mo, Oh Dan; at, Buhay ang daan ng Beer-seba; sila'y mabubuwal, at kailan may hindi na makababangon."
+      }
+    ],
+    "9": [
+      {
+        "num": 1,
+        "text": "Aking nakita si YAHWEH na nakatayo sa tabi ng dambana: at kaniyang sinabi, Hampasin mo ang mga kapitel, upang ang mga tungtungan ay mauga; at magkakaputol-putol sa ulo nilang lahat; at Aking papatayin ng tabak ang huli sa kanila: walang makatatakas sinoman sa kanila, at walang makatatanang sinoman sa kanila."
+      },
+      {
+        "num": 2,
+        "text": "Bagaman sila'y humukay hanggang sa Sheol, mula roo'y kukunin sila ng Aking kamay; at kahit sila'y sumampa hanggang sa langit, mula roo'y ibababa ko sila."
+      },
+      {
+        "num": 3,
+        "text": "At bagaman sila'y magsipagtago sa taluktok ng Carmelo, Aking hahanapin at kukunin sila mula roon; at bagaman sila'y magsikubli sa Aking paningin sa gitna ng dagat, mula roo'y uutusan ko ang ahas, at tutukain niyaon sila."
+      },
+      {
+        "num": 4,
+        "text": "At bagaman sila'y magsipasok sa pagkabihag sa harap ng kanilang mga kaaway, mula roon ay Aking uutusan ang tabak, at papatayin niyaon sila: at Aking itititig ang Aking mga mata sa kanila sa ikasasama, at hindi sa ikabubuti."
+      },
+      {
+        "num": 5,
+        "text": "Sapagka't si YAHWEH, ang AMA ng mga hukbo, ay siyang humihipo ng lupain at natutunaw, at lahat na nagsisitahan doon ay magsisitangis; at babangong samasama na gaya ng Ilog, at lulubog uli, na gaya ng Ilog ng Egipto;"
+      },
+      {
+        "num": 6,
+        "text": "Siya na gumawa ng kaniyang mga silid sa langit, at kumatha ng kaniyang balantok sa lupa; siya na tumatawag ng tubig sa dagat at ibinubugso sa ibabaw ng lupa; YAHWEH ang kaniyang Pangalan."
+      },
+      {
+        "num": 7,
+        "text": "Di baga kayo'y parang mga anak ng mga taga Etiopia sa Akin, Oh mga anak ni Israel? sabi ni YAHWEH. Hindi ko baga pinasampa ang Israel mula sa lupain ng Egipto, at ang mga Pilisteo, ay mula sa Caphtor, at ang mga taga Siria ay sa Chir?"
+      },
+      {
+        "num": 8,
+        "text": "Narito, ang mga mata ni YAHWEH Elohim ay nasa makasalanang kaharian, at Aking ipapahamak mula sa ibabaw ng lupa; liban na hindi ko lubos na ipapahamak ang sangbahayan ni Ya’aqob, sabi ni YAHWEH."
+      },
+      {
+        "num": 9,
+        "text": "Sapagka't, narito, Ako'y mag-uutos, at Aking sasalain ang sangbahayan ni Israel sa gitna ng lahat na bansa, gaya ng trigo na nabithay sa isang bithay, gayon ma'y hindi malalaglag sa lupa ang pinakamaliit na butil."
+      },
+      {
+        "num": 10,
+        "text": "Lahat na makasalanan sa Aking bayan ay mamamatay sa pamamagitan ng tabak, na nagsasabi, Ang kasamaan ay hindi aabot sa atin o mauuna man sa atin."
+      },
+      {
+        "num": 11,
+        "text": "Sa araw na yaon ay ibabangon ko ang Tabernakulo ni Dawid na buwal, at tatakpan ko ang mga sira niyaon; at ibabangon ko ang mga guho niyaon, at Aking itatayo na gaya ng mga araw ng una;"
+      },
+      {
+        "num": 12,
+        "text": "Upang kanilang ariin ang nalabi sa Edom, at ang lahat na bansa na mga tinatawag sa Aking Pangalan, sabi ni YAHWEH na gumagawa nito."
+      },
+      {
+        "num": 13,
+        "text": "Narito ang mga kaarawan ay dumarating, sabi ni YAHWEH, na aabutan ng mang-aararo ang mang-aani, at ng mamimisa ng ubas ang magtatanim ng binhi; at ang mga bundok ay papatak ng matamis na alak, at lahat na burol ay matutunaw."
+      },
+      {
+        "num": 14,
+        "text": "At Akin uling ibabalik ang nabihag sa Aking bayang Israel, at kanilang itatayo ang mga wasak na bayan, at tatahanan nila; at sila ay mag-uubasan, at magsisiinom ng alak; magsisigawa rin sila ng mga halamanan, at magsisikain ng bunga ng mga yaon."
+      },
+      {
+        "num": 15,
+        "text": "At Aking itatatag sila sa kanilang lupain; at hindi na sila mabubunot pa sa kanilang lupain, na Aking ibinigay sa kanila, sabi ni YAHWEH mong Elohim."
+      }
+    ]
+  }
+}

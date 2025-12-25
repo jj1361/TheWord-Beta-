@@ -1,0 +1,436 @@
+{
+  "bookName": "1 John",
+  "bookId": 62,
+  "chapters": {
+    "1": [
+      {
+        "num": 1,
+        "text": "Yaong buhat sa pasimula, yaong aming narinig, yaong nakita ng aming mga mata, yaong aming namasdan, at nahipo ng aming mga kamay, tungkol sa salita ng buhay;"
+      },
+      {
+        "num": 2,
+        "text": "At ang buhay ay nahayag, at aming nakita, at pinatotohanan, at sa inyo'y aming ibinabalita ang buhay, ang buhay na walang hanggan, na kasama ng AMA at sa atin ay nahayag;"
+      },
+      {
+        "num": 3,
+        "text": "Yaong aming nakita at narinig ay siya rin naming ibinabalita sa inyo, upang kayo naman ay magkaroon ng pakikisama sa amin: oo, at tayo ay may pakikisama sa AMA, at sa kaniyang ANAK na si YAHSHUA Messias:"
+      },
+      {
+        "num": 4,
+        "text": "At ang mga bagay na ito ay aming isinusulat, upang ang ating kagalakan ay malubos."
+      },
+      {
+        "num": 5,
+        "text": "At ito ang pasabing aming narinig sa kaniya at sa inyo'y aming ibinabalita, na ang AMA ay ilaw, at sa kaniya'y walang anomang kadiliman."
+      },
+      {
+        "num": 6,
+        "text": "Kung sinasabi nating tayo ay may pakikisama sa kaniya at nagsisilakad tayo sa kadiliman, ay nagbubulaan tayo, at hindi tayo nagsisigawa ng katotohanan:"
+      },
+      {
+        "num": 7,
+        "text": "Nguni't kung tayo'y nagsisilakad sa liwanag, na gaya niyang nasa liwanag, ay may pakikisama tayo sa isa't isa, at nililinis tayo ng dugo ni YAHSHUA na kaniyang ANAK sa lahat ng kasalanan."
+      },
+      {
+        "num": 8,
+        "text": "Kung sinasabi nating tayo'y walang kasalanan, ay ating dinadaya ang ating sarili, at ang katotohanan ay wala sa atin."
+      },
+      {
+        "num": 9,
+        "text": "Kung ipinahahayag natin ang ating mga kasalanan, ay tapat at banal siya na tayo'y patatawarin sa ating mga kasalanan, at tayo'y lilinisin sa lahat ng kalikuan."
+      },
+      {
+        "num": 10,
+        "text": "Kung sinasabi nating tayo'y hindi nagkasala, ay ating ginagawang sinungaling siya, at ang kaniyang Salita ay wala sa atin."
+      }
+    ],
+    "2": [
+      {
+        "num": 1,
+        "text": "Mumunti kong mga anak, ang mga bagay na ito ay isinusulat ko sa inyo upang kayo'y huwag magkasala. At kung ang sinoman ay magkasala, ay may Tagapamagitan tayo sa AMA, si YAHSHUA Messias, ang Matuwid:"
+      },
+      {
+        "num": 2,
+        "text": "At siya ang pangpalubag-loob sa ating mga kasalanan; at hindi lamang sa ating mga kasalanan, kundi ng sa buong sanglibutan din naman."
+      },
+      {
+        "num": 3,
+        "text": "At sa ganito'y nalalaman natin na siya'y ating nakikilala, kung tinutupad natin ang kaniyang mga utos."
+      },
+      {
+        "num": 4,
+        "text": "Ang nagsasabing, Nakikilala ko siya, at hindi tumutupad ng kaniyang mga utos, ay sinungaling, at ang katotohanan ay wala sa kaniya;"
+      },
+      {
+        "num": 5,
+        "text": "Datapuwa't ang sinomang tumutupad ng kaniyang salita, tunay na sa kaniya ay naging sakdal ang pag-ibig ng AMA. Dahil dito'y nalalaman nating tayo'y nasa kaniya:"
+      },
+      {
+        "num": 6,
+        "text": "Ang nagsasabing siya'y nananahan sa kaniya ay nararapat din namang lumakad na gaya ng inilakad niya."
+      },
+      {
+        "num": 7,
+        "text": "Mga minamahal, wala akong isinusulat sa inyo na anomang bagong utos, kundi ang dating utos na nasa inyo buhat nang pasimula; ang dating utos ay ang Salita na inyong narinig."
+      },
+      {
+        "num": 8,
+        "text": "Muli, isang bagong utos ang isinusulat ko sa inyo, bagay na tunay sa kaniya at sa inyo; sapagka't ang kadiliman ay lumilipas, at ang tunay na ilaw ay lumiliwanag na."
+      },
+      {
+        "num": 9,
+        "text": "Ang nagsasabing siya'y nasa liwanag at napopoot sa kaniyang kapatid, ay nasa kadiliman pa hanggang ngayon."
+      },
+      {
+        "num": 10,
+        "text": "Ang umiibig sa kaniyang kapatid ay nananahan sa liwanag, at sa kaniya'y walang anomang kadahilanang ikatitisod."
+      },
+      {
+        "num": 11,
+        "text": "Nguni't ang napopoot sa kaniyang kapatid ay nasa kadiliman, at lumalakad sa kadiliman, at hindi niya nalalaman kung saan siya naparoroon, sapagka't ang kaniyang mga mata ay binulag ng kadiliman."
+      },
+      {
+        "num": 12,
+        "text": "Kayo'y sinusulatan ko, mumunti kong mga anak, sapagka't ipinatawad sa inyo ang inyong mga kasalanan dahil sa kaniyang Pangalan."
+      },
+      {
+        "num": 13,
+        "text": "Kayo'y sinusulatan ko, mga ama, sapagka't inyong nakikilala yaong buhat pa nang pasimula ay siya na. Kayo'y sinusulatan ko, mga binata, sapagka't inyong dinaig ang masama. Kayo'y aking sinulatan, mumunting mga anak, sapagka't inyong nakikilala ang Elohim."
+      },
+      {
+        "num": 14,
+        "text": "Kayo ay aking sinulatan, mga ama, sapagka't inyong nakikilala yaong buhat pa nang pasimula ay siya na. Kayo'y aking sinulatan, mga binata, sapagka't kayo'y malalakas, at ang Salita ni Yahweh ay nananahan sa inyo, at inyong dinaig ang masama."
+      },
+      {
+        "num": 15,
+        "text": "Huwag ninyong ibigin ang sanglibutan, ni ang mga bagay na nasa sanglibutan. Kung ang sinoman ay umiibig sa sanglibutan, ay wala sa kaniya ang pag-ibig ng Elohim."
+      },
+      {
+        "num": 16,
+        "text": "Dahil ang lahat na nasa sanglibutan – ang masamang pita ng laman at ang masamang pita ng mga mata at ang kapalaluan sa buhay - ay hindi mula sa AMA, kundi sa sanglibutan."
+      },
+      {
+        "num": 17,
+        "text": "At ang sanglibutan ay lumilipas, at ang masamang pita niyaon; subali't ang gumagawa ng kalooban ng AMA ay nananahan magpakailan man."
+      },
+      {
+        "num": 18,
+        "text": "Mumunting mga anak, ito ang huling oras: at gaya ng inyong narinig na darating ang anti-Messias, kahit ngayon ay lumitaw ang marami nang anti-Messias; kaya nga nalalaman natin na ito na ang huling oras."
+      },
+      {
+        "num": 19,
+        "text": "Sila'y nahiwalay sa atin, nguni't sila'y hindi sa atin; sapagka't kung sila'y sa atin ay nagsipanatili sana sa atin: nguni't nahiwalay, upang sila'y mahayag na silang lahat ay hindi sa atin."
+      },
+      {
+        "num": 20,
+        "text": "At kayo'y may pahid ng Banal, at nalalaman ninyo ang lahat ng mga bagay."
+      },
+      {
+        "num": 21,
+        "text": "Hindi ko kayo sinulatan ng dahil sa hindi ninyo nalalaman ang katotohanan, kundi dahil sa inyong nalalaman, at sapagka't alin mang kasinungalingan ay hindi sa katotohanan."
+      },
+      {
+        "num": 22,
+        "text": "Sino ang sinungaling, kundi ang tumatanggi na si YAHSHUA ay siyang Messias? Ito ang anti-Messias, sa makatuwid ay ang tumatanggi sa AMA at sa ANAK."
+      },
+      {
+        "num": 23,
+        "text": "Ang sinomang tumatanggi sa ANAK, ay hindi sumasa kaniya ang AMA: ang nagpapahayag sa ANAK ay sumasa kaniya naman ang AMA."
+      },
+      {
+        "num": 24,
+        "text": "Tungkol sa inyo, ay manahan sa inyo ang inyong narinig buhat nang pasimula. Kung manahan sa inyo yaong buhat nang pasimula ay inyong narinig, kayo ay mananahan sa ANAK, at sa AMA."
+      },
+      {
+        "num": 25,
+        "text": "At ito ang pangakong kaniyang ipinangako sa atin, ang buhay na walang hanggan."
+      },
+      {
+        "num": 26,
+        "text": "Isinulat ko sa inyo ang mga bagay na ito tungkol sa mga may ibig na magligaw sa inyo."
+      },
+      {
+        "num": 27,
+        "text": "At tungkol sa inyo, ang Espiritu na sa kaniya'y inyong tinanggap ay nananahan sa inyo, at hindi ninyo kailangang kayo'y turuan ng sinoman; nguni't kung paanong kayo'y tinuturuan ng kaniyang Espiritu tungkol sa lahat ng mga bagay, at siyang totoo, at hindi kasinungalingan, at kung paanong kayo'y tinuruan nito, ay gayon kayong nananahan sa kaniya."
+      },
+      {
+        "num": 28,
+        "text": "At ngayon, mumunti kong mga anak, manahan kayo sa kaniya; upang, kung siya'y mahayag ay magkaroon kayo ng pagtitiwala, at huwag tayong mapahiya sa harapan niya sa kaniyang pagparito."
+      },
+      {
+        "num": 29,
+        "text": "Kung nalalaman ninyong siya'y matuwid, nalalaman naman ninyo na ang bawa't gumagawa ng katuwiran ay ipinanganak niya."
+      }
+    ],
+    "3": [
+      {
+        "num": 1,
+        "text": "Masdan ninyo kung gaanong pag-ibig ang ipinagkaloob sa atin ng Elohim, upang tayo'y matawag na mga anak ng Elohim; at tayo'y gayon nga. Dahil dito'y hindi tayo nakikilala ng sanglibutan, dahil siya'y hindi nakilala nito."
+      },
+      {
+        "num": 2,
+        "text": "Mga minamahal, ngayon ay mga anak tayo ng AMA, at hindi pa nahahayag kung magiging ano tayo. Nalalaman natin, na kung Siya'y mahayag, tayo'y magiging katulad Niya: sapagka't Siya'y ating makikitang gaya ng kaniyang sarili."
+      },
+      {
+        "num": 3,
+        "text": "At sinomang mayroon ng pag-asang ito sa kaniya ay naglilinis sa kaniyang sarili, gaya naman niyang malinis."
+      },
+      {
+        "num": 4,
+        "text": "Ang sinomang gumagawa ng kasalanan ay sumasalangsang din naman sa Kautusan: at ang kasalanan ay ang pagsalangsang sa Kautusan."
+      },
+      {
+        "num": 5,
+        "text": "At nalalaman ninyo na siya'y nahayag upang mag-alis ng mga kasalanan; at sa kaniya'y walang kasalanan."
+      },
+      {
+        "num": 6,
+        "text": "Ang sinomang nananahan sa kaniya ay hindi nagkakasala; sinomang nagkakasala ay hindi nakakita sa kaniya, ni hindi man nakakilala sa kaniya."
+      },
+      {
+        "num": 7,
+        "text": "Mumunti kong mga anak, huwag kayong padaya kanino man: ang gumagawa ng katuwiran ay matuwid, gaya niya na matuwid:"
+      },
+      {
+        "num": 8,
+        "text": "Ang gumagawa ng kasalanan ay sa diyablo; sapagka't buhat pa nang pasimula ay nagkakasala ang diyablo. Sa bagay na ito'y nahayag ang ANAK ng AMA, upang iwasak ang mga gawa ng diyablo."
+      },
+      {
+        "num": 9,
+        "text": "Ang sinomang ipinanganak ng AMA ay hindi nagkakasala, sapagka't ang kaniyang binhi ay nananahan sa kaniya: at siya'y hindi maaaring magkasala, sapagka't siya'y ipinanganak ng AMA."
+      },
+      {
+        "num": 10,
+        "text": "Dito nahahayag ang mga anak ng AMA, at ang mga anak ng diyablo: ang sinomang hindi gumagawa ng katuwiran ay hindi sa AMA, ni ang hindi umiibig sa kaniyang kapatid."
+      },
+      {
+        "num": 11,
+        "text": "Sapagka't ito ang pasabing inyong narinig buhat ng pasimula, na mag-ibigan tayo sa isa't isa:"
+      },
+      {
+        "num": 12,
+        "text": "Hindi gaya ni Cain na siya'y sa masama, at pinatay ang kaniyang kapatid. At bakit niya pinatay? Sapagka't ang kaniyang mga gawa ay masama, at ang mga gawa ng kaniyang kapatid ay matuwid."
+      },
+      {
+        "num": 13,
+        "text": "Huwag kayong magtaka, mga kapatid, kung kayo'y kinapopootan ng sanglibutan."
+      },
+      {
+        "num": 14,
+        "text": "Nalalaman nating tayo'y nalipat na sa buhay mula sa kamatayan, sapagka't tayo'y nagsisiibig sa mga kapatid. Ang hindi umiibig ay nananahan sa kamatayan."
+      },
+      {
+        "num": 15,
+        "text": "Ang sinomang napopoot sa kaniyang kapatid ay mamamatay-tao: at nalalaman ninyong sinomang mamamatay-tao ay hindi pinananahanan ng buhay na walang hanggan."
+      },
+      {
+        "num": 16,
+        "text": "Dito'y nakikilala natin ang pag-ibig, sapagka't kaniyang ibinigay ang kaniyang buhay dahil sa atin; at nararapat nating ibigay ang ating mga buhay dahil sa mga kapatid."
+      },
+      {
+        "num": 17,
+        "text": "Datapuwa't ang sinomang mayroong mga pag-aari sa sanglibutang ito, at nakikita ang kaniyang kapatid na nangangailangan, at doo'y ipagkait ang kaniyang awa, paanong mananahan ang pag-ibig ng AMA sa kaniya?"
+      },
+      {
+        "num": 18,
+        "text": "Mumunti kong mga anak, huwag tayong magsiibig ng salita, ni ng dila man; kundi ng gawa at katotohanan."
+      },
+      {
+        "num": 19,
+        "text": "Dito ay makikilala nating tayo ay sa katotohanan, at papapanatagin natin ang ating mga puso sa harapan niya."
+      },
+      {
+        "num": 20,
+        "text": "Sapagka't kung hinahatulan tayo ng ating puso, ang AMA ay lalong dakila kaysa ating puso, at nalalaman niya ang lahat ng mga bagay."
+      },
+      {
+        "num": 21,
+        "text": "Mga minamahal, kung tayo ay hindi hinahatulan ng ating puso, ay may pagtitiwala tayo sa AMA;"
+      },
+      {
+        "num": 22,
+        "text": "At anomang ating hingin ay tinatanggap natin sa kaniya, sapagka't tinutupad natin ang kaniyang mga utos at ginagawa natin ang mga bagay na kalugod-lugod sa kaniyang paningin."
+      },
+      {
+        "num": 23,
+        "text": "At ito ang kaniyang utos, na manampalataya tayo sa Pangalan ng kaniyang ANAK na si YAHSHUA Messias, at tayo'y mag-ibigan, ayon sa ibinigay niyang utos sa atin."
+      },
+      {
+        "num": 24,
+        "text": "At ang tumutupad ng kaniyang mga utos ay mananahan sa kaniya, at siya ay sa kaniya. At dito'y nakikilala natin na siya'y nananahan sa atin, sa pamamagitan ng Espiritu na kaniyang ibinigay sa atin."
+      }
+    ],
+    "4": [
+      {
+        "num": 1,
+        "text": "Mga minamahal, huwag kayong magsipaniwala sa bawa't espiritu, kundi inyong subukin ang mga espiritu, kung sila'y sa AMA: sapagka't maraming nagsilitaw na mga bulaang propeta sa sanglibutan."
+      },
+      {
+        "num": 2,
+        "text": "Dito'y nakikilala ninyo ang Espiritu ng AMA: ang bawa't espiritung nagpapahayag na si YAHSHUA Messias ay naparitong nasa laman ay sa AMA:"
+      },
+      {
+        "num": 3,
+        "text": "At ang bawa't espiritung hindi ipinahahayag si YAHSHUA, ay hindi sa Elohim: at ito ang sa anti-Messias, na inyong narinig na darating; at ngayo'y nasa sanglibutan na."
+      },
+      {
+        "num": 4,
+        "text": "Kayo'y sa Elohim, mumunti kong mga anak, at inyong dinaig sila: sapagka't lalong dakila siyang nasa inyo kaysa nasa sanglibutan."
+      },
+      {
+        "num": 5,
+        "text": "Sila'y sa sanglibutan: kaya't tungkol sa sanglibutan ang sinasalita nila, at sila ay dinidinig ng sanglibutan."
+      },
+      {
+        "num": 6,
+        "text": "Tayo nga'y sa Elohim: ang nakakakilala sa Elohim ay dumirinig sa atin; ang hindi sa Elohim ay hindi dumirinig sa atin. Dito'y ating nakikilala ang espiritu ng katotohanan, at ang espiritu ng kamalian."
+      },
+      {
+        "num": 7,
+        "text": "Mga minamahal, mag-ibigan tayo sa isa't isa: sapagka't ang pag-ibig ay sa AMA; at ang bawa't umiibig ay ipinanganak ng AMA, at nakakakilala sa Elohim."
+      },
+      {
+        "num": 8,
+        "text": "Ang hindi umiibig ay hindi nakakakilala sa Elohim; sapagka't ang Elohim ay pag-ibig."
+      },
+      {
+        "num": 9,
+        "text": "Dito nahayag ang pag-ibig ng AMA sa atin, sapagka't sinugo ng AMA ang kaniyang bugtong na ANAK sa sanglibutan upang tayo'y mabuhay sa pamamagitan niya."
+      },
+      {
+        "num": 10,
+        "text": "Narito ang pag-ibig, hindi sa tayo'y umibig sa AMA, kundi siya ang umibig sa atin, at sinugo ang kaniyang ANAK na pangpalubag-loob sa ating mga kasalanan."
+      },
+      {
+        "num": 11,
+        "text": "Mga minamahal, kung tayo'y inibig ng AMA ng gayon, ay nararapat na mag-ibigan din naman tayo."
+      },
+      {
+        "num": 12,
+        "text": "Sinoman ay hindi nakakita kailan man sa Elohim: kung tayo'y nag-iibigan, ang Elohim ay nananahan sa atin, at ang kaniyang pag-ibig ay nagiging sakdal sa atin:"
+      },
+      {
+        "num": 13,
+        "text": "Dito ay nakikilala natin na tayo ay nananahan sa Kaniya at Siya'y sa atin, sapagka't binigyan niya tayo ng kaniyang Espiritu."
+      },
+      {
+        "num": 14,
+        "text": "At nakita natin at sinasaksihan na sinugo ng AMA ang ANAK upang maging Tagapagligtas ng sanglibutan."
+      },
+      {
+        "num": 15,
+        "text": "Ang sinomang nagpapahayag na si YAHSHUA ay ANAK ng Elohim, ang AMA ay nananahan sa kaniya, at siya ay sa Elohim."
+      },
+      {
+        "num": 16,
+        "text": "At ating sinampalatayanan at nakilala ang pag-ibig ng AMA sa atin. Ang AMA ay pag-ibig; at ang nananahan sa pag-ibig ay nananahan sa AMA, at ang AMA ay nananahan sa kaniya."
+      },
+      {
+        "num": 17,
+        "text": "Dito'y naging sakdal ang pag-ibig sa atin, upang tayo'y magkaroon ng pagtitiwala sa araw ng paghuhukom; sapagka't kung ano siya, ay gayon din naman tayo sa sanglibutang ito."
+      },
+      {
+        "num": 18,
+        "text": "Walang pagkatakot sa pag-ibig: kundi ang sakdal na pag-ibig ay nagpapalayas ng takot, sapagka't ang takot ay may kaparusahan; at ang natatakot ay hindi pa pinasasakdal sa pag-ibig."
+      },
+      {
+        "num": 19,
+        "text": "Tayo'y nagsisiibig, sapagka't siya ay unang umibig sa atin."
+      },
+      {
+        "num": 20,
+        "text": "Kung sinasabi ng sinoman, Ako'y umiibig sa AMA, at napopoot sa kaniyang kapatid, ay sinungaling; sapagka't ang hindi umiibig sa kaniyang kapatid na kaniyang nakita, ay paanong makaiibig siya sa AMA na hindi niya nakita?"
+      },
+      {
+        "num": 21,
+        "text": "At ang utos na itong mula sa kaniya ay nasa atin, na ang umiibig sa AMA ay dapat umibig sa kaniyang kapatid."
+      }
+    ],
+    "5": [
+      {
+        "num": 1,
+        "text": "Ang sinomang nananampalataya na si YAHSHUA ay siyang Messias ay ipinanganak ng Elohim: at ang bawa't umiibig sa nanganak ay umiibig din naman sa ipinanganak niyaon."
+      },
+      {
+        "num": 2,
+        "text": "Dito'y ating nakikilala na tayo'y nagsisiibig sa mga anak ng AMA, kapag tayo'y nagsisiibig sa AMA at tinutupad natin ang kaniyang mga utos."
+      },
+      {
+        "num": 3,
+        "text": "Sapagka't ito ang pag-ibig sa AMA, na ating tuparin ang kaniyang mga utos: at ang kaniyang mga utos ay hindi mabibigat."
+      },
+      {
+        "num": 4,
+        "text": "Sapagka't ang sinomang ipinanganak ng AMA ay dumadaig sa sanglibutan: at ito ang tagumpay na dumadaig sa sanglibutan, sa makatuwid ay ang ating pananampalataya."
+      },
+      {
+        "num": 5,
+        "text": "At sino ang dumadaig sa sanglibutan, kundi ang nananampalatayang si YAHSHUA ay ANAK ng Elohim?"
+      },
+      {
+        "num": 6,
+        "text": "Ito yaong naparito sa pamamagitan ng tubig at dugo, sa makatuwid ay si YAHSHUA Messias; hindi sa tubig lamang, kundi sa tubig at sa dugo. At ang Espiritu ang nagpapatotoo, sapagka't ang Espiritu ay katotohanan"
+      },
+      {
+        "num": 7,
+        "text": "Sapagka't may tatlong nagpapatotoo:"
+      },
+      {
+        "num": 8,
+        "text": "Ang Espiritu, ang tubig, at ang dugo: at ang tatlo ay nagkakaisa."
+      },
+      {
+        "num": 9,
+        "text": "Kung tinatanggap natin ang patotoo ng mga tao, ay lalong dakila ang patotoo ng AMA, sapagka't ito ang patotoo ng Elohim: sapagka't ito ay papatotoo tungkol sa kaniyang ANAK."
+      },
+      {
+        "num": 10,
+        "text": "Ang nananampalataya sa ANAK ng Elohim ay may patotoo sa kaniya: ang hindi nananampalataya sa AMA ay ginagawang isang sinungaling ang AMA: sapagka't hindi sumampalataya sa patotoo na ibinigay ng AMA tungkol sa kaniyang ANAK."
+      },
+      {
+        "num": 11,
+        "text": "At ito ang patotoo, na tayo'y binigyan ng AMA ng buhay na walang hanggan, at ang buhay na ito ay nasa kaniyang ANAK."
+      },
+      {
+        "num": 12,
+        "text": "Ang kinaroroonan ng ANAK ay kinaroroonan ng buhay; ang hindi kinaroroonan ng ANAK ng Elohim ay hindi kinaroroonan ng buhay."
+      },
+      {
+        "num": 13,
+        "text": "Ang mga bagay na ito ay isinulat ko sa inyo, upang inyong maalaman na kayo'y mayroong buhay na walang hanggan, sa makatuwid ay sa inyong nananampalataya sa Pangalan ng ANAK ng Elohim."
+      },
+      {
+        "num": 14,
+        "text": "At ito ang nasa ating pagkakatiwala sa kaniya, na kung tayo'y humingi ng anomang bagay na ayon sa kaniyang kalooban, ay dinidinig niya tayo:"
+      },
+      {
+        "num": 15,
+        "text": "At kung ating nalalaman na tayo'y dinidinig niya sa anomang ating hingin, ay nalalaman natin na nasa atin ang mga kahilingang sa kaniya'y ating hiningi."
+      },
+      {
+        "num": 16,
+        "text": "Kung makita ng sinoman na ang kaniyang kapatid ay nagkakasala ng kasalanang hindi ikamamatay, ay idalangin siya at bibigyan siya ng AMA ng buhay, na ukol sa mga nagkakasala nang hindi ikamamatay. May kasalanang ikamamatay: hindi tungkol dito ang sinasabi ko na idalangin niya."
+      },
+      {
+        "num": 17,
+        "text": "Lahat ng kalikuan ay kasalanan: at may kasalanang hindi ikamamatay."
+      },
+      {
+        "num": 18,
+        "text": "Nalalaman natin na ang sinomang ipinanganak ng AMA ay hindi nagkakasala; datapuwa't ang ipinanganak ng AMA ay nag-iingat sa kaniyang sarili, at hindi siya ginagalaw ng masama."
+      },
+      {
+        "num": 19,
+        "text": "Nalalaman natin na tayo'y sa AMA at ang buong sanglibutan ay nakahilig sa masama."
+      },
+      {
+        "num": 20,
+        "text": "At nalalaman natin na naparito ang ANAK ng AMA, at tayo'y binigyan ng pagkaunawa, upang ating makilala siya na totoo, at tayo'y nasa kaniya na totoo, sa makatuwid ay sa kaniyang ANAK na si YAHSHUA Messias. Ito ang tunay na Elohim, at ang buhay na walang hanggan."
+      },
+      {
+        "num": 21,
+        "text": "Mga anak ko, mag-ingat kayo sa mga imahe (diyos)."
+      }
+    ]
+  }
+}

@@ -4,6 +4,7 @@ import { extractHebrewLetters, getHebrewLetterInfo } from '../config/hebrewLette
 import { getWordImage, getImagePath, getImageSize, WordImageMapping } from '../config/youthModeConfig';
 import { HighlightColor, HIGHLIGHT_COLORS, TextFormatting } from '../types/notes';
 import { getPartOfSpeechName } from '../utils/partsOfSpeech';
+import { useTranslation } from '../contexts/TranslationContext';
 import './VerseDisplay.css';
 
 // Tooltip state interface
@@ -34,6 +35,7 @@ interface VerseDisplayProps {
 }
 
 const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interlinearVerse, onLetterClick, onStrongsClick, onPersonClick, onYouthImageClick, isSelected, onVerseClick, onCrossRefClick, hasCrossRefs, globalUseProtoSinaitic, youthMode, highlightColor, textFormatting }) => {
+  const { currentTranslation } = useTranslation();
   const [localUseProtoSinaitic, setLocalUseProtoSinaitic] = useState(false);
   const [forwardInterlinear, setForwardInterlinear] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(() =>
@@ -351,9 +353,10 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
           );
 
           // Handle person links (only when not using formatting, as dangerouslySetInnerHTML conflicts)
+          // Only use mdText person links for KJV translation
           let usePersonLinks = false;
           let phraseContentHtml = '';
-          if (addPersonLinks && verse.mdText && !hasFormatting) {
+          if (addPersonLinks && verse.mdText && !hasFormatting && currentTranslation === 'kjv') {
             const personLinkPattern = /\[([^\]]+)\]\(\[\/person\/([^)]+)\)/g;
             let match;
             let tempContent = phraseText;
@@ -417,7 +420,8 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
     // Priority 1: If we have KJVs data with Strong's numbers, use clickable phrases
     // Clickable phrases now support text formatting within them
     if (kjvsVerse && onStrongsClick) {
-      return renderClickablePhrases(!!verse.mdText, formats);
+      // Only use person links (mdText) for KJV translation
+      return renderClickablePhrases(!!verse.mdText && currentTranslation === 'kjv', formats);
     }
 
     // Priority 2: If we have text formatting but no clickable phrases, apply formatting
@@ -426,7 +430,8 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
     }
 
     // Priority 3: If we have mdText with person links but no KJVs data
-    if (verse.mdText) {
+    // Only use mdText for KJV translation (it contains English text with person links)
+    if (verse.mdText && currentTranslation === 'kjv') {
       // Replace [Name]([/person/personID) with clickable spans
       const personLinkPattern = /\[([^\]]+)\]\(\[\/person\/([^)]+)\)/g;
       let html = verse.mdText.replace(personLinkPattern, (_match, name, personID) => {

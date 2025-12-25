@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { AuthProvider } from './contexts/AuthContext';
+import { TranslationProvider } from './contexts/TranslationContext';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -11,7 +12,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <AuthProvider>
-      <App />
+      <TranslationProvider>
+        <App />
+      </TranslationProvider>
     </AuthProvider>
   </React.StrictMode>
 );

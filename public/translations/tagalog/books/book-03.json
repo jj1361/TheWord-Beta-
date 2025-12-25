@@ -1,0 +1,3496 @@
+{
+  "bookName": "Lewitico",
+  "bookId": 3,
+  "chapters": {
+    "1": [
+      {
+        "num": 1,
+        "text": "At tinawag ni YAHWEH si Moises at sinalita sa kaniya mula sa Tabernakulo ng kapisanan, na sinasabi,"
+      },
+      {
+        "num": 2,
+        "text": "Salitain mo sa mga anak ni Israel at sabihin mo sa kanila, Kapag ang sinoman sa inyo ay naghahandog ng alay sa Elohim, ang ihahandog ninyong alay ay galing sa mga hayop, sa mga bakahan at sa kawan."
+      },
+      {
+        "num": 3,
+        "text": "Kung ang kaniyang alay ay handog na susunugin na kinuha sa bakahan, ang ihahandog niya'y isang lalake na walang kapintasan: sa pintuan ng Tabernakulo ng kapisanan niya ihahandog, upang tanggapin sa harap ni YAHWEH."
+      },
+      {
+        "num": 4,
+        "text": "At ipapatong niya ang kaniyang kamay sa ulo ng handog na susunugin; at tatanggapin sa ikagagaling niya, upang gumawa ng pakikipagkasundo sa kaniya."
+      },
+      {
+        "num": 5,
+        "text": "At kaniyang papatayin ang guyang toro sa harap ni YAHWEH: at ang mga anak ni Aaron, ang mga saserdote, ay siyang maghaharap ng dugo at iwiwisik ang dugo sa palibot ng dambana na nasa pintuan ng Tabernakulo ng kapisanan."
+      },
+      {
+        "num": 6,
+        "text": "At lalaplapin ang handog na susunugin, at kakatayin."
+      },
+      {
+        "num": 7,
+        "text": "At ang mga anak ni Aaron na saserdote ay maglalagay ng apoy sa ibabaw ng dambana, at mag-aayos ng kahoy sa apoy;"
+      },
+      {
+        "num": 8,
+        "text": "At aayusin ng mga anak ni Aaron, na mga saserdote, ang mga pinagputol-putol, ang ulo, at ang taba, sa kahoy na nakapatong sa apoy na nasa ibabaw ng dambana:"
+      },
+      {
+        "num": 9,
+        "text": "Datapuwa't ang mga lamang loob at ang mga paa, ay huhugasan niya ng tubig. At susunugin ng saserdote ang kabuoan sa ibabaw ng dambana na pinakahandog na susunugin, isang handog nga na pinaraan sa apoy na pinakamasarap na amoy kay YAHWEH."
+      },
+      {
+        "num": 10,
+        "text": "At kung ang kaniyang alay ay kinuha sa kawan, sa mga tupa, o sa mga kambing, na pinakahandog na susunugin; ang kaniyang ihahandog ay isang lalaking walang kapintasan."
+      },
+      {
+        "num": 11,
+        "text": "At kaniyang papatayin sa dakong hilagaan ng dambana, sa harap ni YAHWEH: at iwiwisik ng mga anak ni Aaron, na mga saserdote, ang dugo niyaon sa ibabaw ng dambana sa palibot."
+      },
+      {
+        "num": 12,
+        "text": "At kaniyang kakatayin pati ang ulo, at ang taba; at mga iaayos ng saserdote sa ibabaw ng kahoy na nasa apoy sa ibabaw ng dambana;"
+      },
+      {
+        "num": 13,
+        "text": "Datapuwa't ang mga lamang loob at ang mga paa ay huhugasan ng tubig. At ihahandog ng saserdote ang kabuuan, at susunugin sa dambana: isa ngang handog na susunugin na isang handog na pinaraan sa apoy na pinakamasarap na amoy kay YAHWEH."
+      },
+      {
+        "num": 14,
+        "text": "At kung ang kaniyang alay kay YAHWEH ay handog na susunugin na mga ibon, ang ihahandog nga niyang alay ay mga batobato o mga inakay ng kalapati."
+      },
+      {
+        "num": 15,
+        "text": "At dadalhin ng saserdote sa dambana, at pupugutan ng ulo yaon, at susunugin sa ibabaw ng dambana; at ang dugo'y pipigain sa tabi ng dambana:"
+      },
+      {
+        "num": 16,
+        "text": "At aalisin niya ang butsi pati ang mga balahibo, at ihahagis sa tabi ng dambana, sa dakong silanganan, sa kinalalagyan ng mga abo:"
+      },
+      {
+        "num": 17,
+        "text": "At hihiwain na hahawakan sa mga pakpak, datapuwa't hindi pakakahatiin. At susunugin ng saserdote sa ibabaw ng dambana, sa ibabaw ng kahoy na nasa apoy: isa ngang handog na susunugin, na isang handog na pinaraan sa apoy na masarap na amoy kay YAHWEH."
+      }
+    ],
+    "2": [
+      {
+        "num": 1,
+        "text": "At kapag ang sinoman ay maghahandog kay YAHWEH ng alay na handog na harina, ay mainam na harina ang kaniyang iaalay; at kaniyang bubuhusan ng langis, at lalagyan ng kamangyan:"
+      },
+      {
+        "num": 2,
+        "text": "At dadalhin niya sa mga saserdote, na mga anak ni Aaron; at siya'y kukuha ng isang dakot na mainam na harina at ng langis, sangpu ng buong kamangyan niyaon. At susunugin ng saserdote sa ibabaw ng dambana na pinaka-alaala, na isang handog nga na pinaraan sa apoy na pinakamasarap na amoy kay YAHWEH:"
+      },
+      {
+        "num": 3,
+        "text": "At ang kalabisan sa handog na harina ay mapapasa kay Aaron at sa kaniyang mga anak: kabanal-banalang bagay nga sa mga handog kay YAHWEH na pinaraan sa apoy."
+      },
+      {
+        "num": 4,
+        "text": "At kapag ikaw ay maghahandog ng alay na handog na harina na luto sa hurno, ay mga munting tinapay na walang lebadura ang iaalay mo na mainam na harina, na hinaluan ng langis, o mga manipis na tinapay na walang lebadura, na hinaluan ng langis."
+      },
+      {
+        "num": 5,
+        "text": "At kung ang iyong alay ay handog na harina, na luto sa kawali, ay mainam na harina ang iaalay mo na walang lebadura, na hinaluan ng langis."
+      },
+      {
+        "num": 6,
+        "text": "Iyong pagpuputol-putulin, at bubuhusan mo ng langis: isa ngang handog na harina."
+      },
+      {
+        "num": 7,
+        "text": "At kung ang iyong alay ay handog na harina na luto sa kawaling bakal, ay yari sa mainam na harina na may langis ang iaalay mo."
+      },
+      {
+        "num": 8,
+        "text": "At dadalhin mo kay YAHWEH ang handog na harina na yari sa mga bagay na ito: at ihaharap sa saserdote at dadalhin niya sa dambana."
+      },
+      {
+        "num": 9,
+        "text": "At kukuha ang saserdote ng handog na harina, na pinakaalaala rin niyaon, at susunugin sa ibabaw ng dambana: handog ngang pinaraan sa apoy, na pinakamasarap na amoy kay YAHWEH."
+      },
+      {
+        "num": 10,
+        "text": "At ang kalabisan sa handog na harina ay mapapasa kay Aaron at sa kaniyang mga anak; kabanalbanalang bagay nga sa mga handog kay YAHWEH na pinaraan sa apoy."
+      },
+      {
+        "num": 11,
+        "text": "Walang handog na harina na ihahandog kayo kay YAHWEH, na may lebadura: dahil hindi kayo magsusunog ng anomang lebadura ni ng anomang pulot na handog, kay YAHWEH, na pinaraan sa apoy."
+      },
+      {
+        "num": 12,
+        "text": "Bilang pinaka-alay na mga pangunang bunga ihahandog ninyo kay YAHWEH: nguni't hindi sasampa sa dambana na parang masarap na amoy."
+      },
+      {
+        "num": 13,
+        "text": "At titimplahan mo ng asin ang lahat ng alay na iyong handog na harina, ni huwag mong titiising magkulang sa iyong handog na harina ng asin ng tipan sa AMA: lahat ng alay mo'y ihahandog mong may asin."
+      },
+      {
+        "num": 14,
+        "text": "At kung maghahandog ka kay YAHWEH ng handog na harina na pangunang bunga, ay ihahandog mong pinakahandog na harina ng iyong pangunang bunga ay sinangag sa apoy, mga murang butil na pinipi."
+      },
+      {
+        "num": 15,
+        "text": "At bubuhusan mo ng langis, at ilalagay mo sa ibabaw ng kamangyan: ito nga'y handog na harina."
+      },
+      {
+        "num": 16,
+        "text": "At susunugin ng saserdote na nakaalaala niyaon, ang bahagi ng butil na pinipi at ang bahagi ng langis, pati ng buong kamangyan niyaon: handog nga kay YAHWEH na pinaraan sa apoy."
+      }
+    ],
+    "3": [
+      {
+        "num": 1,
+        "text": "At kung ang kanilang alay ay haing mga handog tungkol sa kapayapaan; kung ang ihahandog niya ay sa bakahan maging lalake o babae, ay ihahandog niya na walang kapintasan sa harap ni YAHWEH."
+      },
+      {
+        "num": 2,
+        "text": "At kaniyang ipapatong ang kamay niya sa ulo ng kaniyang alay, at papatayin sa pintuan ng Tabernakulo ng Kapisanan: at iwiwisik ng mga anak ni Aaron, na mga saserdote, ang dugo sa ibabaw ng dambana, sa palibot."
+      },
+      {
+        "num": 3,
+        "text": "At kaniyang ihahandog hinggil sa haing mga handog tungkol sa kapayapaan, na pinakahandog kay YAHWEH na pinaraan sa apoy; ang tabang nakatatakip ng lamang loob at lahat ng tabang nasa ibabaw ng lamang loob,"
+      },
+      {
+        "num": 4,
+        "text": "At ang dalawang bato at ang tabang nasa ibabaw ng mga yaon, ang nasa siping ng mga balakang, at ang lamad na nasa ibabaw ng atay ay kaniyang aalisin na kalakip ng mga bato."
+      },
+      {
+        "num": 5,
+        "text": "At susunugin ng mga anak ni Aaron sa dambana, sa ibabaw ng handog na susunugin na nasa ibabaw ng kahoy na nakapatong sa apoy; handog ngang pinaraan sa apoy, na pinakamasarap na amoy kay YAHWEH."
+      },
+      {
+        "num": 6,
+        "text": "At kung ang kaniyang alay kay YAHWEH na haing mga handog tungkol sa kapayapaan ay kinuha sa kawan; maging lalake o babae, ay ihahandog niya na walang kapintasan."
+      },
+      {
+        "num": 7,
+        "text": "Kung isang kordero ang kaniyang ihahandog na pinakaalay niya, ay ihahandog nga niya sa harap ni YAHWEH:"
+      },
+      {
+        "num": 8,
+        "text": "At kaniyang ipapatong ang kamay niya sa ulo ng kaniyang alay, at papatayin sa harap ng Tabernakulo ng kapisanan: at iwiwisik ng mga anak ni Aaron ang dugo niyaon sa ibabaw ng dambana sa palibot."
+      },
+      {
+        "num": 9,
+        "text": "At kaniyang ihahandog hinggil sa hain na mga handog tungkol sa kapayapaan ay isang handog kay YAHWEH na pinaraan sa apoy; ang taba niyaon, ang buong matabang buntot, ay aalisin niya sa siping ng gulugod; at ang tabang nakatatakip ng lamang loob, at ang lahat ng tabang nasa ibabaw ng lamang loob."
+      },
+      {
+        "num": 10,
+        "text": "At ang dalawang bato, at ang tabang nasa ibabaw niyaon, na malapit sa mga balakang, at ang lamad na nasa ibabaw ng atay, ay aalisin niya na kalakip ng mga bato."
+      },
+      {
+        "num": 11,
+        "text": "At susunugin ng saserdote sa ibabaw ng dambana: pagkaing handog nga kay YAHWEH na pinaraan sa apoy."
+      },
+      {
+        "num": 12,
+        "text": "At kung kambing ang kaniyang alay ay ihahandog nga niya sa harap ni YAHWEH:"
+      },
+      {
+        "num": 13,
+        "text": "At ipapatong niya ang kaniyang kamay sa ulo niyaon, at papatayin yaon sa harap ng Tabernakulo ng Kapisanan: at iwiwisik ng mga anak ni Aaron ang dugo sa ibabaw ng dambana sa palibot."
+      },
+      {
+        "num": 14,
+        "text": "At ang ihahandog niya roon na kaniyang alay, na pinakahandog kay YAHWEH, na pinaraan sa apoy; ang tabang nakatatakip ng lamang loob, lahat ng tabang nasa ibabaw ng lamang loob,"
+      },
+      {
+        "num": 15,
+        "text": "At ang dalawang bato, at ang tabang nasa ibabaw, na malapit sa mga balakang, at ang lamad na nasa ibabaw ng atay, ay aalisin niya na kalakip ng mga bato."
+      },
+      {
+        "num": 16,
+        "text": "At mga susunugin ng saserdote sa ibabaw ng dambana; pagkaing handog nga na pinaraan sa apoy na pinakamasarap na amoy: lahat ng taba ay kay YAHWEH."
+      },
+      {
+        "num": 17,
+        "text": "Magiging palatuntunang sa buong panahon ng inyong lahi, sa lahat ng inyong tahanan na hindi kayo kakain ng taba ni dugo man."
+      }
+    ],
+    "4": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi."
+      },
+      {
+        "num": 2,
+        "text": "Salitain mo sa mga anak ni Israel, na iyong sabihin, Kung ang sinoman ay magkakasala ng hindi sinasadya sa alin man sa mga bagay na iniutos ni YAHWEH na huwag gawin, at gagawin ng sinoman sa kanila;"
+      },
+      {
+        "num": 3,
+        "text": "Kung ang pinahirang saserdote ang magkasala ng gayon na magdala ng sala sa bayan, ay maghahandog siya kay YAHWEH dahil sa kaniyang kasalanan na ipinagkasala, ng isang guyang toro, na walang kapintasan, na pinakahandog dahil sa kasalanan."
+      },
+      {
+        "num": 4,
+        "text": "At dadalhin niya ang toro sa pintuan ng Tabernakulo ng kapisanan sa harap ni YAHWEH: at ipapatong niya ang kaniyang kamay sa ulo ng toro, at papatayin ang toro sa harap ni YAHWEH."
+      },
+      {
+        "num": 5,
+        "text": "At ang pinahiran ng langis na saserdote ay kukuha ng dugo ng toro, at dadalhin sa Tabernakulo ng kapisanan:"
+      },
+      {
+        "num": 6,
+        "text": "At ilulubog ng saserdote ang kaniyang daliri sa dugo, at magwiwisik na makapito ng dugo sa harap ni YAHWEH, sa tapat ng tabing ng santuariyo."
+      },
+      {
+        "num": 7,
+        "text": "At ang saserdote ay maglalagay ng dugong yaon sa ibabaw ng mga anyong sungay ng dambana ng mabangong kamangyan sa harap ni YAHWEH, na nasa Tabernakulo ng Kapisanan: at lahat ng dugo ng toro ay ibubuhos sa paanan ng dambanang pagsusunugan ng handog na nasa pintuan ng Tabernakulo ng kapisanan."
+      },
+      {
+        "num": 8,
+        "text": "At aalisin ang lahat ng taba ng toro na handog sa kasalanan; ang tabang nakakatakip sa lamang loob, at ang lahat ng tabang nasa ibabaw ng lamang loob,"
+      },
+      {
+        "num": 9,
+        "text": "At ang dalawang bato at ang tabang nasa ibabaw, na malapit sa mga balakang, at ang lamad na nasa ibabaw ng atay, ay aalisin na kalakip ng mga bato,"
+      },
+      {
+        "num": 10,
+        "text": "Na gaya ng pag-aalis sa toro na hain na mga handog tungkol sa kapayapaan: at susunugin ng saserdote sa ibabaw ng dambanang pagsusunugan ng handog."
+      },
+      {
+        "num": 11,
+        "text": "At ang balat ng toro, ang buong laman, ang ulo at mga hita, at ng lamang loob, at ng dumi,"
+      },
+      {
+        "num": 12,
+        "text": "Sa makatuwid baga'y ang buong toro ay ilalabas niya sa labas ng kampamento sa isang dakong malinis, na pinagtatapunan ng mga abo, at doon susunugin sa apoy sa ibabaw ng kahoy: sa pinagtatapunan ng mga abo susunugin yaon."
+      },
+      {
+        "num": 13,
+        "text": "At kung ang buong kapisanan ng Israel ay magkasala, at ang bagay ay malihim sa mga mata ng kapulungan, at sila'y nakagawa ng anoman sa mga bagay na iniutos ni YAHWEH na huwag gawin, at naging salarin;"
+      },
+      {
+        "num": 14,
+        "text": "Kapag nakilala ang kasalanan ng kanilang ipinagkasala, ay maghahandog ng isang guyang toro na handog dahil sa kasalanan, at dadalhin sa harap ng Tabernakulo ng Kapisanan."
+      },
+      {
+        "num": 15,
+        "text": "At ang mga matanda ng kapulungan ay ipapatong ang kanilang kamay sa ulo ng toro sa harap ni YAHWEH: at papatayin ang toro."
+      },
+      {
+        "num": 16,
+        "text": "At ang saserdoteng pinahiran ng langis ay magdadala ng dugo ng toro sa Tabernakulo ng Kapisanan:"
+      },
+      {
+        "num": 17,
+        "text": "At ilulubog ng saserdote ang kaniyang daliri sa dugo, at iwiwisik na makapito sa harap ni YAHWEH, sa harap ng tabing."
+      },
+      {
+        "num": 18,
+        "text": "At maglalagay siya ng dugo sa ibabaw ng mga anyong sungay ng dambana na nasa harap ni YAHWEH, na nasa Tabernakulo ng kapisanan, at ang lahat ng dugo ay ibubuhos niya sa paanan ng dambanang pagsusunugan ng handog na nasa pintuan ng Tabernakulo ng kapisanan."
+      },
+      {
+        "num": 19,
+        "text": "At aalisin niya ang lahat ng taba niyaon, at susunugin niya sa ibabaw ng dambana."
+      },
+      {
+        "num": 20,
+        "text": "Gayon ang gagawin niya sa toro; kung paano ang ginawa niya sa torong handog dahil sa kasalanan, ay gayon gagawin niya rito: at itutubos sa kanila ng saserdote, at patatawarin sila."
+      },
+      {
+        "num": 21,
+        "text": "At ilalabas niya ang toro sa kampamento, at susunugin niya, na gaya ng pagkasunog sa unang toro: handog nga dahil sa kasalanan ng kapisanan."
+      },
+      {
+        "num": 22,
+        "text": "Kapag ang isang pinuno ay nagkasala, at nakagawa ng hindi sinasadya sa alinman sa lahat ng bagay na iniutos ni YAHWEH niyang Elohim na huwag gawin, at siya'y naging salarin;"
+      },
+      {
+        "num": 23,
+        "text": "Kung maipakilala sa kaniya ang kasalanan niyang ipinagkasala, ay magdadala siya ng pinakaalay niya na isang lalaking kambing na walang kapintasan;"
+      },
+      {
+        "num": 24,
+        "text": "At ipapatong niya ang kaniyang kamay sa ulo ng kambing, at papatayin niya sa dakong pinagpapatayan ng handog na susunugin sa harap ni YAHWEH: handog nga dahil sa kasalanan."
+      },
+      {
+        "num": 25,
+        "text": "At dadampot ang saserdote sa pamamagitan ng kaniyang daliri, ng dugo ng handog dahil sa kasalanan at ilalagay sa ibabaw ng mga anyong sungay ng dambanang pagsusunugan ng handog, at ang dugo'y ibubuhos sa paanan ng dambanang pagsusunugan ng handog."
+      },
+      {
+        "num": 26,
+        "text": "At ang lahat ng taba niyaon ay susunugin niya sa dambana, na gaya ng taba ng hain na mga handog tungkol sa kapayapaan: at itutubos sa kaniya ng saserdote tungkol sa kaniyang kasalanan, at siya'y patatawarin."
+      },
+      {
+        "num": 27,
+        "text": "At kung ang sinomang karaniwang tao sa bayan ay magkasala ng hindi sinasadya, sa paggawa sa alinman sa mga bagay na iniutos ni YAHWEH na huwag gawin, at maging makasalanan;"
+      },
+      {
+        "num": 28,
+        "text": "Kung maipakilala sa kaniya ang kasalanan niyang nagawa, ay magdadala siya ng pinakaalay niya na isang babaing kambing na walang kapintasan, na dahil sa kaniyang kasalanang pinagkasalahan niya."
+      },
+      {
+        "num": 29,
+        "text": "At ipapatong niya ang kaniyang kamay sa ulo ng handog sa kasalanan, at papatayin ang handog sa kasalanan sa lagayan ng pagsusunugan ng handog."
+      },
+      {
+        "num": 30,
+        "text": "At dadampot ang saserdote sa pamamagitan ng kaniyang daliri ng dugo at ilalagay sa ibabaw ng mga anyong sungay ng dambanang pagsusunugan ng handog, at ang lahat ng dugo niyaon ay ibubuhos niya sa paanan ng dambana."
+      },
+      {
+        "num": 31,
+        "text": "At ang lahat ng taba niyaon ay kaniyang aalisin, na gaya ng pag-aalis ng taba sa hain na mga handog tungkol sa kapayapaan; at susunugin ng saserdote sa dambana na masarap na amoy kay YAHWEH; at itutubos sa kaniya ng saserdote, at siya'y patatawarin."
+      },
+      {
+        "num": 32,
+        "text": "At kung kordero ang kaniyang dalhing pinakaalay na bilang handog dahil sa kasalanan, ay babaing walang kapintasan ang dadalhin niya."
+      },
+      {
+        "num": 33,
+        "text": "At ipapatong niya ang kaniyang kamay sa ulo ng handog dahil sa kasalanan, at papatayin na pinakahandog dahil sa kasalanan, sa pinagpapatayan ng handog na susunugin."
+      },
+      {
+        "num": 34,
+        "text": "At dadampot ang saserdote sa pamamagitan ng kaniyang daliri ng dugo ng handog dahil sa kasalanan, at ilalagay sa ibabaw ng mga anyong sungay ng dambanang pagsusunugan ng handog, at ang lahat ng dugo ay ibubuhos niya sa paanan ng dambana:"
+      },
+      {
+        "num": 35,
+        "text": "At ang lahat ng taba ay kaniyang aalisin, gaya ng pagkaalis ng taba sa kordero na hain na mga handog tungkol sa kapayapaan; at susunugin ng saserdote sa dambana, sa ibabaw ng mga handog kay YAHWEH na pinaraan sa apoy: at itutubos sa kaniya ng saserdote tungkol sa kasalanan na kaniyang pinagkasalahan; at siya'y patatawarin."
+      }
+    ],
+    "5": [
+      {
+        "num": 1,
+        "text": "At kung ang sinoman ay magkasala, sa pagkarinig niya ng tinig ng pautos, sa paraang siya'y saksi maging kaniyang nakita o nalaman, kung hindi niya ihayag, ay siya nga ang magtataglay ng kasamaan niya."
+      },
+      {
+        "num": 2,
+        "text": "O kung ang sinoman ay nakahipo ng alinmang bagay na marumi, maging bangkay ng ganid na marumi, o ng bangkay na hayop na marumi, o ng bangkay ng umuusad na marumi, at nalihim sa kaniya at siya'y maging marumi, ay magiging makasalanan nga siya:"
+      },
+      {
+        "num": 3,
+        "text": "O kung siya'y nakahipo ng marumi ng tao, maging anomang marumi niyaon na ikinapaging marumi niya, at nalihim sa kaniya; kapag nalaman niya ay magiging makasalanan nga siya:"
+      },
+      {
+        "num": 4,
+        "text": "O kung ang sinoma'y sumumpa ng kaniyang mga labi ng walang dilidili na gumawa ng masama o gumawa ng mabuti, maging anoman na sinasalita ng tao na walang dilidili na kaakbay ang sumpa, at sa kaniya'y nalihim; kapag nalaman niya yaon, ay magiging makasalanan nga siya sa isa sa mga bagay na ito:"
+      },
+      {
+        "num": 5,
+        "text": "At mangyayari, na kapag siya'y magiging makasalanan sa isa sa mga bagay na ito, ay kaniyang isasaysay yaong kaniyang ipinagkasala:"
+      },
+      {
+        "num": 6,
+        "text": "At dadalhin niya kay YAHWEH ang handog niya dahil sa pagkakasala, dahil sa kasalanang pinagkasalahan niya, ay isang babae na kinuha sa kawan, isang kordero o isang kambing na pinakahandog dahil sa kasalanan; at itutubos sa kaniya ng saserdote tungkol sa kaniyang kasalanan."
+      },
+      {
+        "num": 7,
+        "text": "At kung ang kaniyang kaya ay hindi sapat upang magdala ng isang kordero, ay magdadala nga siya kay YAHWEH, na pinakahandog niya sa pagkakasala, dahil sa ipinagkasala niya, ng dalawang batobato o ng dalawang inakay ng kalapati: ang isa'y pinakahandog dahil sa kasalanan at ang isa'y pinakahandog na susunugin."
+      },
+      {
+        "num": 8,
+        "text": "At sila'y dadalhin niya sa saserdote, na ang ihahandog nito na pinakahandog dahil sa kasalanan, ay ang una at pupugutin ang ulo sa leeg nguni't hindi papaghihiwalaying bigla:"
+      },
+      {
+        "num": 9,
+        "text": "At magwiwisik siya ng dugo ng handog dahil sa kasalanan sa ibabaw ng gilid ng dambana; at ang labis sa dugo ay pipigain sa paanan ng dambana: handog nga dahil sa kasalanan."
+      },
+      {
+        "num": 10,
+        "text": "At ihahandog niya ang ikalawa na pinakahandog na susunugin ayon sa alituntunin: at itutubos sa kaniya ng saserdote tungkol sa kaniyang kasalanan na kaniyang nagawa, at siya'y patatawarin."
+      },
+      {
+        "num": 11,
+        "text": "Datapuwa't kung ang kaniyang kaya ay hindi sapat upang magdala ng dalawang batobato, o ng dalawang inakay ng kalapati, ay magdadala nga siya ng ikasangpung bahagi ng isang epa ng mainam na harina, na pinakahandog dahil sa kasalanan; hindi niya lalagyan ng langis ni bubuhusan man niya ng kamangyan; sapagka't handog dahil sa kasalanan."
+      },
+      {
+        "num": 12,
+        "text": "At dadalhin niya sa saserdote, at ang saserdote ay kukuha ng kaniyang dakot na pinakaalaala niyaon na susunugin sa dambana; na gaya ng mga handog kay YAHWEH na pinaraan sa apoy: handog nga dahil sa kasalanan."
+      },
+      {
+        "num": 13,
+        "text": "At itutubos sa kaniya ng saserdote, tungkol sa kaniyang kasalanan sa alinman sa mga bagay na ito, at siya'y patatawarin: at ang labis ay mapapasa saserdote, gaya ng handog na harina."
+      },
+      {
+        "num": 14,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi,"
+      },
+      {
+        "num": 15,
+        "text": "Kung ang sinoman ay makasuway at magkasala ng di sinasadya sa mga banal na bagay ni YAHWEH; ay magdadala nga siya kay YAHWEH ng handog dahil sa pagkakasala na isang tupang lalaking walang kapintasan na kinuha sa kawan, ayon sa iyong pagkahalaga sa siklong pilak, ayon sa siklo ng santuariyo na pinakahandog dahil sa pagkakasala:"
+      },
+      {
+        "num": 16,
+        "text": "At isasauli niya yaong kaniyang nadaya sa banal na bagay, at magdaragdag pa ng ikalimang bahagi, at ibibigay niya sa saserdote: at itutubos sa kaniya ng saserdote sa pamamagitan ng lalaking tupang handog dahil sa pagkakasala; at siya'y patatawarin."
+      },
+      {
+        "num": 17,
+        "text": "At kung ang sinoman ay magkasala, at gumawa ng alin man sa mga bagay na iniutos ni YAHWEH na huwag gawin; bagama't hindi niya nalalaman, makasalanan din siya at magtataglay siya ng kaniyang kasamaan."
+      },
+      {
+        "num": 18,
+        "text": "At siya'y magdadala sa saserdote ng isang tupang lalake na walang kapintasan na kinuha sa kawan ayon sa iyong pagkahalaga na pinakahandog dahil sa pagkakasala; at itutubos sa kaniya ng saserdote, tungkol sa bagay na pinagkamalian niya ng di sinasadya, at hindi niya nalalaman, at siya'y patatawarin."
+      },
+      {
+        "num": 19,
+        "text": "Yaon nga'y handog dahil sa pagkakasala: tunay ngang siya'y makasalanan sa harap ni YAHWEH."
+      }
+    ],
+    "6": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi,"
+      },
+      {
+        "num": 2,
+        "text": "Kung ang sinoman ay magkasala, at sumuway kay YAHWEH, na magbulaan sa kaniyang kapuwa tungkol sa isang habilin, o sa isang sanla, o sa nakaw, o pumighati sa kaniyang kapuwa,"
+      },
+      {
+        "num": 3,
+        "text": "O nakasumpong ng nawala, at ipagkaila at sumumpa ng kasinungalingan; sa alin man sa lahat ng ito na ginawa ng tao ng pinagkakasalahan:"
+      },
+      {
+        "num": 4,
+        "text": "Ay mangyayari na kung siya'y nagkasala at naging salarin, na isasauli niya ang ninakaw, o ang nakuha sa pagpighati, o ang habiling inihabilin sa kaniya, o ang bagay na nawala sa kaniyang nasumpungan,"
+      },
+      {
+        "num": 5,
+        "text": "O anomang bagay na kaniyang sinumpaan ng kabulaanan; na isasauli niyang buo, at daragdagan pa niya ng ikalimang bahagi niyaon: sa may-ari ibibigay niya sa araw na pagkasumpong sa kaniya na siya'y may kasalanan."
+      },
+      {
+        "num": 6,
+        "text": "At dadalhin niya kay YAHWEH ang kaniyang handog dahil sa pagkakasala, isang tupang lalake na walang kapintasan na kinuha sa kawan, ayon sa iyong inihalaga, at ibibigay sa saserdote na pinakahandog dahil sa pagkakasala:"
+      },
+      {
+        "num": 7,
+        "text": "At itutubos sa kaniya ng saserdote sa harap ni YAHWEH; at siya'y patatawarin tungkol sa alin mang kaniyang nagawa, na kaniyang pinagkasalahan."
+      },
+      {
+        "num": 8,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi,"
+      },
+      {
+        "num": 9,
+        "text": "Iutos mo kay Aaron at sa kaniyang mga anak, na iyong sabihin, Ito ang kautusan tungkol sa handog na susunugin: ang handog na susunugin ay malalagay sa ibabaw ng pinagsusunugan sa ibabaw ng dambana, buong gabi hanggang umaga; at ang apoy sa dambana ay papanatilihing nagniningas doon."
+      },
+      {
+        "num": 10,
+        "text": "At isusuot ng saserdote ang kaniyang kasuutang lino, at ang kaniyang mga salawal na damit na lino at itatakip niya sa kaniyang katawan; at dadamputin niya ang mga abo ng handog na susunugin na sinunog sa apoy sa ibabaw ng dambana, at ilalagay niya sa tabi ng dambana."
+      },
+      {
+        "num": 11,
+        "text": "At maghuhubad siya ng kaniyang mga suot, at magbibihis ng ibang mga kasuutan, at ilalabas ang mga abo sa labas ng kampamento sa isang dakong malinis."
+      },
+      {
+        "num": 12,
+        "text": "At ang apoy sa ibabaw ng dambana ay papananatilihing nagniningas, hindi papatayin; at ang saserdote ay magsusunog ng kahoy sa ibabaw niyaon tuwing umaga: at aayusin niya sa ibabaw niyaon ang handog na susunugin, at susunugin sa ibabaw niyaon ang taba ng mga handog tungkol sa kapayapaan."
+      },
+      {
+        "num": 13,
+        "text": "Ang apoy ay papananatilihing may ningas sa ibabaw ng dambana; hindi papatayin."
+      },
+      {
+        "num": 14,
+        "text": "At ito ang kautusan tungkol sa handog na harina: ihahandog ng mga anak ni Aaron sa harap ni YAHWEH, sa harap ng dambana."
+      },
+      {
+        "num": 15,
+        "text": "At kukuha siya niyaon ng kaniyang dakot, ng mainam na harina sa handog na harina, at ng langis niyaon, at ng lahat na kamangyan, na nasa ibabaw ng handog na harina, at kaniyang susunugin sa ibabaw ng dambana, na masarap na amoy, na alaala niyaon kay YAHWEH."
+      },
+      {
+        "num": 16,
+        "text": "At ang labis sa handog ay kakanin ni Aaron at ng kaniyang mga anak: walang lebadurang kakanin sa dakong banal; sa looban ng Tabernakulo ng kapisanan kakanin nila."
+      },
+      {
+        "num": 17,
+        "text": "Hindi lulutuing may lebadura. Aking ibinigay sa kanilang pinakabahagi nila, sa mga handog sa akin na pinaraan sa apoy; kabanal-banalang bagay nga, na gaya ng handog dahil sa kasalanan, at gaya ng handog dahil sa pagkakasala."
+      },
+      {
+        "num": 18,
+        "text": "Bawa't lalake sa mga anak ni Aaron ay kakain niyaon na pinakabahagi nila magpakailan man, sa buong panahon ng inyong lahi, sa mga handog kay YAHWEH na pinaraan sa apoy; sinomang humipo ng mga iyan ay magiging banal."
+      },
+      {
+        "num": 19,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi."
+      },
+      {
+        "num": 20,
+        "text": "Ito ang alay ni Aaron at ng kaniyang mga anak na kanilang ihahandog kay YAHWEH sa araw na siya'y pahiran ng langis; ang ikasangpung bahagi ng isang epa ng mainam na harina, na pinakahandog na harina magpakailan man, ang kalahati ay sa umaga at ang kalahati ay sa hapon."
+      },
+      {
+        "num": 21,
+        "text": "Sa kawali ihahandang may langis; pagkaluto niyaon dadalhin mo: lutong putol-putol na ihaharap mo ang handog na harina na masarap na amoy kay YAHWEH."
+      },
+      {
+        "num": 22,
+        "text": "At ang saserdoteng pinahiran ng langis na mahahalili sa kaniya, na mula sa gitna ng kaniyang mga anak ay maghahandog niyaon: ayon sa palatuntunang walang hanggan ay susunuging lahat kay YAHWEH."
+      },
+      {
+        "num": 23,
+        "text": "At bawa't handog na harina ng saserdote ay susunuging lahat: hindi kakanin."
+      },
+      {
+        "num": 24,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi:"
+      },
+      {
+        "num": 25,
+        "text": "Salitain mo kay Aaron at sa kaniyang mga anak, na sabihin, Ito ang kautusan tungkol sa handog dahil sa kasalanan: sa dakong pinagpapatayan ng handog na susunugin ay doon papatayin ang handog dahil sa kasalanan, sa harap ni YAHWEH; kabanal-banalang bagay nga."
+      },
+      {
+        "num": 26,
+        "text": "Ang saserdoteng maghandog niyaon dahil sa kasalanan ay kakain niyaon: sa dakong banal kakanin, sa looban ng Tabernakulo ng Kapisanan."
+      },
+      {
+        "num": 27,
+        "text": "Anomang humipo ng laman niyaon ay magiging banal: at kapag pumilansik ang dugo sa alin mang damit, ay lalabhan mo yaong napilansikan sa dakong banal."
+      },
+      {
+        "num": 28,
+        "text": "Datapuwa't ang sisidlang lupa na pinaglutuan ay babasagin: at kung niluto sa sisidlang tanso ay lilinisin at babanlawan ng tubig."
+      },
+      {
+        "num": 29,
+        "text": "Bawa't lalake sa mga saserdote ay kakain niyaon: dahil kabanal-banalan."
+      },
+      {
+        "num": 30,
+        "text": "At hindi kakanin ang anomang handog dahil sa kasalanan, kung may dugo niyaon ay ipinasok sa Tabernakulo ng kapisanan upang ipangtubos sa dakong banal: sa apoy nga susunugin."
+      }
+    ],
+    "7": [
+      {
+        "num": 1,
+        "text": "At ito ang kautusan tungkol sa handog dahil sa pagkakasala: bagay ngang kabanal-banalan."
+      },
+      {
+        "num": 2,
+        "text": "Sa dakong pinagpapatayan ng handog na susunugin ay doon papatayin ang handog dahil sa pagkakasala: at ang dugo niyao'y iwiwisik niya sa ibabaw ng dambana hanggang sa palibot."
+      },
+      {
+        "num": 3,
+        "text": "At siya'y maghahandog niyaon ng lahat ng taba niyaon; ang buntot na mataba at ang tabang nakatatakip sa lamang loob,"
+      },
+      {
+        "num": 4,
+        "text": "At ang dalawang bato at ang tabang nasa ibabaw ng mga yaon, ang nasa siping ng mga balakang, at ang lamad na nasa ibabaw ng atay, ay kaniyang aalisin na kalakip ng mga bato:"
+      },
+      {
+        "num": 5,
+        "text": "At susunugin ng saserdote sa ibabaw ng dambana na pinakahandog kay YAHWEH na pinaraan sa apoy; handog nga dahil sa pagkakasala."
+      },
+      {
+        "num": 6,
+        "text": "Bawa't lalake sa mga saserdote ay kakain niyaon; sa dakong banal kakanin yaon: bagay ngang kabanal-banalan."
+      },
+      {
+        "num": 7,
+        "text": "Kung paano ang handog dahil sa kasalanan ay gayon ang handog dahil sa pagkakasala: ang dalawa'y may isang kautusan: sa saserdoteng tumutubos."
+      },
+      {
+        "num": 8,
+        "text": "At ang saserdoteng naghahandog ng handog na susunugin ng sinomang tao, ay siyang magtatangkilik ng balat ng handog na susunugin na inihandog."
+      },
+      {
+        "num": 9,
+        "text": "At bawa't handog na harina na niluto sa hurno, at yaong lahat na pinagyaman sa kawaling bakal at sa kawaling lupa, ay mapapasa saserdote na naghahandog."
+      },
+      {
+        "num": 10,
+        "text": "At bawa't handog na harina na hinaluan ng langis o tuyo, ay mapapasa lahat ng anak ni Aaron; sa isa na gaya sa iba."
+      },
+      {
+        "num": 11,
+        "text": "At ito ang kautusan hinggil sa haing mga handog tungkol sa kapayapaan, na ihahandog kay YAHWEH:"
+      },
+      {
+        "num": 12,
+        "text": "Kung ihahandog niya na pinaka pasalamat, ay ihahandog nga niyang kalakip ng haing pasalamat ang mga munting tinapay na walang lebadura na hinaluan ng langis, at ang mga manipis na tinapay na walang lebadura na pinahiran ng langis, at ang mainam na harina na munting tinapay na hinaluan ng langis."
+      },
+      {
+        "num": 13,
+        "text": "Kalakip ng munting tinapay na walang lebadura kaniyang ihahandog ang alay niya, na kalakip ng haing mga handog tungkol sa kapayapaan na pinaka pasalamat."
+      },
+      {
+        "num": 14,
+        "text": "At maghahandog ng isa niyaon na kaakbay ng bawa't alay na pinakahandog na itinaas kay YAHWEH; mapapasa saserdoteng magwiwisik ng dugo ng mga handog tungkol sa kapayapaan."
+      },
+      {
+        "num": 15,
+        "text": "At ang laman ng hain na kaniyang mga handog tungkol sa kapayapaan na pinaka-pasalamat ay kakanin sa kaarawan ng kaniyang pag-aalay; siya'y hindi magtitira niyaon ng hanggang sa umaga."
+      },
+      {
+        "num": 16,
+        "text": "Nguni't kung ang hain ng kaniyang alay ay sa pagtupad ng isang panata, o kusang handog, ay kaniyang makakain sa araw na kaniyang ihandog ang kaniyang hain: at sa kinaumagahan man ay kaniyang makakain ang labis:"
+      },
+      {
+        "num": 17,
+        "text": "Datapuwa't ang lumabis sa laman ng hain hanggang sa ikatlong araw ay susunugin sa apoy."
+      },
+      {
+        "num": 18,
+        "text": "At kung kanin sa ikatlong araw ang anomang bahagi ng laman ng haing kaniyang mga handog tungkol sa kapayapaan ay hindi tatanggapin, at hindi man maipatutungkol doon sa naghahandog niyaon: aariing kasuklam-suklam, at ang taong kumain nito ay magtataglay ng kaniyang kasalanan."
+      },
+      {
+        "num": 19,
+        "text": "At ang lamang masagi sa anomang bagay na marumi ay hindi kakanin; yao'y susunugin sa apoy. At tungkol sa lamang hindi nahawa, lahat ng taong malinis ay makakakain niyaon."
+      },
+      {
+        "num": 20,
+        "text": "Nguni't ang taong kumain ng laman ng haing mga handog tungkol sa kapayapaan na ukol kay YAHWEH, na taglay niya ang kaniyang karumihan, ay ihihiwalay ang taong yaon sa kaniyang bayan."
+      },
+      {
+        "num": 21,
+        "text": "At kapag ang sinoman ay nakahipo ng anomang maruming bagay, ng dumi ng tao, o ng hayop na marumi, o ng alin mang marumi, at kumain ng laman ng haing mga handog tungkol sa kapayapaan na ukol kay YAHWEH, ay ihihiwalay ang taong yaon sa kaniyang bayan. 2Cor 6:17"
+      },
+      {
+        "num": 22,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi."
+      },
+      {
+        "num": 23,
+        "text": "Iyong salitain sa mga anak ni Israel, na sabihin, Huwag kayong kakain ng taba ng baka, ng tupa, o ng kambing."
+      },
+      {
+        "num": 24,
+        "text": "At ang taba ng namatay sa kaniyang sarili, at ang taba ng nilapa ng ganid, ay magagamit sa alin mang kagamitan: nguni't sa anomang paraan ay huwag ninyong kakanin."
+      },
+      {
+        "num": 25,
+        "text": "Sapagka't sinomang kumain ng taba ng hayop na yaon na inihahandog ng mga tao kay YAHWEH, na handog na pinaraan sa apoy, ay ihihiwalay sa kaniyang bayan ang taong kumain."
+      },
+      {
+        "num": 26,
+        "text": "At huwag kayong kakain sa anomang paraan ng dugo sa inyong tahanan, maging sa ibon o sa hayop."
+      },
+      {
+        "num": 27,
+        "text": "Sinomang taong kumain ng alin mang dugo, ay ihihiwalay sa kaniyang bayan ang taong yaon."
+      },
+      {
+        "num": 28,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi,"
+      },
+      {
+        "num": 29,
+        "text": "Iyong salitain sa mga anak ng Israel na sabihin, Ang naghahandog kay YAHWEH ng hain niyang mga handog tungkol sa kapayapaan ay magdadala kay YAHWEH ng kaniyang alay sa hain niyang mga handog tungkol sa kapayapaan;"
+      },
+      {
+        "num": 30,
+        "text": "Na dadalhin ng kaniyang sariling mga kamay kay YAHWEH ang mga handog na pinaraan sa apoy; ang taba pati ng dibdib ay dadalhin niya, upang ang dibdib ay alugin na pinakahandog na inalog sa harap ni YAHWEH."
+      },
+      {
+        "num": 31,
+        "text": "At susunugin ng saserdote ang taba sa ibabaw ng dambana: datapuwa't ang dibdib ay mapapasa kay Aaron at sa kaniyang mga anak."
+      },
+      {
+        "num": 32,
+        "text": "At ibibigay ninyo sa saserdote na pinaka-handog na itinaas, ang hitang kanan sa mga haing inyong mga handog tungkol sa kapayapaan."
+      },
+      {
+        "num": 33,
+        "text": "Sa mga anak ni Aaron na naghahandog ng dugo ng mga handog tungkol sa kapayapaan at ng taba, ay mapapasa kaniya ang kanang hita, na bahagi niya."
+      },
+      {
+        "num": 34,
+        "text": "Sapagka't Aking kinuha sa mga anak ni Israel, sa kanilang mga haing mga handog tungkol sa kapayapaan, ang dibdib na inalog at ang hitang itinaas, at Aking ibinigay kay Aaron na saserdote at sa kaniyang mga anak, na karampatang bahagi nila magpakailan man, sa ganang mga anak ni Israel."
+      },
+      {
+        "num": 35,
+        "text": "Ito ang nauukol sa pahid na langis ni Aaron at sa pahid na langis ng kaniyang mga anak, sa mga handog na pinaraan sa apoy kay YAHWEH, sa araw na iniharap sila, upang mangasiwa kay YAHWEH sa katungkulang saserdote;"
+      },
+      {
+        "num": 36,
+        "text": "Na iniutos ni YAHWEH sa kanila'y ibibigay para sa mga anak ni Israel sa araw na kaniyang pinahiran sila. Karampatang bahagi nga nila magpakailan man sa buong panahon ng kanilang lahi."
+      },
+      {
+        "num": 37,
+        "text": "Ito ang kautusan tungkol sa handog na susunugin, sa handog na harina, at sa handog sa kasalanan, at sa handog dahil sa pagkakasala, at sa pagtatalaga, at sa haing mga handog tungkol sa kapayapaan."
+      },
+      {
+        "num": 38,
+        "text": "Na iniutos ni YAHWEH kay Moises sa bundok ng Sinai, nang araw na iniutos sa mga anak ni Israel na kanilang ihandog ang kanilang mga alay sa Elohim sa ilang ng Sinai."
+      }
+    ],
+    "8": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi,"
+      },
+      {
+        "num": 2,
+        "text": "Dalhin mo si Aaron at pati ng kaniyang mga anak, at ang mga kasuutan, at ang langis na pangpahid, at ang torong handog dahil sa kasalanan, at ang dalawang tupang lalake, at ang bakol ng mga tinapay na walang lebadura:"
+      },
+      {
+        "num": 3,
+        "text": "At pulungin mo ang buong kapisanan sa pintuan ng Tabernakulo ng kapisanan."
+      },
+      {
+        "num": 4,
+        "text": "At ginawa ni Moises ayon sa iniutos sa kaniya ni YAHWEH; at nagpupulong ang kapisanan sa pintuan ng Tabernakulo ng kapisanan."
+      },
+      {
+        "num": 5,
+        "text": "At sinabi ni Moises sa kapisanan, Ito ang ipinagawa ni YAHWEH."
+      },
+      {
+        "num": 6,
+        "text": "At dinala ni Moises si Aaron at ang kaniyang mga anak, at hinugasan ng tubig."
+      },
+      {
+        "num": 7,
+        "text": "At isinuot sa kaniya ang kasuutan, at binigkisan ng pamigkis, at ibinalabal sa kaniya ang balabal, at sa kaniya'y ipinatong ang epod, at ibinigkis sa kaniya ang pamigkis ng epod na mainam ang pagkayari, at tinalian nito."
+      },
+      {
+        "num": 8,
+        "text": "At ipinatong sa kaniya ang pektoral: at inilagay sa loob ng pektoral ang Urim at ang Thummim."
+      },
+      {
+        "num": 9,
+        "text": "At ipinatong ang mitra sa kaniyang ulo; at ipinatong sa mitra sa harap, ang laminang ginto, ang banal na putong; gaya ng iniutos ni YAHWEH kay Moises."
+      },
+      {
+        "num": 10,
+        "text": "At kinuha ni Moises ang langis na pangpahid, at pinahiran ang Tabernakulo, at ang lahat ng nandoon, ay pinapaging banal."
+      },
+      {
+        "num": 11,
+        "text": "At winisikan niya niyaon ang ibabaw ng dambana na makapito, at pinahiran ng langis ang dambana at ang lahat ng kasangkapan niyaon, at ang hugasan at ang tungtungan niyaon, upang ariing banal."
+      },
+      {
+        "num": 12,
+        "text": "At binuhusan ng langis na pangpahid ang ulo ni Aaron, at pinahiran niya ng langis siya upang papagbanalin."
+      },
+      {
+        "num": 13,
+        "text": "At pinalapit ni Moises ang mga anak ni Aaron, at sila'y sinuutan ng mga kasuutan, at binigkisan ng mga pamigkis, at itinali sa kanilang ulo ang mga tiara; gaya ng iniutos ni YAHWEH kay Moises."
+      },
+      {
+        "num": 14,
+        "text": "At kaniyang inilapit ang torong handog dahil sa kasalanan: at ipinatong ni Aaron at ng kaniyang mga anak ang mga kamay nila sa ulo ng torong handog dahil sa kasalanan."
+      },
+      {
+        "num": 15,
+        "text": "At pinatay niya; at kumuha si Moises ng dugo at ipinahid ng kaniyang daliri sa ibabaw ng mga anyong sungay ng dambana sa palibot, at nilinis ang dambana, at ang dugo'y ibinuhos sa tungtungan ng dambana, at inaring banal upang pagtubusan."
+      },
+      {
+        "num": 16,
+        "text": "At kinuha niya ang lahat ng taba na nasa ibabaw ng mga lamang loob, at ang lamad ng atay, at ang dalawang bato, at ang taba ng mga yaon, at sinunog ni Moises sa ibabaw ng dambana."
+      },
+      {
+        "num": 17,
+        "text": "Datapuwa't ang toro, at ang balat, at ang laman, at ang dumi, ay sinunog niya sa apoy sa labas ng kampamento; gaya ng iniutos ni YAHWEH kay Moises."
+      },
+      {
+        "num": 18,
+        "text": "At iniharap niya ang tupang lalake na handog na susunugin: at ipinatong ni Aaron at ng kaniyang mga anak ang mga kamay nila sa ulo ng tupa."
+      },
+      {
+        "num": 19,
+        "text": "At kaniyang pinatay yaon: at iniwisik ni Moises ang dugo sa ibabaw ng dambana sa palibot."
+      },
+      {
+        "num": 20,
+        "text": "At kinatay niya ang tupa; at sinunog ni Moises ang ulo, at ang mga putol-putol, at ang taba."
+      },
+      {
+        "num": 21,
+        "text": "At kaniyang hinugasan sa tubig ang lamang loob at ang mga paa; at sinunog ni Moises ang buong tupa sa ibabaw ng dambana; handog na pinakamasarap na amoy: handog nga kay YAHWEH na pinaraan sa apoy; gaya ng iniutos ni YAHWEH kay Moises."
+      },
+      {
+        "num": 22,
+        "text": "At iniharap niya ang ikalawang tupa, ang tupa na itinatalaga: at ipinatong ni Aaron at ng kaniyang mga anak ang kanilang mga kamay sa ulo ng tupa."
+      },
+      {
+        "num": 23,
+        "text": "At kaniyang pinatay yaon; at kumuha si Moises ng dugo niyaon, at inilagay sa pingol ng kanang tainga ni Aaron, at sa daliring hinlalaki ng kanang kamay, at sa daliring hinlalaki ng kaniyang kanang paa. Ex 29:20"
+      },
+      {
+        "num": 24,
+        "text": "At pinaharap niya ang mga anak ni Aaron, at nilagyan ni Moises ng dugong yaon sa pingol ng kanilang kanang tainga, at sa daliring hinlalaki ng kanang kamay nila, at sa daliring hinlalaki ng kanang paa nila: at iniwisik ni Moises ang dugo sa ibabaw ng dambana sa palibot."
+      },
+      {
+        "num": 25,
+        "text": "At kinuha niya ang taba, at ang matabang buntot, at ang lahat ng tabang nasa ibabaw ng lamang loob, at ang lamad ng atay, at ang dalawang bato, at ang taba ng mga yaon, at ang kanang hita:"
+      },
+      {
+        "num": 26,
+        "text": "At sa bakol ng tinapay na walang lebadura na inilagay sa harap ni YAHWEH, ay kumuha siya ng isang munting tinapay na walang lebadura, at ng isang munting tinapay na nilangisan at ng isang manipis na tinapay, at inilagay sa ibabaw ng taba at sa ibabaw ng kanang hita:"
+      },
+      {
+        "num": 27,
+        "text": "At inilagay na lahat sa mga kamay ni Aaron at sa mga kamay ng kaniyang mga anak, at pinag-aalog na pinakahandog na inalog sa harap ni YAHWEH."
+      },
+      {
+        "num": 28,
+        "text": "At kinuha ni Moises sa kanilang mga kamay, at sinunog sa dambana sa ibabaw ng handog na susunugin: mga talagang masarap na amoy: handog nga sa Elohim na pinaraan sa apoy."
+      },
+      {
+        "num": 29,
+        "text": "At kinuha ni Moises ang dibdib at inalog na pinakahandog na inalog sa harap ni YAHWEH: ito ang bahagi ni Moises sa tupang itinalaga; gaya ng iniutos ni YAHWEH kay Moises."
+      },
+      {
+        "num": 30,
+        "text": "At kumuha si Moises ng langis na pangpahid, at ng dugong nasa ibabaw ng dambana, at iniwisik kay Aaron, sa kaniyang mga suot, at sa kaniyang mga anak, at sa mga suot ng kaniyang mga anak na kasama niya; at pinapaging banal si Aaron at ang kaniyang mga suot, at ang kaniyang mga anak at ang mga suot ng kaniyang mga anak na kasama niya."
+      },
+      {
+        "num": 31,
+        "text": "At sinabi ni Moises kay Aaron at sa kaniyang mga anak, Pakuluan ninyo ang laman sa pintuan ng Tabernakulo ng kapisanan: at doon ninyo kanin, at ang tinapay na nasa bakol ng itinatalaga, ayon sa iniutos ko, na sinasabi, Kakanin ni Aaron at ng kaniyang mga anak."
+      },
+      {
+        "num": 32,
+        "text": "At ang labis sa laman at sa tinapay ay susunugin ninyo sa apoy."
+      },
+      {
+        "num": 33,
+        "text": "At sa pintuan ng Tabernakulo ng kapisanan ay huwag kayong lalabas na pitong araw, hanggang sa maganap ang mga kaarawan ng inyong pagtalaga: sapagka't pitong araw na kayo'y matatalaga."
+      },
+      {
+        "num": 34,
+        "text": "Kung paano ang ginawa sa araw na ito, ay gayon ang iniutos ni YAHWEH na gawin upang itubos sa inyo."
+      },
+      {
+        "num": 35,
+        "text": "At sa pintuan ng Tabernakulo ng kapisanan ay matitira kayo gabi't araw na pitong araw, at inyong tutuparin ang kautusan ni YAHWEH, upang huwag kayong mamatay: dahil gayon ang iniutos ko."
+      },
+      {
+        "num": 36,
+        "text": "At ginawa ni Aaron at ng kaniyang mga anak ang lahat na iniutos ni YAHWEH sa pamamagitan ni Moises."
+      }
+    ],
+    "9": [
+      {
+        "num": 1,
+        "text": "At nangyari sa ikawalong araw, na tinawag ni Moises si Aaron at ang kaniyang mga anak, at ang mga matanda sa Israel;"
+      },
+      {
+        "num": 2,
+        "text": "At sinabi niya kay Aaron, Magdala ka ng isang guyang toro, na handog dahil sa kasalanan at isang tupang lalake na handog na susunugin, na kapuwa walang kapintasan, at ihandog mo sa harap ni YAHWEH."
+      },
+      {
+        "num": 3,
+        "text": "At sa mga anak ni Israel ay sasalitain mo, na sasabihin, Kumuha kayo ng isang kambing na lalake na handog dahil sa kasalanan; at ng isang guyang baka, at ng isang kordero, na kapuwa na may gulang na isang taon, at walang kapintasan, na handog na susunugin;"
+      },
+      {
+        "num": 4,
+        "text": "At ng isang toro at ng isang tupang lalake na mga handog tungkol sa kapayapaan, upang ihain sa harap ni YAHWEH, at ng isang handog na harina na hinaluan ng langis: dahil magpapakita sa inyo ngayon si YAHWEH."
+      },
+      {
+        "num": 5,
+        "text": "At kanilang dinala sa harap ng Tabernakulo ng kapisanan ang iniutos ni Moises: at lumapit doon ang buong kapisanan, at tumayo sa harap ni YAHWEH."
+      },
+      {
+        "num": 6,
+        "text": "At sinabi ni Moises, Ito ang iniutos ni YAHWEH na gawin ninyo: at lilitaw sa inyo ang kaluwalhatian ni YAHWEH."
+      },
+      {
+        "num": 7,
+        "text": "At sinabi ni Moises kay Aaron, Lumapit ka sa dambana, at ihandog mo ang iyong handog dahil sa kasalanan, at ang iyong handog na susunugin, at itubos mo sa iyong sarili at sa bayan: at ihandog mo ang alay ng bayan, at itubos mo sa kanila; gaya ng iniutos ni YAHWEH."
+      },
+      {
+        "num": 8,
+        "text": "Lumapit nga si Aaron sa dambana at pinatay ang guyang handog sa kasalanan, na para sa kaniya."
+      },
+      {
+        "num": 9,
+        "text": "At iniharap ng mga anak ni Aaron sa kaniya ang dugo: at itinubog niya ang kaniyang daliri sa dugo, at ipinahid sa ibabaw ng mga anyong sungay ng dambana at ang dugong labis ay ibinuhos sa tungtungan ng dambana:"
+      },
+      {
+        "num": 10,
+        "text": "Datapuwa't ang taba at ang mga bato, at ang lamad na nasa atay ng handog dahil sa kasalanan, ay sinunog niya sa ibabaw ng dambana; gaya ng iniutos ni YAHWEH kay Moises."
+      },
+      {
+        "num": 11,
+        "text": "At ang laman at ang balat ay sinunog niya sa apoy sa labas ng kampamento."
+      },
+      {
+        "num": 12,
+        "text": "At pinatay niya ang handog na susunugin; at ibinigay sa kaniya ng mga anak ni Aaron ang dugo, at kaniyang iniwisik sa ibabaw ng palibot ng dambana."
+      },
+      {
+        "num": 13,
+        "text": "At kaniyang ibinigay sa kaniya ang handog na susunugin, na isa-isang putol, at ang ulo: at sinunog sa ibabaw ng dambana."
+      },
+      {
+        "num": 14,
+        "text": "At kaniyang hinugasan ang lamang loob at ang mga paa at sinunog sa ibabaw ng handog na susunugin sa ibabaw ng dambana."
+      },
+      {
+        "num": 15,
+        "text": "At iniharap niya ang alay ng bayan; at kinuha ang kambing na handog sa kasalanan na para sa bayan, at pinatay at inihandog dahil sa kasalanan, na gaya ng una."
+      },
+      {
+        "num": 16,
+        "text": "At iniharap ang handog na susunugin, at inihandog ayon sa palatuntunan."
+      },
+      {
+        "num": 17,
+        "text": "At iniharap niya ang handog na harina, at kumuha ng isang dakot, at sinunog sa ibabaw ng dambana, bukod sa handog na susunugin sa umaga."
+      },
+      {
+        "num": 18,
+        "text": "Kaniyang pinatay rin ang toro at ang tupang lalake na haing mga handog sa kapayapaan, na para sa bayan: at ibinigay ng mga anak ni Aaron sa kaniya ang dugo, at kaniyang iniwisik sa ibabaw ng dambana hanggang sa palibot."
+      },
+      {
+        "num": 19,
+        "text": "At ang taba ng toro at ng tupang lalake, ang matabang buntot at ang tabang nakatakip sa lamang loob, at ang mga bato, at ang lamad ng atay."
+      },
+      {
+        "num": 20,
+        "text": "At kanilang inilagay ang mga taba sa ibabaw ng mga dibdib, at kaniyang sinunog ang taba sa ibabaw ng dambana:"
+      },
+      {
+        "num": 21,
+        "text": "At ang mga dibdib at ang kanang hita ay inalog ni Aaron na pinakahandog na inalog sa harap ni YAHWEH; gaya ng iniutos ni Moises."
+      },
+      {
+        "num": 22,
+        "text": "At itinaas ni Aaron ang kaniyang mga kamay sa dakong bayan at binasbasan niya; at bumaba siya na mula sa paghahandog ng handog dahil sa kasalanan, at ng handog na susunugin, at ng mga handog tungkol sa kapayapaan."
+      },
+      {
+        "num": 23,
+        "text": "At pumasok si Moises at si Aaron sa Tabernakulo ng kapisanan, at sila ay lumabas, at binasbasan ang bayan: at lumitaw ang kaluwalhatian ni YAHWEH sa buong bayan."
+      },
+      {
+        "num": 24,
+        "text": "At may lumabas na apoy sa harap ni YAHWEH, at sinunog sa ibabaw ng dambana ang handog na susunugin at ang taba: at nang makita yaon ng buong bayan, ay nagsigawan at nagpatirapa."
+      }
+    ],
+    "10": [
+      {
+        "num": 1,
+        "text": "At si Nadab at si Abihu, na mga anak ni Aaron, ay kumuha ang bawa't isa sa kanila ng kani-kaniyang suuban, at sinidlan nila ng apoy, at pinatungan ng kamangyan, at sila'y naghandog sa harap ni YAHWEH ng ibang apoy na hindi iniutos niya sa kanila."
+      },
+      {
+        "num": 2,
+        "text": "At sa harap ni YAHWEH ay may lumabas na apoy, at sinupok sila; at namatay sila sa harap ni YAHWEH."
+      },
+      {
+        "num": 3,
+        "text": "Nang magkagayo'y sinabi ni Moises kay Aaron, Ito ang sinalita ni YAHWEH, na sinasabi, Ako'y babanalin ng mga lumalapit sa Akin, at sa harap ng buong bayan ay luluwalhatiin Ako. At si Aaron ay hindi umimik."
+      },
+      {
+        "num": 4,
+        "text": "At tinawag ni Moises si Misa'el at si Elzaphan, na mga anak ni Uziel na amain ni Aaron, at sa kanila'y sinabi, Magsilapit kayo, ilabas ninyo ang inyong mga kapatid sa kampamento mula sa harap ng santuariyo."
+      },
+      {
+        "num": 5,
+        "text": "Sa gayo'y lumapit sila, at kanilang binuhat sa kanilang mga kasuutan na inilabas sa kampamento, gaya ng sinabi ni Moises."
+      },
+      {
+        "num": 6,
+        "text": "At sinabi ni Moises kay Aaron, at kay Eleazar at kay Itamar na kaniyang mga anak, Huwag ninyong ilugay ang buhok ng inyong ulo, o hapakin man ninyo ang inyong bihisan; upang huwag kayong mamatay at ng Siya'y huwag magalit sa buong kapisanan: kundi ang inyong mga kapatid, ang buong sangbahayan ni Israel ay tumaghoy sa apoy na pinapag-alab ni YAHWEH."
+      },
+      {
+        "num": 7,
+        "text": "At huwag kayong lalabas sa pintuan ng Tabernakulo ng kapisanan, baka kayo'y mamatay: sapagka't ang langis na pangpahid ni YAHWEH ay nasa ulo ninyo. At kanilang ginawa ayon sa salita ni Moises."
+      },
+      {
+        "num": 8,
+        "text": "At sinalita ni YAHWEH kay Aaron, na sinasabi,"
+      },
+      {
+        "num": 9,
+        "text": "Huwag iinom ng alak o ng matapang na inumin, ikaw o ang iyong mga anak man, kapag kayo'y papasok sa Tabernakulo ng kapisanan, upang kayo'y huwag mamatay: magiging pala-tuntunang walang hanggan sa buong panahon ng inyong mga lahi:"
+      },
+      {
+        "num": 10,
+        "text": "At upang inyong malagyan ng pagkakaiba ang banal at ang karaniwan, at ang marumi at ang malinis:"
+      },
+      {
+        "num": 11,
+        "text": "At upang inyong maituro sa mga anak ni Israel ang lahat ng palatuntunan na sinalita ni YAHWEH sa pamamagitan ni Moises."
+      },
+      {
+        "num": 12,
+        "text": "At sinalita ni Moises kay Aaron, at kay Eleazar at kay Ithamar, na mga natitira niyang anak, Kunin ninyo ang handog na harina na lumabis sa mga handog kay YAHWEH na pinaraan sa apoy, at inyong kaning walang lebadura sa tabi ng dambana; sapagka't kabanalbanalan;"
+      },
+      {
+        "num": 13,
+        "text": "At inyong kakanin sa dakong banal, dahil karampatang bahagi ninyo, at karampatang bahagi ng inyong mga anak, sa mga handog kay YAHWEH na pinaraan sa apoy: sapagka't gayon iniutos sa akin."
+      },
+      {
+        "num": 14,
+        "text": "At ang dibdib na inalog at ang hita na itinaas, ay kakanin ninyo sa dakong malinis, kakanin mo at ng iyong mga anak na lalake at babae na kasama mo: sapagka't yamang karampatang bahagi mo at karampatang bahagi ng iyong mga anak na ibinigay sa inyo sa mga hain ng mga anak ni Israel."
+      },
+      {
+        "num": 15,
+        "text": "Ang hita na itinaas, at ang dibdib na inalog ay kanilang dadalhin na kalakip ng mga handog na pinaraan sa apoy, na mga taba upang alugin na handog na inalog sa harap ni YAHWEH: at mapapasa iyo, at sa iyong mga anak na kasama mo, na karampatang bahagi ninyo magpakailan man; gaya ng iniutos ni YAHWEH."
+      },
+      {
+        "num": 16,
+        "text": "At hinanap ni Moises ng buong sikap ang kambing na handog dahil sa kasalanan, at, narito, sinunog: at nagalit kay Eleazer at kay Ithamar na mga anak ni Aaron na natira na sinasabi,"
+      },
+      {
+        "num": 17,
+        "text": "Bakit hindi ninyo kinain ang handog dahil sa kasalanan sa dakong santuariyo, yamang kabanal-banalang bagay at sa inyo'y ibinigay upang dalhin ang kasamaan ng kapisanan na itubos sa kanila sa harap ni YAHWEH?"
+      },
+      {
+        "num": 18,
+        "text": "Narito, hindi ipinasok ang dugo niyaon sa loob ng santuariyo; nararapat sana ninyong kanin sa santuariyo, gaya ng iniutos ko."
+      },
+      {
+        "num": 19,
+        "text": "At sinalita ni Aaron kay Moises, Narito, kanilang inihandog ng araw na ito ang kanilang handog dahil sa kasalanan, at ang kanilang handog na susunugin sa harap ni YAHWEH; at sa akin ay nangyari ang mga ganyang bagay na gaya ng mga ito: at kung ako nga'y nakakain ng handog dahil sa kasalanan ngayon, kalulugdan ba kaya ako ni YAHWEH?"
+      },
+      {
+        "num": 20,
+        "text": "At nang marinig ni Moises, ay nakalugod sa kaniyang paningin."
+      }
+    ],
+    "11": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises at kay Aaron, na sa kanila'y sinasabi,"
+      },
+      {
+        "num": 2,
+        "text": "Inyong salitain sa mga anak ni Israel, na inyong sabihin, Ito ang mga bagay na may buhay na inyong makakain sa lahat ng mga hayop na nasa lupa."
+      },
+      {
+        "num": 3,
+        "text": "Alinmang may hati ang paa na baak at ngumunguya, sa mga hayop, ay inyong makakain."
+      },
+      {
+        "num": 4,
+        "text": "Gayon ma'y huwag ninyong kakanin ang mga ito sa mga ngumunguya o doon sa mga may hati ang paa: ang kamelyo, dahil ngumunguya, nguni't walang hati ang paa, marumi nga sa inyo."
+      },
+      {
+        "num": 5,
+        "text": "At ang koneho, sapagka't ngumunguya, datapuwa't walang hati ang paa, marumi nga sa inyo."
+      },
+      {
+        "num": 6,
+        "text": "At ang liebre; sapagka't ngumunguya nguni't walang hati ang paa, marumi nga sa inyo."
+      },
+      {
+        "num": 7,
+        "text": "At ang baboy, sapagka't may hati ang paa at baak, datapuwa't hindi ngumunguya, marumi nga sa inyo."
+      },
+      {
+        "num": 8,
+        "text": "Huwag kayong kakain ng laman ng mga iyan, at ang bangkay ng mga yaon ay huwag ninyong hihipuin; mga marumi nga sa inyo."
+      },
+      {
+        "num": 9,
+        "text": "Ang mga ito'y inyong makakain sa mga nasa tubig: alin mang may mga palikpik at mga kaliskis sa tubig, sa mga dagat at sa mga ilog, ay makakain ninyo."
+      },
+      {
+        "num": 10,
+        "text": "At lahat ng walang palikpik at kaliskis sa mga dagat, at sa mga ilog, at sa lahat ng mga gumagalaw sa tubig, at sa lahat ng may buhay sa tubig, ay pawang marumi nga sa inyo."
+      },
+      {
+        "num": 11,
+        "text": "At magiging marumi sa inyo; huwag kayong kakain ng laman ng mga iyan, at ang bangkay ng mga iyan ay aariin ninyong marumi."
+      },
+      {
+        "num": 12,
+        "text": "Anomang walang palikpik o kaliskis sa tubig ay magiging marumi sa inyo."
+      },
+      {
+        "num": 13,
+        "text": "At sa mga ibon ay aariin ninyong marumi ang mga ito; hindi kakanin, mga marumi nga; ang agila, ang agilang dumudurog ng mga buto, at ang agilang dagat:"
+      },
+      {
+        "num": 14,
+        "text": "At ang lawin, at ang limbas, ayon sa kaniyang pagkalimbas;"
+      },
+      {
+        "num": 15,
+        "text": "Lahat ng uwak ayon sa kaniyang pagka-uwak;"
+      },
+      {
+        "num": 16,
+        "text": "At ang avestruz, at ang kotacabras at ang gaviota, at ang gavilan ayon sa kaniyang pagka-gavilan;"
+      },
+      {
+        "num": 17,
+        "text": "At ang maliit na kuwago, at ang somormuho, at ang malaking kuwago;"
+      },
+      {
+        "num": 18,
+        "text": "At ang kuwagong tila may sungay at ang pelikano, at ang buwitre;"
+      },
+      {
+        "num": 19,
+        "text": "At ang siguena, ang tagak ayon sa kaniyang pagkatagak; at ang abubilla, at ang kabag-kabag."
+      },
+      {
+        "num": 20,
+        "text": "Lahat na may pakpak na umuusad na lumalakad na may apat na paa ay marumi nga sa inyo."
+      },
+      {
+        "num": 21,
+        "text": "Gayon man, ang mga ito'y inyong makakain sa lahat ng may pakpak na umuusad na may apat na paa, ang mga may dalawang paang mahaba, bukod pa sa kanilang mga paa, upang kanilang ipanglukso sa lupa;"
+      },
+      {
+        "num": 22,
+        "text": "Sa kanila'y makakain ninyo ang mga ito: ang balang ayon sa kaniyang pagkabalang, at ang lukton ayon sa kaniyang pagkalukton, at ang kuliglig lupa ayon sa kaniyang pagkakuliglig, at ang tipaklong ayon sa kaniyang pagkatipaklong."
+      },
+      {
+        "num": 23,
+        "text": "Datapuwa't lahat na may pakpak na umuusad na mayroong apat na paa, ay marumi nga sa inyo."
+      },
+      {
+        "num": 24,
+        "text": "At sa mga ito ay magiging marumi kayo: sinomang humipo ng bangkay ng mga iyan ay magiging marumi hanggang sa hapon:"
+      },
+      {
+        "num": 25,
+        "text": "At sinomang bumuhat ng bangkay ng mga iyan, ay maglalaba ng kaniyang mga suot, at magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 26,
+        "text": "Bawa't hayop na may hati ang paa na hindi baak, o hindi ngumunguya, ay marumi sa inyo: bawa't humipo sa mga iyan ay magiging marumi."
+      },
+      {
+        "num": 27,
+        "text": "At anomang inilalakad ang kaniyang pangamot sa lahat ng hayop na inilalakad ang apat na paa, ay marumi nga sa inyo: sinomang humipo ng bangkay ng mga iyan ay magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 28,
+        "text": "At ang bumuhat ng bangkay ng mga iyan, ay maglalaba ng kaniyang mga suot, at magiging marumi hanggang sa hapon: mga marumi nga sa inyo."
+      },
+      {
+        "num": 29,
+        "text": "At ang mga ito'y marumi sa inyo, sa mga umuusad na nagsisiusad, sa ibabaw ng lupa: ang bubuwit, at ang daga, at ang bayawak ayon sa kaniyang pagkabayawak;"
+      },
+      {
+        "num": 30,
+        "text": "At ang tuko, at ang buwaya, at ang butiki, at ang bubuli at ang hunyango."
+      },
+      {
+        "num": 31,
+        "text": "Ang mga ito'y marumi sa inyo sa lahat ng umuusad: sinomang mangakahipo sa mga iyan kapag ang mga iyan ay patay, ay magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 32,
+        "text": "At yaong lahat na kabagsakan ng mga iyan, kapag patay, ay magiging marumi nga: maging alin mang kasangkapan kahoy, o bihisan, o balat, o supot, alin mang kasangkapang ginagamit sa anomang gawa, sa tubig dapat ilubog, at magiging marumi hanggang sa hapon; kung magkagayon ay magiging malinis."
+      },
+      {
+        "num": 33,
+        "text": "At bawa't sisidlang lupa na kahulugan ng mga iyan, lahat ng nalalaman doon ay magiging marumi, at yao'y inyong babasagin."
+      },
+      {
+        "num": 34,
+        "text": "Lahat ng pagkain na makakain na kabuhusan ng tubig, ay magiging marumi; at lahat ng inuming maiinom na masilid sa alin man sa mga gayong sisidlang lupa, ay magiging marumi."
+      },
+      {
+        "num": 35,
+        "text": "At lahat na kahulugan ng anomang bahagi ng bangkay ng mga yaon ay magiging marumi; maging hurno o kalan ng mga palyok, ay babasagin: mga marumi nga at magiging marumi sa inyo."
+      },
+      {
+        "num": 36,
+        "text": "Gayon ma'y ang isang bukal o ang isang balon, na tipunan ng tubig, ay magiging malinis: datapuwa't ang masagi ng bangkay ng mga yaon ay magiging marumi."
+      },
+      {
+        "num": 37,
+        "text": "At kung mahulugan ng kanilang bangkay ang alin mang binhing panghasik na ihahasik, ay malinis."
+      },
+      {
+        "num": 38,
+        "text": "Nguni't kung nabasa ang binhi at mahulugan ng bangkay yaon, ay magiging marumi sa inyo."
+      },
+      {
+        "num": 39,
+        "text": "At kung ang anomang hayop na inyong makakain ay mamatay; ang makahipo ng bangkay niyaon ay magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 40,
+        "text": "At ang kumain ng bangkay niyaon ay maglalaba ng kaniyang suot, at magiging marumi hanggang sa hapon: gayon din ang bumuhat ng bangkay niyaon, ay maglalaba ng kaniyang suot, at magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 41,
+        "text": "At bawa't umuusad na nagsisiusad sa ibabaw ng lupa ay marumi; hindi kakanin."
+      },
+      {
+        "num": 42,
+        "text": "Lahat ng lumalakad ng kaniyang tiyan, at lahat ng lumalakad ng apat na paa o mayroong maraming paa, sa lahat ng bagay na umuusad sa ibabaw ng lupa, ay huwag ninyong kakanin; sapagka't mga marumi nga."
+      },
+      {
+        "num": 43,
+        "text": "Huwag kayong magpakarumi sa anomang umuusad, o huwag kayong magpakalinis man sa mga iyan, na anopa't huwag kayong mahawa riyan."
+      },
+      {
+        "num": 44,
+        "text": "Sapagka't Ako si YAHWEH ninyong AMA: magpakabanal nga kayo at kayo'y maging mga banal; sapagka't Ako'y banal: ni huwag kayong magpakahawa sa anomang umuusad na gumagalaw sa ibabaw ng lupa."
+      },
+      {
+        "num": 45,
+        "text": "Sapagka't Ako si YAHWEH na nagsampa sa inyo mula sa lupain ng Egipto, upang Ako'y inyong maging Elohim: kayo nga'y magpakabanal, sapagka't Ako'y Banal."
+      },
+      {
+        "num": 46,
+        "text": "Ito ang Kautusan tungkol sa hayop, at sa ibon, at sa lahat na may buhay na gumagalaw sa tubig, at sa lahat ng nilikha na umuusad sa ibabaw ng lupa;"
+      },
+      {
+        "num": 47,
+        "text": "Upang lagyan ninyo ng pagkakaiba ang marumi at ang malinis, at ang may buhay na makakain at ang may buhay na hindi makakain."
+      }
+    ],
+    "12": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi,"
+      },
+      {
+        "num": 2,
+        "text": "Salitain mo sa mga anak ni Israel, na iyong sabihin, Kung ang babae ay magbuntis, at manganak ng isang lalake, ay magiging marumi na pitong araw; ayon sa mga araw ng karumihan ng kaniyang sakit, ay magiging marumi."
+      },
+      {
+        "num": 3,
+        "text": "At sa ikawalong araw ay tutuliin ang bata sa laman ng kaniyang dulong-balat."
+      },
+      {
+        "num": 4,
+        "text": "At siya'y mananatiling tatlong pu't tatlong araw na maglilinis ng kaniyang dugo; huwag siyang hihipo ng anomang bagay na banal, o papasok man sa santuariyo, hanggang sa matupad ang mga araw ng kaniyang paglilinis."
+      },
+      {
+        "num": 5,
+        "text": "Nguni't kung manganak siya ng babae, ay magiging marumi nga ng dalawang linggo, ayon sa kaniyang karumihan: at mananatiling anim na pu't anim na araw na maglilinis ng kaniyang dugo."
+      },
+      {
+        "num": 6,
+        "text": "At pagkaganap niya ng mga araw ng kaniyang paglilinis, maging sa anak na lalake o sa anak na babae, ay magdadala siya ng isang kordero ng unang taon, na pinakahandog na susunugin, at isang inakay ng kalapati o isang batobato na pinakahandog dahil sa kasalanan, sa pintuan ng Tabernakulo ng kapisanan, sa saserdote;"
+      },
+      {
+        "num": 7,
+        "text": "At kaniyang ihahandog sa harap ni YAHWEH, at itutubos sa kaniya; at siya'y malilinis sa agas ng kaniyang dugo. Ito ang kautusan tungkol sa nanganak ng lalake o ng babae."
+      },
+      {
+        "num": 8,
+        "text": "At kung ang kaniyang kaya ay hindi sapat upang magdala ng kordero, ay kukuha nga siya ng dalawang batobato o ng dalawang inakay ng kalapati; ang isa'y pinakahandog na susunugin at ang isa'y pinakahandog dahil sa kasalanan: at itutubos sa kaniya ng saserdote, at siya'y magiging malinis."
+      }
+    ],
+    "13": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises at kay Aaron, na sinasabi,"
+      },
+      {
+        "num": 2,
+        "text": "Kapag ang sinomang tao ay nagkaroon sa balat ng kaniyang laman, ng pamamaga, o langib, o pantal na makintab at naging salot na ketong sa balat ng kaniyang laman, ay dadalhin nga siya kay Aaron na saserdote, o sa isa sa kaniyang mga anak na saserdote:"
+      },
+      {
+        "num": 3,
+        "text": "At titingnan ng saserdote ang tila salot na nasa balat ng kaniyang laman: at kung ang balahibo sa tila salot ay pumuti, at makitang ang sugat ay malalim kaysa balat ng kaniyang laman, ay salot na ketong nga: at siya ay mamasdan ng saserdote at ipakikilala siyang marumi."
+      },
+      {
+        "num": 4,
+        "text": "At kung ang pantal na makintab ay maputi sa balat ng kaniyang laman, at makitang hindi malalim kaysa balat, at ang balahibo niyaon ay hindi pumuti, ay kukulungin ng saserdote ang may tila salot na pitong araw."
+      },
+      {
+        "num": 5,
+        "text": "At titingnan siya ng saserdote sa ikapitong araw: at, narito, kung makitang ang tila salot ay tumigil, at hindi kumalat ang tila salot sa balat, ay kukulungin uli siya ng saserdote na pitong araw:"
+      },
+      {
+        "num": 6,
+        "text": "At titingnan siya uli ng saserdote sa ikapitong araw: at, narito, kung makitang ang tila salot ay namutla, at ang tila salot ay hindi kumalat sa balat, ay ipakikilalang malinis siya ng saserdote: langib yaon; at kaniyang lalabhan ang kaniyang suot, at magiging malinis."
+      },
+      {
+        "num": 7,
+        "text": "Datapuwa't kung ang langib ay kumakalat sa balat, pagkatapos na siya'y makapakita sa saserdote upang siya'y linisin ay pakikita siya uli sa saserdote:"
+      },
+      {
+        "num": 8,
+        "text": "At titingnan siya ng saserdote; at, narito, kung ang langib ay kumakalat sa balat, ay ipakikilala ng saserdote na marumi: ketong nga yaon."
+      },
+      {
+        "num": 9,
+        "text": "Kapag nagkaroon ng tila salot na ketong ang sinomang tao, ay dadalhin siya sa saserdote;"
+      },
+      {
+        "num": 10,
+        "text": "At titingnan siya ng saserdote; at, narito, kung makitang may pamamaga na maputi sa balat, na pumuti ang balahibo, at may matigas na lamang buhay sa pamamaga,"
+      },
+      {
+        "num": 11,
+        "text": "Ay malaong ketong nga sa balat ng kaniyang laman, at ipakikilala ng saserdote na siya ay marumi; hindi siya kukulungin; sapagka't siya'y marumi."
+      },
+      {
+        "num": 12,
+        "text": "At kung kumalat ang ketong sa balat, at matakpan ng ketong ang buong balat ng may tila salot, mula sa ulo hanggang sa kaniyang mga paa, sa buong maaabot ng paningin ng saserdote;"
+      },
+      {
+        "num": 13,
+        "text": "At titingnan nga siya ng saserdote; at, narito, kung makitang ang ketong ay kumalat sa buong laman niya, ay ipakikilalang malinis ang may tila salot: pumuting lahat: siya'y malinis."
+      },
+      {
+        "num": 14,
+        "text": "Nguni't sa alin mang araw na makitaan siya ng lamang buhay, ay magiging marumi siya."
+      },
+      {
+        "num": 15,
+        "text": "At titingnan ng saserdote ang lamang buhay, at ipakikilala siyang marumi: ang lamang buhay ay marumi: ketong nga."
+      },
+      {
+        "num": 16,
+        "text": "O kung magbago uli ang lamang buhay at pumuti, ay lalapit nga siya sa saserdote;"
+      },
+      {
+        "num": 17,
+        "text": "At titingnan siya ng saserdote: at, narito, kung pumuti ang tila salot ay ipakikilalang malinis ng saserdote ang may tila salot: siya'y malinis."
+      },
+      {
+        "num": 18,
+        "text": "At kung magkaroon sa balat ng laman ng isang bukol at gumaling,"
+      },
+      {
+        "num": 19,
+        "text": "At humalili sa bukol ay isang pamamaga na maputi, o isang pantal na makintab, na namumulang puti, ay ipakikita sa saserdote;"
+      },
+      {
+        "num": 20,
+        "text": "At titingnan ng saserdote; at, narito, kung makitang tila impis kaysa balat, at ang balahibo niyaon ay tila pumuti, ay ipakikilala ng saserdote na marumi: salot na ketong yaon; lumitaw sa bukol."
+      },
+      {
+        "num": 21,
+        "text": "Datapuwa't kung pagtingin ng saserdote, ay makitang walang balahibong puti yaon, o hindi impis man kay sa balat, kungdi namutla, ay kukulungin ng saserdote siya na pitong araw."
+      },
+      {
+        "num": 22,
+        "text": "At kung kumalat sa balat, ay ipakikilala ng saserdote na marumi: salot nga yaon."
+      },
+      {
+        "num": 23,
+        "text": "Nguni't kung ang pantal na makintab ay tumigil sa kaniyang kinaroroonan, at hindi kumalat, ay piklat nga ng bukol; at ipakikilala ng saserdote na malinis siya."
+      },
+      {
+        "num": 24,
+        "text": "O kapag nagkaroon sa balat ng laman, ng paso ng apoy, at ang lamang paso ay naging tila pantal na makintab, na namumulang puti, o maputi;"
+      },
+      {
+        "num": 25,
+        "text": "At titingnan nga ng saserdote: at, narito, kung makitang ang buhok ay pumuti sa pantal na makintab, at tila mandin malalim kaysa balat; ay ketong nga na lumitaw sa paso: at ipakikilala ng saserdote na marumi; salot na ketong nga."
+      },
+      {
+        "num": 26,
+        "text": "Nguni't kung pagtingin ng saserdote, at, narito, kung makita ngang sa pantal na makintab ay walang balahibong maputi, at hindi impis kaysa balat, kungdi namutla; ay kukulungin nga siya ng saserdote na pitong araw."
+      },
+      {
+        "num": 27,
+        "text": "At titingnan siya ng saserdote sa ikapitong araw: kung kumalat sa balat, ay ipakikilala ng saserdote na marumi: salot na ketong nga yaon."
+      },
+      {
+        "num": 28,
+        "text": "At kung ang pantal na makintab ay tumigil sa kaniyang kinaroroonan at hindi kumalat sa balat, kungdi pumutla, ay pamamaga ng paso yaon, at ipakikilala ng saserdote na malinis: sapagka't piklat ng paso yaon."
+      },
+      {
+        "num": 29,
+        "text": "At kung ang sinomang lalake o babae ay mayroong tila salot sa ulo o sa baba,"
+      },
+      {
+        "num": 30,
+        "text": "Ay titingnan nga ng saserdote ang tila salot: at, narito, kung makitang tila malalim kaysa balat, at yao'y may buhok na naninilaw na manipis, ay ipakikilala ng saserdote na marumi: tina nga, ketong nga yaon sa ulo o sa baba."
+      },
+      {
+        "num": 31,
+        "text": "At kung makita ng saserdote ang tila salot na tina, at, narito, tila hindi malalim kaysa balat, at walang buhok na maitim yaon, ay kukulungin ng saserdote na pitong araw ang may tila salot na tina;"
+      },
+      {
+        "num": 32,
+        "text": "At sa ikapitong araw ay titingnan ng saserdote ang tila salot; at, narito, kung makita ngang hindi kumalat ang tina, at walang buhok na naninilaw, at tila ang tina ay hindi malalim kaysa balat,"
+      },
+      {
+        "num": 33,
+        "text": "Ay aahitan nga, datapuwa't hindi aahitan ang kinaroroonan ng tina; at ipakukulong ng saserdote ang may tina ng muling pitong araw:"
+      },
+      {
+        "num": 34,
+        "text": "At titingnan ng saserdote ang tina sa ikapitong araw: at, narito, kung makitang hindi kumalat ang tina sa balat, at tila hindi malalim kaysa balat; ay ipakikilala nga ng saserdote na malinis at siya'y maglalaba ng kaniyang suot at magiging malinis."
+      },
+      {
+        "num": 35,
+        "text": "Nguni't kung ang tina ay kumalat sa balat, pagkatapos ng kaniyang paglilinis;"
+      },
+      {
+        "num": 36,
+        "text": "Ay titingnan nga ng saserdote: at, narito, kung makitang kumalat sa balat ang tina ay hindi hahanapin ng saserdote ang buhok na maninilaw; siya'y marumi."
+      },
+      {
+        "num": 37,
+        "text": "Datapuwa't kung sa kaniyang paningin ay tumigil ang tina at may tumubong buhok na itim; ay gumaling ang tina, siya'y malinis: at ipaki-kilalang malinis siya ng saserdote."
+      },
+      {
+        "num": 38,
+        "text": "At kapag ang isang lalake o babae ay nagkaroon sa balat ng kaniyang laman ng nangingintab na pantal, ng makikintab na pantal na puti;"
+      },
+      {
+        "num": 39,
+        "text": "Ay titingnan nga ng saserdote: at, narito, kung makitang ang nangingintab na pantal sa balat ng kaniyang laman ay namumuti-muti; yao'y buni na sumibol sa balat; siya'y malinis."
+      },
+      {
+        "num": 40,
+        "text": "At kung ang sinoman ay malugunan ng buhok, ay kalbo gayon ma'y malinis."
+      },
+      {
+        "num": 41,
+        "text": "At kung sa dakong harapan ng ulo nalugunan ng buhok, ay kalbo yaon sa noo gayon ma'y malinis."
+      },
+      {
+        "num": 42,
+        "text": "Datapuwa't kung sa kakalbuhan, sa ulo o sa noo ay magkaroon ng tila salot ng namumulang maputi; ay ketong na sumibol sa kaniyang kakalbuhan ng ulo o sa kaniyang kakalbuhan ng noo."
+      },
+      {
+        "num": 43,
+        "text": "Kung magkagayo'y titingnan siya ng saserdote: at, narito, kung ang pamamaga ng tila salot ay namumula-mula ng maputi sa kaniyang kakalbuhan ng ulo o sa kaniyang kakalbuhan ng noo, gaya ng anyo ng ketong sa balat ng kaniyang laman;"
+      },
+      {
+        "num": 44,
+        "text": "Ay ketongin siya, siya'y marumi ipakikilala siya ng saserdote na tunay na marumi; nasa kaniyang ulo ang salot niya."
+      },
+      {
+        "num": 45,
+        "text": "At pupunitin ng may ketong na kinaroroonan ng salot, ang kaniyang mga suot at ang buhok ng kaniyang ulo ay ilulugay, at siya'y magtatakip ng kaniyang nguso, at maghihihiyaw, marumi, marumi."
+      },
+      {
+        "num": 46,
+        "text": "Sa buong panahong siya'y karoonan ng salot, ay magiging marumi; siya'y marumi: siya'y tatahang bukod; sa labas ng kampamento malalagay ang kaniyang tahanan."
+      },
+      {
+        "num": 47,
+        "text": "Ang suot na kinaroroonan ng ketong, maging kasuutang balahibo ng tupa o kasuutang lino;"
+      },
+      {
+        "num": 48,
+        "text": "Maging nasa paayon o maging nasa pahalang; ng lino o ng balahibo ng tupa; maging sa balat o sa alin mang yaring balat;"
+      },
+      {
+        "num": 49,
+        "text": "Kung ang tila salot ay namemerde o namumula sa kasuutan, o sa balat, maging sa paayon, o maging sa pahalang, o sa alin mang kasangkapang balat; ay salot na ketong nga at ipakikita sa saserdote,"
+      },
+      {
+        "num": 50,
+        "text": "At titingnan ng saserdote ang tila salot, at ipatatago ng pitong araw ang bagay na may tila salot:"
+      },
+      {
+        "num": 51,
+        "text": "At titingnan ang bagay na may tila salot, sa ikapitong araw: kung kumalat ang tila salot sa kasuutan, maging sa paayon, o sa pahalang, o sa balat, o alin mang ginagawa sa balat ay ketong na ngumangatngat ang gayon tila salot; yao'y marumi."
+      },
+      {
+        "num": 52,
+        "text": "At kaniyang susunugin ang kasuutan, maging paayon, at maging pahalang ng balahibo ng tupa o lino o sa alin mang kasangkapang balat na kinaroroonan ng salot; sapagka't yao'y ketong na ngumangatngat, yao'y susunugin sa apoy."
+      },
+      {
+        "num": 53,
+        "text": "At kung pagtingin ng saserdote, at, narito, kung makita ngang hindi kumalat ang salot sa kasuutan, maging sa paayon man, o sa pahalang man, o sa alin mang kasangkapang balat;"
+      },
+      {
+        "num": 54,
+        "text": "Ay palalabhan nga ng saserdote yaong kinaroroonan ng salot, at ipatatago pa ng pitong araw:"
+      },
+      {
+        "num": 55,
+        "text": "At titingnan ng saserdote ang bagay na may salot, pagkatapos na malabhan: at, narito, kung makitang ang salot ay hindi nagbago ang kulay, at hindi kumalat ang salot, yao'y marumi; susunugin mo sa apoy: isang ngatngat nga, maging ang nanisnis ay nasa karayagan o nasa kabaligtaran."
+      },
+      {
+        "num": 56,
+        "text": "At kung pagtingin ng saserdote, at, narito, kung makita ngang namutla ang dakong may salot pagkatapos na malabhan, ay hahapakin sa kasuutan, o sa balat, o sa paayon, o sa pahalang:"
+      },
+      {
+        "num": 57,
+        "text": "At kung muling lumitaw sa kasuutang yaon, maging sa paayon, o sa pahalang, o sa alin mang yari sa balat, ay muling sumisibol: susunugin mo sa apoy yaong kinaroroonan ng salot."
+      },
+      {
+        "num": 58,
+        "text": "At ang kasuutan, maging sa paayon, o sa pahalang, o sa alin mang yari sa balat, na iyong labhan, at maalis ang salot, ay lalabhang ikalawa, at magiging malinis."
+      },
+      {
+        "num": 59,
+        "text": "Ito ang kautusan tungkol sa salot na ketong sa kasuutang balahibo ng tupa o lino, maging sa paayon, o sa pahalang, o sa alin mang yari sa balat, upang ipakilalang malinis, o upang ipakilalang marumi."
+      }
+    ],
+    "14": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi,"
+      },
+      {
+        "num": 2,
+        "text": "Ito ang magiging kautusan tungkol sa may ketong, sa kaarawan ng kaniyang paglilinis, siya'y dadalhin sa saserdote:"
+      },
+      {
+        "num": 3,
+        "text": "At ang saserdote ay lalabas sa kampamento; at titingnan ng saserdote, at narito, kung ang salot na ketong ay gumaling sa may ketong;"
+      },
+      {
+        "num": 4,
+        "text": "Ay ipag-utos nga ng saserdote na ikuha siya na lilinisin, ng dalawang ibong malinis, at kahoy na sedro, at grana, at hisopo;"
+      },
+      {
+        "num": 5,
+        "text": "At ipag-uutos ng saserdote, na patayin ang isa sa mga ibon, sa isang sisidlang lupa sa ibabaw ng tubig na umaagos."
+      },
+      {
+        "num": 6,
+        "text": "Tungkol sa ibong buhay, ay kaniyang kukunin at ang kahoy na sedro, at ang grana at ang hisopo, at babasain pati ng ibong buhay, sa dugo ng ibong pinatay sa ibabaw ng tubig na umaagos:"
+      },
+      {
+        "num": 7,
+        "text": "At iwiwisik niya na makapito doon sa kaniya na lilinisin sa ketong, at ipakikilalang malinis, at pawawalan ang ibong buhay sa kalawakan ng parang."
+      },
+      {
+        "num": 8,
+        "text": "At siya na lilinisin ay maglalaba ng kaniyang mga suot at mag-aahit ng lahat niyang buhok, at maliligo sa tubig; at magiging malinis: at pagkatapos ay papasok sa kampamento, nguni't tatahan sa labas ng kaniyang tolda na pitong araw. Luk 5:14"
+      },
+      {
+        "num": 9,
+        "text": "At mangyayaring sa ikapitong araw, ay muling mag-aahit ng kaniyang buhok, sa kaniyang ulo, at sa kaniyang baba, at sa kaniyang kilay, na anopa't aahitin niya ang lahat niyang buhok; at kaniyang lalabhan ang kaniyang mga suot, at kaniyang paliliguan ang kaniyang laman sa tubig, at magiging malinis."
+      },
+      {
+        "num": 10,
+        "text": "At sa ikawalong araw ay kukuha siya ng dalawang korderong lalake na walang kapintasan, at ng isang korderong babae ng unang taon na walang kapintasan, at ng isang handog na harina na tatlong ikasangpung bahagi ng isang epa ng mainam na harina na hinaluan ng langis, at isang basong langis."
+      },
+      {
+        "num": 11,
+        "text": "At ihaharap ang taong lilinisin ng saserdoteng naglilinis sa kaniya, at gayon din ang mga bagay na yaon, sa harap ni YAHWEH, sa pintuan ng Tabernakulo ng kapisanan:"
+      },
+      {
+        "num": 12,
+        "text": "At kukuha ang saserdote ng isa sa mga korderong lalake at ihahandog na pinakahandog sa pagkakasala, at ng basong langis, at aalugin na pinakahandog na inalog sa harap ni YAHWEH:"
+      },
+      {
+        "num": 13,
+        "text": "At papatayin ang korderong lalake sa pinagpapatayan ng handog dahil sa kasalanan at ng handog na susunugin, sa dako ng santuariyo: sapagka't kung paanong ang handog dahil sa kasalanan ay sa saserdote, gayon din ang handog dahil sa pagkakasala; bagay ngang kabanal-banalan:"
+      },
+      {
+        "num": 14,
+        "text": "At ang saserdote ay kukuha sa dugo ng handog dahil sa pagkakasala, at ilalagay ng saserdote sa pingol ng kanang tainga niyaong lilinisin, at sa daliring hinlalaki ng kaniyang kanang kamay, at sa daliring hinlalaki ng kaniyang kanang paa;"
+      },
+      {
+        "num": 15,
+        "text": "At kukuha ang saserdote sa log ng langis, at ibubuhos sa ibabaw ng palad ng kaniyang kaliwang kamay:"
+      },
+      {
+        "num": 16,
+        "text": "At itutubog ng saserdote ang kanang daliri niya sa langis na nasa kaniyang kaliwang kamay, at magwiwisik siyang makapito ng langis ng kaniyang daliri sa harap ni YAHWEH:"
+      },
+      {
+        "num": 17,
+        "text": "At sa lumabis sa langis na nasa kaniyang kamay, ay maglalagay ang saserdote sa ibabaw ng pingol ng kanang tainga niyaong lilinisin, at sa daliring hinlalaki ng kaniyang kanang kamay at sa daliring hinlalaki ng kaniyang kanang paa, sa ibabaw ng dugo ng dahil sa pagkakasala:"
+      },
+      {
+        "num": 18,
+        "text": "At ang labis sa langis na nasa kamay ng saserdote, ay ilalagay nito sa ulo niyaong lilinisin: at itutubos sa kaniya ng saserdote sa harap ni YAHWEH."
+      },
+      {
+        "num": 19,
+        "text": "At ihahandog ng saserdote ang handog dahil sa kasalanan, at itutubos sa kaniya, na lilinisin dahil sa kaniyang karumihan; at pagkatapos ay papatayin ang handog na susunugin:"
+      },
+      {
+        "num": 20,
+        "text": "At ihahandog ng saserdote ang handog na susunugin at ang handog na harina sa ibabaw ng dambana: at itutubos sa kaniya ng saserdote, at siya'y magiging malinis."
+      },
+      {
+        "num": 21,
+        "text": "At kung siya'y dukha at ang kaniyang kaya ay hindi aabot, ay kukuha nga siya ng isang korderong lalake na handog dahil sa pagkakasala, na aalugin upang itubos sa kaniya, at ng ikasampung bahagi ng isang epa na mainam na harina, na hinaluan ng langis na pinakahandog na harina, at ng isang basong langis;"
+      },
+      {
+        "num": 22,
+        "text": "At ng dalawang bato-bato o ng dalawang inakay ng kalapati, kung alin ang aabutin ng kaniyang kaya; at ang isa'y magiging handog dahil sa kasalanan, at ang isa'y handog na susunugin."
+      },
+      {
+        "num": 23,
+        "text": "At sa ikawalong araw ay kaniyang dadalhin sa saserdote sa pintuan ng Tabernakulo ng kapisanan upang gamitin sa kaniyang paglilinis sa harap ni YAHWEH."
+      },
+      {
+        "num": 24,
+        "text": "At kukunin ng saserdote ang korderong handog dahil sa pagkakasala at ang isang basong langis, at aalugin ng saserdote na pinakahandog na inalog sa harap ni YAHWEH."
+      },
+      {
+        "num": 25,
+        "text": "At kaniyang papatayin ang korderong handog dahil sa pagkakasala, at kukuha ang saserdote ng dugo ng handog dahil sa pagkakasala, at ilalagay sa pingol ng kanang tainga niyaong lilinisin, at sa daliring hinlalaki ng kaniyang kanang kamay, at sa daliring hinlalaki ng kaniyang kanang paa:"
+      },
+      {
+        "num": 26,
+        "text": "At magbubuhos ang saserdote ng langis sa ibabaw ng palad ng kaniyang kaliwang kamay:"
+      },
+      {
+        "num": 27,
+        "text": "At makapitong magwiwisik ang saserdote ng kaniyang kanang daliri ng langis na nasa kaliwang kamay, sa harap ni YAHWEH:"
+      },
+      {
+        "num": 28,
+        "text": "At maglalagay ang saserdote ng langis na nasa kaniyang kamay, sa pingol ng kanang tainga niyaong lilinisin, at sa daliring hinlalaki ng kaniyang kanang kamay, at sa daliring hinlalaki ng kaniyang kanang paa, sa ibabaw ng pinaglagyan ng dugong handog dahil sa pagkakasala:"
+      },
+      {
+        "num": 29,
+        "text": "At ang labis ng langis na nasa kamay ng saserdote ay ilalagay niya sa ulo niyaong lilinisin, upang itubos sa kaniya sa harap ni YAHWEH."
+      },
+      {
+        "num": 30,
+        "text": "At kaniyang ihahandog ang isa sa mga bato-bato o sa mga inakay ng kalapati, kung alin ang kaniyang kaya;"
+      },
+      {
+        "num": 31,
+        "text": "Kung alin ang abutin ng kaniyang kaya, na ang isa'y handog dahil sa kasalanan, at ang isa'y handog na susunugin, pati ng handog na harina: at itutubos ng saserdote doon sa malilinis sa harap ni YAHWEH."
+      },
+      {
+        "num": 32,
+        "text": "Ito ang kautusan tungkol sa may salot na ketong, na ang kaniyang kaya ay hindi abot sa nauukol sa kaniyang paglilinis."
+      },
+      {
+        "num": 33,
+        "text": "At sinalita ni YAHWEH kay Moises at kay Aaron, na sinasabi."
+      },
+      {
+        "num": 34,
+        "text": "Kapag kayo'y nakapasok na sa lupain ng Canaan, na ibibigay kong pag-aari sa inyo, at Ako'y naglagay ng salot na ketong sa alin mang bahay sa lupain ninyong inaari;"
+      },
+      {
+        "num": 35,
+        "text": "Ay yayaon ang may-ari ng bahay at magbibigay alam sa saserdote, na sasabihin, tila mandin mayroong parang salot sa bahay:"
+      },
+      {
+        "num": 36,
+        "text": "At ipag-uutos ng saserdote na alisan ng laman ang bahay bago pumasok ang saserdote na kilalanin ang tila salot, upang ang lahat na nasa bahay ay huwag mahawa: at pagkatapos ay papasok ang saserdote upang tingnan ang bahay:"
+      },
+      {
+        "num": 37,
+        "text": "At titingnan ang salot, at kung makita ngang ang salot ay nasa mga panig ng bahay na may ukit na namemerde, o namumula at malalim kaysa panig;"
+      },
+      {
+        "num": 38,
+        "text": "Ay lalabas nga ang saserdote sa bahay hanggang sa pintuan ng bahay at ipasasara ang bahay na pitong araw:"
+      },
+      {
+        "num": 39,
+        "text": "At babalik ang saserdote sa ikapitong araw, at titingnan: at, narito, kung makita ngang kumalat ang salot sa mga panig ng bahay;"
+      },
+      {
+        "num": 40,
+        "text": "Ay ipag-uutos nga ng saserdote na bunutin ang mga batong kinaroonan ng tila salot at ipatatapon sa labas ng bayan sa dakong marumi:"
+      },
+      {
+        "num": 41,
+        "text": "At ipakakayas ang palibot ng loob ng bahay, at ang argamasang inalis na kinayas ay itatapon sa labas ng bayan sa dakong marumi:"
+      },
+      {
+        "num": 42,
+        "text": "At magsisikuha ng ibang mga bato, at ihahalili sa mga batong yaon, at magsisikuha ng ibang argamasa at siyang ihahaplos sa mga panig ng bahay."
+      },
+      {
+        "num": 43,
+        "text": "At kung muling bumalik ang tila salot, at sumibol sa bahay, pagkatapos na mabunot ang mga bato; at pagkatapos makayas ang bahay, at pagkatapos na mahaplusan ng argamasa;"
+      },
+      {
+        "num": 44,
+        "text": "Ay papasok nga ang saserdote at titingnan, at, narito, kung makita ngang ang salot ay kumalat sa bahay ay ketong na nakakahawa sa bahay; ito'y marumi."
+      },
+      {
+        "num": 45,
+        "text": "At gigibain niya ang bahay na yaon, ang mga bato at ang mga kahoy, at ang lahat ng argamasa ng bahay; ay dadalhin sa labas ng bayan sa dakong marumi."
+      },
+      {
+        "num": 46,
+        "text": "Bukod dito'y ang pumasok sa bahay na yaon ng buong panahong nasasara ay magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 47,
+        "text": "At ang mahiga sa bahay na yaon ay maglalaba ng kaniyang mga suot; at ang kumain sa bahay na yaon ay maglalaba ng kaniyang mga suot."
+      },
+      {
+        "num": 48,
+        "text": "At kung papasok ang saserdote, at, narito, kung hindi nga kumalat ang salot sa bahay, pagkatapos na nahaplusan ng argamasa; ay ipakikilala nga ng saserdote na malinis ang bahay, sapagka't gumaling sa salot."
+      },
+      {
+        "num": 49,
+        "text": "At upang linisin ang bahay ay kukuha ng dalawang ibon, at ng kahoy na sedro, at ng grana, at ng hisopo:"
+      },
+      {
+        "num": 50,
+        "text": "At papatayin ang isa sa mga ibon sa isang sisidlang lupa sa tubig na umaagos:"
+      },
+      {
+        "num": 51,
+        "text": "At kukunin niya ang kahoy na sedro, at ang hisopo at ang grana at ang ibong buhay, at babasain sa dugo ng ibong pinatay, at sa tubig na umaagos, at wiwisikang makapito ang bahay:"
+      },
+      {
+        "num": 52,
+        "text": "At kaniyang lilinisin ng dugo ng ibon, ang bahay sa agos ng tubig, at ng ibong buhay at ng kahoy na sedro, at ng hisopo, at ng grana:"
+      },
+      {
+        "num": 53,
+        "text": "Datapuwa't pawawalan ang ibong buhay sa labas ng bayan, sa kalawakan ng parang: gayon tutubusin ang bahay: at magiging malinis."
+      },
+      {
+        "num": 54,
+        "text": "Ito ang kautusan tungkol sa sari-saring salot na ketong at sa tina,"
+      },
+      {
+        "num": 55,
+        "text": "At sa ketong ng kasuutan, at ng sa bahay."
+      },
+      {
+        "num": 56,
+        "text": "At sa pamamaga at sa langib, at sa pantal na makintab:"
+      },
+      {
+        "num": 57,
+        "text": "Upang ituro kung kailan marumi, at kung kailan malinis: ito ang kautusan tungkol sa ketong."
+      }
+    ],
+    "15": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises at kay Aaron na sinasabi,"
+      },
+      {
+        "num": 2,
+        "text": "Salitain ninyo sa mga anak ni Israel, at inyong sabihin sa kanila, Kapag ang sinomang tao ay inagasan sa kaniyang laman, ay magiging marumi siya dahil sa kaniyang agas."
+      },
+      {
+        "num": 3,
+        "text": "At ito ang magiging kaniyang karumihan sa kaniyang agas: maging ang kaniyang laman ay balungan dahil sa kaniyang agas, o ang kaniyang laman ay masarhan dahil sa kaniyang agas, ay kaniyang karumihan nga."
+      },
+      {
+        "num": 4,
+        "text": "Bawa't higaang mahigan ng inaagasan ay magiging marumi: at bawa't bagay na kaniyang kaupuan, ay magiging marumi."
+      },
+      {
+        "num": 5,
+        "text": "At sinomang tao na makahipo ng kaniyang higaan ay maglalaba ng kaniyang mga damit, at maliligo siya sa tubig, at magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 6,
+        "text": "At ang maupo sa anomang bagay na kaupuan ng inaagasan ay maglalaba ng kaniyang mga damit, at maliligo siya sa tubig, at magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 7,
+        "text": "At ang humipo ng laman niyaong inaagasan ay maglalaba ng kaniyang mga damit at maliligo siya sa tubig, at magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 8,
+        "text": "At kung ang inaagasan ay makalura sa taong malinis, ay maglalaba nga siya ng kaniyang mga damit, at maliligo siya sa tubig, at magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 9,
+        "text": "At alin mang siya na kasakyan ng inaagasan, ay magiging marumi."
+      },
+      {
+        "num": 10,
+        "text": "At ang alin mang taong humipo ng alinmang bagay na napalagay sa ilalim niyaon, ay magiging marumi hanggang sa hapon: at ang magdala ng mga bagay na yaon ay maglalaba ng kaniyang mga damit at maliligo siya sa tubig, at magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 11,
+        "text": "At yaong lahat na mahipo ng inaagasan na hindi nakapaghugas ng kaniyang mga kamay sa tubig, ay maglalaba nga rin ng kaniyang mga damit, at maliligo siya sa tubig, at magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 12,
+        "text": "At ang sisidlang lupa na mahipo ng inaagasan, ay babasagin: at ang lahat ng kasangkapang kahoy ay huhugasan sa tubig."
+      },
+      {
+        "num": 13,
+        "text": "At kung ang inaagasan ay gumaling sa kaniyang agas, ay bibilang siya ng pitong araw sa kaniyang paglilinis, at maglalaba ng kaniyang mga damit; at paliliguan din niya ang kaniyang laman sa tubig na umaagos, at magiging malinis."
+      },
+      {
+        "num": 14,
+        "text": "At sa ikawalong araw ay magdadala siya ng dalawang batobato, o ng dalawang inakay ng kalapati, at ihaharap niya kay YAHWEH sa pasukan ng Tabernakulo ng Kapisanan, at ibibigay niya sa saserdote."
+      },
+      {
+        "num": 15,
+        "text": "At ihahandog ng saserdote, na ang isa'y handog dahil sa kasalanan, at ang isa'y handog na susunugin; at itutubos sa kaniya ng saserdote sa harap ni YAHWEH, dahil sa kaniyang agas."
+      },
+      {
+        "num": 16,
+        "text": "At kung ang sinomang tao ay labasan ng binhi ng pakikiapid, ay paliliguan nga niya ng tubig ang buong kaniyang laman, at magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 17,
+        "text": "At lahat ng damit at lahat ng balat na kinaroonan ng binhi ng pakikiapid, ay lalabhan sa tubig, at magiging marumi hanggang hapon."
+      },
+      {
+        "num": 18,
+        "text": "Ang babae rin namang sinipingan ng lalaking mayroong binhi ng pakikiapid, ay maliligo sila kapuwa sa tubig, at magiging marumi sila hanggang sa hapon."
+      },
+      {
+        "num": 19,
+        "text": "At kung ang babae ay agasan ng dugo sa kaniyang kapanahunan, ay mapapasa kaniyang karumihan ng pitong araw: at lahat ng humipo sa kaniya ay magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 20,
+        "text": "At bawa't kaniyang kahigaan sa panahon ng kaniyang karumihan, ay magiging marumi: bawa't din namang kaupuan niya ay magiging marumi."
+      },
+      {
+        "num": 21,
+        "text": "At sinomang humipo ng higaan ay maglalaba ng kaniyang mga damit, at maliligo sa tubig, at magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 22,
+        "text": "At ang sinomang humipo ng alin mang bagay na kaniyang kaupuan ay maglalaba ng kaniyang mga damit, at maliligo siya sa tubig, at magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 23,
+        "text": "At kung may nasa higaan o nasa anomang bagay na kinaupuan niya, ay magiging marumi hanggang sa hapon ang humipo niyaon."
+      },
+      {
+        "num": 24,
+        "text": "At kung ang sinomang lalake ay sumiping sa kaniya, at mapasa lalake ang karumihan niya, ay magiging marumi ito na pitong araw; at bawa't higaang kaniyang hihigaan ay magiging marumi."
+      },
+      {
+        "num": 25,
+        "text": "At kung ang isang babae ay agasan ng kaniyang dugo ng maraming araw sa di kapanahunan ng kaniyang karumihan, o kung agasan sa dako pa roon ng panahon ng kaniyang karumihan; buong panahon ng agas ng kaniyang karumihan ay magiging tulad ng mga araw ng kaniyang karumihan: siya'y marumi nga."
+      },
+      {
+        "num": 26,
+        "text": "Bawa't higaan na kaniyang hinihigan buong panahon ng kaniyang agas, ay magiging sa kaniya'y gaya ng higaan ng kaniyang karumihan; at bawa't bagay na kaniyang upuan, ay magiging marumi, na gaya ng marumi ng kaniyang karumihan."
+      },
+      {
+        "num": 27,
+        "text": "At sinomang humipo ng mga bagay na yaon ay magiging marumi, at maglalaba ng kaniyang mga damit, at maliligo siya sa tubig, at magiging marumi hanggang sa hapon."
+      },
+      {
+        "num": 28,
+        "text": "Datapuwa't kung siya'y gumaling sa kaniyang agas, ay bibilang siya ng pitong araw, at pagkatapos niyaon ay magiging malinis siya."
+      },
+      {
+        "num": 29,
+        "text": "At sa ikawalong araw ay kukuha siya ng dalawang batobato o ng dalawang inakay ng kalapati, at dadalhin niya sa saserdote sa pintuan ng Tabernakulo ng kapisanan."
+      },
+      {
+        "num": 30,
+        "text": "At ihahandog ng saserdote ang isa na handog dahil sa kasalanan, at ang isa'y handog na susunugin; at itutubos sa kaniya ng saserdote sa harap ni YAHWEH, dahil sa agas ng kaniyang karumihan."
+      },
+      {
+        "num": 31,
+        "text": "Ganito ihihiwalay ninyo ang mga anak ni Israel sa kanilang karumihan; upang huwag mamatay sa kanilang karumihan, kung kanilang ihawa ang Aking Tabernakulo na nasa gitna nila."
+      },
+      {
+        "num": 32,
+        "text": "Ito ang kautusan tungkol sa inaagasan, at sa nilalabasan ng binhi ng pakikiapid, na ikarurumi;"
+      },
+      {
+        "num": 33,
+        "text": "At sa babaing may sakit ng kaniyang karumihan, at sa inaagasan, sa lalake at sa babae, at doon sa sumisiping sa babaing marumi."
+      }
+    ],
+    "16": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises, pagkamatay ng dalawang anak ni Aaron, noong nagsilapit sa harap ni YAHWEH, at namatay;"
+      },
+      {
+        "num": 2,
+        "text": "At sinabi ni YAHWEH kay Moises, Salitain mo kay Aaron na iyong kapatid na huwag pumasok tuwina sa dakong banal, sa loob ng tabing, sa harap ng upuan ng awa na nasa ibabaw ng kaban; upang siya ay huwag mamatay: sapagka't Ako'y pakikitang nasa ulap sa ibabaw ng upuan ng awa."
+      },
+      {
+        "num": 3,
+        "text": "Ganito papasok nga si Aaron sa loob ng dakong banal, may dalang isang guyang toro na handog dahil sa kasalanan, at isang tupang lalake na handog na susunugin."
+      },
+      {
+        "num": 4,
+        "text": "Siya'y magsusuot ng kasuutang banal, na lino at ng salawal na lino sa kaniyang laman, at magbibigkis siya ng pamigkis na lino, at ang mitra na lino ay kaniyang isusuot: ito ang mga bihisang banal; at paliliguan niya ang kaniyang laman sa tubig at pawang isusuot niya."
+      },
+      {
+        "num": 5,
+        "text": "At siya'y kukuha sa kapisanan ng mga anak ni Israel, ng dalawang kambing na lalake na pinakahandog dahil sa kasalanan, at ng isang tupang lalake na pinakahandog na susunugin."
+      },
+      {
+        "num": 6,
+        "text": "At ihaharap ni Aaron ang toro na handog dahil sa kasalanan na patungkol sa kaniyang sarili, at itutubos niya sa kaniya at sa kaniyang sangbahayan."
+      },
+      {
+        "num": 7,
+        "text": "At kukunin niya ang dalawang kambing at ilalagay niya sa harap ni YAHWEH sa pintuan ng Tabernakulo ng kapisanan."
+      },
+      {
+        "num": 8,
+        "text": "At pagsasapalaran ni Aaron ang dalawang kambing; ang isang kapalaran ay kay YAHWEH at ang isang kapalaran ay kay Azazel."
+      },
+      {
+        "num": 9,
+        "text": "At ihaharap ni Aaron ang kambing na kinahulugan ng kapalaran kay YAHWEH, at ihahandog na pinakahandog dahil sa kasalanan."
+      },
+      {
+        "num": 10,
+        "text": "Nguni't ang kambing na kinahulugan ng kapalaran kay Azazel ay ilalagay na buhay sa harap ni YAHWEH, upang itubos sa kaniya, at paalisin kay Azazel sa ilang."
+      },
+      {
+        "num": 11,
+        "text": "At ihaharap ni Aaron ang toro na handog dahil sa kasalanan, na patungkol sa kaniyang sarili, at itutubos sa kaniyang sarili at sa kaniyang sangbahayan, at papatayin ang toro na handog dahil sa kasalanan na patungkol sa kaniyang sarili:"
+      },
+      {
+        "num": 12,
+        "text": "At kukuha siya mula sa dambana na nasa harap ni YAHWEH ng isang suuban na puno ng mga baga; at kukuha ng dalawang dakot ng masarap na kamangyan na totoong dikdik, at kaniyang dadalhin sa loob ng tabing:"
+      },
+      {
+        "num": 13,
+        "text": "At ilalagay niya ang kamangyan sa ibabaw ng apoy sa harap ni YAHWEH, upang ang mga usok ng kamangyan ay tumakip sa upuan ng awa na nasa ibabaw ng kaban ng patoo, upang huwag siyang mamatay:"
+      },
+      {
+        "num": 14,
+        "text": "At siya'y kukuha ng dugo ng toro at iwiwisik ng kaniyang daliri sa ibabaw ng upuan ng awa, sa dakong silanganan: at sa harap ng upuan ng awa ay iwiwisik niyang makapito ng kaniyang daliri ang dugo."
+      },
+      {
+        "num": 15,
+        "text": "Kung magkagayo'y papatayin niya ang kambing na handog dahil sa kasalanan, na patungkol sa bayan, at dadalhin ang dugo niyaon sa loob ng tabing, at ang gagawin sa dugo niyaon ay gaya ng ginawa sa dugo ng toro, at iwiwisik sa ibabaw ng upuan ng awa at sa harap ng upuan ng awa:"
+      },
+      {
+        "num": 16,
+        "text": "At itutubos niya sa dakong banal dahil sa mga karumihan ng mga anak ni Israel, at dahil sa kanilang mga pagsalangsang, sa makatuwid baga'y sa lahat nilang kasalanan: at gayon ang kaniyang gagawin sa Tabernakulo ng kapisanan na nasa kanila, sa gitna ng kanilang mga karumihan,"
+      },
+      {
+        "num": 17,
+        "text": "At huwag magkakaroon ng sinomang tao sa Tabernakulo kapag siya'y papasok upang itubos sa loob ng dakong banal, hanggang sa lumabas siya, at matubos ang sarili, at ang kaniyang kasangbahay, at ang buong kapisanan ng Israel."
+      },
+      {
+        "num": 18,
+        "text": "At lalabas siya sa dambana na nasa harap ni YAHWEH, at itutubos niya ito; at kukuha ng dugo ng toro, at ng dugo ng kambing, at ilalagay sa ibabaw ng anyong anyong sungay ng dambana sa palibot."
+      },
+      {
+        "num": 19,
+        "text": "At makapitong magwiwisik siya ng dugo sa dambana ng kaniyang daliri, at lilinisin at babanalin dahil sa mga karumihan ng mga anak ni Israel."
+      },
+      {
+        "num": 20,
+        "text": "At pagkatapos matubos niya ang dakong banal, at ang Tabernakulo ng kapisanan, at ang dambana, ay ihahandog ang kambing na buhay:"
+      },
+      {
+        "num": 21,
+        "text": "At ipapatong ni Aaron ang kaniyang dalawang kamay sa ulo ng kambing na buhay, at isasaysay sa ibabaw niyaon ang lahat ng mga kasamaan ng mga anak ni Israel, at ng kanilang mga pagsalangsang, lahat nga ng kanilang mga kasalanan; at ilalagay niya sa ulo ng kambing, at ipadadala sa ilang sa kamay ng isang taong handa:"
+      },
+      {
+        "num": 22,
+        "text": "At dadalhin ng kambing ang lahat ng mga kasamaan nila, sa lupaing hindi tinatahanan: at pawawalan niya ang kambing sa ilang."
+      },
+      {
+        "num": 23,
+        "text": "At papasok si Aaron sa Tabernakulo ng kapisanan, at maghuhubad ng mga suot na lino, na isinuot niya nang siya'y pumasok sa dakong banal, at iiwan niya roon:"
+      },
+      {
+        "num": 24,
+        "text": "At lalabhan niya ang kaniyang laman sa tubig, sa isang dakong banal, at magsusuot ng kaniyang mga suot, at lalabas, at ihahandog ang kaniyang handog at ang handog na susunugin ng bayan, at itutubos sa kaniyang sarili at sa bayan."
+      },
+      {
+        "num": 25,
+        "text": "At susunugin sa ibabaw ng dambana ang taba ng handog dahil sa kasalanan."
+      },
+      {
+        "num": 26,
+        "text": "At yaong nagpakawala ng kambing na ukol kay Azazel, ay maglalaba ng kaniyang mga suot at maliligo ang kaniyang laman sa tubig, at pagkatapos ay papasok siya sa kampamento."
+      },
+      {
+        "num": 27,
+        "text": "At ang toro na handog dahil sa kasalanan at ang kambing na handog dahil sa kasalanan, na ang dugo ay dinala sa loob ng dakong banal upang itubos, ay ilalabas, sa kampamento; at susunugin nila sa apoy ang mga balat ng mga yaon, at ang laman at ang dumi."
+      },
+      {
+        "num": 28,
+        "text": "At ang magsusunog ay maglalaba ng kaniyang mga suot, at maliligo ang kaniyang laman sa tubig, at pagkatapos, ay papasok siya sa kampamento."
+      },
+      {
+        "num": 29,
+        "text": "At ito'y magiging palatuntunan magpakailan man sa inyo: sa ikapitong buwan nang ikasangpung araw ng buwan, ay pagdadalamhatiin ninyo ang inyong mga kaluluwa, at anomang gawain ay huwag gagawa ang tubo sa lupain, ni ang taga ibang bayan na nakikipamayan sa inyo:"
+      },
+      {
+        "num": 30,
+        "text": "Sapagka't sa araw na ito gagawin ang pagtubos sa inyo upang linisin kayo; sa lahat ng inyong mga kasalanan ay magiging malinis kayo sa harap ni YAHWEH."
+      },
+      {
+        "num": 31,
+        "text": "Sabbath nga na takdang kapahingahan sa inyo, at papagdadalamhatiin ninyo ang inyong mga kaluluwa; ito'y palatuntunang magpakailan man."
+      },
+      {
+        "num": 32,
+        "text": "At ang saserdote na papahiran at itatalaga upang maging saserdote na kahalili ng kaniyang ama, ay siyang tutubos at magsusuot ng mga kasuutang lino, na mga banal ngang kasuutan:"
+      },
+      {
+        "num": 33,
+        "text": "At tutubusin niya ang banal na santuariyo, at tutubusin niya ang Tabernakulo ng kapisanan, at ang dambana; at tutubusin niya ang mga saserdote at ang buong bayan ng kapisanan."
+      },
+      {
+        "num": 34,
+        "text": "At ito'y magiging palatuntunang walang hanggan sa inyo; na tubusin ang mga anak ni Israel, dahil sa lahat nilang mga kasalanan, ng minsan sa isang taon. At ginawa niya ayon sa iniutos ni YAHWEH kay Moises."
+      }
+    ],
+    "17": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi,"
+      },
+      {
+        "num": 2,
+        "text": "Iyong salitain kay Aaron, at sa kaniyang mga anak, at sa lahat ng mga anak ni Israel, at sabihin mo sa kanila, Ito ang iniutos ni YAHWEH, na sinasabi,"
+      },
+      {
+        "num": 3,
+        "text": "Sinomang tao sa sangbahayan ni Israel, na pumatay ng baka, o kordero, o kambing sa loob ng kampamento, o pumatay sa labas ng kampamento."
+      },
+      {
+        "num": 4,
+        "text": "At hindi dinala sa pintuan ng Tabernakulo ng kapisanan, upang ihandog na pinaka-alay sa Elohim, sa harap ng Tabernakulo ni YAHWEH: ay dugo ang ipararatang sa taong yaon; siya'y nagbubo ng dugo; at ang taong yaon: ay ihihiwalay sa kaniyang bayan:"
+      },
+      {
+        "num": 5,
+        "text": "Upang ang mga anak ni Israel ay magdala ng kanilang mga hain, na inihahain sa kalawakan ng parang, sa makatuwid baga'y upang kanilang dalhin kay YAHWEH sa pintuan ng Tabernakulo ng kapisanan, sa saserdote, at ihain sa Elohim na mga pinakahandog tungkol sa kapayapaan."
+      },
+      {
+        "num": 6,
+        "text": "At iwiwisik ng saserdote ang dugo sa ibabaw ng dambana ni YAHWEH, sa pintuan ng Tabernakulo ng kapisanan, at susunugin ang taba na pinakamasarap na amoy sa Elohim."
+      },
+      {
+        "num": 7,
+        "text": "At huwag na nilang ihahain ang kanilang mga hain sa mga kambing na lalake na kanilang pinanaligan. Magiging palatuntunan nga magpakailan man sa kanila sa buong panahon ng kanilang lahi."
+      },
+      {
+        "num": 8,
+        "text": "At sasabihin mo sa kanila, Sinomang tao sa sangbahayan ni Israel, o sa mga taga ibang bayan na nakikipamayan sa kanila, na naghandog ng handog na susunugin o hain,"
+      },
+      {
+        "num": 9,
+        "text": "At hindi dinala sa pintuan ng Tabernakulo ng kapisanan, upang ihain sa Elohim: ay ihihiwalay nga ang taong yaon sa kaniyang bayan."
+      },
+      {
+        "num": 10,
+        "text": "At sinomang tao sa sangbahayan ni Israel o sa mga taga ibang bayan na nakikipamayan sa kanila, na kumain ng anomang dugo, ay Aking itititig ang Aking mukha laban sa taong yaon na kumain ng dugo, at ihihiwalay ko sa kaniyang bayan."
+      },
+      {
+        "num": 11,
+        "text": "Sapagka't ang buhay ng laman ay nasa dugo; at Aking ibinigay sa inyo sa ibabaw ng dambana upang itubos sa inyong mga kaluluwa: sapagka't ang dugo ay siyang tumutubos dahil sa buhay."
+      },
+      {
+        "num": 12,
+        "text": "Kaya't Aking sinabi sa mga anak ni Israel, Sinoman ay huwag kakain ng dugo, ni ang taga ibang bayan na nakikipamayan sa inyo ay huwag kakain ng dugo."
+      },
+      {
+        "num": 13,
+        "text": "At sinomang tao sa mga anak ni Israel, o sa mga taga ibang bayan na nakikipamayan sa kanila na manghuli ng hayop o ng ibon na makakain; ay ibubuhos niya ang dugo niyaon at tatabunan ng lupa."
+      },
+      {
+        "num": 14,
+        "text": "Sapagka't tungkol sa buhay ng lahat ng laman, ang dugo nga niyan ay gaya rin ng buhay niyan. Kaya't sinabi ko sa mga anak ni Israel, Huwag kayong kakain ng dugo ng anomang laman: sapagka't ang buhay ng buong laman ay ang kaniyang dugo: sinomang kumain niyan ay ihihiwalay."
+      },
+      {
+        "num": 15,
+        "text": "At yaong lahat na kumain ng namamatay sa sarili o nilapa ng mga ganid, maging sa mga tubo sa lupain o sa mga taga ibang bayan, ay maglalaba ng kaniyang mga damit, at maliligo sa tubig, at magiging maruni hanggang sa hapon: kung magkagayon ay magiging malinis."
+      },
+      {
+        "num": 16,
+        "text": "Datapuwa't kung di niya labhan, ni paliguan ang kaniyang laman, ay tataglayin nga niya ang kaniyang kasamaan."
+      }
+    ],
+    "18": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi."
+      },
+      {
+        "num": 2,
+        "text": "Salitain mo sa mga anak ni Israel, at sabihin mo sa kanila, Ako si YAHWEH ninyong AMA."
+      },
+      {
+        "num": 3,
+        "text": "Huwag kayong gagawa ng gaya ng ginawa sa lupain ng Egipto na inyong tinahanan: at huwag din kayong gagawa ng gaya ng ginagawa sa lupain ng Canaan, na pinagdadalhan ko sa inyo: ni huwag kayong lalakad ng ayon sa mga palatuntunan nila."
+      },
+      {
+        "num": 4,
+        "text": "Tutuparin ninyo ang Aking mga kahatulan, at iingatan ninyo ang Aking mga palatuntunan, na inyong lalakaran: Ako si YAHWEH ninyong Elohim."
+      },
+      {
+        "num": 5,
+        "text": "Tutuparin nga ninyo ang Aking mga palatuntunan at ang Aking mga kahatulan: na ikabubuhay ng mga taong magsisitupad: Ako si YAHWEH."
+      },
+      {
+        "num": 6,
+        "text": "Huwag lalapit ang sinoman sa inyo sa kanino man sa kaniyang kamag-anak na malapit, upang ilitaw ang kaniyang kahubaran: Ako si YAHWEH."
+      },
+      {
+        "num": 7,
+        "text": "Ang kahubaran ng iyong ama, o ang kahubaran ng iyong ina ay huwag mong ililitaw: siya'y iyong ina; huwag mong ililitaw ang kahubaran niya."
+      },
+      {
+        "num": 8,
+        "text": "Ang kahubaran ng asawa ng iyong ama ay huwag mong ililitaw: yaon nga'y kahubaran ng iyong ama."
+      },
+      {
+        "num": 9,
+        "text": "Ang kahubaran ng iyong kapatid na babae, na anak ng iyong ama o anak ng iyong ina, maging ipinanganak sa sarili o sa ibang bayan, ay huwag mong ililitaw ang kahubaran nila."
+      },
+      {
+        "num": 10,
+        "text": "Ang kahubaran ng anak na babae ng iyong anak na lalake, o ng anak na babae ng iyong anak na babae, ay huwag mong ililitaw ang kahubaran nila: sapagka't ang kahubaran nila ay kahubaran mo rin."
+      },
+      {
+        "num": 11,
+        "text": "Ang kahubaran ng anak ng babae ng asawa ng iyong ama, na anak sa iyong ama, siya'y kapatid mo, huwag mong ililitaw ang kahubaran niya."
+      },
+      {
+        "num": 12,
+        "text": "Ang kahubaran ng kapatid na babae ng iyong ama ay huwag mong ililitaw: siya'y kamag-anak na malapit ng iyong ama."
+      },
+      {
+        "num": 13,
+        "text": "Ang kahubaran ng kapatid na babae ng iyong ina ay huwag mong ililitaw: sapagka't siya'y kamag-anak na malapit ng iyong ina."
+      },
+      {
+        "num": 14,
+        "text": "Ang kahubaran ng kapatid na lalake ng iyong ama ay huwag mong ililitaw, sa asawa niya ay huwag kang sisiping: siya'y iyong ali."
+      },
+      {
+        "num": 15,
+        "text": "Ang kahubaran ng iyong manugang na babae ay huwag mong ililitaw: siya'y asawa ng iyong anak; ang kahubaran niya ay huwag mong ililitaw."
+      },
+      {
+        "num": 16,
+        "text": "Ang kahubaran ng asawa ng iyong kapatid na lalake ay huwag mong ililitaw: kahubaran nga ng iyong kapatid na lalake."
+      },
+      {
+        "num": 17,
+        "text": "Ang kahubaran ng isang babae at ng kaniyang anak na babae ay huwag mong ililitaw; huwag mong pakikisamahan ang anak na babae ng kaniyang anak na lalake o ang anak na babae ng kaniyang anak na babae, upang ilitaw ang kaniyang kahubaran; sila'y kamag-anak na malapit: kasamaan nga."
+      },
+      {
+        "num": 18,
+        "text": "At huwag kang makikisama sa isang babaing kalakip ng kaniyang kapatid, na magiging kaagaw niya, na iyong ililitaw ang kahubaran nito, bukod sa kahubaran niyaon, sa buong buhay niya."
+      },
+      {
+        "num": 19,
+        "text": "At huwag kang sisiping sa isang babae na ililitaw ang kahubaran niya habang siya'y marumi sa kaniyang karumihan."
+      },
+      {
+        "num": 20,
+        "text": "At huwag kang sisiping sa asawa ng iyong kapuwa na magpapadumi sa kaniya."
+      },
+      {
+        "num": 21,
+        "text": "At huwag kang magbibigay ng iyong binhi, na iyong ihahandog kay Moloch1 sa apoy; ni huwag mong lalapastanganin ang Pangalan ng iyong Elohim: Ako si YAHWEH. (Moloch – diyos ng Canaan)"
+      },
+      {
+        "num": 22,
+        "text": "Huwag kang sisiping sa lalake ng gaya sa babae: marumi nga."
+      },
+      {
+        "num": 23,
+        "text": "At huwag kang sisiping sa anomang hayop na magpapakadumi riyan: ni ang babae ay huwag lalagay sa harap ng hayop upang pasiping: kahalay-halay nga."
+      },
+      {
+        "num": 24,
+        "text": "Huwag kayong magpakarumi sa alin man sa mga bagay na ito; sapagka't lahat ng ito ay nadumihan ang mga bansang Aking palayasin sa harap ninyo:"
+      },
+      {
+        "num": 25,
+        "text": "At nadumhan ang lupain: kaya't Aking dinadalaw ang kasamaang iyan diyan, at ang lupain din ang nagluluwa sa mga tumatahan diyan."
+      },
+      {
+        "num": 26,
+        "text": "Inyo ngang iingatan ang Aking mga palatuntunan, at ang Aking mga kahatulan, at huwag kayong gagawa ng anoman sa mga marumi na ito; maging ang mga tubo sa lupain o ang mga taga ibang bayan man na nakikipamayan sa inyo:"
+      },
+      {
+        "num": 27,
+        "text": "Sapagka't ang lahat ng marumi na ito, ay ginawa ng mga tao sa lupaing iyan, na mga una kaysa inyo; at ang lupain ay nadumihan;"
+      },
+      {
+        "num": 28,
+        "text": "Upang huwag naman kayong iluwa ng lupain, sa pagkahawa ninyo, na gaya ng pagluluwa sa bansang nagsitahan ng una kaysa inyo."
+      },
+      {
+        "num": 29,
+        "text": "Sapagka't yaong lahat na gumawa ng alin man sa mga kahalayang ito, sa makatuwid baga'y ang mga taong magsigawa ng gayon ay ihihiwalay sa kanilang bayan."
+      },
+      {
+        "num": 30,
+        "text": "Kaya ingatan ninyo ang Aking bilin, na huwag kayong gumawa ng alin man sa mga marumi na kaugaliang ito na kanilang ginawa ng una bago kayo, at huwag kayong magpakarumi sa mga iyan: Ako si YAHWEH ninyong Elohim."
+      }
+    ],
+    "19": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi."
+      },
+      {
+        "num": 2,
+        "text": "Salitain mo sa buong kapisanan ng mga anak ni Israel, at sabihin mo sa kanila, Kayo'y magpakabanal; sapagka't Akong si YAHWEH ninyong Elohim ay Banal."
+      },
+      {
+        "num": 3,
+        "text": "Matatakot ang bawa't isa sa inyo, sa kaniyang ina at sa kaniyang ama, at ipangingilin ninyo ang Aking mga Sabbath: Ako si YAHWEH ninyong Elohim."
+      },
+      {
+        "num": 4,
+        "text": "Huwag ninyong babalikan ang mga diyos na larawan, ni huwag kayong gagawa sa inyo ng mga larawan na binubo: Ako si YAHWEH ninyong Elohim."
+      },
+      {
+        "num": 5,
+        "text": "At kapag kayo'y maghahandog kay YAHWEH ng hain na mga handog tungkol sa kapayapaan, ay inyong ihahandog upang kayo'y tanggapin."
+      },
+      {
+        "num": 6,
+        "text": "Sa araw ding ihandog ay kakanin, at sa kinabukasan: at kung may labis hanggang sa ikatlong araw ay susunugin sa apoy."
+      },
+      {
+        "num": 7,
+        "text": "At kung kanin sa anomang paraan sa ikatlong araw, ay marumi nga; ito'y hindi tatanggapin:"
+      },
+      {
+        "num": 8,
+        "text": "Kundi yaong kumain ay siyang magtataglay ng kaniyang kasamaan; sapagka't nilapastangan niya ang banal na bagay ni YAHWEH: at ihihiwalay ang gayong tao sa kaniyang bayan."
+      },
+      {
+        "num": 9,
+        "text": "At kapag gagapas kayo ng mga uhay sa inyong lupain, ay huwag ninyong gagapasin ang mga sulok ng inyong bukid, ni huwag ninyong pamulutan ang inyong lupang ginapasan."
+      },
+      {
+        "num": 10,
+        "text": "At huwag ninyong sisimutin ang inyong ubasan, ni huwag ninyong pupulutin ang bungang nahulog sa inyong ubasan; sa dukha at sa taga ibang bayan, pababayaan ninyo: Ako si YAHWEH ninyong AMA."
+      },
+      {
+        "num": 11,
+        "text": "Huwag kayong magnanakaw; ni magdadaya, ni magsisinungaling ang sinoman sa iba."
+      },
+      {
+        "num": 12,
+        "text": "At huwag kayong susumpa ng di totoo sa Aking Pangalan, na anopa't lapastanganin ninyo ang Pangalan ng inyong Elohim; Ako si YAHWEH."
+      },
+      {
+        "num": 13,
+        "text": "Huwag kayong pipighati sa inyong kapuwa, o magnanakaw man sa kaniya: ang bayad ng isang mag-aaraw ay huwag matitira sa inyo ng buong gabi hanggang sa umaga."
+      },
+      {
+        "num": 14,
+        "text": "Huwag ninyong lalaitin ang bingi, ni maglalagay ng katitisuran sa harap ng bulag, kundi katatakutan ninyo ang inyong Elohim: Ako si YAHWEH."
+      },
+      {
+        "num": 15,
+        "text": "Huwag kayong gagawa ng kalikuan sa paghatol: huwag kayong magtatangi ng pagkatao ng dukha, ni huwag ninyong pararangalan ang pagkatao ng mayaman: kundi hahatulan ninyo ng katuwiran ang inyong kapuwa."
+      },
+      {
+        "num": 16,
+        "text": "Huwag kayong maghahatid dumapit sa inyong bayan, ni titindig laban sa dugo ng inyong kapuwa: Ako si YAHWEH."
+      },
+      {
+        "num": 17,
+        "text": "Huwag ninyong kapopootan ang inyong kapatid sa inyong puso; tunay na inyong sasawayin ang inyong kapuwa, at huwag kayong magtaglay ng kasalanan dahil sa kaniya."
+      },
+      {
+        "num": 18,
+        "text": "Huwag kayong manghihiganti o magtatanim laban sa mga anak ng inyong bayan, kungdi iibigin ninyo ang inyong kapuwa na gaya ng sa inyong sarili: Ako si YAHWEH."
+      },
+      {
+        "num": 19,
+        "text": "Iingatan ninyo ang Aking mga palatuntunan. Huwag ninyong pag-aasawahin ang dalawang hayop ninyong magkaiba; huwag kayong maghahasik sa inyong bukid ng dalawang magkaibang binhi; ni damit na hinabi na may magkahalong dalawang magkaibang kayo ay huwag kayong magsusuot."
+      },
+      {
+        "num": 20,
+        "text": "At kung ang sinomang lalake ay sumiping sa isang babaing aliping may asawa, na hindi pa natutubos, o hindi pa man nabibigyan ng kalayaan; ay kapuwa parurusahan; hindi sila papatayin, sapagka't siya'y hindi laya."
+      },
+      {
+        "num": 21,
+        "text": "At kaniyang dadalhin sa Elohim ang kaniyang handog dahil sa pagkakasala, sa pintuan ng Tabernakulo ng kapisanan, sa makatuwid baga'y isang tupang lalake na pinakahandog:"
+      },
+      {
+        "num": 22,
+        "text": "At itutubos sa kaniya ng saserdote sa pamamagitan ng tupang handog dahil sa pagkakasala sa harap ni YAHWEH, dahil sa kaniyang kasalanan niyang pinagkasalahan, at ipatatawad sa kaniya ang kasalanan niyang kaniyang pinagkasalahan."
+      },
+      {
+        "num": 23,
+        "text": "At kapag kayo'y papasok sa lupain, at nakapagtanim na kayo ng sari-saring punong kahoy na pagkain, ay aariin ninyo ang bunga niyaon na parang hindi sa tuli: tatlong taong aariin ninyong parang hindi sa tuli; hindi kakanin."
+      },
+      {
+        "num": 24,
+        "text": "Datapuwa't sa ikaapat na taon, ang lahat ng bunga niyaon ay magiging banal na pinaka papuri sa Elohim."
+      },
+      {
+        "num": 25,
+        "text": "At sa ikalimang taon ay kakain kayo ng bunga niyaon upang papagbungahin sa inyo: Ako si YAHWEH ninyong Elohim."
+      },
+      {
+        "num": 26,
+        "text": "Huwag kayong kakain ng anomang may dugo: ni huwag kayong mag-eenkanto ni magpapamahiin."
+      },
+      {
+        "num": 27,
+        "text": "Huwag ninyong gugupitin ng pabilog ang mga buhok sa palibot ng inyong ulo, ni huwag mong sisirain ang mga dulo ng iyong balbas."
+      },
+      {
+        "num": 28,
+        "text": "Huwag ninyong kukudlitan ang inyong laman dahil sa namatay: ni huwag ninyong lilimbagan ang inyong laman ng anomang tanda; Ako si YAHWEH."
+      },
+      {
+        "num": 29,
+        "text": "Huwag mong hahamakin ang iyong anak na babae, na siya'y iyong pagmamasamaing babae: baka ang lupain ay malugmok sa pakikiapid, at mapuno ang lupain ng kasamaan."
+      },
+      {
+        "num": 30,
+        "text": "Ipangingilin ninyo ang Aking mga Sabbath, at igagalang ninyo ang Aking santuariyo: Ako si YAHWEH."
+      },
+      {
+        "num": 31,
+        "text": "Huwag ninyong babalikan ang mga inaalihan ng masasamang espiritu ni ang mga mangkukulam: huwag ninyong hanapin na magpakahawa sa kanila: Ako si YAHWEH ninyong Elohim."
+      },
+      {
+        "num": 32,
+        "text": "Titindig kayo sa harap ng may uban at igagalang ninyo ang mukha ng matanda, at katatakutan ninyo ang inyong Elohim: Ako si YAHWEH."
+      },
+      {
+        "num": 33,
+        "text": "At kung ang isang taga ibang bayan ay nakikipamayan sa inyong lupain, ay huwag ninyong gagawan ng masama."
+      },
+      {
+        "num": 34,
+        "text": "Ang taga ibang bayan na nakikipamayan na kasama ninyo, ay inyong aariing tubo sa lupain, at iibigin ninyo na gaya ng sa inyong sarili; sapagka't naging taga ibang bayan kayo sa lupain ng Egipto: Ako si YAHWEH ninyong Elohim."
+      },
+      {
+        "num": 35,
+        "text": "Huwag kayong gagawa ng kalikuan sa paghatol, sa pagsukat, sa pagtimbang, o sa pagtakal."
+      },
+      {
+        "num": 36,
+        "text": "Timbangang matuwid, panimbang na matuwid, epa na matuwid at hin na matuwid ang aariin ninyo: Ako si YAHWEH ninyong AMA na naglabas sa inyo sa lupain ng Egipto."
+      },
+      {
+        "num": 37,
+        "text": "At inyong iingatan ang lahat ng Aking palatuntunan, at ang lahat ng Aking kahatulan at inyong isasagawa: Ako si YAHWEH."
+      }
+    ],
+    "20": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi."
+      },
+      {
+        "num": 2,
+        "text": "Bukod dito'y sasabihin mo rin sa mga anak ni Israel, Sinomang tao sa mga anak ni Israel, o sa mga taga ibang bayan na nakikipamayan sa Israel, na magbigay ng kaniyang binhi kay Moloch; ay papataying walang pagsala; siya'y babatuhin ng mga bato ng mga tao ng lupain."
+      },
+      {
+        "num": 3,
+        "text": "Akin ding itititig ang Aking mukha laban sa taong yaon, at Akin siyang ihihiwalay sa kaniyang bayan: sapagka't binigyan niya ng kaniyang binhi si Moloch, upang ihawa ang Aking santuariyo, at lapastanganin ang Aking Banal na Pangalan."
+      },
+      {
+        "num": 4,
+        "text": "At kung ilingid ng bayan sa lupain sa paraang anoman ang kanilang mga mata sa taong yaon, kapag nagbibigay ng kaniyang binhi kay Moloch, at hindi papatayin:"
+      },
+      {
+        "num": 5,
+        "text": "Ay itititig ko nga ang Aking mukha laban sa taong yaon, at laban sa kaniyang sangbahayan, at ihihiwalay ko sa kanilang bayan, siya at lahat ng manalig na sumunod sa kaniya, na nanalig kay Moloch."
+      },
+      {
+        "num": 6,
+        "text": "At ang taong magbalik sa inaalihan ng masamang espiritu at sa mga mangkukulam, upang manalig sa mga yaon ay itititig ko ang Aking mukha laban sa taong yaon, at ihihiwalay ko siya sa kaniyang bayan."
+      },
+      {
+        "num": 7,
+        "text": "Magpakabanal nga kayo at kayo'y maging banal; sapagka't Ako si YAHWEH ninyong Elohim."
+      },
+      {
+        "num": 8,
+        "text": "At iingatan ninyo ang Aking mga palatuntunan, at inyong isasagawa: Ako si YAHWEH na nagpapabanal sa inyo."
+      },
+      {
+        "num": 9,
+        "text": "Sapagka't bawa't isa na lumalait sa kaniyang ama o sa kaniyang ina ay papatayin na walang pagsala: kaniyang nilait ang kaniyang ama o ang kaniyang ina: mabububo ang kaniyang dugo sa kaniya."
+      },
+      {
+        "num": 10,
+        "text": "Ang lalake na mangalunya sa asawa ng iba, sa makatuwid baga'y yaong mangalunya sa asawa ng kaniyang kapuwa, ay papatayin na walang pagsala ang nangangalunya at ang napakalunya."
+      },
+      {
+        "num": 11,
+        "text": "At ang lalaking sumiping sa asawa ng kaniyang ama, ay kahubaran ng kaniyang ama ang kaniyang inilitaw: kapuwa sila papatayin na walang pagsala; mabububo ang dugo nila sa kanila."
+      },
+      {
+        "num": 12,
+        "text": "At kung ang isang lalake ay sumiping sa kaniyang manugang, ay kapuwa sila papatayin; sila'y gumawa ng kahalay-halay; mabububo ang kanilang dugo sa kanila."
+      },
+      {
+        "num": 13,
+        "text": "At kung ang isang lalake ay sumiping sa kapuwa lalake, na gaya ng pagsiping sa babae: ay kapuwa sila nagkasala ng marumi: sila'y papatayin na walang pagsala: mabububo ang kanilang dugo sa kanila."
+      },
+      {
+        "num": 14,
+        "text": "At kung ang isang lalake ay mag-asawa sa isang babae at sa kaniyang ina, ay kasamaan; susunugin sa apoy kapuwa siya at sila; upang huwag magkaroon ng kasamaan sa inyo."
+      },
+      {
+        "num": 15,
+        "text": "At kung ang isang lalake ay makiapid sa hayop, ay papatayin na walang pagsala: at papatayin din ninyo ang hayop."
+      },
+      {
+        "num": 16,
+        "text": "At kung ang isang babae ay lumapit sa alin mang hayop at pasiping ay papatayin mo ang babae at ang hayop: sila'y papatayin na walang pagsala; mabububo ang kanilang dugo sa kanila."
+      },
+      {
+        "num": 17,
+        "text": "At kung kunin ng isang lalake ang kaniyang kapatid na babae, na anak ng kaniyang ama o anak ng kaniyang ina, at kaniyang makita ang kaniyang kahubaran, at makita ng babae ang kahubaran niya: ay bagay na kahalay-halay nga; at sila'y ihihiwalay sa paningin ng mga anak ng kanilang bayan: ang kahubaran ng kaniyang kapatid na babae ay inilitaw niya; kaniyang tataglayin ang kasamaan niya."
+      },
+      {
+        "num": 18,
+        "text": "At kung ang isang lalake ay sumiping sa isang babaing may karumihan, at ilitaw ang kahubaran niya; ay kaniyang hinubdan ang agas niya, at siya naman ay lumitaw ng agas ng kaniyang dugo: at sila'y kapuwa ihihiwalay sa kanilang bayan."
+      },
+      {
+        "num": 19,
+        "text": "At huwag mong ililitaw ang kahubaran ng kapatid na babae ng iyong ina, ni ng kapatid na babae ng iyong ama: sapagka't hinubdan niya ang kaniyang kamag-anak na malapit: kapuwa magtataglay ng kanilang kasamaan."
+      },
+      {
+        "num": 20,
+        "text": "At kung ang isang lalake ay sumiping sa asawa ng kaniyang amain ay kaniyang inilitaw ang kahubaran ng kaniyang amain: tataglayin nila ang kanilang kasalanan; mamamatay silang walang anak."
+      },
+      {
+        "num": 21,
+        "text": "At kung ang isang lalake ay makisama sa asawa ng kaniyang kapatid na lalake, ay kahalayan: kaniyang inilitaw ang kahubaran ng kaniyang kapatid na lalake; mabubuhay silang walang anak."
+      },
+      {
+        "num": 22,
+        "text": "Ingatan nga ninyo ang lahat ng Aking mga palatuntunan at ang lahat ng Aking mga kahatulan, at inyong isasagawa: upang huwag kayong iluwa ng lupain na Aking pinagdadalhan sa inyo na inyong tatahanan."
+      },
+      {
+        "num": 23,
+        "text": "At huwag kayong lalakad ng ayon sa mga kaugalian ng mga bansang Aking palalayasin sa harap ninyo: sapagka't ang lahat ng kasamaang ito ay ginawa nila, at kaya ko kinapopootan."
+      },
+      {
+        "num": 24,
+        "text": "Datapuwa't sa inyo'y Aking sinabi, Mamanahin ninyo ang lupain nila, at ibibigay ko sa inyo upang inyong manahin, na isang lupaing binubukalan ng gatas at pulot: Ako si YAHWEH ninyong AMA na ibinukod ko kayo sa mga bayan."
+      },
+      {
+        "num": 25,
+        "text": "Inyo ngang lalagyan ng pagkakaiba ang hayop na malinis at ang marumi, at ang ibong marumi at ang malinis: at huwag ninyong gagawing marumi ang inyong pagkatao, sa hayop o sa ibon, o sa anomang bagay na umuusad sa lupa, na inihiwalay ko sa inyo palibhasa'y mga marumi."
+      },
+      {
+        "num": 26,
+        "text": "At kayo'y magpapakabanal sa Akin: sapagka't Akong si YAHWEH, ay Banal, at kayo'y ibinukod ko sa mga bayan, upang kayo'y maging Akin."
+      },
+      {
+        "num": 27,
+        "text": "Ang isang lalake rin naman o kaya'y ang isang babae na inaalihan ng masamang espiritu, o mangkukulam, ay papatayin na walang sala, sila'y babatuhin ng mga bato: mabububo ang kanilang dugo sa kanila."
+      }
+    ],
+    "21": [
+      {
+        "num": 1,
+        "text": "At sinabi ni YAHWEH kay Moises, Salitain mo sa mga saserdote na mga anak ni Aaron, at sabihin mo sa kanila, Sinoman ay huwag magpakahawa ng dahil sa patay, sa gitna ng kaniyang bayan, 1Ped 2:9"
+      },
+      {
+        "num": 2,
+        "text": "Maliban sa kamag-anak na malapit, sa kaniyang ina at sa kaniyang ama at sa kaniyang anak na lalake at babae, at sa kaniyang kapatid na lalake,"
+      },
+      {
+        "num": 3,
+        "text": "At sa kaniyang kapatid na dalaga, na malapit sa kaniya, na walang asawa, ay maaring mahawa siya."
+      },
+      {
+        "num": 4,
+        "text": "Yamang puno sa kaniyang bayan, ay huwag siyang magpapakahawa na magpapakarumi."
+      },
+      {
+        "num": 5,
+        "text": "Huwag nilang kakalbuhin ang kanilang ulo, o gugupitin man ang dulo ng kanilang balbas, o kukudlitan man ang kanilang laman."
+      },
+      {
+        "num": 6,
+        "text": "Sila'y magpakabanal sa kanilang Elohim, at huwag nilang lalapastanganin ang Pangalan ng kanilang Elohim: dahil sila ang naghahandog ng mga handog kay YAHWEH na pinaraan sa apoy, na tinapay sa Elohim, kaya't sila'y magpapakabanal."
+      },
+      {
+        "num": 7,
+        "text": "Huwag silang makikisama sa patutot o lapastangan, ni makikisama sa babaing inihiwalay ng kaniyang asawa: sapagka't ang saserdote ay banal sa kaniyang Elohim."
+      },
+      {
+        "num": 8,
+        "text": "Papagbabanalin mo nga siya; sapagka't siya ang naghahandog ng tinapay ng inyong Elohim: siya'y magiging banal sa inyo; sapagka't Ako si YAHWEH nagpapaging banal sa inyo ay banal."
+      },
+      {
+        "num": 9,
+        "text": "At kung ang anak na babae ng isang saserdote ay magpakarumi sa pagpapatutot, ay kaniyang binigyan ng kahihiyan ang kaniyang ama: siya'y susunugin sa apoy."
+      },
+      {
+        "num": 10,
+        "text": "At ang pangulong saserdote sa kanilang magkakapatid, na binuhusan ang ulo ng langis na pangpahid, at itinalaga, upang makapagbihis ng mga banal na bihisan ay huwag maglulugay ng buhok ng kaniyang ulo ni huwag hahapakin ang kaniyang mga suot; Mat 26:65; Mar 14:63"
+      },
+      {
+        "num": 11,
+        "text": "Ni papasok sa kinaroroonan ng bangkay nino man, ni magpapakahawa dahil sa kaniyang ama, o dahil sa kaniyang ina;"
+      },
+      {
+        "num": 12,
+        "text": "Ni lalabas sa santuariyo at lalapastanganin ang santuariyo ng kaniyang Elohim; sapagka't ang talaga na langis na pangpahid ng kaniyang Elohim ay nasa ulo niya: Ako si YAHWEH."
+      },
+      {
+        "num": 13,
+        "text": "At siya'y mag-aasawa ng dalagang malinis."
+      },
+      {
+        "num": 14,
+        "text": "Sa bao o inihiwalay, sa narumihan o patutot ay huwag siyang mag-aasawa; kundi sa isang dalagang malinis sa kaniyang sariling bayan mag-aasawa siya."
+      },
+      {
+        "num": 15,
+        "text": "At huwag niyang dudumhan ang kaniyang mga binhi sa gitna ng kaniyang bayan: sapagka't Ako si YAHWEH na nagpapaging banal sa kaniya."
+      },
+      {
+        "num": 16,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi."
+      },
+      {
+        "num": 17,
+        "text": "Iyong salitain kay Aaron, na iyong sasabihin, Sinoman sa iyong mga binhi, sa buong panahon ng kaniyang lahi, na magkaroon ng anomang kapintasan, ay huwag lumapit na maghandog ng tinapay ng kaniyang Elohim."
+      },
+      {
+        "num": 18,
+        "text": "Sapagka't sinomang magkaroon ng kapintasan ay huwag lalapit; maging ang taong bulag, o pilay, o magkaroon ng ilong na ungod, o ang mayroong kuntil,"
+      },
+      {
+        "num": 19,
+        "text": "O ang taong magkaroon ng paang bali o kamay na bali,"
+      },
+      {
+        "num": 20,
+        "text": "O taong kuba, o unano, o may kapintasan sa kaniyang mata, o galisin, o langibin, o luslusin:"
+      },
+      {
+        "num": 21,
+        "text": "Walang tao sa binhi ni Aaron na saserdote, na magkaroon ng kapintasan, na lalapit upang magharap ng mga handog kay YAHWEH na pinaraan sa apoy: siya na may kapintasan; siya'y huwag lalapit na magharap ng tinapay ng kaniyang Elohim."
+      },
+      {
+        "num": 22,
+        "text": "Kaniyang kakanin ang tinapay ng kaniyang Elohim, ang pinakabanal at ang mga bagay na banal:"
+      },
+      {
+        "num": 23,
+        "text": "Hindi lamang siya papasok sa loob ng tabing, o lalapit man sa dambana, sapagka't may kapintasan siya; upang huwag niyang lapastanganin ang Aking mga santuariyo: sapagka't Ako si YAHWEH na nagpapaging banal sa kanila."
+      },
+      {
+        "num": 24,
+        "text": "Gayon sinalita ni Moises kay Aaron at sa kaniyang mga anak, at sa lahat ng mga anak ni Israel."
+      }
+    ],
+    "22": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi."
+      },
+      {
+        "num": 2,
+        "text": "Salitain mo kay Aaron at sa kaniyang mga anak na sila'y magsihiwalay sa mga banal na bagay ng mga anak ni Israel, na ikinagiging banal nila sa Akin, at huwag nilang lapastanganin ang Aking Banal na Pangalan: Ako si YAHWEH."
+      },
+      {
+        "num": 3,
+        "text": "Sabihin mo sa kanila, Sinomang lalake sa lahat ng inyong binhi sa buong panahon ng inyong lahi, na lumapit sa mga banal na bagay na ikinagiging banal ng mga anak ni Israel kay YAHWEH, na taglay ang kaniyang karumihan, ay ihihiwalay ang taong iyon sa harap ko: Ako si YAHWEH."
+      },
+      {
+        "num": 4,
+        "text": "Sinomang lalake sa binhi ni Aaron na may ketong o may agas; ay hindi kakain ng mga banal na bagay hanggang siya'y malinis. At ang humipo ng alin mang bagay na marumi dahil sa patay, o lalaking nilabasan ng binhi nito;"
+      },
+      {
+        "num": 5,
+        "text": "O sinomang humipo ng anomang umuusad na makapagpaparumi, o lalaking makakahawa dahil sa alin mang karumihan niya;"
+      },
+      {
+        "num": 6,
+        "text": "Ang lalaking humipo ng gayon ay magiging marumi hanggang sa hapon, at hindi kakain ng mga banal na bagay maliban na maligo siya sa tubig."
+      },
+      {
+        "num": 7,
+        "text": "At pagkalubog ng araw, ay magiging malinis siya; at pagkatapos ay makakakain ng mga banal na bagay, sapagka't siya niyang tinapay."
+      },
+      {
+        "num": 8,
+        "text": "Yaong bagay na namatay sa sarili, o nilapa ng mga ganid, ay huwag niyang kakanin, na makapagpapahawa sa kaniya: Ako si YAHWEH."
+      },
+      {
+        "num": 9,
+        "text": "Iingatan nga nila ang Aking bilin, baka sila ay magkasala sa paraang iyan, at kanilang ikamatay, kung kanilang lapastanganin: Ako si YAHWEH na nagpapaging banal sa kanila."
+      },
+      {
+        "num": 10,
+        "text": "Hindi makakakain ang sinomang taga ibang bayan ng banal na bagay: sinomang nakikipanuluyan sa saserdote, o aliping upahan niya ay hindi makakakain ng banal na bagay."
+      },
+      {
+        "num": 11,
+        "text": "Nguni't kung ang saserdote ay bumili ng sinomang tao sa kaniyang salapi, ay makakakain ito; at gayon din ang aliping inianak sa kaniyang bahay ay makakakain ng kaniyang tinapay.  At kung ang isang anak na babae ng saserdote ay mag-asawa ng taga ibang bayan, ay hindi makakakain sa handog na itinaas sa mga banal na bagay."
+      },
+      {
+        "num": 12,
+        "text": "Datapuwa't kung ang anak na babae ng saserdote ay bao o inihiwalay, na walang anak at bumalik sa bahay ng kaniyang ama na gaya rin ng kaniyang pagkadalaga, ay makakakain ng tinapay ng kaniyang ama, nguni't ang sinomang taga ibang bayan ay hindi makakakain niyaon."
+      },
+      {
+        "num": 13,
+        "text": "At kung ang sinomang lalake ay magkamaling kumain ng banal na bagay, ay kaniyang daragdagan pa nga ng ikalimang bahagi yaon, at ibibigay niya sa saserdote ang banal na bagay."
+      },
+      {
+        "num": 14,
+        "text": "At huwag nilang dudumhan ang mga banal na bagay ng mga anak ni Israel, na inihahandog sa Elohim;"
+      },
+      {
+        "num": 15,
+        "text": "At gayon papasanin ang kasamaan ng nagtataglay ng sala, kapag kanilang kinakain ang kanilang mga banal na bagay: sapagka't Ako si YAHWEH na nagpapaging banal sa kanila."
+      },
+      {
+        "num": 16,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi,"
+      },
+      {
+        "num": 17,
+        "text": "Salitain mo kay Aaron at sa kaniyang mga anak, at sa lahat ng mga anak ni Israel, at sabihin mo sa kanila, Sinoman sa sangbahayan ni Israel, o sa mga taga ibang bayan sa Israel, na maghahandog ng kaniyang alay, maging anomang panata nila, o maging anomang kusang handog nila, na kanilang inihahandog kay YAHWEH na pinakahandog na susunugin;"
+      },
+      {
+        "num": 18,
+        "text": "Upang kayo'y tanggapin, ang inyong ihahandog ay lalaking hayop na walang kapintasan, sa mga baka, sa mga tupa, o sa mga kambing."
+      },
+      {
+        "num": 19,
+        "text": "Datapuwa't alin mang may kapintasan, ay huwag ninyong ihahandog; dahil hindi tatanggapin sa inyo."
+      },
+      {
+        "num": 20,
+        "text": "At sinomang maghandog kay YAHWEH ng haing handog tungkol sa kapayapaan, sa pagtupad ng isang panata o kusang handog, na"
+      },
+      {
+        "num": 21,
+        "text": "mula sa bakahan o sa kawan ay kailangang sakdal, upang tanggapin; anomang kapintasan ay huwag magkaroon."
+      },
+      {
+        "num": 22,
+        "text": "Bulag, o may bali, o may hiwa, o may sugat, o galisin, o malangib, ay huwag ninyong ihahandog ang mga ito kay YAHWEH, ni huwag kayong maghahandog sa Elohim ng mga iyan na pinaraan sa apoy sa ibabaw ng dambana."
+      },
+      {
+        "num": 23,
+        "text": "Maging toro o tupa na may anomang kuntil o kulang sa kaniyang sangkap ng katawan, ay maihahandog mo na handog mo na kusa, datapuwa't sa panata ay hindi tatanggapin."
+      },
+      {
+        "num": 24,
+        "text": "Yaong niluluslusan, o napisa, o nabasag, o naputol ay huwag ninyong ihahandog sa Elohim; ni huwag kayong gagawa ng ganyan sa inyong lupain."
+      },
+      {
+        "num": 25,
+        "text": "Ni mula sa kamay ng taga ibang lupa ay huwag ninyong ihahandog na pinakatinapay ng inyong Elohim ang alin mang mga hayop na ito: sapagka't taglay nila ang kanilang karumhan, may kapintasan sa mga iyan: hindi tatanggapin sa inyo."
+      },
+      {
+        "num": 26,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi."
+      },
+      {
+        "num": 27,
+        "text": "Kapag may ipinanganak, na baka, o tupa, o kambing ay mapapasa kaniyang ina ngang pitong araw; at mula sa ikawalong araw hanggang sa haharapin ay tatanggaping alay kay YAHWEH na handog na pinaraan sa apoy."
+      },
+      {
+        "num": 28,
+        "text": "At maging baka o tupa ay huwag ninyong papatayin sa isang araw siya at ang kaniyang anak."
+      },
+      {
+        "num": 29,
+        "text": "At kapag kayo'y maghahandog ng haing pasalamat sa Elohim, ay inyong ihahain upang kayo'y tanggapin."
+      },
+      {
+        "num": 30,
+        "text": "Sa araw ding iyan kakanin; huwag kayong magtitira ng anoman niyan hanggang sa umaga: Ako si YAHWEH."
+      },
+      {
+        "num": 31,
+        "text": "Kaya't inyong iingatan ang Aking mga utos, at inyong tutuparin: Ako si YAHWEH."
+      },
+      {
+        "num": 32,
+        "text": "At huwag ninyong lalapastanganin ang Aking banal na Pangalan; kundi Ako'y sasambahin sa gitna ng mga anak ni Israel: Ako si YAHWEH na nagpapaging banal sa inyo."
+      },
+      {
+        "num": 33,
+        "text": "Na naglabas sa inyo sa lupain ng Egipto, upang Ako'y maging inyong Elohim: Ako si YAHWEH."
+      }
+    ],
+    "23": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi,"
+      },
+      {
+        "num": 2,
+        "text": "Salitain mo sa mga anak ni Israel at sabihin mo sa kanila, ang mga takdang kapistahan sa Elohim, na inyong itatanyag na mga banal na pagpupulong, ay mga ito nga ang Aking mga takdang kapistahan."
+      },
+      {
+        "num": 3,
+        "text": "Anim na araw na gagawa: datapuwa't sa ikapitong araw ay Sabbath na takdang kapahingahan, siyang banal na pagpupulong; anomang gawa ay huwag ninyong gagawin: isang Sabbath kay YAHWEH sa lahat ng inyong tahanan."
+      },
+      {
+        "num": 4,
+        "text": "Ito ang mga takdang kapistahan kay YAHWEH ng mga banal na pagpupulong na inyong itatanyag sa takdang panahon."
+      },
+      {
+        "num": 5,
+        "text": "Sa unang buwan, nang ikalabing apat na araw ng buwan, sa paglubog ng araw, ay Paskua sa Elohim."
+      },
+      {
+        "num": 6,
+        "text": "At nang ikalabing limang araw ng buwang iyan, ay kapistahan ng tinapay na walang lebadura kay YAHWEH: pitong araw na kakain kayo ng tinapay na walang lebadura."
+      },
+      {
+        "num": 7,
+        "text": "Sa unang araw ay magkakaroon ng banal na pagpupulong: anomang gawang paglilingkod ay huwag ninyong gagawin."
+      },
+      {
+        "num": 8,
+        "text": "Kundi maghahandog kayo sa AMA na pitong araw ng handog na pinaraan sa apoy; sa ika-pitong araw ay magkakaroon ng banal na pagpupulong anomang gawang paglilingkod ay huwag ninyong gagawin."
+      },
+      {
+        "num": 9,
+        "text": "At sinalita ni YAHWEH kay Moises na sinasabi."
+      },
+      {
+        "num": 10,
+        "text": "Salitain mo sa mga anak ni Israel, at sabihin mo sa kanila, Kapag kayo'y nakapasok sa lupain na ibibigay ko sa inyo, at inyong nagapas na ang ani niyaon, ay magdadala nga kayo sa saserdote ng bigkis na pinaka pangunang bunga ng inyong paggapas:"
+      },
+      {
+        "num": 11,
+        "text": "At aalugin niya ang bigkis sa harap ni YAHWEH upang tanggapin sa ganang inyo: sa kinabukasan pagkatapos ng Sabbath aalugin ng saserdote."
+      },
+      {
+        "num": 12,
+        "text": "At sa araw na inyong alugin ang bigkis, ay maghahandog kayo ng isang korderong lalake ng unang taon, walang kapintasan, na pinakahandog na susunugin kay YAHWEH."
+      },
+      {
+        "num": 13,
+        "text": "At ang handog na harina niyaon ay magiging dalawang ikasangpung bahagi ng isang epa ng mainam na harina na hinaluan ng langis, handog nga sa Elohim na pinaraan sa apoy na pinakamasarap na amoy: at ang pinakahandog na inumin niyaon ay alak, na ikaapat na bahagi ng isang hin."
+      },
+      {
+        "num": 14,
+        "text": "At huwag kayong kakain ng tinapay, ni trigong sinangag, ni uhay na bago, hanggang sa araw na ito, hanggang sa inyong madala ang alay sa inyong Elohim: siyang palatuntunan magpakailan man sa buong panahon ng inyong lahi, sa lahat ng inyong mga tahanan."
+      },
+      {
+        "num": 15,
+        "text": "At kayo ay bibilang sa inyo mula sa kinabukasan ng Sabbath mula sa araw na inyong dalhin ang bigkis na handog na inalog: magiging pitong Sabbath na ganap."
+      },
+      {
+        "num": 16,
+        "text": "Sa makatuwid baga'y hanggang sa kinabukasan ng ikapitong Sabbath, bibilang kayo ng limang pung araw; at maghahandog kayo ng bagong handog na harina kay YAHWEH."
+      },
+      {
+        "num": 17,
+        "text": "Sa inyong mga tahanan ay magdadala kayo ng dalawang tinapay na aalugin na may dalawang ikasangpung bahagi ng isang epa ng mainam na harina, at lulutuin na may lebadura na pinaka pangunang bunga sa Elohim."
+      },
+      {
+        "num": 18,
+        "text": "At ihaharap ninyo ang tinapay na kalakip ng pitong kordero ng unang taon na walang kapintasan, at ng isang guyang toro at ng dalawang tupang lalake: mga handog kay YAHWEH na susunugin, na kalakip ng kanilang handog na harina, at ng kanilang mga handog na inumin, handog nga na pinaraan sa apoy na pinakamasarap na amoy kay YAHWEH."
+      },
+      {
+        "num": 19,
+        "text": "At maghahandog kayo ng isang lalaking kambing na pinakahandog dahil sa kasalanan, at ng dalawang korderong lalake ng unang taon na haing mga handog tungkol sa kapayapaan."
+      },
+      {
+        "num": 20,
+        "text": "At aalugin ng saserdote pati ng tinapay ng mga unang bunga, na pinakahandog na inalog sa harap ni YAHWEH, na kalakip ng dalawang kordero: ang mga tinapay ay magiging itinalaga sa Elohim na ukol sa saserdote."
+      },
+      {
+        "num": 21,
+        "text": "At inyong ihahayag sa araw ding iyan; magiging banal na pagpupulong nga sa inyo; kayo'y huwag gagawa ng anomang gawang paglilingkod: siyang palatuntunan sa lahat ng inyong mga tahanan, sa buong panahon ng inyong lahi."
+      },
+      {
+        "num": 22,
+        "text": "At kapag inyong aanihin ang ani sa inyong lupain, ay huwag ninyong pakakaanihin ang mga sulok ng inyong bukid, ni pamulutan ang inyong naanihan: sa dukha at sa taga ibang lupa inyong ititira: Ako si YAHWEH ninyong Elohim."
+      },
+      {
+        "num": 23,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi."
+      },
+      {
+        "num": 24,
+        "text": "Salitain mo sa mga anak ni Israel, na iyong sabihin, Sa ikapitong buwan, sa unang araw ng buwan, ay magkakaroon kayo ng takdang kapahingahan, na pinaka-alaalang may tunog ng mga pakakak banal na pagpupulong nga."
+      },
+      {
+        "num": 25,
+        "text": "Kayo'y huwag gagawa ng anomang gawang paglilingkod: at kayo'y maghahandog ng handog kay YAHWEH na pinaraan sa apoy."
+      },
+      {
+        "num": 26,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi."
+      },
+      {
+        "num": 27,
+        "text": "Gayon ma'y sa ikasangpung araw nitong ikapitong buwan ay araw ng pagtubos: magiging sa inyo'y banal na pagpupulong, at papagdadalamhatiin ninyo ang inyong mga kaluluwa; at maghahandog kayo ng handog sa Elohim na pinaraan sa apoy."
+      },
+      {
+        "num": 28,
+        "text": "At huwag kayong gagawa ng anomang gawa sa araw ding iyan: sapagka't araw ng pagtubos, upang itubos sa inyo sa harap ni YAHWEH ninyong AMA."
+      },
+      {
+        "num": 29,
+        "text": "Dahil sinomang tao na hindi magdalamhati sa araw ding iyan ay ihihiwalay sa kaniyang bayan."
+      },
+      {
+        "num": 30,
+        "text": "At sinomang tao na gumawa ng anomang gawa sa araw ding iyan ay pupuksain ko ang taong yaon sa kaniyang bayan."
+      },
+      {
+        "num": 31,
+        "text": "Kayo'y huwag gagawa ng anomang gawa: siyang palatuntunan magpakailan man sa buong panahon ng inyong lahi sa lahat ng inyong mga tahanan."
+      },
+      {
+        "num": 32,
+        "text": "Magiging Sabbath na takdang pahingahan sa inyo, at inyong pagdadalamhatiin ang inyong mga kaluluwa sa ikasiyam na araw ng buwan sa hapon, mula sa pagkalubog ng araw hanggang sa muling pagkalubog ng araw ay ipangingilin ninyo ang inyong Sabbath."
+      },
+      {
+        "num": 33,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi,"
+      },
+      {
+        "num": 34,
+        "text": "Iyong salitain sa mga anak ni Israel, na sabihin, Sa ikalabing limang araw ng ikapitong buwang ito ay kapistahan ng mga balag na pitong araw sa Elohim."
+      },
+      {
+        "num": 35,
+        "text": "Sa unang araw ay magkakaroon ng banal na pagpupulong; kayo'y huwag gagawa ng anomang gawang paglilingkod."
+      },
+      {
+        "num": 36,
+        "text": "Pitong araw na maghahandog kayo kay YAHWEH ng handog na pinaraan sa apoy; sa ikawalong araw ay magkakaroon kayo ng banal na pagpupulong; at kayo'y maghahandog kay YAHWEH ng handog na pinaraan sa apoy; siyang pinaka dakilang kapulungan; huwag kayong gagawa ng anomang gawang paglilingkod. Bil 29:35; Deut 16:15"
+      },
+      {
+        "num": 37,
+        "text": "Ito ang mga takdang kapistahan ni YAHWEH, na inyong itatanyag na mga banal na pagpupulong, upang maghandog kay YAHWEH ng handog na pinaraan sa apoy, ng handog na susunugin, at ng handog na harina, ng hain, at ng mga handog na inumin na bawa't isa ay sa kaniyang sariling kaarawan:"
+      },
+      {
+        "num": 38,
+        "text": "Bukod sa mga Sabbath ni YAHWEH, at bukod sa inyong mga kaloob, at bukod sa lahat ng inyong mga panata, at bukod sa lahat ng inyong mga handog na kusa na inyong ibinibigay sa Elohim."
+      },
+      {
+        "num": 39,
+        "text": "Gayon ma'y sa ikalabing limang araw ng ikapitong buwan, kapag inyong natipon ang bunga ng lupain, ay magdiwang kayo sa Elohim ng kapistahang pitong araw: ang unang araw ay magiging takdang kapahingahan, at ang ikawalong araw ay magiging takdang kapahingahan. Jn 7:10"
+      },
+      {
+        "num": 40,
+        "text": "At magdadala kayo sa unang araw ng bunga ng magagandang punong kahoy, ng mga sanga ng mga palma, at ng mga sanga ng mayayabong na punong kahoy, at ng mga sause ng batis; at kayo'y magpapakagalak sa harap ni YAHWEH ninyong AMA, na pitong araw. Neh 8:15; Pah 7:9"
+      },
+      {
+        "num": 41,
+        "text": "At inyong ipangingiling isang kapistahan kay YAHWEH na pitong araw sa bawa't taon: siyang palatuntunan magpakailan man sa buong panahon ng inyong lahi: sa ikapitong buwan ay ipagdiwang ninyo ang kapistahang ito."
+      },
+      {
+        "num": 42,
+        "text": "Kayo'y tatahan sa mga balag na pitong araw; yaong lahat ng tubo sa Israel ay tatahan sa mga balag:"
+      },
+      {
+        "num": 43,
+        "text": "Upang maalaman ng inyong mga lahi na sa mga balag pinatahan ko ang mga anak ni Israel, nang Aking ilabas sa lupain ng Egipto: Ako si YAHWEH ninyong Elohim."
+      },
+      {
+        "num": 44,
+        "text": "At ipinakilala ni Moises sa mga anak ni Israel ang mga takdang kapistahan ni YAHWEH."
+      }
+    ],
+    "24": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi,"
+      },
+      {
+        "num": 2,
+        "text": "Iutos mo sa mga anak ni Israel na dalhan ka ng langis na dalisay na oliba, na hinalo para sa ilawan, upang laging papagliyabin ang ilawan."
+      },
+      {
+        "num": 3,
+        "text": "Sa labas ng tabing ng kaban ng patotoo sa Tabernakulo ng kapisanan, ay aayusing palagi ni Aaron, mula sa hapon hanggang sa umaga sa harap ni YAHWEH: siyang palatuntunan magpakailan man sa buong panahon ng inyong lahi."
+      },
+      {
+        "num": 4,
+        "text": "Kaniyang aayusin lagi ang mga ilawan sa ibabaw ng kandelerong dalisay sa harap ni YAHWEH."
+      },
+      {
+        "num": 5,
+        "text": "At kukuha ka ng mainam na harina, at magluluto ka niyan ng labing dalawang munting tinapay: tigdadalawang ikasampung bahagi ng isang epa ang bawa't munting tinapay."
+      },
+      {
+        "num": 6,
+        "text": "At ilalagay mong dalawang hanay, anim sa bawa't hanay, sa ibabaw ng dulang na dalisay sa harap ni YAHWEH."
+      },
+      {
+        "num": 7,
+        "text": "At maglalagay ka ng dalisay na kamangyan, sa bawa't hanay upang ito'y maging paalala na tinapay, na handog nga kay YAHWEH na pinaraan sa apoy."
+      },
+      {
+        "num": 8,
+        "text": "Sa bawa't Sabbath ay aayusing palagi ang tinapay sa harap ni YAHWEH; sa ganang mga anak ni Israel, na pinakatipang walang hanggan."
+      },
+      {
+        "num": 9,
+        "text": "At magiging kay Aaron at sa kaniyang mga anak; at kanilang kakanin sa dakong banal: sapagka't kabanalbanalang bagay sa kaniya sa mga handog kay YAHWEH na pinaraan sa apoy sa pamamagitan ng palatuntunang walang hanggan."
+      },
+      {
+        "num": 10,
+        "text": "Nang panahong iyon, may isang lalaking pumasok sa kampo ng Israel. Ang ama niya ay isang Egipcio at Israelita naman ang kaniyang ina na ang pangala'y Selomit, isa sa mga anak ni Debri at mula sa lipi ni Dan. Ang anak ng mga ito ay napaaway sa isang tunay na Israelita."
+      },
+      {
+        "num": 11,
+        "text": "Sa kanilang pag-aaway, nagmura siya at nagsalita ng masama laban sa Pangalan ni YAHWEH, kaya dinala siya kay Moises."
+      },
+      {
+        "num": 12,
+        "text": "At siya'y kanilang inilagay sa bilangguan hanggang sa ang hatol ay ipahayag sa kanila ng bibig ni YAHWEH."
+      },
+      {
+        "num": 13,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi,"
+      },
+      {
+        "num": 14,
+        "text": "Dalhin mo ang mapaglait sa labas ng kampamento; at ang lahat ng nakarinig sa kaniya ay magpatong ng kanilang mga kamay sa kaniyang ulo, at pagbatuhanan siya ng buong kapisanan."
+      },
+      {
+        "num": 15,
+        "text": "At sasalitain mo sa mga anak ni Israel, na iyong sasabihin, Sinomang magtungayaw sa kaniyang Elohim ay magpapasan ng kaniyang sala."
+      },
+      {
+        "num": 16,
+        "text": "At ang lumapastangan sa Pangalan ni YAHWEH ay papataying walang pagsala; walang pagsalang pagbabatuhanan siya ng buong kapisanan: maging taga ibang lupa o tubo sa lupain, ay papatayin kapag lumapastangan sa Pangalan ni YAHWEH."
+      },
+      {
+        "num": 17,
+        "text": "At ang manakit ng malubha sa kanino mang tao, ay papataying walang pagsala;"
+      },
+      {
+        "num": 18,
+        "text": "At ang manakit ng malubha sa isang hayop ay magpapalit: hayop kung hayop."
+      },
+      {
+        "num": 19,
+        "text": "At kung ang sinoman ay makasakit sa kaniyang kapuwa: ay gayon ang gagawin sa kaniya;"
+      },
+      {
+        "num": 20,
+        "text": "Bugbog kung bugbog, mata kung mata, ngipin kung ngipin: ayon sa kaniyang pagkasakit sa tao, ay gayon din ang gagawin sa kaniya."
+      },
+      {
+        "num": 21,
+        "text": "At ang pumatay ng isang hayop ay magpapalit, at ang pumatay sa isang tao ay papatayin."
+      },
+      {
+        "num": 22,
+        "text": "Magkakaroon kayo ng isa lamang kautusan sa taga ibang bayan, na gaya sa tubo sa lupain: sapagka't Ako si YAHWEH ninyong AMA."
+      },
+      {
+        "num": 23,
+        "text": "At nagsalita si Moises sa mga anak ni Israel at siya na nanglait ay inilabas nila sa kampamento, at siya'y pinagbatuhanan ng mga bato. At ginawa ng mga anak ni Israel, ayon sa iniutos ni YAHWEH kay Moises."
+      }
+    ],
+    "25": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises sa bundok ng Sinai, na sinasabi."
+      },
+      {
+        "num": 2,
+        "text": "Salitain mo sa mga anak ni Israel, at sabihin mo sa kanila, Pagpasok ninyo sa lupain na ibibigay ko sa inyo, ay mangingilin ng isang Sabbath kay YAHWEH ang lupain."
+      },
+      {
+        "num": 3,
+        "text": "Anim na taong hahasikan mo ang iyong bukid, at anim na taong kakapunin mo ang iyong ubasan, at titipunin mo ang bunga ng mga iyan;"
+      },
+      {
+        "num": 4,
+        "text": "Datapuwa't sa ikapitong taon ay magiging Sabbath na takdang kapahingahan sa lupain, Sabbath kay YAHWEH: Huwag mong hahasikan ang iyong bukid, ni kakapunin ang iyong ubasan."
+      },
+      {
+        "num": 5,
+        "text": "Yaong tumubo sa sarili sa iyong inaanihan ay huwag mong aanihin, at ang mga ubas ng iyong ubasan na hindi nakapon ay huwag mong titipunin: magiging taong takdang kapahingahan sa lupain."
+      },
+      {
+        "num": 6,
+        "text": "At ang bunga sa Sabbath ng lupain ay magiging pagkain sa inyo; sa iyo, at sa iyong aliping lalake at babae, at sa iyong aliping upahan, at sa taga ibang bayan na nakikipamayan sa iyo;"
+      },
+      {
+        "num": 7,
+        "text": "At sa iyong mga baka at sa mga hayop na nasa iyong lupain ay magiging pagkain ang lahat ng bunga ng mga iyan."
+      },
+      {
+        "num": 8,
+        "text": "At bibilang ka ng pitong Sabbath ng taon, makapitong pitong taon; at magiging sa iyo'y mga araw ng pitong Sabbath ng mga taon, sa makatuwid baga'y apat na pu't siyam na taon."
+      },
+      {
+        "num": 9,
+        "text": "Kung magkagayon ay mag-uutos ka na lumibot sa bayan ang pakakak na matunog sa ikasangpung araw ng ikapitong buwan; sa araw ng pagtubos patutunugin ang pakakak sa buong lupain ninyo."
+      },
+      {
+        "num": 10,
+        "text": "At ipangingilin ninyo ang ikalimang pung taon, at ihahayag ninyo sa buong lupain ang kalayaan sa lahat na tumatahan sa lupain: iya'y magiging kapistahan ng Yobel sa inyo; at bawa't isa sa inyo ay babalik sa kaniyang pag-aari, at bawa't isa'y babalik sa kaniyang sangbahayan. Jer 34:17; Luk 4:18"
+      },
+      {
+        "num": 11,
+        "text": "Magiging kapistahan ng Yobel nga sa inyo ang ikalimangpung taon: huwag ninyong hahasikan ni aanihin ang tumubo sa kaniyang sarili, ni titipunin ang mga ubas ng ubasan na hindi nakapon."
+      },
+      {
+        "num": 12,
+        "text": "Sapagka't kapistahan ng Yobel; magiging banal sa inyo: kakanin ninyo ang bunga niyan sa bukid."
+      },
+      {
+        "num": 13,
+        "text": "Sa taong ito ng Yobel, ay babalik kayo, bawa't isa sa kaniyang pag-aari."
+      },
+      {
+        "num": 14,
+        "text": "At kung ikaw ay magbili ng anoman sa iyong kapuwa o bumili ng anoman sa kamay ng iyong kapuwa, ay huwag kayong magdadayaan."
+      },
+      {
+        "num": 15,
+        "text": "Ayon sa bilang ng taon pagkatapos ng Yobel, ay bibilhin mo sa iyong kapuwa, ayon sa bilang ng taon ng pag-aani, ay kaniyang ipagbibili sa iyo."
+      },
+      {
+        "num": 16,
+        "text": "Ayon sa dami ng mga taon, ay daragdagan mo ang halaga niyan, at ayon sa kakauntian ng mga taon, ay babawasan mo ang halaga niyan; sapagka't ganyang bilang ng ani ang kaniyang ipagbibili sa iyo."
+      },
+      {
+        "num": 17,
+        "text": "At huwag kayong magdadayaan; kundi matatakot kayo sa inyong AMA: sapagka't Ako si YAHWEH ninyong Elohim."
+      },
+      {
+        "num": 18,
+        "text": "Kaya't inyong tutuparin ang Aking mga palatuntunan, at inyong iingatan ang Aking mga kahatulan at inyong isasagawa at tatahan kayong tiwasay sa lupain."
+      },
+      {
+        "num": 19,
+        "text": "At ang lupain ay magbubunga, at kakain kayo hanggang sa mabusog at tatahan kayong tiwasay doon."
+      },
+      {
+        "num": 20,
+        "text": "At kung sasabihin ninyo, Anong aming kakanin sa ikapitong taon? narito, hindi kami maghahasik ni magtitipon ng aming mga bunga:"
+      },
+      {
+        "num": 21,
+        "text": "At Aking igagawad ang Aking pagpapala sa inyo sa ikaanim na taon, at magbubunga ng kasya sa tatlong taon."
+      },
+      {
+        "num": 22,
+        "text": "At maghahasik kayo sa ikawalong taon, at kakain kayo ng dating kinamalig na mga bunga hanggang sa ikasiyam na taon, hanggang sa dumating ang pagbubunga ng ikawalo ay kakain kayo ng dating kinamalig."
+      },
+      {
+        "num": 23,
+        "text": "At ang lupain ay hindi maipagbibili ng magpakailan man; sapagka't Akin ang lupain: dahil kayo'y taga ibang bayan at makikipamayang kasama ko."
+      },
+      {
+        "num": 24,
+        "text": "At sa buong lupain na iyong pag-aari ay magkakaloob kayo ng pangtubos sa lupain."
+      },
+      {
+        "num": 25,
+        "text": "Kung ang iyong kapatid ay maghirap, at ipagbili ang anoman sa kaniyang pag-aari, ay paroroon ang kaniyang kamag-anak na pinakamalapit sa kaniya, at tutubusin ang ipinagbili ng kaniyang kapatid."
+      },
+      {
+        "num": 26,
+        "text": "At kung ang taong yaon ay walang manunubos, at siya'y yumaman at nakahanap ng sapat upang matubos yaon;"
+      },
+      {
+        "num": 27,
+        "text": "Ay kaniyang bilangin ang mga taon pagkatapos na kaniyang naipagbili, at isasauli ang labis sa taong kaniyang pinagbilhan; at babalik siya sa kaniyang pag-aari."
+      },
+      {
+        "num": 28,
+        "text": "Nguni't kung siya'y walang kasapatan, upang maibalik niya sa kaniya, ang ipinagbili ay matitira nga sa kapangyarihan ng bumili hanggang sa taon ng Yobel; at sa Yobel ay maaalis sa kapangyarihan niyaon, at ang may-ari ay babalik sa kaniyang pag-aari."
+      },
+      {
+        "num": 29,
+        "text": "At kung ang isang tao ay magbili ng bahay na tahanan sa nakukutaang bayan ay matutubos niya sa loob ng isang buong taon pagkatapos na maipagbili; sapagka't isang buong taon ang kaniyang matuwid ng pagtubos."
+      },
+      {
+        "num": 30,
+        "text": "At kung hindi matubos sa loob ng isang buong taon, ang bahay na nasa nakukutaang bayan ay lalagi magpakailan man, na pag-aari niyaong bumili, sa buong panahon ng kaniyang lahi: hindi maaalis sa kaniya sa Yobel."
+      },
+      {
+        "num": 31,
+        "text": "Nguni't ang mga bahay sa mga nayon na walang kuta sa palibot, ay aariing para ng sa mga bukirin sa lupain: kanilang matutubos; at sa Yobel ay magsisialis."
+      },
+      {
+        "num": 32,
+        "text": "Gayon ma'y sa mga bayan ng mga Lewita, kailan ma'y maaaring matubos ng mga Lewita ang mga bahay sa mga bayan ng kanilang pag-aari."
+      },
+      {
+        "num": 33,
+        "text": "At kung ang isa sa mga Lewita ay tumubos, ang bahay na ipinagbili at ang bayang kaniyang pag-aari, ay maaalis sa Yobel, sapagka't ang mga bahay sa mga bayan ng mga Lewita ay kanilang pag-aari sa gitna ng mga anak ni Israel."
+      },
+      {
+        "num": 34,
+        "text": "Datapuwa't ang mga bukid sa palibot ng mga bayan nila, ay hindi maipagbibili, sapagka't pag-aari nila magpakailan man."
+      },
+      {
+        "num": 35,
+        "text": "At kung maghirap ang iyong kapatid at manglupaypay sa iyong siping, ay iyo siyang aalalayan na patutuluyin mo, na manunuluyan sa iyong parang taga ibang bayan at nakikipamayan."
+      },
+      {
+        "num": 36,
+        "text": "Huwag kang kukuha sa kaniya ng patubo o pakinabang, kundi matakot ka sa iyong AMA: patuluyin mo ang iyong kapatid."
+      },
+      {
+        "num": 37,
+        "text": "Ang iyong salapi ay huwag mong ibibigay sa kaniya na may patubo, ni ibibigay mo sa kaniya na may pakinabang ang iyong pagkain."
+      },
+      {
+        "num": 38,
+        "text": "Ako si YAHWEH ninyong AMA, na inilabas ko kayo sa lupain ng Egipto, upang ibigay ko sa inyo ang lupain ng Canaan, at Ako'y maging inyong Elohim."
+      },
+      {
+        "num": 39,
+        "text": "At kung ang iyong kapatid na kasama mo ay maghirap at pabili siya sa iyo: ay huwag mo siyang papaglilingkuring parang alipin;"
+      },
+      {
+        "num": 40,
+        "text": "Ipalalagay mo siyang parang lingkod na upahan at parang nakikipamayan; hanggang sa taon ng Yobel ay maglilingkod siya sa iyo:"
+      },
+      {
+        "num": 41,
+        "text": "Kung magkagayo'y aalis siya sa iyo, siya at ang kaniyang mga anak na kasama niya, at babalik sa kaniyang sariling sangbahayan, at babalik sa pag-aari ng kaniyang mga magulang."
+      },
+      {
+        "num": 42,
+        "text": "Dahil sila'y Aking mga lingkod, na Aking inilabas sa lupain ng Egipto; sila'y hindi maipagbibiling parang mga alipin."
+      },
+      {
+        "num": 43,
+        "text": "Huwag kang maging amo sa kaniya na may kabagsikan; kundi ikaw ay matakot sa iyong Elohim."
+      },
+      {
+        "num": 44,
+        "text": "At tungkol sa iyong mga aliping lalake at babae na magkakaroon ka; sa mga bansang nasa palibot ninyo, ay makabibili kayo sa kanila ng mga aliping lalake at babae."
+      },
+      {
+        "num": 45,
+        "text": "Saka sa mga anak ng mga taga ibang lupa na nakikipamayan sa inyo, sa mga ito'y makabibili kayo, at sa kanilang mga sangbahayan na nasa inyo, na mga ipinanganak nila sa inyong lupain: at magiging inyong pag-aari."
+      },
+      {
+        "num": 46,
+        "text": "At inyong iiwang pinakapamana sa inyong mga anak pagkamatay ninyo, na pinaka pag-aari; sa mga iyan kukuha kayo ng inyong mga alipin magpakailan man: nguni't sa inyong mga kapatid na mga anak ni Israel ay huwag kayong magpapanginoon na may kabagsikan."
+      },
+      {
+        "num": 47,
+        "text": "At kung ang taga ibang lupa o nakikipamayan na kasama mo ay yumaman, at ang iyong kapatid ay maghirap sa siping niya, at pabili sa taga ibang bayan o nakikipamayan sa iyo o sa sinomang kasangbahay ng taga ibang lupa;"
+      },
+      {
+        "num": 48,
+        "text": "Pagkatapos na siya'y maipagbili ay kaniyang matutubos: isa sa kaniyang mga kapatid ay makatutubos sa kaniya:"
+      },
+      {
+        "num": 49,
+        "text": "O ang kaniyang amain o ang anak ng kaniyang amain ay makatutubos sa kaniya; o sinomang kamag-anak na malapit niya sa kaniyang sangbahayan ay makatutubos sa kaniya; o kung yumaman siya ay makatutubos siya sa kaniyang sarili."
+      },
+      {
+        "num": 50,
+        "text": "At kaniyang bibilangan yaong bumili sa kaniya, mula sa taong bilhin siya hanggang sa taon ng Yobel: at ang halaga ng pagkabili sa kaniya ay magiging ayon sa bilang ng mga taon; at gagawin sa kaniya ay ayon sa panahon ng isang lingkod na upahan."
+      },
+      {
+        "num": 51,
+        "text": "Kung maraming taon pa ang kulang niya, ayon sa dami ng mga iyan, ay isasauli ang halaga ng kaniyang pagkatubos sa kaniya na salaping sa kaniya'y ibinili."
+      },
+      {
+        "num": 52,
+        "text": "At kung kaunti ang mga taong nagkukulang hanggang sa taon ng Yobel ay ibibilang sa kaniya; ayon sa kaniyang mga taon na nagkukulang ay isasauli ang halaga ng kaniyang katubusan."
+      },
+      {
+        "num": 53,
+        "text": "Kung paano ang alilang may bayad sa taon-taon, ay gayon matitira sa kaniya: siya ay huwag papapanginoon sa kaniya na may kabagsikan sa iyong paningin."
+      },
+      {
+        "num": 54,
+        "text": "At kung hindi siya tubusin sa mga paraang ito, ay aalis siya sa taon ng Yobel, siya at ang kaniyang mga anak na kasama niya."
+      },
+      {
+        "num": 55,
+        "text": "Sapagka't sa Akin ang mga anak ni Israel ay mga lingkod; sila'y Aking mga lingkod na Aking inilabas sa lupain ng Egipto: Ako si YAHWEH ninyong AMA."
+      }
+    ],
+    "26": [
+      {
+        "num": 1,
+        "text": "Huwag kayong gagawa para sa inyo ng mga imahe (diyos), ni magtatayo kayo ng rebultong inanyuan o haligi, ni huwag kayong maglalagay ng batong inanyuan sa inyong lupain, upang inyong yukuran yaon: sapagka't Ako si YAHWEH ninyong Elohim."
+      },
+      {
+        "num": 2,
+        "text": "Inyong ipangingilin ang Aking mga Sabbath, at inyong igagalang ang Aking santuariyo: Ako si YAHWEH."
+      },
+      {
+        "num": 3,
+        "text": "Kung lalakad kayo ng ayon sa Aking mga palatuntunan at iingatan ninyo ang Aking mga utos, at inyong tutuparin:"
+      },
+      {
+        "num": 4,
+        "text": "Ay magpapadala nga Ako ng ulan sa kapanahunan, at ang lupain ay pakikinabangan, at ang mga kahoy sa parang ay magbubunga."
+      },
+      {
+        "num": 5,
+        "text": "At ang inyong paggiik ay aabot hanggang sa pag-aani ng mga ubas, at ang pag-aani ng ubas ay aabot sa paghahasik: at kakanin ninyo ang inyong pagkain na sagana, at tatahan kayong tiwasay sa inyong lupain."
+      },
+      {
+        "num": 6,
+        "text": "At magbibigay Ako ng kapayapaan sa lupain, at mahihimlay kayo, at walang katatakutan kayo: at Aking papawiin sa lupain ang mababangis na hayop, ni hindi dadaanan ang inyong lupain sa tabak."
+      },
+      {
+        "num": 7,
+        "text": "At hahabulin ninyo ang inyong mga kaaway, at mabubuwal sa harap ninyo sa tabak."
+      },
+      {
+        "num": 8,
+        "text": "At lima sa inyo'y hahabol sa isang daan, at isang daan sa inyo'y hahabol sa sangpung libo: at ang inyong mga kaaway ay mabubuwal sa tabak sa harap ninyo."
+      },
+      {
+        "num": 9,
+        "text": "At lilingapin ko kayo, at palalaguin ko kayo, at pararamihin ko kayo; at papagtitibayin ko ang Aking tipan sa inyo."
+      },
+      {
+        "num": 10,
+        "text": "At kakanin ninyo ang malaong kinamalig, at inyong ilalabas ang luma dahil sa bago."
+      },
+      {
+        "num": 11,
+        "text": "At ilalagay ko ang Aking Tabernakulo sa gitna ninyo: at hindi ko kayo kapopootan."
+      },
+      {
+        "num": 12,
+        "text": "At lalakad Ako sa gitna ninyo at Ako'y magiging inyong Elohim, at kayo'y magiging Aking bayan."
+      },
+      {
+        "num": 13,
+        "text": "Ako si YAHWEH ninyong AMA, na naglabas sa inyo sa lupain ng Egipto, upang huwag kayong maging mga alipin nila; at sinira ko ang mga kahoy ng inyong pamatok, at pinalakad ko kayo ng mga ulong matuwid."
+      },
+      {
+        "num": 14,
+        "text": "Nguni't kung hindi ninyo pakikinggan Ako, at hindi ninyo tutuparin ang lahat ng mga utos na ito;"
+      },
+      {
+        "num": 15,
+        "text": "At kung inyong tatanggihan ang Aking mga palatuntunan, at kasusuklaman nga ninyo ang Aking mga hatol, na anopa't hindi ninyo tutuparin ang lahat ng Aking mga utos, kundi inyong sisirain ang Aking tipan;"
+      },
+      {
+        "num": 16,
+        "text": "Ay gagawin ko naman ito sa inyo; ilalagay ko sa gitna ninyo ang sindak, at pagkatuyo, at ang lagnat na uubos sa mga mata, at magpapalupaypay sa kaluluwa: at maghahasik kayo ng inyong binhi na walang kabuluhan, sapagka't kakanin ng inyong mga kaaway."
+      },
+      {
+        "num": 17,
+        "text": "At itititig ko ang Aking mukha laban sa inyo, at kayo'y masasaktan sa harap ng inyong mga kaaway: kayo'y pagpupunuan ng mga napopoot sa inyo; at kayo'y tatakas nang walang humahabol sa inyo."
+      },
+      {
+        "num": 18,
+        "text": "At kung sa mga bagay na ito man ay hindi ninyo Ako pakinggan, ay parurusahan ko kayong makapito pa, dahil sa inyong mga kasalanan."
+      },
+      {
+        "num": 19,
+        "text": "At sisirain ko ang kahambugan ng inyong kapangyarihan; at gagawin kong parang bakal ang inyong langit at parang tanso ang inyong lupa:"
+      },
+      {
+        "num": 20,
+        "text": "At gugugulin ninyo ang inyong kalakasan ng walang kabuluhan; sapagka't hindi ibibigay sa inyo ng inyong lupain ang kaniyang bunga ni ng kahoy sa parang ang kaniyang bunga."
+      },
+      {
+        "num": 21,
+        "text": "At kung kayo'y sasalangsang sa Akin, at hindi ninyo Ako didinggin; ay dadalhan ko kayo ng makapito ang higit ng salot ayon sa inyong mga kasalanan."
+      },
+      {
+        "num": 22,
+        "text": "At susuguin ko sa inyo ang mga halimaw sa parang, ng samsaman kayo ng inyong mga anak, at papatayin ang inyong mga hayop, at kayo'y pakakauntiin sa bilang; at mangungulila ang inyong mga lakad."
+      },
+      {
+        "num": 23,
+        "text": "At kung sa mga bagay mang ito ay hindi pa kayo magbago sa Akin, kundi sasalangsang kayo sa Akin:"
+      },
+      {
+        "num": 24,
+        "text": "At lalakad din naman Ako ng laban sa inyo, at sasaktan ko kayo, ng makapito pa dahil sa inyong mga kasalanan:"
+      },
+      {
+        "num": 25,
+        "text": "At pararatingin ko sa inyo ang tabak na gaganap ng higanti ng tipan; at kayo'y matitipon sa inyong mga bayan: at pararatingin ko ang salot sa gitna ninyo; at kayo'y mabibigay sa kamay ng kaaway."
+      },
+      {
+        "num": 26,
+        "text": "Kapag masisira ko ang tungkod ninyong tinapay, ang sangpung babae ay magluluto ng inyong tinapay sa isa lamang hurno, at sa inyo'y isasauli sa timbang ang inyong tinapay: at kayo'y kakain at hindi kayo mabubusog."
+      },
+      {
+        "num": 27,
+        "text": "At kung sa lahat ng ito ay hindi ninyo Ako pakikinggan, kundi kayo'y sasalangsang sa Akin;"
+      },
+      {
+        "num": 28,
+        "text": "Ay sasalangsang Ako sa inyo na may kapusukan; at parurusahan ko kayong makapito pa dahil sa inyong mga kasalanan."
+      },
+      {
+        "num": 29,
+        "text": "At kakanin ninyo ang laman ng inyong mga anak na lalake, at ang mga laman ng inyong mga anak na babae ay inyong kakanin."
+      },
+      {
+        "num": 30,
+        "text": "At sisirain ko ang inyong matataas na dako, at Aking wawasakin ang inyong mga larawang araw, at itatapon ko ang inyong mga bangkay sa mga rebulto ng inyong mga imahe (diyos); at kapopootan kayo ng Aking kaluluwa."
+      },
+      {
+        "num": 31,
+        "text": "At gagawin kong giba ang inyong mga bayan, at gigibain ko ang inyong mga santuariyo, at hindi ko na sasamyuin ang inyong mga may amoy na masarap."
+      },
+      {
+        "num": 32,
+        "text": "At gagawin kong ilang ang lupain: at pagtatakhan ng inyong mga kaaway na tumatahan doon."
+      },
+      {
+        "num": 33,
+        "text": "At kayo'y Aking pangangalatin sa mga bansa, at pagbubunutan ko kayo ng tabak sa hulihan ninyo: at ang inyong lupain ay magiging isang ilang, at ang inyong mga bayan ay magiging sira."
+      },
+      {
+        "num": 34,
+        "text": "Kung magkagayo'y magagalak ang lupain sa kaniyang mga Sabbath, habang nahahandusay na sira, at kayo'y mapapasa lupain ng inyong mga kaaway; ang lupain nga ay magpapahinga, at magagalak sa kaniyang mga Sabbath."
+      },
+      {
+        "num": 35,
+        "text": "Habang nahahandusay na sira ay magkakaroon ng kapahingahan, sa makatuwid baga'y ang hindi ipinagpahinga sa inyong mga Sabbath nang kayo'y nagsisitahan doon."
+      },
+      {
+        "num": 36,
+        "text": "At tungkol sa mga matitira sa inyo, ay sisidlan ko ng takot sa kanilang puso, sa mga lupain ng kaniyang mga kaaway: at hahabulin sila ng kalatis ng isang dahong nalalaglag; at sila'y tatakas na parang tumatakas sa tabak; at sila'y mabubuwal nang walang humahabol sa kanila."
+      },
+      {
+        "num": 37,
+        "text": "At magkakatisuran sila na parang nasa harap ng tabak, kahit walang humahabol: at hindi kayo makatatayo sa harap ng inyong mga kaaway."
+      },
+      {
+        "num": 38,
+        "text": "At mamamatay kayo sa gitna ng mga bansa, at sasakmalin kayo ng lupain ng inyong mga kaaway."
+      },
+      {
+        "num": 39,
+        "text": "At ang mga matitira sa inyo ay manlulupaypay sa kanilang kasamaan sa mga lupain ng inyong mga kaaway; at sa mga kasamaan naman ng kanilang mga magulang ay magsisipanglupaypay na kasama nila."
+      },
+      {
+        "num": 40,
+        "text": "At kanilang isasaysay ang kanilang kasamaan, at kasamaan ng kanilang mga magulang, sa kanilang pagsalangsang na isinalangsang laban sa Akin, sapagka't sila'y lumakad ng laban sa Akin."
+      },
+      {
+        "num": 41,
+        "text": "Ako naman ay lumakad ng laban sa kanila, at sila'y Aking dinala sa lupain ng kanilang mga kaaway: kung magpapakababa nga ang kanilang mga pusong hindi tuli, at kanilang tatanggapin ang parusa sa kanilang kasamaan;"
+      },
+      {
+        "num": 42,
+        "text": "Ay aalalahanin ko nga ang Aking tipan kay Ya’aqob; at ang Akin ding tipan kay Yitshaq, at gayon din ang Aking tipan kay Abraham ay Aking aalalahanin; at Aking aalalahanin ang lupain."
+      },
+      {
+        "num": 43,
+        "text": "Ang lupain naman ay pababayaan nila, at magagalak sa kaniyang mga Sabbath, samantalang nahahandusay na sira na wala sila; at kanilang tatanggapin ang kaparusahan ng kanilang kasamaan: sapagka't kanilang tinanggihan ang Aking mga hatol, at kinapootan ng kanilang kaluluwa ang Aking mga palatuntunan."
+      },
+      {
+        "num": 44,
+        "text": "At sa lahat mang ito, kapag sila'y nasa lupain ng kanilang mga kaaway ay hindi ko sila itatakuwil, ni kapopootan ko sila na sila'y Aking lubos na lilipulin, at Aking sisirain ang Aking tipan sa kanila: sapagka't Ako si YAHWEH nilang Elohim:"
+      },
+      {
+        "num": 45,
+        "text": "Kundi aalalahanin ko alang-alang sa kanila ang tipan ng kanilang mga magulang, na Aking inilabas sa lupain ng Egipto, sa paningin ng mga bansa, upang Ako'y kanilang maging AMA: Ako si YAHWEH."
+      },
+      {
+        "num": 46,
+        "text": "Ito ang mga palatuntunan at ang mga hatol at ang mga kautusang ginawa ni YAHWEH sa kaniyang sarili at sa mga anak ni Israel sa bundok ng Sinai sa pamamagitan ni Moises."
+      }
+    ],
+    "27": [
+      {
+        "num": 1,
+        "text": "At sinalita ni YAHWEH kay Moises, na sinasabi,"
+      },
+      {
+        "num": 2,
+        "text": "Salitain mo sa mga anak ni Israel, at sabihin mo sa kanila, Kapag ang sinoman ay tutupad ng panata ayon sa iyong inihalaga, ay magiging kay YAHWEH ang mga tao."
+      },
+      {
+        "num": 3,
+        "text": "At ang iyong inihalaga tungkol sa lalake, na mula sa may dalawangpung taong gulang hanggang sa may animnapu, ay limangpung siklong pilak, ang iyong ihahalaga ayon sa siklo ng santuariyo."
+      },
+      {
+        "num": 4,
+        "text": "At kung tungkol sa babae tatlongpung siklo ang ihahalaga mo."
+      },
+      {
+        "num": 5,
+        "text": "At kung mula sa may limang taon hanggang sa may dalawangpung taon, ay dalawangpung siklo, ang ihahalaga mo sa lalake at sa babae ay sangpung siklo."
+      },
+      {
+        "num": 6,
+        "text": "At kung mula sa may isang buwan hanggang sa may limang taon ay limang siklong pilak ang iyong ihahalaga sa lalake at sa babae ay tatlong siklong pilak ang iyong ihahalaga."
+      },
+      {
+        "num": 7,
+        "text": "At kung sa may animnapung taon na patanda; kung lalake, ay labing limang siklo ang iyong ihahalaga, at sa babae ay sangpung siklo."
+      },
+      {
+        "num": 8,
+        "text": "Nguni't kung kapos ng ikababayad sa iyong inihalaga, ay pahaharapin mo siya sa harap ng saserdote, at hahalagahan siya ng saserdote; ayon sa ikakakaya ng may panata, ay siyang ihahalaga sa kaniya ng saserdote."
+      },
+      {
+        "num": 9,
+        "text": "At kung hayop na ihahandog na alay kay YAHWEH, lahat na ibibigay niyaon ng sinoman kay YAHWEH ay magiging banal."
+      },
+      {
+        "num": 10,
+        "text": "Huwag niyang babaguhin o papalitan ang mabuti ng masama o ang masama ng mabuti: at kung sa anomang paraan ay palitan ang isang hayop ng iba, ay magiging kapuwa banal yaon at ang kapalit niyaon."
+      },
+      {
+        "num": 11,
+        "text": "At kung yao'y anomang hayop na marumi na sa hindi maihahandog na alay kay YAHWEH, ay ilalagay nga niya ang hayop sa harap ng saserdote:"
+      },
+      {
+        "num": 12,
+        "text": "At hahalagahan ng saserdote, maging mabuti o masama: ayon sa inihalaga ay magiging gayon."
+      },
+      {
+        "num": 13,
+        "text": "Datapuwa't kung tunay na kaniyang tutubusin, ay magdadagdag nga siya ng ikalimang bahagi niyaon sa inihalaga mo."
+      },
+      {
+        "num": 14,
+        "text": "At kapag ang sinoman ay magtatalaga ng kaniyang bahay upang maging banal kay YAHWEH, ay hahalagahan nga ng saserdote, kung mabuti o masama: ayon sa ihahalaga ng saserdote ay magiging gayon."
+      },
+      {
+        "num": 15,
+        "text": "At kung tutubusin ng nagtalaga ang kaniyang bahay, ay magdadagdag nga ng ikalimang bahagi ng salapi na inihalaga mo roon, at magiging kaniya."
+      },
+      {
+        "num": 16,
+        "text": "At kung ang sinoman ay magtatalaga kay YAHWEH ng bahagi ng bukid na kaniyang pag-aari, ay ayon sa hasik doon ang iyong ihahalaga nga: ang hasik na isang omer na sebada ay hahalagahan ng limang pung siklong pilak."
+      },
+      {
+        "num": 17,
+        "text": "Kung itatalaga niya ang kaniyang bukid mula sa taon ng Yobel, ay magiging ayon sa iyong inihalaga."
+      },
+      {
+        "num": 18,
+        "text": "Datapuwa't kung italaga niya ang kaniyang bukid pagkatapos ng Yobel, ay bibilangan sa kaniya ng saserdote ng salapi ayon sa mga taong natitira hanggang sa taon ng Yobel at bababaan ang iyong inihalaga."
+      },
+      {
+        "num": 19,
+        "text": "At kung tutubusin ng nagtalaga ng bukid ay magdadagdag ng ikalimang bahagi ng salaping iyong inihalaga roon, at mapapasa kaniya."
+      },
+      {
+        "num": 20,
+        "text": "At kung hindi niya tutubusin ang bukid, o kung ipinagbili niya ang bukid sa ibang tao ay hindi na niya matutubos:"
+      },
+      {
+        "num": 21,
+        "text": "Kundi ang bukid kapag naalis sa Yobel, ay magiging banal kay YAHWEH, na parang bukid na itinalaga: ang kapangyarihan ay mapapasa saserdote."
+      },
+      {
+        "num": 22,
+        "text": "At kung ang sinoman ay magtalaga kay YAHWEH ng bukid na binili, na hindi sa bukid na kaniyang pag-aari;"
+      },
+      {
+        "num": 23,
+        "text": "Ay ibibilang nga sa kaniya ng saserdote ang halaga ng iyong inihalaga hanggang sa taon ng Yobel, at babayaran niya ang iyong inihalaga ng araw ding iyon, na parang banal na bagay kay YAHWEH."
+      },
+      {
+        "num": 24,
+        "text": "Sa taon ng Yobel ay mababalik ang bukid doon sa binilhan, doon sa kinararapatan ng pag-aari ng lupa."
+      },
+      {
+        "num": 25,
+        "text": "At ang buo mong ihahalaga ay ayon sa siklo ng santuariyo: labindalawang gramo ang isang siklo."
+      },
+      {
+        "num": 26,
+        "text": "Ang panganay lamang sa mga hayop na iniukol ang pagkapanganay kay YAHWEH, ang hindi maitatalaga ninoman; maging baka o tupa, ay ukol kay YAHWEH."
+      },
+      {
+        "num": 27,
+        "text": "At kung hayop na marumi, ay kaniyang tutubusin nga yaon sa iyong inihalaga at idadagdag pa niya ang ikalimang bahagi niyaon; o kung hindi tutubusin ay ipagbibili ayon sa iyong inihalaga."
+      },
+      {
+        "num": 28,
+        "text": "Gayon ma'y walang bagay na itinalaga, na itatalaga ninoman kay YAHWEH, sa lahat ng sariling kaniya, maging sa tao o sa hayop, o sa bukid na kaniyang pag-aari, ay maipagbibili o matutubos: bawa't bagay na itinalaga ay banal sa Elohim."
+      },
+      {
+        "num": 29,
+        "text": "Walang itinalaga na itatalaga ng mga tao, ay matutubos: papataying walang pagsala."
+      },
+      {
+        "num": 30,
+        "text": "At lahat na ikasangpung bahagi ng lupain, maging sa binhi ng lupain, o sa bunga ng punong kahoy ay kay YAHWEH: magiging banal sa Elohim."
+      },
+      {
+        "num": 31,
+        "text": "At kung ang sinoman ay tutubos ng alin mang bahagi ng kaniyang ikasangpung bahagi ay idagdag niya roon ang ikalimang bahagi niyaon."
+      },
+      {
+        "num": 32,
+        "text": "At lahat ng ikasangpung bahagi sa bakahan o sa kawan, anomang madaan sa tungkod, ay magiging banal kay YAHWEH ang ikasangpung bahagi."
+      },
+      {
+        "num": 33,
+        "text": "Huwag niyang sisiyasatin kung mabuti o masama, ni huwag niyang papalitan: at kung sa anomang paraan ay palitan niya, ay kapuwa magiging banal; hindi matutubos."
+      },
+      {
+        "num": 34,
+        "text": "Ito ang mga utos na iniutos ni YAHWEH kay Moises, sa bundok ng Sinai hinggil sa mga anak ni Israel."
+      }
+    ]
+  }
+}

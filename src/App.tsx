@@ -20,7 +20,9 @@ import { LoginModal, SignupModal, AuthButton } from './components/Auth';
 import { AdminPanel } from './components/AdminPanel';
 import PresentationViewer from './components/PresentationViewer';
 import ScripturePresentationView from './components/ScripturePresentationView';
+import TranslationSelector from './components/TranslationSelector';
 import { useAuth } from './contexts/AuthContext';
+import { useTranslation } from './contexts/TranslationContext';
 import { bibleService } from './services/bibleService';
 import { searchService } from './services/searchService';
 import { lexiconService } from './services/lexiconService';
@@ -61,6 +63,8 @@ const BOOK_NAME_TO_OSIS: Record<string, string> = {
 function App() {
   // Auth state
   const { user, isAdmin } = useAuth();
+  // Translation state
+  const { currentTranslation, hasStrongsNumbers, hasInterlinear } = useTranslation();
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showSignupModal, setShowSignupModal] = useState(false);
   const [showAdminPanel, setShowAdminPanel] = useState(false);
@@ -309,13 +313,16 @@ function App() {
   }, [user]);
 
   // Load chapter helper function (without adding to history)
-  const loadChapterWithoutHistory = async (bookId: number, chapterNum: number, verseNum?: number) => {
+  const loadChapterWithoutHistory = useCallback(async (bookId: number, chapterNum: number, verseNum?: number) => {
+    console.log('[App] loadChapterWithoutHistory called with translation:', currentTranslation);
     setLoading(true);
     setHighlightVerse(undefined);
     setSelectedVerse(undefined);
     setNavigatedVerse(undefined);
     try {
-      const chapterData = await bibleService.loadChapter(bookId, chapterNum);
+      console.log('[App] Calling bibleService.loadChapter with:', { bookId, chapterNum, currentTranslation });
+      const chapterData = await bibleService.loadChapter(bookId, chapterNum, currentTranslation);
+      console.log('[App] Received chapter data:', { bookName: chapterData.bookName, verseCount: chapterData.kjvVerses.length, firstVerse: chapterData.kjvVerses[0]?.text?.substring(0, 50) });
 
       // Load verse data from CSV to get person information
       await personService.loadVerses();
@@ -339,6 +346,7 @@ function App() {
         })
       );
 
+      console.log('[App] Setting chapter state with verses:', enhancedVerses.slice(0, 2));
       setChapter({
         ...chapterData,
         kjvVerses: enhancedVerses
@@ -363,7 +371,7 @@ function App() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [currentTranslation]);
 
   // Add entry to navigation history
   const addToHistory = (bookId: number, bookName: string, chapterNum: number, verse?: number) => {
@@ -710,6 +718,16 @@ function App() {
     loadChapter(currentBookId, currentChapter);
   }, [currentBookId, currentChapter]);
 
+  // Reload chapter when translation changes
+  useEffect(() => {
+    console.log('[App] Translation changed to:', currentTranslation);
+    if (chapter) {
+      console.log('[App] Reloading chapter for new translation');
+      loadChapterWithoutHistory(currentBookId, currentChapter);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentTranslation]);
+
   // Load cross-references for current chapter
   useEffect(() => {
     const loadCrossRefs = async () => {
@@ -914,8 +932,8 @@ function App() {
               <div className="logo-title-container">
                 <a href="https://goshengroup.net"><img src="/Logo.png" alt="The Word Logo" className="app-logo fade-element" /></a>
                 <div className="text-content fade-element">
-                  <h1 className="app-title">THE BOOK</h1>
-                  <p className="app-subtitle">Prove ALL Things...</p>
+                  <h1 className="app-title">ASNY</h1>
+                  <p className="app-subtitle"></p>
                 </div>
               </div>
             </div>
@@ -935,6 +953,7 @@ function App() {
             </div>
 
             <div className="header-right">
+              <TranslationSelector className="compact" />
               <SearchBox
                 onSearch={handleSearch}
                 onResultClick={handleSearchResultClick}

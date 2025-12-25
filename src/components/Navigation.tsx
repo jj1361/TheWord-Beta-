@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { BIBLE_BOOKS } from '../types/bible';
+import { useTranslation } from '../contexts/TranslationContext';
+import { TAGALOG_BOOK_NAMES } from '../types/translation';
 import NavigationModal from './NavigationModal';
 import './Navigation.css';
 
@@ -10,12 +12,22 @@ interface NavigationProps {
 }
 
 const Navigation: React.FC<NavigationProps> = ({ currentBookId, currentChapter, onNavigate }) => {
+  const { currentTranslation } = useTranslation();
   const [selectedBook, setSelectedBook] = useState(currentBookId);
   const [selectedChapter, setSelectedChapter] = useState(currentChapter);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const currentBook = BIBLE_BOOKS.find(b => b.id === selectedBook);
   const displayBook = BIBLE_BOOKS.find(b => b.id === currentBookId);
+
+  // Get book name for current translation
+  const getDisplayBookName = (): string => {
+    if (!displayBook) return '';
+    if (currentTranslation === 'tagalog') {
+      return TAGALOG_BOOK_NAMES[displayBook.id] || displayBook.name;
+    }
+    return displayBook.name;
+  };
 
   const handleBookChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const bookId = parseInt(e.target.value);
@@ -77,7 +89,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentBookId, currentChapter, 
             onClick={() => setIsModalOpen(true)}
           >
             <span className="current-reference">
-              {displayBook?.name} {currentChapter}
+              {getDisplayBookName()} {currentChapter}
             </span>
             <span className="dropdown-icon">▼</span>
           </button>
