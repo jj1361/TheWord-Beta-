@@ -940,6 +940,10 @@ const RightPanel: React.FC<RightPanelProps> = ({
   return (
     <div className="right-panel" style={{ '--panel-text-size': `${textSize}px` } as React.CSSProperties}>
       <div className="right-panel-header">
+        {/* Back button for mobile fullscreen - calls onClose to return to verse */}
+        <button className="right-panel-back-btn" onClick={onClose} title="Back to verse">
+          ←
+        </button>
         <div className="right-panel-tabs">
           {lexiconContent?.strongs && (
             <button

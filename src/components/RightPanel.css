@@ -23,6 +23,20 @@
   --panel-text-size: 16px;
   /* Contain layout to prevent content changes from affecting parent layout */
   contain: layout style;
+  /* Graceful appearance animation */
+  animation: rightPanelAppear 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes rightPanelAppear {
+  from {
+    opacity: 0;
+    transform: translateX(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
 }
 
 /* Panel Header */
@@ -607,14 +621,15 @@
     left: 10px;
     right: 10px;
     top: auto;
-    bottom: 0;
+    bottom: 20px;
     width: auto;
     max-width: 100%;
     min-width: unset;
-    max-height: 60vh;
+    max-height: 55vh;
     height: auto;
-    border-radius: 16px 16px 0 0;
+    border-radius: 16px;
     z-index: 200;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.25);
   }
 
   .lexicon-word {
@@ -637,15 +652,17 @@
 @media (max-width: 768px) {
   .right-panel {
     position: fixed;
-    left: 10px;
-    right: 10px;
+    left: 8px;
+    right: 8px;
     top: auto;
-    bottom: 0;
+    bottom: 16px;
     width: auto;
     max-width: 100%;
     min-width: unset;
-    height: 60vh;
-    border-radius: 16px 16px 0 0;
+    max-height: 50vh;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.3);
   }
 
   .right-panel-header {
@@ -674,6 +691,109 @@
 
   .script-display {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Fullscreen mode for mobile */
+  .right-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+    z-index: 1000;
+    animation: rightPanelFullscreenAppear 0.3s ease-out;
+  }
+
+  @keyframes rightPanelFullscreenAppear {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .right-panel-header {
+    padding: 12px 16px;
+    border-radius: 0;
+    /* Add safe area padding for notched phones */
+    padding-top: max(12px, env(safe-area-inset-top));
+  }
+
+  /* Back button for mobile fullscreen */
+  .right-panel-back-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+
+  .right-panel-back-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+  }
+
+  .right-panel-back-btn:active {
+    transform: scale(0.95);
+  }
+
+  /* Hide close button on mobile, show back button instead */
+  .right-panel-close {
+    display: none;
+  }
+
+  .right-panel-tabs {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .right-panel-tab {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .right-panel-content {
+    padding: 16px;
+    /* Account for safe areas on mobile */
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+  }
+
+  .lexicon-word {
+    font-size: 24px;
+  }
+
+  /* Hebrew letter display adjustments for fullscreen */
+  .hebrew-letter-modern {
+    font-size: 64px;
+  }
+
+  .hebrew-letter-ancient {
+    font-size: 48px;
+  }
+}
+
+/* Hide back button on larger screens */
+@media (min-width: 481px) {
+  .right-panel-back-btn {
+    display: none;
   }
 }
 

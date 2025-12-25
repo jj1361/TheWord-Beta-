@@ -555,7 +555,8 @@
   border-radius: 3px;
   padding: 1px 3px;
   margin: -1px -3px;
-  display: inline-block;
+  /* Use inline instead of inline-block to prevent line breaks before punctuation */
+  display: inline;
 }
 
 .clickable-phrase:hover {

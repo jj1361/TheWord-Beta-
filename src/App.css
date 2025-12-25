@@ -44,6 +44,9 @@ body {
 .header-left {
   flex: 1;
   min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .header-navigation-wrapper {
@@ -149,7 +152,7 @@ body {
   align-items: flex-start;
   width: 100%;
   justify-content: center;
-  transition: justify-content 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* When right panel is present, align to start */
@@ -167,7 +170,20 @@ body {
   width: 75%;
   max-width: 1000px;
   min-width: 0;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: versesSectionAppear 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Initial appearance animation */
+@keyframes versesSectionAppear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* When right panel is present, verses section takes 55% */
@@ -180,12 +196,24 @@ body {
 .webcam-section {
   width: clamp(300px, 40vw, 600px);
   flex-shrink: 0;
-  animation: slideIn 0.3s ease;
+  animation: webcamSectionAppear 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   position: sticky;
   top: 140px;
   align-self: flex-start;
   max-height: calc(100vh - 160px);
   overflow: visible;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes webcamSectionAppear {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .webcam-section.fullscreen {
@@ -197,6 +225,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fullscreenSectionExpand 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fullscreenSectionExpand {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* Screen Share Fullscreen Layout */
@@ -211,6 +251,16 @@ body {
   display: flex;
   z-index: 50;
   background: #000;
+  animation: screenShareWrapperAppear 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes screenShareWrapperAppear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .screen-share-fullscreen-wrapper.with-verses {
@@ -220,6 +270,18 @@ body {
 .screen-share-section {
   height: 100%;
   transition: width 0.3s ease;
+  animation: screenShareSectionAppear 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes screenShareSectionAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .screen-share-section.full-width {
@@ -249,6 +311,18 @@ body {
   position: relative;
   flex-shrink: 0;
   transition: width 0.05s ease;
+  animation: screenShareVersesAppear 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;
+}
+
+@keyframes screenShareVersesAppear {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .screen-share-verses-section .chapter-display {
@@ -382,23 +456,25 @@ body {
 
 @media (max-width: 768px) {
   .app-header {
-    padding: 8px 15px;
+    padding: 6px 10px;
   }
 
   .header-row-1 {
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 8px;
   }
 
   .header-left {
     order: 1;
     flex: 1 1 auto;
+    min-width: 0;
   }
 
   .header-right {
     order: 2;
     flex: 0 0 auto;
     min-width: auto;
+    gap: 6px;
   }
 
   .header-navigation-wrapper {
@@ -407,26 +483,75 @@ body {
     justify-content: center;
   }
 
+  .logo-title-container {
+    gap: 8px;
+  }
+
+  .app-logo {
+    height: 40px;
+  }
+
   .app-title {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .app-subtitle {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .theme-toggle {
-    width: 36px;
-    height: 36px;
-    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
   }
 
   .app-container {
-    padding: 80px 10px 20px 10px; /* Added top padding for fixed sidebar on mobile */
+    padding: 70px 8px 20px 8px;
   }
 
   .webcam-section {
     width: 100%;
+  }
+
+  /* Verses section full width on mobile */
+  .verses-section {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .content-with-webcam:has(.right-panel) .verses-section {
+    width: 100% !important;
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    padding: 5px 8px;
+  }
+
+  .header-row-1 {
+    gap: 6px;
+  }
+
+  .logo-title-container {
+    gap: 6px;
+  }
+
+  .app-logo {
+    height: 32px;
+  }
+
+  .app-title {
+    font-size: 12px;
+  }
+
+  .app-subtitle {
+    display: none;
+  }
+
+  .app-container {
+    padding: 2px 6px 16px 6px;
   }
 }
 

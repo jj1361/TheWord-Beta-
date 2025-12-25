@@ -29,6 +29,7 @@ interface ChapterDisplayProps {
   getVerseHighlightColor?: (verseNum: number) => HighlightColor | undefined;
   getVerseTextFormatting?: (verseNum: number) => TextFormatting[];
   useProtoSinaitic?: boolean;
+  onToggleProtoSinaitic?: () => void;
   youthMode?: boolean;
   studyMode?: boolean;
   totalChapters?: number;
@@ -40,8 +41,12 @@ interface ChapterDisplayProps {
   onSearch?: (query: string) => Promise<SearchResponse>;
   onSearchResultClick?: (bookId: number, chapter: number, verse: number) => void;
   onWordSearch?: (strongsId: string) => void;
-  // Text size prop (controlled from parent)
+  // Text size props (controlled from parent)
   textSize?: number;
+  minTextSize?: number;
+  maxTextSize?: number;
+  onIncreaseTextSize?: () => void;
+  onDecreaseTextSize?: () => void;
 }
 
 const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
@@ -61,6 +66,7 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
   getVerseHighlightColor,
   getVerseTextFormatting,
   useProtoSinaitic,
+  onToggleProtoSinaitic,
   youthMode,
   studyMode,
   totalChapters,
@@ -72,6 +78,10 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
   onSearchResultClick,
   onWordSearch,
   textSize: textSizeProp,
+  minTextSize = 12,
+  maxTextSize = 50,
+  onIncreaseTextSize,
+  onDecreaseTextSize,
 }) => {
   const [isChapterSelectorOpen, setIsChapterSelectorOpen] = useState(false);
   const [isNavigationModalOpen, setIsNavigationModalOpen] = useState(false);
@@ -133,12 +143,31 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
                 onWordSearch={onWordSearch}
               />
             </div>
-          ) : (
-            chapter.interlinearVerses && (
-              <div className="chapter-info">
-               
-              </div>
-            )
+          ) : null}
+
+          {/* Text Size Controls */}
+          {onIncreaseTextSize && onDecreaseTextSize && (
+            <div className="text-size-controls">
+              <button
+                className="text-size-btn"
+                onClick={onDecreaseTextSize}
+                disabled={textSize <= minTextSize}
+                title="Decrease text size"
+                aria-label="Decrease text size"
+              >
+                A−
+              </button>
+              <span className="text-size-value">{textSize}px</span>
+              <button
+                className="text-size-btn"
+                onClick={onIncreaseTextSize}
+                disabled={textSize >= maxTextSize}
+                title="Increase text size"
+                aria-label="Increase text size"
+              >
+                A+
+              </button>
+            </div>
           )}
         </div>
       </div>
@@ -201,6 +230,7 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
                 onCrossRefClick={onCrossRefClick}
                 hasCrossRefs={versesWithCrossRefs?.has(verse.num)}
                 globalUseProtoSinaitic={useProtoSinaitic}
+                onToggleProtoSinaitic={onToggleProtoSinaitic}
                 youthMode={youthMode}
                 highlightColor={userHighlightColor}
                 textFormatting={verseTextFormatting}

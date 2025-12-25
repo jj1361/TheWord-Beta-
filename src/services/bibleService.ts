@@ -1,6 +1,7 @@
 import { Chapter, BIBLE_BOOKS, KJVVerse } from '../types/bible';
 import { XMLParser } from '../utils/xmlParser';
 import { apocryphaService } from './apocryphaService';
+import { kjvStrongsService } from './kjvStrongsService';
 import { PATHS } from '../config/paths';
 import { TranslationId, TAGALOG_BOOK_NAMES, getTranslationById } from '../types/translation';
 
@@ -83,15 +84,12 @@ export class BibleService {
    * Load chapter for a specific translation
    */
   async loadChapter(bookId: number, chapterNum: number, translationId: TranslationId = 'kjv'): Promise<Chapter> {
-    console.log('[BibleService] loadChapter called with:', { bookId, chapterNum, translationId });
     // For KJV, use the original XML-based loading
     if (translationId === 'kjv') {
-      console.log('[BibleService] Using KJV loader');
       return this.loadKJVChapter(bookId, chapterNum);
     }
 
     // For other translations, load from JSON
-    console.log('[BibleService] Using translation loader for:', translationId);
     return this.loadTranslationChapter(bookId, chapterNum, translationId);
   }
 
@@ -123,13 +121,11 @@ export class BibleService {
       let kjvsVerses;
       let interlinearVerses;
 
+      // Use CSV-based Strong's data instead of XML (fixes text errors in XML files)
       try {
-        const kjvsPath = `${this.basePath}/KJVs/${bookFolder}/${chapterFile}`;
-        const kjvsResponse = await fetch(kjvsPath);
-        const kjvsXml = await kjvsResponse.text();
-        kjvsVerses = XMLParser.parseKJVsChapter(kjvsXml);
+        kjvsVerses = await kjvStrongsService.getChapter(bookId, chapterNum);
       } catch (error) {
-        console.warn(`Could not load KJVs for ${book.name} ${chapterNum}`);
+        console.warn(`Could not load KJVs from CSV for ${book.name} ${chapterNum}`);
       }
 
       try {

@@ -353,6 +353,24 @@
 
 /* Responsive */
 
+@media (max-width: 768px) {
+  .auth-header-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .auth-user-avatar {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .auth-dropdown {
+    min-width: 180px;
+    right: 0;
+  }
+}
+
 @media (max-width: 480px) {
   .auth-modal {
     margin: 16px;
@@ -361,5 +379,23 @@
 
   .auth-modal-header h2 {
     font-size: 20px;
+  }
+
+  .auth-header-btn {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+
+  .auth-header-btn.login-btn {
+    max-width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .auth-user-avatar {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
   }
 }

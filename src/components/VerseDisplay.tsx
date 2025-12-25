@@ -29,12 +29,13 @@ interface VerseDisplayProps {
   onCrossRefClick?: (verseNum: number) => void;
   hasCrossRefs?: boolean;
   globalUseProtoSinaitic?: boolean;
+  onToggleProtoSinaitic?: () => void;
   youthMode?: boolean;
   highlightColor?: HighlightColor;
   textFormatting?: TextFormatting[];
 }
 
-const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interlinearVerse, onLetterClick, onStrongsClick, onPersonClick, onYouthImageClick, isSelected, onVerseClick, onCrossRefClick, hasCrossRefs, globalUseProtoSinaitic, youthMode, highlightColor, textFormatting }) => {
+const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interlinearVerse, onLetterClick, onStrongsClick, onPersonClick, onYouthImageClick, isSelected, onVerseClick, onCrossRefClick, hasCrossRefs, globalUseProtoSinaitic, onToggleProtoSinaitic, youthMode, highlightColor, textFormatting }) => {
   const { currentTranslation } = useTranslation();
   const [localUseProtoSinaitic, setLocalUseProtoSinaitic] = useState(false);
   const [forwardInterlinear, setForwardInterlinear] = useState(false);
@@ -551,18 +552,20 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
               >
                 {forwardInterlinear ? '→ Forward' : '← Reverse'}
               </button>
-              {globalUseProtoSinaitic === undefined && (
-                <button
-                  className={`proto-toggle-btn ${localUseProtoSinaitic ? 'active' : ''}`}
-                  onClick={(e) => {
-                    e.stopPropagation();
+              <button
+                className={`proto-toggle-btn ${useProtoSinaitic ? 'active' : ''}`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  if (onToggleProtoSinaitic) {
+                    onToggleProtoSinaitic();
+                  } else {
                     setLocalUseProtoSinaitic(!localUseProtoSinaitic);
-                  }}
-                  title={localUseProtoSinaitic ? 'Switch to Modern Hebrew' : 'Switch to Proto-Sinaitic'}
-                >
-                  {localUseProtoSinaitic ? '𐤀 Proto-Sinaitic' : 'א Modern'}
-                </button>
-              )}
+                  }
+                }}
+                title={useProtoSinaitic ? 'Switch to Modern Hebrew' : 'Switch to Proto-Sinaitic (Ancient Hebrew)'}
+              >
+                {useProtoSinaitic ? '𐤀 Ancient' : 'א Modern'}
+              </button>
               <span className="interlinear-hint">Click any Hebrew letter to see its meaning</span>
               <button
                 className="close-interlinear-btn"

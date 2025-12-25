@@ -13,11 +13,8 @@ interface NavigationProps {
 
 const Navigation: React.FC<NavigationProps> = ({ currentBookId, currentChapter, onNavigate }) => {
   const { currentTranslation } = useTranslation();
-  const [selectedBook, setSelectedBook] = useState(currentBookId);
-  const [selectedChapter, setSelectedChapter] = useState(currentChapter);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const currentBook = BIBLE_BOOKS.find(b => b.id === selectedBook);
   const displayBook = BIBLE_BOOKS.find(b => b.id === currentBookId);
 
   // Get book name for current translation
@@ -27,20 +24,6 @@ const Navigation: React.FC<NavigationProps> = ({ currentBookId, currentChapter, 
       return TAGALOG_BOOK_NAMES[displayBook.id] || displayBook.name;
     }
     return displayBook.name;
-  };
-
-  const handleBookChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const bookId = parseInt(e.target.value);
-    setSelectedBook(bookId);
-    setSelectedChapter(1);
-  };
-
-  const handleChapterChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedChapter(parseInt(e.target.value));
-  };
-
-  const handleGo = () => {
-    onNavigate(selectedBook, selectedChapter);
   };
 
   const handlePrevChapter = () => {

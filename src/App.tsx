@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { Routes, Route, useParams, useNavigate, Navigate } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import SearchBox from './components/SearchBox';
 import ChapterDisplay from './components/ChapterDisplay';
@@ -7,6 +8,7 @@ import PersonProfile from './components/PersonProfile';
 import WebcamDisplay from './components/WebcamDisplay';
 import ScreenShareDisplay from './components/ScreenShareDisplay';
 import Sidebar from './components/Sidebar';
+import HamburgerMenu from './components/HamburgerMenu';
 import HistoryControls from './components/HistoryControls';
 import WordSearchModal from './components/WordSearchModal';
 import YouthImagePanel from './components/YouthImagePanel';
@@ -34,10 +36,12 @@ import MediaDisplayScreen from './components/MediaDisplayScreen';
 import { Chapter, BIBLE_BOOKS } from './types/bible';
 import { getHebrewLetterInfo, HebrewLetterInfo } from './config/hebrewLetters';
 import { WordImageMapping } from './config/youthModeConfig';
+import { getShortcutAction, ShortcutActions } from './config/keyboardShortcuts';
 import { LexiconData } from './types/lexicon';
 import { HistoryEntry, Bookmark } from './types/history';
 import { Note, Topic, VerseReference, VerseHighlight, HighlightColor, RichTextContent, TextFormatting, TextFormatStyle } from './types/notes';
 import { TextSelection } from './components/VerseHighlighter';
+import { getScripturePath, parseScriptureParams } from './utils/routeUtils';
 import './App.css';
 import './theme.css';
 
@@ -60,17 +64,31 @@ const BOOK_NAME_TO_OSIS: Record<string, string> = {
   'Revelation': 'Rev'
 };
 
-function App() {
+// Scripture view component that handles URL params
+function ScriptureView() {
+  const { book: bookParam, chapter: chapterParam, verse: verseParam } = useParams<{
+    book: string;
+    chapter: string;
+    verse?: string;
+  }>();
+  const navigate = useNavigate();
+
+  // Parse URL params to get book/chapter/verse
+  const scriptureParams = parseScriptureParams(bookParam, chapterParam, verseParam);
+  const urlBookId = scriptureParams?.bookId || 1;
+  const urlChapter = scriptureParams?.chapter || 1;
+  const urlVerse = scriptureParams?.verse;
+
   // Auth state
   const { user, isAdmin } = useAuth();
   // Translation state
-  const { currentTranslation, hasStrongsNumbers, hasInterlinear } = useTranslation();
+  const { currentTranslation } = useTranslation();
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showSignupModal, setShowSignupModal] = useState(false);
   const [showAdminPanel, setShowAdminPanel] = useState(false);
 
-  const [currentBookId, setCurrentBookId] = useState(1);
-  const [currentChapter, setCurrentChapter] = useState(1);
+  const [currentBookId, setCurrentBookId] = useState(urlBookId);
+  const [currentChapter, setCurrentChapter] = useState(urlChapter);
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [loading, setLoading] = useState(false);
   const [highlightVerse, setHighlightVerse] = useState<number | undefined>();
@@ -94,7 +112,7 @@ function App() {
   });
   const [isResizingScreenShare, setIsResizingScreenShare] = useState(false);
   const screenShareWrapperRef = useRef<HTMLDivElement>(null);
-  const [useProtoSinaitic, setUseProtoSinaitic] = useState(false);
+  const [useProtoSinaitic, setUseProtoSinaitic] = useState(true);
   const [wordSearchStrongsId, setWordSearchStrongsId] = useState<string | null>(null);
   const [selectedYouthWord, setSelectedYouthWord] = useState<WordImageMapping | null>(null);
   const [youthMode, setYouthMode] = useState(() => {
@@ -314,15 +332,12 @@ function App() {
 
   // Load chapter helper function (without adding to history)
   const loadChapterWithoutHistory = useCallback(async (bookId: number, chapterNum: number, verseNum?: number) => {
-    console.log('[App] loadChapterWithoutHistory called with translation:', currentTranslation);
     setLoading(true);
     setHighlightVerse(undefined);
     setSelectedVerse(undefined);
     setNavigatedVerse(undefined);
     try {
-      console.log('[App] Calling bibleService.loadChapter with:', { bookId, chapterNum, currentTranslation });
       const chapterData = await bibleService.loadChapter(bookId, chapterNum, currentTranslation);
-      console.log('[App] Received chapter data:', { bookName: chapterData.bookName, verseCount: chapterData.kjvVerses.length, firstVerse: chapterData.kjvVerses[0]?.text?.substring(0, 50) });
 
       // Load verse data from CSV to get person information
       await personService.loadVerses();
@@ -346,7 +361,6 @@ function App() {
         })
       );
 
-      console.log('[App] Setting chapter state with verses:', enhancedVerses.slice(0, 2));
       setChapter({
         ...chapterData,
         kjvVerses: enhancedVerses
@@ -405,32 +419,20 @@ function App() {
     setHistoryIndex(limitedHistory.length - 1);
   };
 
-  // Navigate back in history
+  // Navigate back in history - use browser history
   const goBack = () => {
-    if (historyIndex > 0) {
-      const newIndex = historyIndex - 1;
-      const entry = navigationHistory[newIndex];
-      setHistoryIndex(newIndex);
-
-      // Load the chapter without adding to history
-      loadChapterWithoutHistory(entry.bookId, entry.chapter, entry.verse);
-    }
+    navigate(-1);
   };
 
-  // Navigate forward in history
+  // Navigate forward in history - use browser history
   const goForward = () => {
-    if (historyIndex < navigationHistory.length - 1) {
-      const newIndex = historyIndex + 1;
-      const entry = navigationHistory[newIndex];
-      setHistoryIndex(newIndex);
-
-      // Load the chapter without adding to history
-      loadChapterWithoutHistory(entry.bookId, entry.chapter, entry.verse);
-    }
+    navigate(1);
   };
 
-  const canGoBack = historyIndex > 0;
-  const canGoForward = historyIndex < navigationHistory.length - 1;
+  // Browser history handles back/forward automatically
+  // These are always enabled since browser manages history
+  const canGoBack = true;
+  const canGoForward = true;
 
   // Bookmark management functions
   const addBookmark = (label?: string) => {
@@ -467,15 +469,13 @@ function App() {
   };
 
   const navigateToBookmark = (bookmark: Bookmark) => {
-    loadChapterWithoutHistory(bookmark.bookId, bookmark.chapter, bookmark.verse);
+    const path = getScripturePath(bookmark.bookId, bookmark.chapter, bookmark.verse);
+    navigate(path);
   };
 
   const navigateToHistoryEntry = (entry: HistoryEntry) => {
-    const index = navigationHistory.indexOf(entry);
-    if (index !== -1) {
-      setHistoryIndex(index);
-      loadChapterWithoutHistory(entry.bookId, entry.chapter, entry.verse);
-    }
+    const path = getScripturePath(entry.bookId, entry.chapter, entry.verse);
+    navigate(path);
   };
 
   const clearHistory = () => {
@@ -703,27 +703,38 @@ function App() {
   };
 
   const navigateToNoteVerse = (verse: VerseReference) => {
-    loadChapter(verse.bookId, verse.chapter).then(() => {
-      setHighlightVerse(verse.startVerse);
+    const path = getScripturePath(verse.bookId, verse.chapter, verse.startVerse);
+    navigate(path);
+  };
+
+  // Sync state from URL params and load chapter
+  useEffect(() => {
+    // Update state from URL params
+    if (urlBookId !== currentBookId || urlChapter !== currentChapter) {
+      setCurrentBookId(urlBookId);
+      setCurrentChapter(urlChapter);
+    }
+
+    // Load chapter data
+    loadChapterWithoutHistory(urlBookId, urlChapter, urlVerse);
+
+    // Handle verse highlighting from URL
+    if (urlVerse) {
+      setHighlightVerse(urlVerse);
       setTimeout(() => {
-        const verseElement = document.getElementById(`verse-${verse.startVerse}`);
+        const verseElement = document.getElementById(`verse-${urlVerse}`);
         if (verseElement) {
           verseElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
       }, 300);
-    });
-  };
-
-  useEffect(() => {
-    loadChapter(currentBookId, currentChapter);
-  }, [currentBookId, currentChapter]);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [urlBookId, urlChapter, urlVerse]);
 
   // Reload chapter when translation changes
   useEffect(() => {
-    console.log('[App] Translation changed to:', currentTranslation);
     if (chapter) {
-      console.log('[App] Reloading chapter for new translation');
-      loadChapterWithoutHistory(currentBookId, currentChapter);
+      loadChapterWithoutHistory(urlBookId, urlChapter);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentTranslation]);
@@ -753,11 +764,102 @@ function App() {
 
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
-      // Only handle number keys when not typing in an input field
+      // Only handle keys when not typing in an input field
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
         return;
       }
 
+      // Check for keyboard shortcuts from config
+      const action = getShortcutAction(e);
+      if (action) {
+        switch (action) {
+          case ShortcutActions.TOGGLE_WEBCAM:
+            e.preventDefault();
+            setWebcamEnabled(prev => !prev);
+            return;
+          case ShortcutActions.TOGGLE_WEBCAM_FULLSCREEN:
+            e.preventDefault();
+            // Only toggle fullscreen if webcam is enabled, otherwise enable it first
+            if (webcamEnabled) {
+              setWebcamFullscreen(prev => !prev);
+            } else {
+              setWebcamEnabled(true);
+              setWebcamFullscreen(true);
+            }
+            return;
+          case ShortcutActions.TOGGLE_SCREEN_SHARE:
+            e.preventDefault();
+            setScreenShareEnabled(prev => !prev);
+            return;
+          case ShortcutActions.TOGGLE_SCREEN_SHARE_VERSES:
+            e.preventDefault();
+            // Only toggle verses if screen share is enabled
+            if (screenShareEnabled) {
+              setScreenShareWithVerses(prev => !prev);
+            }
+            return;
+          case ShortcutActions.TOGGLE_DARK_MODE:
+            e.preventDefault();
+            setDarkMode(prev => !prev);
+            return;
+          case ShortcutActions.TOGGLE_STUDY_MODE:
+            e.preventDefault();
+            setStudyMode(prev => !prev);
+            return;
+          case ShortcutActions.TOGGLE_YOUTH_MODE:
+            e.preventDefault();
+            setYouthMode(prev => !prev);
+            return;
+          case ShortcutActions.CLEAR_SELECTION:
+            // Clear selection and navigation highlight
+            setSelectedVerse(undefined);
+            setNavigatedVerse(undefined);
+            setKeyBuffer('');
+            return;
+          case ShortcutActions.NAVIGATE_VERSE_UP:
+            e.preventDefault();
+            if (!chapter || chapter.kjvVerses.length === 0) return;
+            {
+              const currentVerse = navigatedVerse || 1;
+              const currentIndex = chapter.kjvVerses.findIndex(v => v.num === currentVerse);
+              if (currentIndex > 0) {
+                const nextVerse = chapter.kjvVerses[currentIndex - 1].num;
+                setNavigatedVerse(nextVerse);
+                const verseElement = document.getElementById(`verse-${nextVerse}`);
+                if (verseElement) {
+                  verseElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+              }
+            }
+            return;
+          case ShortcutActions.NAVIGATE_VERSE_DOWN:
+            e.preventDefault();
+            if (!chapter || chapter.kjvVerses.length === 0) return;
+            {
+              const currentVerse = navigatedVerse || 1;
+              const currentIndex = chapter.kjvVerses.findIndex(v => v.num === currentVerse);
+              if (currentIndex < chapter.kjvVerses.length - 1) {
+                const nextVerse = chapter.kjvVerses[currentIndex + 1].num;
+                setNavigatedVerse(nextVerse);
+                const verseElement = document.getElementById(`verse-${nextVerse}`);
+                if (verseElement) {
+                  verseElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+              }
+            }
+            return;
+          case ShortcutActions.INCREASE_TEXT_SIZE:
+            e.preventDefault();
+            handleIncreaseTextSize();
+            return;
+          case ShortcutActions.DECREASE_TEXT_SIZE:
+            e.preventDefault();
+            handleDecreaseTextSize();
+            return;
+        }
+      }
+
+      // Handle number keys for verse navigation (not in shortcuts config)
       if (e.key >= '0' && e.key <= '9') {
         e.preventDefault();
         const newBuffer = keyBuffer + e.key;
@@ -778,56 +880,17 @@ function App() {
             verseElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
           }
         }
-      } else if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-        e.preventDefault();
-        if (!chapter || chapter.kjvVerses.length === 0) return;
-
-        const currentVerse = navigatedVerse || 1;
-        let nextVerse: number;
-
-        if (e.key === 'ArrowDown') {
-          // Find next verse
-          const currentIndex = chapter.kjvVerses.findIndex(v => v.num === currentVerse);
-          if (currentIndex < chapter.kjvVerses.length - 1) {
-            nextVerse = chapter.kjvVerses[currentIndex + 1].num;
-          } else {
-            return; // Already at last verse
-          }
-        } else {
-          // ArrowUp - Find previous verse
-          const currentIndex = chapter.kjvVerses.findIndex(v => v.num === currentVerse);
-          if (currentIndex > 0) {
-            nextVerse = chapter.kjvVerses[currentIndex - 1].num;
-          } else {
-            return; // Already at first verse
-          }
-        }
-
-        setNavigatedVerse(nextVerse);
-        const verseElement = document.getElementById(`verse-${nextVerse}`);
-        if (verseElement) {
-          verseElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-      } else if (e.key === 'Escape') {
-        // Clear selection and navigation highlight
-        setSelectedVerse(undefined);
-        setNavigatedVerse(undefined);
-        setKeyBuffer('');
       }
     };
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [keyBuffer, chapter, navigatedVerse]);
+  }, [keyBuffer, chapter, navigatedVerse, webcamEnabled, screenShareEnabled]);
 
   const loadChapter = async (bookId: number, chapterNum: number) => {
-    await loadChapterWithoutHistory(bookId, chapterNum);
-
-    // Add to navigation history after successful load
-    const book = BIBLE_BOOKS.find(b => b.id === bookId);
-    if (book) {
-      addToHistory(bookId, book.name, chapterNum);
-    }
+    // Navigate to new URL - this will trigger a re-render with new params
+    const path = getScripturePath(bookId, chapterNum);
+    navigate(path);
   };
 
   const handleSearch = async (query: string) => {
@@ -836,20 +899,9 @@ function App() {
   };
 
   const handleSearchResultClick = (bookId: number, chapterNum: number, verseNum: number) => {
-    loadChapterWithoutHistory(bookId, chapterNum).then(() => {
-      setHighlightVerse(verseNum);
-      // Add to history with the verse number
-      const book = BIBLE_BOOKS.find(b => b.id === bookId);
-      if (book) {
-        addToHistory(bookId, book.name, chapterNum, verseNum);
-      }
-      setTimeout(() => {
-        const verseElement = document.getElementById(`verse-${verseNum}`);
-        if (verseElement) {
-          verseElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-      }, 300);
-    });
+    // Navigate to the verse URL - this will load the chapter and highlight
+    const path = getScripturePath(bookId, chapterNum, verseNum);
+    navigate(path);
   };
 
   const handleLetterClick = (letter: string) => {
@@ -929,11 +981,57 @@ function App() {
         <header className="app-header">
           <div className="header-row-1">
             <div className="header-left">
+              <HamburgerMenu
+                useProtoSinaitic={useProtoSinaitic}
+                webcamEnabled={webcamEnabled}
+                webcamFullscreen={webcamFullscreen}
+                screenShareEnabled={screenShareEnabled}
+                screenShareWithVerses={screenShareWithVerses}
+                youthMode={youthMode}
+                studyMode={studyMode}
+                darkMode={darkMode}
+                personProfileEnabled={personProfileEnabled}
+                onToggleProtoSinaitic={() => setUseProtoSinaitic(!useProtoSinaitic)}
+                onToggleWebcam={() => setWebcamEnabled(!webcamEnabled)}
+                onToggleWebcamSettings={() => setWebcamSettings(!webcamSettings)}
+                onToggleWebcamFullscreen={() => setWebcamFullscreen(!webcamFullscreen)}
+                onToggleScreenShare={() => setScreenShareEnabled(!screenShareEnabled)}
+                onToggleScreenShareWithVerses={() => setScreenShareWithVerses(!screenShareWithVerses)}
+                onToggleYouthMode={() => setYouthMode(!youthMode)}
+                onToggleStudyMode={() => setStudyMode(!studyMode)}
+                onToggleDarkMode={() => setDarkMode(!darkMode)}
+                onTogglePersonProfile={() => setPersonProfileEnabled(!personProfileEnabled)}
+                navigationHistory={navigationHistory}
+                historyIndex={historyIndex}
+                onNavigateToHistoryEntry={navigateToHistoryEntry}
+                onClearHistory={clearHistory}
+                bookmarks={bookmarks}
+                currentBookId={currentBookId}
+                currentChapter={currentChapter}
+                currentVerse={selectedVerse}
+                onNavigateToBookmark={navigateToBookmark}
+                onAddBookmark={addBookmark}
+                onRemoveBookmark={removeBookmark}
+                onUpdateBookmarkLabel={updateBookmarkLabel}
+                showNotesPanel={showNotesPanel}
+                notesCount={notes.length}
+                onToggleNotesPanel={() => setShowNotesPanel(!showNotesPanel)}
+                onTogglePresentation={() => setShowPresentation(true)}
+                onToggleScripturePresentation={() => setShowScripturePresentation(true)}
+                onToggleMediaControl={() => setShowMediaControl(!showMediaControl)}
+                isSignedIn={!!user}
+                onSignInClick={() => setShowLoginModal(true)}
+                textSize={textSize}
+                minTextSize={MIN_TEXT_SIZE}
+                maxTextSize={MAX_TEXT_SIZE}
+                onIncreaseTextSize={handleIncreaseTextSize}
+                onDecreaseTextSize={handleDecreaseTextSize}
+              />
               <div className="logo-title-container">
                 <a href="https://goshengroup.net"><img src="/Logo.png" alt="The Word Logo" className="app-logo fade-element" /></a>
                 <div className="text-content fade-element">
-                  <h1 className="app-title">ASNY</h1>
-                  <p className="app-subtitle"></p>
+                  <h1 className="app-title">THE BOOK</h1>
+                  <p className="app-subtitle">Prove All Things...</p>
                 </div>
               </div>
             </div>
@@ -1063,6 +1161,7 @@ function App() {
                       onVerseClick={handleVerseClick}
                       onYouthImageClick={youthMode ? handleYouthImageClick : undefined}
                       useProtoSinaitic={useProtoSinaitic}
+                      onToggleProtoSinaitic={() => setUseProtoSinaitic(!useProtoSinaitic)}
                       youthMode={youthMode}
                       studyMode={studyMode}
                       totalChapters={BIBLE_BOOKS.find(b => b.id === currentBookId)?.chapters}
@@ -1074,6 +1173,10 @@ function App() {
                       onSearchResultClick={handleSearchResultClick}
                       onWordSearch={(strongsId) => setWordSearchStrongsId(strongsId)}
                       textSize={textSize}
+                      minTextSize={MIN_TEXT_SIZE}
+                      maxTextSize={MAX_TEXT_SIZE}
+                      onIncreaseTextSize={handleIncreaseTextSize}
+                      onDecreaseTextSize={handleDecreaseTextSize}
                     />
                   </div>
                 </>
@@ -1108,11 +1211,16 @@ function App() {
                   getVerseHighlightColor={(verseNum) => getHighlightForVerse(verseNum)?.color}
                   getVerseTextFormatting={getTextFormattingForVerse}
                   useProtoSinaitic={useProtoSinaitic}
+                  onToggleProtoSinaitic={() => setUseProtoSinaitic(!useProtoSinaitic)}
                   youthMode={youthMode}
                   studyMode={studyMode}
                   totalChapters={BIBLE_BOOKS.find(b => b.id === currentBookId)?.chapters}
                   onChapterSelect={(chapterNum) => loadChapter(currentBookId, chapterNum)}
                   textSize={textSize}
+                  minTextSize={MIN_TEXT_SIZE}
+                  maxTextSize={MAX_TEXT_SIZE}
+                  onIncreaseTextSize={handleIncreaseTextSize}
+                  onDecreaseTextSize={handleDecreaseTextSize}
                 />
               </div>
 
@@ -1426,6 +1534,24 @@ function App() {
         </div>
       </footer>
     </div>
+  );
+}
+
+// Main App component with routing
+function App() {
+  return (
+    <Routes>
+      {/* Default route redirects to Genesis 1 */}
+      <Route path="/" element={<Navigate to="/genesis/1" replace />} />
+
+      {/* Scripture routes */}
+      <Route path="/:book/:chapter/:verse" element={<ScriptureView />} />
+      <Route path="/:book/:chapter" element={<ScriptureView />} />
+      <Route path="/:book" element={<ScriptureView />} />
+
+      {/* Fallback for invalid routes */}
+      <Route path="*" element={<Navigate to="/genesis/1" replace />} />
+    </Routes>
   );
 }
 
