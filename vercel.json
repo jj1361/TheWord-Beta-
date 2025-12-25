@@ -1,21 +1,5 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "build",
-  "framework": "create-react-app",
   "rewrites": [
-    { "source": "/static/(.*)", "destination": "/static/$1" },
-    { "source": "/(.*)\\.js", "destination": "/$1.js" },
-    { "source": "/(.*)\\.css", "destination": "/$1.css" },
-    { "source": "/(.*)\\.json", "destination": "/$1.json" },
-    { "source": "/(.*)\\.csv", "destination": "/$1.csv" },
-    { "source": "/(.*)\\.png", "destination": "/$1.png" },
-    { "source": "/(.*)\\.jpg", "destination": "/$1.jpg" },
-    { "source": "/(.*)\\.svg", "destination": "/$1.svg" },
-    { "source": "/(.*)\\.ico", "destination": "/$1.ico" },
-    { "source": "/(.*)\\.woff", "destination": "/$1.woff" },
-    { "source": "/(.*)\\.woff2", "destination": "/$1.woff2" },
-    { "source": "/(.*)\\.ttf", "destination": "/$1.ttf" },
-    { "source": "/(.*)\\.otf", "destination": "/$1.otf" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/((?!static|.*\\..*).*)", "destination": "/index.html" }
   ]
 }
