@@ -1253,6 +1253,18 @@ function ScriptureView() {
                   onDecreaseTextSize={handleDecreaseTextSize}
                   chapterFootnotes={chapterFootnotes}
                   showFootnotes={showFootnotes}
+                  // Webcam mode inline panel props
+                  webcamMode={webcamEnabled}
+                  inlinePanelLexicon={webcamEnabled ? lexiconData : null}
+                  inlinePanelHebrewLetter={webcamEnabled ? selectedLetter : null}
+                  inlinePanelCrossRefContext={webcamEnabled ? crossRefContext : null}
+                  onCloseInlinePanel={() => {
+                    setSelectedStrongs(null);
+                    setSelectedLetter(null);
+                    setLexiconData(null);
+                    setCrossRefContext(null);
+                  }}
+                  onSearchResultClick={handleSearchResultClick}
                 />
               </div>
 
@@ -1268,7 +1280,8 @@ function ScriptureView() {
                 </div>
               )}
 
-              {(selectedStrongs || selectedLetter || crossRefContext) && (
+              {/* Right Panel - hidden when webcam is enabled (content shown inline instead) */}
+              {!webcamEnabled && (selectedStrongs || selectedLetter || crossRefContext) && (
                 <RightPanel
                   lexiconContent={lexiconData}
                   hebrewLetterContent={selectedLetter}

@@ -1169,3 +1169,25 @@
 [data-theme='dark'] .footnote-superscript:hover {
   box-shadow: 0 4px 16px rgba(139, 92, 246, 0.5);
 }
+
+/* ========================================
+   INLINE PANEL IN VERSE (Webcam Mode)
+   ======================================== */
+
+/* Inline panel displayed within the interlinear section area */
+.inline-panel-in-verse {
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.inline-panel-in-verse .inline-right-panel-content {
+  margin: 0;
+  border-radius: 0 0 12px 12px;
+  border-top: none;
+}
+
+/* Remove animation when shown inline */
+.inline-panel-in-verse .inline-right-panel-content {
+  animation: none;
+}

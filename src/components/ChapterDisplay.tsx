@@ -5,8 +5,11 @@ import ChapterSelector from './ChapterSelector';
 import NavigationModal from './NavigationModal';
 import SearchBox from './SearchBox';
 import { SearchResponse } from '../services/searchService';
+import { CrossReference } from '../services/crossRefService';
 import { WordImageMapping } from '../config/youthModeConfig';
 import { HighlightColor, TextFormatting } from '../types/notes';
+import { LexiconData } from '../types/lexicon';
+import { HebrewLetterInfo } from '../config/hebrewLetters';
 import './ChapterDisplay.css';
 
 // Default text size if not provided
@@ -50,6 +53,18 @@ interface ChapterDisplayProps {
   // Footnotes (1611 KJV Marginal Notes)
   chapterFootnotes?: Map<number, FootnoteEntry[]>;
   showFootnotes?: boolean;
+  // Webcam mode inline panel props
+  webcamMode?: boolean;
+  inlinePanelLexicon?: LexiconData | null;
+  inlinePanelHebrewLetter?: HebrewLetterInfo | null;
+  inlinePanelCrossRefContext?: {
+    bookId: number;
+    bookName: string;
+    chapter: number;
+    verse: number;
+  } | null;
+  inlinePanelCrossRefVerses?: Array<CrossReference & { text?: string }>;
+  onCloseInlinePanel?: () => void;
 }
 
 const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
@@ -87,6 +102,12 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
   onDecreaseTextSize,
   chapterFootnotes,
   showFootnotes = true,
+  webcamMode,
+  inlinePanelLexicon,
+  inlinePanelHebrewLetter,
+  inlinePanelCrossRefContext,
+  inlinePanelCrossRefVerses,
+  onCloseInlinePanel,
 }) => {
   const [isChapterSelectorOpen, setIsChapterSelectorOpen] = useState(false);
   const [isNavigationModalOpen, setIsNavigationModalOpen] = useState(false);
@@ -206,6 +227,7 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
           const kjvsVerse = chapter.kjvsVerses?.find(
             (kv) => kv.num === verse.num
           );
+          // Always provide interlinear data - button is always available
           const interlinearVerse = chapter.interlinearVerses?.find(
             (iv) => iv.num === verse.num
           );
@@ -214,6 +236,9 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
           // Only show highlights and formatting when study mode is enabled
           const userHighlightColor = studyMode ? getVerseHighlightColor?.(verse.num) : undefined;
           const verseTextFormatting = studyMode ? (getVerseTextFormatting?.(verse.num) || []) : [];
+
+          // In webcam mode, show inline panel content on the selected verse
+          const showInlinePanelForVerse = webcamMode && selectedVerse === verse.num;
 
           return (
             <div
@@ -241,6 +266,14 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
                 textFormatting={verseTextFormatting}
                 footnotes={chapterFootnotes?.get(verse.num)}
                 showFootnotes={showFootnotes}
+                // Webcam mode inline panel props - passed to the selected verse
+                webcamMode={showInlinePanelForVerse}
+                inlinePanelLexicon={showInlinePanelForVerse ? inlinePanelLexicon : null}
+                inlinePanelHebrewLetter={showInlinePanelForVerse ? inlinePanelHebrewLetter : null}
+                inlinePanelCrossRefContext={showInlinePanelForVerse ? inlinePanelCrossRefContext : null}
+                inlinePanelCrossRefVerses={showInlinePanelForVerse ? inlinePanelCrossRefVerses : undefined}
+                onCloseInlinePanel={onCloseInlinePanel}
+                onInlinePanelVerseClick={onSearchResultClick}
               />
             </div>
           );

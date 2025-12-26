@@ -1,11 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { KJVVerse, KJVsVerse, InterlinearVerse, FootnoteEntry } from '../types/bible';
-import { extractHebrewLetters, getHebrewLetterInfo } from '../config/hebrewLetters';
+import { extractHebrewLetters, getHebrewLetterInfo, HebrewLetterInfo } from '../config/hebrewLetters';
 import { getWordImage, getImagePath, getImageSize, WordImageMapping } from '../config/youthModeConfig';
 import { HighlightColor, HIGHLIGHT_COLORS, TextFormatting } from '../types/notes';
 import { getPartOfSpeechName } from '../utils/partsOfSpeech';
 import { useTranslation } from '../contexts/TranslationContext';
+import { LexiconData } from '../types/lexicon';
+import { CrossReference } from '../services/crossRefService';
+import InlineRightPanelContent from './InlineRightPanelContent';
 import './VerseDisplay.css';
 
 // Tooltip state interface
@@ -23,6 +26,13 @@ interface FootnoteTooltipState {
   x: number;
   y: number;
   footnote: FootnoteEntry | null;
+}
+
+interface CrossRefContext {
+  bookId: number;
+  bookName: string;
+  chapter: number;
+  verse: number;
 }
 
 interface VerseDisplayProps {
@@ -45,9 +55,43 @@ interface VerseDisplayProps {
   // Footnotes (1611 KJV Marginal Notes)
   footnotes?: FootnoteEntry[];
   showFootnotes?: boolean;
+  // Webcam mode inline panel props - display lexicon info in interlinear area
+  webcamMode?: boolean;
+  inlinePanelLexicon?: LexiconData | null;
+  inlinePanelHebrewLetter?: HebrewLetterInfo | null;
+  inlinePanelCrossRefContext?: CrossRefContext | null;
+  inlinePanelCrossRefVerses?: Array<CrossReference & { text?: string }>;
+  onCloseInlinePanel?: () => void;
+  onInlinePanelVerseClick?: (bookId: number, chapter: number, verse: number) => void;
 }
 
-const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interlinearVerse, onLetterClick, onStrongsClick, onPersonClick, onYouthImageClick, isSelected, onVerseClick, onCrossRefClick, hasCrossRefs, globalUseProtoSinaitic, onToggleProtoSinaitic, youthMode, highlightColor, textFormatting, footnotes, showFootnotes = true }) => {
+const VerseDisplay: React.FC<VerseDisplayProps> = ({
+  verse,
+  kjvsVerse,
+  interlinearVerse,
+  onLetterClick,
+  onStrongsClick,
+  onPersonClick,
+  onYouthImageClick,
+  isSelected,
+  onVerseClick,
+  onCrossRefClick,
+  hasCrossRefs,
+  globalUseProtoSinaitic,
+  onToggleProtoSinaitic,
+  youthMode,
+  highlightColor,
+  textFormatting,
+  footnotes,
+  showFootnotes = true,
+  webcamMode,
+  inlinePanelLexicon,
+  inlinePanelHebrewLetter,
+  inlinePanelCrossRefContext,
+  inlinePanelCrossRefVerses,
+  onCloseInlinePanel,
+  onInlinePanelVerseClick,
+}) => {
   const { currentTranslation } = useTranslation();
   const [localUseProtoSinaitic, setLocalUseProtoSinaitic] = useState(false);
   const [forwardInterlinear, setForwardInterlinear] = useState(false);
@@ -653,6 +697,7 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
         )}
       </div>
 
+      {/* Interlinear section - shown when verse is selected AND interlinear data exists */}
       {isSelected && interlinearVerse && (
         <div className="interlinear-section">
           <div className="interlinear-header">
@@ -744,6 +789,22 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
               </div>
             ))}
           </div>
+        </div>
+      )}
+
+      {/* Inline Panel Content - shown in webcam mode when lexicon/crossref data exists */}
+      {/* This is separate from interlinear-section - only shows lexicon info when clicking words */}
+      {webcamMode && (inlinePanelLexicon || inlinePanelHebrewLetter || inlinePanelCrossRefContext) && (
+        <div className="inline-panel-in-verse">
+          <InlineRightPanelContent
+            lexiconContent={inlinePanelLexicon || null}
+            hebrewLetterContent={inlinePanelHebrewLetter || null}
+            crossRefContext={inlinePanelCrossRefContext}
+            crossRefVerses={inlinePanelCrossRefVerses}
+            onClose={onCloseInlinePanel || (() => {})}
+            onVerseClick={onInlinePanelVerseClick}
+            onStrongsClick={onStrongsClick}
+          />
         </div>
       )}
 
