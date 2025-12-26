@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { KJVVerse, KJVsVerse, InterlinearVerse } from '../types/bible';
+import { createPortal } from 'react-dom';
+import { KJVVerse, KJVsVerse, InterlinearVerse, FootnoteEntry } from '../types/bible';
 import { extractHebrewLetters, getHebrewLetterInfo } from '../config/hebrewLetters';
 import { getWordImage, getImagePath, getImageSize, WordImageMapping } from '../config/youthModeConfig';
 import { HighlightColor, HIGHLIGHT_COLORS, TextFormatting } from '../types/notes';
@@ -14,6 +15,14 @@ interface TooltipState {
   y: number;
   pos: string;
   parse: string;
+}
+
+// Footnote tooltip state
+interface FootnoteTooltipState {
+  visible: boolean;
+  x: number;
+  y: number;
+  footnote: FootnoteEntry | null;
 }
 
 interface VerseDisplayProps {
@@ -33,9 +42,12 @@ interface VerseDisplayProps {
   youthMode?: boolean;
   highlightColor?: HighlightColor;
   textFormatting?: TextFormatting[];
+  // Footnotes (1611 KJV Marginal Notes)
+  footnotes?: FootnoteEntry[];
+  showFootnotes?: boolean;
 }
 
-const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interlinearVerse, onLetterClick, onStrongsClick, onPersonClick, onYouthImageClick, isSelected, onVerseClick, onCrossRefClick, hasCrossRefs, globalUseProtoSinaitic, onToggleProtoSinaitic, youthMode, highlightColor, textFormatting }) => {
+const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interlinearVerse, onLetterClick, onStrongsClick, onPersonClick, onYouthImageClick, isSelected, onVerseClick, onCrossRefClick, hasCrossRefs, globalUseProtoSinaitic, onToggleProtoSinaitic, youthMode, highlightColor, textFormatting, footnotes, showFootnotes = true }) => {
   const { currentTranslation } = useTranslation();
   const [localUseProtoSinaitic, setLocalUseProtoSinaitic] = useState(false);
   const [forwardInterlinear, setForwardInterlinear] = useState(false);
@@ -50,6 +62,18 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
     parse: ''
   });
   const tooltipTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Footnote tooltip state
+  const [footnoteTooltip, setFootnoteTooltip] = useState<FootnoteTooltipState>({
+    visible: false,
+    x: 0,
+    y: 0,
+    footnote: null
+  });
+  const footnoteTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Track which phrase to highlight when hovering over footnote
+  const [highlightedPhrase, setHighlightedPhrase] = useState<string | null>(null);
 
   // Handle POS tooltip show
   const handlePosMouseEnter = (e: React.MouseEvent, pos: string, parse: string) => {
@@ -75,11 +99,75 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
     }, 100);
   };
 
+  // Handle footnote tooltip show
+  const handleFootnoteMouseEnter = (e: React.MouseEvent, footnote: FootnoteEntry) => {
+    const rect = (e.target as HTMLElement).getBoundingClientRect();
+    if (footnoteTimeoutRef.current) {
+      clearTimeout(footnoteTimeoutRef.current);
+      footnoteTimeoutRef.current = null;
+    }
+    setFootnoteTooltip({
+      visible: true,
+      x: rect.left + rect.width / 2,
+      y: rect.top - 8,
+      footnote
+    });
+    // Highlight the referenced phrase in the verse text
+    setHighlightedPhrase(footnote.phrase);
+  };
+
+  // Handle footnote tooltip hide with delay
+  const handleFootnoteMouseLeave = () => {
+    footnoteTimeoutRef.current = setTimeout(() => {
+      setFootnoteTooltip(prev => ({ ...prev, visible: false }));
+      setHighlightedPhrase(null);
+    }, 150);
+  };
+
+  // Get footnote type label
+  const getFootnoteTypeLabel = (type: string): string => {
+    const labels: Record<string, string> = {
+      hebrew: 'Heb.',
+      greek: 'Gr.',
+      alternative: 'Or',
+      meaning: 'i.e.',
+      clarification: 'Note'
+    };
+    return labels[type] || 'Note';
+  };
+
+  // Wrap highlighted phrase in text with animation span
+  const wrapHighlightedPhrase = (text: string): React.ReactNode => {
+    if (!highlightedPhrase) return text;
+
+    // Case-insensitive search for the phrase
+    const lowerText = text.toLowerCase();
+    const lowerPhrase = highlightedPhrase.toLowerCase();
+    const index = lowerText.indexOf(lowerPhrase);
+
+    if (index === -1) return text;
+
+    const before = text.slice(0, index);
+    const match = text.slice(index, index + highlightedPhrase.length);
+    const after = text.slice(index + highlightedPhrase.length);
+
+    return (
+      <>
+        {before}
+        <span className="footnote-phrase-highlight">{match}</span>
+        {after}
+      </>
+    );
+  };
+
   // Cleanup timeout on unmount
   useEffect(() => {
     return () => {
       if (tooltipTimeoutRef.current) {
         clearTimeout(tooltipTimeoutRef.current);
+      }
+      if (footnoteTimeoutRef.current) {
+        clearTimeout(footnoteTimeoutRef.current);
       }
     };
   }, []);
@@ -389,10 +477,14 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
             phraseContent = phraseText;
           }
 
+          // Check if this phrase matches the footnote highlighted phrase
+          const isFootnoteHighlighted = highlightedPhrase &&
+            phraseText.toLowerCase().includes(highlightedPhrase.toLowerCase());
+
           return (
             <React.Fragment key={idx}>
               <span
-                className="clickable-phrase"
+                className={`clickable-phrase ${isFootnoteHighlighted ? 'footnote-phrase-highlight' : ''}`}
                 onClick={(e) => handlePhraseClick(e, phrase.strongs)}
                 onClickCapture={addPersonLinks && !hasFormatting ? handlePersonLinkClick : undefined}
                 title={`Strong's #${phrase.strongs} - Click for lexicon`}
@@ -462,8 +554,17 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
       );
     }
 
-    // Fallback: Plain text (with youth mode support)
-    return <span className="verse-text">{renderYouthModeText(verse.text)}</span>;
+    // Fallback: Plain text (with youth mode support or phrase highlighting)
+    if (youthMode) {
+      return <span className="verse-text">{renderYouthModeText(verse.text)}</span>;
+    }
+
+    // Apply phrase highlighting if active
+    if (highlightedPhrase) {
+      return <span className="verse-text">{wrapHighlightedPhrase(verse.text)}</span>;
+    }
+
+    return <span className="verse-text">{verse.text}</span>;
   };
 
   const renderHebrewText = (hebrewText: string) => {
@@ -511,6 +612,21 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
       <div className="verse-main">
         <span className="verse-number">{verse.num}</span>
         {renderVerseText()}
+        {/* Footnote superscripts */}
+        {showFootnotes && footnotes && footnotes.length > 0 && (
+          <span className="footnote-indicators">
+            {footnotes.map((fn, idx) => (
+              <sup
+                key={idx}
+                className={`footnote-superscript footnote-type-${fn.type}`}
+                onMouseEnter={(e) => handleFootnoteMouseEnter(e, fn)}
+                onMouseLeave={handleFootnoteMouseLeave}
+              >
+                †{footnotes.length > 1 ? <span className="footnote-count">{idx + 1}</span> : ''}
+              </sup>
+            ))}
+          </span>
+        )}
         {hasCrossRefs && onCrossRefClick && (
           <button
             className="cross-ref-toggle-btn"
@@ -652,6 +768,39 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({ verse, kjvsVerse, interline
             )}
           </div>
         </div>
+      )}
+
+      {/* Footnote Tooltip - rendered via portal to escape stacking contexts */}
+      {footnoteTooltip.visible && footnoteTooltip.footnote && createPortal(
+        <div
+          className="footnote-tooltip"
+          style={{
+            position: 'fixed',
+            left: footnoteTooltip.x,
+            top: footnoteTooltip.y,
+            transform: 'translate(-50%, -100%)'
+          }}
+          onMouseEnter={() => {
+            if (footnoteTimeoutRef.current) {
+              clearTimeout(footnoteTimeoutRef.current);
+              footnoteTimeoutRef.current = null;
+            }
+          }}
+          onMouseLeave={handleFootnoteMouseLeave}
+        >
+          <div className="footnote-tooltip-content">
+            <div className="footnote-tooltip-header">
+              <span className={`footnote-type-badge footnote-type-${footnoteTooltip.footnote.type}`}>
+                {getFootnoteTypeLabel(footnoteTooltip.footnote.type)}
+              </span>
+              <span className="footnote-phrase">"{footnoteTooltip.footnote.phrase}"</span>
+            </div>
+            <div className="footnote-tooltip-note">
+              {footnoteTooltip.footnote.note}
+            </div>
+          </div>
+        </div>,
+        document.body
       )}
     </div>
   );

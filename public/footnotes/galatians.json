@@ -1,0 +1,147 @@
+{
+  "bookId": 48,
+  "bookName": "Galatians",
+  "chapters": {
+    "1": {
+      "14": [
+        {
+          "phrase": "equals",
+          "note": "Gr. equals in years",
+          "type": "greek"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "went up",
+          "note": "Or, returned",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "2": [
+        {
+          "phrase": "privately",
+          "note": "Or, severally",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "4": [
+        {
+          "phrase": "so many",
+          "note": "Or, so great",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "accounted",
+          "note": "Or, imputed",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "covenant",
+          "note": "Or, testament",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "3": [
+        {
+          "phrase": "Elements",
+          "note": "Or, rudiments",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "again",
+          "note": "Or, back",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Elements",
+          "note": "Or, rudiments",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "Where is then",
+          "note": "Or, What was then?",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "you",
+          "note": "Or, us",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "stand in doubt of you",
+          "note": "Or, I am perplexed for you",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "Covenants",
+          "note": "Or, testaments",
+          "type": "alternative"
+        },
+        {
+          "phrase": "answereth…which now is",
+          "note": "Or, is in the same rank with",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "7": [
+        {
+          "phrase": "who did hinder you",
+          "note": "Or, who did drive you back?",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "ye shall not fulfill",
+          "note": "Or, fulfill not",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "affections",
+          "note": "Or, passions",
+          "type": "alternative"
+        }
+      ]
+    },
+    "6": {
+      "1": [
+        {
+          "phrase": "if",
+          "note": "Or, although",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "by whom",
+          "note": "Or, whereby",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

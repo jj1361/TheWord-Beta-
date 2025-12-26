@@ -1,0 +1,605 @@
+{
+  "bookId": 45,
+  "bookName": "Romans",
+  "chapters": {
+    "1": {
+      "4": [
+        {
+          "phrase": "declared",
+          "note": "Gr. determined",
+          "type": "greek"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "for obedience to the faith",
+          "note": "Or, to the obedience of faith",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "with my spirit",
+          "note": "Or, in my spirit",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "with you",
+          "note": "Or, in you",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "among you",
+          "note": "Or, in you",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "in them",
+          "note": "Or, to them",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "so that they are",
+          "note": "Or, that they may be",
+          "type": "alternative"
+        }
+      ],
+      "28": [
+        {
+          "phrase": "to retain",
+          "note": "Or, to acknowledge",
+          "type": "alternative"
+        },
+        {
+          "phrase": "a reprobate mind",
+          "note": "Or, a mind void of judgment",
+          "type": "alternative"
+        }
+      ],
+      "31": [
+        {
+          "phrase": "without natural",
+          "note": "Or, unsociable",
+          "type": "alternative"
+        }
+      ],
+      "32": [
+        {
+          "phrase": "have pleasure in them",
+          "note": "Or, consent with them",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "9": [
+        {
+          "phrase": "Gentile",
+          "note": "Gr. Greek",
+          "type": "greek"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "Gentile",
+          "note": "Gr. Greek",
+          "type": "greek"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "their conscience also bearing witness",
+          "note": "Or, the conscience witnessing with them",
+          "type": "alternative"
+        },
+        {
+          "phrase": "the meanwhile",
+          "note": "Or, between themselves",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "approves the things that are more excellent",
+          "note": "Or, triest the things that differ",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "9": [
+        {
+          "phrase": "proved",
+          "note": "Gr. charged",
+          "type": "greek"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "guilty before God",
+          "note": "Or, subject to the judgment of God",
+          "type": "alternative"
+        }
+      ],
+      "25": [
+        {
+          "phrase": "set forth",
+          "note": "Or, foreordained",
+          "type": "alternative"
+        },
+        {
+          "phrase": "remission",
+          "note": "Or, passing over",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "17": [
+        {
+          "phrase": "before him",
+          "note": "Or, like unto him",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "6": [
+        {
+          "phrase": "in due time",
+          "note": "Or, according to the time",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "for that",
+          "note": "Or, in whom",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "by one mans offence",
+          "note": "Or, by one offence",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "by the offence of one",
+          "note": "Or, by one offence",
+          "type": "alternative"
+        },
+        {
+          "phrase": "righteousness of one",
+          "note": "Or, by one righteousness",
+          "type": "alternative"
+        }
+      ]
+    },
+    "6": {
+      "3": [
+        {
+          "phrase": "were",
+          "note": "Or, are",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "freed",
+          "note": "Gr. justified",
+          "type": "greek"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "instruments",
+          "note": "Gr. arms, or weapons",
+          "type": "greek"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "which was delivered you",
+          "note": "Gr. whereto ye were delivered",
+          "type": "greek"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "from righteousness",
+          "note": "Gr. to righteousness",
+          "type": "greek"
+        }
+      ]
+    },
+    "7": {
+      "5": [
+        {
+          "phrase": "motions",
+          "note": "Gr. passions",
+          "type": "greek"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "that being dead wherein",
+          "note": "Or, being dead to that",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "lust",
+          "note": "Or, concupiscence",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "allow",
+          "note": "Gr. know",
+          "type": "greek"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "the body of this death",
+          "note": "Or, this body of death",
+          "type": "alternative"
+        }
+      ]
+    },
+    "8": {
+      "3": [
+        {
+          "phrase": "for sin",
+          "note": "Or, by a sacrifice for sin",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "to be carnally minded",
+          "note": "Gr. the minding of the flesh",
+          "type": "greek"
+        },
+        {
+          "phrase": "to be spiritually minded",
+          "note": "Gr. the minding of the spirit",
+          "type": "greek"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "the carnal mind",
+          "note": "Gr. the minding of the flesh",
+          "type": "greek"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "by his spirit",
+          "note": "Or, because of his spirit",
+          "type": "alternative"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "the whole creation",
+          "note": "Or, every creature",
+          "type": "alternative"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "because",
+          "note": "Or, that",
+          "type": "alternative"
+        }
+      ]
+    },
+    "9": {
+      "3": [
+        {
+          "phrase": "accursed",
+          "note": "Or, separated",
+          "type": "alternative"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "covenants",
+          "note": "Or, testaments",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "elder",
+          "note": "Or, greater",
+          "type": "alternative"
+        },
+        {
+          "phrase": "younger",
+          "note": "Or, lesser",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "repliest against God?",
+          "note": "Or, answereth again, or disputest with God?",
+          "type": "alternative"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "fitted",
+          "note": "Or, made up",
+          "type": "alternative"
+        }
+      ],
+      "28": [
+        {
+          "phrase": "the work",
+          "note": "Or, the account",
+          "type": "alternative"
+        }
+      ],
+      "33": [
+        {
+          "phrase": "ashamed",
+          "note": "or confounded",
+          "type": "alternative"
+        }
+      ]
+    },
+    "10": {
+      "16": [
+        {
+          "phrase": "report?",
+          "note": "Or, preaching. Gr. the hearing of us",
+          "type": "alternative"
+        }
+      ]
+    },
+    "11": {
+      "7": [
+        {
+          "phrase": "blinded",
+          "note": "Or, hardened",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "slumber",
+          "note": "Or, remorse",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "diminishing",
+          "note": "Or, decay, or loss",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "among them",
+          "note": "Or, for them",
+          "type": "alternative"
+        }
+      ],
+      "25": [
+        {
+          "phrase": "blindness",
+          "note": "Or, hardness",
+          "type": "alternative"
+        }
+      ],
+      "30": [
+        {
+          "phrase": "believed",
+          "note": "Or, obeyed",
+          "type": "alternative"
+        }
+      ],
+      "31": [
+        {
+          "phrase": "believed",
+          "note": "Or, obeyed",
+          "type": "alternative"
+        }
+      ],
+      "32": [
+        {
+          "phrase": "concluded them all",
+          "note": "Or, shut them all up together",
+          "type": "alternative"
+        }
+      ],
+      "36": [
+        {
+          "phrase": "whom",
+          "note": "Gr. him",
+          "type": "greek"
+        }
+      ]
+    },
+    "12": {
+      "3": [
+        {
+          "phrase": "soberly",
+          "note": "Gr. to sobriety",
+          "type": "greek"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "giveth",
+          "note": "Or, imparteth",
+          "type": "alternative"
+        },
+        {
+          "phrase": "with simplicity",
+          "note": "Or, liberally",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "with brotherly love",
+          "note": "Or, in the love of the brethren",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "condescend to men of low estate",
+          "note": "Or, be contented with mean things",
+          "type": "alternative"
+        }
+      ]
+    },
+    "13": {
+      "1": [
+        {
+          "phrase": "ordained",
+          "note": "Or, ordered",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "honestly",
+          "note": "Or, decently",
+          "type": "alternative"
+        }
+      ]
+    },
+    "14": {
+      "1": [
+        {
+          "phrase": "not to doubtful disputations",
+          "note": "Or, not to judge his doubtful thoughts",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "fully persuaded",
+          "note": "Or, fully assured",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "regardeth",
+          "note": "Or, observeth",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "unclean",
+          "note": "Gr. common",
+          "type": "greek"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "charitably",
+          "note": "Gr. according to charity 1. Cor. 8.11",
+          "type": "greek"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "doubteth",
+          "note": "Or, discerneth, and putteth a difference between meats",
+          "type": "alternative"
+        }
+      ]
+    },
+    "15": {
+      "5": [
+        {
+          "phrase": "according",
+          "note": "Or, after the example of",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "offering up",
+          "note": "Or, sacrificing",
+          "type": "alternative"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "much",
+          "note": "Or, many ways, or oftentimes",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "with your company",
+          "note": "Gr. with you. Ver. 32",
+          "type": "greek"
+        }
+      ],
+      "31": [
+        {
+          "phrase": "do not believe",
+          "note": "Or, are disobedient",
+          "type": "alternative"
+        }
+      ]
+    },
+    "16": {
+      "10": [
+        {
+          "phrase": "household",
+          "note": "Or, friends",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "household",
+          "note": "Or, friends",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "simple",
+          "note": "Or, harmless",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "bruise",
+          "note": "Or, tread",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

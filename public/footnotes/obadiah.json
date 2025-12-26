@@ -1,0 +1,84 @@
+{
+  "bookId": 31,
+  "bookName": "Obadiah",
+  "chapters": {
+    "1": {
+      "7": [
+        {
+          "phrase": "the men that were at peace",
+          "note": "Heb. the men of thy peace",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "they that eat thy bread",
+          "note": "Heb. the men of thy bread",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "in",
+          "note": "Or, of it",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "carry away captive",
+          "note": "Or, carried away his substance",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "thou shouldest not have looked",
+          "note": "Or, do not behold, etc.",
+          "type": "alternative"
+        },
+        {
+          "phrase": "spoken proudly",
+          "note": "Heb. magnified thy mouth",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "substance",
+          "note": "Or, forces",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "delivered up",
+          "note": "Or, shut up",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "swallow down",
+          "note": "Or, sup up",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "deliverance",
+          "note": "Or, they that escape",
+          "type": "alternative"
+        },
+        {
+          "phrase": "shall be holiness",
+          "note": "Or, it shall be holy",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "which is in Sepharad",
+          "note": "Or, shall possess that which is in Sepharad",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

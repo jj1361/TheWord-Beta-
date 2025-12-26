@@ -1,0 +1,341 @@
+{
+  "bookId": 25,
+  "bookName": "Lamentations",
+  "chapters": {
+    "1": {
+      "3": [
+        {
+          "phrase": "because of great servitude",
+          "note": "Heb. for the greatness of servitude",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "pleasant",
+          "note": "Or, desireable",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "is removed",
+          "note": "Heb. is become a removing or wandering",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "pleasant",
+          "note": "Or, desireable",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "relieve the soul",
+          "note": "Or, to make the soul to come again",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "Is it nothing to you",
+          "note": "Or, is it nothing",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "the virgin…as in a winepress",
+          "note": "Or, the winepress of the virgin, etc.",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "relieve",
+          "note": "Heb. bring back",
+          "type": "hebrew"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "commandment",
+          "note": "Heb. mouth",
+          "type": "hebrew"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "called",
+          "note": "Or, proclaimed",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "2": [
+        {
+          "phrase": "brought them down",
+          "note": "Heb. made to couch",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "pleasant to the eye",
+          "note": "Heb. all the desirable of the eye",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "tabernacle",
+          "note": "Or, hedge",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "given up",
+          "note": "Heb. shut up",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "destroying",
+          "note": "Heb. swallowing up",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "swoon",
+          "note": "Or, faint",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "by",
+          "note": "Heb. by the way",
+          "type": "hebrew"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "span long?",
+          "note": "Or, swadled with their hands",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "13": [
+        {
+          "phrase": "arrows",
+          "note": "Heb. sons",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "bitterness",
+          "note": "Heb. bitternesses",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "covered me with ashes",
+          "note": "Or, rolled me in the ashes",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "prosperity",
+          "note": "Heb. good",
+          "type": "hebrew"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "Remembering",
+          "note": "Or, remember",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "humbled",
+          "note": "Heb. bowed",
+          "type": "hebrew"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "recall to my mind",
+          "note": "Heb. make to return to my heart",
+          "type": "hebrew"
+        }
+      ],
+      "33": [
+        {
+          "phrase": "willingly",
+          "note": "Heb. from his heart",
+          "type": "hebrew"
+        }
+      ],
+      "35": [
+        {
+          "phrase": "most high",
+          "note": "Or, a superior",
+          "type": "alternative"
+        }
+      ],
+      "36": [
+        {
+          "phrase": "approveth not",
+          "note": "Or, seeth not",
+          "type": "alternative"
+        }
+      ],
+      "39": [
+        {
+          "phrase": "complain",
+          "note": "Or, murmur",
+          "type": "alternative"
+        }
+      ],
+      "51": [
+        {
+          "phrase": "mine heart",
+          "note": "Heb. my soul",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "because of all",
+          "note": "Or, more then all",
+          "type": "alternative"
+        }
+      ],
+      "65": [
+        {
+          "phrase": "sorrow of the heart",
+          "note": "Or, obstinacy of heart",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "3": [
+        {
+          "phrase": "sea monsters",
+          "note": "Or, sea calves",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "punishment of the iniquity",
+          "note": "Or, iniquity",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "blacker then a cole",
+          "note": "Heb. darker than blackness",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "pine away",
+          "note": "Heb. flow out",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "so that men could not touch",
+          "note": "Or, in that they could not but touch",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "it is unclean",
+          "note": "Or, ye polluted",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "anger",
+          "note": "Or, face",
+          "type": "alternative"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "punishment of thine iniquity",
+          "note": "Or, thine iniquity",
+          "type": "alternative"
+        },
+        {
+          "phrase": "discover thy sins",
+          "note": "Or, carry thee captive for thy sins",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "4": [
+        {
+          "phrase": "is sold unto us",
+          "note": "Heb. cometh for price",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "Our necks are under persecution",
+          "note": "Heb. on our necks are we persecuted",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "terrible",
+          "note": "Or, terrors or storms",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "The crown is fallen from our head",
+          "note": "Heb. the crown of our head is fallen [† symbol is missing in 1611 text]",
+          "type": "hebrew"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "so long time?",
+          "note": "Heb. for length of days",
+          "type": "hebrew"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "But thou hast utterly rejected us",
+          "note": "Or, for wilt thou utterly reject us?",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

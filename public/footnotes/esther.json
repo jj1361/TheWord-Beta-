@@ -1,0 +1,533 @@
+{
+  "bookId": 17,
+  "bookName": "Esther",
+  "chapters": {
+    "1": {
+      "5": [
+        {
+          "phrase": "present",
+          "note": "Heb. found",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "blue",
+          "note": "Or, violet",
+          "type": "alternative"
+        },
+        {
+          "phrase": "red, and blue, and white, and black marble",
+          "note": "Or, of porphyre, and marble, and alabaster, and stone of blue color",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "royal wine",
+          "note": "Heb. wine of the kingdom",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "state of the king",
+          "note": "Heb. according to the hand of the king",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "chamberlains",
+          "note": "Or, Eunuchs",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "fair to look on",
+          "note": "Heb. good of countenance",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "by his chamberlains",
+          "note": "Heb. which was by the hand of his Eunuchs",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "what shall we do",
+          "note": "Heb. what to do?",
+          "type": "hebrew"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "if it please the king",
+          "note": "Heb. if it be good with the king",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "from him",
+          "note": "Heb. from before him",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "that it be not altered",
+          "note": "Heb. that it pass not away",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "unto another",
+          "note": "Heb. unto her companion",
+          "type": "hebrew"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "pleased the king",
+          "note": "Heb. was good in the eyes of the king",
+          "type": "hebrew"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "that it should be published according to the language of every people",
+          "note": "Heb. that one should publish it according to the language of his people",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "2": {
+      "3": [
+        {
+          "phrase": "unto the custody",
+          "note": "Heb. unto the hand",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "Hege",
+          "note": "Or, Hegai, ver. 8",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "brought up",
+          "note": "Heb. nourished",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "fair and beautiful",
+          "note": "Heb. fair of form, and good of countenance",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "such things",
+          "note": "Heb. her portions",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "he preferred her",
+          "note": "Heb. he changed her",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "to know how",
+          "note": "Heb. to know the peace",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "favour",
+          "note": "Or, kindness",
+          "type": "alternative"
+        },
+        {
+          "phrase": "in his sight",
+          "note": "Heb. before him",
+          "type": "hebrew"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "release",
+          "note": "Heb. rest",
+          "type": "hebrew"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "Bigthan",
+          "note": "Or, Bigthana",
+          "type": "alternative"
+        },
+        {
+          "phrase": "the door",
+          "note": "Heb. the threshold",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "3": {
+      "8": [
+        {
+          "phrase": "for",
+          "note": "Heb. meet Or, equal",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "that they may be destroyed",
+          "note": "Heb. to destroy them",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "pay",
+          "note": "Heb. weigh",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "enemy",
+          "note": "Or, oppressor",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "scribes",
+          "note": "Or, secretaries",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "3": [
+        {
+          "phrase": "many lay in sackloth and ashes",
+          "note": "Heb. sackcloth and ashes were laid under many",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "chamberlains",
+          "note": "Heb. Eunuchs",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "whom he had appointed to attend upon her",
+          "note": "Heb. whom he had set before her",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "enlargement",
+          "note": "Heb. respiration",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "present",
+          "note": "Heb. found",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "went",
+          "note": "Heb. passed",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "5": {
+      "8": [
+        {
+          "phrase": "to perform",
+          "note": "Heb. to do",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "called",
+          "note": "Heb. caused to come",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "gallows",
+          "note": "Heb. tree",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "6": {
+      "1": [
+        {
+          "phrase": "could not the King sleep",
+          "note": "Heb. the kings sleep fled away",
+          "type": "hebrew"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "Bigthana",
+          "note": "Or, Bigthan",
+          "type": "alternative"
+        },
+        {
+          "phrase": "door",
+          "note": "Heb. threshold",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "whom the king delighted to honor?",
+          "note": "Heb. in whose honour the King delighteth",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "whom the king delighted to honor",
+          "note": "Heb. in whose honour the King delighteth",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "let the royal apparel be brought",
+          "note": "Heb. let them bring the royal apparel",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "which the King useth to wear",
+          "note": "Heb. wherewith the king clotheth himself",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "bring him on horseback",
+          "note": "Heb. cause him to ride",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "let nothing fail",
+          "note": "Heb. suffer not a whit to fail",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "7": {
+      "1": [
+        {
+          "phrase": "to banquet",
+          "note": "Heb. to drink",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "to be destroyed, to be slain, and to perish",
+          "note": "Heb. that they should destroy and kill, and cause to perish",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "that durst presume in his heart",
+          "note": "Heb. whose heart hath filled him",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "The adversary",
+          "note": "Heb. The man adversary",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "before",
+          "note": "Or, at the presence of",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "before me",
+          "note": "Heb. with me",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "gallows",
+          "note": "Heb. tree",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "8": {
+      "3": [
+        {
+          "phrase": "and besought him with tears",
+          "note": "Heb. and she wept and besought him",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "devised",
+          "note": "Heb. the device",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "which he wrote",
+          "note": "Or, who wrote",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "I endure to see",
+          "note": "Heb. be able that I may see",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "published",
+          "note": "Heb. revealed",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "blue",
+          "note": "Or, violet",
+          "type": "alternative"
+        }
+      ]
+    },
+    "9": {
+      "3": [
+        {
+          "phrase": "officers of the king",
+          "note": "Heb. those which did the business that belonged to the King",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "what they would",
+          "note": "Heb. according to their will",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "was brought",
+          "note": "Heb. came",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "let…be hanged",
+          "note": "Heb. let men hang",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "of the same",
+          "note": "Heb. in it",
+          "type": "hebrew"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "consume",
+          "note": "Heb. crush",
+          "type": "hebrew"
+        }
+      ],
+      "25": [
+        {
+          "phrase": "when Esther came",
+          "note": "Heb. when she came",
+          "type": "hebrew"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "Pur",
+          "note": "that is, Lot",
+          "type": "meaning"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "fail",
+          "note": "Heb. pass",
+          "type": "hebrew"
+        }
+      ],
+      "28": [
+        {
+          "phrase": "fail",
+          "note": "Heb. pass",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "perish",
+          "note": "Heb. be ended",
+          "type": "hebrew"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "all authority",
+          "note": "Heb. all strength",
+          "type": "hebrew"
+        }
+      ],
+      "31": [
+        {
+          "phrase": "for themselves",
+          "note": "Heb. for their souls",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "10": {
+      "2": [
+        {
+          "phrase": "advanced him",
+          "note": "Heb. made him great",
+          "type": "hebrew"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,706 @@
+{
+  "bookId": 28,
+  "bookName": "Hosea",
+  "chapters": {
+    "1": {
+      "4": [
+        {
+          "phrase": "avenge",
+          "note": "Heb. visit",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "Loruhamah",
+          "note": "That is, not having obtained mercy",
+          "type": "meaning"
+        },
+        {
+          "phrase": "I will no more",
+          "note": "Heb. I will not add any more to",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "but I will utterly take them away",
+          "note": "Or, that I should altogether pardon them",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "Loammi",
+          "note": "That is, not my people",
+          "type": "meaning"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "in",
+          "note": "Or, instead of that",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "1": [
+        {
+          "phrase": "Ammi",
+          "note": "That is, my people",
+          "type": "meaning"
+        },
+        {
+          "phrase": "Ruhamah",
+          "note": "That is, having obtained mercy",
+          "type": "meaning"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "drink",
+          "note": "Heb. drinks",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "make a wall",
+          "note": "Heb. wall a wall",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "wine",
+          "note": "Heb. new wine",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "which they prepared for Baal",
+          "note": "Or, wherewith they made Baal",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "recover",
+          "note": "Or, take away",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "lewdness",
+          "note": "Heb. folly or villany",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "destroy",
+          "note": "Heb. make desolate",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "comfortably",
+          "note": "Or, friendly. Heb. to her heart",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "Ishi",
+          "note": "that is, my husband",
+          "type": "meaning"
+        },
+        {
+          "phrase": "Baali",
+          "note": "That is, my Lord",
+          "type": "meaning"
+        }
+      ]
+    },
+    "3": {
+      "1": [
+        {
+          "phrase": "of wine",
+          "note": "Heb. of grapes",
+          "type": "hebrew"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "half homer",
+          "note": "Heb. lethech",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "an image",
+          "note": "Heb. a standing or statue",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "4": {
+      "2": [
+        {
+          "phrase": "blood",
+          "note": "Heb. bloods",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "destroy",
+          "note": "Heb. cut off",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "destroyed",
+          "note": "Heb. cut off",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "set their heart on their iniquity",
+          "note": "Heb. lift up their soul to their iniquity",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "punish",
+          "note": "Heb. visit upon",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "reward",
+          "note": "Heb. cause to return",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "I will not",
+          "note": "Or, shall I not? etc.",
+          "type": "alternative"
+        },
+        {
+          "phrase": "shall fall",
+          "note": "Or, be punished",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "is sour",
+          "note": "Heb. is gone",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "rulers",
+          "note": "Heb. shields",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "5": {
+      "2": [
+        {
+          "phrase": "though",
+          "note": "Or, and, etc.",
+          "type": "alternative"
+        },
+        {
+          "phrase": "a rebuker",
+          "note": "Heb. a correction",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "they will not frame",
+          "note": "Heb. they will not give",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "will not frame…doings",
+          "note": "Or, their doings will not suffer them",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "rottenness",
+          "note": "Or, a worm",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "to king Jareb",
+          "note": "Or, to the king of Jareb: Or, to the king that should plead",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "till they acknowledge their offence",
+          "note": "Heb. till they be guilty",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "6": {
+      "4": [
+        {
+          "phrase": "goodness",
+          "note": "Or, mercy, or, kindness",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "and thy judgments are as",
+          "note": "Or, that thy judgments might be, etc.",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "like men",
+          "note": "Or, like Adam",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "polluted with blood",
+          "note": "Or, cunning for blood",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "by consent",
+          "note": "Heb. with one shoulder. Or, to Sichem",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "lewdness",
+          "note": "Or, enormity",
+          "type": "alternative"
+        }
+      ]
+    },
+    "7": {
+      "1": [
+        {
+          "phrase": "wickedness",
+          "note": "Heb. evils",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "spoileth",
+          "note": "Heb. strippeth",
+          "type": "hebrew"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "consider not",
+          "note": "Heb. say not to",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "who ceaseth",
+          "note": "Or, the raiser will cease",
+          "type": "alternative"
+        },
+        {
+          "phrase": "from raising",
+          "note": "Or, from waking",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "with bottles of wine",
+          "note": "Or, with heat through wine",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "made ready",
+          "note": "Or, applied",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "here and there",
+          "note": "Heb. sprinkled",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "destruction",
+          "note": "Heb. spoil",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "have bound",
+          "note": "Or, chastened",
+          "type": "alternative"
+        }
+      ]
+    },
+    "8": {
+      "1": [
+        {
+          "phrase": "thy mouth",
+          "note": "Heb. the roof of thy mouth",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "stalk",
+          "note": "Or, standing corn",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "lovers",
+          "note": "Heb. loves",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "sorrow",
+          "note": "Or, begin",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "for the sacrifice of mine offerings",
+          "note": "Or, in the sacrifices of mine offerings, they etc.",
+          "type": "alternative"
+        }
+      ]
+    },
+    "9": {
+      "1": [
+        {
+          "phrase": "upon",
+          "note": "Or, in, etc.",
+          "type": "alternative"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "winepress",
+          "note": "Or, winefat",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "destruction",
+          "note": "Heb. spoil",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "the pleasant places for their silver, nettles",
+          "note": "Or, their silver shall be desired, the nettle etc. Heb. the desire",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "the spiritual man",
+          "note": "Heb. man of the spirit",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "in",
+          "note": "Or, against",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "miscarrying",
+          "note": "Heb. that casteth the fruit",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "the beloved",
+          "note": "Heb. the desires",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "10": {
+      "1": [
+        {
+          "phrase": "an empty vine, he bringeth forth fruit",
+          "note": "Or, a vine emptying the fruit which it giveth",
+          "type": "alternative"
+        },
+        {
+          "phrase": "images",
+          "note": "Heb. statues, or standing images",
+          "type": "hebrew"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "Their heart is divided",
+          "note": "Or, he hath divided their heart",
+          "type": "alternative"
+        },
+        {
+          "phrase": "break",
+          "note": "Heb. behead",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "priests…",
+          "note": "Or, Chemarims",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "the water",
+          "note": "Heb. the face of the water",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "when they shall bind themselves in their two furrowes",
+          "note": "Or, when I shall bind them for their two transgressions, or in their two habitations",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "her fair neck",
+          "note": "Heb. the beauty of her neck",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "your great wickedness",
+          "note": "Heb. the evil of your evil",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "11": {
+      "4": [
+        {
+          "phrase": "take off",
+          "note": "Heb. lift up",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "none at all would exalt him",
+          "note": "Heb. together they exalted not",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "with the Saints",
+          "note": "Or, with the most holy",
+          "type": "alternative"
+        }
+      ]
+    },
+    "12": {
+      "2": [
+        {
+          "phrase": "punish",
+          "note": "Heb. visit upon",
+          "type": "hebrew"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "had power with God",
+          "note": "Heb. was a prince, or behaved himself princely",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "a merchant",
+          "note": "Or, Canaan",
+          "type": "alternative"
+        },
+        {
+          "phrase": "oppress",
+          "note": "Or, deceive",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "in all my labours they shall find none iniquity in me, that were sin",
+          "note": "Or, all my labours suffice me not, he shall have punishment of iniquity in whom is sin",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "by the ministry",
+          "note": "Heb. by the hand",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "most bitterly",
+          "note": "Heb. with bitterness",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "blood",
+          "note": "Heb. bloods",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "13": {
+      "2": [
+        {
+          "phrase": "they sin more and more",
+          "note": "Heb. they add to sin",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "men that sacrifice",
+          "note": "Or, the sacrificers of men",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "great drought",
+          "note": "Heb. droughts",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "the wild beast",
+          "note": "Heb. the beast of the field",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "is thine help",
+          "note": "Heb. in thy help",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "I will…",
+          "note": "rather, Where is thy king?",
+          "type": "clarification"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "long",
+          "note": "Heb. a time",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "power",
+          "note": "Heb. the hand",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "pleasant vessels",
+          "note": "Heb. vessels of desire",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "14": {
+      "2": [
+        {
+          "phrase": "receive us graciously",
+          "note": "Or, give good",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "grow",
+          "note": "Or, blossom",
+          "type": "alternative"
+        },
+        {
+          "phrase": "cast forth",
+          "note": "Heb. strike",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "spread",
+          "note": "Heb. shall go",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "grow",
+          "note": "Or, blossom",
+          "type": "alternative"
+        },
+        {
+          "phrase": "sent",
+          "note": "Or, memorial",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

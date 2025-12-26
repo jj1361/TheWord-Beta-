@@ -1,0 +1,244 @@
+{
+  "bookId": 66,
+  "bookName": "Revelation",
+  "chapters": {
+    "3": {
+      "14": [
+        {
+          "phrase": "of the Laodiceans",
+          "note": "Or, in Laodicea",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "8": [
+        {
+          "phrase": "rest not",
+          "note": "Gr. they have no rest",
+          "type": "greek"
+        }
+      ]
+    },
+    "5": {
+      "8": [
+        {
+          "phrase": "odours",
+          "note": "Or, incense",
+          "type": "alternative"
+        }
+      ]
+    },
+    "6": {
+      "6": [
+        {
+          "phrase": "A measure",
+          "note": "The word choenix, signifieth a measure containing one wine quart, and the twelfth part of a quart",
+          "type": "clarification"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "unto them",
+          "note": "Or, to him",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "untimely figs",
+          "note": "Or, green figs",
+          "type": "alternative"
+        }
+      ]
+    },
+    "8": {
+      "3": [
+        {
+          "phrase": "offer it with the prayers",
+          "note": "Or, add it to the prayers",
+          "type": "alternative"
+        }
+      ]
+    },
+    "9": {
+      "11": [
+        {
+          "phrase": "Apollyon",
+          "note": "that is to say, A destroyer",
+          "type": "clarification"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "for",
+          "note": "Or, at",
+          "type": "alternative"
+        }
+      ]
+    },
+    "11": {
+      "2": [
+        {
+          "phrase": "leave out",
+          "note": "Gr. cast out",
+          "type": "greek"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "I will give power unto my two witnesses, and they shall prophesy",
+          "note": "Or, I will give unto my two witnesses that they may prophesy",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "of men",
+          "note": "Gr. names of men",
+          "type": "greek"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "destroy",
+          "note": "Or, corrupt",
+          "type": "alternative"
+        }
+      ]
+    },
+    "12": {
+      "1": [
+        {
+          "phrase": "wonder",
+          "note": "Or, sign",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "wonder",
+          "note": "Or, sign",
+          "type": "alternative"
+        }
+      ]
+    },
+    "13": {
+      "1": [
+        {
+          "phrase": "name",
+          "note": "Or, names",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "wounded",
+          "note": "Gr. slain",
+          "type": "greek"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "to continue",
+          "note": "Or, to make war",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "life",
+          "note": "Gr. breath",
+          "type": "greek"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "to receive",
+          "note": "Gr. to give",
+          "type": "greek"
+        }
+      ]
+    },
+    "14": {
+      "4": [
+        {
+          "phrase": "were redeemed",
+          "note": "Gr. were bought",
+          "type": "greek"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "from henceforth, yea, saith the Spirit",
+          "note": "Or, from henceforth saith the Spirit, yea",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "ripe",
+          "note": "Or, dried",
+          "type": "alternative"
+        }
+      ]
+    },
+    "16": {
+      "9": [
+        {
+          "phrase": "scorched",
+          "note": "Or, burned",
+          "type": "alternative"
+        }
+      ]
+    },
+    "17": {
+      "4": [
+        {
+          "phrase": "decked",
+          "note": "Gr. gilded",
+          "type": "greek"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "HARLOTS",
+          "note": "Or, fornications",
+          "type": "alternative"
+        }
+      ]
+    },
+    "18": {
+      "3": [
+        {
+          "phrase": "abundance",
+          "note": "Or, power",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "Thine",
+          "note": "Or, sweet",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "slaves",
+          "note": "Or, bodies",
+          "type": "alternative"
+        }
+      ]
+    },
+    "20": {
+      "13": [
+        {
+          "phrase": "hell",
+          "note": "Or, hell [obviously a typo in 1611]",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

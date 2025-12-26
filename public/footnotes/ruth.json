@@ -1,0 +1,203 @@
+{
+  "bookId": 8,
+  "bookName": "Ruth",
+  "chapters": {
+    "1": {
+      "1": [
+        {
+          "phrase": "ruled",
+          "note": "Heb. judged",
+          "type": "hebrew"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "continued",
+          "note": "Heb. were",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "have a husband",
+          "note": "Or, if I were with an husband",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "tarry",
+          "note": "Heb. hope",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "it grieveth me",
+          "note": "Heb. I have much bitterness",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "Intreat me not to leave thee",
+          "note": "Or, Be not against me",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "was steadfastly",
+          "note": "Heb. strengthened herself",
+          "type": "hebrew"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "Naomi",
+          "note": "that is, pleasant",
+          "type": "meaning"
+        },
+        {
+          "phrase": "Mara",
+          "note": "That is, bitter",
+          "type": "meaning"
+        }
+      ]
+    },
+    "2": {
+      "3": [
+        {
+          "phrase": "hap",
+          "note": "Heb. hap happened",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "Boaz",
+          "note": "Called Mat. 1.5 Booz",
+          "type": "clarification"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "let me find favor",
+          "note": "Or, I find favor",
+          "type": "alternative"
+        },
+        {
+          "phrase": "friendly",
+          "note": "Heb. to the heart",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "reproach her not",
+          "note": "Heb. shame her not",
+          "type": "hebrew"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "one of our next kinsmen",
+          "note": "Or, one that hath right to redeem",
+          "type": "alternative"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "meet thee",
+          "note": "Or, fall upon thee",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "4": [
+        {
+          "phrase": "uncover his feet",
+          "note": "Or, lift up the clothes that are on his feet",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "turned",
+          "note": "Or, took hold on",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "a near kinsman",
+          "note": "Or, one that hath right to redeem",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "city",
+          "note": "Heb. gate",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "vail",
+          "note": "Or, sheet, or, apron",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "4": [
+        {
+          "phrase": "I thought to advertise thee",
+          "note": "Heb. I said, I will reveal in thine ear",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "Do thou worthily",
+          "note": "Or, get thee riches or power",
+          "type": "alternative"
+        },
+        {
+          "phrase": "be famous",
+          "note": "Heb. proclaim thy name",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "left thee",
+          "note": "Heb. caused to cease unto thee",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "kinsman",
+          "note": "Or, redeemer",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "a nourisher",
+          "note": "Heb. to nourish",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "thine old age",
+          "note": "Heb. thy gray hairs",
+          "type": "hebrew"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "Salmon",
+          "note": "Or, Salmah",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

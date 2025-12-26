@@ -1,0 +1,510 @@
+{
+  "bookId": 21,
+  "bookName": "Ecclesiastes",
+  "chapters": {
+    "1": {
+      "5": [
+        {
+          "phrase": "hasteth",
+          "note": "Heb. panteth",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "return again",
+          "note": "Heb. return to go",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "to be exercised therewith",
+          "note": "Or, to afflict them",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "that which is wanting",
+          "note": "Heb. defect",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "had great experience",
+          "note": "Heb. had seen much",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "2": {
+      "3": [
+        {
+          "phrase": "to give myself unto wine",
+          "note": "Heb. to draw my flesh with wine",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "all the days of their life",
+          "note": "Heb. the number of the days of their life",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "servants born in my house",
+          "note": "Heb. sons of my house",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "as musical instruments",
+          "note": ", and that of all sorts: Heb. musical instrument, and instruments",
+          "type": "clarification"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "even that which hath been already done",
+          "note": "Or, in those things which have been already done",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "that wisdom excelleth folly",
+          "note": "Heb. that there is an excellency in Wisdom more then in folly, etc",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "happeneth even to me",
+          "note": "Heb. happeneth to me, even to me",
+          "type": "hebrew"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "taken",
+          "note": "Heb. laboured",
+          "type": "hebrew"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "leave",
+          "note": "Heb. give",
+          "type": "hebrew"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "should make his soul enjoy",
+          "note": "Or, delight his senses",
+          "type": "alternative"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "in his sight",
+          "note": "Heb. before him",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "3": {
+      "1": [
+        {
+          "phrase": "to be born",
+          "note": "Heb. to bear",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "to refrain",
+          "note": "Heb. to be far from",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "get",
+          "note": "Or, seek",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "that which is past",
+          "note": "Heb. that which is driven away",
+          "type": "hebrew"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "that God might manifest them",
+          "note": "Or, that they might clear God, and see, etc.",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "of man",
+          "note": "Heb. of the sons of man",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "goeth upward",
+          "note": "Heb. is ascending",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "4": {
+      "1": [
+        {
+          "phrase": "side",
+          "note": "Heb. hand",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "every right work",
+          "note": "Heb. all the rightness of work",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "for this a man is envied of his neighbour",
+          "note": "Heb. this is the envy of a man from his neighbour",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "who will no more be admonished",
+          "note": "Heb. who knoweth not to be admonished",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "5": {
+      "2": [
+        {
+          "phrase": "thing",
+          "note": "Or, word",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "at the matter",
+          "note": "Heb. at the will or purpose",
+          "type": "hebrew"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "it is good and comely",
+          "note": "Heb. there is a good which is comely, etc.",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "all the days of his life",
+          "note": "Heb. the number of the days",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "[symbol missing in 1611 edition]",
+          "note": "Or, though he give not much, yet he remembreth etc.",
+          "type": "alternative"
+        }
+      ]
+    },
+    "6": {
+      "7": [
+        {
+          "phrase": "appetite",
+          "note": "Heb. soul",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "then the wandering of the desire",
+          "note": "Heb. then the walking of the soul",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "all the days of his vain life",
+          "note": "Heb. the number of the days of the life of his vanity",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "7": {
+      "3": [
+        {
+          "phrase": "Sorrow",
+          "note": "Or, anger",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "crackling",
+          "note": "Heb. sound",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "wisely",
+          "note": "Heb. out of wisdom",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "is good with an inheritance",
+          "note": "Or, as good as an inheritance, yea, better too",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "defence",
+          "note": "Heb. shadow",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "set",
+          "note": "Heb. made",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "destroy thyself?",
+          "note": "Heb. be desolate?",
+          "type": "hebrew"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "take no heed",
+          "note": "Heb. give not thine heart",
+          "type": "hebrew"
+        }
+      ],
+      "25": [
+        {
+          "phrase": "I applied mine heart",
+          "note": "Heb. I and mine heart compassed",
+          "type": "hebrew"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "who so pleaseth God",
+          "note": "He that is good before God",
+          "type": "clarification"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "counting one by one to find out the account",
+          "note": "Or, weighing one thing after another to find out the reason",
+          "type": "alternative"
+        }
+      ]
+    },
+    "8": {
+      "1": [
+        {
+          "phrase": "the boldness",
+          "note": "Heb. the strength",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "shall feel",
+          "note": "Heb. shall know",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "when it shall be?",
+          "note": "Or, how it shall be?",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "discharge",
+          "note": "Or, casting of weapons",
+          "type": "alternative"
+        }
+      ]
+    },
+    "9": {
+      "1": [
+        {
+          "phrase": "I considered in my heart",
+          "note": "Heb. I gave, or set to my heart",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "Live joyfully",
+          "note": "Heb. see, or enjoy life",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "10": {
+      "1": [
+        {
+          "phrase": "Dead flies",
+          "note": "Heb. Flies of death",
+          "type": "hebrew"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "his wisdom",
+          "note": "Heb. his heart",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "from",
+          "note": "Heb. from before",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "in great dignity",
+          "note": "Heb. in great heights",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "a babbler",
+          "note": "Heb. the master of the tongue",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "gracious",
+          "note": "Heb. grace",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "his talk",
+          "note": "Heb. his mouth",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "is full of words",
+          "note": "Heb. multiplieth words",
+          "type": "hebrew"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "merry",
+          "note": "Heb. maketh glad the life",
+          "type": "hebrew"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "thought",
+          "note": "Or, conscience",
+          "type": "alternative"
+        }
+      ]
+    },
+    "11": {
+      "1": [
+        {
+          "phrase": "upon the waters",
+          "note": "Heb. upon the face of the waters",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "shall prosper",
+          "note": "Heb. shall be right",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "sorrow",
+          "note": "Or, anger",
+          "type": "alternative"
+        }
+      ]
+    },
+    "12": {
+      "3": [
+        {
+          "phrase": "the grinders cease, because they are few",
+          "note": "Or, the grinders fail, because they grind little",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "moreover, because the preacher was wise",
+          "note": "Or, the more wise the preacher was, etc.",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "acceptable words",
+          "note": "Heb. words of delight",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "study",
+          "note": "Or, reading",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "Let us hear the conclusion of the whole matter",
+          "note": "Or, the end of the matter, even all that hath been heard, is",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

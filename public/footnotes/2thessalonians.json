@@ -1,0 +1,75 @@
+{
+  "bookId": 53,
+  "bookName": "2 Thessalonians",
+  "chapters": {
+    "1": {
+      "7": [
+        {
+          "phrase": "his mighty angels",
+          "note": "Gr. the angels of his power",
+          "type": "greek"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "taking",
+          "note": "Or, yielding",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "count",
+          "note": "Or, vouchsafe",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "6": [
+        {
+          "phrase": "withholdeth",
+          "note": "Or, holdeth",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "1": [
+        {
+          "phrase": "may have free",
+          "note": "Gr. may run",
+          "type": "greek"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "unreasonable",
+          "note": "Gr. absurd",
+          "type": "greek"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "the patient waiting for Christ",
+          "note": "Or, the patience of Christ",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "be not weary",
+          "note": "Or, faint not",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "by this Epistle note that man",
+          "note": "Or, signify that man by an Epistle",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

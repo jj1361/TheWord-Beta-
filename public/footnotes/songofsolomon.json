@@ -1,0 +1,315 @@
+{
+  "bookId": 22,
+  "bookName": "Song of Solomon",
+  "chapters": {
+    "1": {
+      "2": [
+        {
+          "phrase": "thy Love",
+          "note": "Heb. thy loves",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "the upright love thee",
+          "note": "Or, they love thee uprightly",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "as one that turneth aside",
+          "note": "Or, as one that is vailed",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "Camphire",
+          "note": "Or, Cypress",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "my love",
+          "note": "Or, my companion",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "rafters",
+          "note": "Or, galleries",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "3": [
+        {
+          "phrase": "I sat down under his shadow with great delight",
+          "note": "Heb. I delighted and sat down, etc.",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "taste",
+          "note": "Heb. palate",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "banqueting house",
+          "note": "Heb. house of wine",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "comfort me with apples",
+          "note": "Heb. straw me with apples",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "I charge you",
+          "note": "Heb. I adjure you",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "shewing himself",
+          "note": "Heb. flourishing",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "of Bether",
+          "note": "Or, of division",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "9": [
+        {
+          "phrase": "a chariot",
+          "note": "Or, a bed",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "1": [
+        {
+          "phrase": "that appear",
+          "note": "Or, that eat of, etc.",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "break",
+          "note": "Heb. breathe",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "ravished",
+          "note": "Or, taken away my heart",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "enclosed",
+          "note": "Heb. barred",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "Camphire",
+          "note": "Or, Cypress",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "1": [
+        {
+          "phrase": "yea drink abundantly, O beloved!",
+          "note": "Or, and be drunken with loves",
+          "type": "alternative"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "for him",
+          "note": "Or, (as some read) in me",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "sweet smelling",
+          "note": "Heb. passing, or running about",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "that",
+          "note": "Heb. what",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "the chiefest",
+          "note": "Heb. a standard bearer",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "bushy",
+          "note": "Or, curled",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "fitly set",
+          "note": "Heb. sitting in fullness, that is fitly placed, and set as a precious stone in the foil of a ring",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "sweet flowers",
+          "note": "Or, towers of perfumes",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "his mouth",
+          "note": "Heb. his palate",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "6": {
+      "5": [
+        {
+          "phrase": "overcome me",
+          "note": "Or, they have puffed me up",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "or ever I was aware",
+          "note": "Heb. I knew not",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "made me like the chariots of Amminadab",
+          "note": "Or, set me on the chariot of my willing people",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "of two armies",
+          "note": "Or of Mahanaim",
+          "type": "alternative"
+        }
+      ]
+    },
+    "7": {
+      "2": [
+        {
+          "phrase": "liquor",
+          "note": "Heb. mixture",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "Carmel",
+          "note": "Or, crimson",
+          "type": "alternative"
+        },
+        {
+          "phrase": "held",
+          "note": "Heb. bound",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "sweetly",
+          "note": "Heb. straightly",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "of those that are asleep",
+          "note": "Or, of the ancient",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "appear",
+          "note": "Heb. open",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "8": {
+      "1": [
+        {
+          "phrase": "I should not be despised",
+          "note": "Heb. they should not despise me",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "that ye stir not up",
+          "note": "Heb. why should ye stir up, or why, etc.?",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "cruel",
+          "note": "Heb. hard",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "favour",
+          "note": "Heb. peace",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "make haste",
+          "note": "Heb. flee away",
+          "type": "hebrew"
+        }
+      ]
+    }
+  }
+}

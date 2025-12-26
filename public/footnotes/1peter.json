@@ -1,0 +1,168 @@
+{
+  "bookId": 60,
+  "bookName": "1 Peter",
+  "chapters": {
+    "1": {
+      "3": [
+        {
+          "phrase": "abundant",
+          "note": "Gr. much",
+          "type": "greek"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "for you",
+          "note": "Or, for us",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "to the end",
+          "note": "Gr. perfectly",
+          "type": "greek"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "For",
+          "note": "Or, for that",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "5": [
+        {
+          "phrase": "are built up",
+          "note": "Or, be ye built",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "he is precious",
+          "note": "Or, he is an honour",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "peculiar people",
+          "note": "Or, a purchased people",
+          "type": "alternative"
+        },
+        {
+          "phrase": "praises",
+          "note": "Or, virtues",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "whereas",
+          "note": "Or, wherein",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "using",
+          "note": "Gr. having",
+          "type": "greek"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "Honour",
+          "note": "Or, esteem",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "acceptable",
+          "note": "Or, thank",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "for us",
+          "note": "Some read, for you",
+          "type": "clarification"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "committed himself",
+          "note": "Or, committed his cause",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "on",
+          "note": "Or, to",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "6": [
+        {
+          "phrase": "daughters",
+          "note": "Gr. children",
+          "type": "greek"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "love as brethren",
+          "note": "Or, loving to the brethren",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "against",
+          "note": "Gr. upon",
+          "type": "greek"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "fear",
+          "note": "Or, reverence",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "8": [
+        {
+          "phrase": "shall",
+          "note": "Or, will",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "2": [
+        {
+          "phrase": "which is among you",
+          "note": "Or, as much as in you is",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "being lords over",
+          "note": "Or, overruling",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

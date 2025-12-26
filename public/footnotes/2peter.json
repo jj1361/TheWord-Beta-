@@ -1,0 +1,75 @@
+{
+  "bookId": 61,
+  "bookName": "2 Peter",
+  "chapters": {
+    "1": {
+      "3": [
+        {
+          "phrase": "to",
+          "note": "Or, by",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "in old time",
+          "note": "Or, at any time",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "2": [
+        {
+          "phrase": "pernicious ways",
+          "note": "Or, lascivious ways, as some copies read",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "government",
+          "note": "Or, dominion",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "against them",
+          "note": "some read against themselves",
+          "type": "clarification"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "adultery",
+          "note": "Gr. an adulteress",
+          "type": "greek"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "clean",
+          "note": "Or, for a little, or a while as some read",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "5": [
+        {
+          "phrase": "standing",
+          "note": "Gr. consisting",
+          "type": "greek"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "hasting unto the coming",
+          "note": "Or, hasting the coming",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

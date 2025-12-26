@@ -1,0 +1,213 @@
+{
+  "bookId": 49,
+  "bookName": "Ephesians",
+  "chapters": {
+    "1": {
+      "3": [
+        {
+          "phrase": "places",
+          "note": "Or, things",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "heaven",
+          "note": "Gr. the heavens",
+          "type": "greek"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "trusted",
+          "note": "Or, hoped",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "in the knowledge",
+          "note": "Or, for the acknowledgement",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "of his might power",
+          "note": "Gr. of the might of his power",
+          "type": "greek"
+        }
+      ]
+    },
+    "2": {
+      "3": [
+        {
+          "phrase": "the desires",
+          "note": "Gr. the wills",
+          "type": "greek"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "ordained",
+          "note": "Or, prepared",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "thereby",
+          "note": "Or, in himself",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "3": [
+        {
+          "phrase": "afore",
+          "note": "Or, a little before",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "1": [
+        {
+          "phrase": "of the Lord",
+          "note": "Or, in the Lord",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "captivity captive",
+          "note": "Or, a multitude of captives",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "fill",
+          "note": "Or, fulfill",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "in the unity",
+          "note": "Or, into the unity",
+          "type": "alternative"
+        },
+        {
+          "phrase": "stature",
+          "note": "Or, age",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "speaking",
+          "note": "Or, being sincere",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "blindness",
+          "note": "Or, hardness",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "true holiness",
+          "note": "Or, holiness of truth",
+          "type": "alternative"
+        }
+      ],
+      "28": [
+        {
+          "phrase": "to give",
+          "note": "Or, to distribute",
+          "type": "alternative"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "to use of the edifying",
+          "note": "Or, to edify profitably",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "6": [
+        {
+          "phrase": "disobedience",
+          "note": "Or, unbelief",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "reproved",
+          "note": "Or, discovered",
+          "type": "alternative"
+        }
+      ]
+    },
+    "6": {
+      "9": [
+        {
+          "phrase": "forbearing",
+          "note": "Or, moderating",
+          "type": "alternative"
+        },
+        {
+          "phrase": "your master also",
+          "note": "Some read, both your, and their master",
+          "type": "clarification"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "spiritual wickedness",
+          "note": "Gr. wicked spirits",
+          "type": "greek"
+        },
+        {
+          "phrase": "high places",
+          "note": "Or, heavenly",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "having done all",
+          "note": "Or, having overcome all",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "in bonds",
+          "note": "Or, in a chain",
+          "type": "alternative"
+        },
+        {
+          "phrase": "therein",
+          "note": "Or, thereof",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "in sincerity",
+          "note": "Or, with incorruption",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

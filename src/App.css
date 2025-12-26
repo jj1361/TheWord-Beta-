@@ -193,6 +193,11 @@ body {
   max-width: none;
 }
 
+/* Bottom Panel Note Editor Layout */
+.app-container.with-bottom-panel {
+  padding-bottom: 360px; /* Make room for bottom panel */
+}
+
 .webcam-section {
   width: clamp(300px, 40vw, 600px);
   flex-shrink: 0;
@@ -522,6 +527,11 @@ body {
   .content-with-webcam:has(.right-panel) .verses-section {
     width: 100% !important;
     flex: 0 0 100%;
+  }
+
+  /* Bottom panel takes less space on mobile */
+  .app-container.with-bottom-panel {
+    padding-bottom: 300px;
   }
 }
 

@@ -31,9 +31,10 @@ import { lexiconService } from './services/lexiconService';
 import { personService } from './services/personService';
 import { notesService } from './services/notesService';
 import { crossRefService } from './services/crossRefService';
+import { footnoteService } from './services/footnoteService';
 import MediaControlPanel from './components/MediaControlPanel';
 import MediaDisplayScreen from './components/MediaDisplayScreen';
-import { Chapter, BIBLE_BOOKS } from './types/bible';
+import { Chapter, BIBLE_BOOKS, FootnoteEntry } from './types/bible';
 import { getHebrewLetterInfo, HebrewLetterInfo } from './config/hebrewLetters';
 import { WordImageMapping } from './config/youthModeConfig';
 import { getShortcutAction, ShortcutActions } from './config/keyboardShortcuts';
@@ -187,6 +188,8 @@ function ScriptureView() {
   const [topics, setTopics] = useState<Topic[]>(() => notesService.getTopics());
   const [showNotesPanel, setShowNotesPanel] = useState(false);
   const [showNoteEditor, setShowNoteEditor] = useState(false);
+  const [noteEditorFullscreen, setNoteEditorFullscreen] = useState(false);
+  const [noteEditorWideView, setNoteEditorWideView] = useState(false);
   const [showTopicsManager, setShowTopicsManager] = useState(false);
   const [editingNote, setEditingNote] = useState<Note | undefined>();
   const [noteVerses, setNoteVerses] = useState<VerseReference[] | undefined>();
@@ -206,6 +209,14 @@ function ScriptureView() {
   const [versesWithCrossRefs, setVersesWithCrossRefs] = useState<Set<number>>(new Set());
   // Pending cross ref target from context menu (to open modal with pre-populated target)
   const [pendingCrossRefTarget, setPendingCrossRefTarget] = useState<string | null>(null);
+
+  // Footnotes (1611 KJV Marginal Notes) state
+  const [chapterFootnotes, setChapterFootnotes] = useState<Map<number, FootnoteEntry[]>>(new Map());
+  const [showFootnotes, setShowFootnotes] = useState(() => {
+    // Load footnote preference from localStorage (default to true)
+    const saved = localStorage.getItem('showFootnotes');
+    return saved !== 'false'; // Default to true if not set
+  });
 
   // Media presentation state
   const [showMediaControl, setShowMediaControl] = useState(false);
@@ -748,6 +759,20 @@ function ScriptureView() {
     loadCrossRefs();
   }, [currentBookId, currentChapter]);
 
+  // Load footnotes for current chapter
+  useEffect(() => {
+    const loadFootnotes = async () => {
+      const footnotes = await footnoteService.getChapterFootnotes(currentBookId, currentChapter);
+      setChapterFootnotes(footnotes);
+    };
+    loadFootnotes();
+  }, [currentBookId, currentChapter]);
+
+  // Save footnote preference
+  useEffect(() => {
+    localStorage.setItem('showFootnotes', showFootnotes.toString());
+  }, [showFootnotes]);
+
   // Handler for cross-reference button click
   const handleCrossRefClick = (verseNum: number) => {
     if (crossRefContext?.verse === verseNum && crossRefContext?.bookId === currentBookId && crossRefContext?.chapter === currentChapter) {
@@ -1026,6 +1051,8 @@ function ScriptureView() {
                 maxTextSize={MAX_TEXT_SIZE}
                 onIncreaseTextSize={handleIncreaseTextSize}
                 onDecreaseTextSize={handleDecreaseTextSize}
+                showFootnotes={showFootnotes}
+                onToggleFootnotes={() => setShowFootnotes(!showFootnotes)}
               />
               <div className="logo-title-container">
                 <a href="https://goshengroup.net"><img src="/Logo.png" alt="The Word Logo" className="app-logo fade-element" /></a>
@@ -1119,9 +1146,12 @@ function ScriptureView() {
         maxTextSize={MAX_TEXT_SIZE}
         onIncreaseTextSize={handleIncreaseTextSize}
         onDecreaseTextSize={handleDecreaseTextSize}
+        // Footnotes props
+        showFootnotes={showFootnotes}
+        onToggleFootnotes={() => setShowFootnotes(!showFootnotes)}
       />
 
-      <div className="app-container">
+      <div className={`app-container ${showNoteEditor && !noteEditorFullscreen ? 'with-bottom-panel' : ''}`}>
         <div className={`content-with-webcam ${(webcamFullscreen && webcamEnabled) || screenShareEnabled ? 'webcam-fullscreen' : ''}`}>
           {screenShareEnabled ? (
             <div
@@ -1221,6 +1251,8 @@ function ScriptureView() {
                   maxTextSize={MAX_TEXT_SIZE}
                   onIncreaseTextSize={handleIncreaseTextSize}
                   onDecreaseTextSize={handleDecreaseTextSize}
+                  chapterFootnotes={chapterFootnotes}
+                  showFootnotes={showFootnotes}
                 />
               </div>
 
@@ -1383,7 +1415,7 @@ function ScriptureView() {
         </div>
       )}
 
-      {/* Note Editor Side Panel */}
+      {/* Note Editor - Bottom Panel or Fullscreen */}
       {showNoteEditor && (
         <NoteEditor
           note={editingNote}
@@ -1394,9 +1426,15 @@ function ScriptureView() {
             setShowNoteEditor(false);
             setEditingNote(undefined);
             setNoteVerses(undefined);
+            setNoteEditorFullscreen(false);
+            setNoteEditorWideView(false);
           }}
           onDelete={editingNote ? () => handleDeleteNote(editingNote.id) : undefined}
-          mode="panel"
+          mode={noteEditorFullscreen ? 'panel' : 'bottom'}
+          isFullscreen={noteEditorFullscreen}
+          onToggleFullscreen={() => setNoteEditorFullscreen(!noteEditorFullscreen)}
+          isWideView={noteEditorWideView}
+          onToggleWideView={() => setNoteEditorWideView(!noteEditorWideView)}
         />
       )}
 

@@ -1,0 +1,192 @@
+{
+  "bookId": 39,
+  "bookName": "Malachi",
+  "chapters": {
+    "1": {
+      "1": [
+        {
+          "phrase": "by Malachi",
+          "note": "Heb. by the hand of Malachi",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "from",
+          "note": "Or, upon. Heb. from upon",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "Ye offer",
+          "note": "Or, bring unto etc.",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "for sacrifice",
+          "note": "Heb. to sacrifice",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "God",
+          "note": "Heb. the face of God",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "by your means",
+          "note": "Heb. from your hand",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "ye have snuffed at it",
+          "note": "Or, whereas you might have blown it away",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "which hath in his flock",
+          "note": "Heb. in whose flock is",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "2": {
+      "3": [
+        {
+          "phrase": "corrupt",
+          "note": "Or, reprove",
+          "type": "alternative"
+        },
+        {
+          "phrase": "spread",
+          "note": "Heb. scatter",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "one shall take you away with it",
+          "note": "Or, it shall take you away to it",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "stumble at the law",
+          "note": "Or, fall in the law",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "have been partial",
+          "note": "Or, lifted up the face against. Heb. accepted faces",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "he loved",
+          "note": "Or, ought to love",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "the Master and the scholar",
+          "note": "Or, him that waketh and him that answereth",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "residue",
+          "note": "Or, excellency",
+          "type": "alternative"
+        },
+        {
+          "phrase": "a godly seed",
+          "note": "Heb. a seed of God",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "treacherously",
+          "note": "Or, unfaithfully",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "he hateth",
+          "note": "Or, if he hate her, put her away",
+          "type": "alternative"
+        },
+        {
+          "phrase": "putting away",
+          "note": "Heb. to put away",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "3": {
+      "4": [
+        {
+          "phrase": "former",
+          "note": "Or, ancient",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "oppress",
+          "note": "Or, defraud",
+          "type": "alternative"
+        },
+        {
+          "phrase": "pour you out",
+          "note": "Heb. empty out",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "destroy",
+          "note": "Heb. corrupt",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "ordinance",
+          "note": "Heb. observation",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "mournfully",
+          "note": "Heb. in black",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "are set up",
+          "note": "Heb. are built",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "jewels",
+          "note": "Or, special treasure",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

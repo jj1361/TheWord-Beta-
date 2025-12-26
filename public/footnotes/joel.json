@@ -1,0 +1,185 @@
+{
+  "bookId": 29,
+  "bookName": "Joel",
+  "chapters": {
+    "1": {
+      "4": [
+        {
+          "phrase": "That which the palmerworm hath left",
+          "note": "Heb. The residue of the palmerworm",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "barked my fig tree",
+          "note": "Heb. laid my fig tree for a barking",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "dried up",
+          "note": "Or, ashamed",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "solemn assembly",
+          "note": "Or, day of restrain",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "seed",
+          "note": "Heb. grains",
+          "type": "hebrew"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "pastures",
+          "note": "Or, habitations",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "1": [
+        {
+          "phrase": "trumpet",
+          "note": "Or, cornet",
+          "type": "alternative"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "of many generations",
+          "note": "Heb. of generation and generation",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "blackness",
+          "note": "Heb. pot",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "sword",
+          "note": "Or, dart",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "rule over them",
+          "note": "Or, use a byword against them",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "he hath done great things",
+          "note": "Heb. he hath magnified to do",
+          "type": "hebrew"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "former rain",
+          "note": "Or, a teacher of righteousness",
+          "type": "alternative"
+        },
+        {
+          "phrase": "moderately",
+          "note": "Heb. according to righteousness",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "3": {
+      "5": [
+        {
+          "phrase": "pleasant things",
+          "note": "Heb. desireable",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "the Grecians",
+          "note": "Heb. the sons of the Grecians",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "prepare",
+          "note": "Heb. sanctify",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "pruninghooks",
+          "note": "Or, scythes",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "cause thy mighty ones to come down, O LORD",
+          "note": "Or, the Lord shall be brought down",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "decision",
+          "note": "Or, concision, or threshing",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "hope",
+          "note": "Heb. place of repair, or harbour",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "holy",
+          "note": "Heb. holiness",
+          "type": "hebrew"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "flow",
+          "note": "Heb. go",
+          "type": "hebrew"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "dwell",
+          "note": "Or, abide",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "for the LORD dwelleth in Zion",
+          "note": "Or, Even I the Lord that dwelleth in Zion",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

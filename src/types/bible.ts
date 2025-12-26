@@ -31,6 +31,29 @@ export interface KJVsVerse {
   phrases: KJVsPhrase[];
 }
 
+// 1611 KJV Marginal Notes (Footnotes)
+export type FootnoteType = 'hebrew' | 'greek' | 'alternative' | 'meaning' | 'clarification';
+
+export interface FootnoteEntry {
+  phrase: string;        // The KJV text phrase being noted
+  note: string;          // The marginal note content
+  type: FootnoteType;    // Type of note for styling/filtering
+}
+
+export interface VerseFootnotes {
+  [verseNum: number]: FootnoteEntry[];
+}
+
+export interface ChapterFootnotes {
+  [chapterNum: number]: VerseFootnotes;
+}
+
+export interface BookFootnotes {
+  bookId: number;
+  bookName: string;
+  chapters: ChapterFootnotes;
+}
+
 export interface Chapter {
   bookName: string;
   bookId: number;

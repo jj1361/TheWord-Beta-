@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useCallback, useEffect } from 'react';
 import RichTextEditor from './RichTextEditor';
 import { Note, Topic, VerseReference, RichTextContent } from '../types/notes';
 import './NoteEditor.css';
+
+const MIN_HEIGHT = 200;
+const MAX_HEIGHT_PERCENT = 80; // Max 80% of viewport height
+const DEFAULT_HEIGHT = 350;
 
 interface NoteEditorProps {
   note?: Note;
@@ -15,7 +19,11 @@ interface NoteEditorProps {
   ) => void;
   onCancel: () => void;
   onDelete?: () => void;
-  mode?: 'modal' | 'panel';
+  mode?: 'modal' | 'panel' | 'integrated' | 'bottom';
+  isFullscreen?: boolean;
+  onToggleFullscreen?: () => void;
+  isWideView?: boolean;
+  onToggleWideView?: () => void;
 }
 
 const NoteEditor: React.FC<NoteEditorProps> = ({
@@ -26,6 +34,10 @@ const NoteEditor: React.FC<NoteEditorProps> = ({
   onCancel,
   onDelete,
   mode = 'modal',
+  isFullscreen = false,
+  onToggleFullscreen,
+  isWideView = false,
+  onToggleWideView,
 }) => {
   const [title, setTitle] = useState(note?.title || '');
   const [content, setContent] = useState<RichTextContent>(
@@ -38,6 +50,54 @@ const NoteEditor: React.FC<NoteEditorProps> = ({
     note?.verses || initialVerses || []
   );
   const [showTopicSelector, setShowTopicSelector] = useState(false);
+
+  // Draggable resize state for bottom panel
+  const [panelHeight, setPanelHeight] = useState(() => {
+    const saved = localStorage.getItem('noteEditorHeight');
+    return saved ? parseInt(saved, 10) : DEFAULT_HEIGHT;
+  });
+  const [isDragging, setIsDragging] = useState(false);
+  const dragStartY = useRef(0);
+  const dragStartHeight = useRef(0);
+
+  // Handle drag start
+  const handleDragStart = useCallback((e: React.MouseEvent | React.TouchEvent) => {
+    e.preventDefault();
+    setIsDragging(true);
+    const clientY = 'touches' in e ? e.touches[0].clientY : e.clientY;
+    dragStartY.current = clientY;
+    dragStartHeight.current = panelHeight;
+  }, [panelHeight]);
+
+  // Handle drag move
+  useEffect(() => {
+    if (!isDragging) return;
+
+    const handleMove = (e: MouseEvent | TouchEvent) => {
+      const clientY = 'touches' in e ? e.touches[0].clientY : e.clientY;
+      const deltaY = dragStartY.current - clientY;
+      const maxHeight = window.innerHeight * (MAX_HEIGHT_PERCENT / 100);
+      const newHeight = Math.min(maxHeight, Math.max(MIN_HEIGHT, dragStartHeight.current + deltaY));
+      setPanelHeight(newHeight);
+    };
+
+    const handleEnd = () => {
+      setIsDragging(false);
+      localStorage.setItem('noteEditorHeight', panelHeight.toString());
+    };
+
+    document.addEventListener('mousemove', handleMove);
+    document.addEventListener('mouseup', handleEnd);
+    document.addEventListener('touchmove', handleMove);
+    document.addEventListener('touchend', handleEnd);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMove);
+      document.removeEventListener('mouseup', handleEnd);
+      document.removeEventListener('touchmove', handleMove);
+      document.removeEventListener('touchend', handleEnd);
+    };
+  }, [isDragging, panelHeight]);
 
   const isEditing = !!note;
 
@@ -76,22 +136,58 @@ const NoteEditor: React.FC<NoteEditorProps> = ({
   const editorContent = (
     <>
       <div className="note-editor-header">
-        <h2>{isEditing ? 'Edit Note' : 'New Note'}</h2>
-        <button className="note-editor-close" onClick={onCancel}>
-          ×
-        </button>
+        <input
+          type="text"
+          className="note-title-input"
+          placeholder={isEditing ? 'Edit Note' : 'New Note'}
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+        <div className="note-editor-header-actions">
+          {isEditing && onDelete && (
+            <button
+              className="note-header-btn note-header-btn-delete"
+              onClick={() => {
+                if (window.confirm('Are you sure you want to delete this note?')) {
+                  onDelete();
+                }
+              }}
+              title="Delete note"
+            >
+              Delete
+            </button>
+          )}
+          <button className="note-header-btn note-header-btn-secondary" onClick={onCancel}>
+            Cancel
+          </button>
+          <button className="note-header-btn note-header-btn-primary" onClick={handleSave}>
+            {isEditing ? 'Update' : 'Save'}
+          </button>
+          {onToggleWideView && (
+            <button
+              className="note-editor-view-btn"
+              onClick={onToggleWideView}
+              title={isWideView ? 'Normal view' : 'Wide view (match chapter width)'}
+            >
+              {isWideView ? '⊏⊐' : '⊐⊏'}
+            </button>
+          )}
+          {onToggleFullscreen && (
+            <button
+              className="note-editor-fullscreen-btn"
+              onClick={onToggleFullscreen}
+              title={isFullscreen ? 'Exit fullscreen (Esc)' : 'Fullscreen'}
+            >
+              {isFullscreen ? '⊡' : '⛶'}
+            </button>
+          )}
+          <button className="note-editor-close" onClick={onCancel}>
+            ×
+          </button>
+        </div>
       </div>
 
       <div className="note-editor-body">
-        <div className="note-editor-field">
-          <input
-            type="text"
-            className="note-title-input"
-            placeholder="Note title (optional)"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-          />
-        </div>
 
         {attachedVerses.length > 0 && (
           <div className="note-attached-verses">
@@ -175,35 +271,44 @@ const NoteEditor: React.FC<NoteEditorProps> = ({
           )}
         </div>
       </div>
-
-      <div className="note-editor-footer">
-        {isEditing && onDelete && (
-          <button
-            className="note-btn note-btn-delete"
-            onClick={() => {
-              if (window.confirm('Are you sure you want to delete this note?')) {
-                onDelete();
-              }
-            }}
-          >
-            Delete
-          </button>
-        )}
-        <div className="note-editor-actions">
-          <button className="note-btn note-btn-secondary" onClick={onCancel}>
-            Cancel
-          </button>
-          <button className="note-btn note-btn-primary" onClick={handleSave}>
-            {isEditing ? 'Update' : 'Save'}
-          </button>
-        </div>
-      </div>
     </>
   );
 
+  if (mode === 'bottom') {
+    return (
+      <div
+        className={`note-editor-bottom ${isFullscreen ? 'fullscreen' : ''} ${isWideView ? 'wide-view' : ''} ${isDragging ? 'dragging' : ''}`}
+        style={!isFullscreen ? { height: `${panelHeight}px` } : undefined}
+      >
+        {/* Drag handle at top */}
+        <div
+          className="note-editor-drag-handle"
+          onMouseDown={handleDragStart}
+          onTouchStart={handleDragStart}
+          title="Drag to resize"
+        >
+          <div className="drag-handle-bar" />
+        </div>
+        <div className="note-editor note-editor-bottom-content">
+          {editorContent}
+        </div>
+      </div>
+    );
+  }
+
+  if (mode === 'integrated') {
+    return (
+      <div className={`note-editor-integrated ${isFullscreen ? 'fullscreen' : ''}`}>
+        <div className="note-editor note-editor-integrated-content">
+          {editorContent}
+        </div>
+      </div>
+    );
+  }
+
   if (mode === 'panel') {
     return (
-      <div className="note-editor-panel">
+      <div className={`note-editor-panel ${isFullscreen ? 'fullscreen' : ''}`}>
         <div className="note-editor note-editor-panel-content">
           {editorContent}
         </div>
@@ -213,7 +318,7 @@ const NoteEditor: React.FC<NoteEditorProps> = ({
 
   return (
     <div className="note-editor-overlay">
-      <div className="note-editor">
+      <div className={`note-editor ${isFullscreen ? 'fullscreen' : ''}`}>
         {editorContent}
       </div>
     </div>

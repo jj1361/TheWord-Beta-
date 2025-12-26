@@ -1,0 +1,325 @@
+{
+  "bookId": 43,
+  "bookName": "John",
+  "chapters": {
+    "1": {
+      "12": [
+        {
+          "phrase": "power",
+          "note": "Or, the right or privilege",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "that Prophet?",
+          "note": "Or, a Prophet",
+          "type": "alternative"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "taketh away",
+          "note": "Or, beareth",
+          "type": "alternative"
+        }
+      ],
+      "38": [
+        {
+          "phrase": "dwellest",
+          "note": "Or, abidest",
+          "type": "alternative"
+        }
+      ],
+      "39": [
+        {
+          "phrase": "about the tenth hour",
+          "note": "That was two hours before night",
+          "type": "clarification"
+        }
+      ],
+      "41": [
+        {
+          "phrase": "the Christ",
+          "note": "Or, the anointed",
+          "type": "alternative"
+        }
+      ],
+      "42": [
+        {
+          "phrase": "a stone",
+          "note": "Or, Peter",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "3": [
+        {
+          "phrase": "again",
+          "note": "Or, from above",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "again",
+          "note": "Or, from above",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "reproved",
+          "note": "Or, discovered",
+          "type": "alternative"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "receive",
+          "note": "Or, take unto himself",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "46": [
+        {
+          "phrase": "nobleman",
+          "note": "Or, courtier, or ruler",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "2": [
+        {
+          "phrase": "market",
+          "note": "Or, gate",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "a multitude being in that",
+          "note": "Or, from the multitude that was",
+          "type": "alternative"
+        }
+      ]
+    },
+    "6": {
+      "27": [
+        {
+          "phrase": "Labour not",
+          "note": "Or, work not",
+          "type": "alternative"
+        }
+      ]
+    },
+    "7": {
+      "15": [
+        {
+          "phrase": "letters",
+          "note": "Or, learning",
+          "type": "alternative"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "that the Law of Moses should not be broken",
+          "note": "Or, without breaking the Law of Moses",
+          "type": "alternative"
+        }
+      ],
+      "35": [
+        {
+          "phrase": "Gentiles",
+          "note": "Or, Greeks",
+          "type": "alternative"
+        }
+      ],
+      "50": [
+        {
+          "phrase": "to Jesus",
+          "note": "Gr. to him",
+          "type": "greek"
+        }
+      ]
+    },
+    "9": {
+      "6": [
+        {
+          "phrase": "anointed the eyes of the blind man with the clay",
+          "note": "Or, spread the clay upon the eyes of the blind man",
+          "type": "alternative"
+        }
+      ],
+      "34": [
+        {
+          "phrase": "cast him out",
+          "note": "Or, excommunicated him",
+          "type": "alternative"
+        }
+      ]
+    },
+    "10": {
+      "24": [
+        {
+          "phrase": "make us to doubt?",
+          "note": "Or, hold us in suspense",
+          "type": "alternative"
+        }
+      ]
+    },
+    "11": {
+      "18": [
+        {
+          "phrase": "about fifteen furlongs",
+          "note": "that is, about two miles",
+          "type": "meaning"
+        }
+      ],
+      "33": [
+        {
+          "phrase": "was troubled",
+          "note": "Gr. He troubled himself",
+          "type": "greek"
+        }
+      ]
+    },
+    "13": {
+      "19": [
+        {
+          "phrase": "Now",
+          "note": "Or, From henceforth",
+          "type": "alternative"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "sop",
+          "note": "Or, morsel",
+          "type": "alternative"
+        }
+      ]
+    },
+    "14": {
+      "18": [
+        {
+          "phrase": "comfortless",
+          "note": "Or, orphans",
+          "type": "alternative"
+        }
+      ]
+    },
+    "15": {
+      "5": [
+        {
+          "phrase": "without me",
+          "note": "Or, severed from me",
+          "type": "alternative"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "cloke",
+          "note": "Or, excuse",
+          "type": "alternative"
+        }
+      ]
+    },
+    "16": {
+      "8": [
+        {
+          "phrase": "reprove",
+          "note": "Or, convince",
+          "type": "alternative"
+        }
+      ],
+      "25": [
+        {
+          "phrase": "proverbs",
+          "note": "Or, parables",
+          "type": "alternative"
+        },
+        {
+          "phrase": "proverbs",
+          "note": "Or, parables",
+          "type": "alternative"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "proverb",
+          "note": "Or, parable",
+          "type": "alternative"
+        }
+      ],
+      "32": [
+        {
+          "phrase": "his own",
+          "note": "Or, his own home",
+          "type": "alternative"
+        }
+      ]
+    },
+    "17": {
+      "19": [
+        {
+          "phrase": "sanctified through the truth",
+          "note": "Or, truly sanctified",
+          "type": "alternative"
+        }
+      ]
+    },
+    "18": {
+      "13": [
+        {
+          "phrase": "year",
+          "note": "And Annas sent Christ bound unto Caiaphas the high priest, ver. 24",
+          "type": "clarification"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "with the palm",
+          "note": "Or, with a rod",
+          "type": "alternative"
+        }
+      ],
+      "28": [
+        {
+          "phrase": "the hall of judgment",
+          "note": "Or, Pilats house",
+          "type": "alternative"
+        }
+      ]
+    },
+    "19": {
+      "23": [
+        {
+          "phrase": "woven",
+          "note": "Or, wrought",
+          "type": "alternative"
+        }
+      ],
+      "25": [
+        {
+          "phrase": "Cleophas",
+          "note": "Or, Clopas",
+          "type": "alternative"
+        }
+      ]
+    },
+    "21": {
+      "5": [
+        {
+          "phrase": "Children",
+          "note": "Or, Sirs",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

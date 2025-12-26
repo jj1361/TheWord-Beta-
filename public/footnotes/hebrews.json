@@ -1,0 +1,488 @@
+{
+  "bookId": 58,
+  "bookName": "Hebrews",
+  "chapters": {
+    "1": {
+      "8": [
+        {
+          "phrase": "righteousness",
+          "note": "Gr. rightness, or straightness",
+          "type": "greek"
+        }
+      ]
+    },
+    "2": {
+      "1": [
+        {
+          "phrase": "let them slip",
+          "note": "Gr. run out as leaking vessels",
+          "type": "greek"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "gifts",
+          "note": "Or, distributions",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "little lower then",
+          "note": "Or, a little while inferior to",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "for",
+          "note": "Or, by",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "took not on him the nature of Angels, but he took on him the seed of Abraham",
+          "note": "Gr. he taketh not hold of Angels, but of the seed of Abraham he taketh hold",
+          "type": "greek"
+        }
+      ]
+    },
+    "3": {
+      "2": [
+        {
+          "phrase": "appointed",
+          "note": "Gr. made, 1 Sam. 12.6",
+          "type": "greek"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "they shall not enter",
+          "note": "Gr. if they shall enter",
+          "type": "greek"
+        }
+      ]
+    },
+    "4": {
+      "2": [
+        {
+          "phrase": "the word preached",
+          "note": "Gr. the word of hearing",
+          "type": "greek"
+        },
+        {
+          "phrase": "not being mixed with faith in them",
+          "note": "Or, because they were not united by faith to",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "it was first preached",
+          "note": "Or, the Gospel was first preached",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "Jesus",
+          "note": "that is, Joshua",
+          "type": "meaning"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "rest",
+          "note": "Or, keeping of a Sabbath",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "unbelief",
+          "note": "Or, disobedience",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "2": [
+        {
+          "phrase": "can have compassion",
+          "note": "Or, can reasonably bear with",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "in that he feared",
+          "note": "Or, for his piety",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "unskillful",
+          "note": "Gr. hath no experience",
+          "type": "greek"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "of full age",
+          "note": "Or, perfect",
+          "type": "alternative"
+        },
+        {
+          "phrase": "of use",
+          "note": "Or, of an habit, or perfection",
+          "type": "alternative"
+        }
+      ]
+    },
+    "6": {
+      "1": [
+        {
+          "phrase": "principles of the doctrine of Christ",
+          "note": "Or, the word of the beginning of Christ",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "by",
+          "note": "Or, for",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "confirmed it by an oath",
+          "note": "Gr. interposed himself by an oath",
+          "type": "greek"
+        }
+      ]
+    },
+    "7": {
+      "3": [
+        {
+          "phrase": "without descent",
+          "note": "Gr. without pedigree",
+          "type": "greek"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "descent",
+          "note": "Or, pedigree",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "but the bringing in",
+          "note": "Or, but it was the bringing in",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "without an oath",
+          "note": "Or, without swearing of an oath",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "unchangeable",
+          "note": "Or, which passeth not from one to another",
+          "type": "alternative"
+        }
+      ],
+      "25": [
+        {
+          "phrase": "to the uttermost",
+          "note": "Or, evermore",
+          "type": "alternative"
+        }
+      ],
+      "28": [
+        {
+          "phrase": "consecrated",
+          "note": "Gr. perfected",
+          "type": "greek"
+        }
+      ]
+    },
+    "8": {
+      "2": [
+        {
+          "phrase": "of the Sanctuary",
+          "note": "Or, of holy things",
+          "type": "alternative"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "there are Priests",
+          "note": "Or, they are Priests",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "Covenant",
+          "note": "Or, Testament",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "put",
+          "note": "Gr. give",
+          "type": "greek"
+        },
+        {
+          "phrase": "in",
+          "note": "Or, upon",
+          "type": "alternative"
+        }
+      ]
+    },
+    "9": {
+      "1": [
+        {
+          "phrase": "ordinances",
+          "note": "Or, ceremonies",
+          "type": "alternative"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "the Sanctuary",
+          "note": "Or, holy",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "ordinances",
+          "note": "Or, rites, or ceremonies",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "spot",
+          "note": "Or, fault",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "be",
+          "note": "Or, be brought in",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "dedicated",
+          "note": "Or, purified",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "scarlet",
+          "note": "Or, purple",
+          "type": "alternative"
+        }
+      ]
+    },
+    "10": {
+      "5": [
+        {
+          "phrase": "prepared me",
+          "note": "Or, thou hast fitted me",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "boldness",
+          "note": "Or, liberty",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "consecrated",
+          "note": "Or, new made",
+          "type": "alternative"
+        }
+      ]
+    },
+    "11": {
+      "1": [
+        {
+          "phrase": "substance",
+          "note": "Or, ground, or confidence",
+          "type": "alternative"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "yet speaketh",
+          "note": "Or, is yet spoken of",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "moved",
+          "note": "Or, being weary",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "in faith",
+          "note": "Gr. according to faith",
+          "type": "greek"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "Of",
+          "note": "Or, To",
+          "type": "alternative"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "made mention",
+          "note": "Or, remembered",
+          "type": "alternative"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "of Christ",
+          "note": "Or, for Christ",
+          "type": "alternative"
+        }
+      ],
+      "31": [
+        {
+          "phrase": "that believeth not",
+          "note": "Or, that were disobedient",
+          "type": "alternative"
+        }
+      ],
+      "40": [
+        {
+          "phrase": "provided",
+          "note": "Or, foreseen",
+          "type": "alternative"
+        }
+      ]
+    },
+    "12": {
+      "2": [
+        {
+          "phrase": "Author",
+          "note": "Or, beginner",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "straight",
+          "note": "Or, even",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "fail",
+          "note": "Or, fall from",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "place of repentance",
+          "note": "Or, way to change his mind",
+          "type": "alternative"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "written",
+          "note": "Or, enrolled",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "Covenant",
+          "note": "Or, Testament",
+          "type": "alternative"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "are shaken",
+          "note": "Or, may be shaken",
+          "type": "alternative"
+        }
+      ],
+      "28": [
+        {
+          "phrase": "let us have",
+          "note": "Or, let us hold fast",
+          "type": "alternative"
+        }
+      ]
+    },
+    "13": {
+      "7": [
+        {
+          "phrase": "have the rule",
+          "note": "Or, are the guides",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "giving thanks",
+          "note": "Gr. confessing to",
+          "type": "greek"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "have the rule",
+          "note": "Or, guide",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "Covenant",
+          "note": "Or, Testament",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "working",
+          "note": "Or, doing",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

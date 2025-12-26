@@ -1,0 +1,187 @@
+{
+  "bookId": 32,
+  "bookName": "Jonah",
+  "chapters": {
+    "1": {
+      "1": [
+        {
+          "phrase": "Jonah",
+          "note": "Called Matth. 12.39 Jonas",
+          "type": "clarification"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "sent out",
+          "note": "Heb. cast forth",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "was like to be broken",
+          "note": "Heb. thought to be broken",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "the LORD",
+          "note": "Or, JEHOVAH",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "exceedingly afraid",
+          "note": "Heb. with great fear",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "may be calm unto us?",
+          "note": "Heb. may be silent unto us",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "wrought and was tempestuous",
+          "note": "Or grew more and more tempestuous. Heb. went",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "rowed",
+          "note": "Heb. digged",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "ceased",
+          "note": "Heb. stood",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "offered a sacrifice unto the LORD, and made vows",
+          "note": "Heb. sacrifice unto the LORD, and vowed vows",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "belly",
+          "note": "Heb. bowels",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "2": {
+      "2": [
+        {
+          "phrase": "by reason of mine affliction",
+          "note": "Or, out of mine affliction",
+          "type": "alternative"
+        },
+        {
+          "phrase": "hell",
+          "note": "Or, the grave",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "midst",
+          "note": "Heb. heart",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "bottoms",
+          "note": "Heb. cuttings off",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "corruption",
+          "note": "Or, the pit",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "3": [
+        {
+          "phrase": "exceeding",
+          "note": "Heb. of God",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "published",
+          "note": "Heb. said",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "nobles",
+          "note": "Heb. great men",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "4": {
+      "4": [
+        {
+          "phrase": "doest thou well to be angry?",
+          "note": "Or, art thou greatly angry?",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "gourd",
+          "note": "Or, palmcrist. Heb. Kikajon",
+          "type": "alternative"
+        },
+        {
+          "phrase": "exceeding glad",
+          "note": "Heb. rejoiced with great joy",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "vehement",
+          "note": "Or, silent",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "Doest thou well to be angry",
+          "note": "Or, art thou greatly angry?",
+          "type": "alternative"
+        },
+        {
+          "phrase": "I do well to be angry",
+          "note": "Or, I am greatly angry",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "had pity",
+          "note": "Or, spared",
+          "type": "alternative"
+        },
+        {
+          "phrase": "came up in a night",
+          "note": "Heb. was the son of the night",
+          "type": "hebrew"
+        }
+      ]
+    }
+  }
+}

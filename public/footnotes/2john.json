@@ -1,0 +1,22 @@
+{
+  "bookId": 63,
+  "bookName": "2 John",
+  "chapters": {
+    "1": {
+      "8": [
+        {
+          "phrase": "wrought",
+          "note": "Or, gained. Some copies read, which ye have gained, but that ye receive, etc.",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "face to face",
+          "note": "Gr. mouth to mouth",
+          "type": "greek"
+        }
+      ]
+    }
+  }
+}

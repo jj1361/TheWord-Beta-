@@ -1,0 +1,103 @@
+{
+  "bookId": 55,
+  "bookName": "2 Timothy",
+  "chapters": {
+    "1": {
+      "12": [
+        {
+          "phrase": "believed",
+          "note": "Or, trusted",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "2": [
+        {
+          "phrase": "among",
+          "note": "Or, by",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "The husbandman that laboureth, must be first partaker of the fruits",
+          "note": "Or, the husbandman laboring first must be partaker of the fruits",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "canker",
+          "note": "Or, gangrene",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "sure",
+          "note": "Or, steady",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "patient",
+          "note": "Or, forbearing",
+          "type": "alternative"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "recover",
+          "note": "Gr. awake",
+          "type": "greek"
+        },
+        {
+          "phrase": "taken captive",
+          "note": "Gr. taken alive",
+          "type": "greek"
+        }
+      ]
+    },
+    "3": {
+      "3": [
+        {
+          "phrase": "false accusers",
+          "note": "Or, makebates",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "reprobate",
+          "note": "Or, of no judgment",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "Thou hast fully known",
+          "note": "Or, thou hast been a diligent follower of",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "5": [
+        {
+          "phrase": "make full proof",
+          "note": "Or, fulfill",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "our words",
+          "note": "Or, our preachings",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

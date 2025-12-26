@@ -1,0 +1,468 @@
+{
+  "bookId": 30,
+  "bookName": "Amos",
+  "chapters": {
+    "1": {
+      "3": [
+        {
+          "phrase": "for four",
+          "note": "Or, he for four",
+          "type": "alternative"
+        },
+        {
+          "phrase": "turn away the punishment",
+          "note": "Or, convert it, or let it be quiet. And so ver. 6",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "the plain of Aven",
+          "note": "Or, Bikathaven",
+          "type": "alternative"
+        },
+        {
+          "phrase": "house of Eden",
+          "note": "Or, Betheden",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "carried away captive the whole captivity",
+          "note": "Or, carried them away with an entire captivity",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "the brotherly covenant",
+          "note": "Heb. the covenant of brethren",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "cast off all pity",
+          "note": "Heb. corrupted his compassions",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "ript up the women",
+          "note": "Or, divided the mountains",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "7": [
+        {
+          "phrase": "maid",
+          "note": "Or, young woman",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "the condemned",
+          "note": "Or, such as have fined or mulcted",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "I am pressed under you, as a cart is pressed that is full of sheaves",
+          "note": "Or, I will press your place as a cart full of sheaves presseth",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "himself",
+          "note": "Heb. his soul or life",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "courageous",
+          "note": "Heb. strong of his heart",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "3": {
+      "2": [
+        {
+          "phrase": "punish",
+          "note": "Heb. visit upon",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "cry out",
+          "note": "Heb. give forth his voice",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "and the LORD hath not done it?",
+          "note": "Or, and shall not the L. do somewhat?",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "oppressed",
+          "note": "Or, oppressions",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "robbery",
+          "note": "Or, spoil",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "taketh",
+          "note": "Heb. delivereth",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "in a couch",
+          "note": "Or, on the beds feet",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "visit the transgressions of Israel",
+          "note": "Or, punish Israel for",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "3": [
+        {
+          "phrase": "ye shall cast them in the palace",
+          "note": "Or, ye shall cast away the things of the palace",
+          "type": "alternative"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "three years",
+          "note": "Heb. three years of days",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "offer a sacrifice",
+          "note": "Heb. offer by burning",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "this liketh",
+          "note": "Heb. so ye love",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "when your gardens… increased, the palmer worm",
+          "note": "Or, the multitude of your gardens etc. did the palmerworm etc.",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "after the manner",
+          "note": "Or, in the way",
+          "type": "alternative"
+        },
+        {
+          "phrase": "have taken away your horses",
+          "note": "Heb. with the captivity of your horses",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "wind",
+          "note": "Or, spirit",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "9": [
+        {
+          "phrase": "spoiled",
+          "note": "Heb. spoil",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "pleasant vineyards",
+          "note": "Heb. vineyards of desire",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "a bribe",
+          "note": "Or, a ransom",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "smell in your solemn assemblies",
+          "note": "Or, smell your holy days",
+          "type": "alternative"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "peace offerings",
+          "note": "Or, thank offerings",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "run down",
+          "note": "Heb. rule",
+          "type": "hebrew"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "the tabernacle of your Moloch",
+          "note": "Or, Siccuth your king",
+          "type": "alternative"
+        }
+      ]
+    },
+    "6": {
+      "1": [
+        {
+          "phrase": "are at ease",
+          "note": "Or, are secure",
+          "type": "alternative"
+        },
+        {
+          "phrase": "chief",
+          "note": "Or, firstfruits",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "seat",
+          "note": "Or, habitation",
+          "type": "alternative"
+        },
+        {
+          "phrase": "we may not make mention",
+          "note": "Or, they will not, or have not",
+          "type": "alternative"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "stretch themselves",
+          "note": "Or, abound with superfluities",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "chant",
+          "note": "Or, quaver",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "wine in the bowls",
+          "note": "Or, in bowls of wine",
+          "type": "alternative"
+        },
+        {
+          "phrase": "affliction",
+          "note": "Heb. breach",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "all that is therein",
+          "note": "Heb. the fullness thereof",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "breaches",
+          "note": "Or, droppings",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "river",
+          "note": "Or, valley",
+          "type": "alternative"
+        }
+      ]
+    },
+    "7": {
+      "1": [
+        {
+          "phrase": "grasshoppers",
+          "note": "Or, green worms",
+          "type": "alternative"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "by whom shall Jacob arise?",
+          "note": "Or, who of (or for) Jacob shall stand?",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "chapel",
+          "note": "Or, sanctuary",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Kings Court",
+          "note": "Heb. house of the kingdom",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "Sycamore fruit",
+          "note": "Or, wild figs",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "as I followed",
+          "note": "Heb. from behind",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "8": {
+      "3": [
+        {
+          "phrase": "shall be howlings",
+          "note": "Heb. shall howl",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "with silence",
+          "note": "Heb. be silent",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "new Moon",
+          "note": "Or, month",
+          "type": "alternative"
+        },
+        {
+          "phrase": "set forth",
+          "note": "Heb. open",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "falsifying the balances by deceit?",
+          "note": "Heb. perverting the balances of deceit",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "9": {
+      "1": [
+        {
+          "phrase": "lintel",
+          "note": "Or, chapiter, or knop",
+          "type": "alternative"
+        },
+        {
+          "phrase": "cut them",
+          "note": "Or, wound them",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "stories",
+          "note": "Or, spheres Heb. ascensions",
+          "type": "alternative"
+        },
+        {
+          "phrase": "troupe",
+          "note": "Or, bundell",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "sift",
+          "note": "Heb. cause to move",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "grain",
+          "note": "Heb. stone",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "close up the breaches",
+          "note": "Heb. hedge, or wall",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "which are called by my name",
+          "note": "Heb. upon whom my name is called",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "soweth",
+          "note": "Heb. draweth forth",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "sweet wine",
+          "note": "Or, new wine",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

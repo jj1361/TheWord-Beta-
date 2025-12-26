@@ -1,0 +1,483 @@
+{
+  "bookId": 42,
+  "bookName": "Luke",
+  "chapters": {
+    "1": {
+      "17": [
+        {
+          "phrase": "to",
+          "note": "Or, by",
+          "type": "alternative"
+        }
+      ],
+      "28": [
+        {
+          "phrase": "highly favored",
+          "note": "Or, graciously accepted, or much graced, see verse 30",
+          "type": "alternative"
+        }
+      ],
+      "45": [
+        {
+          "phrase": "that believed, for there",
+          "note": "Or, which believed, that there",
+          "type": "alternative"
+        }
+      ],
+      "65": [
+        {
+          "phrase": "sayings",
+          "note": "Or, things",
+          "type": "alternative"
+        }
+      ],
+      "77": [
+        {
+          "phrase": "by",
+          "note": "Or, for",
+          "type": "alternative"
+        }
+      ],
+      "78": [
+        {
+          "phrase": "tender mercy",
+          "note": "Or, bowels of the mercy",
+          "type": "alternative"
+        },
+        {
+          "phrase": "day spring",
+          "note": "Or, sun rising, or branch, Zac. 3.8 esay 11.1 malach. 4.2. numb. 24.17",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "1": [
+        {
+          "phrase": "taxed",
+          "note": "Or, enrolled",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "watch",
+          "note": "Or, the night watches",
+          "type": "alternative"
+        }
+      ],
+      "38": [
+        {
+          "phrase": "Jerusalem",
+          "note": "Or, Israel",
+          "type": "alternative"
+        }
+      ],
+      "52": [
+        {
+          "phrase": "stature",
+          "note": "Or, age",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "8": [
+        {
+          "phrase": "worthy",
+          "note": "Or, meet for",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "Do violence to no man",
+          "note": "Or, put no man in fear",
+          "type": "alternative"
+        },
+        {
+          "phrase": "wages",
+          "note": "Or, allowance",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "in expectation",
+          "note": "Or, in suspense",
+          "type": "alternative"
+        },
+        {
+          "phrase": "mused",
+          "note": "Or, reasoned or debated",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "7": [
+        {
+          "phrase": "worship me",
+          "note": "Or, fall down before me",
+          "type": "alternative"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "brow",
+          "note": "Or, edge",
+          "type": "alternative"
+        }
+      ],
+      "34": [
+        {
+          "phrase": "Let us alone",
+          "note": "Or, away",
+          "type": "alternative"
+        }
+      ],
+      "41": [
+        {
+          "phrase": "to speak, for they knew that he was Christ",
+          "note": "Or, to say that they knew him to be Christ",
+          "type": "alternative"
+        }
+      ]
+    },
+    "6": {
+      "40": [
+        {
+          "phrase": "that is perfect shall be as his master",
+          "note": "Or, shall be perfected as his master",
+          "type": "alternative"
+        }
+      ]
+    },
+    "7": {
+      "14": [
+        {
+          "phrase": "bier",
+          "note": "Or, coffin",
+          "type": "alternative"
+        }
+      ],
+      "30": [
+        {
+          "phrase": "rejected",
+          "note": "Or, frustrated",
+          "type": "alternative"
+        },
+        {
+          "phrase": "against themselves",
+          "note": "Or, within themselves",
+          "type": "alternative"
+        }
+      ],
+      "41": [
+        {
+          "phrase": "pence",
+          "note": "See Mat. 18.28",
+          "type": "clarification"
+        }
+      ]
+    },
+    "8": {
+      "18": [
+        {
+          "phrase": "seemeth to have",
+          "note": "Or, thinketh that he hath",
+          "type": "alternative"
+        }
+      ]
+    },
+    "9": {
+      "28": [
+        {
+          "phrase": "sayings",
+          "note": "Or, things",
+          "type": "alternative"
+        }
+      ]
+    },
+    "10": {
+      "22": [
+        {
+          "phrase": "All these",
+          "note": "Many ancient copies add these words, and turning to his Disciples he said",
+          "type": "clarification"
+        }
+      ],
+      "35": [
+        {
+          "phrase": "pence",
+          "note": "See Matt. 20.2",
+          "type": "clarification"
+        }
+      ]
+    },
+    "11": {
+      "3": [
+        {
+          "phrase": "day by day",
+          "note": "Or, for the day",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "in his journey",
+          "note": "Or, out of his way",
+          "type": "alternative"
+        }
+      ],
+      "33": [
+        {
+          "phrase": "bushell",
+          "note": "See Matt. 5.15",
+          "type": "clarification"
+        }
+      ],
+      "41": [
+        {
+          "phrase": "as you have",
+          "note": "Or, as you are able",
+          "type": "alternative"
+        }
+      ],
+      "52": [
+        {
+          "phrase": "hindered",
+          "note": "Or, forbade",
+          "type": "alternative"
+        }
+      ]
+    },
+    "12": {
+      "6": [
+        {
+          "phrase": "farthing",
+          "note": "See Matt. 10.29",
+          "type": "clarification"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "thy soul shall be required",
+          "note": "Gr. do they require thy soul",
+          "type": "greek"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "neither be ye of doubtful mind",
+          "note": "Or, live not in careful suspense",
+          "type": "alternative"
+        }
+      ],
+      "46": [
+        {
+          "phrase": "cut him in sunder",
+          "note": "Or, cut him off",
+          "type": "alternative"
+        }
+      ],
+      "50": [
+        {
+          "phrase": "straitened",
+          "note": "Or, pained",
+          "type": "alternative"
+        }
+      ],
+      "59": [
+        {
+          "phrase": "mite",
+          "note": "See Mar. 12.42",
+          "type": "clarification"
+        }
+      ]
+    },
+    "13": {
+      "4": [
+        {
+          "phrase": "sinners",
+          "note": "Or, debtors",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "measures",
+          "note": "See Mat. 13.33",
+          "type": "clarification"
+        }
+      ]
+    },
+    "15": {
+      "8": [
+        {
+          "phrase": "pieces of silver",
+          "note": "Drachma here translated a piece of silver, is the eighth part of an ounce, which cometh to seven pence half penny, and is equal to the Roman penny, Mat. 18.28",
+          "type": "clarification"
+        }
+      ]
+    },
+    "16": {
+      "6": [
+        {
+          "phrase": "measures",
+          "note": "the word Batus in the original containeth nine gallons 3. quarts",
+          "type": "clarification"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "measures",
+          "note": "the word here interpreted a measure, in the original containeth about fourteen bushels and a pottle",
+          "type": "clarification"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "Mammon",
+          "note": "Or, riches",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "Mammon",
+          "note": "Or, riches",
+          "type": "alternative"
+        }
+      ]
+    },
+    "17": {
+      "20": [
+        {
+          "phrase": "with observation",
+          "note": "Or, with outward shew",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "within you",
+          "note": "Or, among you",
+          "type": "alternative"
+        }
+      ],
+      "36": [
+        {
+          "phrase": "Two men shall be in the field, the one shall be taken, and the other left",
+          "note": "This 36. verse is wanting in most of the Greek copies",
+          "type": "clarification"
+        }
+      ]
+    },
+    "18": {
+      "9": [
+        {
+          "phrase": "that they were righteous",
+          "note": "Or, as being righteous",
+          "type": "alternative"
+        }
+      ]
+    },
+    "19": {
+      "13": [
+        {
+          "phrase": "pounds",
+          "note": "Mina here translated a pound, is twelve ounces and an half, which according to five shillings the ounce, is 3. pounds two shillings sixpence",
+          "type": "clarification"
+        }
+      ],
+      "48": [
+        {
+          "phrase": "very attentive",
+          "note": "Or, hanged on him",
+          "type": "alternative"
+        }
+      ]
+    },
+    "20": {
+      "21": [
+        {
+          "phrase": "truly",
+          "note": "Or, of a truth",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "penny",
+          "note": "See Matt. 18.28",
+          "type": "clarification"
+        }
+      ]
+    },
+    "21": {
+      "2": [
+        {
+          "phrase": "mites",
+          "note": "See Mark 12.42",
+          "type": "clarification"
+        }
+      ]
+    },
+    "22": {
+      "6": [
+        {
+          "phrase": "in the absence of the multitude",
+          "note": "Or, without tumult",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "With desire I have desired",
+          "note": "Or, I have heartily desired",
+          "type": "alternative"
+        }
+      ]
+    },
+    "23": {
+      "24": [
+        {
+          "phrase": "gave sentence",
+          "note": "Or, assented",
+          "type": "alternative"
+        }
+      ],
+      "33": [
+        {
+          "phrase": "Calvary",
+          "note": "Or, the place of a skull",
+          "type": "alternative"
+        }
+      ],
+      "44": [
+        {
+          "phrase": "earth",
+          "note": "Or, land",
+          "type": "alternative"
+        }
+      ]
+    },
+    "24": {
+      "5": [
+        {
+          "phrase": "the living",
+          "note": "Or, him that liveth",
+          "type": "alternative"
+        }
+      ],
+      "31": [
+        {
+          "phrase": "vanished out of their sight",
+          "note": "Or, ceased to be seen of them",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

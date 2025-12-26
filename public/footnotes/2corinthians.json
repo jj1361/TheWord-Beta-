@@ -1,0 +1,303 @@
+{
+  "bookId": 47,
+  "bookName": "2 Corinthians",
+  "chapters": {
+    "1": {
+      "6": [
+        {
+          "phrase": "is effectual",
+          "note": "Or, is wrought",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "sentence",
+          "note": "Or, answer",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "benefit",
+          "note": "Or, grace",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "word",
+          "note": "Or, preaching",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "6": [
+        {
+          "phrase": "punishment",
+          "note": "Or, censure",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "the person",
+          "note": "Or, in the sight",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "corrupt",
+          "note": "Or, deal deceitfully with",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "6": [
+        {
+          "phrase": "giveth life",
+          "note": "Or, quickeneth",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "plainness",
+          "note": "Or, boldness",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "by the spirit of the Lord",
+          "note": "O, of the Lord the spirit",
+          "type": "clarification"
+        }
+      ]
+    },
+    "4": {
+      "2": [
+        {
+          "phrase": "dishonesty",
+          "note": "Gr. shame",
+          "type": "greek"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "in despair",
+          "note": "Or, altogether without help or means",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "9": [
+        {
+          "phrase": "labour",
+          "note": "Or, endeavour",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "in appearance",
+          "note": "Gr. in the face",
+          "type": "greek"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "he is",
+          "note": "Or, let him be",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "committed unto us",
+          "note": "Gr. put in us",
+          "type": "greek"
+        }
+      ]
+    },
+    "6": {
+      "4": [
+        {
+          "phrase": "approving",
+          "note": "Gr. commending",
+          "type": "greek"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "in tumults",
+          "note": "Or, in tossings to and fro",
+          "type": "alternative"
+        }
+      ]
+    },
+    "7": {
+      "9": [
+        {
+          "phrase": "after a godly manner",
+          "note": "Or, according to God",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "inward",
+          "note": "Gr. bowels",
+          "type": "greek"
+        }
+      ]
+    },
+    "8": {
+      "10": [
+        {
+          "phrase": "forward",
+          "note": "Gr. willing",
+          "type": "greek"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "grace",
+          "note": "Or, gift",
+          "type": "alternative"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "I have",
+          "note": "Or, he hath",
+          "type": "alternative"
+        }
+      ]
+    },
+    "9": {
+      "5": [
+        {
+          "phrase": "bounty",
+          "note": "Gr. blessing",
+          "type": "greek"
+        },
+        {
+          "phrase": "whereof ye had notice before",
+          "note": "Or, which hath been so much spoken of before",
+          "type": "alternative"
+        }
+      ]
+    },
+    "10": {
+      "1": [
+        {
+          "phrase": "in presence",
+          "note": "Or, in outward appearance",
+          "type": "alternative"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "think",
+          "note": "Or, reckon",
+          "type": "alternative"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "through God",
+          "note": "Or, to God",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "imaginations",
+          "note": "Or, reasonings",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "are not wise",
+          "note": "Or, understand it not",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "rule",
+          "note": "Or, line",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "enlarged by you",
+          "note": "Or, magnified in you",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "line",
+          "note": "Or, rule",
+          "type": "alternative"
+        }
+      ]
+    },
+    "11": {
+      "1": [
+        {
+          "phrase": "bear with me",
+          "note": "Or, you do bear with me",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "no man shall stop me in this boasting",
+          "note": "Gr. this boasting shall not be stopped in me",
+          "type": "greek"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "receive",
+          "note": "Or, suffer",
+          "type": "alternative"
+        }
+      ]
+    },
+    "12": {
+      "4": [
+        {
+          "phrase": "lawful",
+          "note": "Or, possible",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "you",
+          "note": "Gr. your souls",
+          "type": "greek"
+        }
+      ]
+    },
+    "13": {
+      "4": [
+        {
+          "phrase": "in him",
+          "note": "Or, with him",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

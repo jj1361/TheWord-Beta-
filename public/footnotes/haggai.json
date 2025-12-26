@@ -1,0 +1,57 @@
+{
+  "bookId": 37,
+  "bookName": "Haggai",
+  "chapters": {
+    "1": {
+      "1": [
+        {
+          "phrase": "by Haggai",
+          "note": "Heb. by the hand of Haggai",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "governor",
+          "note": "Or, captain",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "Consider your ways",
+          "note": "Heb. set your heart on your ways",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "with holes",
+          "note": "Heb. pierced through",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "Consider…",
+          "note": "Heb. Set your heart on your ways",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "blow upon it",
+          "note": "Or, blow it away",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "1": [
+        {
+          "phrase": "by the",
+          "note": "Heb. by the hand of",
+          "type": "hebrew"
+        }
+      ]
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Chapter } from '../types/bible';
+import { Chapter, FootnoteEntry } from '../types/bible';
 import VerseDisplay from './VerseDisplay';
 import ChapterSelector from './ChapterSelector';
 import NavigationModal from './NavigationModal';
@@ -47,6 +47,9 @@ interface ChapterDisplayProps {
   maxTextSize?: number;
   onIncreaseTextSize?: () => void;
   onDecreaseTextSize?: () => void;
+  // Footnotes (1611 KJV Marginal Notes)
+  chapterFootnotes?: Map<number, FootnoteEntry[]>;
+  showFootnotes?: boolean;
 }
 
 const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
@@ -82,6 +85,8 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
   maxTextSize = 50,
   onIncreaseTextSize,
   onDecreaseTextSize,
+  chapterFootnotes,
+  showFootnotes = true,
 }) => {
   const [isChapterSelectorOpen, setIsChapterSelectorOpen] = useState(false);
   const [isNavigationModalOpen, setIsNavigationModalOpen] = useState(false);
@@ -234,6 +239,8 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
                 youthMode={youthMode}
                 highlightColor={userHighlightColor}
                 textFormatting={verseTextFormatting}
+                footnotes={chapterFootnotes?.get(verse.num)}
+                showFootnotes={showFootnotes}
               />
             </div>
           );

@@ -859,3 +859,313 @@
   background: linear-gradient(135deg, rgba(244, 114, 182, 0.3), rgba(168, 85, 247, 0.3));
   color: #c4b5fd;
 }
+
+/* ========================================
+   FOOTNOTE STYLES (1611 KJV Marginal Notes)
+   ======================================== */
+
+/* Footnote indicators container */
+.footnote-indicators {
+  display: inline;
+  margin-left: 4px;
+}
+
+/* Footnote superscript - modern pill style */
+.footnote-superscript {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  vertical-align: middle;
+  line-height: 1;
+  padding: 3px 6px;
+  border-radius: 10px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  box-shadow: 0 2px 4px rgba(139, 92, 246, 0.3);
+  margin-left: 2px;
+}
+
+.footnote-superscript:hover {
+  transform: scale(1.15) translateY(-1px);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+}
+
+/* Footnote count badge */
+.footnote-count {
+  font-size: 10px;
+  margin-left: 2px;
+  opacity: 0.9;
+}
+
+/* Footnote type-specific colors */
+.footnote-type-hebrew {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
+}
+.footnote-type-hebrew:hover {
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+.footnote-type-greek {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+}
+.footnote-type-greek:hover {
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.footnote-type-alternative {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  box-shadow: 0 2px 4px rgba(245, 158, 11, 0.3);
+}
+.footnote-type-alternative:hover {
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+}
+
+.footnote-type-meaning {
+  background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+  box-shadow: 0 2px 4px rgba(168, 85, 247, 0.3);
+}
+.footnote-type-meaning:hover {
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.4);
+}
+
+.footnote-type-clarification {
+  background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+  box-shadow: 0 2px 4px rgba(100, 116, 139, 0.3);
+}
+.footnote-type-clarification:hover {
+  box-shadow: 0 4px 12px rgba(100, 116, 139, 0.4);
+}
+
+/* ========================================
+   FOOTNOTE PHRASE HIGHLIGHT ANIMATION
+   ======================================== */
+
+.footnote-phrase-highlight {
+  position: relative;
+  background: linear-gradient(120deg, rgba(251, 191, 36, 0.3) 0%, rgba(245, 158, 11, 0.4) 100%);
+  border-radius: 3px;
+  padding: 2px 4px;
+  margin: -2px -4px;
+  animation: footnoteHighlightPulse 1.5s ease-in-out infinite;
+  box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.2);
+}
+
+@keyframes footnoteHighlightPulse {
+  0%, 100% {
+    background: linear-gradient(120deg, rgba(251, 191, 36, 0.3) 0%, rgba(245, 158, 11, 0.4) 100%);
+    box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.2);
+  }
+  50% {
+    background: linear-gradient(120deg, rgba(251, 191, 36, 0.5) 0%, rgba(245, 158, 11, 0.6) 100%);
+    box-shadow: 0 0 0 4px rgba(251, 191, 36, 0.3), 0 0 20px rgba(251, 191, 36, 0.2);
+  }
+}
+
+[data-theme='dark'] .footnote-phrase-highlight {
+  background: linear-gradient(120deg, rgba(251, 191, 36, 0.25) 0%, rgba(245, 158, 11, 0.35) 100%);
+  box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.15);
+}
+
+@keyframes footnoteHighlightPulseDark {
+  0%, 100% {
+    background: linear-gradient(120deg, rgba(251, 191, 36, 0.25) 0%, rgba(245, 158, 11, 0.35) 100%);
+    box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.15);
+  }
+  50% {
+    background: linear-gradient(120deg, rgba(251, 191, 36, 0.4) 0%, rgba(245, 158, 11, 0.5) 100%);
+    box-shadow: 0 0 0 4px rgba(251, 191, 36, 0.25), 0 0 20px rgba(251, 191, 36, 0.15);
+  }
+}
+
+[data-theme='dark'] .footnote-phrase-highlight {
+  animation: footnoteHighlightPulseDark 1.5s ease-in-out infinite;
+}
+
+/* ========================================
+   MODERN FOOTNOTE TOOLTIP
+   ======================================== */
+
+.footnote-tooltip {
+  z-index: 99999;
+  pointer-events: auto;
+  animation: footnoteTooltipFadeIn 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  isolation: isolate;
+}
+
+@keyframes footnoteTooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, calc(-100% + 12px)) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -100%) scale(1);
+  }
+}
+
+.footnote-tooltip-content {
+  position: relative;
+  background: linear-gradient(145deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: #f1f5f9;
+  border-radius: 16px;
+  padding: 16px 20px;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    0 8px 20px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  max-width: 380px;
+  min-width: 240px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 99999;
+}
+
+.footnote-tooltip-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footnote-type-badge {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footnote-type-badge.footnote-type-hebrew {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+}
+
+.footnote-type-badge.footnote-type-greek {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+}
+
+.footnote-type-badge.footnote-type-alternative {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+}
+
+.footnote-type-badge.footnote-type-meaning {
+  background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+  color: white;
+}
+
+.footnote-type-badge.footnote-type-clarification {
+  background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+  color: white;
+}
+
+.footnote-phrase {
+  font-size: 14px;
+  font-style: italic;
+  color: #fbbf24;
+  font-weight: 500;
+  flex: 1;
+}
+
+.footnote-tooltip-note {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #e2e8f0;
+  font-weight: 400;
+}
+
+/* Tooltip arrow - modern glass effect */
+.footnote-tooltip-content::before {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Light theme footnote tooltip */
+.footnote-tooltip-content {
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.15),
+    0 8px 20px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.footnote-tooltip-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footnote-phrase {
+  color: #b45309;
+}
+
+.footnote-tooltip-note {
+  color: #1e293b;
+}
+
+.footnote-tooltip-content::before {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Dark theme overrides */
+[data-theme='dark'] .footnote-tooltip-content {
+  background: linear-gradient(145deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    0 8px 20px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .footnote-tooltip-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .footnote-phrase {
+  color: #fbbf24;
+}
+
+[data-theme='dark'] .footnote-tooltip-note {
+  color: #e2e8f0;
+}
+
+[data-theme='dark'] .footnote-tooltip-content::before {
+  background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Dark theme footnote superscript adjustments */
+[data-theme='dark'] .footnote-superscript {
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.4);
+}
+
+[data-theme='dark'] .footnote-superscript:hover {
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.5);
+}

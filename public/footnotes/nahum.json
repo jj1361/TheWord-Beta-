@@ -1,0 +1,206 @@
+{
+  "bookId": 34,
+  "bookName": "Nahum",
+  "chapters": {
+    "1": {
+      "2": [
+        {
+          "phrase": "God is jelous, and the LORD revengeth",
+          "note": "Or, the Lord is a jealous God, and a revenger, etc.",
+          "type": "alternative"
+        },
+        {
+          "phrase": "furious",
+          "note": "Heb. that hath fury",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "abide",
+          "note": "Heb. stand up",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "strong hold",
+          "note": "Or, strength",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "a wicked counselor",
+          "note": "Heb. a counsellor of Belial",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "Though they be quiet, and likewise many, yet thus shall they be cut down",
+          "note": "Or, if they would have been at peace, so should they have been many, and so should they have been shorn, and he should have passed away",
+          "type": "alternative"
+        },
+        {
+          "phrase": "cut down",
+          "note": "Heb. shorn",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "keep",
+          "note": "Heb. feast",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "wicked",
+          "note": "Heb. Belial",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "2": {
+      "1": [
+        {
+          "phrase": "He that dasheth",
+          "note": "Or, the disperser or hammer",
+          "type": "alternative"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "excellency of Jacob, as the excellency of Israel",
+          "note": "Or, the pride of Jacob and the pride of Israel",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "in scarlet",
+          "note": "Or, dyed scarlet",
+          "type": "alternative"
+        },
+        {
+          "phrase": "flaming torches",
+          "note": "Heb. fiery torches",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "they shall seem",
+          "note": "Heb. their show",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "worthies",
+          "note": "Or, gallants",
+          "type": "alternative"
+        },
+        {
+          "phrase": "defense",
+          "note": "Heb. covering or coverer",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "dissolved",
+          "note": "Or, molten",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "Huzzab",
+          "note": "Or, That which was established, or, there was a stand made",
+          "type": "alternative"
+        },
+        {
+          "phrase": "led away",
+          "note": "Or, discovered",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "of old",
+          "note": "Or, from the days that she hath been",
+          "type": "alternative"
+        },
+        {
+          "phrase": "look back",
+          "note": "Or, cause to turn",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "for there is none end of the store",
+          "note": "Or, And their infinite store, etc.",
+          "type": "alternative"
+        },
+        {
+          "phrase": "pleasant furniture",
+          "note": "Heb. vessels of desire",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "3": {
+      "1": [
+        {
+          "phrase": "bloody City",
+          "note": "Heb. city of bloods",
+          "type": "hebrew"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "the bright sword, and the glittering spear",
+          "note": "Heb. the flame of the sword and the lightning of the spear",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "populous No,",
+          "note": "Or, nourishing. Heb. No Amon",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "thy helpers",
+          "note": "Heb. in thy help",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "spoileth",
+          "note": "Or, spreadeth himself",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "nobles",
+          "note": "Or, valiant ones",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "healing",
+          "note": "Heb. wrinkling",
+          "type": "hebrew"
+        }
+      ]
+    }
+  }
+}

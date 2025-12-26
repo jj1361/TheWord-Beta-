@@ -1,0 +1,324 @@
+{
+  "bookId": 41,
+  "bookName": "Mark",
+  "chapters": {
+    "1": {
+      "4": [
+        {
+          "phrase": "for",
+          "note": "Or, unto",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "opened",
+          "note": "Or, cloven, or rent",
+          "type": "alternative"
+        }
+      ],
+      "34": [
+        {
+          "phrase": "to speak, because they knew him",
+          "note": "Or, to say that they knew him",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "14": [
+        {
+          "phrase": "at the receipt of Custom",
+          "note": "Or, at the place where the Custom was received",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "new",
+          "note": "Or, raw, or unwrought",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "5": [
+        {
+          "phrase": "hardness",
+          "note": "Or, blindness",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "pressed",
+          "note": "Or, rushed",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "into an house",
+          "note": "Or, home",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "friends",
+          "note": "Or, kinsmen",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "21": [
+        {
+          "phrase": "bushel",
+          "note": "The word, in the original, signifieth a less measure as Mat. 5.15",
+          "type": "clarification"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "brought forth",
+          "note": "Or, ripe",
+          "type": "alternative"
+        }
+      ]
+    },
+    "6": {
+      "8": [
+        {
+          "phrase": "money",
+          "note": "the word signifieth a piece of brass money, in value somewhat less than a farthing, mat. 10.9 but here it is taken in general for money",
+          "type": "clarification"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "a quarrel",
+          "note": "Or, an inward grudge",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "observed him",
+          "note": "Or, kept him or saved him",
+          "type": "alternative"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "an executioner",
+          "note": "Or, one of his guard",
+          "type": "alternative"
+        }
+      ],
+      "37": [
+        {
+          "phrase": "pennyworth",
+          "note": "the Rom. penny is sevenpence halfpenny as Mat. 18.28",
+          "type": "clarification"
+        }
+      ],
+      "45": [
+        {
+          "phrase": "unto Bethsaida",
+          "note": "Or, over against Bethsaida",
+          "type": "alternative"
+        }
+      ],
+      "56": [
+        {
+          "phrase": "him",
+          "note": "Or, it",
+          "type": "alternative"
+        }
+      ]
+    },
+    "7": {
+      "2": [
+        {
+          "phrase": "defiled",
+          "note": "Or, common",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "oft",
+          "note": "Or, diligently, in the Original, with the fist, Theophylact, up to the elbow",
+          "type": "alternative"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "pots",
+          "note": "Or, beds",
+          "type": "alternative"
+        },
+        {
+          "phrase": "tables",
+          "note": "Sextarius, is about a pint and an half",
+          "type": "clarification"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "reject",
+          "note": "Or, frustrate",
+          "type": "alternative"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "Greek",
+          "note": "Or, Gentile",
+          "type": "alternative"
+        }
+      ]
+    },
+    "9": {
+      "16": [
+        {
+          "phrase": "with them?",
+          "note": "Or, among yourselves",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "teareth him",
+          "note": "Or, dasheth him",
+          "type": "alternative"
+        }
+      ],
+      "43": [
+        {
+          "phrase": "offend thee",
+          "note": "Or, cause thee to offend",
+          "type": "alternative"
+        }
+      ],
+      "47": [
+        {
+          "phrase": "offend thee",
+          "note": "Or, cause thee to offend",
+          "type": "alternative"
+        }
+      ]
+    },
+    "10": {
+      "42": [
+        {
+          "phrase": "are accompted",
+          "note": "Or, think good",
+          "type": "alternative"
+        }
+      ],
+      "52": [
+        {
+          "phrase": "made thee whole",
+          "note": "Or, saved thee",
+          "type": "alternative"
+        }
+      ]
+    },
+    "11": {
+      "22": [
+        {
+          "phrase": "Have faith in God",
+          "note": "Or, have the faith of God",
+          "type": "alternative"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "question",
+          "note": "Or, thing",
+          "type": "alternative"
+        }
+      ]
+    },
+    "12": {
+      "15": [
+        {
+          "phrase": "penny",
+          "note": "Valuing of our money seven pence halfpenny, as Mat. 18.28",
+          "type": "clarification"
+        }
+      ],
+      "41": [
+        {
+          "phrase": "money",
+          "note": "A piece of brass money, see Matth. 10.9",
+          "type": "clarification"
+        }
+      ],
+      "42": [
+        {
+          "phrase": "mites",
+          "note": "It is the seventh part of one piece of that brass money",
+          "type": "clarification"
+        }
+      ]
+    },
+    "13": {
+      "8": [
+        {
+          "phrase": "sorrows",
+          "note": "The word in the original, importeth, the pains of a woman in travail",
+          "type": "clarification"
+        }
+      ]
+    },
+    "14": {
+      "3": [
+        {
+          "phrase": "spikenard",
+          "note": "Or, pure nard, or liquid nard",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "pence",
+          "note": "See Matt. 18.28",
+          "type": "clarification"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "killed",
+          "note": "Or, sacrificed",
+          "type": "alternative"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "hymn",
+          "note": "Or, psalm",
+          "type": "alternative"
+        }
+      ],
+      "72": [
+        {
+          "phrase": "he wept",
+          "note": "Or, he wept abundantly, or he began to wept [sic]",
+          "type": "alternative"
+        }
+      ]
+    },
+    "16": {
+      "14": [
+        {
+          "phrase": "at meat",
+          "note": "Or, together",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

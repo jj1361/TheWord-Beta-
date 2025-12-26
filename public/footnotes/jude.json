@@ -1,0 +1,22 @@
+{
+  "bookId": 65,
+  "bookName": "Jude",
+  "chapters": {
+    "1": {
+      "6": [
+        {
+          "phrase": "first estate",
+          "note": "Or, principality",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "strange",
+          "note": "Gr. other",
+          "type": "greek"
+        }
+      ]
+    }
+  }
+}

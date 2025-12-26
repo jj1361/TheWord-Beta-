@@ -1,0 +1,391 @@
+{
+  "bookId": 33,
+  "bookName": "Micah",
+  "chapters": {
+    "1": {
+      "2": [
+        {
+          "phrase": "Hear all ye people",
+          "note": "Heb. hear ye people all of them",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "all that therein is",
+          "note": "Heb. the fullness thereof",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "a steep place",
+          "note": "Heb. a descent",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "owls",
+          "note": "Heb. daughters of the owl",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "her wound is incurable",
+          "note": "Or, she is greviously sick of her wounds",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "Aphrah",
+          "note": "That is, dust",
+          "type": "meaning"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "inhabitant",
+          "note": "Heb. inhabitress",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "Saphir",
+          "note": "Or, thou that dwellest fairly",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Zaanan",
+          "note": "Or, the country of flocks",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Bethezel",
+          "note": "Or, a place near",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "waited",
+          "note": "Or, was grieved",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "to",
+          "note": "Or, for",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Achzib",
+          "note": "That is, a lie",
+          "type": "meaning"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "he shall come unto Adullam, the glory of Israel",
+          "note": "Or, the glory of Israel shall come etc.",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "2": [
+        {
+          "phrase": "oppress",
+          "note": "Or, defraud",
+          "type": "alternative"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "a doleful lamentation",
+          "note": "Heb. with a lamentation of lamentations",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "turning away he hath divided",
+          "note": "Or, instead of restoring",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "Prophesy ye not",
+          "note": "Or, prophesy not, as they prophesy",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Prophesy",
+          "note": "Heb. drop, etc.",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "straightened",
+          "note": "Or, shortened",
+          "type": "alternative"
+        },
+        {
+          "phrase": "uprightly?",
+          "note": "Heb. upright",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "Even of late",
+          "note": "Heb. yesterday",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "with the garment",
+          "note": "Heb. over against a garment",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "women",
+          "note": "Or, wives",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "walking in the spirit and falsehood",
+          "note": "Or, walk with the wind, and lie falsely",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "6": [
+        {
+          "phrase": "that ye shall not have a vision",
+          "note": "Heb. from a vision",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "that ye shall not divine",
+          "note": "Heb. from divining",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "lips",
+          "note": "Heb. upper lip",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "blood",
+          "note": "Heb. bloods",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "and say",
+          "note": "Heb. saying",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "4": {
+      "3": [
+        {
+          "phrase": "pruninghooks",
+          "note": "Or, scythes",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "2": [
+        {
+          "phrase": "from everlasting",
+          "note": "Heb. the days of eternity",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "feed",
+          "note": "Or, rule",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "principal men",
+          "note": "Heb. princes of men",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "waste",
+          "note": "Heb. eat up",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "with the sword",
+          "note": "Or, with her own naked swords [symbol in wrong place in verse]",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "sheep",
+          "note": "Or, goats",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "standing images",
+          "note": "Or, statues",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "cities",
+          "note": "Or, enemies",
+          "type": "alternative"
+        }
+      ]
+    },
+    "6": {
+      "1": [
+        {
+          "phrase": "before",
+          "note": "Or, with",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "body",
+          "note": "Heb. belly",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "walk humbly",
+          "note": "Heb. humble thyself to walk",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "the man of",
+          "note": "Or, thy name shall see that which is",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "Are there yet the treasures of wickedness in the house of the wicked",
+          "note": "Or, is there yet unto every man an house of the wicked? etc.",
+          "type": "alternative"
+        },
+        {
+          "phrase": "scant measure that is abominable",
+          "note": "Heb. measure of leanness",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "Shall I count them pure",
+          "note": "Or, shall I be pure with, etc.",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "the statues",
+          "note": "Or, he doth much keep the etc.",
+          "type": "alternative"
+        },
+        {
+          "phrase": "desolation",
+          "note": "Or, astonishment",
+          "type": "alternative"
+        }
+      ]
+    },
+    "7": {
+      "1": [
+        {
+          "phrase": "summer fruits",
+          "note": "Heb. the gatherings of summer",
+          "type": "hebrew"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "good",
+          "note": "Or, godly, or merciful",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "mischevious desire",
+          "note": "Heb. the mischief of the soul",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "She that is mine enemy shall see it, and shame shall cover her",
+          "note": "Or, and thou wilt see her that is mine enemy and cover her with shame",
+          "type": "alternative"
+        },
+        {
+          "phrase": "she be trodden down",
+          "note": "Heb. she shall be for a treading down",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "from",
+          "note": "Or, even to",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "Notwithstanding",
+          "note": "Or, after that it hath been",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "Feed",
+          "note": "Or, rule",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "worms",
+          "note": "Or, creeping things",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

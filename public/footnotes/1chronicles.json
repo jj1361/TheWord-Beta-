@@ -1,0 +1,1928 @@
+{
+  "bookId": 13,
+  "bookName": "1 Chronicles",
+  "chapters": {
+    "1": {
+      "6": [
+        {
+          "phrase": "Riphath",
+          "note": "Or, Diphath, as it is in some copies",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "Dodanim",
+          "note": "Or, Rodanim, according to some copies",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "Meshech",
+          "note": "Or, Mash. gen. 10.23 [sic]",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "Peleg",
+          "note": "that is, division",
+          "type": "meaning"
+        }
+      ],
+      "30": [
+        {
+          "phrase": "Hadad",
+          "note": "Or, Hadar, Gen. 25.14",
+          "type": "alternative"
+        }
+      ],
+      "36": [
+        {
+          "phrase": "Zephi",
+          "note": "Or, Zepho, Gen. 36.12",
+          "type": "alternative"
+        }
+      ],
+      "39": [
+        {
+          "phrase": "Homam",
+          "note": "Or, Heman, Gen. 36.22",
+          "type": "alternative"
+        }
+      ],
+      "40": [
+        {
+          "phrase": "Alian",
+          "note": "Or, Alvan, Gen. 36.23",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Shephi",
+          "note": "Or, Sepho, Gen. 36.23",
+          "type": "alternative"
+        }
+      ],
+      "41": [
+        {
+          "phrase": "Amram",
+          "note": "Or, Hemdan, Gen. 36.26",
+          "type": "alternative"
+        }
+      ],
+      "42": [
+        {
+          "phrase": "Jakan",
+          "note": "or Akan, Gen. 36.27",
+          "type": "alternative"
+        }
+      ],
+      "50": [
+        {
+          "phrase": "Hadad",
+          "note": "Or, Hadar, Gen. 36.39",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Pai",
+          "note": "Or, Pau, Gen. 36.39",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "1": [
+        {
+          "phrase": "Israel",
+          "note": "Or, Jacob",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "Zimri",
+          "note": "Or, Zabdi, Josh. 7.1",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Dara",
+          "note": "Or, Darda",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "Achar",
+          "note": "Or, Achan",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "Ram",
+          "note": "Or, Aram. Mat. 1.3",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Chelubai",
+          "note": "Or, Caleb. Ver. 18",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "Shimma",
+          "note": "Or, Shamma, 1 Sam. 16.9",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "married",
+          "note": "Heb. took",
+          "type": "hebrew"
+        }
+      ],
+      "52": [
+        {
+          "phrase": "Haroeh",
+          "note": "Or, Reaiah, chap. 4.2",
+          "type": "alternative"
+        },
+        {
+          "phrase": "half of the Manahethites",
+          "note": "Or, half of the Manahethites, Or Hatsihammenuchoth",
+          "type": "alternative"
+        }
+      ],
+      "54": [
+        {
+          "phrase": "Ataroth, the house of Joab",
+          "note": "Or, Atarites, or, crowns of the house of Joab",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "1": [
+        {
+          "phrase": "Daniel",
+          "note": "Or, Chileab, 2. sam. 3.3",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "Shimea",
+          "note": "Or, Shammua, 2. Sam. 5.14",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Bathshua",
+          "note": "Or, Bethsabe, 2. Sam. 11.13",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Ammieal",
+          "note": "Or, Eliam, 2. Sam. 11.3",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "Elishama",
+          "note": "Or, Elishua 2. Sam. 5.15",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "Eliada",
+          "note": "Or, Beliada, 1. Chro. 14.7",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "Abia",
+          "note": "Or, Abiam, 1. king. 15.1",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "Ahaziah",
+          "note": "Or, Azariah, 2. chr. 22.6 & 21.17",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "Azariah",
+          "note": "Or, Uzziah 2. king. 15.30",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "Johanan",
+          "note": "Or, Joachaz, 2. king. 23.30",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Joakim",
+          "note": "Or, Eliakim, 2. king. 23.34",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Zedekiah",
+          "note": "Or, Mathania, 2. king. 24.17",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "Jeconiah",
+          "note": "Or, Jehoiachin, 2. king. 24.6",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "Jeconiah",
+          "note": "Or, Coniah, jer. 22.34",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Salathiel",
+          "note": "Heb. Shealtiel",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "his son",
+          "note": "2. King. 24.17. being his uncle",
+          "type": "clarification"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "Hezekiah",
+          "note": "Heb. Hiskijah",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "4": {
+      "1": [
+        {
+          "phrase": "Carmi",
+          "note": "Or, Chelubai, Chap. 2.9. or Caleb, Chap. 2.18",
+          "type": "alternative"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "Reaiah",
+          "note": "Or, Haroe",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "Jabez",
+          "note": "that is, sorrowful",
+          "type": "meaning"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "Oh that thow wouldest",
+          "note": "Heb. if thou wilt, etc.",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "keep me",
+          "note": "Heb. do me",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "Irnahash",
+          "note": "Or, the city of Nahash",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "Hathath and Meonothai",
+          "note": "Or, Hathath, and Meonothai, who begat, etc.",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "valley",
+          "note": "Or, inhabitants of the valley",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Charasim",
+          "note": "That is, craftsmen",
+          "type": "meaning"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "even Kenaz",
+          "note": "Or, Uknaz",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "Jehudijah",
+          "note": "Or, the Jewess",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "Hodiah",
+          "note": "Or, Jehudijah, mentioned before",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "Nemuel",
+          "note": "Or, Jemuel",
+          "type": "alternative"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "like",
+          "note": "Heb. unto",
+          "type": "hebrew"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "Bilhah",
+          "note": "Or, Bela",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Tolad",
+          "note": "Or, Eltolad",
+          "type": "alternative"
+        }
+      ],
+      "31": [
+        {
+          "phrase": "Hazarsusim",
+          "note": "Or, Hazarsusah",
+          "type": "alternative"
+        }
+      ],
+      "32": [
+        {
+          "phrase": "Etam",
+          "note": "Or, Ether",
+          "type": "alternative"
+        }
+      ],
+      "33": [
+        {
+          "phrase": "Baal",
+          "note": "Or, Baalathbeer",
+          "type": "alternative"
+        },
+        {
+          "phrase": "genealogy",
+          "note": "Or, as they divided themselves by nations among them",
+          "type": "alternative"
+        }
+      ],
+      "38": [
+        {
+          "phrase": "mentioned",
+          "note": "Heb. coming",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "5": {
+      "2": [
+        {
+          "phrase": "rulers",
+          "note": "Or, Prince",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "Tilgathpilneser",
+          "note": "Or, Tiglathpilneser",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "Shema",
+          "note": "Or, Shemaiah",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "throughout all the East land",
+          "note": "Heb. upon all the face of the East",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "their borders",
+          "note": "Heb. their goings forth",
+          "type": "hebrew"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "valient men",
+          "note": "Heb. sons of valour",
+          "type": "hebrew"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "took away",
+          "note": "Heb. led captive",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "men",
+          "note": "Heb. souls of men",
+          "type": "hebrew"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "famous men",
+          "note": "Heb. men of names",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "6": {
+      "1": [
+        {
+          "phrase": "Gershon",
+          "note": "Or, Gershom",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "in the temple",
+          "note": "Heb. in the house",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "Shallum",
+          "note": "Or, Meshullam",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "Gershom",
+          "note": "Or, Gershon",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "Joah",
+          "note": "Or, Ethan",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Iddo",
+          "note": "Or, Adaia",
+          "type": "alternative"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "Amminadab",
+          "note": "Or, Izhar",
+          "type": "alternative"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "Zophai",
+          "note": "Or, Zuph",
+          "type": "alternative"
+        }
+      ],
+      "28": [
+        {
+          "phrase": "Vashni",
+          "note": "called also Joel",
+          "type": "clarification"
+        }
+      ],
+      "33": [
+        {
+          "phrase": "waited",
+          "note": "Heb. stood",
+          "type": "hebrew"
+        }
+      ],
+      "44": [
+        {
+          "phrase": "Kishi",
+          "note": "Or, Kushaiah",
+          "type": "alternative"
+        }
+      ],
+      "58": [
+        {
+          "phrase": "Hilen",
+          "note": "or Holon",
+          "type": "alternative"
+        }
+      ],
+      "59": [
+        {
+          "phrase": "Ashan",
+          "note": "or Ain",
+          "type": "alternative"
+        }
+      ],
+      "60": [
+        {
+          "phrase": "Alemeth",
+          "note": "or Almon",
+          "type": "alternative"
+        }
+      ],
+      "78": [
+        {
+          "phrase": "Bezer",
+          "note": "Or, Bozor",
+          "type": "alternative"
+        }
+      ]
+    },
+    "7": {
+      "12": [
+        {
+          "phrase": "Ir",
+          "note": "Or, Iri",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Aher",
+          "note": "Or, Ahiram",
+          "type": "alternative"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "Non",
+          "note": "Or, Nun",
+          "type": "alternative"
+        }
+      ],
+      "28": [
+        {
+          "phrase": "towns",
+          "note": "Heb. daughters",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "Gaza",
+          "note": "Or, Adazza, 1. mac. 7.45",
+          "type": "alternative"
+        }
+      ]
+    },
+    "8": {
+      "3": [
+        {
+          "phrase": "Addar",
+          "note": "Or, Ard",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "Shephuphan",
+          "note": "Or, Shupham",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "Shimhi",
+          "note": "Or, Shema",
+          "type": "alternative"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "father of Gibeon",
+          "note": "also called Jehiel",
+          "type": "clarification"
+        }
+      ],
+      "31": [
+        {
+          "phrase": "Zacher",
+          "note": "Or, Zechariah",
+          "type": "alternative"
+        }
+      ],
+      "32": [
+        {
+          "phrase": "Shimeah",
+          "note": "Or, Shimeam",
+          "type": "alternative"
+        }
+      ],
+      "33": [
+        {
+          "phrase": "Eshbaal",
+          "note": "Or, Ishbosheth",
+          "type": "alternative"
+        }
+      ],
+      "34": [
+        {
+          "phrase": "Meribbaal",
+          "note": "Or, Mephibosheth",
+          "type": "alternative"
+        }
+      ],
+      "35": [
+        {
+          "phrase": "Tarea",
+          "note": "Or, Tahrea",
+          "type": "alternative"
+        }
+      ],
+      "36": [
+        {
+          "phrase": "Jehoadah",
+          "note": "also called, Jarah",
+          "type": "clarification"
+        }
+      ],
+      "37": [
+        {
+          "phrase": "Rapha",
+          "note": "also called, Rephaiah",
+          "type": "clarification"
+        }
+      ]
+    },
+    "9": {
+      "13": [
+        {
+          "phrase": "very able men",
+          "note": "mighty men of valour",
+          "type": "clarification"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "gates",
+          "note": "Heb. thresholds",
+          "type": "hebrew"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "did ordain",
+          "note": "Heb. founded",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "set office",
+          "note": "Or, trust",
+          "type": "alternative"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "set office",
+          "note": "Or, trust",
+          "type": "alternative"
+        },
+        {
+          "phrase": "chambers",
+          "note": "Or, storehouses",
+          "type": "alternative"
+        }
+      ],
+      "28": [
+        {
+          "phrase": "bring them in and out by tale",
+          "note": "Heb. bring them in by tale, and carry them out by tale",
+          "type": "hebrew"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "instruments",
+          "note": "Or, vessels",
+          "type": "alternative"
+        }
+      ],
+      "31": [
+        {
+          "phrase": "set office",
+          "note": "Or, trust",
+          "type": "alternative"
+        },
+        {
+          "phrase": "in the pans",
+          "note": "Or, on flat plates, or, slices",
+          "type": "alternative"
+        }
+      ],
+      "32": [
+        {
+          "phrase": "shewbread",
+          "note": "Heb. bread of ordering",
+          "type": "hebrew"
+        }
+      ],
+      "33": [
+        {
+          "phrase": "they were imployed",
+          "note": "Heb. upon them",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "10": {
+      "1": [
+        {
+          "phrase": "slain",
+          "note": "Or, wounded",
+          "type": "alternative"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "Abinadab",
+          "note": "Or, Jeshui",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "archers",
+          "note": "Heb. shooters with bows",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "hit him",
+          "note": "Heb. found him",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "abuse me",
+          "note": "Or, mock me",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "committed",
+          "note": "Heb. transgressed",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "Jesse",
+          "note": "Heb. Isai",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "11": {
+      "2": [
+        {
+          "phrase": "in time past",
+          "note": "Heb. both yesterday and the third day",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "feed",
+          "note": "Or, rule",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "by",
+          "note": "Heb. by the hand of",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "chief",
+          "note": "Heb, head",
+          "type": "clarification"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "it the city of David",
+          "note": "That is, Zion",
+          "type": "meaning"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "repaired",
+          "note": "Heb. revived",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "waxed greater and greater",
+          "note": "Heb. went in going and increasing",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "strengthened themselves with him",
+          "note": "Or, held strongly with him",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "an Hachmonite",
+          "note": "Or, son of Hachmoni",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "Pasdammim",
+          "note": "also called, Ephesdammim",
+          "type": "clarification"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "set themselves",
+          "note": "Or, stood",
+          "type": "alternative"
+        },
+        {
+          "phrase": "deliverance",
+          "note": "Or, salvation",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "three of the thirty captains",
+          "note": "Or, three captains over the thirty",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "that have put their lives",
+          "note": "Heb. with their lives?",
+          "type": "hebrew"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "who had done many acts",
+          "note": "Heb. great of deeds",
+          "type": "hebrew"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "a man of great stature",
+          "note": "Heb. a man of measure",
+          "type": "hebrew"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "Harorite",
+          "note": "Or, Harodite",
+          "type": "alternative"
+        }
+      ],
+      "38": [
+        {
+          "phrase": "the son of Haggeri",
+          "note": "Or, the Haggerite",
+          "type": "alternative"
+        }
+      ],
+      "45": [
+        {
+          "phrase": "son of Zimri",
+          "note": "Or, Zimrite",
+          "type": "alternative"
+        }
+      ]
+    },
+    "12": {
+      "1": [
+        {
+          "phrase": "while he yet kept himself close",
+          "note": "Heb. being yet shut up",
+          "type": "hebrew"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "Shemaah",
+          "note": "Or, Hasmaa",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "of war",
+          "note": "Heb. of the host",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "as swift as the Roes upon the mountains",
+          "note": "Heb. as the Roes upon the mountains to make haste",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "one of the least was over an hundred, and the greatest, over a thousand",
+          "note": "Or, one that was least could resist an hundred, and the greatest a thousand",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "overflown",
+          "note": "Heb. filled over",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "to meet them",
+          "note": "Heb. before them",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "be knit",
+          "note": "Heb. be one",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "wrong",
+          "note": "Or, violence",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "the spirit came upon Amasai",
+          "note": "Heb. the Spirit clothed Amasai",
+          "type": "hebrew"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "to the jeopardy of our heads",
+          "note": "Heb. on our heads",
+          "type": "hebrew"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "against the band",
+          "note": "Or, with a band",
+          "type": "alternative"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "bands",
+          "note": "Or, captains, or, men. Heb. heads",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "armed",
+          "note": "Or, prepared",
+          "type": "alternative"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "kindred",
+          "note": "Heb. brethren",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "the greatest part of them",
+          "note": "Heb. a multitude of them",
+          "type": "hebrew"
+        }
+      ],
+      "30": [
+        {
+          "phrase": "famous",
+          "note": "Heb. men of names",
+          "type": "hebrew"
+        }
+      ],
+      "33": [
+        {
+          "phrase": "expert in war",
+          "note": "Or, rangers of battle, or ranged in battle",
+          "type": "alternative"
+        },
+        {
+          "phrase": "keep rank",
+          "note": "Or, set the battle in array",
+          "type": "alternative"
+        },
+        {
+          "phrase": "not of double heart",
+          "note": "Heb. without a heart and a heart",
+          "type": "hebrew"
+        }
+      ],
+      "36": [
+        {
+          "phrase": "expert",
+          "note": "Or, keeping their rank",
+          "type": "alternative"
+        }
+      ],
+      "40": [
+        {
+          "phrase": "meat",
+          "note": "Or, victual of meal",
+          "type": "alternative"
+        }
+      ]
+    },
+    "13": {
+      "2": [
+        {
+          "phrase": "let us send abroad",
+          "note": "Heb. let us break forth and send",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "in their cities and suburbs",
+          "note": "Heb. in the cities of their suburbs",
+          "type": "hebrew"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "bring again",
+          "note": "Heb. bring about",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "carried the Ark",
+          "note": "Heb. made the Ark to ride",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "singing",
+          "note": "Heb. songs",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "Chidon",
+          "note": "Called Nachon",
+          "type": "clarification"
+        },
+        {
+          "phrase": "stumbled",
+          "note": "Or, shook it",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "Perezuzza",
+          "note": "Heb. breach of Uzza",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "brought not",
+          "note": "Heb. removed",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "14": {
+      "3": [
+        {
+          "phrase": "more wives",
+          "note": "Heb. yet",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "Beeliada",
+          "note": "Or, Eliada",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "Baalperazim",
+          "note": "that is, a place of breaches",
+          "type": "meaning"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "Gibeon",
+          "note": "also called, Geba",
+          "type": "clarification"
+        }
+      ]
+    },
+    "15": {
+      "2": [
+        {
+          "phrase": "None ought to carry the ark of God, but the Levites",
+          "note": "Heb. It is not to carry the Ark of God, but for the Levites",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "brethren",
+          "note": "Or, kinsmen",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "Sheminith",
+          "note": "Or, on the eight to oversee",
+          "type": "alternative"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "was for song, he instructed about the song",
+          "note": "Or, was for the carriage, he instructed about the carriage",
+          "type": "alternative"
+        },
+        {
+          "phrase": "song",
+          "note": "Heb. lifting up",
+          "type": "hebrew"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "song",
+          "note": "Or, carriage",
+          "type": "alternative"
+        }
+      ]
+    },
+    "16": {
+      "5": [
+        {
+          "phrase": "with Psalteries and with harps",
+          "note": "Heb. with instruments of Psalteries, and harps",
+          "type": "hebrew"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "the lot",
+          "note": "Heb. the cord",
+          "type": "hebrew"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "few",
+          "note": "Heb. men of number",
+          "type": "hebrew"
+        }
+      ],
+      "40": [
+        {
+          "phrase": "morning and evening",
+          "note": "Heb. in the morning and in the evening",
+          "type": "hebrew"
+        }
+      ],
+      "42": [
+        {
+          "phrase": "Porters",
+          "note": "Heb. for the gate",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "17": {
+      "7": [
+        {
+          "phrase": "from following",
+          "note": "Heb. from after",
+          "type": "hebrew"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "great things",
+          "note": "Heb. greatness",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "18": {
+      "3": [
+        {
+          "phrase": "Hadarezer",
+          "note": "Or, Hadadezer in Sam",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "Damascus",
+          "note": "Heb. Darmesek",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "Tibhath…",
+          "note": "Called in the book of Sam. Beta, and Berothai",
+          "type": "clarification"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "Tou",
+          "note": "Or, Toi",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "Hadoram",
+          "note": "Or, Joram",
+          "type": "alternative"
+        },
+        {
+          "phrase": "to enquire",
+          "note": "Or, to salute",
+          "type": "alternative"
+        },
+        {
+          "phrase": "to congratulate",
+          "note": "Heb. to bless",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "had war",
+          "note": "Heb. was the man of wars",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "Recorder",
+          "note": "Or, remembrancer",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "Abimelech",
+          "note": "Called Ahimelech in Sam.",
+          "type": "clarification"
+        },
+        {
+          "phrase": "Shausha",
+          "note": "Called Saraia in Sam. and Sisa",
+          "type": "clarification"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "chief about the king",
+          "note": "Heb. at the hand of the King",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "19": {
+      "3": [
+        {
+          "phrase": "Thinkest",
+          "note": "Heb. In thine eyes doeth David, etc.",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "odious",
+          "note": "Heb. to stink",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "the battle was",
+          "note": "Heb. the face of the battle was",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "choice",
+          "note": "Or, young men",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "Abishai",
+          "note": "Heb. Abshai",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "River",
+          "note": "i. Euphrates",
+          "type": "clarification"
+        },
+        {
+          "phrase": "Shophach",
+          "note": "Or, Shobach",
+          "type": "alternative"
+        }
+      ]
+    },
+    "20": {
+      "1": [
+        {
+          "phrase": "after the year",
+          "note": "Heb. at the return of the year",
+          "type": "hebrew"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "to weigh",
+          "note": "Heb. the weight of",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "arose",
+          "note": "Or, continued, Heb. stood",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Gezer",
+          "note": "Or, Gob",
+          "type": "alternative"
+        },
+        {
+          "phrase": "the giant",
+          "note": "Or, Rapha",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "Jair",
+          "note": "Called also Jaareoregim",
+          "type": "clarification"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "man of great stature",
+          "note": "Heb. a man of measure",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "the son of the giant",
+          "note": "Heb. born to the giant, or, Rapha",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "defied",
+          "note": "Or, reproached",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Shimea",
+          "note": "Called Shammah",
+          "type": "clarification"
+        }
+      ]
+    },
+    "21": {
+      "7": [
+        {
+          "phrase": "And God was displeased with this thing",
+          "note": "And it was evil in the eyes of the LORD concerning this thing",
+          "type": "clarification"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "offer",
+          "note": "Heb. stretch out",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "Choose thee",
+          "note": "Heb. take to thee",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "great",
+          "note": "Or, many",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "Ornan",
+          "note": "Or, Araunah",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "And Ornane turned back and saw the Angel, and his four sons with him hid themselves",
+          "note": "Or, When Ornan turned back, and saw the Angel, then he and his four sons with him, hid themselves",
+          "type": "alternative"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "Grant",
+          "note": "Heb. give",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "22": {
+      "9": [
+        {
+          "phrase": "Solomon",
+          "note": "That is, peaceable",
+          "type": "meaning"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "in my trouble",
+          "note": "Or, in my poverty",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "workers of stone and timber",
+          "note": "That is, masons and carpenters",
+          "type": "meaning"
+        }
+      ]
+    },
+    "23": {
+      "4": [
+        {
+          "phrase": "to set forward",
+          "note": "Or, to oversee",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "courses",
+          "note": "Heb. divisions",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "Laadan",
+          "note": "Or, Libni",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "Zina",
+          "note": "Or, Ziza",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "had not many sons",
+          "note": "Heb. did not multiply sons",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "Shebuel",
+          "note": "also called, Shubael",
+          "type": "clarification"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "the chief",
+          "note": "Or, the first",
+          "type": "alternative"
+        },
+        {
+          "phrase": "were very many",
+          "note": "Heb. were highly multiplied",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "their office was to wait on the sons of Aaron",
+          "note": "Heb. their station was at the hand of the sons of Aaron",
+          "type": "hebrew"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "brethren",
+          "note": "Or, kinsmen",
+          "type": "alternative"
+        }
+      ],
+      "25": [
+        {
+          "phrase": "that they may dwell in Jerusalem",
+          "note": "Or, that he dwelleth in Jerusalem, etc.",
+          "type": "alternative"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "numbered",
+          "note": "Heb. number",
+          "type": "hebrew"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "pan",
+          "note": "Or, flat plate",
+          "type": "alternative"
+        }
+      ]
+    },
+    "24": {
+      "6": [
+        {
+          "phrase": "principal household",
+          "note": "Heb. house of the father",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "25": {
+      "2": [
+        {
+          "phrase": "Asarelah",
+          "note": "otherwise called Jesharelah [† or || symbol missing here]",
+          "type": "clarification"
+        },
+        {
+          "phrase": "according to the order of the king",
+          "note": "Heb. by the hand of the king",
+          "type": "hebrew"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "Zeri",
+          "note": "Or, Izri",
+          "type": "alternative"
+        },
+        {
+          "phrase": "six",
+          "note": "With Shimei mentioned ver. 17",
+          "type": "clarification"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "Uzziel",
+          "note": "Or, Azareel",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Shebuel",
+          "note": "Or, Shubael",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "words",
+          "note": "Or, matters",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "according to the kings order",
+          "note": "Heb. by the hands of the King",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "26": {
+      "1": [
+        {
+          "phrase": "Meshelemiah",
+          "note": "Or, Shelemiah",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Asaph",
+          "note": "Or, Abiasaph",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "him",
+          "note": "That is, Obededom",
+          "type": "meaning"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "as well the small as the great",
+          "note": "Or, as well for the small as for the great",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "Shelemiah",
+          "note": "Called Meshelemiah",
+          "type": "clarification"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "Asuppim",
+          "note": "Heb. gatherings",
+          "type": "hebrew"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "dedicate things",
+          "note": "Heb. holy things",
+          "type": "hebrew"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "Laadan",
+          "note": "Or, Libni",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Jehieli",
+          "note": "Or, Jehiel",
+          "type": "alternative"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "out of the spoils won in battles",
+          "note": "Heb. out of the battles and spoils",
+          "type": "hebrew"
+        }
+      ],
+      "30": [
+        {
+          "phrase": "officers",
+          "note": "Heb. over the charge",
+          "type": "hebrew"
+        }
+      ],
+      "32": [
+        {
+          "phrase": "affairs",
+          "note": "Heb. thing",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "27": {
+      "4": [
+        {
+          "phrase": "Dodai",
+          "note": "Or, Dodo",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "chief priest",
+          "note": "Or, principal officer",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "Heldai",
+          "note": "Or, Heled",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "was the number",
+          "note": "Heb. ascended",
+          "type": "hebrew"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "over the increase of the vineyards",
+          "note": "Heb. over that which was of the vineyards",
+          "type": "hebrew"
+        }
+      ],
+      "32": [
+        {
+          "phrase": "Scribe",
+          "note": "Or, secretary",
+          "type": "alternative"
+        },
+        {
+          "phrase": "son of Hachmoni",
+          "note": "Or, Hachmonite",
+          "type": "alternative"
+        }
+      ]
+    },
+    "28": {
+      "1": [
+        {
+          "phrase": "possession",
+          "note": "Or, cattle",
+          "type": "alternative"
+        },
+        {
+          "phrase": "officers",
+          "note": "Or, Eunuchs",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "blood",
+          "note": "Heb. bloods",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "constant",
+          "note": "Heb. strong",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "of all that he had",
+          "note": "Heb. of all that was with him",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "29": {
+      "5": [
+        {
+          "phrase": "to consecrate his service",
+          "note": "Heb. to fill his hand",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "be able",
+          "note": "Heb. retain or obtain strength",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "thine own hand",
+          "note": "Heb. of thine hand",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "abiding",
+          "note": "Heb. expectation",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "present",
+          "note": "Heb. found",
+          "type": "hebrew"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "prepare",
+          "note": "Or, stablish",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "submitted themselves unto Solomon",
+          "note": "Heb. gave the hand under Solomon",
+          "type": "hebrew"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "book",
+          "note": "Or, history",
+          "type": "alternative"
+        },
+        {
+          "phrase": "book",
+          "note": "Heb. words",
+          "type": "hebrew"
+        }
+      ]
+    }
+  }
+}

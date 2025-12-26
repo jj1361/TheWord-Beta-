@@ -1,0 +1,2088 @@
+{
+  "bookId": 14,
+  "bookName": "2 Chronicles",
+  "chapters": {
+    "1": {
+      "5": [
+        {
+          "phrase": "he put",
+          "note": "Or, was there",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "like the dust of the earth",
+          "note": "Heb. much as the dust of the earth",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "made",
+          "note": "Heb. gave",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "Solomon had horses brought out of Egypt",
+          "note": "Heb. the going forth of the horses which was Solomons",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "by their means",
+          "note": "Heb. by their hand",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "2": {
+      "3": [
+        {
+          "phrase": "Huram",
+          "note": "Or, Hiram",
+          "type": "alternative"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "sweet incense",
+          "note": "Heb. incense of spices",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "is able",
+          "note": "Heb. hath retained, or obtained strength",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "to grave",
+          "note": "Heb. to grave gravings",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "Algume",
+          "note": "Or, Almuggim",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "wonderful great",
+          "note": "Heb. great and wonderful",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "endued with prudance and understanding",
+          "note": "Heb. knowing prudence and understanding",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "as much as thou shalt need",
+          "note": "Heb. according to all thy need",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "Joppa",
+          "note": "Heb. Japho",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "the strangers",
+          "note": "Heb. the men the strangers",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "3": {
+      "1": [
+        {
+          "phrase": "where the LORD appeared unto David his father",
+          "note": "Or, which was seen of David his father",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Ornan",
+          "note": "Or, Araunah",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "instructed",
+          "note": "Heb. founded",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "garnished",
+          "note": "Heb. covered",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "image work",
+          "note": "Or, (as some think) of moveable work",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "inward",
+          "note": "Or, toward the house",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "wrought",
+          "note": "Heb. caused to ascend",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "high",
+          "note": "Heb. long",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "Jachin",
+          "note": "That is, he shall establish",
+          "type": "meaning"
+        },
+        {
+          "phrase": "Boaz",
+          "note": "That is, in it is strengh",
+          "type": "meaning"
+        }
+      ]
+    },
+    "4": {
+      "2": [
+        {
+          "phrase": "from brim to brim",
+          "note": "Heb.",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "with flowers of lillies",
+          "note": "Or, like a lilyflower",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "burnt offering",
+          "note": "Heb. the work of burnt offering",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "basons",
+          "note": "Or, bowls",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "basons",
+          "note": "Or, bowls",
+          "type": "alternative"
+        },
+        {
+          "phrase": "finished the work",
+          "note": "Heb. finished to make",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "upon",
+          "note": "Heb. upon the face",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "lavers",
+          "note": "Or, caldrons",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "bright",
+          "note": "Heb. made bright, or scoured",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "clay ground",
+          "note": "Heb. thicknesses of the ground",
+          "type": "hebrew"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "perfect gold",
+          "note": "Heb. perfections of gold",
+          "type": "hebrew"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "basons",
+          "note": "Or, bowls",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "9": [
+        {
+          "phrase": "it is unto",
+          "note": "Or, they are there",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "when",
+          "note": "Or, where",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "present",
+          "note": "Heb. found",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "6": {
+      "13": [
+        {
+          "phrase": "long",
+          "note": "Heb. the length thereof, etc",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "not fail thee a man",
+          "note": "Heb. there shall not be a man cut off",
+          "type": "hebrew"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "towards this place",
+          "note": "Or, in this place",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "make",
+          "note": "Heb. pray",
+          "type": "hebrew"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "and an oath be laid upon him",
+          "note": "Heb. and he require an oath of him",
+          "type": "hebrew"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "be put to the worse",
+          "note": "Or, be smitten",
+          "type": "alternative"
+        },
+        {
+          "phrase": "in",
+          "note": "Or, towards",
+          "type": "alternative"
+        }
+      ],
+      "28": [
+        {
+          "phrase": "in the cities of their land",
+          "note": "Heb. in the land of their gates",
+          "type": "hebrew"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "in this house",
+          "note": "Or, toward this house",
+          "type": "alternative"
+        }
+      ],
+      "31": [
+        {
+          "phrase": "so long as they live",
+          "note": "Heb. all the days which",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "in the land",
+          "note": "Heb. upon the face of the land",
+          "type": "hebrew"
+        }
+      ],
+      "33": [
+        {
+          "phrase": "this house which I have built",
+          "note": "Heb. thy Name is called upon this house",
+          "type": "hebrew"
+        }
+      ],
+      "35": [
+        {
+          "phrase": "cause",
+          "note": "Or, right",
+          "type": "alternative"
+        }
+      ],
+      "36": [
+        {
+          "phrase": "they carry away captives unto a land far off or near",
+          "note": "Heb. they that take them captives carry them away",
+          "type": "hebrew"
+        }
+      ],
+      "37": [
+        {
+          "phrase": "bethink themselves",
+          "note": "Heb. bring back to their heart",
+          "type": "hebrew"
+        }
+      ],
+      "39": [
+        {
+          "phrase": "cause",
+          "note": "Or, right",
+          "type": "alternative"
+        }
+      ],
+      "40": [
+        {
+          "phrase": "unto the prayer that is made",
+          "note": "Heb. to the prayer of this place",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "7": {
+      "6": [
+        {
+          "phrase": "by their ministry",
+          "note": "Heb. by their hand",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "a solemn",
+          "note": "Heb. a restraint",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "which are called by my Name",
+          "note": "Heb. upon whom my name is called",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "unto the prayer that is made in this place",
+          "note": "Heb. to the prayer of this place",
+          "type": "hebrew"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "there shall not fail thee",
+          "note": "Heb. there shall not be cut off to thee",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "8": {
+      "6": [
+        {
+          "phrase": "all that Solomon desired to build",
+          "note": "Heb. all the desire of Solomon, which he desired to build",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "holy",
+          "note": "Heb. holiness",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "so had David the man of God commanded",
+          "note": "Heb. so was the commandment of David the man of God",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "Eloth",
+          "note": "Or, Elath",
+          "type": "alternative"
+        }
+      ]
+    },
+    "9": {
+      "4": [
+        {
+          "phrase": "cupbearers",
+          "note": "Or, butlers",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "report",
+          "note": "Heb. word",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "acts",
+          "note": "Or, sayings",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "algum…",
+          "note": "also called, almug trees",
+          "type": "clarification"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "terraces",
+          "note": "Or, stairs, Heb. highways",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "governors",
+          "note": "Or, captains",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "stays",
+          "note": "Heb. hands",
+          "type": "hebrew"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "pure",
+          "note": "Heb. shut up",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "none were of silver",
+          "note": "Or, there was no silver in them",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "ivory",
+          "note": "Or, elephants teeth",
+          "type": "alternative"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "river",
+          "note": "that is, Euphrates",
+          "type": "meaning"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "made",
+          "note": "Heb. gave",
+          "type": "hebrew"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "book",
+          "note": "Heb. words",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "10": {
+      "11": [
+        {
+          "phrase": "put",
+          "note": "Heb. laded",
+          "type": "hebrew"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "made speed",
+          "note": "Heb. strengthened himself",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "11": {
+      "13": [
+        {
+          "phrase": "resorted to him",
+          "note": "Heb. presented themselves to him",
+          "type": "hebrew"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "many wives",
+          "note": "Heb. a multitude of wives",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "12": {
+      "7": [
+        {
+          "phrase": "some",
+          "note": "Or, a little while",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "and also in Judah things went well",
+          "note": "Or, and yet in Judah that were good things",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "prepared",
+          "note": "Or, fixed",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "book",
+          "note": "Heb. words",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "13": {
+      "3": [
+        {
+          "phrase": "set",
+          "note": "Heb. bound together",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "consecrate himself",
+          "note": "Heb. to fill his hand",
+          "type": "hebrew"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "story",
+          "note": "Or, commentary",
+          "type": "alternative"
+        }
+      ]
+    },
+    "14": {
+      "3": [
+        {
+          "phrase": "images",
+          "note": "Heb. statues",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "images",
+          "note": "Heb. sun images",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "man",
+          "note": "Or, mortal man",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "destroyed",
+          "note": "Heb. broken",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "15": {
+      "2": [
+        {
+          "phrase": "to meet Asa",
+          "note": "Heb. before Asa",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "destroyed",
+          "note": "Heb. beaten in pieces",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "abominable",
+          "note": "Heb. abominations",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "the same time",
+          "note": "Heb. in that day",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "idol",
+          "note": "Heb. horror",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "16": {
+      "2": [
+        {
+          "phrase": "Damascus",
+          "note": "Heb. Darmesek",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "his",
+          "note": "Heb. which were his",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "huge",
+          "note": "Heb. in abundance",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "to show himself",
+          "note": "Or, strongly to hold with them, etc.",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "oppressed",
+          "note": "Heb. crushed",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "had made",
+          "note": "Heb. digged",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "17": {
+      "5": [
+        {
+          "phrase": "brought",
+          "note": "Heb. gave",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "lift up",
+          "note": "That is, was encouraged",
+          "type": "meaning"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "fell",
+          "note": "Heb. was",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "castles",
+          "note": "Or, palaces",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "next to him",
+          "note": "Heb. at his hand",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "18": {
+      "2": [
+        {
+          "phrase": "after certain years",
+          "note": "Heb. at the end of years",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "besides",
+          "note": "Heb. yet or more",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "officers",
+          "note": "Or, Eunuchs",
+          "type": "alternative"
+        },
+        {
+          "phrase": "fetch",
+          "note": "Heb. hasten",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "void",
+          "note": "Or, floor",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "they be consumed",
+          "note": "Heb. thou consume them",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "with one assent",
+          "note": "Heb. with one mouth",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "but evil?",
+          "note": "Or, but for evil",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "into an inner chamber",
+          "note": "Or, from chamber to chamber, Heb. chamber in a chamber",
+          "type": "alternative"
+        }
+      ],
+      "32": [
+        {
+          "phrase": "from pursuing him",
+          "note": "Heb. from after him",
+          "type": "hebrew"
+        }
+      ],
+      "33": [
+        {
+          "phrase": "at a venture",
+          "note": "Heb. in his simplicity",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "between the joints of the harness",
+          "note": "Heb. between the joints and between the breastplate",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "wounded",
+          "note": "Heb. made sick",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "19": {
+      "4": [
+        {
+          "phrase": "he went out again",
+          "note": "Heb. he returned and went out",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "in the judgment",
+          "note": "Heb. in the matter of judgment",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "Deal courageously",
+          "note": "Heb. take courage and do",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "20": {
+      "3": [
+        {
+          "phrase": "himself",
+          "note": "Heb. his face",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "who",
+          "note": "Heb. thou",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "cliff",
+          "note": "Heb. ascent",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "brook",
+          "note": "Or, valley",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "that should praise",
+          "note": "Heb. praisers",
+          "type": "hebrew"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "And when they began",
+          "note": "Heb. And in the time that they, etc.",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "to sing and to praise",
+          "note": "Heb. in singing and praise",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "they were smitten",
+          "note": "Or, they smote one another",
+          "type": "alternative"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "to destroy",
+          "note": "Heb. for the destruction",
+          "type": "hebrew"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "none escaped",
+          "note": "Heb. there was not an escaping",
+          "type": "hebrew"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "Berachah",
+          "note": "that is, blessing",
+          "type": "meaning"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "forefront",
+          "note": "Heb. head",
+          "type": "hebrew"
+        }
+      ],
+      "34": [
+        {
+          "phrase": "book",
+          "note": "Heb. words",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "is mentioned",
+          "note": "Heb. was made to ascend",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "21": {
+      "7": [
+        {
+          "phrase": "light",
+          "note": "Heb. lamp, or candle",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "dominion",
+          "note": "Heb. hand",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "a great plague",
+          "note": "Heb. a great stroke",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "carried away",
+          "note": "Heb. carried captive",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "Jehoahaz",
+          "note": "Or, ahaziah, chap. 22.1. Or, Azariah, ver. 6",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "without being desired",
+          "note": "Heb. without desire",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "22": {
+      "6": [
+        {
+          "phrase": "which were given him",
+          "note": "Heb. wherewith they wounded him",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "Azariah",
+          "note": "Otherwise called Ahaziah, ver. 1. & Jehoahaz chap. 21.17",
+          "type": "clarification"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "the destruction",
+          "note": "Heb. treading down",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "Jehoshabeath",
+          "note": "also called, Jehosheba",
+          "type": "clarification"
+        }
+      ]
+    },
+    "23": {
+      "4": [
+        {
+          "phrase": "doors",
+          "note": "Heb. thresholds",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "side",
+          "note": "Heb. shoulder",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "Temple",
+          "note": "Heb. house",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "God save the King",
+          "note": "Heb. let the king live",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "Treason",
+          "note": "Heb. Conspiracy",
+          "type": "hebrew"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "by David",
+          "note": "Heb. by the hands of David",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "24": {
+      "4": [
+        {
+          "phrase": "to repair",
+          "note": "Heb. to renew",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "a proclamation",
+          "note": "Heb. a voice",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "the work was perfected",
+          "note": "Heb. the healing went up upon the work",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "offer",
+          "note": "Or, pestils",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "came upon",
+          "note": "Heb. clothed",
+          "type": "hebrew"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "at the end of the year",
+          "note": "Heb. in the revolution of the year",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "Damascus",
+          "note": "Heb. Darmesek",
+          "type": "hebrew"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "Zabad",
+          "note": "Or, Jozacher",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Shimrith",
+          "note": "Or, Shomer",
+          "type": "alternative"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "repairing",
+          "note": "Heb. founding",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "story",
+          "note": "Or, Commentary",
+          "type": "alternative"
+        }
+      ]
+    },
+    "25": {
+      "3": [
+        {
+          "phrase": "established to him",
+          "note": "Heb. confirmed upon him",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "army",
+          "note": "Heb. band",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "home",
+          "note": "Heb. to their place",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "great anger",
+          "note": "Heb. in heat of anger",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "the soldiers",
+          "note": "Heb. the sons of the band",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "determined",
+          "note": "Heb. counselled",
+          "type": "hebrew"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "thistle",
+          "note": "Or, furr bush, or thorn",
+          "type": "alternative"
+        },
+        {
+          "phrase": "wild beast",
+          "note": "Heb. a beast of the field",
+          "type": "hebrew"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "put to the worse",
+          "note": "Heb. smitten",
+          "type": "hebrew"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "the corner gate",
+          "note": "Heb. the gate of it that looketh",
+          "type": "hebrew"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "from following",
+          "note": "Heb. from after",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "made a conspiracy",
+          "note": "Heb. conspired a conspiracy",
+          "type": "hebrew"
+        }
+      ],
+      "28": [
+        {
+          "phrase": "Judah",
+          "note": "that is, the city of David, as it is 2. king. 14.20",
+          "type": "meaning"
+        }
+      ]
+    },
+    "26": {
+      "1": [
+        {
+          "phrase": "Uzziah",
+          "note": "Or, Azariah",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "in the visions of God",
+          "note": "Heb. in the seeing of God",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "about Ashdod",
+          "note": "Or, in the country of Ashdod",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "spread",
+          "note": "Heb. went",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "fortified",
+          "note": "Or, repaired",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "digged many wells",
+          "note": "Or, cut out many cisterns",
+          "type": "alternative"
+        },
+        {
+          "phrase": "Carmel",
+          "note": "Or, fruitful fields",
+          "type": "alternative"
+        },
+        {
+          "phrase": "husbandry",
+          "note": "Heb. ground",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "an army",
+          "note": "Heb. the power of an army",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "slings to cast stones",
+          "note": "Heb. stones of slings",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "spread far",
+          "note": "Heb. went forth",
+          "type": "hebrew"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "several",
+          "note": "Heb. Free",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "27": {
+      "3": [
+        {
+          "phrase": "Ophel",
+          "note": "Or, the tower",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "so much",
+          "note": "Heb. much",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "prepared",
+          "note": "Or, established",
+          "type": "alternative"
+        }
+      ]
+    },
+    "28": {
+      "3": [
+        {
+          "phrase": "burnt incense",
+          "note": "Or, offered sacrifice",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "Damascus",
+          "note": "Heb. Darmesek",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "valiant men",
+          "note": "Heb. sons of valour",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "next to the King",
+          "note": "Heb. the second to the King",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "captives",
+          "note": "Heb. a captivity",
+          "type": "hebrew"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "Damascus",
+          "note": "Heb. Darmesek",
+          "type": "hebrew"
+        }
+      ],
+      "25": [
+        {
+          "phrase": "burn",
+          "note": "Or, to offer",
+          "type": "alternative"
+        }
+      ]
+    },
+    "29": {
+      "6": [
+        {
+          "phrase": "turned their backs",
+          "note": "Heb. given the necks",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "trouble",
+          "note": "Heb. commotion",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "be not now negligent",
+          "note": "Or, be not now deceived",
+          "type": "alternative"
+        },
+        {
+          "phrase": "burn incense",
+          "note": "Or, offer sacrifice",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "by the words of the LORD",
+          "note": "Or, in the business of the LORD",
+          "type": "alternative"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "forth",
+          "note": "Heb. near",
+          "type": "hebrew"
+        }
+      ],
+      "25": [
+        {
+          "phrase": "of the LORD",
+          "note": "Heb. by the hand of the LORD",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "by",
+          "note": "Heb. by the hand of",
+          "type": "hebrew"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "when",
+          "note": "Heb. in the time",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "instruments",
+          "note": "Heb. hands of instruments",
+          "type": "hebrew"
+        }
+      ],
+      "28": [
+        {
+          "phrase": "singers",
+          "note": "Heb. song",
+          "type": "hebrew"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "present",
+          "note": "Heb. found",
+          "type": "hebrew"
+        }
+      ],
+      "31": [
+        {
+          "phrase": "consecrated",
+          "note": "Or, filled your hand",
+          "type": "alternative"
+        }
+      ],
+      "34": [
+        {
+          "phrase": "did help them",
+          "note": "Heb. strengthened them",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "30": {
+      "4": [
+        {
+          "phrase": "pleased the king",
+          "note": "Heb. was right in the eyes of the king",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "from",
+          "note": "Heb. from the hand",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "be ye not stiffnecked",
+          "note": "Harden not your necks",
+          "type": "clarification"
+        },
+        {
+          "phrase": "yield",
+          "note": "Heb. give the hand",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "stood in their place",
+          "note": "Heb. their standing",
+          "type": "hebrew"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "present",
+          "note": "Heb. found",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "lowd",
+          "note": "Heb. instruments of strength",
+          "type": "hebrew"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "comfortably unto all",
+          "note": "Heb. to the heart of all etc.",
+          "type": "hebrew"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "did give",
+          "note": "Heb. lifted up or offered",
+          "type": "hebrew"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "his holy dwelling place",
+          "note": "Heb. the habitation of his holiness",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "31": {
+      "1": [
+        {
+          "phrase": "present",
+          "note": "Heb. found",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "images",
+          "note": "Heb. statues",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "until they had utterly destroyed",
+          "note": "Heb. until to make an end",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "came abroad",
+          "note": "Heb. brought forth",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "honey",
+          "note": "Or, dates",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "by heaps",
+          "note": "Heb. heaps heaps",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "chambers",
+          "note": "Or, storehouses",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "under the hand",
+          "note": "Heb. at the hand",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "next him",
+          "note": "Heb. at his hand",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "set office",
+          "note": "Or, trust",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "set office",
+          "note": "Or, trust",
+          "type": "alternative"
+        }
+      ]
+    },
+    "32": {
+      "1": [
+        {
+          "phrase": "to win them for himself",
+          "note": "Heb. to break them up",
+          "type": "hebrew"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "he was purposed to fight",
+          "note": "Heb. his face was to war",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "ran",
+          "note": "Heb. overflowed",
+          "type": "hebrew"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "darts",
+          "note": "Or, swords, or weapons",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "he spake comfortably",
+          "note": "Heb. he spake to their heart",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "rested",
+          "note": "Heb. leaned",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "power",
+          "note": "Heb. dominion",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "in the siege",
+          "note": "Or, in the strong hold",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "slew him",
+          "note": "Heb. made him fall",
+          "type": "hebrew"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "presents",
+          "note": "Heb. precious things",
+          "type": "hebrew"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "gave him a sign",
+          "note": "Or, wrought a miracle for him",
+          "type": "alternative"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "the pride",
+          "note": "Heb. the lifting up",
+          "type": "hebrew"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "pleasant jewels",
+          "note": "Heb. instruments of desire",
+          "type": "hebrew"
+        }
+      ],
+      "31": [
+        {
+          "phrase": "ambassadors",
+          "note": "Heb. interpreters",
+          "type": "hebrew"
+        }
+      ],
+      "32": [
+        {
+          "phrase": "goodness",
+          "note": "Heb. kindnesses",
+          "type": "hebrew"
+        }
+      ],
+      "33": [
+        {
+          "phrase": "chiefest",
+          "note": "Or, highest",
+          "type": "alternative"
+        }
+      ]
+    },
+    "33": {
+      "3": [
+        {
+          "phrase": "he built again",
+          "note": "Heb. he returned and built",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "of the king",
+          "note": "Heb. which were the kings",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "fetters",
+          "note": "Or, chains",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "Ophel",
+          "note": "Or, the tower",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "the seers",
+          "note": "Or, Hosai",
+          "type": "alternative"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "tresspassed more and more",
+          "note": "Heb. multiplied tresspass",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "34": {
+      "4": [
+        {
+          "phrase": "the images",
+          "note": "Or, the sun images",
+          "type": "alternative"
+        },
+        {
+          "phrase": "graves of them",
+          "note": "Heb. face of the graves",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "mattocks",
+          "note": "Or, mauls",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "into powder",
+          "note": "Heb. to make powder",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "to floor",
+          "note": "Or, to rafter",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "by",
+          "note": "Heb. by the hand of",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "to",
+          "note": "Heb. to the hand of",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "gathered together",
+          "note": "Heb. poured out, or melted",
+          "type": "hebrew"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "it",
+          "note": "Heb. in it",
+          "type": "hebrew"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "Abdon",
+          "note": "Or, Achbor",
+          "type": "alternative"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "Hasrah",
+          "note": "Or, Harhas",
+          "type": "alternative"
+        },
+        {
+          "phrase": "wardrobe",
+          "note": "Heb. garments",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "college",
+          "note": "Or, in the school, or in the second part",
+          "type": "alternative"
+        }
+      ],
+      "30": [
+        {
+          "phrase": "great and small",
+          "note": "Heb. from great even to small",
+          "type": "hebrew"
+        }
+      ],
+      "32": [
+        {
+          "phrase": "present",
+          "note": "Heb. found",
+          "type": "hebrew"
+        }
+      ],
+      "33": [
+        {
+          "phrase": "from following",
+          "note": "Heb. from after",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "35": {
+      "5": [
+        {
+          "phrase": "families of the fathers",
+          "note": "Heb. the house of the fathers",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "brethren",
+          "note": "Heb. the sons of the people",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "gave",
+          "note": "Heb. offered",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "gave willingly",
+          "note": "Heb. offered, etc",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "gave",
+          "note": "Heb. offered",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "divided them speedily",
+          "note": "Heb. made them run",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "place",
+          "note": "Heb. station",
+          "type": "hebrew"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "present",
+          "note": "Heb. found",
+          "type": "hebrew"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "present",
+          "note": "Heb. found",
+          "type": "hebrew"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "Temple",
+          "note": "Heb. house",
+          "type": "hebrew"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "the house, wherewith I have war",
+          "note": "Heb. the house of my war",
+          "type": "hebrew"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "sore wounded",
+          "note": "Heb. made sick",
+          "type": "hebrew"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "in one of the sepulchers",
+          "note": "Or, among the sepulchers",
+          "type": "alternative"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "goodness",
+          "note": "Heb. kindnesses",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "36": {
+      "3": [
+        {
+          "phrase": "put him down",
+          "note": "Heb. removed him",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "condemned",
+          "note": "mulcted",
+          "type": "clarification"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "fetters",
+          "note": "Or, chains",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "Jehoiachin",
+          "note": "Or, Jeconiah, 1. chro. 3.16. Or, Coniah, jer. 22.24",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "when the year was expired",
+          "note": "Heb. at the return of the year",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "goodly vessels",
+          "note": "Heb. vessels of desire",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "Zedekiah",
+          "note": "Or, Mattaniah",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "by his messengers",
+          "note": "Heb. by the hand of his messengers",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "betimes",
+          "note": "That is, continually and carefully",
+          "type": "meaning"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "remedy",
+          "note": "Heb. healing",
+          "type": "hebrew"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "them that had escaped from the sword",
+          "note": "Heb. the remainder from the sword",
+          "type": "hebrew"
+        }
+      ]
+    }
+  }
+}

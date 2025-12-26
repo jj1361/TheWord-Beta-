@@ -1,0 +1,415 @@
+{
+  "bookId": 44,
+  "bookName": "Acts",
+  "chapters": {
+    "1": {
+      "4": [
+        {
+          "phrase": "being assembled together with them",
+          "note": "Or, eating together with them",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "power after that the Holy Ghost is come upon you",
+          "note": "Or, the power of the holy Ghost coming upon you",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "bishoprick",
+          "note": "Or, office, or, charge",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "6": [
+        {
+          "phrase": "when this was noised",
+          "note": "Gr. When this voice was made",
+          "type": "greek"
+        },
+        {
+          "phrase": "confounded",
+          "note": "Or, troubled in mind",
+          "type": "alternative"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "let me",
+          "note": "Or, I may",
+          "type": "alternative"
+        }
+      ],
+      "46": [
+        {
+          "phrase": "from house to house",
+          "note": "Or, at home",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "15": [
+        {
+          "phrase": "Prince",
+          "note": "Or, author",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "1": [
+        {
+          "phrase": "captain",
+          "note": "Or, ruler",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "3": [
+        {
+          "phrase": "to lie",
+          "note": "Or, to deceive",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "into the streets",
+          "note": "Or, in every street",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "indignation",
+          "note": "Or, envy",
+          "type": "alternative"
+        }
+      ],
+      "36": [
+        {
+          "phrase": "obeyed",
+          "note": "Or, believed",
+          "type": "alternative"
+        }
+      ]
+    },
+    "6": {
+      "14": [
+        {
+          "phrase": "Customs",
+          "note": "Or, rites",
+          "type": "alternative"
+        }
+      ]
+    },
+    "7": {
+      "20": [
+        {
+          "phrase": "exceeding fair",
+          "note": "Or, fair to God",
+          "type": "alternative"
+        }
+      ],
+      "37": [
+        {
+          "phrase": "like unto me",
+          "note": "Or, as myself",
+          "type": "alternative"
+        }
+      ]
+    },
+    "9": {
+      "38": [
+        {
+          "phrase": "delay",
+          "note": "Or, be grieved",
+          "type": "alternative"
+        }
+      ]
+    },
+    "11": {
+      "26": [
+        {
+          "phrase": "with the Church",
+          "note": "Or, in the Church",
+          "type": "alternative"
+        }
+      ]
+    },
+    "12": {
+      "1": [
+        {
+          "phrase": "stretched",
+          "note": "Or, began",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "prayer was made without ceasing",
+          "note": "Or, instant and earnest prayer was made",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "to hearken",
+          "note": "Or, to ask who was there",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "was highly displeased",
+          "note": "Or, bare an hostile mind intending war",
+          "type": "alternative"
+        },
+        {
+          "phrase": "the kings chaberlaine",
+          "note": "Gr. that was over the kings bedchamber",
+          "type": "greek"
+        }
+      ],
+      "25": [
+        {
+          "phrase": "ministry",
+          "note": "Or, charge, chap. 11.29, 30",
+          "type": "alternative"
+        }
+      ]
+    },
+    "13": {
+      "1": [
+        {
+          "phrase": "brought up with Herod",
+          "note": "Or, Herods foster brother",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "suffered",
+          "note": "Gr. [Greek characters] as a nurse beareth or feedeth her child, Deut. 1.31. 2. Macc 7.27. according to the Sept. and so Chrysost.",
+          "type": "greek"
+        }
+      ],
+      "34": [
+        {
+          "phrase": "mercies",
+          "note": "Gr. [Greek characters] holy or just things, which word the Sept. both in the place of Esai 55.3. and in many others, use for that which is in the Hebrew, Mercies",
+          "type": "greek"
+        }
+      ],
+      "36": [
+        {
+          "phrase": "own generation by the will of God",
+          "note": "Or, after he had in his own age served the will of God",
+          "type": "alternative"
+        }
+      ],
+      "42": [
+        {
+          "phrase": "the next Sabbath",
+          "note": "Or, in the week between, or in the Sabbath between",
+          "type": "alternative"
+        }
+      ]
+    },
+    "15": {
+      "31": [
+        {
+          "phrase": "consolation",
+          "note": "Or, exhortation",
+          "type": "alternative"
+        }
+      ]
+    },
+    "16": {
+      "12": [
+        {
+          "phrase": "the chief",
+          "note": "Or, the first",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "of divination",
+          "note": "Or, of Python",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "marketplace",
+          "note": "Or, court",
+          "type": "alternative"
+        }
+      ]
+    },
+    "17": {
+      "16": [
+        {
+          "phrase": "wholly given to idolatry",
+          "note": "Or, full of idols",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "babbler",
+          "note": "Or, base fellow",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "Areopagus",
+          "note": "Or, Mars hill. It was the highest court in Athens",
+          "type": "alternative"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "Mars hill",
+          "note": "Or, the court of the Areopagites",
+          "type": "alternative"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "devotions",
+          "note": "Or, gods that you worship, 2 Thess. 2.4",
+          "type": "alternative"
+        }
+      ],
+      "31": [
+        {
+          "phrase": "hath given assurance",
+          "note": "Or, offered faith",
+          "type": "alternative"
+        }
+      ]
+    },
+    "18": {
+      "11": [
+        {
+          "phrase": "continued",
+          "note": "Or, sat there",
+          "type": "alternative"
+        }
+      ]
+    },
+    "19": {
+      "35": [
+        {
+          "phrase": "a worshipper",
+          "note": "Gr. the temple keeper",
+          "type": "greek"
+        }
+      ],
+      "38": [
+        {
+          "phrase": "the law is open",
+          "note": "Or, the Court days are kept",
+          "type": "alternative"
+        }
+      ],
+      "39": [
+        {
+          "phrase": "lawful",
+          "note": "Or, ordinary",
+          "type": "alternative"
+        }
+      ]
+    },
+    "20": {
+      "23": [
+        {
+          "phrase": "abide me",
+          "note": "Or, wait for me",
+          "type": "alternative"
+        }
+      ]
+    },
+    "22": {
+      "29": [
+        {
+          "phrase": "examined him",
+          "note": "Or, tortured him",
+          "type": "alternative"
+        }
+      ]
+    },
+    "23": {
+      "12": [
+        {
+          "phrase": "under a curse",
+          "note": "Or, with an oath of execration",
+          "type": "alternative"
+        }
+      ]
+    },
+    "25": {
+      "6": [
+        {
+          "phrase": "more then ten days",
+          "note": "Or, as some copies read, no more than eight or ten days",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "I doubted of such manner of questions",
+          "note": "Or, I was doubtful how to enquire hereof",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "hearing",
+          "note": "Or, judgment",
+          "type": "alternative"
+        }
+      ]
+    },
+    "27": {
+      "7": [
+        {
+          "phrase": "Crete",
+          "note": "Or, Candy",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "hurt",
+          "note": "Or, injury",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "arose",
+          "note": "Or, beat",
+          "type": "alternative"
+        }
+      ],
+      "40": [
+        {
+          "phrase": "taken up the anchors, they committed themselves unto the sea",
+          "note": "Or, cut the anchors, they left them in the sea, etc.",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

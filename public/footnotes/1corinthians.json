@@ -1,0 +1,532 @@
+{
+  "bookId": 46,
+  "bookName": "1 Corinthians",
+  "chapters": {
+    "1": {
+      "7": [
+        {
+          "phrase": "coming",
+          "note": "Gr. revelation",
+          "type": "greek"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "divisions",
+          "note": "Gr. schisms",
+          "type": "greek"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "words",
+          "note": "Or, speech",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "4": [
+        {
+          "phrase": "enticing",
+          "note": "Or, persuasible",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "stand",
+          "note": "Gr. be",
+          "type": "greek"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "judgeth",
+          "note": "Or, discerneth",
+          "type": "alternative"
+        },
+        {
+          "phrase": "judged",
+          "note": "Or, discerned",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "may",
+          "note": "Gr. shall",
+          "type": "greek"
+        }
+      ]
+    },
+    "3": {
+      "3": [
+        {
+          "phrase": "divisions",
+          "note": "Or, factions",
+          "type": "alternative"
+        },
+        {
+          "phrase": "as men?",
+          "note": "Gr. according to man",
+          "type": "greek"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "husbandry",
+          "note": "Or, tillage",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "shall be revealed",
+          "note": "Gr. is revealed",
+          "type": "greek"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "defile",
+          "note": "Or, destroy",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "3": [
+        {
+          "phrase": "judgment",
+          "note": "Gr. day",
+          "type": "greek"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "maketh thee to differ from another?",
+          "note": "Gr. distinguisheth thee?",
+          "type": "greek"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "spectacle",
+          "note": "Gr. theater",
+          "type": "greek"
+        }
+      ]
+    },
+    "5": {
+      "3": [
+        {
+          "phrase": "judged",
+          "note": "Or, determined",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "is sacrificed",
+          "note": "Or, is slain",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "the Feast",
+          "note": "Or, holiday",
+          "type": "alternative"
+        }
+      ]
+    },
+    "6": {
+      "12": [
+        {
+          "phrase": "expedient",
+          "note": "Or, profitable",
+          "type": "alternative"
+        }
+      ]
+    },
+    "7": {
+      "15": [
+        {
+          "phrase": "to peace",
+          "note": "Gr. in peace",
+          "type": "greek"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "free man",
+          "note": "Gr. made free",
+          "type": "greek"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "distress",
+          "note": "Or, necessity",
+          "type": "alternative"
+        }
+      ]
+    },
+    "8": {
+      "6": [
+        {
+          "phrase": "in him",
+          "note": "Or, for him, Rom. 11.36",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "are we the better",
+          "note": "Or, have we the more",
+          "type": "alternative"
+        },
+        {
+          "phrase": "are we the worse",
+          "note": "Or, have we the less",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "liberty",
+          "note": "Or, power",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "emboldened",
+          "note": "Gr. edified",
+          "type": "greek"
+        }
+      ]
+    },
+    "9": {
+      "5": [
+        {
+          "phrase": "wife",
+          "note": "Or, woman",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "live",
+          "note": "Or, feed",
+          "type": "alternative"
+        }
+      ]
+    },
+    "10": {
+      "6": [
+        {
+          "phrase": "followed them",
+          "note": "Or, went with them",
+          "type": "alternative"
+        },
+        {
+          "phrase": "our examples",
+          "note": "Gr. our figures",
+          "type": "greek"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "ensamples",
+          "note": "Or, Types",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "common",
+          "note": "Or, moderate",
+          "type": "alternative"
+        }
+      ],
+      "30": [
+        {
+          "phrase": "grace",
+          "note": "Or, thanksgiving",
+          "type": "alternative"
+        }
+      ],
+      "32": [
+        {
+          "phrase": "Gentiles",
+          "note": "Gr. Greeks",
+          "type": "greek"
+        }
+      ]
+    },
+    "11": {
+      "2": [
+        {
+          "phrase": "ordinances",
+          "note": "Or, traditions",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "power",
+          "note": "That is, a covering, in sign that she is under the power of her husband",
+          "type": "meaning"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "covering",
+          "note": "Or, veil",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "divisions",
+          "note": "Or, schisms",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "heresies",
+          "note": "Or, sects",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "not to eat",
+          "note": "Or, ye cannot eat",
+          "type": "alternative"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "them that have not?",
+          "note": "Or, them that are poor",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "in remembrance",
+          "note": "Or, for a remembrance",
+          "type": "alternative"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "ye do show",
+          "note": "Or, shew ye",
+          "type": "alternative"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "damnation",
+          "note": "Or, judgment",
+          "type": "alternative"
+        }
+      ],
+      "34": [
+        {
+          "phrase": "condemnation",
+          "note": "Or, judgment",
+          "type": "alternative"
+        }
+      ]
+    },
+    "12": {
+      "3": [
+        {
+          "phrase": "accursed",
+          "note": "Or, Anathema",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "administrations",
+          "note": "Or, ministries",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "Gentiles",
+          "note": "Gr. Greeks",
+          "type": "greek"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "bestow",
+          "note": "Or, put on",
+          "type": "alternative"
+        }
+      ],
+      "25": [
+        {
+          "phrase": "schism",
+          "note": "Or, division",
+          "type": "alternative"
+        }
+      ],
+      "28": [
+        {
+          "phrase": "diversities",
+          "note": "Or, kinds",
+          "type": "alternative"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "workers",
+          "note": "Or, powers",
+          "type": "alternative"
+        }
+      ]
+    },
+    "13": {
+      "4": [
+        {
+          "phrase": "vaunteth not",
+          "note": "Or, is not rash",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "in the truth",
+          "note": "Or, with the truth",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "thought",
+          "note": "Or, reasoned",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "darkly",
+          "note": "Gr. in a riddle",
+          "type": "greek"
+        }
+      ]
+    },
+    "14": {
+      "2": [
+        {
+          "phrase": "understandeth",
+          "note": "Gr. heareth",
+          "type": "greek"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "sounds",
+          "note": "Or, tunes",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "easy",
+          "note": "Gr. Significant",
+          "type": "greek"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "of spiritual",
+          "note": "Gr. of spirits",
+          "type": "greek"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "men",
+          "note": "Gr. perfect or of a ripe age",
+          "type": "greek"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "two…",
+          "note": "by two or three sentences separately",
+          "type": "clarification"
+        }
+      ],
+      "33": [
+        {
+          "phrase": "confusion",
+          "note": "Gr. tumult, or unquietness",
+          "type": "greek"
+        }
+      ]
+    },
+    "15": {
+      "2": [
+        {
+          "phrase": "keep in memory",
+          "note": "Or, hold fast",
+          "type": "alternative"
+        },
+        {
+          "phrase": "what I preached",
+          "note": "Gr. by what speech",
+          "type": "greek"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "one born",
+          "note": "Or, an abortive",
+          "type": "alternative"
+        }
+      ],
+      "31": [
+        {
+          "phrase": "your",
+          "note": "Some read, our",
+          "type": "clarification"
+        }
+      ],
+      "32": [
+        {
+          "phrase": "after the manner of men",
+          "note": "Or, to speak after the manner of men",
+          "type": "alternative"
+        }
+      ],
+      "55": [
+        {
+          "phrase": "grave",
+          "note": "Or, hell",
+          "type": "alternative"
+        }
+      ]
+    },
+    "16": {
+      "3": [
+        {
+          "phrase": "liberality",
+          "note": "Gr. gift",
+          "type": "greek"
+        }
+      ]
+    }
+  }
+}

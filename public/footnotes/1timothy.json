@@ -1,0 +1,205 @@
+{
+  "bookId": 54,
+  "bookName": "1 Timothy",
+  "chapters": {
+    "1": {
+      "6": [
+        {
+          "phrase": "having swarved",
+          "note": "Or, not aiming at",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "1": [
+        {
+          "phrase": "Exhort",
+          "note": "Or, desire",
+          "type": "alternative"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "authority",
+          "note": "Or, eminent place",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "to be testified",
+          "note": "Or, a testimony",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "broided",
+          "note": "Or, plaited",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "2": [
+        {
+          "phrase": "of good behavior",
+          "note": "Or, modest",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "Not given to wine",
+          "note": "Or, not ready to quarrel and offer wrong as one in wine",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "a novice",
+          "note": "Or, one newly come to the faith",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "have used",
+          "note": "Or, ministered",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "ground",
+          "note": "Or, stay",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "8": [
+        {
+          "phrase": "little",
+          "note": "Or, for a little time",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "to all",
+          "note": "Or, in all things",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "4": [
+        {
+          "phrase": "piety",
+          "note": "Or, kindness",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "in pleasure",
+          "note": "Or, delicately",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "house",
+          "note": "Or, kindred",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "taken",
+          "note": "Or, chosen",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "to speak reproachfully",
+          "note": "Gr. for their railing",
+          "type": "greek"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "before",
+          "note": "Or, under",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "without preferring",
+          "note": "Or, without prejudice",
+          "type": "alternative"
+        }
+      ]
+    },
+    "6": {
+      "2": [
+        {
+          "phrase": "faithful",
+          "note": "Or, believing",
+          "type": "alternative"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "proud",
+          "note": "Or, a fool",
+          "type": "alternative"
+        },
+        {
+          "phrase": "doting",
+          "note": "Or, sick",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "Perverse disputing",
+          "note": "Or, gallings one of another",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "erred",
+          "note": "Or, been seduced",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "Confession",
+          "note": "Or, profession",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "uncertain riches",
+          "note": "Gr. uncertainty of riches",
+          "type": "greek"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "willing",
+          "note": "Or, sociable",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

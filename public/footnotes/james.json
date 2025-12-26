@@ -1,0 +1,208 @@
+{
+  "bookId": 59,
+  "bookName": "James",
+  "chapters": {
+    "1": {
+      "9": [
+        {
+          "phrase": "rejoice",
+          "note": "Or, glory",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "evil",
+          "note": "Or, evils",
+          "type": "alternative"
+        }
+      ],
+      "25": [
+        {
+          "phrase": "deed",
+          "note": "Or, doing",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "2": [
+        {
+          "phrase": "assembly",
+          "note": "Gr. synagogue",
+          "type": "greek"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "in a good place",
+          "note": "Or, well, or seemly",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "the",
+          "note": "Or, that",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "that said",
+          "note": "Or, that Law which said",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "alone",
+          "note": "Gr. by itself",
+          "type": "greek"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "without",
+          "note": "Some copies read, by thy works",
+          "type": "clarification"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "seest thou",
+          "note": "Or, thou seest",
+          "type": "alternative"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "spirit",
+          "note": "Or, breath",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "1": [
+        {
+          "phrase": "condemnation",
+          "note": "Or, judgment",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "a matter",
+          "note": "Or, wood",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "course",
+          "note": "Gr. wheel",
+          "type": "greek"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "kind",
+          "note": "Gr. nature",
+          "type": "greek"
+        },
+        {
+          "phrase": "mankind",
+          "note": "Gr. nature of man",
+          "type": "greek"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "place",
+          "note": "Or, hole",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "sensual",
+          "note": "Or, natural",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "confusion",
+          "note": "Gr. tumult or unquietness",
+          "type": "greek"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "without partiality",
+          "note": "Or, without wrangling",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "1": [
+        {
+          "phrase": "fightings",
+          "note": "Or, brawling",
+          "type": "alternative"
+        },
+        {
+          "phrase": "lusts",
+          "note": "Or, pleasures",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "lusts",
+          "note": "Or, pleasures",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "to envy?",
+          "note": "Or, enviously",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "It is even",
+          "note": "Or, for it is",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "7": [
+        {
+          "phrase": "Be patient",
+          "note": "Or, be long patient, or suffer with long patience",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "Grudge not",
+          "note": "Or, groan, or grieve not",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "earnestly",
+          "note": "Or, in his prayer",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

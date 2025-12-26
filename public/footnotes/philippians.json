@@ -1,0 +1,142 @@
+{
+  "bookId": 50,
+  "bookName": "Philippians",
+  "chapters": {
+    "1": {
+      "3": [
+        {
+          "phrase": "remembrance",
+          "note": "Or, mention",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "will perform it",
+          "note": "Or, will finish it",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "I have you in my heart",
+          "note": "Or, you have me in your heart",
+          "type": "alternative"
+        },
+        {
+          "phrase": "partakers of my grace",
+          "note": "Or, partakers with me of grace",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "judgment",
+          "note": "Or, sense",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "approve",
+          "note": "Or, try",
+          "type": "alternative"
+        },
+        {
+          "phrase": "are excellent",
+          "note": "Or, differ",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "in Christ",
+          "note": "Or, for Christ",
+          "type": "alternative"
+        },
+        {
+          "phrase": "palace",
+          "note": "Or, Ceasars Court",
+          "type": "alternative"
+        },
+        {
+          "phrase": "all other places",
+          "note": "Or, to all others",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "7": [
+        {
+          "phrase": "likeness",
+          "note": "Or, habit",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "harmless",
+          "note": "Or, sincere",
+          "type": "alternative"
+        },
+        {
+          "phrase": "ye shine",
+          "note": "Or, shine ye",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "offered",
+          "note": "Gr. poured forth",
+          "type": "greek"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "But",
+          "note": "Or, moreover",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "likeminded",
+          "note": "Or, so dear unto me",
+          "type": "alternative"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "hold such",
+          "note": "Or, honour such",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "8": [
+        {
+          "phrase": "honest",
+          "note": "Or, venerable",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "hath flourished",
+          "note": "Or, is revived",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "I have all",
+          "note": "Or, I have received all",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

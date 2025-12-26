@@ -1,0 +1,306 @@
+{
+  "bookId": 35,
+  "bookName": "Habakkuk",
+  "chapters": {
+    "1": {
+      "4": [
+        {
+          "phrase": "wrong",
+          "note": "Or, wrested",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "breadth",
+          "note": "Heb. breadths",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "their judgment and their dignity shall proceed of themselves",
+          "note": "Or, from them shall proceed the judgment of these, and the captivity of these",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "fierce",
+          "note": "Heb. sharp",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "their faces shall sup up as the East",
+          "note": "Heb. the supping up of their faces, etc. Or, their faces shall look toward the East. Heb. the opposition of their faces toward the East",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "mighty",
+          "note": "Heb. rock",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "established",
+          "note": "Heb. founded",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "iniquity",
+          "note": "Or, grievance",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "creeping",
+          "note": "Or, moving",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "drag",
+          "note": "Or, flue net",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "plenteous",
+          "note": "Or, dainty. Heb. fat",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "1": [
+        {
+          "phrase": "tower",
+          "note": "Heb. fenced place",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "unto me",
+          "note": "Or, in me",
+          "type": "alternative"
+        },
+        {
+          "phrase": "when I am reproved",
+          "note": "Or, when I am argued with. Heb. upon my reproof or arguing",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "Yea also",
+          "note": "Or, how much more",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "Woe to him",
+          "note": "Or, Ho, he",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "blood",
+          "note": "Heb. bloods",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "coveteth an evil countenance",
+          "note": "Or, gaineth an evil gain",
+          "type": "alternative"
+        },
+        {
+          "phrase": "power of evil",
+          "note": "Heb. palm of the hand",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "beam",
+          "note": "Or, piece, or, fastening",
+          "type": "alternative"
+        },
+        {
+          "phrase": "shall answer it",
+          "note": "Or, witness against it",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "blood",
+          "note": "Heb. bloods",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "very vanity?",
+          "note": "Or, in vain",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "with the knowledge of the glory of the LROD",
+          "note": "Or, by knowing the glory of the Lord",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "with shame for glory",
+          "note": "Or, more with shame then with glory",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "the maker of his work",
+          "note": "Heb. the facioner of his facion",
+          "type": "hebrew"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "let all the earth keep silence before him",
+          "note": "Heb. be silent all the earth before him",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "3": {
+      "1": [
+        {
+          "phrase": "upon Sigionoth",
+          "note": "Or, according to variable songs or tunes called in Hebrew Shigianoth",
+          "type": "alternative"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "thy speech",
+          "note": "Heb. thy report or thy hearing",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "revive",
+          "note": "Or, preserve alive",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "Teman",
+          "note": "Or, the South",
+          "type": "alternative"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "horns coming out of his hand",
+          "note": "Or, bright beams out of his side",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "burning coals",
+          "note": "Or, burning diseases",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "Cushan",
+          "note": "Or, Ethiopia",
+          "type": "alternative"
+        },
+        {
+          "phrase": "in affliction",
+          "note": "Or, under affliction or vanity",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "thy chariots of salvation?",
+          "note": "Or, thy chariots were salvation",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "Thou didst cleave the earth with rivers",
+          "note": "Or, thou didst cleave the rivers of the earth",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "at the light of thine arrows",
+          "note": "Or, thine arrows walked in the light, etc.",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "by discovering",
+          "note": "Heb. making naked",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "came out as a whirlwind",
+          "note": "Heb. were tempestuous",
+          "type": "hebrew"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "heap",
+          "note": "Or, mud",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "invade them",
+          "note": "Or, cut them in pieces",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "fail",
+          "note": "Heb. lie",
+          "type": "hebrew"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "stringed instruments",
+          "note": "Heb. Neginoth",
+          "type": "hebrew"
+        }
+      ]
+    }
+  }
+}

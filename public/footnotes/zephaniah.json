@@ -1,0 +1,177 @@
+{
+  "bookId": 36,
+  "bookName": "Zephaniah",
+  "chapters": {
+    "1": {
+      "2": [
+        {
+          "phrase": "will utterly consume",
+          "note": "Heb. by taking away I will make an end",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "the land",
+          "note": "Heb. the face of the land",
+          "type": "hebrew"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "stumblingblocks",
+          "note": "Or, idols",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "by the LORD",
+          "note": "Or, to the Lord",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "bid",
+          "note": "Heb. sanctified or prepared",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "punish",
+          "note": "Heb. visit upon",
+          "type": "hebrew"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "settled",
+          "note": "Heb. curded, or thickened",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "2": {
+      "1": [
+        {
+          "phrase": "not desired",
+          "note": "Or, not desirous",
+          "type": "alternative"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "for",
+          "note": "Or, when, etc.",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "famish",
+          "note": "Heb. make lean",
+          "type": "hebrew"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "Cormorant",
+          "note": "Or, pelican",
+          "type": "alternative"
+        },
+        {
+          "phrase": "upper lintels",
+          "note": "Or, knops, or chapiters",
+          "type": "alternative"
+        },
+        {
+          "phrase": "for he shall uncover",
+          "note": "Or, when he hath uncovered",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "1": [
+        {
+          "phrase": "filthy",
+          "note": "Or, gluttenous. Heb. craw",
+          "type": "alternative"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "correction",
+          "note": "Or, instruction",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "every morning",
+          "note": "Heb. morning by morning",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "towers",
+          "note": "Or, corners",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "language",
+          "note": "Heb. lip",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "consent",
+          "note": "Heb. shoulder",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "because of mine holy",
+          "note": "Heb. in my holy",
+          "type": "hebrew"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "slack",
+          "note": "Or, faint",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "he will rest",
+          "note": "Heb. he will be silent",
+          "type": "hebrew"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "reproach of it was a burden",
+          "note": "Heb. the burden upon it was reproach",
+          "type": "hebrew"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "I will get them praise",
+          "note": "Heb. I will set them for a praise",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "where they have been put to shame",
+          "note": "Heb. of their shame",
+          "type": "hebrew"
+        }
+      ]
+    }
+  }
+}

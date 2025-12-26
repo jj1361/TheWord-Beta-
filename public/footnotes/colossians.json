@@ -1,0 +1,148 @@
+{
+  "bookId": 51,
+  "bookName": "Colossians",
+  "chapters": {
+    "1": {
+      "13": [
+        {
+          "phrase": "his dear Son",
+          "note": "Gr. the Son of his love",
+          "type": "greek"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "in all things",
+          "note": "Or, among all",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "having made peace",
+          "note": "Or, making peace",
+          "type": "alternative"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "in your mind by wicked works",
+          "note": "Or, by your mind in wicked works",
+          "type": "alternative"
+        }
+      ],
+      "25": [
+        {
+          "phrase": "to fulfill the word of God",
+          "note": "Or, fully to preach the word of God, Rom. 1.19",
+          "type": "alternative"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "in you",
+          "note": "Or, amongst you",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "1": [
+        {
+          "phrase": "conflict",
+          "note": "Or, fear or care",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "In whom",
+          "note": "Or, wherein",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "rudiments",
+          "note": "Or, elements",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "in it",
+          "note": "Or, in himself",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "in meat, or in drink",
+          "note": "Or, for eating and drinking",
+          "type": "alternative"
+        },
+        {
+          "phrase": "respect",
+          "note": "Or, in part",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "beguile you",
+          "note": "Or, judge against you",
+          "type": "alternative"
+        },
+        {
+          "phrase": "in a voluntary humility",
+          "note": "Gr. being a voluntary in humility",
+          "type": "greek"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "rudiments",
+          "note": "Or, elements",
+          "type": "alternative"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "neglecting",
+          "note": "Or, punishing, or not sparing",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "2": [
+        {
+          "phrase": "affection",
+          "note": "Or, mind",
+          "type": "alternative"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "quarrel",
+          "note": "Or, complaint",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "12": [
+        {
+          "phrase": "laboring",
+          "note": "Or, striving",
+          "type": "alternative"
+        },
+        {
+          "phrase": "complete",
+          "note": "Or, filled",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

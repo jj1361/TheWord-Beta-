@@ -1,0 +1,365 @@
+{
+  "bookId": 40,
+  "bookName": "Matthew",
+  "chapters": {
+    "1": {
+      "11": [
+        {
+          "phrase": "Josias begat Jechonias and his brethren",
+          "note": "some read, Josias begat Jakim, and Jakim begat Jechonias",
+          "type": "clarification"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "they shall call his name",
+          "note": "Or, his name shall be called",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "6": [
+        {
+          "phrase": "rule",
+          "note": "Or, feed",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "presented",
+          "note": "Or, offered",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "8": [
+        {
+          "phrase": "meet for repentance",
+          "note": "Or, answerable to amendment of life",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "12": [
+        {
+          "phrase": "cast",
+          "note": "Or, delivered up",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "11": [
+        {
+          "phrase": "falsely",
+          "note": "Gr. lying",
+          "type": "greek"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "a bushel",
+          "note": "[symbol in wrong place in 1611] the word in the original signifieth a measure containing about a pint less than a peck",
+          "type": "clarification"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "by them",
+          "note": "Or, to them",
+          "type": "alternative"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "offend thee",
+          "note": "Or, do cause thee to offend",
+          "type": "alternative"
+        }
+      ]
+    },
+    "6": {
+      "1": [
+        {
+          "phrase": "of",
+          "note": "Or, with",
+          "type": "alternative"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "do not sound a trumpet",
+          "note": "Or, cause not a trumpet to be sounded",
+          "type": "alternative"
+        }
+      ]
+    },
+    "9": {
+      "16": [
+        {
+          "phrase": "new cloth",
+          "note": "Or, raw, or unwrought cloth",
+          "type": "alternative"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "the fame hereof",
+          "note": "Or, this fame",
+          "type": "alternative"
+        }
+      ],
+      "36": [
+        {
+          "phrase": "fainted, and were scattered abroad",
+          "note": "Or, were tired and lay down",
+          "type": "alternative"
+        }
+      ]
+    },
+    "10": {
+      "9": [
+        {
+          "phrase": "Provide",
+          "note": "Or, get",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "harmless",
+          "note": "Or, simple",
+          "type": "alternative"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "have gone",
+          "note": "Or, end or finish",
+          "type": "alternative"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "farthing?",
+          "note": "It is in value half penny farthing, in the original, as being the tenth part of the Roman penny",
+          "type": "clarification"
+        }
+      ]
+    },
+    "11": {
+      "12": [
+        {
+          "phrase": "suffereth violence",
+          "note": "Or, is gotten by force, and they that thrust men",
+          "type": "alternative"
+        }
+      ]
+    },
+    "12": {
+      "14": [
+        {
+          "phrase": "held a counsel",
+          "note": "Or, took counsel",
+          "type": "alternative"
+        }
+      ]
+    },
+    "13": {
+      "33": [
+        {
+          "phrase": "measures",
+          "note": "the word in the Greek is a measure containing about a peck and an half, wanting little more then a pint",
+          "type": "clarification"
+        }
+      ],
+      "41": [
+        {
+          "phrase": "things that offend",
+          "note": "Or, scandals",
+          "type": "alternative"
+        }
+      ]
+    },
+    "14": {
+      "2": [
+        {
+          "phrase": "do show forth themselves in him",
+          "note": "Or, are wrought by him",
+          "type": "alternative"
+        }
+      ],
+      "30": [
+        {
+          "phrase": "boisterous",
+          "note": "Or, strong",
+          "type": "alternative"
+        }
+      ]
+    },
+    "17": {
+      "24": [
+        {
+          "phrase": "tribute money",
+          "note": "called in the original Didrachma, being in value fifteen pence",
+          "type": "clarification"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "a piece of money",
+          "note": "Or, a stater. It is half an ounce of silver, in value two shillings six pence, after five shillings the ounce is 7.d. ob.",
+          "type": "alternative"
+        }
+      ]
+    },
+    "18": {
+      "24": [
+        {
+          "phrase": "talents",
+          "note": "a talent is 750 ounces of silver, which after five shillings the ounce is 187.li 10.s.",
+          "type": "clarification"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "worshipped him",
+          "note": "Or, besought him",
+          "type": "alternative"
+        }
+      ],
+      "28": [
+        {
+          "phrase": "pence",
+          "note": "the Roman penny is the eighth part of an ounce, which after 5. shillings the ounce is 7.d. ob.",
+          "type": "clarification"
+        }
+      ]
+    },
+    "20": {
+      "2": [
+        {
+          "phrase": "penny",
+          "note": "the Roman penny is the eighth part of an ounce, which after five shillings the ounce, is seven pence halfpenny",
+          "type": "clarification"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "have wrought but one hour",
+          "note": "Or, have continued one hour only",
+          "type": "alternative"
+        }
+      ]
+    },
+    "22": {
+      "19": [
+        {
+          "phrase": "penny",
+          "note": "in value seven pence halfpenny, chap. 20.2",
+          "type": "clarification"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "superscription?",
+          "note": "Or, inscription",
+          "type": "alternative"
+        }
+      ]
+    },
+    "23": {
+      "18": [
+        {
+          "phrase": "guilty",
+          "note": "Or, a debtOr, or bound",
+          "type": "alternative"
+        }
+      ]
+    },
+    "24": {
+      "31": [
+        {
+          "phrase": "with a great sound of a trumpet",
+          "note": "Or, with a Trumpet and a great voice",
+          "type": "alternative"
+        }
+      ],
+      "51": [
+        {
+          "phrase": "cut him asunder",
+          "note": "Or, cut him off",
+          "type": "alternative"
+        }
+      ]
+    },
+    "25": {
+      "8": [
+        {
+          "phrase": "gone out",
+          "note": "Or, going out",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "talents",
+          "note": "a talent is 187. pound 10. Shillings, chap. 18.24",
+          "type": "clarification"
+        }
+      ]
+    },
+    "26": {
+      "26": [
+        {
+          "phrase": "blessed it",
+          "note": "Many Greek copies have, gave thanks",
+          "type": "clarification"
+        }
+      ],
+      "30": [
+        {
+          "phrase": "hymn",
+          "note": "Or, psalm",
+          "type": "alternative"
+        }
+      ],
+      "67": [
+        {
+          "phrase": "the palms",
+          "note": "Or, rods",
+          "type": "alternative"
+        }
+      ]
+    },
+    "27": {
+      "9": [
+        {
+          "phrase": "whom they of the children of Israel did value",
+          "note": "Or, whom they bought of the children of Israel",
+          "type": "alternative"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "common hall",
+          "note": "Or, governors house",
+          "type": "alternative"
+        }
+      ]
+    },
+    "28": {
+      "2": [
+        {
+          "phrase": "was",
+          "note": "Or, had been",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "bookId": 62,
+  "bookName": "1 John",
+  "chapters": {
+    "2": {
+      "10": [
+        {
+          "phrase": "stumbling",
+          "note": "Gr. scandal",
+          "type": "greek"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "him",
+          "note": "Or, it",
+          "type": "alternative"
+        }
+      ],
+      "29": [
+        {
+          "phrase": "ye know",
+          "note": "Or, know ye",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "11": [
+        {
+          "phrase": "message",
+          "note": "Or, commandment",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "assure",
+          "note": "Gr. persuade",
+          "type": "greek"
+        }
+      ]
+    },
+    "4": {
+      "17": [
+        {
+          "phrase": "our love",
+          "note": "Gr. love with us",
+          "type": "greek"
+        }
+      ]
+    },
+    "5": {
+      "14": [
+        {
+          "phrase": "in him",
+          "note": "Or, concerning him",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

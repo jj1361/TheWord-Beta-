@@ -1,0 +1,122 @@
+{
+  "bookId": 52,
+  "bookName": "1 Thessalonians",
+  "chapters": {
+    "1": {
+      "4": [
+        {
+          "phrase": "beloved, your election of God",
+          "note": "Or, beloved of God, your election",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "6": [
+        {
+          "phrase": "burdensome",
+          "note": "Or, used authority",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "persecuted us",
+          "note": "Or, chased us out",
+          "type": "alternative"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "rejoicing?",
+          "note": "Or, glorying",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "11": [
+        {
+          "phrase": "direct",
+          "note": "Or, guide",
+          "type": "alternative"
+        }
+      ]
+    },
+    "4": {
+      "1": [
+        {
+          "phrase": "beseech",
+          "note": "Or, request",
+          "type": "alternative"
+        },
+        {
+          "phrase": "exhort",
+          "note": "Or, beseech",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "defraud",
+          "note": "Or, oppress, or, overreach",
+          "type": "alternative"
+        },
+        {
+          "phrase": "in any matter",
+          "note": "Or, in the matter",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "despiseth",
+          "note": "Or, rejecteth",
+          "type": "alternative"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "nothing",
+          "note": "Or, of no man",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "comfort",
+          "note": "Or, exhort",
+          "type": "alternative"
+        }
+      ]
+    },
+    "5": {
+      "11": [
+        {
+          "phrase": "comfort",
+          "note": "Or, exhort",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "exhort",
+          "note": "Or, beseech",
+          "type": "alternative"
+        },
+        {
+          "phrase": "unruly",
+          "note": "Or, disorderly",
+          "type": "alternative"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "charge",
+          "note": "Or, adjure",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

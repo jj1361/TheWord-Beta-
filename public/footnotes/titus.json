@@ -1,0 +1,115 @@
+{
+  "bookId": 56,
+  "bookName": "Titus",
+  "chapters": {
+    "1": {
+      "2": [
+        {
+          "phrase": "In",
+          "note": "Or, for",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "are wanting",
+          "note": "Or, left undone",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "good men",
+          "note": "Or, good things",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "as he hath been taught",
+          "note": "Or, in teaching",
+          "type": "alternative"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "reprobate",
+          "note": "Or, void of judgment",
+          "type": "alternative"
+        }
+      ]
+    },
+    "2": {
+      "2": [
+        {
+          "phrase": "sober",
+          "note": "Or, vigilant",
+          "type": "alternative"
+        }
+      ],
+      "3": [
+        {
+          "phrase": "holiness",
+          "note": "Or, holy women",
+          "type": "alternative"
+        },
+        {
+          "phrase": "false accusers",
+          "note": "Or, makebates",
+          "type": "alternative"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "sober",
+          "note": "Or, wise",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "sober minded",
+          "note": "Or, discreet",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "answering again",
+          "note": "Or, gain saying",
+          "type": "alternative"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "that bringeth salvation hat appeared to all men",
+          "note": "Or, that bringeth salvation to all men, hath appeared",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "4": [
+        {
+          "phrase": "love",
+          "note": "Or, pity",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "abundantly",
+          "note": "Gr. richly",
+          "type": "greek"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "maintain good works",
+          "note": "Or, profess honest trades",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

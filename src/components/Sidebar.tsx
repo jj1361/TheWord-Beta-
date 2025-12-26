@@ -56,6 +56,9 @@ interface SidebarProps {
   maxTextSize: number;
   onIncreaseTextSize: () => void;
   onDecreaseTextSize: () => void;
+  // Footnotes props
+  showFootnotes: boolean;
+  onToggleFootnotes: () => void;
 }
 
 const Sidebar: React.FC<SidebarProps> = ({
@@ -110,6 +113,9 @@ const Sidebar: React.FC<SidebarProps> = ({
   maxTextSize,
   onIncreaseTextSize,
   onDecreaseTextSize,
+  // Footnotes props
+  showFootnotes,
+  onToggleFootnotes,
 }) => {
   const [showNotesTooltip, setShowNotesTooltip] = React.useState(false);
   const [isHovered, setIsHovered] = React.useState(false);
@@ -238,6 +244,14 @@ const Sidebar: React.FC<SidebarProps> = ({
           title={studyMode ? 'Hide Study Notes' : 'Show Study Notes'}
         >
           {studyMode ? '📚' : '📖'}
+        </button>
+
+        <button
+          className={`sidebar-btn footnotes-btn ${showFootnotes ? 'active' : ''}`}
+          onClick={onToggleFootnotes}
+          title={showFootnotes ? 'Hide 1611 Marginal Notes' : 'Show 1611 Marginal Notes'}
+        >
+          †
         </button>
 
         <button

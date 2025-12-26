@@ -1,0 +1,623 @@
+{
+  "bookId": 15,
+  "bookName": "Ezra",
+  "chapters": {
+    "1": {
+      "1": [
+        {
+          "phrase": "made a proclomation",
+          "note": "Heb. caused a voice to pass",
+          "type": "hebrew"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "help him",
+          "note": "Heb. lift him up",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "strengthened their hands",
+          "note": "that is, helped them",
+          "type": "meaning"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "the captivity",
+          "note": "Heb. the transportation",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "2": {
+      "2": [
+        {
+          "phrase": "Seraiah",
+          "note": "Or, Azariah",
+          "type": "alternative"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "Bani",
+          "note": "Or, Binnui",
+          "type": "alternative"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "Jorah",
+          "note": "Or, Hariph",
+          "type": "alternative"
+        }
+      ],
+      "20": [
+        {
+          "phrase": "Gibbar",
+          "note": "Or, Gibeon",
+          "type": "alternative"
+        }
+      ],
+      "24": [
+        {
+          "phrase": "Azmaveth",
+          "note": "Or, Bethazmaveth",
+          "type": "alternative"
+        }
+      ],
+      "33": [
+        {
+          "phrase": "Hadid",
+          "note": "Or, Harid, as it is in some copies",
+          "type": "alternative"
+        }
+      ],
+      "40": [
+        {
+          "phrase": "Hodaviah",
+          "note": "Or, Judah, chap. 3.9. called also Hodevah",
+          "type": "alternative"
+        }
+      ],
+      "46": [
+        {
+          "phrase": "Shalmai",
+          "note": "Or, Shamlai",
+          "type": "alternative"
+        }
+      ],
+      "52": [
+        {
+          "phrase": "Bazluth",
+          "note": "Or, Bazlith, in Nehem",
+          "type": "alternative"
+        }
+      ],
+      "55": [
+        {
+          "phrase": "Peruda",
+          "note": "Or, Perida, in Nehem.",
+          "type": "alternative"
+        }
+      ],
+      "57": [
+        {
+          "phrase": "Ami",
+          "note": "Or, Amon, in Nehem.",
+          "type": "alternative"
+        }
+      ],
+      "59": [
+        {
+          "phrase": "seed",
+          "note": "Or, pedegree",
+          "type": "alternative"
+        }
+      ],
+      "62": [
+        {
+          "phrase": "were they as polluted, put from the priesthood",
+          "note": "Heb. they were polluted from the priesthood",
+          "type": "hebrew"
+        }
+      ],
+      "63": [
+        {
+          "phrase": "Tirshatha",
+          "note": "Or, governor",
+          "type": "alternative"
+        }
+      ]
+    },
+    "3": {
+      "2": [
+        {
+          "phrase": "Jeshua",
+          "note": "Or, Josua",
+          "type": "alternative"
+        }
+      ],
+      "4": [
+        {
+          "phrase": "as the duty of every day required",
+          "note": "Heb. the matter of the day in his day",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "the foundation of the temple of the LORD was not yet laid",
+          "note": "Heb. the Temple of the Lord was not yet founded",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "carpenters",
+          "note": "Or, workmen",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "Judah",
+          "note": "Or, Hodaviah",
+          "type": "alternative"
+        },
+        {
+          "phrase": "together",
+          "note": "Heb. as one",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "4": {
+      "1": [
+        {
+          "phrase": "the children of the captivity",
+          "note": "Heb. the sons of the transportation",
+          "type": "hebrew"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "Ahasuerus",
+          "note": "Heb. Ahashverosh",
+          "type": "hebrew"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "Bishlam",
+          "note": "Or, in peace",
+          "type": "alternative"
+        },
+        {
+          "phrase": "companions",
+          "note": "Heb. societies",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "Scribe",
+          "note": "Or, Secretary",
+          "type": "alternative"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "companions",
+          "note": "Chald. societies",
+          "type": "clarification"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "and at such a time",
+          "note": "Chal. Cheeneth",
+          "type": "clarification"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "set up",
+          "note": "Or, finished",
+          "type": "alternative"
+        },
+        {
+          "phrase": "joined",
+          "note": "Chal. sowed together",
+          "type": "clarification"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "pay",
+          "note": "Chal. give",
+          "type": "clarification"
+        },
+        {
+          "phrase": "revenue",
+          "note": "Or, strength",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "we have maintenance from the Kings palace",
+          "note": "Chal. we are salted with the salt of the palace",
+          "type": "clarification"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "moved",
+          "note": "Cald. made",
+          "type": "clarification"
+        },
+        {
+          "phrase": "within the same of old time",
+          "note": "Chald. in the midst thereof",
+          "type": "clarification"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "companions",
+          "note": "Chal, societies",
+          "type": "clarification"
+        }
+      ],
+      "19": [
+        {
+          "phrase": "I commanded",
+          "note": "Chald. by me a decree is set",
+          "type": "clarification"
+        },
+        {
+          "phrase": "made insurrection",
+          "note": "Chald. lifted up itself",
+          "type": "clarification"
+        }
+      ],
+      "21": [
+        {
+          "phrase": "Give ye now commandement",
+          "note": "Chal. make a decree",
+          "type": "clarification"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "by force and power",
+          "note": "Chald. by arm and power",
+          "type": "clarification"
+        }
+      ]
+    },
+    "5": {
+      "4": [
+        {
+          "phrase": "that make this building",
+          "note": "Chald. that build this building",
+          "type": "clarification"
+        }
+      ],
+      "7": [
+        {
+          "phrase": "wherein",
+          "note": "Chald. in the midst whereof",
+          "type": "clarification"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "great stones",
+          "note": "Chald. stones of rolling",
+          "type": "clarification"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "governor",
+          "note": "Or, deputy",
+          "type": "alternative"
+        }
+      ]
+    },
+    "6": {
+      "1": [
+        {
+          "phrase": "rolls",
+          "note": "Chalde, books",
+          "type": "clarification"
+        },
+        {
+          "phrase": "laid up",
+          "note": "Chalde, made to descend",
+          "type": "clarification"
+        }
+      ],
+      "2": [
+        {
+          "phrase": "Achmetha",
+          "note": "Or, Ecbatana, or in a coffer",
+          "type": "alternative"
+        }
+      ],
+      "5": [
+        {
+          "phrase": "brought again",
+          "note": "Chaldee, go",
+          "type": "clarification"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "your companions",
+          "note": "Chalde, their societies",
+          "type": "clarification"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "I make a decree",
+          "note": "Chalde, by me a decree is made",
+          "type": "clarification"
+        },
+        {
+          "phrase": "hindered",
+          "note": "Chalde, made to cease",
+          "type": "clarification"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "of sweet savours",
+          "note": "Chalde, of rest",
+          "type": "clarification"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "let him be hanged",
+          "note": "Chalde, let him be destroyed",
+          "type": "clarification"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "commandment",
+          "note": "Chald. decree",
+          "type": "clarification"
+        }
+      ],
+      "16": [
+        {
+          "phrase": "the children of the captivity",
+          "note": "Chald. the sons of the transportation",
+          "type": "clarification"
+        }
+      ],
+      "18": [
+        {
+          "phrase": "as it is written in the book",
+          "note": "Chald. according to the writing",
+          "type": "clarification"
+        }
+      ]
+    },
+    "7": {
+      "9": [
+        {
+          "phrase": "began he to go up",
+          "note": "He was the foundation of the going up",
+          "type": "clarification"
+        }
+      ],
+      "12": [
+        {
+          "phrase": "unto Ezra the priest, a Scribe of the Law of the God of heaven, Peace",
+          "note": "Or, to Ezra the Priest a perfect Scribe of the Law of the God of heaven, Peace, etc.",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "of the king",
+          "note": "Chal. from before the King",
+          "type": "clarification"
+        }
+      ],
+      "22": [
+        {
+          "phrase": "measures",
+          "note": "Chald, cores",
+          "type": "clarification"
+        }
+      ],
+      "23": [
+        {
+          "phrase": "Whatsoever is commanded",
+          "note": "Heb. whatsoever is of the decree",
+          "type": "hebrew"
+        }
+      ],
+      "26": [
+        {
+          "phrase": "to banishment",
+          "note": "Chald. to rooting out",
+          "type": "clarification"
+        }
+      ]
+    },
+    "8": {
+      "12": [
+        {
+          "phrase": "the son",
+          "note": "Or, the youngest son",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "Zabbud",
+          "note": "Or, Zaccur, as some read",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "abode",
+          "note": "Or, pitched",
+          "type": "alternative"
+        }
+      ],
+      "17": [
+        {
+          "phrase": "I told them",
+          "note": "Heb. I put words in their mouth",
+          "type": "hebrew"
+        }
+      ],
+      "27": [
+        {
+          "phrase": "fine copper",
+          "note": "Heb. yellow or shining brass",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "precious",
+          "note": "Heb. desireable",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "9": {
+      "5": [
+        {
+          "phrase": "heaviness",
+          "note": "Or, affliction",
+          "type": "alternative"
+        }
+      ],
+      "6": [
+        {
+          "phrase": "trespass",
+          "note": "Or, guiltiness",
+          "type": "alternative"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "little space",
+          "note": "Heb. moment",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "a nail",
+          "note": "Or, a pinne [symbol in wrong place]",
+          "type": "alternative"
+        },
+        {
+          "phrase": "in his holy place",
+          "note": "That is, a constant and sure abode",
+          "type": "meaning"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "to repair",
+          "note": "Heb. to set up",
+          "type": "hebrew"
+        }
+      ],
+      "11": [
+        {
+          "phrase": "by thy servants",
+          "note": "Heb. by the hand of thy servants",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "from one end to another",
+          "note": "Heb. from mouth to mouth",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "hast punished us less, then our iniquities deserve",
+          "note": "Heb. hast withheld beneath our iniquities",
+          "type": "hebrew"
+        }
+      ]
+    },
+    "10": {
+      "1": [
+        {
+          "phrase": "wept very sore",
+          "note": "Heb. wept a great weeping",
+          "type": "hebrew"
+        },
+        {
+          "phrase": "put away",
+          "note": "Heb. to bring forth",
+          "type": "hebrew"
+        }
+      ],
+      "8": [
+        {
+          "phrase": "forfeited",
+          "note": "Heb. devoted",
+          "type": "hebrew"
+        }
+      ],
+      "9": [
+        {
+          "phrase": "the great rain",
+          "note": "Heb. the showers",
+          "type": "hebrew"
+        }
+      ],
+      "10": [
+        {
+          "phrase": "have taken",
+          "note": "Heb. have caused to dwell, or have brought back",
+          "type": "hebrew"
+        }
+      ],
+      "13": [
+        {
+          "phrase": "we are many that have transgressed in this thing",
+          "note": "Or, we have greatly offended in this thing",
+          "type": "alternative"
+        }
+      ],
+      "14": [
+        {
+          "phrase": "for this matter",
+          "note": "Or, till this matter be dispatched",
+          "type": "alternative"
+        }
+      ],
+      "15": [
+        {
+          "phrase": "were employed",
+          "note": "Heb. stood",
+          "type": "hebrew"
+        }
+      ],
+      "40": [
+        {
+          "phrase": "Machnadebai",
+          "note": "Or, Mabnadebai, according to some copies",
+          "type": "alternative"
+        }
+      ]
+    }
+  }
+}

@@ -12,4 +12,5 @@ export const PATHS = {
   SEARCH_INDEX: '/search-index.json',
   STRONGS_INDEX: '/strongs-index.json',
   CROSSREF_INDEX: '/crossref-index.json',
+  FOOTNOTES: '/footnotes',  // Per-book JSON files: /footnotes/genesis.json, etc.
 };

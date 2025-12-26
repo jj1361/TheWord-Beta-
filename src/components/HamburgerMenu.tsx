@@ -56,6 +56,9 @@ interface HamburgerMenuProps {
   maxTextSize: number;
   onIncreaseTextSize: () => void;
   onDecreaseTextSize: () => void;
+  // Footnotes props
+  showFootnotes: boolean;
+  onToggleFootnotes: () => void;
 }
 
 interface MenuItemProps {
@@ -139,6 +142,8 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
   maxTextSize,
   onIncreaseTextSize,
   onDecreaseTextSize,
+  showFootnotes,
+  onToggleFootnotes,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [, setActiveSubmenu] = useState<string | null>(null);
@@ -271,6 +276,12 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
               label="Study Mode"
               active={studyMode}
               onClick={() => handleItemClick(onToggleStudyMode)}
+            />
+            <MenuItem
+              icon="†"
+              label="1611 Marginal Notes"
+              active={showFootnotes}
+              onClick={() => handleItemClick(onToggleFootnotes)}
             />
             <MenuItem
               icon={personProfileEnabled ? '👤' : '👥'}
