@@ -1,6 +1,6 @@
 // Translation type definitions for multi-translation support
 
-export type TranslationId = 'kjv' | 'tagalog';
+export type TranslationId = 'kjv' | 'tagalog' | 'brenton';
 
 export interface TranslationMetadata {
   id: TranslationId;
@@ -39,6 +39,18 @@ export const TRANSLATIONS: TranslationMetadata[] = [
     hasStrongsNumbers: false,
     hasInterlinear: false,
     description: 'Filipino/Tagalog Bible translation'
+  },
+  {
+    id: 'brenton',
+    name: 'Brenton Septuagint',
+    abbreviation: 'LXX',
+    language: 'English',
+    languageCode: 'en',
+    publishYear: 1851,
+    copyright: 'Public Domain',
+    hasStrongsNumbers: false,
+    hasInterlinear: false,
+    description: 'English translation of the Greek Septuagint (Old Testament) by Sir Lancelot Charles Lee Brenton'
   }
 ];
 
@@ -211,4 +223,68 @@ export const TAGALOG_BOOK_NAMES: Record<number, string> = {
   66: 'Pahayag',
   67: '1 Maccabeo',
   68: '2 Maccabeo',
+};
+
+// Brenton Septuagint book names by ID (for display)
+// Includes canonical OT books + Apocrypha/Deuterocanonical books
+export const BRENTON_BOOK_NAMES: Record<number, string> = {
+  // Pentateuch
+  1: 'Genesis',
+  2: 'Exodus',
+  3: 'Leviticus',
+  4: 'Numbers',
+  5: 'Deuteronomy',
+  // Historical Books
+  6: 'Joshua',
+  7: 'Judges',
+  8: 'Ruth',
+  9: '1 Samuel (Kings I)',
+  10: '2 Samuel (Kings II)',
+  11: '1 Kings (Kings III)',
+  12: '2 Kings (Kings IV)',
+  13: '1 Chronicles',
+  14: '2 Chronicles',
+  15: 'Ezra',
+  16: 'Nehemiah',
+  17: 'Esther (Greek)',
+  // Wisdom Literature
+  18: 'Job',
+  19: 'Psalms',
+  20: 'Proverbs',
+  21: 'Ecclesiastes',
+  22: 'Song of Solomon',
+  // Major Prophets
+  23: 'Isaiah (Esaias)',
+  24: 'Jeremiah (Jeremias)',
+  25: 'Lamentations',
+  26: 'Ezekiel (Jezekiel)',
+  27: 'Daniel (Greek)',
+  // Minor Prophets
+  28: 'Hosea (Osee)',
+  29: 'Joel',
+  30: 'Amos',
+  31: 'Obadiah (Obdias)',
+  32: 'Jonah (Jonas)',
+  33: 'Micah (Micheas)',
+  34: 'Nahum (Naum)',
+  35: 'Habakkuk (Ambacum)',
+  36: 'Zephaniah (Sophonias)',
+  37: 'Haggai (Aggaeus)',
+  38: 'Zechariah (Zacharias)',
+  39: 'Malachi (Malachias)',
+  // Apocrypha/Deuterocanonical (IDs 70+)
+  70: 'Tobit',
+  71: 'Judith',
+  72: 'Wisdom of Solomon',
+  73: 'Sirach (Ecclesiasticus)',
+  74: 'Baruch',
+  75: 'Epistle of Jeremy',
+  76: 'Susanna',
+  77: 'Bel and the Dragon',
+  78: '1 Maccabees',
+  79: '2 Maccabees',
+  80: '1 Esdras',
+  81: 'Prayer of Manasseh',
+  82: '3 Maccabees',
+  83: '4 Maccabees',
 };

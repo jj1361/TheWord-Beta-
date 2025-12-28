@@ -8,16 +8,17 @@ interface SearchBoxProps {
   onSearch: (query: string) => Promise<SearchResponse>;
   onResultClick: (bookId: number, chapter: number, verse: number) => void;
   onWordSearch?: (strongsId: string) => void;
+  voiceSearchQuery?: string | null;
+  onVoiceSearchHandled?: () => void;
 }
 
-const SearchBox: React.FC<SearchBoxProps> = ({ onSearch, onResultClick, onWordSearch }) => {
+const SearchBox: React.FC<SearchBoxProps> = ({ onSearch, onResultClick, onWordSearch, voiceSearchQuery, onVoiceSearchHandled }) => {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);
   const [totalCount, setTotalCount] = useState(0);
   const [hasMore, setHasMore] = useState(false);
   const [isSearching, setIsSearching] = useState(false);
   const [showResults, setShowResults] = useState(false);
-  const [indexStatus, setIndexStatus] = useState<'indexing' | 'ready' | 'none'>('none');
   const debounceTimerRef = useRef<NodeJS.Timeout | null>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
 
@@ -27,26 +28,26 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onSearch, onResultClick, onWordSe
   const [allResultsQuery, setAllResultsQuery] = useState('');
   const [isLoadingAllResults, setIsLoadingAllResults] = useState(false);
 
-  // Monitor search index status
+  // Handle voice search query
   useEffect(() => {
-    const checkIndexStatus = () => {
-      if (searchService.isIndexReady()) {
-        setIndexStatus('ready');
-      } else if (searchService.isIndexing()) {
-        setIndexStatus('indexing');
-      } else {
-        setIndexStatus('none');
-      }
-    };
-
-    // Check immediately
-    checkIndexStatus();
-
-    // Check periodically while indexing
-    const interval = setInterval(checkIndexStatus, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
+    if (voiceSearchQuery) {
+      setQuery(voiceSearchQuery);
+      // Perform search immediately
+      setIsSearching(true);
+      setShowResults(true);
+      onSearch(voiceSearchQuery).then((searchResponse) => {
+        setResults(searchResponse.results);
+        setTotalCount(searchResponse.totalCount);
+        setHasMore(searchResponse.hasMore);
+        setIsSearching(false);
+      }).catch((error) => {
+        console.error('Voice search error:', error);
+        setIsSearching(false);
+      });
+      // Notify parent that we've handled the voice search
+      onVoiceSearchHandled?.();
+    }
+  }, [voiceSearchQuery, onSearch, onVoiceSearchHandled]);
 
   // Debounced search function
   const performSearch = useCallback(async (searchQuery: string) => {
@@ -251,21 +252,6 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onSearch, onResultClick, onWordSe
 
   return (
     <div className="search-container">
-      {indexStatus !== 'none' && (
-        <div className={`search-status ${indexStatus === 'ready' ? 'search-status-ready' : ''}`}>
-          {indexStatus === 'indexing' ? (
-            <>
-              <span>⚡</span>
-              <span>Building search index...</span>
-            </>
-          ) : (
-            <>
-              <span>✓</span>
-              <span>Fast search ready</span>
-            </>
-          )}
-        </div>
-      )}
       <form onSubmit={handleSearch} className="search-form">
         <div className="search-input-wrapper">
           <input

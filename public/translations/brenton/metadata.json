@@ -1,0 +1,18 @@
+{
+  "id": "brenton",
+  "name": "Brenton Septuagint",
+  "abbreviation": "LXX",
+  "language": "English",
+  "languageCode": "en",
+  "description": "English translation of the Greek Septuagint (Old Testament) by Sir Lancelot Charles Lee Brenton, published in 1851",
+  "publishYear": 1851,
+  "books": 53,
+  "totalChapters": 1116,
+  "totalVerses": 29004,
+  "hasStrongsNumbers": false,
+  "hasInterlinear": false,
+  "isOldTestamentOnly": true,
+  "includesApocrypha": true,
+  "copyright": "Public Domain",
+  "generatedAt": "2025-12-28T08:10:06.279Z"
+}

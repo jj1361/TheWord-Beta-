@@ -79,12 +79,12 @@
 .hamburger-panel {
   position: fixed;
   top: 0;
-  right: -400px;
+  left: -400px;
   width: 380px;
   max-width: 90vw;
   height: 100vh;
   background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
-  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 0 40px rgba(0, 0, 0, 0.5);
   z-index: 999;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
@@ -93,7 +93,7 @@
 }
 
 .hamburger-panel.open {
-  transform: translateX(-400px);
+  transform: translateX(400px);
 }
 
 /* Panel Header */
@@ -553,11 +553,11 @@
 @media (max-width: 480px) {
   .hamburger-panel {
     width: 100vw;
-    right: -100vw;
+    left: -100vw;
   }
 
   .hamburger-panel.open {
-    transform: translateX(-100vw);
+    transform: translateX(100vw);
   }
 
   .hamburger-button {
@@ -595,7 +595,7 @@
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateX(20px);
+    transform: translateX(-20px);
   }
   to {
     opacity: 1;

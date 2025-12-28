@@ -456,75 +456,8 @@
 }
 
 @media (max-width: 768px) {
+  /* Hide navigation sidebar on mobile */
   .sidebar-container {
-    position: fixed;
-    top: 70px; /* Smaller header on mobile */
-    left: 0;
-    right: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .sidebar {
-    position: relative;
-    left: 0;
-    margin: 0;
-    width: fit-content;
-    border-radius: 0 0 12px 12px;
-  }
-
-  .sidebar-content {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .sidebar-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-  }
-
-  .sidebar-component-wrapper .history-dropdown-toggle,
-  .sidebar-component-wrapper .bookmarks-toggle {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-  }
-
-  .sidebar-component-wrapper .history-dropdown-menu,
-  .sidebar-component-wrapper .bookmarks-dropdown-menu {
-    left: auto;
-    right: 0;
-    top: 50px;
-  }
-
-  .sidebar-signin-tooltip {
-    left: auto;
-    right: 0;
-    top: 50px;
-  }
-
-  .sidebar-divider {
-    width: 2px;
-    height: 24px;
-    margin: 0 4px;
-  }
-
-  /* Disable collapsible behavior on mobile */
-  .sidebar-container.collapsible .sidebar.collapsible-sidebar {
-    transform: none;
-    opacity: 1;
-    pointer-events: auto;
-    left: 0;
-  }
-
-  .sidebar-hover-trigger {
-    display: none;
-  }
-
-  .sidebar-container.collapsible:not(.hovered)::before {
     display: none;
   }
 }

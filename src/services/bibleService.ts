@@ -3,7 +3,7 @@ import { XMLParser } from '../utils/xmlParser';
 import { apocryphaService } from './apocryphaService';
 import { kjvStrongsService } from './kjvStrongsService';
 import { PATHS } from '../config/paths';
-import { TranslationId, TAGALOG_BOOK_NAMES, getTranslationById } from '../types/translation';
+import { TranslationId, TAGALOG_BOOK_NAMES, BRENTON_BOOK_NAMES, getTranslationById } from '../types/translation';
 
 // Cache for loaded translation data
 interface TranslationCache {
@@ -197,6 +197,10 @@ export class BibleService {
   private getBookNameForTranslation(bookId: number, translationId: TranslationId): string {
     if (translationId === 'tagalog') {
       return TAGALOG_BOOK_NAMES[bookId] || BIBLE_BOOKS.find(b => b.id === bookId)?.name || `Book ${bookId}`;
+    }
+
+    if (translationId === 'brenton') {
+      return BRENTON_BOOK_NAMES[bookId] || BIBLE_BOOKS.find(b => b.id === bookId)?.name || `Book ${bookId}`;
     }
 
     // Default to English book names

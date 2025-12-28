@@ -1,15 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Chapter, FootnoteEntry } from '../types/bible';
 import VerseDisplay from './VerseDisplay';
-import ChapterSelector from './ChapterSelector';
-import NavigationModal from './NavigationModal';
-import SearchBox from './SearchBox';
-import { SearchResponse } from '../services/searchService';
-import { CrossReference } from '../services/crossRefService';
 import { WordImageMapping } from '../config/youthModeConfig';
 import { HighlightColor, TextFormatting } from '../types/notes';
-import { LexiconData } from '../types/lexicon';
-import { HebrewLetterInfo } from '../config/hebrewLetters';
 import './ChapterDisplay.css';
 
 // Default text size if not provided
@@ -35,36 +28,12 @@ interface ChapterDisplayProps {
   onToggleProtoSinaitic?: () => void;
   youthMode?: boolean;
   studyMode?: boolean;
-  totalChapters?: number;
-  onChapterSelect?: (chapter: number) => void;
-  // Screen share mode props
-  screenShareMode?: boolean;
   currentBookId?: number;
-  onNavigate?: (bookId: number, chapter: number) => void;
-  onSearch?: (query: string) => Promise<SearchResponse>;
-  onSearchResultClick?: (bookId: number, chapter: number, verse: number) => void;
-  onWordSearch?: (strongsId: string) => void;
   // Text size props (controlled from parent)
   textSize?: number;
-  minTextSize?: number;
-  maxTextSize?: number;
-  onIncreaseTextSize?: () => void;
-  onDecreaseTextSize?: () => void;
   // Footnotes (1611 KJV Marginal Notes)
   chapterFootnotes?: Map<number, FootnoteEntry[]>;
   showFootnotes?: boolean;
-  // Webcam mode inline panel props
-  webcamMode?: boolean;
-  inlinePanelLexicon?: LexiconData | null;
-  inlinePanelHebrewLetter?: HebrewLetterInfo | null;
-  inlinePanelCrossRefContext?: {
-    bookId: number;
-    bookName: string;
-    chapter: number;
-    verse: number;
-  } | null;
-  inlinePanelCrossRefVerses?: Array<CrossReference & { text?: string }>;
-  onCloseInlinePanel?: () => void;
 }
 
 const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
@@ -87,31 +56,11 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
   onToggleProtoSinaitic,
   youthMode,
   studyMode,
-  totalChapters,
-  onChapterSelect,
-  screenShareMode,
   currentBookId,
-  onNavigate,
-  onSearch,
-  onSearchResultClick,
-  onWordSearch,
   textSize: textSizeProp,
-  minTextSize = 12,
-  maxTextSize = 50,
-  onIncreaseTextSize,
-  onDecreaseTextSize,
   chapterFootnotes,
   showFootnotes = true,
-  webcamMode,
-  inlinePanelLexicon,
-  inlinePanelHebrewLetter,
-  inlinePanelCrossRefContext,
-  inlinePanelCrossRefVerses,
-  onCloseInlinePanel,
 }) => {
-  const [isChapterSelectorOpen, setIsChapterSelectorOpen] = useState(false);
-  const [isNavigationModalOpen, setIsNavigationModalOpen] = useState(false);
-
   // Use prop if provided, otherwise fallback to default
   const textSize = textSizeProp ?? DEFAULT_TEXT_SIZE;
 
@@ -139,89 +88,6 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
 
   return (
     <div className="chapter-display">
-      <div className="chapter-header">
-        <h1 className="chapter-title">
-          {screenShareMode ? (
-            <span
-              className="book-name-link"
-              onClick={() => setIsNavigationModalOpen(true)}
-              title="Select book and chapter"
-            >
-              {chapter.bookName}
-            </span>
-          ) : (
-            chapter.bookName
-          )}{' '}
-          <span
-            className="chapter-number-link"
-            onClick={() => setIsChapterSelectorOpen(true)}
-            title="Select chapter"
-          >
-            {chapter.chapterNum}
-          </span>
-        </h1>
-        <div className="chapter-header-right">
-          {screenShareMode && onSearch && onSearchResultClick ? (
-            <div className="chapter-search-container">
-              <SearchBox
-                onSearch={onSearch}
-                onResultClick={onSearchResultClick}
-                onWordSearch={onWordSearch}
-              />
-            </div>
-          ) : null}
-
-          {/* Text Size Controls */}
-          {onIncreaseTextSize && onDecreaseTextSize && (
-            <div className="text-size-controls">
-              <button
-                className="text-size-btn"
-                onClick={onDecreaseTextSize}
-                disabled={textSize <= minTextSize}
-                title="Decrease text size"
-                aria-label="Decrease text size"
-              >
-                A−
-              </button>
-              <span className="text-size-value">{textSize}px</span>
-              <button
-                className="text-size-btn"
-                onClick={onIncreaseTextSize}
-                disabled={textSize >= maxTextSize}
-                title="Increase text size"
-                aria-label="Increase text size"
-              >
-                A+
-              </button>
-            </div>
-          )}
-        </div>
-      </div>
-
-      {totalChapters && onChapterSelect && (
-        <ChapterSelector
-          isOpen={isChapterSelectorOpen}
-          onClose={() => setIsChapterSelectorOpen(false)}
-          bookName={chapter.bookName}
-          totalChapters={totalChapters}
-          currentChapter={chapter.chapterNum}
-          onChapterSelect={onChapterSelect}
-        />
-      )}
-
-      {screenShareMode && onNavigate && currentBookId !== undefined && (
-        <NavigationModal
-          isOpen={isNavigationModalOpen}
-          onClose={() => setIsNavigationModalOpen(false)}
-          onNavigate={(bookId, chapterNum) => {
-            onNavigate(bookId, chapterNum);
-            setIsNavigationModalOpen(false);
-          }}
-          currentBookId={currentBookId}
-          currentChapter={chapter.chapterNum}
-        />
-      )}
-
       <div className="verses-container" style={{ '--verse-text-size': `${textSize}px` } as React.CSSProperties}>
         {chapter.kjvVerses.map((verse) => {
           const kjvsVerse = chapter.kjvsVerses?.find(
@@ -236,9 +102,6 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
           // Only show highlights and formatting when study mode is enabled
           const userHighlightColor = studyMode ? getVerseHighlightColor?.(verse.num) : undefined;
           const verseTextFormatting = studyMode ? (getVerseTextFormatting?.(verse.num) || []) : [];
-
-          // In webcam mode, show inline panel content on the selected verse
-          const showInlinePanelForVerse = webcamMode && selectedVerse === verse.num;
 
           return (
             <div
@@ -266,14 +129,8 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
                 textFormatting={verseTextFormatting}
                 footnotes={chapterFootnotes?.get(verse.num)}
                 showFootnotes={showFootnotes}
-                // Webcam mode inline panel props - passed to the selected verse
-                webcamMode={showInlinePanelForVerse}
-                inlinePanelLexicon={showInlinePanelForVerse ? inlinePanelLexicon : null}
-                inlinePanelHebrewLetter={showInlinePanelForVerse ? inlinePanelHebrewLetter : null}
-                inlinePanelCrossRefContext={showInlinePanelForVerse ? inlinePanelCrossRefContext : null}
-                inlinePanelCrossRefVerses={showInlinePanelForVerse ? inlinePanelCrossRefVerses : undefined}
-                onCloseInlinePanel={onCloseInlinePanel}
-                onInlinePanelVerseClick={onSearchResultClick}
+                bookId={currentBookId?.toString()}
+                chapter={chapter?.chapterNum}
               />
             </div>
           );

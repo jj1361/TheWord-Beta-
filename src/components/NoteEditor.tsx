@@ -208,15 +208,6 @@ const NoteEditor: React.FC<NoteEditorProps> = ({
           </div>
         )}
 
-        <div className="note-editor-field">
-          <RichTextEditor
-            content={content}
-            onChange={setContent}
-            placeholder="Write your note here..."
-            autoFocus
-          />
-        </div>
-
         <div className="note-topics-section">
           <button
             className="topics-toggle"
@@ -269,6 +260,15 @@ const NoteEditor: React.FC<NoteEditorProps> = ({
               })}
             </div>
           )}
+        </div>
+
+        <div className="note-editor-field">
+          <RichTextEditor
+            content={content}
+            onChange={setContent}
+            placeholder="Write your note here..."
+            autoFocus
+          />
         </div>
       </div>
     </>

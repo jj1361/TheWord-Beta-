@@ -1,15 +1,11 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Routes, Route, useParams, useNavigate, Navigate } from 'react-router-dom';
-import Navigation from './components/Navigation';
-import SearchBox from './components/SearchBox';
 import ChapterDisplay from './components/ChapterDisplay';
 import RightPanel from './components/RightPanel';
 import PersonProfile from './components/PersonProfile';
 import WebcamDisplay from './components/WebcamDisplay';
 import ScreenShareDisplay from './components/ScreenShareDisplay';
-import Sidebar from './components/Sidebar';
-import HamburgerMenu from './components/HamburgerMenu';
-import HistoryControls from './components/HistoryControls';
+import ChapterHeader from './components/ChapterHeader';
 import WordSearchModal from './components/WordSearchModal';
 import YouthImagePanel from './components/YouthImagePanel';
 import OnboardingTour from './components/OnboardingTour';
@@ -18,11 +14,10 @@ import NotesPanel from './components/NotesPanel';
 import NoteEditor from './components/NoteEditor';
 import TopicsManager from './components/TopicsManager';
 import VerseHighlighter from './components/VerseHighlighter';
-import { LoginModal, SignupModal, AuthButton } from './components/Auth';
+import { LoginModal, SignupModal } from './components/Auth';
 import { AdminPanel } from './components/AdminPanel';
 import PresentationViewer from './components/PresentationViewer';
 import ScripturePresentationView from './components/ScripturePresentationView';
-import TranslationSelector from './components/TranslationSelector';
 import { useAuth } from './contexts/AuthContext';
 import { useTranslation } from './contexts/TranslationContext';
 import { bibleService } from './services/bibleService';
@@ -39,6 +34,10 @@ import { getHebrewLetterInfo, HebrewLetterInfo } from './config/hebrewLetters';
 import { WordImageMapping } from './config/youthModeConfig';
 import { getShortcutAction, ShortcutActions } from './config/keyboardShortcuts';
 import { LexiconData } from './types/lexicon';
+import { useVoiceCommands } from './hooks/useVoiceCommands';
+import VoiceCommandButton from './components/VoiceCommandButton';
+import { useTTS } from './hooks/useTTS';
+import TTSButton from './components/TTSButton';
 import { HistoryEntry, Bookmark } from './types/history';
 import { Note, Topic, VerseReference, VerseHighlight, HighlightColor, RichTextContent, TextFormatting, TextFormatStyle } from './types/notes';
 import { TextSelection } from './components/VerseHighlighter';
@@ -115,6 +114,7 @@ function ScriptureView() {
   const screenShareWrapperRef = useRef<HTMLDivElement>(null);
   const [useProtoSinaitic, setUseProtoSinaitic] = useState(true);
   const [wordSearchStrongsId, setWordSearchStrongsId] = useState<string | null>(null);
+  const [voiceSearchQuery, setVoiceSearchQuery] = useState<string | null>(null);
   const [selectedYouthWord, setSelectedYouthWord] = useState<WordImageMapping | null>(null);
   const [youthMode, setYouthMode] = useState(() => {
     // Load youth mode preference from localStorage
@@ -259,6 +259,15 @@ function ScriptureView() {
   // Save study mode preference
   useEffect(() => {
     localStorage.setItem('studyMode', studyMode.toString());
+  }, [studyMode]);
+
+  // Reload highlights and text formatting when studyMode is enabled
+  useEffect(() => {
+    if (studyMode) {
+      // Force refresh of highlights and text formatting to ensure they display
+      setHighlights([...notesService.getHighlights()]);
+      setTextFormatting([...notesService.getTextFormatting()]);
+    }
   }, [studyMode]);
 
   // Save person profile preference
@@ -440,11 +449,6 @@ function ScriptureView() {
     navigate(1);
   };
 
-  // Browser history handles back/forward automatically
-  // These are always enabled since browser manages history
-  const canGoBack = true;
-  const canGoForward = true;
-
   // Bookmark management functions
   const addBookmark = (label?: string) => {
     const book = BIBLE_BOOKS.find(b => b.id === currentBookId);
@@ -565,6 +569,11 @@ function ScriptureView() {
     setHighlighterPosition(null);
     setHighlighterVerse(null);
   };
+
+  // Toggle study mode
+  const handleToggleStudyMode = useCallback(() => {
+    setStudyMode(prev => !prev);
+  }, []);
 
   const handleAddTopic = (name: string, color?: string, description?: string) => {
     notesService.addTopic(name, color, description);
@@ -750,6 +759,17 @@ function ScriptureView() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentTranslation]);
 
+  // Update browser title for history
+  useEffect(() => {
+    const book = BIBLE_BOOKS.find(b => b.id === currentBookId);
+    if (book) {
+      const versePart = selectedVerse ? `:${selectedVerse}` : '';
+      document.title = `${book.name} ${currentChapter}${versePart} - Bible App`;
+    } else {
+      document.title = 'Bible App';
+    }
+  }, [currentBookId, currentChapter, selectedVerse]);
+
   // Load cross-references for current chapter
   useEffect(() => {
     const loadCrossRefs = async () => {
@@ -787,6 +807,20 @@ function ScriptureView() {
     }
   };
 
+  // Toggle webcam - close right panel when enabling
+  const handleToggleWebcam = useCallback(() => {
+    setWebcamEnabled(prev => {
+      if (!prev) {
+        // Enabling webcam - close the right panel
+        setSelectedStrongs(null);
+        setSelectedLetter(null);
+        setLexiconData(null);
+        setCrossRefContext(null);
+      }
+      return !prev;
+    });
+  }, []);
+
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
       // Only handle keys when not typing in an input field
@@ -800,7 +834,7 @@ function ScriptureView() {
         switch (action) {
           case ShortcutActions.TOGGLE_WEBCAM:
             e.preventDefault();
-            setWebcamEnabled(prev => !prev);
+            handleToggleWebcam();
             return;
           case ShortcutActions.TOGGLE_WEBCAM_FULLSCREEN:
             e.preventDefault();
@@ -808,6 +842,11 @@ function ScriptureView() {
             if (webcamEnabled) {
               setWebcamFullscreen(prev => !prev);
             } else {
+              // Close right panel when enabling webcam
+              setSelectedStrongs(null);
+              setSelectedLetter(null);
+              setLexiconData(null);
+              setCrossRefContext(null);
               setWebcamEnabled(true);
               setWebcamFullscreen(true);
             }
@@ -829,7 +868,7 @@ function ScriptureView() {
             return;
           case ShortcutActions.TOGGLE_STUDY_MODE:
             e.preventDefault();
-            setStudyMode(prev => !prev);
+            handleToggleStudyMode();
             return;
           case ShortcutActions.TOGGLE_YOUTH_MODE:
             e.preventDefault();
@@ -910,7 +949,7 @@ function ScriptureView() {
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [keyBuffer, chapter, navigatedVerse, webcamEnabled, screenShareEnabled]);
+  }, [keyBuffer, chapter, navigatedVerse, webcamEnabled, screenShareEnabled, handleToggleStudyMode, handleToggleWebcam]);
 
   const loadChapter = async (bookId: number, chapterNum: number) => {
     // Navigate to new URL - this will trigger a re-render with new params
@@ -919,8 +958,8 @@ function ScriptureView() {
   };
 
   const handleSearch = async (query: string) => {
-    // Use the optimized search service with indexing
-    return await searchService.search(query, 100);
+    // Use the optimized search service with indexing, filtered by current translation
+    return await searchService.search(query, 100, currentTranslation);
   };
 
   const handleSearchResultClick = (bookId: number, chapterNum: number, verseNum: number) => {
@@ -932,11 +971,20 @@ function ScriptureView() {
   const handleLetterClick = (letter: string) => {
     const letterInfo = getHebrewLetterInfo(letter);
     if (letterInfo) {
+      // Hide webcam to show the right panel with Hebrew letter info
+      if (webcamEnabled) {
+        setWebcamEnabled(false);
+      }
       setSelectedLetter(letterInfo);
     }
   };
 
   const handleStrongsClick = async (strongs: string) => {
+    // Hide webcam to show the right panel with lexicon data
+    if (webcamEnabled) {
+      setWebcamEnabled(false);
+    }
+
     setSelectedStrongs(strongs);
     setLexiconData(null);
 
@@ -1000,156 +1048,255 @@ function ScriptureView() {
     setSelectedYouthWord(wordMapping);
   };
 
+  // Voice command handlers for navigation
+  const handleNextChapter = () => {
+    const book = BIBLE_BOOKS.find(b => b.id === currentBookId);
+    if (book && currentChapter < book.chapters) {
+      loadChapter(currentBookId, currentChapter + 1);
+    } else if (currentBookId < 66) {
+      // Go to first chapter of next book
+      loadChapter(currentBookId + 1, 1);
+    }
+  };
+
+  const handlePrevChapter = () => {
+    if (currentChapter > 1) {
+      loadChapter(currentBookId, currentChapter - 1);
+    } else if (currentBookId > 1) {
+      // Go to last chapter of previous book
+      const prevBook = BIBLE_BOOKS.find(b => b.id === currentBookId - 1);
+      if (prevBook) {
+        loadChapter(currentBookId - 1, prevBook.chapters);
+      }
+    }
+  };
+
+  const handleGoToVerse = (verse: number) => {
+    if (chapter && verse >= 1 && verse <= chapter.kjvVerses.length) {
+      setNavigatedVerse(verse);
+      setSelectedVerse(verse);
+      // Scroll to verse
+      setTimeout(() => {
+        const verseElement = document.getElementById(`verse-${verse}`);
+        if (verseElement) {
+          verseElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 100);
+    }
+  };
+
+  // Text-to-Speech Hook
+  const tts = useTTS({
+    onVerseStart: (verse) => {
+      // Highlight the verse being read
+      setNavigatedVerse(verse);
+      // Scroll to verse
+      setTimeout(() => {
+        const verseElement = document.getElementById(`verse-${verse}`);
+        if (verseElement) {
+          verseElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 100);
+    },
+  });
+
+  // TTS handler functions
+  const handleTTSReadChapter = useCallback(() => {
+    if (chapter && chapter.kjvVerses.length > 0) {
+      tts.readChapter(
+        chapter.kjvVerses.map(v => ({ num: v.num, text: v.text })),
+        chapter.bookName,
+        chapter.chapterNum
+      );
+    }
+  }, [chapter, tts]);
+
+  const handleTTSReadVerse = useCallback((verse: number) => {
+    if (chapter) {
+      const verseData = chapter.kjvVerses.find(v => v.num === verse);
+      if (verseData) {
+        tts.readVerse(verse, verseData.text, chapter.bookName, chapter.chapterNum);
+      }
+    }
+  }, [chapter, tts]);
+
+  const handleTTSReadVerseRange = useCallback((startVerse: number, endVerse: number) => {
+    if (chapter && chapter.kjvVerses.length > 0) {
+      tts.readVerseRange(
+        chapter.kjvVerses.map(v => ({ num: v.num, text: v.text })),
+        startVerse,
+        endVerse,
+        chapter.bookName,
+        chapter.chapterNum
+      );
+    }
+  }, [chapter, tts]);
+
+  // Voice Commands Hook
+  const voiceCommands = useVoiceCommands({
+    handlers: {
+      // Navigation
+      navigateToScripture: (bookId, chapterNum, verse) => {
+        const path = getScripturePath(bookId, chapterNum, verse);
+        navigate(path);
+      },
+      nextChapter: handleNextChapter,
+      previousChapter: handlePrevChapter,
+      goToVerse: handleGoToVerse,
+      goBack: goBack,
+      goForward: goForward,
+      // Mode toggles
+      setWebcamEnabled: (enabled: boolean) => {
+        if (enabled) {
+          // Close right panel when enabling webcam
+          setSelectedStrongs(null);
+          setSelectedLetter(null);
+          setLexiconData(null);
+          setCrossRefContext(null);
+        }
+        setWebcamEnabled(enabled);
+      },
+      setDarkMode: setDarkMode,
+      setStudyMode: setStudyMode,
+      setYouthMode: setYouthMode,
+      setFullscreen: setWebcamFullscreen,
+      // Person
+      showPersonProfile: (personId) => {
+        if (personProfileEnabled) {
+          setSelectedPersonID(personId);
+        }
+      },
+      // Study tools
+      lookupStrongs: handleStrongsClick,
+      searchText: (query) => {
+        // Trigger voice-initiated search
+        setVoiceSearchQuery(query);
+      },
+      addBookmark: () => addBookmark(),
+      createNote: () => handleCreateNote(),
+      // Cross references and interlinear
+      showCrossReferences: (verse) => {
+        // Show cross references for the specified verse
+        if (chapter) {
+          setCrossRefContext({
+            bookId: currentBookId,
+            bookName: chapter.bookName,
+            chapter: currentChapter,
+            verse: verse,
+          });
+        }
+      },
+      showInterlinear: (verse) => {
+        // Show interlinear view by selecting the verse
+        setSelectedVerse(verse);
+        // Scroll to the verse
+        setTimeout(() => {
+          const verseElement = document.getElementById(`verse-${verse}`);
+          if (verseElement) {
+            verseElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }, 100);
+      },
+      // Text size
+      increaseTextSize: handleIncreaseTextSize,
+      decreaseTextSize: handleDecreaseTextSize,
+      setTextSize: (size) => {
+        const clampedSize = Math.max(MIN_TEXT_SIZE, Math.min(MAX_TEXT_SIZE, size));
+        setTextSize(clampedSize);
+        localStorage.setItem('verseTextSize', clampedSize.toString());
+      },
+      // Footnotes
+      setShowFootnotes: setShowFootnotes,
+      // Reading (TTS) - connected to TTS service
+      readChapter: handleTTSReadChapter,
+      readVerse: handleTTSReadVerse,
+      readVerseRange: handleTTSReadVerseRange,
+      readBook: () => {
+        // TODO: Implement reading entire book (requires loading multiple chapters)
+        console.log('Read entire book - requires multi-chapter loading');
+      },
+      stopReading: tts.stop,
+      pauseReading: tts.pause,
+      resumeReading: tts.resume,
+      setRepeatCount: tts.setRepeatCount,
+    },
+    currentVerse: selectedVerse || navigatedVerse,
+  });
+
   return (
     <div className="App">
-      {!screenShareEnabled && (
-        <header className="app-header">
-          <div className="header-row-1">
-            <div className="header-left">
-              <HamburgerMenu
-                useProtoSinaitic={useProtoSinaitic}
-                webcamEnabled={webcamEnabled}
-                webcamFullscreen={webcamFullscreen}
-                screenShareEnabled={screenShareEnabled}
-                screenShareWithVerses={screenShareWithVerses}
-                youthMode={youthMode}
-                studyMode={studyMode}
-                darkMode={darkMode}
-                personProfileEnabled={personProfileEnabled}
-                onToggleProtoSinaitic={() => setUseProtoSinaitic(!useProtoSinaitic)}
-                onToggleWebcam={() => setWebcamEnabled(!webcamEnabled)}
-                onToggleWebcamSettings={() => setWebcamSettings(!webcamSettings)}
-                onToggleWebcamFullscreen={() => setWebcamFullscreen(!webcamFullscreen)}
-                onToggleScreenShare={() => setScreenShareEnabled(!screenShareEnabled)}
-                onToggleScreenShareWithVerses={() => setScreenShareWithVerses(!screenShareWithVerses)}
-                onToggleYouthMode={() => setYouthMode(!youthMode)}
-                onToggleStudyMode={() => setStudyMode(!studyMode)}
-                onToggleDarkMode={() => setDarkMode(!darkMode)}
-                onTogglePersonProfile={() => setPersonProfileEnabled(!personProfileEnabled)}
-                navigationHistory={navigationHistory}
-                historyIndex={historyIndex}
-                onNavigateToHistoryEntry={navigateToHistoryEntry}
-                onClearHistory={clearHistory}
-                bookmarks={bookmarks}
-                currentBookId={currentBookId}
-                currentChapter={currentChapter}
-                currentVerse={selectedVerse}
-                onNavigateToBookmark={navigateToBookmark}
-                onAddBookmark={addBookmark}
-                onRemoveBookmark={removeBookmark}
-                onUpdateBookmarkLabel={updateBookmarkLabel}
-                showNotesPanel={showNotesPanel}
-                notesCount={notes.length}
-                onToggleNotesPanel={() => setShowNotesPanel(!showNotesPanel)}
-                onTogglePresentation={() => setShowPresentation(true)}
-                onToggleScripturePresentation={() => setShowScripturePresentation(true)}
-                onToggleMediaControl={() => setShowMediaControl(!showMediaControl)}
-                isSignedIn={!!user}
-                onSignInClick={() => setShowLoginModal(true)}
-                textSize={textSize}
-                minTextSize={MIN_TEXT_SIZE}
-                maxTextSize={MAX_TEXT_SIZE}
-                onIncreaseTextSize={handleIncreaseTextSize}
-                onDecreaseTextSize={handleDecreaseTextSize}
-                showFootnotes={showFootnotes}
-                onToggleFootnotes={() => setShowFootnotes(!showFootnotes)}
-              />
-              <div className="logo-title-container">
-                <a href="https://goshengroup.net"><img src="/Logo.png" alt="The Word Logo" className="app-logo fade-element" /></a>
-                <div className="text-content fade-element">
-                  <h1 className="app-title">THE BOOK</h1>
-                  <p className="app-subtitle">Prove All Things...</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="header-navigation-wrapper">
-              <HistoryControls
-                canGoBack={canGoBack}
-                canGoForward={canGoForward}
-                onGoBack={goBack}
-                onGoForward={goForward}
-              />
-              <Navigation
-                currentBookId={currentBookId}
-                currentChapter={currentChapter}
-                onNavigate={loadChapter}
-              />
-            </div>
-
-            <div className="header-right">
-              <TranslationSelector className="compact" />
-              <SearchBox
-                onSearch={handleSearch}
-                onResultClick={handleSearchResultClick}
-                onWordSearch={(strongsId) => setWordSearchStrongsId(strongsId)}
-              />
-              <AuthButton
-                onLoginClick={() => setShowLoginModal(true)}
-                onAdminClick={isAdmin ? () => setShowAdminPanel(true) : undefined}
-              />
-            </div>
-          </div>
-
-        </header>
+      {/* Fixed Chapter Header with Menu, Title, Navigation, Search, and Feature Toggles */}
+      {chapter && !screenShareEnabled && (
+        <ChapterHeader
+          bookId={currentBookId}
+          bookName={chapter.bookName}
+          chapterNum={currentChapter}
+          totalChapters={BIBLE_BOOKS.find(b => b.id === currentBookId)?.chapters || 1}
+          onChapterSelect={(chapterNum) => loadChapter(currentBookId, chapterNum)}
+          onNavigate={loadChapter}
+          studyMode={studyMode}
+          onToggleStudyMode={handleToggleStudyMode}
+          showFootnotes={showFootnotes}
+          onToggleFootnotes={() => setShowFootnotes(!showFootnotes)}
+          personProfileEnabled={personProfileEnabled}
+          onTogglePersonProfile={() => setPersonProfileEnabled(!personProfileEnabled)}
+          youthMode={youthMode}
+          onToggleYouthMode={() => setYouthMode(!youthMode)}
+          showNotesPanel={showNotesPanel}
+          onToggleNotesPanel={() => setShowNotesPanel(!showNotesPanel)}
+          onSearch={handleSearch}
+          onSearchResultClick={handleSearchResultClick}
+          onWordSearch={(strongsId) => setWordSearchStrongsId(strongsId)}
+          voiceSearchQuery={voiceSearchQuery}
+          onVoiceSearchHandled={() => setVoiceSearchQuery(null)}
+          // HamburgerMenu props
+          useProtoSinaitic={useProtoSinaitic}
+          webcamEnabled={webcamEnabled}
+          webcamFullscreen={webcamFullscreen}
+          screenShareEnabled={screenShareEnabled}
+          screenShareWithVerses={screenShareWithVerses}
+          darkMode={darkMode}
+          onToggleProtoSinaitic={() => setUseProtoSinaitic(!useProtoSinaitic)}
+          onToggleWebcam={handleToggleWebcam}
+          onToggleWebcamSettings={() => setWebcamSettings(!webcamSettings)}
+          onToggleWebcamFullscreen={() => setWebcamFullscreen(!webcamFullscreen)}
+          onToggleScreenShare={() => setScreenShareEnabled(!screenShareEnabled)}
+          onToggleScreenShareWithVerses={() => setScreenShareWithVerses(!screenShareWithVerses)}
+          onToggleDarkMode={() => setDarkMode(!darkMode)}
+          // History props
+          navigationHistory={navigationHistory}
+          historyIndex={historyIndex}
+          onNavigateToHistoryEntry={navigateToHistoryEntry}
+          onClearHistory={clearHistory}
+          // Bookmarks props
+          bookmarks={bookmarks}
+          currentVerse={selectedVerse}
+          onNavigateToBookmark={navigateToBookmark}
+          onAddBookmark={addBookmark}
+          onRemoveBookmark={removeBookmark}
+          onUpdateBookmarkLabel={updateBookmarkLabel}
+          // Notes props
+          notesCount={notes.length}
+          // Presentation props
+          onTogglePresentation={() => setShowPresentation(true)}
+          onToggleScripturePresentation={() => setShowScripturePresentation(true)}
+          // Media control props
+          onToggleMediaControl={() => setShowMediaControl(!showMediaControl)}
+          // Auth props
+          isSignedIn={!!user}
+          onSignInClick={() => setShowLoginModal(true)}
+          isAdmin={isAdmin}
+          onAdminClick={() => setShowAdminPanel(true)}
+          // Text size props
+          textSize={textSize}
+          minTextSize={MIN_TEXT_SIZE}
+          maxTextSize={MAX_TEXT_SIZE}
+          onIncreaseTextSize={handleIncreaseTextSize}
+          onDecreaseTextSize={handleDecreaseTextSize}
+          // Help props
+          onOpenHelp={() => setShowHelpModal(true)}
+        />
       )}
-
-      <Sidebar
-        useProtoSinaitic={useProtoSinaitic}
-        webcamEnabled={webcamEnabled}
-        webcamFullscreen={webcamFullscreen}
-        screenShareEnabled={screenShareEnabled}
-        screenShareWithVerses={screenShareWithVerses}
-        youthMode={youthMode}
-        studyMode={studyMode}
-        darkMode={darkMode}
-        personProfileEnabled={personProfileEnabled}
-        onToggleProtoSinaitic={() => setUseProtoSinaitic(!useProtoSinaitic)}
-        onToggleWebcam={() => setWebcamEnabled(!webcamEnabled)}
-        onToggleWebcamSettings={() => setWebcamSettings(!webcamSettings)}
-        onToggleWebcamFullscreen={() => setWebcamFullscreen(!webcamFullscreen)}
-        onToggleScreenShare={() => setScreenShareEnabled(!screenShareEnabled)}
-        onToggleScreenShareWithVerses={() => setScreenShareWithVerses(!screenShareWithVerses)}
-        onToggleYouthMode={() => setYouthMode(!youthMode)}
-        onToggleStudyMode={() => setStudyMode(!studyMode)}
-        onToggleDarkMode={() => setDarkMode(!darkMode)}
-        onTogglePersonProfile={() => setPersonProfileEnabled(!personProfileEnabled)}
-        // History props
-        navigationHistory={navigationHistory}
-        historyIndex={historyIndex}
-        onNavigateToHistoryEntry={navigateToHistoryEntry}
-        onClearHistory={clearHistory}
-        // Bookmarks props
-        bookmarks={bookmarks}
-        currentBookId={currentBookId}
-        currentChapter={currentChapter}
-        currentVerse={selectedVerse}
-        onNavigateToBookmark={navigateToBookmark}
-        onAddBookmark={addBookmark}
-        onRemoveBookmark={removeBookmark}
-        onUpdateBookmarkLabel={updateBookmarkLabel}
-        // Notes props
-        showNotesPanel={showNotesPanel}
-        notesCount={notes.length}
-        onToggleNotesPanel={() => setShowNotesPanel(!showNotesPanel)}
-        // Presentation props
-        onTogglePresentation={() => setShowPresentation(true)}
-        onToggleScripturePresentation={() => setShowScripturePresentation(true)}
-        // Media control props
-        onToggleMediaControl={() => setShowMediaControl(!showMediaControl)}
-        // Auth props
-        isSignedIn={!!user}
-        onSignInClick={() => setShowLoginModal(true)}
-        // Text size props
-        textSize={textSize}
-        minTextSize={MIN_TEXT_SIZE}
-        maxTextSize={MAX_TEXT_SIZE}
-        onIncreaseTextSize={handleIncreaseTextSize}
-        onDecreaseTextSize={handleDecreaseTextSize}
-        // Footnotes props
-        showFootnotes={showFootnotes}
-        onToggleFootnotes={() => setShowFootnotes(!showFootnotes)}
-      />
 
       <div className={`app-container ${showNoteEditor && !noteEditorFullscreen ? 'with-bottom-panel' : ''}`}>
         <div className={`content-with-webcam ${(webcamFullscreen && webcamEnabled) || screenShareEnabled ? 'webcam-fullscreen' : ''}`}>
@@ -1194,19 +1341,8 @@ function ScriptureView() {
                       onToggleProtoSinaitic={() => setUseProtoSinaitic(!useProtoSinaitic)}
                       youthMode={youthMode}
                       studyMode={studyMode}
-                      totalChapters={BIBLE_BOOKS.find(b => b.id === currentBookId)?.chapters}
-                      onChapterSelect={(chapterNum) => loadChapter(currentBookId, chapterNum)}
-                      screenShareMode={true}
                       currentBookId={currentBookId}
-                      onNavigate={loadChapter}
-                      onSearch={handleSearch}
-                      onSearchResultClick={handleSearchResultClick}
-                      onWordSearch={(strongsId) => setWordSearchStrongsId(strongsId)}
                       textSize={textSize}
-                      minTextSize={MIN_TEXT_SIZE}
-                      maxTextSize={MAX_TEXT_SIZE}
-                      onIncreaseTextSize={handleIncreaseTextSize}
-                      onDecreaseTextSize={handleDecreaseTextSize}
                     />
                   </div>
                 </>
@@ -1244,27 +1380,10 @@ function ScriptureView() {
                   onToggleProtoSinaitic={() => setUseProtoSinaitic(!useProtoSinaitic)}
                   youthMode={youthMode}
                   studyMode={studyMode}
-                  totalChapters={BIBLE_BOOKS.find(b => b.id === currentBookId)?.chapters}
-                  onChapterSelect={(chapterNum) => loadChapter(currentBookId, chapterNum)}
+                  currentBookId={currentBookId}
                   textSize={textSize}
-                  minTextSize={MIN_TEXT_SIZE}
-                  maxTextSize={MAX_TEXT_SIZE}
-                  onIncreaseTextSize={handleIncreaseTextSize}
-                  onDecreaseTextSize={handleDecreaseTextSize}
                   chapterFootnotes={chapterFootnotes}
                   showFootnotes={showFootnotes}
-                  // Webcam mode inline panel props
-                  webcamMode={webcamEnabled}
-                  inlinePanelLexicon={webcamEnabled ? lexiconData : null}
-                  inlinePanelHebrewLetter={webcamEnabled ? selectedLetter : null}
-                  inlinePanelCrossRefContext={webcamEnabled ? crossRefContext : null}
-                  onCloseInlinePanel={() => {
-                    setSelectedStrongs(null);
-                    setSelectedLetter(null);
-                    setLexiconData(null);
-                    setCrossRefContext(null);
-                  }}
-                  onSearchResultClick={handleSearchResultClick}
                 />
               </div>
 
@@ -1280,8 +1399,8 @@ function ScriptureView() {
                 </div>
               )}
 
-              {/* Right Panel - hidden when webcam is enabled (content shown inline instead) */}
-              {!webcamEnabled && (selectedStrongs || selectedLetter || crossRefContext) && (
+              {/* Right Panel */}
+              {(selectedStrongs || selectedLetter || crossRefContext) && (
                 <RightPanel
                   lexiconContent={lexiconData}
                   hebrewLetterContent={selectedLetter}
@@ -1396,16 +1515,37 @@ function ScriptureView() {
         }}
       />
 
-      {/* Help button to open help modal */}
-      {!showOnboarding && !showHelpModal && (
-        <button
-          className="help-tour-btn"
-          onClick={() => setShowHelpModal(true)}
-          title="Help & Documentation"
-        >
-          ?
-        </button>
-      )}
+      {/* Help button moved to hamburger menu */}
+
+      {/* Voice Command Button */}
+      <VoiceCommandButton
+        state={voiceCommands.state}
+        isListening={voiceCommands.isListening}
+        isAlwaysOn={voiceCommands.isAlwaysOn}
+        isSupported={voiceCommands.isSupported}
+        onToggle={voiceCommands.toggleListening}
+        onToggleAlwaysOn={voiceCommands.toggleAlwaysOn}
+        feedback={voiceCommands.feedback}
+        interimTranscript={voiceCommands.interimTranscript}
+        suggestions={voiceCommands.suggestions}
+      />
+
+      {/* Text-to-Speech Button */}
+      <TTSButton
+        isSupported={tts.isSupported}
+        isPlaying={tts.isPlaying}
+        isPaused={tts.isPaused}
+        currentVerse={tts.currentVerse}
+        currentRepeat={tts.currentRepeat}
+        totalRepeats={tts.totalRepeats}
+        progress={tts.progress}
+        onPlay={handleTTSReadChapter}
+        onPause={tts.pause}
+        onResume={tts.resume}
+        onStop={tts.stop}
+        onSkipNext={tts.skipToNextVerse}
+        onSkipPrevious={tts.skipToPreviousVerse}
+      />
 
       {/* Notes Panel (Sidebar) */}
       {showNotesPanel && (

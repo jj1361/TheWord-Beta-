@@ -1,14 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { KJVVerse, KJVsVerse, InterlinearVerse, FootnoteEntry } from '../types/bible';
-import { extractHebrewLetters, getHebrewLetterInfo, HebrewLetterInfo } from '../config/hebrewLetters';
+import { extractHebrewLetters, getHebrewLetterInfo } from '../config/hebrewLetters';
 import { getWordImage, getImagePath, getImageSize, WordImageMapping } from '../config/youthModeConfig';
 import { HighlightColor, HIGHLIGHT_COLORS, TextFormatting } from '../types/notes';
 import { getPartOfSpeechName } from '../utils/partsOfSpeech';
 import { useTranslation } from '../contexts/TranslationContext';
-import { LexiconData } from '../types/lexicon';
-import { CrossReference } from '../services/crossRefService';
-import InlineRightPanelContent from './InlineRightPanelContent';
+import { getVerseMedia, verseHasMedia } from '../config/verseMediaConfig';
+import VerseMediaCarousel from './VerseMediaCarousel';
 import './VerseDisplay.css';
 
 // Tooltip state interface
@@ -26,13 +25,6 @@ interface FootnoteTooltipState {
   x: number;
   y: number;
   footnote: FootnoteEntry | null;
-}
-
-interface CrossRefContext {
-  bookId: number;
-  bookName: string;
-  chapter: number;
-  verse: number;
 }
 
 interface VerseDisplayProps {
@@ -55,14 +47,9 @@ interface VerseDisplayProps {
   // Footnotes (1611 KJV Marginal Notes)
   footnotes?: FootnoteEntry[];
   showFootnotes?: boolean;
-  // Webcam mode inline panel props - display lexicon info in interlinear area
-  webcamMode?: boolean;
-  inlinePanelLexicon?: LexiconData | null;
-  inlinePanelHebrewLetter?: HebrewLetterInfo | null;
-  inlinePanelCrossRefContext?: CrossRefContext | null;
-  inlinePanelCrossRefVerses?: Array<CrossReference & { text?: string }>;
-  onCloseInlinePanel?: () => void;
-  onInlinePanelVerseClick?: (bookId: number, chapter: number, verse: number) => void;
+  // Verse media props
+  bookId?: string;
+  chapter?: number;
 }
 
 const VerseDisplay: React.FC<VerseDisplayProps> = ({
@@ -84,13 +71,8 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({
   textFormatting,
   footnotes,
   showFootnotes = true,
-  webcamMode,
-  inlinePanelLexicon,
-  inlinePanelHebrewLetter,
-  inlinePanelCrossRefContext,
-  inlinePanelCrossRefVerses,
-  onCloseInlinePanel,
-  onInlinePanelVerseClick,
+  bookId,
+  chapter,
 }) => {
   const { currentTranslation } = useTranslation();
   const [localUseProtoSinaitic, setLocalUseProtoSinaitic] = useState(false);
@@ -98,6 +80,12 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({
   const [isDarkMode, setIsDarkMode] = useState(() =>
     document.documentElement.getAttribute('data-theme') === 'dark'
   );
+  const [showMediaCarousel, setShowMediaCarousel] = useState(false);
+
+  // Check if this verse has media content
+  const bookIdNum = bookId ? parseInt(bookId, 10) : 0;
+  const hasMedia = bookIdNum && chapter ? verseHasMedia(bookIdNum, chapter, verse.num) : false;
+  const mediaItems = hasMedia && bookIdNum && chapter ? getVerseMedia(bookIdNum, chapter, verse.num) : [];
   const [posTooltip, setPosTooltip] = useState<TooltipState>({
     visible: false,
     x: 0,
@@ -695,7 +683,29 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({
             ℹ
           </button>
         )}
+        {hasMedia && (
+          <button
+            className={`media-toggle-btn ${showMediaCarousel ? 'active' : ''}`}
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowMediaCarousel(!showMediaCarousel);
+            }}
+            title={showMediaCarousel ? 'Hide Media' : 'Show Media'}
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+            </svg>
+          </button>
+        )}
       </div>
+
+      {/* Verse Media Carousel */}
+      {showMediaCarousel && mediaItems.length > 0 && (
+        <VerseMediaCarousel
+          media={mediaItems}
+          onClose={() => setShowMediaCarousel(false)}
+        />
+      )}
 
       {/* Interlinear section - shown when verse is selected AND interlinear data exists */}
       {isSelected && interlinearVerse && (
@@ -789,22 +799,6 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({
               </div>
             ))}
           </div>
-        </div>
-      )}
-
-      {/* Inline Panel Content - shown in webcam mode when lexicon/crossref data exists */}
-      {/* This is separate from interlinear-section - only shows lexicon info when clicking words */}
-      {webcamMode && (inlinePanelLexicon || inlinePanelHebrewLetter || inlinePanelCrossRefContext) && (
-        <div className="inline-panel-in-verse">
-          <InlineRightPanelContent
-            lexiconContent={inlinePanelLexicon || null}
-            hebrewLetterContent={inlinePanelHebrewLetter || null}
-            crossRefContext={inlinePanelCrossRefContext}
-            crossRefVerses={inlinePanelCrossRefVerses}
-            onClose={onCloseInlinePanel || (() => {})}
-            onVerseClick={onInlinePanelVerseClick}
-            onStrongsClick={onStrongsClick}
-          />
         </div>
       )}
 

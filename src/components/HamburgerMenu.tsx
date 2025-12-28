@@ -59,6 +59,8 @@ interface HamburgerMenuProps {
   // Footnotes props
   showFootnotes: boolean;
   onToggleFootnotes: () => void;
+  // Help props
+  onOpenHelp: () => void;
 }
 
 interface MenuItemProps {
@@ -144,6 +146,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
   onDecreaseTextSize,
   showFootnotes,
   onToggleFootnotes,
+  onOpenHelp,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [, setActiveSubmenu] = useState<string | null>(null);
@@ -404,6 +407,15 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
               icon="🖥️"
               label="Media Control"
               onClick={() => handleNavigationItem(onToggleMediaControl)}
+            />
+          </MenuSection>
+
+          {/* Help */}
+          <MenuSection title="Help">
+            <MenuItem
+              icon="❓"
+              label="Help & Documentation"
+              onClick={() => handleNavigationItem(onOpenHelp)}
             />
           </MenuSection>
         </div>

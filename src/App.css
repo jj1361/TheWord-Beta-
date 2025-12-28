@@ -42,28 +42,35 @@ body {
 }
 
 .header-left {
-  flex: 1;
-  min-width: 0;
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
-  gap: 16px;
 }
 
-.header-navigation-wrapper {
+.header-center {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
-  flex-shrink: 0;
+}
+
+.header-title-container {
+  text-align: center;
+}
+
+/* Ensure no animation on header title */
+.header-title-container .app-title,
+.header-title-container .app-subtitle {
+  animation: none;
+  opacity: 1;
 }
 
 .header-right {
-  flex: 1;
+  flex: 0 0 auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 12px;
-  min-width: 0;
 }
 
 /* Logo and Title Container with Alternating Animation */
@@ -141,10 +148,82 @@ body {
   flex: 1;
   max-width: 1800px;
   margin: 0 auto;
-  padding: 100px 20px 40px 20px; /* Top padding for fixed horizontal sidebar below header */
+  padding: 140px 20px 40px 20px; /* Top padding for chapter-header (~120px) + spacing */
   width: 100%;
 }
 
+
+/* Text Size Controls Container - Above Chapter Display */
+.text-size-controls-container {
+  position: fixed;
+  top: 130px; /* Below chapter-header (~120px) */
+  right: 24px;
+  z-index: 98; /* Below chapter-header */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text-size-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--bg-tertiary, #e2e8f0);
+  padding: 6px 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-size-controls .text-size-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent-primary, #667eea);
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.text-size-controls .text-size-btn:hover:not(:disabled) {
+  background: var(--accent-secondary, #764ba2);
+  transform: scale(1.05);
+}
+
+.text-size-controls .text-size-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.text-size-controls .text-size-value {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary, #1e293b);
+  min-width: 45px;
+  text-align: center;
+}
+
+/* Dark mode for text size controls */
+[data-theme='dark'] .text-size-controls {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .text-size-controls .text-size-btn {
+  background: #667eea;
+  color: white;
+}
+
+[data-theme='dark'] .text-size-controls .text-size-btn:hover:not(:disabled) {
+  background: #818cf8;
+}
+
+[data-theme='dark'] .text-size-controls .text-size-value {
+  color: #e2e8f0;
+}
 
 .content-with-webcam {
   display: flex;
@@ -433,6 +512,11 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .text-size-controls-container {
+    top: 120px;
+    right: 16px;
+  }
+
   .content-with-webcam {
     flex-direction: column;
   }
@@ -510,8 +594,28 @@ body {
     font-size: 16px;
   }
 
+  .text-size-controls-container {
+    top: 140px;
+    right: 12px;
+  }
+
+  .text-size-controls {
+    padding: 4px 8px;
+  }
+
+  .text-size-controls .text-size-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .text-size-controls .text-size-value {
+    font-size: 11px;
+    min-width: 38px;
+  }
+
   .app-container {
-    padding: 70px 8px 20px 8px;
+    padding: 160px 8px 20px 8px; /* Adjusted for chapter-header on tablet */
   }
 
   .webcam-section {
@@ -536,32 +640,28 @@ body {
 }
 
 @media (max-width: 480px) {
-  .app-header {
-    padding: 5px 8px;
+  .text-size-controls-container {
+    top: 130px;
+    right: 8px;
   }
 
-  .header-row-1 {
-    gap: 6px;
+  .text-size-controls {
+    padding: 3px 6px;
   }
 
-  .logo-title-container {
-    gap: 6px;
+  .text-size-controls .text-size-btn {
+    width: 24px;
+    height: 24px;
+    font-size: 11px;
   }
 
-  .app-logo {
-    height: 32px;
-  }
-
-  .app-title {
-    font-size: 12px;
-  }
-
-  .app-subtitle {
-    display: none;
+  .text-size-controls .text-size-value {
+    font-size: 10px;
+    min-width: 32px;
   }
 
   .app-container {
-    padding: 2px 6px 16px 6px;
+    padding: 150px 6px 16px 6px; /* Adjusted for chapter-header on mobile */
   }
 }
 
