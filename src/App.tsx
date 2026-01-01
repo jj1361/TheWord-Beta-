@@ -599,6 +599,10 @@ function ScriptureView() {
   };
 
   const handleSetHighlight = (verseNum: number, color: HighlightColor) => {
+    // Clear all existing highlights first - only one verse can be highlighted at a time
+    const existingHighlights = notesService.getHighlights();
+    existingHighlights.forEach(h => notesService.removeHighlight(h.id));
+
     const verseRef = createVerseReference(verseNum);
     notesService.setHighlight(verseRef, color);
     setHighlights(notesService.getHighlights());
@@ -813,6 +817,7 @@ function ScriptureView() {
     if (urlVerse) {
       console.log('[URL Effect] Setting highlightVerse from URL to:', urlVerse);
       setHighlightVerse(urlVerse);
+      setNavigatedVerse(urlVerse);
       setTimeout(() => {
         const verseElement = document.getElementById(`verse-${urlVerse}`);
         if (verseElement) {
@@ -966,10 +971,11 @@ function ScriptureView() {
             e.preventDefault();
             if (!chapter || chapter.kjvVerses.length === 0) return;
             {
-              const currentVerse = navigatedVerse || 1;
+              const currentVerse = navigatedVerse || highlightVerse || 1;
               const currentIndex = chapter.kjvVerses.findIndex(v => v.num === currentVerse);
               if (currentIndex > 0) {
                 const nextVerse = chapter.kjvVerses[currentIndex - 1].num;
+                setHighlightVerse(undefined); // Clear URL-based highlight
                 setNavigatedVerse(nextVerse);
                 const verseElement = document.getElementById(`verse-${nextVerse}`);
                 if (verseElement) {
@@ -982,10 +988,11 @@ function ScriptureView() {
             e.preventDefault();
             if (!chapter || chapter.kjvVerses.length === 0) return;
             {
-              const currentVerse = navigatedVerse || 1;
+              const currentVerse = navigatedVerse || highlightVerse || 1;
               const currentIndex = chapter.kjvVerses.findIndex(v => v.num === currentVerse);
               if (currentIndex < chapter.kjvVerses.length - 1) {
                 const nextVerse = chapter.kjvVerses[currentIndex + 1].num;
+                setHighlightVerse(undefined); // Clear URL-based highlight
                 setNavigatedVerse(nextVerse);
                 const verseElement = document.getElementById(`verse-${nextVerse}`);
                 if (verseElement) {
@@ -1019,6 +1026,7 @@ function ScriptureView() {
         // Try to scroll to verse and highlight it
         const verseNum = parseInt(newBuffer, 10);
         if (chapter && chapter.kjvVerses.some(v => v.num === verseNum)) {
+          setHighlightVerse(undefined); // Clear URL-based highlight
           setNavigatedVerse(verseNum);
           // Scroll to verse but don't select it (no interlinear)
           const verseElement = document.getElementById(`verse-${verseNum}`);
@@ -1031,7 +1039,7 @@ function ScriptureView() {
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [keyBuffer, chapter, navigatedVerse, webcamEnabled, screenShareEnabled, handleToggleStudyMode, handleToggleWebcam]);
+  }, [keyBuffer, chapter, navigatedVerse, highlightVerse, webcamEnabled, screenShareEnabled, handleToggleStudyMode, handleToggleWebcam]);
 
   const loadChapter = async (bookId: number, chapterNum: number) => {
     console.log('[loadChapter] Called with:', { bookId, chapterNum });

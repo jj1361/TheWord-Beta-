@@ -150,6 +150,7 @@ const RightPanel: React.FC<RightPanelProps> = ({
   const [addCrossRefCategory, setAddCrossRefCategory] = useState<string>('');
   const [addCrossRefNote, setAddCrossRefNote] = useState('');
   const [addCrossRefWord, setAddCrossRefWord] = useState('');
+  const [editingCrossRef, setEditingCrossRef] = useState<UserCrossReference | null>(null);
   const [userCrossRefVerseTexts, setUserCrossRefVerseTexts] = useState<Map<string, string>>(new Map());
 
   // Drag and drop state for user cross refs
@@ -722,6 +723,75 @@ const RightPanel: React.FC<RightPanelProps> = ({
         setUserCrossRefs(refs);
       }
     }
+  };
+
+  const handleEditCrossRef = (ref: UserCrossReference) => {
+    setEditingCrossRef(ref);
+    setAddCrossRefTarget(userCrossRefService.formatVerseReference(ref.targetVerse));
+    setAddCrossRefCategory(ref.categoryId || '');
+    setAddCrossRefWord(ref.word || '');
+    setAddCrossRefNote(ref.note || '');
+    setShowAddCrossRefModal(true);
+  };
+
+  const handleSaveCrossRef = async () => {
+    if (!crossRefContext) return;
+
+    if (editingCrossRef) {
+      // Update existing cross reference
+      const targetVerse = parseVerseReference(addCrossRefTarget);
+      if (!targetVerse) {
+        alert('Invalid verse reference. Use format like "Genesis 1:1" or "John 3:16"');
+        return;
+      }
+
+      userCrossRefService.updateCrossRef(editingCrossRef.id, {
+        targetVerse,
+        categoryId: addCrossRefCategory || undefined,
+        word: addCrossRefWord.trim() || undefined,
+        note: addCrossRefNote.trim() || undefined,
+      });
+
+      // Reload user cross refs
+      const refs = userCrossRefService.getCrossRefsForVerse(
+        crossRefContext.bookId,
+        crossRefContext.chapter,
+        crossRefContext.verse
+      );
+      setUserCrossRefs(refs);
+
+      // Load verse text for the updated cross ref
+      const texts = await searchService.getVerseTexts([{
+        bookId: targetVerse.bookId,
+        chapter: targetVerse.chapter,
+        verse: targetVerse.verse,
+      }]);
+      setUserCrossRefVerseTexts(prev => {
+        const merged = new Map(prev);
+        texts.forEach((value, key) => merged.set(key, value));
+        return merged;
+      });
+
+      // Reset form
+      setShowAddCrossRefModal(false);
+      setEditingCrossRef(null);
+      setAddCrossRefTarget('');
+      setAddCrossRefCategory('');
+      setAddCrossRefNote('');
+      setAddCrossRefWord('');
+    } else {
+      // Add new cross reference (use existing function)
+      handleAddCrossRef();
+    }
+  };
+
+  const handleCloseAddCrossRefModal = () => {
+    setShowAddCrossRefModal(false);
+    setEditingCrossRef(null);
+    setAddCrossRefTarget('');
+    setAddCrossRefCategory('');
+    setAddCrossRefNote('');
+    setAddCrossRefWord('');
   };
 
   const getCategoryById = (id: string) => crossRefCategories.find(c => c.id === id);
@@ -1650,16 +1720,28 @@ const RightPanel: React.FC<RightPanelProps> = ({
                                     {category.name}
                                   </span>
                                 )}
-                                <button
-                                  className="user-cross-ref-delete"
-                                  onClick={(e) => {
-                                    e.stopPropagation();
-                                    handleDeleteUserCrossRef(ref.id);
-                                  }}
-                                  title="Delete"
-                                >
-                                  ×
-                                </button>
+                                <div className="user-cross-ref-actions">
+                                  <button
+                                    className="user-cross-ref-edit"
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      handleEditCrossRef(ref);
+                                    }}
+                                    title="Edit"
+                                  >
+                                    ✎
+                                  </button>
+                                  <button
+                                    className="user-cross-ref-delete"
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      handleDeleteUserCrossRef(ref.id);
+                                    }}
+                                    title="Delete"
+                                  >
+                                    ×
+                                  </button>
+                                </div>
                               </div>
                               {ref.word && (
                                 <div className="user-cross-ref-word">
@@ -1747,15 +1829,15 @@ const RightPanel: React.FC<RightPanelProps> = ({
               )}
             </div>
 
-            {/* Add Cross Reference Modal */}
+            {/* Add/Edit Cross Reference Modal */}
             {showAddCrossRefModal && (
-              <div className="cross-ref-modal-overlay" onClick={() => setShowAddCrossRefModal(false)}>
+              <div className="cross-ref-modal-overlay" onClick={handleCloseAddCrossRefModal}>
                 <div className="cross-ref-modal" onClick={(e) => e.stopPropagation()}>
                   <div className="cross-ref-modal-header">
-                    <h3>Add Cross Reference</h3>
+                    <h3>{editingCrossRef ? 'Edit Cross Reference' : 'Add Cross Reference'}</h3>
                     <button
                       className="cross-ref-modal-close"
-                      onClick={() => setShowAddCrossRefModal(false)}
+                      onClick={handleCloseAddCrossRefModal}
                     >
                       ×
                     </button>
@@ -1813,16 +1895,16 @@ const RightPanel: React.FC<RightPanelProps> = ({
                   <div className="cross-ref-modal-actions">
                     <button
                       className="cross-ref-modal-cancel"
-                      onClick={() => setShowAddCrossRefModal(false)}
+                      onClick={handleCloseAddCrossRefModal}
                     >
                       Cancel
                     </button>
                     <button
                       className="cross-ref-modal-save"
-                      onClick={handleAddCrossRef}
+                      onClick={handleSaveCrossRef}
                       disabled={!addCrossRefTarget.trim()}
                     >
-                      Add Cross Reference
+                      {editingCrossRef ? 'Save Changes' : 'Add Cross Reference'}
                     </button>
                   </div>
                 </div>
