@@ -1504,13 +1504,22 @@ const RightPanel: React.FC<RightPanelProps> = ({
                 <div className="user-cross-refs-section">
                   <div className="cross-ref-section-header">
                     <span>My Cross References</span>
-                    <button
-                      className="manage-categories-btn"
-                      onClick={() => handleOpenCategoryModal()}
-                      title="Manage categories"
-                    >
-                      + Category
-                    </button>
+                    <div className="cross-ref-header-actions">
+                      <button
+                        className="add-crossref-btn"
+                        onClick={() => setShowAddCrossRefModal(true)}
+                        title="Add cross reference"
+                      >
+                        + Reference
+                      </button>
+                      <button
+                        className="manage-categories-btn"
+                        onClick={() => handleOpenCategoryModal()}
+                        title="Manage categories"
+                      >
+                        + Category
+                      </button>
+                    </div>
                   </div>
 
                   {/* Category Filter */}
