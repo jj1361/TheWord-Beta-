@@ -302,6 +302,24 @@
   box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2);
 }
 
+/* Sepia theme text size controls */
+[data-theme='sepia'] .text-size-controls {
+  background: #e3d9ce;
+  border-color: #a2a8b9;
+}
+
+[data-theme='sepia'] .text-size-value {
+  color: #464a6d;
+}
+
+/* Sepia theme - highlighted verse */
+[data-theme="sepia"] .highlight-verse .verse-container {
+  background: linear-gradient(135deg, #d9cfc3 0%, #c9bfb3 100%);
+  border-left: 4px solid #464a6d;
+  padding-left: 16px;
+  box-shadow: 0 2px 8px rgba(70, 74, 109, 0.2);
+}
+
 @media (max-width: 768px) {
   .chapter-display {
     padding: 16px 12px;

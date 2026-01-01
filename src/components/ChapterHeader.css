@@ -11,7 +11,26 @@
   padding: 10px 24px 12px;
 }
 
-/* Middle Row - Title and Auth centered */
+/* Top Row - Features Toggle (above navigation) */
+.chapter-header-features-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px 10px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Bottom Row - Navigation Row (menu, text size, navigation, search, translation, auth) */
+.chapter-header-nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+}
+
+/* Middle Row - Title and Auth centered (legacy - keeping for compatibility) */
 .chapter-header-middle-row {
   display: flex;
   align-items: center;
@@ -60,6 +79,56 @@
   align-items: center;
   gap: 15px;
   flex-shrink: 0;
+}
+
+/* Text Size Controls in Nav Row */
+.chapter-header-text-size {
+  position: absolute;
+  left: 60px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.chapter-header-text-size .text-size-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.chapter-header-text-size .text-size-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chapter-header-text-size .text-size-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.chapter-header-text-size .text-size-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.chapter-header-text-size .text-size-value {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  min-width: 40px;
+  text-align: center;
 }
 
 /* Center Section - Chapter Navigation */
@@ -361,8 +430,8 @@
 
 /* Different colors for different buttons when active */
 .feature-toggle-btn:nth-child(1).active {
-  border-color: #a3e635; /* Highlight - lime green */
-  color: #a3e635;
+  border-color: #e6d735; /* Highlight - lime green */
+  color: #e6d435;
 }
 
 .feature-toggle-btn:nth-child(2).active {
@@ -387,6 +456,18 @@
   border-color: #c084fc; /* Notes - purple */
   color: #c084fc;
   background: rgba(192, 132, 252, 0.15);
+}
+
+.feature-toggle-btn:nth-child(6).active {
+  border-color: #fb923c; /* Quiz - orange */
+  color: #fb923c;
+  background: rgba(251, 146, 60, 0.15);
+}
+
+.feature-toggle-btn:nth-child(7).active {
+  border-color: #2dd4bf; /* Compare - teal */
+  color: #2dd4bf;
+  background: rgba(45, 212, 191, 0.15);
 }
 
 /* Search Box Styling in Header - Compact size to match feature toggles */
@@ -516,8 +597,8 @@
     padding: 8px 20px 10px;
   }
 
-  .chapter-header-middle-row {
-    gap: 20px;
+  .chapter-header-features-row {
+    padding: 4px 12px 8px;
     margin-bottom: 6px;
   }
 
@@ -544,16 +625,8 @@
 }
 
 @media (max-width: 1024px) {
-  .chapter-header-top-row {
+  .chapter-header-nav-row {
     gap: 12px;
-  }
-
-  .chapter-header-title .app-title {
-    font-size: 20px;
-  }
-
-  .chapter-header-title .app-subtitle {
-    font-size: 10px;
   }
 
   .chapter-book-name,
@@ -585,26 +658,19 @@
     gap: 4px;
   }
 
-  .chapter-header-left-bottom .text-size-btn {
+  .chapter-header-text-size .text-size-btn {
     width: 26px;
     height: 26px;
     font-size: 11px;
   }
 
-  .chapter-header-left-bottom .text-size-value {
+  .chapter-header-text-size .text-size-value {
     font-size: 11px;
     min-width: 36px;
   }
 
   .chapter-header-search .search-input {
     min-width: 100px;
-  }
-
-  .chapter-header-right-top .translation-selector .translation-selector-button,
-  .chapter-header-right-bottom .translation-selector .translation-selector-button {
-    height: 30px;
-    padding: 0 8px;
-    font-size: 12px;
   }
 
   .chapter-header-nav .translation-selector.nav-compact .translation-selector-button {
@@ -619,28 +685,25 @@
     padding: 8px 12px 10px;
   }
 
-  .chapter-header-middle-row {
-    gap: 16px;
+  .chapter-header-features-row {
+    padding: 4px 8px 6px;
     margin-bottom: 6px;
   }
 
-  .chapter-header-title .app-title {
-    font-size: 18px;
-  }
-
-  .chapter-header-title .app-subtitle {
-    font-size: 10px;
-  }
-
-  .chapter-header-top-row {
+  .chapter-header-nav-row {
     flex-wrap: wrap;
     gap: 8px;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .chapter-header-left {
     position: static;
     order: 1;
+  }
+
+  .chapter-header-text-size {
+    position: static;
+    order: 2;
   }
 
   .chapter-header-nav {
@@ -664,38 +727,15 @@
     font-size: 18px;
   }
 
-  .chapter-header-content {
-    padding: 6px 12px;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .chapter-header-center {
-    width: 100%;
-    justify-content: center;
-    gap: 6px;
-  }
-
-  .chapter-header-left-bottom {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .chapter-header-left-bottom .text-size-btn {
+  .chapter-header-text-size .text-size-btn {
     width: 24px;
     height: 24px;
     font-size: 10px;
   }
 
-  .chapter-header-left-bottom .text-size-value {
+  .chapter-header-text-size .text-size-value {
     font-size: 10px;
     min-width: 32px;
-  }
-
-  .chapter-header-right-bottom {
-    position: static;
-    width: 100%;
-    justify-content: center;
   }
 
   .features-toggle-label {
@@ -731,13 +771,6 @@
     font-size: 11px;
   }
 
-  .chapter-header-right-top .translation-selector .translation-selector-button,
-  .chapter-header-right-bottom .translation-selector .translation-selector-button {
-    height: 28px;
-    padding: 0 8px;
-    font-size: 11px;
-  }
-
   .chapter-header-nav .translation-selector.nav-compact .translation-selector-button {
     height: 30px;
     padding: 0 8px;
@@ -751,17 +784,9 @@
     padding: 6px 10px 8px;
   }
 
-  .chapter-header-middle-row {
-    gap: 12px;
+  .chapter-header-features-row {
+    padding: 3px 6px 5px;
     margin-bottom: 4px;
-  }
-
-  .chapter-header-title .app-title {
-    font-size: 16px;
-  }
-
-  .chapter-header-title .app-subtitle {
-    font-size: 9px;
   }
 
   .chapter-nav-btn {
@@ -794,13 +819,13 @@
     font-size: 10px;
   }
 
-  .chapter-header-left-bottom .text-size-btn {
+  .chapter-header-text-size .text-size-btn {
     width: 22px;
     height: 22px;
     font-size: 9px;
   }
 
-  .chapter-header-left-bottom .text-size-value {
+  .chapter-header-text-size .text-size-value {
     font-size: 9px;
     min-width: 28px;
   }
@@ -817,13 +842,6 @@
     font-size: 10px;
   }
 
-  .chapter-header-right-top .translation-selector .translation-selector-button,
-  .chapter-header-right-bottom .translation-selector .translation-selector-button {
-    height: 26px;
-    padding: 0 6px;
-    font-size: 10px;
-  }
-
   .chapter-header-nav .translation-selector.nav-compact .translation-selector-button {
     height: 28px;
     padding: 0 6px;
@@ -836,25 +854,21 @@
     padding: 6px 8px 8px;
   }
 
-  .chapter-header-middle-row {
-    gap: 10px;
+  .chapter-header-features-row {
+    padding: 2px 4px 4px;
     margin-bottom: 4px;
   }
 
-  .chapter-header-title .app-title {
-    font-size: 14px;
-  }
-
-  .chapter-header-title .app-subtitle {
-    display: none;
-  }
-
-  .chapter-header-top-row {
-    margin-bottom: 6px;
+  .chapter-header-nav-row {
+    gap: 6px;
   }
 
   .chapter-header-left {
     gap: 6px;
+  }
+
+  .chapter-header-text-size {
+    display: none;
   }
 
   .chapter-nav-btn {
@@ -876,15 +890,6 @@
     font-size: 15px;
   }
 
-  .chapter-header-content {
-    padding: 4px 6px;
-    flex-direction: column;
-  }
-
-  .chapter-header-center {
-    width: 100%;
-  }
-
   .features-toggle-buttons {
     gap: 2px;
     flex-wrap: wrap;
@@ -901,28 +906,6 @@
     font-size: 9px;
   }
 
-  .chapter-header-search {
-    display: none;
-  }
-
-  .chapter-header-left-bottom {
-    display: none;
-  }
-
-  .chapter-header-right-bottom {
-    display: none;
-  }
-
-  .chapter-header-right-top {
-    gap: 4px;
-  }
-
-  .chapter-header-right-top .translation-selector .translation-selector-button {
-    height: 24px;
-    padding: 0 5px;
-    font-size: 9px;
-  }
-
   .chapter-header-nav .translation-selector.nav-compact .translation-selector-button {
     height: 26px;
     padding: 0 5px;
@@ -936,13 +919,9 @@
     padding: 4px 6px 6px;
   }
 
-  .chapter-header-middle-row {
-    gap: 8px;
+  .chapter-header-features-row {
+    padding: 2px 4px 3px;
     margin-bottom: 3px;
-  }
-
-  .chapter-header-title .app-title {
-    font-size: 13px;
   }
 
   .chapter-nav-btn {
@@ -967,12 +946,6 @@
   }
 
   .feature-icon {
-    font-size: 8px;
-  }
-
-  .chapter-header-right-top .translation-selector .translation-selector-button {
-    height: 22px;
-    padding: 0 4px;
     font-size: 8px;
   }
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Note, Topic, VerseReference } from '../types/notes';
+import { BIBLE_BOOKS } from '../types/bible';
 import './NotesPanel.css';
 
 interface NotesPanelProps {
@@ -10,6 +11,8 @@ interface NotesPanelProps {
   onCreateNote: () => void;
   onNavigateToVerse?: (verse: VerseReference) => void;
   onManageTopics: () => void;
+  filterByVerse?: { bookId: number; chapter: number; verse: number };
+  onClearVerseFilter?: () => void;
 }
 
 const NotesPanel: React.FC<NotesPanelProps> = ({
@@ -20,6 +23,8 @@ const NotesPanel: React.FC<NotesPanelProps> = ({
   onCreateNote,
   onNavigateToVerse,
   onManageTopics,
+  filterByVerse,
+  onClearVerseFilter,
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [filterTopicId, setFilterTopicId] = useState<string | null>(null);
@@ -48,6 +53,17 @@ const NotesPanel: React.FC<NotesPanelProps> = ({
   // Filter and sort notes
   const filteredNotes = notes
     .filter((note) => {
+      // Filter by specific verse (from verse notes button click)
+      if (filterByVerse) {
+        const matchesVerse = note.verses?.some(
+          (ref) =>
+            ref.bookId === filterByVerse.bookId &&
+            ref.chapter === filterByVerse.chapter &&
+            filterByVerse.verse >= ref.startVerse &&
+            filterByVerse.verse <= (ref.endVerse || ref.startVerse)
+        );
+        if (!matchesVerse) return false;
+      }
       // Filter by topic
       if (filterTopicId && !note.topicIds?.includes(filterTopicId)) {
         return false;
@@ -129,6 +145,19 @@ const NotesPanel: React.FC<NotesPanelProps> = ({
           </button>
         </div>
       </div>
+
+      {filterByVerse && (
+        <div className="verse-filter-banner">
+          <span className="verse-filter-text">
+            📝 Showing notes for {BIBLE_BOOKS.find(b => b.id === filterByVerse.bookId)?.name || 'Unknown'} {filterByVerse.chapter}:{filterByVerse.verse}
+          </span>
+          {onClearVerseFilter && (
+            <button className="verse-filter-clear" onClick={onClearVerseFilter}>
+              ✕ Show All
+            </button>
+          )}
+        </div>
+      )}
 
       <div className="notes-list">
         {filteredNotes.length === 0 ? (

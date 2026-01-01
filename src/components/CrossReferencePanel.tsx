@@ -26,6 +26,8 @@ interface VerseWithText extends CrossReference {
   refKey: string;
 }
 
+type TabType = 'treasury' | 'myRefs';
+
 const CrossReferencePanel: React.FC<CrossReferencePanelProps> = ({
   bookId,
   bookName,
@@ -48,6 +50,7 @@ const CrossReferencePanel: React.FC<CrossReferencePanelProps> = ({
   const [displayedRefs, setDisplayedRefs] = useState<VerseWithText[]>([]);
   const [selectedVerses, setSelectedVerses] = useState<Set<string>>(new Set());
   const [copySuccess, setCopySuccess] = useState(false);
+  const [activeTab, setActiveTab] = useState<TabType>('treasury');
 
   // Get refs for a specific topic with text
   const getRefsForTopic = useCallback((topicIndex: number, texts: Map<string, string>, entries: CrossRefEntry[]): VerseWithText[] => {
@@ -128,15 +131,6 @@ const CrossReferencePanel: React.FC<CrossReferencePanelProps> = ({
     onNavigate(ref.bookId, ref.chapter, ref.verse);
   };
 
-  const handleSelectAll = () => {
-    const allKeys = new Set(displayedRefs.map(ref => ref.refKey));
-    setSelectedVerses(allKeys);
-  };
-
-  const handleUnselectAll = () => {
-    setSelectedVerses(new Set());
-  };
-
   const handleCopySelected = async () => {
     const selectedRefs = displayedRefs.filter(ref => selectedVerses.has(ref.refKey));
     if (selectedRefs.length === 0) return;
@@ -155,7 +149,6 @@ const CrossReferencePanel: React.FC<CrossReferencePanelProps> = ({
   };
 
   const totalRefs = crossRefs.reduce((sum, entry) => sum + entry.refs.length, 0);
-  const allSelected = displayedRefs.length > 0 && selectedVerses.size === displayedRefs.length;
 
   // Filter notes for current verse
   const verseNotes = notes.filter(note =>
@@ -180,111 +173,111 @@ const CrossReferencePanel: React.FC<CrossReferencePanelProps> = ({
   return (
     <div className={`cross-ref-panel-wrapper ${showNotesPanel ? 'with-notes' : ''}`}>
       <div className="cross-ref-panel">
+        {/* Header */}
         <div className="cross-ref-header">
-          <div className="cross-ref-title">
-            <h3>Cross References</h3>
-            <span
-              className="cross-ref-verse clickable"
-              onClick={() => onNavigate(bookId, chapter, verse)}
-              title="Go to this verse"
-            >
-              {bookName} {chapter}:{verse}
-            </span>
+          <div className="cross-ref-header-top">
+            <span className="cross-ref-label">CROSS REFERENCES</span>
+            <button className="cross-ref-close" onClick={onClose} aria-label="Close">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M18 6L6 18M6 6l12 12" />
+              </svg>
+            </button>
           </div>
-          <div className="cross-ref-header-actions">
-            {onToggleNotesPanel && (
-              <button
-                className={`cross-ref-notes-toggle ${showNotesPanel ? 'active' : ''}`}
-                onClick={onToggleNotesPanel}
-                title={showNotesPanel ? 'Hide Notes' : 'Show Notes'}
-              >
-                <span className="notes-icon">📝</span>
-                {verseNotes.length > 0 && (
-                  <span className="notes-badge">{verseNotes.length}</span>
-                )}
-              </button>
-            )}
-            <button className="cross-ref-close" onClick={onClose}>×</button>
-          </div>
+          <h2
+            className="cross-ref-verse-title"
+            onClick={() => onNavigate(bookId, chapter, verse)}
+            title="Go to this verse"
+          >
+            {bookName} {chapter}:{verse}
+          </h2>
         </div>
 
-      <div className="cross-ref-content">
-        {loading ? (
-          <div className="cross-ref-loading">Loading cross-references...</div>
-        ) : crossRefs.length === 0 ? (
-          <div className="cross-ref-empty">
-            <p>No cross-references found for this verse.</p>
-          </div>
-        ) : (
-          <>
-            <div className="cross-ref-summary">
-              {crossRefs.length} topic{crossRefs.length !== 1 ? 's' : ''} • {totalRefs} reference{totalRefs !== 1 ? 's' : ''}
-            </div>
+        {/* Tabs */}
+        <div className="cross-ref-tabs">
+          <button
+            className={`cross-ref-tab ${activeTab === 'treasury' ? 'active' : ''}`}
+            onClick={() => setActiveTab('treasury')}
+          >
+            Treasury of Scripture
+            <span className="cross-ref-tab-count">{totalRefs}</span>
+          </button>
+          <button
+            className={`cross-ref-tab ${activeTab === 'myRefs' ? 'active' : ''}`}
+            onClick={() => setActiveTab('myRefs')}
+          >
+            My References
+            <span className="cross-ref-tab-count">0</span>
+          </button>
+        </div>
 
-            {/* Topic Buttons */}
-            <div className="cross-ref-topics">
-              {crossRefs.map((entry, index) => (
-                <button
-                  key={index}
-                  className={`cross-ref-topic-btn ${selectedTopic === index ? 'selected' : ''}`}
-                  onClick={() => handleTopicClick(index)}
-                >
-                  <span className="topic-word">{entry.word || `Topic ${index + 1}`}</span>
-                  <span className="topic-count">{entry.refs.length}</span>
-                </button>
-              ))}
+        <div className="cross-ref-content">
+          {loading ? (
+            <div className="cross-ref-loading">Loading cross-references...</div>
+          ) : crossRefs.length === 0 ? (
+            <div className="cross-ref-empty">
+              <p>No cross-references found for this verse.</p>
             </div>
-
-            {/* Scriptures List for Selected Topic */}
-            <div className="cross-ref-all-verses">
-              <div className="cross-ref-all-header">
-                <span>
-                  {selectedTopic !== null && crossRefs[selectedTopic]
-                    ? `"${crossRefs[selectedTopic].word || `Topic ${selectedTopic + 1}`}" Scriptures`
-                    : 'All Scriptures'}
-                </span>
-                <span className="cross-ref-all-count">{displayedRefs.length}</span>
+          ) : (
+            <>
+              {/* Filter by Phrase */}
+              <div className="cross-ref-filter-section">
+                <span className="cross-ref-filter-label">FILTER BY PHRASE</span>
+                <div className="cross-ref-filters">
+                  <button
+                    className={`cross-ref-filter-btn ${selectedTopic === null ? 'active' : ''}`}
+                    onClick={() => {
+                      setSelectedTopic(null);
+                      // Show all refs when "All" is selected
+                      const allRefsWithText: VerseWithText[] = [];
+                      const seen = new Set<string>();
+                      for (const entry of crossRefs) {
+                        for (const ref of entry.refs) {
+                          const key = `${ref.bookId}:${ref.chapter}:${ref.verse}`;
+                          if (!seen.has(key)) {
+                            seen.add(key);
+                            allRefsWithText.push({
+                              ...ref,
+                              refKey: key,
+                              text: verseTexts.get(key)
+                            });
+                          }
+                        }
+                      }
+                      allRefsWithText.sort((a, b) => {
+                        if (a.bookId !== b.bookId) return a.bookId - b.bookId;
+                        if (a.chapter !== b.chapter) return a.chapter - b.chapter;
+                        return a.verse - b.verse;
+                      });
+                      setDisplayedRefs(allRefsWithText);
+                      setSelectedVerses(new Set());
+                    }}
+                  >
+                    All
+                  </button>
+                  {crossRefs.map((entry, index) => (
+                    <button
+                      key={index}
+                      className={`cross-ref-filter-btn ${selectedTopic === index ? 'active' : ''}`}
+                      onClick={() => handleTopicClick(index)}
+                    >
+                      {entry.word || `Topic ${index + 1}`}
+                      <span className="filter-count">{entry.refs.length}</span>
+                    </button>
+                  ))}
+                </div>
               </div>
 
-              {/* Selection Controls */}
-              {displayedRefs.length > 0 && (
-                <div className="cross-ref-selection-controls">
-                  <label className="cross-ref-select-all">
-                    <input
-                      type="checkbox"
-                      checked={allSelected}
-                      onChange={(e) => e.target.checked ? handleSelectAll() : handleUnselectAll()}
-                    />
-                    <span>Select All</span>
-                  </label>
-                  <button
-                    className="cross-ref-unselect-btn"
-                    onClick={handleUnselectAll}
-                    disabled={selectedVerses.size === 0}
-                  >
-                    Unselect All
-                  </button>
-                  <button
-                    className={`cross-ref-copy-btn ${copySuccess ? 'success' : ''}`}
-                    onClick={handleCopySelected}
-                    disabled={selectedVerses.size === 0}
-                  >
-                    {copySuccess ? 'Copied!' : `Copy (${selectedVerses.size})`}
-                  </button>
-                </div>
-              )}
-
+              {/* Verses List */}
               <div className="cross-ref-verses-list">
                 {displayedRefs.length === 0 ? (
                   <div className="cross-ref-empty-topic">
-                    <p>Select a topic above to view scriptures</p>
+                    <p>Select a filter above to view scriptures</p>
                   </div>
                 ) : (
                   displayedRefs.map((ref, index) => (
                     <div
                       key={index}
                       className={`cross-ref-verse-item ${selectedVerses.has(ref.refKey) ? 'selected' : ''}`}
-                      onClick={() => handleRefClick(ref)}
                     >
                       <label
                         className="cross-ref-checkbox-wrapper"
@@ -306,7 +299,10 @@ const CrossReferencePanel: React.FC<CrossReferencePanelProps> = ({
                           }}
                         />
                       </label>
-                      <div className="cross-ref-verse-content">
+                      <div
+                        className="cross-ref-verse-content"
+                        onClick={() => handleRefClick(ref)}
+                      >
                         <div className="cross-ref-verse-ref">
                           {crossRefService.formatReference(ref)}
                         </div>
@@ -318,10 +314,21 @@ const CrossReferencePanel: React.FC<CrossReferencePanelProps> = ({
                   ))
                 )}
               </div>
-            </div>
-          </>
-        )}
-      </div>
+            </>
+          )}
+        </div>
+
+        {/* Footer */}
+        <div className="cross-ref-footer">
+          <span className="cross-ref-footer-hint">Click verses to select</span>
+          <button
+            className={`cross-ref-copy-btn ${copySuccess ? 'success' : ''}`}
+            onClick={handleCopySelected}
+            disabled={selectedVerses.size === 0}
+          >
+            {copySuccess ? 'Copied!' : 'Copy'}
+          </button>
+        </div>
       </div>
 
       {/* Notes Panel */}

@@ -125,26 +125,26 @@ export const VERSE_MEDIA_CONFIG: VerseMediaMapping[] = [
   // Example: Genesis 1:1 - "In the beginning..."
   {
     bookId: 1,
-    chapter: 1,
-    verse: 1,
+    chapter: 33,
+    verse: 3,
     media: [
-      {
-        id: 'gen-1-1-creation',
-        type: 'image',
-        src: '/media/verses/creation-light.png',
-        title: 'Creation of Light',
-        description: 'Artistic representation of the creation of light',
-        order: 1,
-      },
+      // {
+      //   id: 'gen-1-1-creation',
+      //   type: 'image',
+      //   src: '/media/verses/creation-light.png',
+      //   title: 'Creation of Light',
+      //   description: 'Artistic representation of the creation of light',
+      //   order: 1,
+      // },
       // Example YouTube video
        {
-         id: 'gen-1-1-video',
+         id: 'gen-3-33-video',
          type: 'video',
-         src: 'GXCmSXMbx64', // YouTube video ID
+         src: '3qlfi6doRJI', // YouTube video ID
          videoSource: 'youtube',
-         title: 'Creation Explained',
-         description: 'A video explaining Genesis 1:1',
-         order: 2,
+         title: 'Peniel',
+         description: 'A video explaining Genesis 33:3',
+         order: 1,
        },
     ],
   },

@@ -2,7 +2,7 @@ import React from 'react';
 import { Chapter, FootnoteEntry } from '../types/bible';
 import VerseDisplay from './VerseDisplay';
 import { WordImageMapping } from '../config/youthModeConfig';
-import { HighlightColor, TextFormatting } from '../types/notes';
+import { HighlightColor, TextFormatting, Note } from '../types/notes';
 import './ChapterDisplay.css';
 
 // Default text size if not provided
@@ -34,6 +34,9 @@ interface ChapterDisplayProps {
   // Footnotes (1611 KJV Marginal Notes)
   chapterFootnotes?: Map<number, FootnoteEntry[]>;
   showFootnotes?: boolean;
+  // Notes props
+  getNotesForVerse?: (verseNum: number) => Note[];
+  onNoteClick?: (verseNum: number, notes: Note[]) => void;
 }
 
 const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
@@ -60,6 +63,8 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
   textSize: textSizeProp,
   chapterFootnotes,
   showFootnotes = true,
+  getNotesForVerse,
+  onNoteClick,
 }) => {
   // Use prop if provided, otherwise fallback to default
   const textSize = textSizeProp ?? DEFAULT_TEXT_SIZE;
@@ -131,6 +136,8 @@ const ChapterDisplay: React.FC<ChapterDisplayProps> = ({
                 showFootnotes={showFootnotes}
                 bookId={currentBookId?.toString()}
                 chapter={chapter?.chapterNum}
+                notes={getNotesForVerse?.(verse.num)}
+                onNoteClick={onNoteClick}
               />
             </div>
           );

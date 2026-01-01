@@ -1,13 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { KJVVerse, KJVsVerse, InterlinearVerse, FootnoteEntry } from '../types/bible';
+import { KJVVerse, KJVsVerse, InterlinearVerse, FootnoteEntry, BIBLE_BOOKS } from '../types/bible';
 import { extractHebrewLetters, getHebrewLetterInfo } from '../config/hebrewLetters';
 import { getWordImage, getImagePath, getImageSize, WordImageMapping } from '../config/youthModeConfig';
-import { HighlightColor, HIGHLIGHT_COLORS, TextFormatting } from '../types/notes';
+import { HighlightColor, HIGHLIGHT_COLORS, TextFormatting, Note } from '../types/notes';
 import { getPartOfSpeechName } from '../utils/partsOfSpeech';
 import { useTranslation } from '../contexts/TranslationContext';
+import { useQuiz } from '../contexts/QuizContext';
 import { getVerseMedia, verseHasMedia } from '../config/verseMediaConfig';
 import VerseMediaCarousel from './VerseMediaCarousel';
+import QuizIndicator from './Quiz/QuizIndicator';
+import QuizModal from './Quiz/QuizModal';
 import './VerseDisplay.css';
 
 // Tooltip state interface
@@ -50,6 +53,9 @@ interface VerseDisplayProps {
   // Verse media props
   bookId?: string;
   chapter?: number;
+  // Notes props
+  notes?: Note[];
+  onNoteClick?: (verseNum: number, notes: Note[]) => void;
 }
 
 const VerseDisplay: React.FC<VerseDisplayProps> = ({
@@ -73,14 +79,18 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({
   showFootnotes = true,
   bookId,
   chapter,
+  notes,
+  onNoteClick,
 }) => {
   const { currentTranslation } = useTranslation();
+  const { isQuizModeEnabled, getQuestionsForVerse, getQuestionCountForVerse } = useQuiz();
   const [localUseProtoSinaitic, setLocalUseProtoSinaitic] = useState(false);
   const [forwardInterlinear, setForwardInterlinear] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(() =>
     document.documentElement.getAttribute('data-theme') === 'dark'
   );
   const [showMediaCarousel, setShowMediaCarousel] = useState(false);
+  const [showQuizModal, setShowQuizModal] = useState(false);
 
   // Check if this verse has media content
   const bookIdNum = bookId ? parseInt(bookId, 10) : 0;
@@ -643,6 +653,12 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({
     >
       <div className="verse-main">
         <span className="verse-number">{verse.num}</span>
+        {isQuizModeEnabled && bookIdNum > 0 && chapter && getQuestionCountForVerse(bookIdNum, chapter, verse.num) > 0 && (
+          <QuizIndicator
+            questionCount={getQuestionCountForVerse(bookIdNum, chapter, verse.num)}
+            onClick={() => setShowQuizModal(true)}
+          />
+        )}
         {renderVerseText()}
         {/* Footnote superscripts */}
         {showFootnotes && footnotes && footnotes.length > 0 && (
@@ -669,6 +685,19 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({
             title="Show Cross References"
           >
             ✝
+          </button>
+        )}
+        {notes && notes.length > 0 && onNoteClick && (
+          <button
+            className="verse-notes-btn"
+            onClick={(e) => {
+              e.stopPropagation();
+              onNoteClick(verse.num, notes);
+            }}
+            title={notes.length === 1 ? "View Note" : `View ${notes.length} Notes`}
+          >
+            📝
+            {notes.length > 1 && <span className="notes-badge">{notes.length}</span>}
           </button>
         )}
         {interlinearVerse && onVerseClick && (
@@ -856,6 +885,16 @@ const VerseDisplay: React.FC<VerseDisplayProps> = ({
           </div>
         </div>,
         document.body
+      )}
+
+      {/* Quiz Modal */}
+      {showQuizModal && bookIdNum > 0 && chapter && (
+        <QuizModal
+          questions={getQuestionsForVerse(bookIdNum, chapter, verse.num)}
+          verseReference={`${BIBLE_BOOKS.find(b => b.id === bookIdNum)?.name || ''} ${chapter}:${verse.num}`}
+          verseText={verse.text}
+          onClose={() => setShowQuizModal(false)}
+        />
       )}
     </div>
   );

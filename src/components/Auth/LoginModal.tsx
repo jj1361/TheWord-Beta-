@@ -10,9 +10,10 @@ interface LoginModalProps {
   isOpen: boolean;
   onClose: () => void;
   onSwitchToSignup: () => void;
+  onForgotPassword: () => void;
 }
 
-const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onSwitchToSignup }) => {
+const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onSwitchToSignup, onForgotPassword }) => {
   const { signIn } = useAuth();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -84,6 +85,12 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onSwitchToSign
               required
               autoComplete="current-password"
             />
+          </div>
+
+          <div className="auth-forgot-password">
+            <button type="button" onClick={onForgotPassword} className="auth-forgot-btn">
+              Forgot password?
+            </button>
           </div>
 
           <button type="submit" className="auth-submit-btn" disabled={loading}>

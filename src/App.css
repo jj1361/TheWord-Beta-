@@ -225,6 +225,24 @@ body {
   color: #e2e8f0;
 }
 
+/* Sepia mode for text size controls */
+[data-theme='sepia'] .text-size-controls {
+  background: rgba(70, 74, 109, 0.1);
+}
+
+[data-theme='sepia'] .text-size-controls .text-size-btn {
+  background: #464a6d;
+  color: #f5f0e6;
+}
+
+[data-theme='sepia'] .text-size-controls .text-size-btn:hover:not(:disabled) {
+  background: #2a2d3f;
+}
+
+[data-theme='sepia'] .text-size-controls .text-size-value {
+  color: #2a2d3f;
+}
+
 .content-with-webcam {
   display: flex;
   gap: 10px;

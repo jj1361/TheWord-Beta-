@@ -9,6 +9,7 @@ import { authService } from '../../services/authService';
 import { UserProfile, UserRole } from '../../types/user';
 import UserList from './UserList';
 import UserEditor from './UserEditor';
+import QuizAdmin from './QuizAdmin';
 import './AdminPanel.css';
 
 interface AdminPanelProps {
@@ -20,7 +21,7 @@ const AdminPanel: React.FC<AdminPanelProps> = ({ isOpen, onClose }) => {
   const { user, isAdmin } = useAuth();
   const [users, setUsers] = useState<UserProfile[]>([]);
   const [selectedUser, setSelectedUser] = useState<UserProfile | null>(null);
-  const [activeTab, setActiveTab] = useState<'users' | 'stats'>('users');
+  const [activeTab, setActiveTab] = useState<'users' | 'stats' | 'quiz'>('users');
 
   // Load users on mount
   useEffect(() => {
@@ -92,6 +93,12 @@ const AdminPanel: React.FC<AdminPanelProps> = ({ isOpen, onClose }) => {
           >
             Statistics
           </button>
+          <button
+            className={`admin-tab ${activeTab === 'quiz' ? 'active' : ''}`}
+            onClick={() => setActiveTab('quiz')}
+          >
+            Quiz
+          </button>
         </div>
 
         <div className="admin-panel-content">
@@ -135,6 +142,8 @@ const AdminPanel: React.FC<AdminPanelProps> = ({ isOpen, onClose }) => {
               </div>
             </div>
           )}
+
+          {activeTab === 'quiz' && <QuizAdmin />}
         </div>
       </div>
     </div>

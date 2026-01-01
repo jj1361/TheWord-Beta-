@@ -14,6 +14,7 @@ import HamburgerMenu from './HamburgerMenu';
 import TranslationSelector from './TranslationSelector';
 import { AuthButton } from './Auth';
 import { SearchResponse } from '../services/searchService';
+import { useQuiz } from '../contexts/QuizContext';
 import './ChapterHeader.css';
 
 interface ChapterHeaderProps {
@@ -47,6 +48,7 @@ interface ChapterHeaderProps {
   screenShareEnabled: boolean;
   screenShareWithVerses: boolean;
   darkMode: boolean;
+  theme?: 'light' | 'dark' | 'sepia';
   onToggleProtoSinaitic: () => void;
   onToggleWebcam: () => void;
   onToggleWebcamSettings: () => void;
@@ -54,6 +56,7 @@ interface ChapterHeaderProps {
   onToggleScreenShare: () => void;
   onToggleScreenShareWithVerses: () => void;
   onToggleDarkMode: () => void;
+  onSetTheme?: (theme: 'light' | 'dark' | 'sepia') => void;
   // History props
   navigationHistory: HistoryEntry[];
   historyIndex: number;
@@ -86,6 +89,9 @@ interface ChapterHeaderProps {
   onDecreaseTextSize: () => void;
   // Help props
   onOpenHelp: () => void;
+  // Split view props
+  splitViewEnabled?: boolean;
+  onToggleSplitView?: () => void;
 }
 
 const ChapterHeader: React.FC<ChapterHeaderProps> = ({
@@ -117,6 +123,7 @@ const ChapterHeader: React.FC<ChapterHeaderProps> = ({
   screenShareEnabled,
   screenShareWithVerses,
   darkMode,
+  theme,
   onToggleProtoSinaitic,
   onToggleWebcam,
   onToggleWebcamSettings,
@@ -124,6 +131,7 @@ const ChapterHeader: React.FC<ChapterHeaderProps> = ({
   onToggleScreenShare,
   onToggleScreenShareWithVerses,
   onToggleDarkMode,
+  onSetTheme,
   // History props
   navigationHistory,
   historyIndex,
@@ -155,9 +163,13 @@ const ChapterHeader: React.FC<ChapterHeaderProps> = ({
   onDecreaseTextSize,
   // Help props
   onOpenHelp,
+  // Split view props
+  splitViewEnabled,
+  onToggleSplitView,
 }) => {
   const [isChapterSelectorOpen, setIsChapterSelectorOpen] = useState(false);
   const [isNavigationModalOpen, setIsNavigationModalOpen] = useState(false);
+  const { isQuizModeEnabled, toggleQuizMode } = useQuiz();
 
   const handlePreviousChapter = () => {
     if (chapterNum > 1) {
@@ -190,8 +202,72 @@ const ChapterHeader: React.FC<ChapterHeaderProps> = ({
 
   return (
     <div className="chapter-header-fixed">
-      {/* Top Row: Menu + Title on left, Auth on right */}
-      <div className="chapter-header-top-row">
+      {/* Top Row: Features Toggle */}
+      <div className="chapter-header-features-row">
+        <div className="features-toggle-buttons">
+          <button
+            className={`feature-toggle-btn ${studyMode ? 'active' : ''}`}
+            onClick={onToggleStudyMode}
+            data-tooltip="✨ Toggle highlighting and study features"
+          >
+            <span className="feature-icon">✨</span>
+            HIGHLIGHTS
+          </button>
+          <button
+            className={`feature-toggle-btn ${showFootnotes ? 'active' : ''}`}
+            onClick={onToggleFootnotes}
+            data-tooltip="📜 Toggle 1611 KJV Footnotes"
+          >
+            <span className="feature-icon">📜</span>
+            FOOTNOTES
+          </button>
+          <button
+            className={`feature-toggle-btn ${personProfileEnabled ? 'active' : ''}`}
+            onClick={onTogglePersonProfile}
+            data-tooltip="👤 Toggle person profiles"
+          >
+            <span className="feature-icon">👤</span>
+            PROFILES
+          </button>
+          <button
+            className={`feature-toggle-btn ${youthMode ? 'active' : ''}`}
+            onClick={onToggleYouthMode}
+            data-tooltip="🎨 Toggle visual/youth mode"
+          >
+            <span className="feature-icon">🎨</span>
+            VISUALS
+          </button>
+          <button
+            className={`feature-toggle-btn ${showNotesPanel ? 'active' : ''}`}
+            onClick={onToggleNotesPanel}
+            data-tooltip="📝 Toggle notes panel"
+          >
+            <span className="feature-icon">📝</span>
+            NOTES
+          </button>
+          <button
+            className={`feature-toggle-btn ${isQuizModeEnabled ? 'active' : ''}`}
+            onClick={toggleQuizMode}
+            data-tooltip="❓ Toggle quiz mode"
+          >
+            <span className="feature-icon">❓</span>
+            QUIZ
+          </button>
+          {onToggleSplitView && (
+            <button
+              className={`feature-toggle-btn ${splitViewEnabled ? 'active' : ''}`}
+              onClick={onToggleSplitView}
+              data-tooltip="⧉ Compare translations side by side"
+            >
+              <span className="feature-icon">⧉</span>
+              COMPARE
+            </button>
+          )}
+        </div>
+      </div>
+
+      {/* Bottom Row: Menu, Navigation, Search, Translation, Auth */}
+      <div className="chapter-header-nav-row">
         {/* Left: Hamburger Menu */}
         <div className="chapter-header-left">
           <HamburgerMenu
@@ -203,6 +279,7 @@ const ChapterHeader: React.FC<ChapterHeaderProps> = ({
             youthMode={youthMode}
             studyMode={studyMode}
             darkMode={darkMode}
+            theme={theme}
             personProfileEnabled={personProfileEnabled}
             onToggleProtoSinaitic={onToggleProtoSinaitic}
             onToggleWebcam={onToggleWebcam}
@@ -213,6 +290,7 @@ const ChapterHeader: React.FC<ChapterHeaderProps> = ({
             onToggleYouthMode={onToggleYouthMode}
             onToggleStudyMode={onToggleStudyMode}
             onToggleDarkMode={onToggleDarkMode}
+            onSetTheme={onSetTheme}
             onTogglePersonProfile={onTogglePersonProfile}
             navigationHistory={navigationHistory}
             historyIndex={historyIndex}
@@ -243,6 +321,31 @@ const ChapterHeader: React.FC<ChapterHeaderProps> = ({
             onToggleFootnotes={onToggleFootnotes}
             onOpenHelp={onOpenHelp}
           />
+        </div>
+
+        {/* Left: Text Size Controls */}
+        <div className="chapter-header-text-size">
+          <div className="text-size-controls">
+            <button
+              className="text-size-btn"
+              onClick={onDecreaseTextSize}
+              disabled={textSize <= minTextSize}
+              title="Decrease text size"
+              aria-label="Decrease text size"
+            >
+              A-
+            </button>
+            <span className="text-size-value">{textSize}px</span>
+            <button
+              className="text-size-btn"
+              onClick={onIncreaseTextSize}
+              disabled={textSize >= maxTextSize}
+              title="Increase text size"
+              aria-label="Increase text size"
+            >
+              A+
+            </button>
+          </div>
         </div>
 
         {/* Center: Navigation with Expandable Search */}
@@ -299,79 +402,12 @@ const ChapterHeader: React.FC<ChapterHeaderProps> = ({
 
           {/* Translation Selector */}
           <TranslationSelector className="nav-compact" />
-        </div>
-      </div>
 
-      {/* Bottom Row: Features Toggle with Search and Translation on right */}
-      <div className="chapter-header-content">
-        {/* Left: Text Size Controls */}
-        <div className="chapter-header-left-bottom">
-          <div className="text-size-controls">
-            <button
-              className="text-size-btn"
-              onClick={onDecreaseTextSize}
-              disabled={textSize <= minTextSize}
-              title="Decrease text size"
-              aria-label="Decrease text size"
-            >
-              A-
-            </button>
-            <span className="text-size-value">{textSize}px</span>
-            <button
-              className="text-size-btn"
-              onClick={onIncreaseTextSize}
-              disabled={textSize >= maxTextSize}
-              title="Increase text size"
-              aria-label="Increase text size"
-            >
-              A+
-            </button>
-          </div>
-        </div>
-        <div className="chapter-header-center">
-          {/* <span className="features-toggle-label">Features Toggle</span> */}
-          <div className="features-toggle-buttons">
-            <button
-              className={`feature-toggle-btn ${studyMode ? 'active' : ''}`}
-              onClick={onToggleStudyMode}
-              data-tooltip="✨ Toggle highlighting and study features"
-            >
-              <span className="feature-icon">✨</span>
-              HIGHLIGHTS
-            </button>
-            <button
-              className={`feature-toggle-btn ${showFootnotes ? 'active' : ''}`}
-              onClick={onToggleFootnotes}
-              data-tooltip="📜 Toggle 1611 KJV Footnotes"
-            >
-              <span className="feature-icon">📜</span>
-              FOOTNOTES
-            </button>
-            <button
-              className={`feature-toggle-btn ${personProfileEnabled ? 'active' : ''}`}
-              onClick={onTogglePersonProfile}
-              data-tooltip="👤 Toggle person profiles"
-            >
-              <span className="feature-icon">👤</span>
-              PROFILES
-            </button>
-            <button
-              className={`feature-toggle-btn ${youthMode ? 'active' : ''}`}
-              onClick={onToggleYouthMode}
-              data-tooltip="🎨 Toggle visual/youth mode"
-            >
-              <span className="feature-icon">🎨</span>
-              VISUALS
-            </button>
-            <button
-              className={`feature-toggle-btn ${showNotesPanel ? 'active' : ''}`}
-              onClick={onToggleNotesPanel}
-              data-tooltip="📝 Toggle notes panel"
-            >
-              <span className="feature-icon">📝</span>
-              NOTES
-            </button>
-          </div>
+          {/* Auth Button */}
+          <AuthButton
+            onLoginClick={onSignInClick}
+            onAdminClick={onAdminClick}
+          />
         </div>
       </div>
 

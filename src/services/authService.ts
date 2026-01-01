@@ -17,7 +17,11 @@ const STORAGE_KEYS = {
   USERS: 'bible-app-users',
   CREDENTIALS: 'bible-app-credentials',
   SESSION: 'bible-app-session',
+  PASSWORD_RESET_TOKENS: 'bible-app-password-reset-tokens',
 };
+
+// Password reset token duration: 1 hour
+const RESET_TOKEN_DURATION_MS = 60 * 60 * 1000;
 
 // Session duration: 7 days
 const SESSION_DURATION_MS = 7 * 24 * 60 * 60 * 1000;
@@ -385,6 +389,144 @@ class AuthService {
       session.expiresAt = Date.now() + SESSION_DURATION_MS;
       this.saveSession(session);
     }
+  }
+
+  // ============ PASSWORD RESET ============
+
+  /**
+   * Get all password reset tokens (private)
+   */
+  private getResetTokens(): Array<{ token: string; uid: string; expiresAt: number }> {
+    try {
+      const data = localStorage.getItem(STORAGE_KEYS.PASSWORD_RESET_TOKENS);
+      return data ? JSON.parse(data) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  /**
+   * Save reset tokens to storage (private)
+   */
+  private saveResetTokens(tokens: Array<{ token: string; uid: string; expiresAt: number }>): void {
+    localStorage.setItem(STORAGE_KEYS.PASSWORD_RESET_TOKENS, JSON.stringify(tokens));
+  }
+
+  /**
+   * Generate a password reset token for a user
+   * Returns the token (in a real app, this would be emailed to the user)
+   */
+  generatePasswordResetToken(email: string): string | null {
+    const users = this.getUsers();
+    const user = users.find(u => u.email.toLowerCase() === email.toLowerCase());
+
+    if (!user) {
+      // Don't reveal if email exists or not for security
+      return null;
+    }
+
+    // Generate a random token
+    const token = `reset_${Date.now()}_${Math.random().toString(36).substring(2, 15)}`;
+    const expiresAt = Date.now() + RESET_TOKEN_DURATION_MS;
+
+    // Remove any existing tokens for this user
+    let tokens = this.getResetTokens().filter(t => t.uid !== user.uid);
+
+    // Clean up expired tokens
+    tokens = tokens.filter(t => t.expiresAt > Date.now());
+
+    // Add new token
+    tokens.push({ token, uid: user.uid, expiresAt });
+    this.saveResetTokens(tokens);
+
+    return token;
+  }
+
+  /**
+   * Validate a password reset token
+   */
+  validateResetToken(token: string): { valid: boolean; uid?: string; email?: string } {
+    const tokens = this.getResetTokens();
+    const tokenData = tokens.find(t => t.token === token);
+
+    if (!tokenData) {
+      return { valid: false };
+    }
+
+    if (tokenData.expiresAt < Date.now()) {
+      // Token expired, clean it up
+      this.saveResetTokens(tokens.filter(t => t.token !== token));
+      return { valid: false };
+    }
+
+    const user = this.getUserById(tokenData.uid);
+    if (!user) {
+      return { valid: false };
+    }
+
+    return { valid: true, uid: user.uid, email: user.email };
+  }
+
+  /**
+   * Reset password using a valid token
+   */
+  async resetPassword(token: string, newPassword: string): Promise<boolean> {
+    const validation = this.validateResetToken(token);
+
+    if (!validation.valid || !validation.uid) {
+      throw new Error('Invalid or expired reset token');
+    }
+
+    // Validate new password
+    if (newPassword.length < 6) {
+      throw new Error('Password must be at least 6 characters');
+    }
+
+    // Update password
+    const credentials = this.getCredentials();
+    const userCreds = credentials.find(c => c.uid === validation.uid);
+
+    if (!userCreds) {
+      throw new Error('User not found');
+    }
+
+    userCreds.passwordHash = await hashPassword(newPassword);
+    this.saveCredentials(credentials);
+
+    // Remove the used token
+    const tokens = this.getResetTokens().filter(t => t.token !== token);
+    this.saveResetTokens(tokens);
+
+    return true;
+  }
+
+  /**
+   * Admin function: Reset a user's password directly (requires admin privileges)
+   */
+  async adminResetPassword(adminUid: string, targetUid: string, newPassword: string): Promise<boolean> {
+    // Verify admin
+    const admin = this.getUserById(adminUid);
+    if (!admin || admin.role !== 'admin') {
+      throw new Error('Unauthorized: Admin privileges required');
+    }
+
+    // Validate new password
+    if (newPassword.length < 6) {
+      throw new Error('Password must be at least 6 characters');
+    }
+
+    // Update target user's password
+    const credentials = this.getCredentials();
+    const userCreds = credentials.find(c => c.uid === targetUid);
+
+    if (!userCreds) {
+      throw new Error('User not found');
+    }
+
+    userCreds.passwordHash = await hashPassword(newPassword);
+    this.saveCredentials(credentials);
+
+    return true;
   }
 }
 

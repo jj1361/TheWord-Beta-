@@ -14,10 +14,11 @@ import NotesPanel from './components/NotesPanel';
 import NoteEditor from './components/NoteEditor';
 import TopicsManager from './components/TopicsManager';
 import VerseHighlighter from './components/VerseHighlighter';
-import { LoginModal, SignupModal } from './components/Auth';
+import { LoginModal, SignupModal, ForgotPasswordModal } from './components/Auth';
 import { AdminPanel } from './components/AdminPanel';
 import PresentationViewer from './components/PresentationViewer';
 import ScripturePresentationView from './components/ScripturePresentationView';
+import SplitView from './components/SplitView';
 import { useAuth } from './contexts/AuthContext';
 import { useTranslation } from './contexts/TranslationContext';
 import { bibleService } from './services/bibleService';
@@ -85,6 +86,7 @@ function ScriptureView() {
   const { currentTranslation } = useTranslation();
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showSignupModal, setShowSignupModal] = useState(false);
+  const [showForgotPasswordModal, setShowForgotPasswordModal] = useState(false);
   const [showAdminPanel, setShowAdminPanel] = useState(false);
 
   const [currentBookId, setCurrentBookId] = useState(urlBookId);
@@ -126,11 +128,21 @@ function ScriptureView() {
     const saved = localStorage.getItem('studyMode');
     return saved !== 'false'; // Default to true if not set
   });
-  const [darkMode, setDarkMode] = useState(() => {
+  // Theme state: 'light', 'dark', or 'sepia'
+  type ThemeMode = 'light' | 'dark' | 'sepia';
+  const [theme, setTheme] = useState<ThemeMode>(() => {
     // Load theme preference from localStorage
-    const saved = localStorage.getItem('darkMode');
-    return saved === 'true';
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark' || saved === 'sepia' || saved === 'light') {
+      return saved;
+    }
+    // Migrate from old darkMode setting
+    const oldDarkMode = localStorage.getItem('darkMode');
+    if (oldDarkMode === 'true') return 'dark';
+    return 'light';
   });
+  // Legacy support: derive darkMode from theme for any code still using it
+  const darkMode = theme === 'dark';
   const [personProfileEnabled, setPersonProfileEnabled] = useState(() => {
     // Load person profile preference from localStorage (default to false/disabled)
     const saved = localStorage.getItem('personProfileEnabled');
@@ -176,6 +188,9 @@ function ScriptureView() {
   // Presentation viewer state
   const [showPresentation, setShowPresentation] = useState(false);
   const [showScripturePresentation, setShowScripturePresentation] = useState(false);
+
+  // Split view state (translation comparison)
+  const [splitViewEnabled, setSplitViewEnabled] = useState(false);
   const [presentationUrl, setPresentationUrl] = useState(() => {
     const saved = localStorage.getItem('presentationUrl');
     // Default to the embed URL format from OneDrive's "Embed" share option
@@ -187,6 +202,7 @@ function ScriptureView() {
   const [highlights, setHighlights] = useState<VerseHighlight[]>(() => notesService.getHighlights());
   const [topics, setTopics] = useState<Topic[]>(() => notesService.getTopics());
   const [showNotesPanel, setShowNotesPanel] = useState(false);
+  const [notesPanelVerseFilter, setNotesPanelVerseFilter] = useState<{ bookId: number; chapter: number; verse: number } | null>(null);
   const [showNoteEditor, setShowNoteEditor] = useState(false);
   const [noteEditorFullscreen, setNoteEditorFullscreen] = useState(false);
   const [noteEditorWideView, setNoteEditorWideView] = useState(false);
@@ -240,16 +256,12 @@ function ScriptureView() {
     return saved ? JSON.parse(saved) : [];
   });
 
-  // Apply theme on mount and when darkMode changes
+  // Apply theme on mount and when theme changes
   useEffect(() => {
-    if (darkMode) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.removeAttribute('data-theme');
-    }
+    document.documentElement.setAttribute('data-theme', theme);
     // Save to localStorage
-    localStorage.setItem('darkMode', darkMode.toString());
-  }, [darkMode]);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
 
   // Save youth mode preference
   useEffect(() => {
@@ -352,10 +364,19 @@ function ScriptureView() {
 
   // Load chapter helper function (without adding to history)
   const loadChapterWithoutHistory = useCallback(async (bookId: number, chapterNum: number, verseNum?: number) => {
+    console.log('[loadChapterWithoutHistory] Called with:', { bookId, chapterNum, verseNum, currentBookId, currentChapter });
+    // Only clear highlight/selection if loading a different chapter
+    const isDifferentChapter = bookId !== currentBookId || chapterNum !== currentChapter;
+    console.log('[loadChapterWithoutHistory] isDifferentChapter:', isDifferentChapter);
+    if (isDifferentChapter) {
+      console.log('[loadChapterWithoutHistory] Clearing highlight/selection/navigated');
+      setHighlightVerse(undefined);
+      setSelectedVerse(undefined);
+      setNavigatedVerse(undefined);
+    } else {
+      console.log('[loadChapterWithoutHistory] Same chapter - NOT clearing highlight');
+    }
     setLoading(true);
-    setHighlightVerse(undefined);
-    setSelectedVerse(undefined);
-    setNavigatedVerse(undefined);
     try {
       const chapterData = await bibleService.loadChapter(bookId, chapterNum, currentTranslation);
 
@@ -405,7 +426,7 @@ function ScriptureView() {
     } finally {
       setLoading(false);
     }
-  }, [currentTranslation]);
+  }, [currentTranslation, currentBookId, currentChapter]);
 
   // Add entry to navigation history
   const addToHistory = (bookId: number, bookName: string, chapterNum: number, verse?: number) => {
@@ -555,6 +576,28 @@ function ScriptureView() {
     setShowNoteEditor(true);
   };
 
+  // Get notes for a specific verse (for showing notes button on verses)
+  const getNotesForVerse = (verseNum: number): Note[] => {
+    return notesService.getNotesForVerse(currentBookId, currentChapter, verseNum);
+  };
+
+  // Handle click on verse notes button - open notes panel filtered to that verse
+  const handleVerseNoteClick = (verseNum: number, verseNotes: Note[]) => {
+    if (verseNotes.length === 1) {
+      // If only one note, open it directly in the editor
+      handleEditNote(verseNotes[0]);
+    } else {
+      // If multiple notes, open the notes panel filtered to this verse
+      setNotesPanelVerseFilter({ bookId: currentBookId, chapter: currentChapter, verse: verseNum });
+      setShowNotesPanel(true);
+    }
+  };
+
+  // Clear the verse filter and show all notes
+  const handleClearNotesPanelVerseFilter = () => {
+    setNotesPanelVerseFilter(null);
+  };
+
   const handleSetHighlight = (verseNum: number, color: HighlightColor) => {
     const verseRef = createVerseReference(verseNum);
     notesService.setHighlight(verseRef, color);
@@ -685,6 +728,31 @@ function ScriptureView() {
     );
   };
 
+  // Get verse text from KJVs phrases (CSV source) when available, otherwise fall back to KJV (XML source)
+  // This ensures the copied text matches what's displayed (e.g., "Lord" vs "LORD" for H136 vs H3068)
+  const getVerseTextForCopy = (verseNum: number): string => {
+    if (!chapter) return '';
+
+    // Try to get text from KJVs (CSV with Strong's numbers) - this is what's displayed
+    const kjvsVerse = chapter.kjvsVerses?.find(v => v.num === verseNum);
+    if (kjvsVerse && kjvsVerse.phrases.length > 0) {
+      // Reconstruct text from phrases, adding spaces between them appropriately
+      return kjvsVerse.phrases
+        .map((p, idx) => {
+          const text = p.text;
+          // Don't add space before punctuation or if text already ends with space
+          if (idx === 0) return text;
+          const prevText = kjvsVerse.phrases[idx - 1].text;
+          if (prevText.endsWith(' ') || /^[,;:.!?'\-]/.test(text)) return text;
+          return ' ' + text;
+        })
+        .join('');
+    }
+
+    // Fall back to KJV (XML source)
+    return chapter.kjvVerses.find(v => v.num === verseNum)?.text || '';
+  };
+
   const handleApplyTextFormat = (style: TextFormatStyle) => {
     if (!highlighterVerse || !highlighterTextSelection) {
       return;
@@ -729,17 +797,21 @@ function ScriptureView() {
 
   // Sync state from URL params and load chapter
   useEffect(() => {
+    console.log('[URL Effect] Triggered with:', { urlBookId, urlChapter, urlVerse, currentBookId, currentChapter });
     // Update state from URL params
     if (urlBookId !== currentBookId || urlChapter !== currentChapter) {
+      console.log('[URL Effect] Updating currentBookId/currentChapter');
       setCurrentBookId(urlBookId);
       setCurrentChapter(urlChapter);
     }
 
     // Load chapter data
+    console.log('[URL Effect] Calling loadChapterWithoutHistory');
     loadChapterWithoutHistory(urlBookId, urlChapter, urlVerse);
 
     // Handle verse highlighting from URL
     if (urlVerse) {
+      console.log('[URL Effect] Setting highlightVerse from URL to:', urlVerse);
       setHighlightVerse(urlVerse);
       setTimeout(() => {
         const verseElement = document.getElementById(`verse-${urlVerse}`);
@@ -798,6 +870,10 @@ function ScriptureView() {
     if (crossRefContext?.verse === verseNum && crossRefContext?.bookId === currentBookId && crossRefContext?.chapter === currentChapter) {
       setCrossRefContext(null);
     } else {
+      // Hide webcam when showing cross references
+      if (webcamEnabled) {
+        setWebcamEnabled(false);
+      }
       setCrossRefContext({
         bookId: currentBookId,
         bookName: chapter?.bookName || '',
@@ -825,6 +901,11 @@ function ScriptureView() {
     const handleKeyPress = (e: KeyboardEvent) => {
       // Only handle keys when not typing in an input field
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+        return;
+      }
+
+      // Also check for contenteditable elements (rich text editors)
+      if (e.target instanceof HTMLElement && e.target.isContentEditable) {
         return;
       }
 
@@ -864,7 +945,8 @@ function ScriptureView() {
             return;
           case ShortcutActions.TOGGLE_DARK_MODE:
             e.preventDefault();
-            setDarkMode(prev => !prev);
+            // Cycle through themes: light -> dark -> sepia -> light
+            setTheme(prev => prev === 'light' ? 'dark' : prev === 'dark' ? 'sepia' : 'light');
             return;
           case ShortcutActions.TOGGLE_STUDY_MODE:
             e.preventDefault();
@@ -952,8 +1034,10 @@ function ScriptureView() {
   }, [keyBuffer, chapter, navigatedVerse, webcamEnabled, screenShareEnabled, handleToggleStudyMode, handleToggleWebcam]);
 
   const loadChapter = async (bookId: number, chapterNum: number) => {
+    console.log('[loadChapter] Called with:', { bookId, chapterNum });
     // Navigate to new URL - this will trigger a re-render with new params
     const path = getScripturePath(bookId, chapterNum);
+    console.log('[loadChapter] Navigating to path:', path);
     navigate(path);
   };
 
@@ -1156,7 +1240,7 @@ function ScriptureView() {
         }
         setWebcamEnabled(enabled);
       },
-      setDarkMode: setDarkMode,
+      setDarkMode: (value: boolean) => setTheme(value ? 'dark' : 'light'),
       setStudyMode: setStudyMode,
       setYouthMode: setYouthMode,
       setFullscreen: setWebcamFullscreen,
@@ -1226,7 +1310,7 @@ function ScriptureView() {
   return (
     <div className="App">
       {/* Fixed Chapter Header with Menu, Title, Navigation, Search, and Feature Toggles */}
-      {chapter && !screenShareEnabled && (
+      {chapter && !screenShareEnabled && !splitViewEnabled && (
         <ChapterHeader
           bookId={currentBookId}
           bookName={chapter.bookName}
@@ -1256,13 +1340,15 @@ function ScriptureView() {
           screenShareEnabled={screenShareEnabled}
           screenShareWithVerses={screenShareWithVerses}
           darkMode={darkMode}
+          theme={theme}
           onToggleProtoSinaitic={() => setUseProtoSinaitic(!useProtoSinaitic)}
           onToggleWebcam={handleToggleWebcam}
           onToggleWebcamSettings={() => setWebcamSettings(!webcamSettings)}
           onToggleWebcamFullscreen={() => setWebcamFullscreen(!webcamFullscreen)}
           onToggleScreenShare={() => setScreenShareEnabled(!screenShareEnabled)}
           onToggleScreenShareWithVerses={() => setScreenShareWithVerses(!screenShareWithVerses)}
-          onToggleDarkMode={() => setDarkMode(!darkMode)}
+          onToggleDarkMode={() => setTheme(prev => prev === 'light' ? 'dark' : prev === 'dark' ? 'sepia' : 'light')}
+          onSetTheme={setTheme}
           // History props
           navigationHistory={navigationHistory}
           historyIndex={historyIndex}
@@ -1295,6 +1381,9 @@ function ScriptureView() {
           onDecreaseTextSize={handleDecreaseTextSize}
           // Help props
           onOpenHelp={() => setShowHelpModal(true)}
+          // Split view props
+          splitViewEnabled={splitViewEnabled}
+          onToggleSplitView={() => setSplitViewEnabled(!splitViewEnabled)}
         />
       )}
 
@@ -1384,6 +1473,8 @@ function ScriptureView() {
                   textSize={textSize}
                   chapterFootnotes={chapterFootnotes}
                   showFootnotes={showFootnotes}
+                  getNotesForVerse={studyMode ? getNotesForVerse : undefined}
+                  onNoteClick={studyMode ? handleVerseNoteClick : undefined}
                 />
               </div>
 
@@ -1410,16 +1501,27 @@ function ScriptureView() {
                     setLexiconData(null);
                     setCrossRefContext(null);
                   }}
-                  onVerseClick={(bookId, chapter, verse) => {
-                    loadChapter(bookId, chapter).then(() => {
+                  onVerseClick={(bookId, chapterNum, verse) => {
+                    console.log('[CrossRef Click] onVerseClick called:', { bookId, chapterNum, verse, currentBookId, currentChapter });
+                    console.log('[CrossRef Click] Same chapter?', bookId === currentBookId && chapterNum === currentChapter);
+                    // If already on the same chapter, just highlight and scroll
+                    if (bookId === currentBookId && chapterNum === currentChapter) {
+                      console.log('[CrossRef Click] Setting highlightVerse to:', verse);
                       setHighlightVerse(verse);
                       setTimeout(() => {
                         const verseElement = document.getElementById(`verse-${verse}`);
                         if (verseElement) {
                           verseElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
                         }
-                      }, 300);
-                    });
+                      }, 100);
+                    } else {
+                      // Navigate to different chapter WITH the verse in the URL
+                      // This ensures the URL effect sets the highlight correctly
+                      console.log('[CrossRef Click] Navigating to different chapter with verse');
+                      const path = getScripturePath(bookId, chapterNum, verse);
+                      console.log('[CrossRef Click] Navigating to path:', path);
+                      navigate(path);
+                    }
                   }}
                   onStrongsClick={handleStrongsClick}
                   crossRefContext={crossRefContext}
@@ -1521,10 +1623,8 @@ function ScriptureView() {
       <VoiceCommandButton
         state={voiceCommands.state}
         isListening={voiceCommands.isListening}
-        isAlwaysOn={voiceCommands.isAlwaysOn}
         isSupported={voiceCommands.isSupported}
         onToggle={voiceCommands.toggleListening}
-        onToggleAlwaysOn={voiceCommands.toggleAlwaysOn}
         feedback={voiceCommands.feedback}
         interimTranscript={voiceCommands.interimTranscript}
         suggestions={voiceCommands.suggestions}
@@ -1558,10 +1658,15 @@ function ScriptureView() {
             onCreateNote={() => handleCreateNote()}
             onNavigateToVerse={navigateToNoteVerse}
             onManageTopics={() => setShowTopicsManager(true)}
+            filterByVerse={notesPanelVerseFilter || undefined}
+            onClearVerseFilter={handleClearNotesPanelVerseFilter}
           />
           <button
             className="notes-panel-close"
-            onClick={() => setShowNotesPanel(false)}
+            onClick={() => {
+              setShowNotesPanel(false);
+              setNotesPanelVerseFilter(null);
+            }}
           >
             ×
           </button>
@@ -1630,12 +1735,12 @@ function ScriptureView() {
           bookName={chapter.bookName}
           chapterNum={chapter.chapterNum}
           bookId={currentBookId}
-          verseText={chapter.kjvVerses.find(v => v.num === highlighterVerse)?.text || ''}
+          verseText={getVerseTextForCopy(highlighterVerse)}
           totalVerses={chapter.kjvVerses.length}
           onCopyVerseRange={async (startVerse, endVerse) => {
             const versesToCopy = chapter.kjvVerses
               .filter(v => v.num >= startVerse && v.num <= endVerse)
-              .map(v => `${v.num}. ${v.text}`)
+              .map(v => `${v.num}. ${getVerseTextForCopy(v.num)}`)
               .join('\n');
             const reference = startVerse === endVerse
               ? `${chapter.bookName} ${chapter.chapterNum}:${startVerse}`
@@ -1674,12 +1779,24 @@ function ScriptureView() {
           setShowLoginModal(false);
           setShowSignupModal(true);
         }}
+        onForgotPassword={() => {
+          setShowLoginModal(false);
+          setShowForgotPasswordModal(true);
+        }}
       />
       <SignupModal
         isOpen={showSignupModal}
         onClose={() => setShowSignupModal(false)}
         onSwitchToLogin={() => {
           setShowSignupModal(false);
+          setShowLoginModal(true);
+        }}
+      />
+      <ForgotPasswordModal
+        isOpen={showForgotPasswordModal}
+        onClose={() => setShowForgotPasswordModal(false)}
+        onBackToLogin={() => {
+          setShowForgotPasswordModal(false);
           setShowLoginModal(true);
         }}
       />
@@ -1710,6 +1827,17 @@ function ScriptureView() {
             loadChapter(bookId, chapterNum);
           }}
           initialVerse={selectedVerse || navigatedVerse || 1}
+        />
+      )}
+
+      {/* Split View for Translation Comparison */}
+      {splitViewEnabled && (
+        <SplitView
+          bookId={currentBookId}
+          chapterNum={currentChapter}
+          textSize={textSize}
+          highlightVerse={highlightVerse}
+          onClose={() => setSplitViewEnabled(false)}
         />
       )}
 

@@ -136,6 +136,71 @@
   background: rgba(167, 139, 250, 0.25);
 }
 
+/* Verse Notes Button */
+.verse-notes-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin-left: 8px;
+  border: none;
+  border-radius: 4px;
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.verse-container:hover .verse-notes-btn {
+  opacity: 1;
+}
+
+.verse-notes-btn:hover {
+  background: rgba(245, 158, 11, 0.2);
+  transform: scale(1.1);
+}
+
+.verse-notes-btn .notes-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 14px;
+  height: 14px;
+  padding: 0 3px;
+  background: #ef4444;
+  color: white;
+  font-size: 9px;
+  font-weight: 600;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[data-theme='dark'] .verse-notes-btn {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+}
+
+[data-theme='dark'] .verse-notes-btn:hover {
+  background: rgba(251, 191, 36, 0.25);
+}
+
+[data-theme='sepia'] .verse-notes-btn {
+  background: rgba(180, 83, 9, 0.1);
+  color: #b45309;
+}
+
+[data-theme='sepia'] .verse-notes-btn:hover {
+  background: rgba(180, 83, 9, 0.2);
+}
+
 /* Interlinear Toggle Button */
 .interlinear-toggle-btn {
   display: inline-flex;
@@ -807,6 +872,156 @@
 [data-theme='dark'] .clickable-phrase:hover {
   background: rgba(251, 191, 36, 0.2);
   color: #fbbf24;
+}
+
+/* Sepia Theme Support */
+[data-theme='sepia'] .verse-container {
+  background: #e3d9ce;
+  box-shadow: 0 1px 3px rgba(42, 45, 63, 0.15);
+}
+
+[data-theme='sepia'] .verse-container.clickable:hover {
+  background-color: rgba(70, 74, 109, 0.1);
+  box-shadow: 0 4px 8px rgba(42, 45, 63, 0.2);
+}
+
+[data-theme='sepia'] .verse-container.selected {
+  background: #d9cfc3;
+  border-color: #464a6d;
+  box-shadow: 0 4px 12px rgba(70, 74, 109, 0.2);
+}
+
+[data-theme='sepia'] .verse-number {
+  background: #464a6d;
+  color: #f5f0e6;
+}
+
+[data-theme='sepia'] .verse-text {
+  color: #2a2d3f;
+}
+
+[data-theme='sepia'] .interlinear-toggle {
+  background: #e3d9ce;
+  color: #464a6d;
+}
+
+[data-theme='sepia'] .interlinear-toggle:hover {
+  background: #d9cfc3;
+}
+
+[data-theme='sepia'] .interlinear-toggle.active {
+  background: #464a6d;
+  color: #f5f0e6;
+}
+
+[data-theme='sepia'] .interlinear-section {
+  border-top-color: #a2a8b9;
+}
+
+[data-theme='sepia'] .interlinear-header {
+  color: #464a6d;
+}
+
+[data-theme='sepia'] .interlinear-hint {
+  color: #2a2d3f;
+  background: #e3d9ce;
+}
+
+[data-theme='sepia'] .proto-toggle-btn {
+  background: linear-gradient(135deg, #464a6d 0%, #2a2d3f 100%);
+}
+
+[data-theme='sepia'] .proto-toggle-btn.active {
+  background: linear-gradient(135deg, #2a2d3f 0%, #464a6d 100%);
+}
+
+[data-theme='sepia'] .close-interlinear-btn {
+  background: rgba(239, 68, 68, 0.1);
+  color: #dc2626;
+}
+
+[data-theme='sepia'] .close-interlinear-btn:hover {
+  background: rgba(239, 68, 68, 0.2);
+}
+
+[data-theme='sepia'] .interlinear-words {
+  background: #f5f0e6;
+}
+
+[data-theme='sepia'] .interlinear-word {
+  background: #e3d9ce;
+  box-shadow: 0 2px 4px rgba(42, 45, 63, 0.15);
+}
+
+[data-theme='sepia'] .interlinear-word:hover {
+  box-shadow: 0 4px 8px rgba(70, 74, 109, 0.2);
+}
+
+[data-theme='sepia'] .word-original {
+  color: #2a2d3f;
+}
+
+[data-theme='sepia'] .word-transliteration {
+  color: #464a6d;
+}
+
+[data-theme='sepia'] .word-english {
+  color: #2a2d3f;
+}
+
+[data-theme='sepia'] .word-strongs {
+  background: #464a6d;
+  color: #f5f0e6;
+}
+
+[data-theme='sepia'] .word-strongs.clickable:hover {
+  background: #2a2d3f;
+  box-shadow: 0 2px 4px rgba(70, 74, 109, 0.2);
+}
+
+[data-theme='sepia'] .word-pos {
+  background: #a2a8b9;
+  color: #2a2d3f;
+}
+
+[data-theme='sepia'] .word-pos:hover {
+  background: #464a6d;
+  color: #f5f0e6;
+}
+
+[data-theme='sepia'] .pos-tooltip-content {
+  background: linear-gradient(135deg, #f5f0e6 0%, #e3d9ce 100%);
+  border: 1px solid rgba(70, 74, 109, 0.2);
+  box-shadow: 0 10px 40px rgba(42, 45, 63, 0.2), 0 0 0 1px rgba(70, 74, 109, 0.1);
+}
+
+[data-theme='sepia'] .pos-tooltip-meaning {
+  color: #2a2d3f;
+}
+
+[data-theme='sepia'] .pos-tooltip-parse {
+  color: #464a6d;
+  border-top-color: rgba(70, 74, 109, 0.2);
+}
+
+[data-theme='sepia'] .pos-tooltip-content::after {
+  border-top-color: #e3d9ce;
+}
+
+[data-theme='sepia'] .person-link {
+  color: #464a6d;
+  text-decoration-color: rgba(70, 74, 109, 0.3);
+}
+
+[data-theme='sepia'] .person-link:hover {
+  color: #2a2d3f;
+  text-decoration-color: #2a2d3f;
+  background: rgba(70, 74, 109, 0.1);
+}
+
+[data-theme='sepia'] .clickable-phrase:hover {
+  background: rgba(70, 74, 109, 0.15);
+  color: #2a2d3f;
 }
 
 /* Youth Mode Styles */

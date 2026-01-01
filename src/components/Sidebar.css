@@ -410,6 +410,26 @@
   border-color: #374151;
 }
 
+/* Sepia mode support */
+[data-theme="sepia"] .sidebar {
+  background: #e3d9ce;
+  box-shadow: 0 8px 16px rgba(42, 45, 63, 0.2);
+}
+
+[data-theme="sepia"] .sidebar-signin-tooltip {
+  background: #f5f0e6;
+}
+
+[data-theme="sepia"] .sidebar-signin-tooltip p {
+  color: #2a2d3f;
+}
+
+[data-theme="sepia"] .sidebar-component-wrapper .bookmarks-dropdown-menu,
+[data-theme="sepia"] .sidebar-component-wrapper .history-dropdown-menu {
+  background: #f5f0e6;
+  border-color: #a2a8b9;
+}
+
 @media (max-width: 1024px) {
   .sidebar {
     padding: 8px 12px;

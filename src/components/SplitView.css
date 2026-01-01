@@ -1,0 +1,473 @@
+/* SplitView Container Styles - Single Scrollbar Layout */
+
+.split-view-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary, #ffffff);
+}
+
+/* Split View Header */
+.split-view-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #14192f 0%, #394786 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+.split-view-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.split-view-title .split-icon {
+  font-size: 24px;
+  opacity: 0.9;
+}
+
+.split-view-title .pane-count {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.split-view-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.split-view-add-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: rgba(34, 197, 94, 0.2);
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  border-radius: 8px;
+  color: #86efac;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.split-view-add-btn:hover {
+  background: rgba(34, 197, 94, 0.35);
+  border-color: rgba(34, 197, 94, 0.6);
+  color: white;
+}
+
+.split-view-add-btn span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.split-view-close-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  border-radius: 8px;
+  color: #fca5a5;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.split-view-close-btn:hover {
+  background: rgba(239, 68, 68, 0.35);
+  border-color: rgba(239, 68, 68, 0.6);
+  color: white;
+}
+
+.split-view-close-btn span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Pane Headers Row (fixed below main header) */
+.split-view-pane-headers {
+  display: flex;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #1a2140 0%, #2d3a6a 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pane-header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.pane-header:last-child {
+  border-right: none;
+}
+
+.pane-header.primary {
+  flex: 1;
+}
+
+.pane-header-dropdown-container {
+  position: relative;
+  flex: 1;
+}
+
+.pane-header-translation-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  text-align: left;
+}
+
+.pane-header-translation-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.pane-header-translation-btn .translation-abbrev {
+  font-weight: 700;
+  font-size: 14px;
+  min-width: 40px;
+}
+
+.pane-header-translation-btn .translation-name {
+  font-size: 12px;
+  opacity: 0.85;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pane-header-translation-btn .dropdown-arrow {
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+/* Pane Header Dropdown */
+.pane-header-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  min-width: 200px;
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.dropdown-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 12px;
+  background: transparent;
+  border: none;
+  color: #e2e8f0;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: left;
+}
+
+.dropdown-option:hover {
+  background: rgba(99, 102, 241, 0.2);
+}
+
+.dropdown-option.active {
+  background: rgba(99, 102, 241, 0.3);
+}
+
+.dropdown-option .option-abbrev {
+  font-weight: 600;
+  font-size: 13px;
+  min-width: 40px;
+  color: #a5b4fc;
+}
+
+.dropdown-option .option-name {
+  font-size: 13px;
+  flex: 1;
+}
+
+.dropdown-option .check-mark {
+  color: #22c55e;
+  font-size: 14px;
+}
+
+/* Pane Remove Button */
+.pane-header-remove-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-left: 8px;
+  background: rgba(239, 68, 68, 0.2);
+  border: none;
+  border-radius: 6px;
+  color: #fca5a5;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.pane-header-remove-btn:hover {
+  background: rgba(239, 68, 68, 0.4);
+  color: white;
+}
+
+/* Single Scroll Container */
+.split-view-scroll-container {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.split-view-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Verse Row - contains all verse cells for one verse number */
+.split-view-verse-row {
+  display: flex;
+  border-bottom: 1px solid var(--border-secondary, #e2e8f0);
+}
+
+.split-view-verse-row:last-child {
+  border-bottom: none;
+}
+
+.split-view-verse-row.highlighted {
+  background: rgba(251, 191, 36, 0.15);
+}
+
+/* Verse Cell - one cell per translation */
+.split-view-verse-cell {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  padding: 12px 16px;
+  line-height: 1.7;
+  border-right: 1px solid var(--border-secondary, #e2e8f0);
+  align-items: flex-start;
+}
+
+.split-view-verse-cell:last-child {
+  border-right: none;
+}
+
+.split-view-verse-cell .verse-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 24px;
+  padding: 0 6px;
+  background: var(--verse-number-bg, #6366f1);
+  color: var(--verse-number-text, white);
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.split-view-verse-cell .verse-text {
+  color: var(--text-primary, #1e293b);
+  flex: 1;
+}
+
+.split-view-verse-cell .verse-empty {
+  color: var(--text-tertiary, #94a3b8);
+  font-style: italic;
+}
+
+/* Loading State */
+.split-view-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  gap: 16px;
+  color: var(--text-secondary, #64748b);
+}
+
+.split-view-loading .loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(99, 102, 241, 0.2);
+  border-top-color: #6366f1;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .split-view-header {
+    padding: 10px 16px;
+  }
+
+  .split-view-title {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .split-view-title .split-icon {
+    font-size: 20px;
+  }
+
+  .split-view-title .pane-count {
+    font-size: 12px;
+  }
+
+  .split-view-add-btn,
+  .split-view-close-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .split-view-verse-cell {
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .split-view-header {
+    padding: 8px 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .split-view-title {
+    font-size: 14px;
+  }
+
+  .split-view-title .split-icon {
+    font-size: 18px;
+  }
+
+  .split-view-title .pane-count {
+    display: none;
+  }
+
+  .split-view-actions {
+    gap: 8px;
+  }
+
+  .split-view-add-btn,
+  .split-view-close-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .split-view-add-btn span,
+  .split-view-close-btn span {
+    font-size: 14px;
+  }
+
+  /* Stack verse cells vertically on mobile */
+  .split-view-verse-row {
+    flex-direction: column;
+  }
+
+  .split-view-verse-cell {
+    border-right: none;
+    border-bottom: 1px solid var(--border-tertiary, #f1f5f9);
+  }
+
+  .split-view-verse-cell:last-child {
+    border-bottom: none;
+  }
+
+  .pane-header {
+    padding: 6px 8px;
+  }
+
+  .pane-header-translation-btn {
+    padding: 5px 8px;
+    gap: 6px;
+  }
+
+  .pane-header-translation-btn .translation-abbrev {
+    font-size: 12px;
+  }
+
+  .pane-header-translation-btn .translation-name {
+    font-size: 11px;
+  }
+}
+
+/* Dark theme */
+[data-theme='dark'] .split-view-container {
+  background: #0f172a;
+}
+
+[data-theme='dark'] .split-view-scroll-container {
+  background: #0f172a;
+}
+
+[data-theme='dark'] .split-view-verse-row {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .split-view-verse-cell {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .split-view-verse-cell .verse-text {
+  color: #e2e8f0;
+}
+
+/* Sepia theme */
+[data-theme='sepia'] .split-view-container {
+  background: #f5f0e6;
+}
+
+[data-theme='sepia'] .split-view-scroll-container {
+  background: #f5f0e6;
+}
+
+[data-theme='sepia'] .split-view-verse-cell .verse-text {
+  color: #2a2d3f;
+}

@@ -60,34 +60,123 @@ class NotesService {
 
   /**
    * Migrate anonymous data to user-scoped storage
-   * Call this when a user logs in for the first time
+   * Call this when a user logs in - merges anonymous data with existing user data
    */
   migrateAnonymousDataToUser(userId: string): void {
     // Get anonymous data
-    const anonymousNotes = localStorage.getItem(BASE_STORAGE_KEYS.NOTES);
-    const anonymousHighlights = localStorage.getItem(BASE_STORAGE_KEYS.HIGHLIGHTS);
-    const anonymousTopics = localStorage.getItem(BASE_STORAGE_KEYS.TOPICS);
-    const anonymousFormatting = localStorage.getItem(BASE_STORAGE_KEYS.TEXT_FORMATTING);
+    const anonymousNotesStr = localStorage.getItem(BASE_STORAGE_KEYS.NOTES);
+    const anonymousHighlightsStr = localStorage.getItem(BASE_STORAGE_KEYS.HIGHLIGHTS);
+    const anonymousTopicsStr = localStorage.getItem(BASE_STORAGE_KEYS.TOPICS);
+    const anonymousFormattingStr = localStorage.getItem(BASE_STORAGE_KEYS.TEXT_FORMATTING);
 
-    // Check if user already has data
+    // If no anonymous data exists, nothing to migrate
+    if (!anonymousNotesStr && !anonymousHighlightsStr && !anonymousTopicsStr && !anonymousFormattingStr) {
+      return;
+    }
+
+    // Get user-scoped storage keys
     const userNotesKey = `user-${userId}-${BASE_STORAGE_KEYS.NOTES}`;
-    const userHasData = localStorage.getItem(userNotesKey) !== null;
+    const userHighlightsKey = `user-${userId}-${BASE_STORAGE_KEYS.HIGHLIGHTS}`;
+    const userTopicsKey = `user-${userId}-${BASE_STORAGE_KEYS.TOPICS}`;
+    const userFormattingKey = `user-${userId}-${BASE_STORAGE_KEYS.TEXT_FORMATTING}`;
 
-    if (!userHasData) {
-      // Migrate anonymous data to user storage
-      if (anonymousNotes) {
-        localStorage.setItem(userNotesKey, anonymousNotes);
-      }
-      if (anonymousHighlights) {
-        localStorage.setItem(`user-${userId}-${BASE_STORAGE_KEYS.HIGHLIGHTS}`, anonymousHighlights);
-      }
-      if (anonymousTopics) {
-        localStorage.setItem(`user-${userId}-${BASE_STORAGE_KEYS.TOPICS}`, anonymousTopics);
-      }
-      if (anonymousFormatting) {
-        localStorage.setItem(`user-${userId}-${BASE_STORAGE_KEYS.TEXT_FORMATTING}`, anonymousFormatting);
+    // Merge notes (by ID to avoid duplicates)
+    if (anonymousNotesStr) {
+      const anonymousNotes: Note[] = JSON.parse(anonymousNotesStr);
+      const userNotesStr = localStorage.getItem(userNotesKey);
+      const userNotes: Note[] = userNotesStr ? JSON.parse(userNotesStr) : [];
+      const existingIds = new Set(userNotes.map(n => n.id));
+      const newNotes = anonymousNotes.filter(n => !existingIds.has(n.id));
+      if (newNotes.length > 0) {
+        localStorage.setItem(userNotesKey, JSON.stringify([...userNotes, ...newNotes]));
       }
     }
+
+    // Merge highlights (by verse reference to avoid duplicates)
+    if (anonymousHighlightsStr) {
+      const anonymousHighlights: VerseHighlight[] = JSON.parse(anonymousHighlightsStr);
+      const userHighlightsStr = localStorage.getItem(userHighlightsKey);
+      const userHighlights: VerseHighlight[] = userHighlightsStr ? JSON.parse(userHighlightsStr) : [];
+      const existingRefs = new Set(userHighlights.map(h =>
+        `${h.verses.bookId}-${h.verses.chapter}-${h.verses.startVerse}-${h.verses.endVerse}`
+      ));
+      const newHighlights = anonymousHighlights.filter(h =>
+        !existingRefs.has(`${h.verses.bookId}-${h.verses.chapter}-${h.verses.startVerse}-${h.verses.endVerse}`)
+      );
+      if (newHighlights.length > 0) {
+        localStorage.setItem(userHighlightsKey, JSON.stringify([...userHighlights, ...newHighlights]));
+      }
+    }
+
+    // Merge topics (by name to avoid duplicates)
+    if (anonymousTopicsStr) {
+      const anonymousTopics: Topic[] = JSON.parse(anonymousTopicsStr);
+      const userTopicsStr = localStorage.getItem(userTopicsKey);
+      const userTopics: Topic[] = userTopicsStr ? JSON.parse(userTopicsStr) : [];
+      const existingNames = new Set(userTopics.map(t => t.name.toLowerCase()));
+      const newTopics = anonymousTopics.filter(t => !existingNames.has(t.name.toLowerCase()));
+      if (newTopics.length > 0) {
+        localStorage.setItem(userTopicsKey, JSON.stringify([...userTopics, ...newTopics]));
+      }
+    }
+
+    // Merge text formatting (by verse+offset to avoid duplicates)
+    if (anonymousFormattingStr) {
+      const anonymousFormatting: TextFormatting[] = JSON.parse(anonymousFormattingStr);
+      const userFormattingStr = localStorage.getItem(userFormattingKey);
+      const userFormatting: TextFormatting[] = userFormattingStr ? JSON.parse(userFormattingStr) : [];
+      const existingRefs = new Set(userFormatting.map(f =>
+        `${f.bookId}-${f.chapter}-${f.verse}-${f.startOffset}-${f.endOffset}`
+      ));
+      const newFormatting = anonymousFormatting.filter(f =>
+        !existingRefs.has(`${f.bookId}-${f.chapter}-${f.verse}-${f.startOffset}-${f.endOffset}`)
+      );
+      if (newFormatting.length > 0) {
+        localStorage.setItem(userFormattingKey, JSON.stringify([...userFormatting, ...newFormatting]));
+      }
+    }
+
+    // Clear anonymous data after successful migration
+    localStorage.removeItem(BASE_STORAGE_KEYS.NOTES);
+    localStorage.removeItem(BASE_STORAGE_KEYS.HIGHLIGHTS);
+    localStorage.removeItem(BASE_STORAGE_KEYS.TOPICS);
+    localStorage.removeItem(BASE_STORAGE_KEYS.TEXT_FORMATTING);
+  }
+
+  /**
+   * Check if there is orphaned anonymous data that wasn't migrated
+   */
+  hasOrphanedAnonymousData(): boolean {
+    return !!(
+      localStorage.getItem(BASE_STORAGE_KEYS.NOTES) ||
+      localStorage.getItem(BASE_STORAGE_KEYS.HIGHLIGHTS) ||
+      localStorage.getItem(BASE_STORAGE_KEYS.TOPICS) ||
+      localStorage.getItem(BASE_STORAGE_KEYS.TEXT_FORMATTING)
+    );
+  }
+
+  /**
+   * Recover orphaned anonymous data by merging it with current user data
+   * Call this if user reports missing notes after login
+   */
+  recoverOrphanedData(): { notes: number; highlights: number; topics: number; formatting: number } {
+    if (!this.currentUserId) {
+      return { notes: 0, highlights: 0, topics: 0, formatting: 0 };
+    }
+
+    const beforeNotes = this.getNotes().length;
+    const beforeHighlights = this.getHighlights().length;
+    const beforeTopics = this.getTopics().length;
+    const beforeFormatting = this.getTextFormatting().length;
+
+    this.migrateAnonymousDataToUser(this.currentUserId);
+
+    return {
+      notes: this.getNotes().length - beforeNotes,
+      highlights: this.getHighlights().length - beforeHighlights,
+      topics: this.getTopics().length - beforeTopics,
+      formatting: this.getTextFormatting().length - beforeFormatting,
+    };
   }
 
   /**

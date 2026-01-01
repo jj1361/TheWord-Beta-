@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import { AuthProvider } from './contexts/AuthContext';
 import { TranslationProvider } from './contexts/TranslationContext';
+import { QuizProvider } from './contexts/QuizContext';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -15,7 +16,9 @@ root.render(
     <BrowserRouter>
       <AuthProvider>
         <TranslationProvider>
-          <App />
+          <QuizProvider>
+            <App />
+          </QuizProvider>
         </TranslationProvider>
       </AuthProvider>
     </BrowserRouter>

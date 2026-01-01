@@ -177,6 +177,93 @@
   text-decoration: underline;
 }
 
+/* Forgot Password Link */
+
+.auth-forgot-password {
+  text-align: right;
+  margin-top: -8px;
+}
+
+.auth-forgot-btn {
+  background: none;
+  border: none;
+  color: var(--primary-color, #4f46e5);
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.auth-forgot-btn:hover {
+  text-decoration: underline;
+}
+
+/* Token Display */
+
+.auth-token-display {
+  background: var(--bg-secondary, #f5f5f5);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.auth-token-display label {
+  font-size: 13px;
+  color: var(--text-secondary, #666);
+}
+
+.auth-token-code {
+  font-family: monospace;
+  font-size: 12px;
+  background: var(--bg-primary, #ffffff);
+  padding: 8px;
+  border-radius: 4px;
+  word-break: break-all;
+  border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.auth-copy-btn {
+  align-self: flex-end;
+  padding: 6px 12px;
+  background: var(--primary-color, #4f46e5);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.auth-copy-btn:hover {
+  background: var(--primary-hover, #4338ca);
+}
+
+/* Success Message */
+
+.auth-success-message {
+  text-align: center;
+  padding: 16px;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: 8px;
+  color: #16a34a;
+  margin-bottom: 16px;
+}
+
+[data-theme="dark"] .auth-token-display {
+  background: var(--bg-secondary, #16213e);
+}
+
+[data-theme="dark"] .auth-token-code {
+  background: var(--bg-primary, #1a1a2e);
+  border-color: var(--border-color, #2a2a4a);
+}
+
+[data-theme="dark"] .auth-success-message {
+  background: rgba(34, 197, 94, 0.15);
+}
+
 /* Header Auth Button */
 
 .auth-header-btn {

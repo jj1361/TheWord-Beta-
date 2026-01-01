@@ -4,6 +4,8 @@ import BookmarksPanel from './BookmarksPanel';
 import { HistoryEntry, Bookmark } from '../types/history';
 import './HamburgerMenu.css';
 
+type ThemeMode = 'light' | 'dark' | 'sepia';
+
 interface HamburgerMenuProps {
   useProtoSinaitic: boolean;
   webcamEnabled: boolean;
@@ -13,6 +15,7 @@ interface HamburgerMenuProps {
   youthMode: boolean;
   studyMode: boolean;
   darkMode: boolean;
+  theme?: ThemeMode;
   personProfileEnabled: boolean;
   onToggleProtoSinaitic: () => void;
   onToggleWebcam: () => void;
@@ -23,6 +26,7 @@ interface HamburgerMenuProps {
   onToggleYouthMode: () => void;
   onToggleStudyMode: () => void;
   onToggleDarkMode: () => void;
+  onSetTheme?: (theme: ThemeMode) => void;
   onTogglePersonProfile: () => void;
   // History props
   navigationHistory: HistoryEntry[];
@@ -108,6 +112,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
   youthMode,
   studyMode,
   darkMode,
+  theme,
   personProfileEnabled,
   onToggleProtoSinaitic,
   onToggleWebcam,
@@ -118,6 +123,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
   onToggleYouthMode,
   onToggleStudyMode,
   onToggleDarkMode,
+  onSetTheme,
   onTogglePersonProfile,
   navigationHistory,
   historyIndex,
@@ -241,12 +247,40 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
               active={useProtoSinaitic}
               onClick={() => handleItemClick(onToggleProtoSinaitic)}
             />
-            <MenuItem
-              icon={darkMode ? '☀️' : '🌙'}
-              label={darkMode ? 'Light Mode' : 'Dark Mode'}
-              active={darkMode}
-              onClick={() => handleItemClick(onToggleDarkMode)}
-            />
+            {/* Theme Slider */}
+            <div className="menu-theme-slider">
+              <span className="menu-item-icon">🎨</span>
+              <span className="menu-item-label">Theme</span>
+              <div className="theme-slider-container">
+                <button
+                  className={`theme-option ${theme === 'light' ? 'active' : ''}`}
+                  onClick={() => onSetTheme?.('light')}
+                  title="Light"
+                >
+                  ☀️
+                </button>
+                <button
+                  className={`theme-option ${theme === 'sepia' ? 'active' : ''}`}
+                  onClick={() => onSetTheme?.('sepia')}
+                  title="Sepia"
+                >
+                  📜
+                </button>
+                <button
+                  className={`theme-option ${theme === 'dark' ? 'active' : ''}`}
+                  onClick={() => onSetTheme?.('dark')}
+                  title="Dark"
+                >
+                  🌙
+                </button>
+                <div
+                  className="theme-slider-indicator"
+                  style={{
+                    transform: `translateX(${theme === 'light' ? '0' : theme === 'sepia' ? '100%' : '200%'})`
+                  }}
+                />
+              </div>
+            </div>
 
             {/* Text Size Control */}
             <div className="menu-text-size-control">
@@ -344,7 +378,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
             />
             {!isSignedIn && (
               <div className="menu-signin-hint">
-                <span>Sign in to access notes</span>
+                <span>Sign in to sync notes</span>
                 <button className="menu-signin-btn" onClick={onSignInClick}>
                   Sign In
                 </button>
