@@ -83,8 +83,6 @@
 
 /* Text Size Controls in Nav Row */
 .chapter-header-text-size {
-  position: absolute;
-  left: 60px;
   display: flex;
   align-items: center;
   gap: 8px;

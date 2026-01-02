@@ -312,12 +312,12 @@
   color: #464a6d;
 }
 
-/* Sepia theme - highlighted verse */
+/* Sepia theme - highlighted verse (same as light theme) */
 [data-theme="sepia"] .highlight-verse .verse-container {
-  background: linear-gradient(135deg, #d9cfc3 0%, #c9bfb3 100%);
-  border-left: 4px solid #464a6d;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-left: 4px solid #f59e0b;
   padding-left: 16px;
-  box-shadow: 0 2px 8px rgba(70, 74, 109, 0.2);
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.25);
 }
 
 @media (max-width: 768px) {

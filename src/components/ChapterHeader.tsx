@@ -323,33 +323,33 @@ const ChapterHeader: React.FC<ChapterHeaderProps> = ({
           />
         </div>
 
-        {/* Left: Text Size Controls */}
-        <div className="chapter-header-text-size">
-          <div className="text-size-controls">
-            <button
-              className="text-size-btn"
-              onClick={onDecreaseTextSize}
-              disabled={textSize <= minTextSize}
-              title="Decrease text size"
-              aria-label="Decrease text size"
-            >
-              A-
-            </button>
-            <span className="text-size-value">{textSize}px</span>
-            <button
-              className="text-size-btn"
-              onClick={onIncreaseTextSize}
-              disabled={textSize >= maxTextSize}
-              title="Increase text size"
-              aria-label="Increase text size"
-            >
-              A+
-            </button>
-          </div>
-        </div>
-
         {/* Center: Navigation with Expandable Search */}
         <div className="chapter-header-nav">
+          {/* Text Size Controls - left of navigation buttons */}
+          <div className="chapter-header-text-size">
+            <div className="text-size-controls">
+              <button
+                className="text-size-btn"
+                onClick={onDecreaseTextSize}
+                disabled={textSize <= minTextSize}
+                title="Decrease text size"
+                aria-label="Decrease text size"
+              >
+                A-
+              </button>
+              <span className="text-size-value">{textSize}px</span>
+              <button
+                className="text-size-btn"
+                onClick={onIncreaseTextSize}
+                disabled={textSize >= maxTextSize}
+                title="Increase text size"
+                aria-label="Increase text size"
+              >
+                A+
+              </button>
+            </div>
+          </div>
+
           <button
             className="chapter-nav-btn"
             onClick={handlePreviousChapter}

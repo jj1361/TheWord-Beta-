@@ -5,7 +5,7 @@
  * Supports local images/videos, YouTube, and Vimeo embeds.
  */
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useRef, useEffect } from 'react';
 import {
   MediaItem,
   getVideoEmbedUrl,
@@ -22,9 +22,53 @@ interface VerseMediaCarouselProps {
 const VerseMediaCarousel: React.FC<VerseMediaCarouselProps> = ({ media, onClose }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const fullscreenRef = useRef<HTMLDivElement>(null);
 
   const currentItem = media[currentIndex];
   const hasMultipleItems = media.length > 1;
+
+  // Handle browser fullscreen change events
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      if (!document.fullscreenElement) {
+        setIsFullscreen(false);
+      }
+    };
+
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    return () => {
+      document.removeEventListener('fullscreenchange', handleFullscreenChange);
+    };
+  }, []);
+
+  // Enter true fullscreen mode
+  const enterFullscreen = useCallback(async () => {
+    setIsFullscreen(true);
+    // Wait for the overlay to render, then request fullscreen
+    setTimeout(async () => {
+      if (fullscreenRef.current) {
+        try {
+          await fullscreenRef.current.requestFullscreen();
+        } catch (err) {
+          // Fullscreen not supported or denied, modal will still show
+          console.log('Fullscreen not available, using modal fallback');
+        }
+      }
+    }, 0);
+  }, []);
+
+  // Exit fullscreen mode
+  const exitFullscreen = useCallback(async () => {
+    if (document.fullscreenElement) {
+      try {
+        await document.exitFullscreen();
+      } catch (err) {
+        // Ignore errors
+      }
+    }
+    setIsFullscreen(false);
+  }, []);
 
   const goToPrevious = useCallback(() => {
     setIsVideoPlaying(false);
@@ -49,10 +93,14 @@ const VerseMediaCarousel: React.FC<VerseMediaCarouselProps> = ({ media, onClose 
       } else if (e.key === 'ArrowRight') {
         goToNext();
       } else if (e.key === 'Escape') {
-        onClose();
+        if (isFullscreen) {
+          exitFullscreen();
+        } else {
+          onClose();
+        }
       }
     },
-    [goToPrevious, goToNext, onClose]
+    [goToPrevious, goToNext, onClose, isFullscreen, exitFullscreen]
   );
 
   const renderMediaContent = () => {
@@ -65,12 +113,23 @@ const VerseMediaCarousel: React.FC<VerseMediaCarouselProps> = ({ media, onClose 
             src={currentItem.src}
             alt={currentItem.title || 'Verse media'}
             className="carousel-image"
+            onClick={() => setIsFullscreen(true)}
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.src = '/media/placeholder-image.svg';
               target.onerror = null;
             }}
           />
+          <button
+            className="carousel-fullscreen-btn"
+            onClick={enterFullscreen}
+            aria-label="View fullscreen"
+            title="View fullscreen"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z" />
+            </svg>
+          </button>
         </div>
       );
     }
@@ -243,6 +302,36 @@ const VerseMediaCarousel: React.FC<VerseMediaCarouselProps> = ({ media, onClose 
       {hasMultipleItems && (
         <div className="carousel-counter">
           {currentIndex + 1} / {media.length}
+        </div>
+      )}
+
+      {/* Fullscreen overlay for images */}
+      {isFullscreen && currentItem?.type === 'image' && (
+        <div
+          ref={fullscreenRef}
+          className="carousel-fullscreen-overlay"
+          onClick={exitFullscreen}
+        >
+          <button
+            className="carousel-fullscreen-close"
+            onClick={exitFullscreen}
+            aria-label="Exit fullscreen"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            </svg>
+          </button>
+          <img
+            src={currentItem.src}
+            alt={currentItem.title || 'Verse media fullscreen'}
+            className="carousel-fullscreen-image"
+            onClick={(e) => e.stopPropagation()}
+          />
+          {currentItem.title && (
+            <div className="carousel-fullscreen-caption">
+              {currentItem.title}
+            </div>
+          )}
         </div>
       )}
     </div>

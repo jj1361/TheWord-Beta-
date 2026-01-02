@@ -129,11 +129,11 @@ export const VERSE_MEDIA_CONFIG: VerseMediaMapping[] = [
     verse: 3,
     media: [
       // {
-      //   id: 'gen-1-1-creation',
+      //   id: 'gen-33-12-creation',
       //   type: 'image',
-      //   src: '/media/verses/creation-light.png',
-      //   title: 'Creation of Light',
-      //   description: 'Artistic representation of the creation of light',
+      //   src: '/media/verses/jacobesau-journey.png',
+      //   title: 'Jacob & Esau Journey',
+      //   description: 'Path Yacob and Esau took',
       //   order: 1,
       // },
       // Example YouTube video
@@ -168,16 +168,16 @@ export const VERSE_MEDIA_CONFIG: VerseMediaMapping[] = [
 
   // Example: Psalm 23:1 - "The Lord is my shepherd..."
   {
-    bookId: 19, // Psalms
-    chapter: 23,
-    verse: 1,
+    bookId: 1, // Genesis
+    chapter: 33,
+    verse: 12,
     media: [
-      {
-        id: 'psalm-23-1-shepherd',
+       {
+        id: 'gen-33-12-creation',
         type: 'image',
-        src: '/media/verses/shepherd.jpg',
-        title: 'The Good Shepherd',
-        description: 'The Lord as our shepherd',
+        src: '/media/verses/jacobesau-journey.jpg',
+        title: 'Jacob & Esau Journey',
+        description: 'Path Yacob and Esau took',
         order: 1,
       },
     ],
