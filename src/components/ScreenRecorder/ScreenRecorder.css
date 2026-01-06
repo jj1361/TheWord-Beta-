@@ -1,0 +1,482 @@
+/* Screen Recorder Component Styles */
+
+.screen-recorder {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 320px;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  z-index: 9000;
+  overflow: hidden;
+  animation: recorderSlideIn 0.3s ease-out;
+}
+
+@keyframes recorderSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.screen-recorder.recording {
+  border: 2px solid #ef4444;
+  box-shadow: 0 8px 32px rgba(239, 68, 68, 0.3);
+}
+
+/* Header */
+.screen-recorder-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.screen-recorder-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+.screen-recorder-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.screen-recorder-close,
+.screen-recorder-minimize {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.screen-recorder-close:hover,
+.screen-recorder-minimize:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.screen-recorder-close svg,
+.screen-recorder-minimize svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Recording indicator */
+.recording-indicator {
+  width: 10px;
+  height: 10px;
+  background: #ef4444;
+  border-radius: 50%;
+  animation: recordingPulse 1s ease-in-out infinite;
+}
+
+@keyframes recordingPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.9);
+  }
+}
+
+/* Error message */
+.screen-recorder-error-message {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  font-size: 13px;
+}
+
+.screen-recorder-error-message svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* Settings */
+.screen-recorder-settings {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.screen-recorder-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.screen-recorder-option:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.screen-recorder-option input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #7c3aed;
+  cursor: pointer;
+}
+
+.option-icon {
+  width: 24px;
+  height: 24px;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.option-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.option-hint {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: auto;
+}
+
+/* Recording status */
+.screen-recorder-status {
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.recording-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.timer-display {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 2px;
+}
+
+.timer-display.paused {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.paused-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fbbf24;
+  letter-spacing: 2px;
+}
+
+/* Controls */
+.screen-recorder-controls {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.recorder-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.recorder-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.recorder-btn-start {
+  flex: 1;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+}
+
+.recorder-btn-start:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}
+
+.recorder-btn-start svg {
+  width: 16px;
+  height: 16px;
+}
+
+.recorder-btn-pause {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 50%;
+}
+
+.recorder-btn-pause:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.recorder-btn-pause.paused {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+}
+
+.recorder-btn-stop {
+  flex: 1;
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.recorder-btn-stop:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.recorder-btn-stop svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Help text */
+.screen-recorder-help {
+  padding: 0 16px 16px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Not supported message */
+.screen-recorder-not-supported {
+  padding: 20px 16px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  margin: 0;
+}
+
+/* Minimized state */
+.screen-recorder-minimized {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  border-radius: 30px;
+  box-shadow: 0 4px 20px rgba(239, 68, 68, 0.4);
+  cursor: pointer;
+  z-index: 9000;
+  transition: all 0.2s ease;
+}
+
+.screen-recorder-minimized:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 24px rgba(239, 68, 68, 0.5);
+}
+
+.screen-recorder-minimized.paused {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  box-shadow: 0 4px 20px rgba(251, 191, 36, 0.4);
+}
+
+.screen-recorder-minimized .recording-indicator {
+  background: white;
+}
+
+.screen-recorder-minimized .recording-duration {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Light mode */
+[data-theme="light"] .screen-recorder {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .screen-recorder-header {
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .screen-recorder-title {
+  color: #1e293b;
+}
+
+[data-theme="light"] .screen-recorder-close,
+[data-theme="light"] .screen-recorder-minimize {
+  background: rgba(0, 0, 0, 0.05);
+  color: #64748b;
+}
+
+[data-theme="light"] .screen-recorder-close:hover,
+[data-theme="light"] .screen-recorder-minimize:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #1e293b;
+}
+
+[data-theme="light"] .screen-recorder-option {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .screen-recorder-option:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .option-icon {
+  color: #64748b;
+}
+
+[data-theme="light"] .option-label {
+  color: #1e293b;
+}
+
+[data-theme="light"] .option-hint {
+  color: #94a3b8;
+}
+
+[data-theme="light"] .timer-display {
+  color: #1e293b;
+}
+
+[data-theme="light"] .timer-display.paused {
+  color: #94a3b8;
+}
+
+[data-theme="light"] .screen-recorder-controls {
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .recorder-btn-pause {
+  background: rgba(0, 0, 0, 0.05);
+  color: #1e293b;
+}
+
+[data-theme="light"] .recorder-btn-pause:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .recorder-btn-stop {
+  background: rgba(0, 0, 0, 0.05);
+  color: #1e293b;
+}
+
+[data-theme="light"] .recorder-btn-stop:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .screen-recorder-help {
+  color: #64748b;
+}
+
+[data-theme="light"] .screen-recorder-not-supported {
+  color: #64748b;
+}
+
+/* Sepia mode */
+[data-theme="sepia"] .screen-recorder {
+  background: linear-gradient(135deg, #f5f0e6 0%, #e8dfd0 100%);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="sepia"] .screen-recorder-header {
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="sepia"] .screen-recorder-title {
+  color: #5c4a32;
+}
+
+[data-theme="sepia"] .screen-recorder-close,
+[data-theme="sepia"] .screen-recorder-minimize {
+  background: rgba(0, 0, 0, 0.05);
+  color: #8b7355;
+}
+
+[data-theme="sepia"] .option-label {
+  color: #5c4a32;
+}
+
+[data-theme="sepia"] .timer-display {
+  color: #5c4a32;
+}
+
+[data-theme="sepia"] .recorder-btn-stop {
+  background: rgba(0, 0, 0, 0.05);
+  color: #5c4a32;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .screen-recorder {
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+    width: auto;
+  }
+
+  .screen-recorder-minimized {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .option-hint {
+    display: none;
+  }
+
+  .timer-display {
+    font-size: 28px;
+  }
+}

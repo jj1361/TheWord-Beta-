@@ -51,13 +51,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 32px;
-  height: 32px;
-  background: var(--verse-number-bg);
-  color: var(--verse-number-text);
+  min-width: 3rem;
+  height: 3rem;
+  /* background: var(--verse-number-bg); */
+  /* color: var(--verse-number-text); */
+  color: black;
   border-radius: 50%;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 2rem;
   flex-shrink: 0;
 }
 
@@ -742,7 +743,7 @@
 }
 
 [data-theme='dark'] .verse-number {
-  background: #4a5568;
+  /* background: #4a5568; */
   color: #f7fafc;
 }
 
@@ -892,8 +893,8 @@
 }
 
 [data-theme='sepia'] .verse-number {
-  background: #464a6d;
-  color: #f5f0e6;
+  /* background: #464a6d; */
+  color: #000000;
 }
 
 [data-theme='sepia'] .verse-text {

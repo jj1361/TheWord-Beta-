@@ -65,6 +65,9 @@ interface HamburgerMenuProps {
   onToggleFootnotes: () => void;
   // Help props
   onOpenHelp: () => void;
+  // Screen recorder props
+  showScreenRecorder?: boolean;
+  onToggleScreenRecorder?: () => void;
 }
 
 interface MenuItemProps {
@@ -153,6 +156,8 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
   showFootnotes,
   onToggleFootnotes,
   onOpenHelp,
+  showScreenRecorder,
+  onToggleScreenRecorder,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [, setActiveSubmenu] = useState<string | null>(null);
@@ -442,6 +447,14 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
               label="Media Control"
               onClick={() => handleNavigationItem(onToggleMediaControl)}
             />
+            {onToggleScreenRecorder && (
+              <MenuItem
+                icon={showScreenRecorder ? '🔴' : '⏺️'}
+                label="Screen Recorder"
+                active={showScreenRecorder}
+                onClick={() => handleItemClick(onToggleScreenRecorder)}
+              />
+            )}
           </MenuSection>
 
           {/* Help */}

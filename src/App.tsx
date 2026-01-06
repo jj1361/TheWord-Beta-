@@ -30,6 +30,7 @@ import { crossRefService } from './services/crossRefService';
 import { footnoteService } from './services/footnoteService';
 import MediaControlPanel from './components/MediaControlPanel';
 import MediaDisplayScreen from './components/MediaDisplayScreen';
+import ScreenRecorder from './components/ScreenRecorder';
 import { Chapter, BIBLE_BOOKS, FootnoteEntry } from './types/bible';
 import { getHebrewLetterInfo, HebrewLetterInfo } from './config/hebrewLetters';
 import { WordImageMapping } from './config/youthModeConfig';
@@ -237,6 +238,9 @@ function ScriptureView() {
   // Media presentation state
   const [showMediaControl, setShowMediaControl] = useState(false);
   const [showMediaDisplay, setShowMediaDisplay] = useState(false);
+
+  // Screen recorder state
+  const [showScreenRecorder, setShowScreenRecorder] = useState(false);
 
   // Navigation History State
   const [navigationHistory, setNavigationHistory] = useState<HistoryEntry[]>(() => {
@@ -1392,6 +1396,9 @@ function ScriptureView() {
           // Split view props
           splitViewEnabled={splitViewEnabled}
           onToggleSplitView={() => setSplitViewEnabled(!splitViewEnabled)}
+          // Screen recorder props
+          showScreenRecorder={showScreenRecorder}
+          onToggleScreenRecorder={() => setShowScreenRecorder(!showScreenRecorder)}
         />
       )}
 
@@ -1599,6 +1606,13 @@ function ScriptureView() {
       {showMediaDisplay && (
         <MediaDisplayScreen
           onClose={() => setShowMediaDisplay(false)}
+        />
+      )}
+
+      {/* Screen Recorder */}
+      {showScreenRecorder && (
+        <ScreenRecorder
+          onClose={() => setShowScreenRecorder(false)}
         />
       )}
 

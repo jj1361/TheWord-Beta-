@@ -92,6 +92,9 @@ interface ChapterHeaderProps {
   // Split view props
   splitViewEnabled?: boolean;
   onToggleSplitView?: () => void;
+  // Screen recorder props
+  showScreenRecorder?: boolean;
+  onToggleScreenRecorder?: () => void;
 }
 
 const ChapterHeader: React.FC<ChapterHeaderProps> = ({
@@ -166,6 +169,9 @@ const ChapterHeader: React.FC<ChapterHeaderProps> = ({
   // Split view props
   splitViewEnabled,
   onToggleSplitView,
+  // Screen recorder props
+  showScreenRecorder,
+  onToggleScreenRecorder,
 }) => {
   const [isChapterSelectorOpen, setIsChapterSelectorOpen] = useState(false);
   const [isNavigationModalOpen, setIsNavigationModalOpen] = useState(false);
@@ -266,63 +272,66 @@ const ChapterHeader: React.FC<ChapterHeaderProps> = ({
         </div>
       </div>
 
-      {/* Bottom Row: Menu, Navigation, Search, Translation, Auth */}
-      <div className="chapter-header-nav-row">
-        {/* Left: Hamburger Menu */}
-        <div className="chapter-header-left">
-          <HamburgerMenu
-            useProtoSinaitic={useProtoSinaitic}
-            webcamEnabled={webcamEnabled}
-            webcamFullscreen={webcamFullscreen}
-            screenShareEnabled={screenShareEnabled}
-            screenShareWithVerses={screenShareWithVerses}
-            youthMode={youthMode}
-            studyMode={studyMode}
-            darkMode={darkMode}
-            theme={theme}
-            personProfileEnabled={personProfileEnabled}
-            onToggleProtoSinaitic={onToggleProtoSinaitic}
-            onToggleWebcam={onToggleWebcam}
-            onToggleWebcamSettings={onToggleWebcamSettings}
-            onToggleWebcamFullscreen={onToggleWebcamFullscreen}
-            onToggleScreenShare={onToggleScreenShare}
-            onToggleScreenShareWithVerses={onToggleScreenShareWithVerses}
-            onToggleYouthMode={onToggleYouthMode}
-            onToggleStudyMode={onToggleStudyMode}
-            onToggleDarkMode={onToggleDarkMode}
-            onSetTheme={onSetTheme}
-            onTogglePersonProfile={onTogglePersonProfile}
-            navigationHistory={navigationHistory}
-            historyIndex={historyIndex}
-            onNavigateToHistoryEntry={onNavigateToHistoryEntry}
-            onClearHistory={onClearHistory}
-            bookmarks={bookmarks}
-            currentBookId={bookId}
-            currentChapter={chapterNum}
-            currentVerse={currentVerse}
-            onNavigateToBookmark={onNavigateToBookmark}
-            onAddBookmark={onAddBookmark}
-            onRemoveBookmark={onRemoveBookmark}
-            onUpdateBookmarkLabel={onUpdateBookmarkLabel}
-            showNotesPanel={showNotesPanel}
-            notesCount={notesCount}
-            onToggleNotesPanel={onToggleNotesPanel}
-            onTogglePresentation={onTogglePresentation}
-            onToggleScripturePresentation={onToggleScripturePresentation}
-            onToggleMediaControl={onToggleMediaControl}
-            isSignedIn={isSignedIn}
-            onSignInClick={onSignInClick}
-            textSize={textSize}
-            minTextSize={minTextSize}
-            maxTextSize={maxTextSize}
-            onIncreaseTextSize={onIncreaseTextSize}
-            onDecreaseTextSize={onDecreaseTextSize}
-            showFootnotes={showFootnotes}
-            onToggleFootnotes={onToggleFootnotes}
-            onOpenHelp={onOpenHelp}
-          />
-        </div>
+      {/* Left: Hamburger Menu and App Title - vertically centered in header */}
+      <div className="chapter-header-left">
+        <HamburgerMenu
+          useProtoSinaitic={useProtoSinaitic}
+          webcamEnabled={webcamEnabled}
+          webcamFullscreen={webcamFullscreen}
+          screenShareEnabled={screenShareEnabled}
+          screenShareWithVerses={screenShareWithVerses}
+          youthMode={youthMode}
+          studyMode={studyMode}
+          darkMode={darkMode}
+          theme={theme}
+          personProfileEnabled={personProfileEnabled}
+          onToggleProtoSinaitic={onToggleProtoSinaitic}
+          onToggleWebcam={onToggleWebcam}
+          onToggleWebcamSettings={onToggleWebcamSettings}
+          onToggleWebcamFullscreen={onToggleWebcamFullscreen}
+          onToggleScreenShare={onToggleScreenShare}
+          onToggleScreenShareWithVerses={onToggleScreenShareWithVerses}
+          onToggleYouthMode={onToggleYouthMode}
+          onToggleStudyMode={onToggleStudyMode}
+          onToggleDarkMode={onToggleDarkMode}
+          onSetTheme={onSetTheme}
+          onTogglePersonProfile={onTogglePersonProfile}
+          navigationHistory={navigationHistory}
+          historyIndex={historyIndex}
+          onNavigateToHistoryEntry={onNavigateToHistoryEntry}
+          onClearHistory={onClearHistory}
+          bookmarks={bookmarks}
+          currentBookId={bookId}
+          currentChapter={chapterNum}
+          currentVerse={currentVerse}
+          onNavigateToBookmark={onNavigateToBookmark}
+          onAddBookmark={onAddBookmark}
+          onRemoveBookmark={onRemoveBookmark}
+          onUpdateBookmarkLabel={onUpdateBookmarkLabel}
+          showNotesPanel={showNotesPanel}
+          notesCount={notesCount}
+          onToggleNotesPanel={onToggleNotesPanel}
+          onTogglePresentation={onTogglePresentation}
+          onToggleScripturePresentation={onToggleScripturePresentation}
+          onToggleMediaControl={onToggleMediaControl}
+          isSignedIn={isSignedIn}
+          onSignInClick={onSignInClick}
+          textSize={textSize}
+          minTextSize={minTextSize}
+          maxTextSize={maxTextSize}
+          onIncreaseTextSize={onIncreaseTextSize}
+          onDecreaseTextSize={onDecreaseTextSize}
+          showFootnotes={showFootnotes}
+          onToggleFootnotes={onToggleFootnotes}
+          onOpenHelp={onOpenHelp}
+          showScreenRecorder={showScreenRecorder}
+          onToggleScreenRecorder={onToggleScreenRecorder}
+        />
+        <span className="app-title">THE BOOK</span>
+      </div>
 
+      {/* Bottom Row: Navigation, Search, Translation, Auth */}
+      <div className="chapter-header-nav-row">
         {/* Center: Navigation with Expandable Search */}
         <div className="chapter-header-nav">
           {/* Text Size Controls - left of navigation buttons */}
