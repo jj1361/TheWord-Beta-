@@ -205,6 +205,73 @@
   letter-spacing: 2px;
 }
 
+/* Converting status */
+.screen-recorder-converting {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  font-size: 14px;
+}
+
+.converting-spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #7c3aed;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.converting-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.converting-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #7c3aed 0%, #a855f7 100%);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+[data-theme="light"] .screen-recorder-converting {
+  color: #1e293b;
+}
+
+[data-theme="light"] .converting-spinner {
+  border-color: rgba(0, 0, 0, 0.1);
+  border-top-color: #7c3aed;
+}
+
+[data-theme="light"] .converting-progress-bar {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="sepia"] .screen-recorder-converting {
+  color: #5c4a32;
+}
+
+[data-theme="sepia"] .converting-spinner {
+  border-color: rgba(0, 0, 0, 0.1);
+  border-top-color: #7c3aed;
+}
+
+[data-theme="sepia"] .converting-progress-bar {
+  background: rgba(0, 0, 0, 0.1);
+}
+
 /* Controls */
 .screen-recorder-controls {
   padding: 16px;

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { SearchResult } from '../services/searchService';
 import './SearchResultsModal.css';
 
@@ -22,6 +22,71 @@ const SearchResultsModal: React.FC<SearchResultsModalProps> = ({
   onResultClick,
 }) => {
   const modalRef = useRef<HTMLDivElement>(null);
+  const [selectedVerses, setSelectedVerses] = useState<Set<number>>(new Set());
+  const [copyToast, setCopyToast] = useState<string | null>(null);
+
+  // Reset selection when results change
+  useEffect(() => {
+    setSelectedVerses(new Set());
+  }, [results]);
+
+  // Toggle single verse selection
+  const toggleVerseSelection = useCallback((index: number, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setSelectedVerses(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(index)) {
+        newSet.delete(index);
+      } else {
+        newSet.add(index);
+      }
+      return newSet;
+    });
+  }, []);
+
+  // Select/deselect all verses
+  const toggleSelectAll = useCallback(() => {
+    if (selectedVerses.size === results.length) {
+      setSelectedVerses(new Set());
+    } else {
+      setSelectedVerses(new Set(results.map((_, idx) => idx)));
+    }
+  }, [results, selectedVerses.size]);
+
+  // Format verse for copying
+  const formatVerseForCopy = useCallback((result: SearchResult): string => {
+    return `${result.bookName} ${result.chapterNum}:${result.verseNum} - ${result.text}`;
+  }, []);
+
+  // Copy verses to clipboard
+  const copyVerses = useCallback(async (indices: number[]) => {
+    if (indices.length === 0) return;
+
+    const versesToCopy = indices
+      .sort((a, b) => a - b)
+      .map(idx => formatVerseForCopy(results[idx]))
+      .join('\n\n');
+
+    try {
+      await navigator.clipboard.writeText(versesToCopy);
+      setCopyToast(`${indices.length} verse${indices.length > 1 ? 's' : ''} copied!`);
+      setTimeout(() => setCopyToast(null), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+      setCopyToast('Failed to copy');
+      setTimeout(() => setCopyToast(null), 2000);
+    }
+  }, [results, formatVerseForCopy]);
+
+  // Copy all verses
+  const copyAllVerses = useCallback(() => {
+    copyVerses(results.map((_, idx) => idx));
+  }, [results, copyVerses]);
+
+  // Copy selected verses
+  const copySelectedVerses = useCallback(() => {
+    copyVerses(Array.from(selectedVerses));
+  }, [selectedVerses, copyVerses]);
 
   // Close on escape key
   useEffect(() => {
@@ -107,6 +172,35 @@ const SearchResultsModal: React.FC<SearchResultsModalProps> = ({
           </button>
         </div>
 
+        {/* Copy actions toolbar */}
+        {!isLoading && results.length > 0 && (
+          <div className="search-modal-toolbar">
+            <div className="toolbar-left">
+              <label className="select-all-checkbox">
+                <input
+                  type="checkbox"
+                  checked={selectedVerses.size === results.length && results.length > 0}
+                  onChange={toggleSelectAll}
+                />
+                <span>Select All</span>
+              </label>
+              {selectedVerses.size > 0 && (
+                <span className="selected-count">{selectedVerses.size} selected</span>
+              )}
+            </div>
+            <div className="toolbar-right">
+              {selectedVerses.size > 0 && (
+                <button className="copy-btn copy-selected-btn" onClick={copySelectedVerses}>
+                  Copy Selected ({selectedVerses.size})
+                </button>
+              )}
+              <button className="copy-btn copy-all-btn" onClick={copyAllVerses}>
+                Copy All
+              </button>
+            </div>
+          </div>
+        )}
+
         <div className="search-modal-content">
           {isLoading ? (
             <div className="search-modal-loading">
@@ -118,14 +212,29 @@ const SearchResultsModal: React.FC<SearchResultsModalProps> = ({
               {results.map((result, idx) => (
                 <div
                   key={`${result.bookId}-${result.chapterNum}-${result.verseNum}-${idx}`}
-                  className="search-modal-result-item"
+                  className={`search-modal-result-item ${selectedVerses.has(idx) ? 'selected' : ''}`}
                   onClick={() => handleResultClick(result)}
                 >
-                  <div className="result-item-reference">
-                    {result.bookName} {result.chapterNum}:{result.verseNum}
+                  <div
+                    className="result-item-checkbox"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      toggleVerseSelection(idx, e);
+                    }}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={selectedVerses.has(idx)}
+                      readOnly
+                    />
                   </div>
-                  <div className="result-item-text">
-                    {highlightSearchTerms(result.text, query)}
+                  <div className="result-item-content">
+                    <div className="result-item-reference">
+                      {result.bookName} {result.chapterNum}:{result.verseNum}
+                    </div>
+                    <div className="result-item-text">
+                      {highlightSearchTerms(result.text, query)}
+                    </div>
                   </div>
                 </div>
               ))}
@@ -136,6 +245,13 @@ const SearchResultsModal: React.FC<SearchResultsModalProps> = ({
             </div>
           )}
         </div>
+
+        {/* Copy toast notification */}
+        {copyToast && (
+          <div className="copy-toast">
+            {copyToast}
+          </div>
+        )}
       </div>
     </div>
   );
