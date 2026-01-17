@@ -20,6 +20,7 @@ const ScreenShareDisplay: React.FC<ScreenShareDisplayProps> = ({
   const streamRef = useRef<MediaStream | null>(null);
   const [isSharing, setIsSharing] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [headerExpanded, setHeaderExpanded] = useState(false);
   const isStartingRef = useRef(false);
 
   const stopScreenShare = () => {
@@ -103,30 +104,58 @@ const ScreenShareDisplay: React.FC<ScreenShareDisplayProps> = ({
 
   return (
     <div className={`screen-share-container ${isFullscreen ? 'fullscreen' : ''}`}>
-      <div className="screen-share-header">
-        <h3>📺 Screen Share</h3>
-        {isSharing && (
-          <div className="screen-share-controls">
-            {onToggleWebcam && (
-              <button
-                className={`screen-share-btn webcam ${showWebcam ? 'active' : ''}`}
-                onClick={onToggleWebcam}
-                title={showWebcam ? 'Hide camera' : 'Show camera'}
-              >
-                {showWebcam ? '📹 Hide Camera' : '📷 Show Camera'}
-              </button>
+      <div className={`screen-share-header ${headerExpanded ? 'expanded' : 'collapsed'}`}>
+        {headerExpanded ? (
+          <>
+            <h3>📺 Screen Share</h3>
+            {isSharing && (
+              <div className="screen-share-controls">
+                {onToggleWebcam && (
+                  <button
+                    className={`screen-share-btn webcam ${showWebcam ? 'active' : ''}`}
+                    onClick={onToggleWebcam}
+                    title={showWebcam ? 'Hide camera' : 'Show camera'}
+                  >
+                    {showWebcam ? '📹 Hide Camera' : '📷 Show Camera'}
+                  </button>
+                )}
+                <button
+                  className="screen-share-btn restart"
+                  onClick={handleRestartShare}
+                  title="Restart screen sharing"
+                >
+                  🔄 Restart
+                </button>
+                <span className="sharing-indicator">
+                  <span className="pulse-dot"></span>
+                  Sharing
+                </span>
+                <button
+                  className="screen-share-btn collapse-btn"
+                  onClick={() => setHeaderExpanded(false)}
+                  title="Collapse controls"
+                >
+                  ✕
+                </button>
+              </div>
+            )}
+          </>
+        ) : (
+          <div className="screen-share-collapsed-header">
+            {isSharing && (
+              <span className="sharing-indicator-mini">
+                <span className="pulse-dot"></span>
+              </span>
             )}
             <button
-              className="screen-share-btn restart"
-              onClick={handleRestartShare}
-              title="Restart screen sharing"
+              className="screen-share-expand-btn"
+              onClick={() => setHeaderExpanded(true)}
+              title="Show controls"
             >
-              🔄 Restart
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+              </svg>
             </button>
-            <span className="sharing-indicator">
-              <span className="pulse-dot"></span>
-              Sharing
-            </span>
           </div>
         )}
       </div>

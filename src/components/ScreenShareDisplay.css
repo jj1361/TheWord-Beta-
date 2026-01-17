@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  position: relative;
 }
 
 .screen-share-container.fullscreen {
@@ -20,11 +21,77 @@
 .screen-share-header {
   background: linear-gradient(135deg, #667eea00 0%, #764ba200 100%);
   color: white;
-  padding: 4px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.screen-share-header.expanded {
+  padding: 4px 20px;
+}
+
+.screen-share-header.collapsed {
+  padding: 4px 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 8px;
+  z-index: 10;
+  backdrop-filter: blur(4px);
+}
+
+/* Collapsed header styles */
+.screen-share-collapsed-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.screen-share-expand-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.screen-share-expand-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+.sharing-indicator-mini {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.sharing-indicator-mini .pulse-dot {
+  width: 10px;
+  height: 10px;
+}
+
+/* Collapse button */
+.screen-share-btn.collapse-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px 10px;
+  font-size: 16px;
+  min-width: auto;
+}
+
+.screen-share-btn.collapse-btn:hover {
+  background: rgba(255, 100, 100, 0.3);
+  border-color: rgba(255, 100, 100, 0.5);
 }
 
 .screen-share-header h3 {
