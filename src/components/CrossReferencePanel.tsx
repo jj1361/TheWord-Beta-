@@ -210,6 +210,24 @@ const CrossReferencePanel: React.FC<CrossReferencePanelProps> = ({
           </button>
         </div>
 
+        {/* Copy Toolbar */}
+        {!loading && crossRefs.length > 0 && (
+          <div className="cross-ref-toolbar">
+            <span className="cross-ref-toolbar-hint">
+              {selectedVerses.size > 0
+                ? `${selectedVerses.size} selected`
+                : 'Select verses to copy'}
+            </span>
+            <button
+              className={`cross-ref-copy-btn ${copySuccess ? 'success' : ''}`}
+              onClick={handleCopySelected}
+              disabled={selectedVerses.size === 0}
+            >
+              {copySuccess ? 'Copied!' : `Copy${selectedVerses.size > 0 ? ` (${selectedVerses.size})` : ''}`}
+            </button>
+          </div>
+        )}
+
         <div className="cross-ref-content">
           {loading ? (
             <div className="cross-ref-loading">Loading cross-references...</div>
@@ -318,17 +336,6 @@ const CrossReferencePanel: React.FC<CrossReferencePanelProps> = ({
           )}
         </div>
 
-        {/* Footer */}
-        <div className="cross-ref-footer">
-          <span className="cross-ref-footer-hint">Click verses to select</span>
-          <button
-            className={`cross-ref-copy-btn ${copySuccess ? 'success' : ''}`}
-            onClick={handleCopySelected}
-            disabled={selectedVerses.size === 0}
-          >
-            {copySuccess ? 'Copied!' : 'Copy'}
-          </button>
-        </div>
       </div>
 
       {/* Notes Panel */}

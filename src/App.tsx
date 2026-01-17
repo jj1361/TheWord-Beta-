@@ -99,6 +99,8 @@ function ScriptureView() {
   const [selectedLetter, setSelectedLetter] = useState<HebrewLetterInfo | null>(null);
   const [selectedStrongs, setSelectedStrongs] = useState<string | null>(null);
   const [lexiconData, setLexiconData] = useState<LexiconData | null>(null);
+  // Track if right panel has been shown before (to skip animation on subsequent opens)
+  const [rightPanelHasShown, setRightPanelHasShown] = useState(false);
   const [keyBuffer, setKeyBuffer] = useState<string>('');
   const [selectedPersonID, setSelectedPersonID] = useState<string | null>(null);
   const [navigatedVerse, setNavigatedVerse] = useState<number | undefined>();
@@ -1554,6 +1556,8 @@ function ScriptureView() {
                   pendingCrossRefTarget={pendingCrossRefTarget}
                   onClearPendingCrossRefTarget={() => setPendingCrossRefTarget(null)}
                   textSize={textSize}
+                  skipAnimation={rightPanelHasShown}
+                  onFirstShow={() => setRightPanelHasShown(true)}
                 />
               )}
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { LexiconData } from '../types/lexicon';
 import { HebrewLetterInfo } from '../config/hebrewLetters';
 import { strongsSearchService } from '../services/strongsSearchService';
@@ -55,6 +55,9 @@ interface RightPanelProps {
   onClearPendingCrossRefTarget?: () => void;
   // Text size prop (controlled from parent)
   textSize?: number;
+  // Skip entrance animation (when panel has been shown before in session)
+  skipAnimation?: boolean;
+  onFirstShow?: () => void;
 }
 
 /**
@@ -102,9 +105,22 @@ const RightPanel: React.FC<RightPanelProps> = ({
   pendingCrossRefTarget,
   onClearPendingCrossRefTarget,
   textSize: textSizeProp,
+  skipAnimation = false,
+  onFirstShow,
 }) => {
   // Use prop if provided, otherwise fallback to default
   const textSize = textSizeProp ?? DEFAULT_PANEL_TEXT_SIZE;
+
+  // Track animation state - use skipAnimation prop from parent to determine if we should animate
+  const panelRef = useRef<HTMLDivElement>(null);
+  const [hasAnimated, setHasAnimated] = useState(skipAnimation);
+
+  // Use onAnimationEnd to mark animation complete and notify parent
+  const handleAnimationEnd = useCallback(() => {
+    setHasAnimated(true);
+    onFirstShow?.();
+  }, [onFirstShow]);
+
   // Handle clicks on Strong's number links
   const handleStrongsLinkClick = (event: React.MouseEvent<HTMLDivElement>) => {
     const target = event.target as HTMLElement;
@@ -1015,7 +1031,12 @@ const RightPanel: React.FC<RightPanelProps> = ({
   }
 
   return (
-    <div className="right-panel" style={{ '--panel-text-size': `${textSize}px` } as React.CSSProperties}>
+    <div
+      ref={panelRef}
+      className={`right-panel ${!hasAnimated ? 'initial-mount' : ''}`}
+      style={{ '--panel-text-size': `${textSize}px` } as React.CSSProperties}
+      onAnimationEnd={handleAnimationEnd}
+    >
       <div className="right-panel-header">
         {/* Back button for mobile fullscreen - calls onClose to return to verse */}
         <button className="right-panel-back-btn" onClick={onClose} title="Back to verse">
@@ -1457,6 +1478,22 @@ const RightPanel: React.FC<RightPanelProps> = ({
                     </div>
                   ) : (
                     <>
+                      {/* Copy Toolbar */}
+                      <div className="cross-ref-toolbar">
+                        <span className="cross-ref-toolbar-hint">
+                          {selectedCrossRefVerses.size > 0
+                            ? `${selectedCrossRefVerses.size} selected`
+                            : 'Select verses to copy'}
+                        </span>
+                        <button
+                          className={`cross-ref-copy-btn-new ${crossRefCopySuccess ? 'success' : ''}`}
+                          onClick={handleCrossRefCopy}
+                          disabled={selectedCrossRefVerses.size === 0}
+                        >
+                          {crossRefCopySuccess ? 'Copied!' : `Copy${selectedCrossRefVerses.size > 0 ? ` (${selectedCrossRefVerses.size})` : ''}`}
+                        </button>
+                      </div>
+
                       {/* Filter by Phrase */}
                       <div className="cross-ref-filter-section">
                         <span className="cross-ref-filter-label">FILTER BY PHRASE</span>
@@ -1553,17 +1590,6 @@ const RightPanel: React.FC<RightPanelProps> = ({
                         )}
                       </div>
 
-                      {/* Footer */}
-                      <div className="cross-ref-footer-new">
-                        <span className="cross-ref-footer-hint">Click verses to select</span>
-                        <button
-                          className={`cross-ref-copy-btn-new ${crossRefCopySuccess ? 'success' : ''}`}
-                          onClick={handleCrossRefCopy}
-                          disabled={selectedCrossRefVerses.size === 0}
-                        >
-                          {crossRefCopySuccess ? 'Copied!' : 'Copy'}
-                        </button>
-                      </div>
                     </>
                   )}
                 </>

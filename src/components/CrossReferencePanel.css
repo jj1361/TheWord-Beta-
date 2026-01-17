@@ -116,6 +116,22 @@
   background: #3d3d5c;
 }
 
+/* Toolbar */
+.cross-ref-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px 24px;
+  background: #1a1a2e;
+  border-bottom: 1px solid #2d2d44;
+  gap: 12px;
+}
+
+.cross-ref-toolbar-hint {
+  font-size: 0.85rem;
+  color: #8888a0;
+}
+
 /* Content */
 .cross-ref-content {
   flex: 1;
@@ -551,6 +567,15 @@
   color: #6b7280;
 }
 
+:root:not([data-theme="dark"]) .cross-ref-toolbar {
+  background: #ffffff;
+  border-bottom-color: #e5e7eb;
+}
+
+:root:not([data-theme="dark"]) .cross-ref-toolbar-hint {
+  color: #9ca3af;
+}
+
 :root:not([data-theme="dark"]) .cross-ref-content {
   background: #ffffff;
 }
@@ -702,6 +727,15 @@
 [data-theme="sepia"] .cross-ref-tab:not(.active) .cross-ref-tab-count {
   background: #a2a8b9;
   color: #2a2d3f;
+}
+
+[data-theme="sepia"] .cross-ref-toolbar {
+  background: #e3d9ce;
+  border-bottom-color: #a2a8b9;
+}
+
+[data-theme="sepia"] .cross-ref-toolbar-hint {
+  color: #464a6d;
 }
 
 [data-theme="sepia"] .cross-ref-content {
