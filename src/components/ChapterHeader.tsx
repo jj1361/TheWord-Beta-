@@ -47,6 +47,7 @@ interface ChapterHeaderProps {
   webcamFullscreen: boolean;
   screenShareEnabled: boolean;
   screenShareWithVerses: boolean;
+  screenShareWithWebcam: boolean;
   darkMode: boolean;
   theme?: 'light' | 'dark' | 'sepia';
   onToggleProtoSinaitic: () => void;
@@ -55,6 +56,7 @@ interface ChapterHeaderProps {
   onToggleWebcamFullscreen: () => void;
   onToggleScreenShare: () => void;
   onToggleScreenShareWithVerses: () => void;
+  onToggleScreenShareWithWebcam: () => void;
   onToggleDarkMode: () => void;
   onSetTheme?: (theme: 'light' | 'dark' | 'sepia') => void;
   // History props
@@ -125,6 +127,7 @@ const ChapterHeader: React.FC<ChapterHeaderProps> = ({
   webcamFullscreen,
   screenShareEnabled,
   screenShareWithVerses,
+  screenShareWithWebcam,
   darkMode,
   theme,
   onToggleProtoSinaitic,
@@ -133,6 +136,7 @@ const ChapterHeader: React.FC<ChapterHeaderProps> = ({
   onToggleWebcamFullscreen,
   onToggleScreenShare,
   onToggleScreenShareWithVerses,
+  onToggleScreenShareWithWebcam,
   onToggleDarkMode,
   onSetTheme,
   // History props
@@ -280,6 +284,7 @@ const ChapterHeader: React.FC<ChapterHeaderProps> = ({
           webcamFullscreen={webcamFullscreen}
           screenShareEnabled={screenShareEnabled}
           screenShareWithVerses={screenShareWithVerses}
+          screenShareWithWebcam={screenShareWithWebcam}
           youthMode={youthMode}
           studyMode={studyMode}
           darkMode={darkMode}
@@ -291,6 +296,7 @@ const ChapterHeader: React.FC<ChapterHeaderProps> = ({
           onToggleWebcamFullscreen={onToggleWebcamFullscreen}
           onToggleScreenShare={onToggleScreenShare}
           onToggleScreenShareWithVerses={onToggleScreenShareWithVerses}
+          onToggleScreenShareWithWebcam={onToggleScreenShareWithWebcam}
           onToggleYouthMode={onToggleYouthMode}
           onToggleStudyMode={onToggleStudyMode}
           onToggleDarkMode={onToggleDarkMode}

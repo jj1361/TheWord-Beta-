@@ -12,6 +12,7 @@ interface HamburgerMenuProps {
   webcamFullscreen: boolean;
   screenShareEnabled: boolean;
   screenShareWithVerses: boolean;
+  screenShareWithWebcam: boolean;
   youthMode: boolean;
   studyMode: boolean;
   darkMode: boolean;
@@ -23,6 +24,7 @@ interface HamburgerMenuProps {
   onToggleWebcamFullscreen: () => void;
   onToggleScreenShare: () => void;
   onToggleScreenShareWithVerses: () => void;
+  onToggleScreenShareWithWebcam: () => void;
   onToggleYouthMode: () => void;
   onToggleStudyMode: () => void;
   onToggleDarkMode: () => void;
@@ -112,6 +114,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
   webcamFullscreen,
   screenShareEnabled,
   screenShareWithVerses,
+  screenShareWithWebcam,
   youthMode,
   studyMode,
   darkMode,
@@ -123,6 +126,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
   onToggleWebcamFullscreen,
   onToggleScreenShare,
   onToggleScreenShareWithVerses,
+  onToggleScreenShareWithWebcam,
   onToggleYouthMode,
   onToggleStudyMode,
   onToggleDarkMode,
@@ -421,12 +425,20 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
               onClick={() => handleItemClick(onToggleScreenShare)}
             />
             {screenShareEnabled && (
-              <MenuItem
-                icon={screenShareWithVerses ? '📖' : '📜'}
-                label={screenShareWithVerses ? 'Hide Verses' : 'Show Verses'}
-                active={screenShareWithVerses}
-                onClick={() => handleItemClick(onToggleScreenShareWithVerses)}
-              />
+              <>
+                <MenuItem
+                  icon={screenShareWithVerses ? '📖' : '📜'}
+                  label={screenShareWithVerses ? 'Hide Verses' : 'Show Verses'}
+                  active={screenShareWithVerses}
+                  onClick={() => handleItemClick(onToggleScreenShareWithVerses)}
+                />
+                <MenuItem
+                  icon={screenShareWithWebcam ? '📹' : '📷'}
+                  label={screenShareWithWebcam ? 'Hide Camera' : 'Show Camera'}
+                  active={screenShareWithWebcam}
+                  onClick={() => handleItemClick(onToggleScreenShareWithWebcam)}
+                />
+              </>
             )}
           </MenuSection>
 

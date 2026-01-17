@@ -6,6 +6,8 @@ import PersonProfile from './components/PersonProfile';
 import WebcamDisplay from './components/WebcamDisplay';
 import ScreenShareDisplay from './components/ScreenShareDisplay';
 import ChapterHeader from './components/ChapterHeader';
+import NavigationModal from './components/NavigationModal';
+import ChapterSelector from './components/ChapterSelector';
 import WordSearchModal from './components/WordSearchModal';
 import YouthImagePanel from './components/YouthImagePanel';
 import OnboardingTour from './components/OnboardingTour';
@@ -109,6 +111,9 @@ function ScriptureView() {
   const [webcamFullscreen, setWebcamFullscreen] = useState(false);
   const [screenShareEnabled, setScreenShareEnabled] = useState(false);
   const [screenShareWithVerses, setScreenShareWithVerses] = useState(false);
+  const [screenShareWithWebcam, setScreenShareWithWebcam] = useState(false);
+  const [screenShareNavModalOpen, setScreenShareNavModalOpen] = useState(false);
+  const [screenShareChapterSelectorOpen, setScreenShareChapterSelectorOpen] = useState(false);
 
   // Screen share verses panel resize state
   const [screenShareVersesWidth, setScreenShareVersesWidth] = useState(() => {
@@ -117,6 +122,13 @@ function ScriptureView() {
   });
   const [isResizingScreenShare, setIsResizingScreenShare] = useState(false);
   const screenShareWrapperRef = useRef<HTMLDivElement>(null);
+
+  // Screen share webcam resize state
+  const [screenShareWebcamWidth, setScreenShareWebcamWidth] = useState(() => {
+    const saved = localStorage.getItem('screenShareWebcamWidth');
+    return saved ? parseInt(saved, 10) : 25; // Default 25% width for webcam
+  });
+  const [isResizingWebcam, setIsResizingWebcam] = useState(false);
   const [useProtoSinaitic, setUseProtoSinaitic] = useState(true);
   const [wordSearchStrongsId, setWordSearchStrongsId] = useState<string | null>(null);
   const [voiceSearchQuery, setVoiceSearchQuery] = useState<string | null>(null);
@@ -350,6 +362,47 @@ function ScriptureView() {
       document.body.style.userSelect = '';
     };
   }, [isResizingScreenShare, screenShareVersesWidth]);
+
+  // Screen share webcam resize handlers
+  const handleWebcamResizeStart = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsResizingWebcam(true);
+  }, []);
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!isResizingWebcam || !screenShareWrapperRef.current) return;
+
+      const wrapperRect = screenShareWrapperRef.current.getBoundingClientRect();
+      const wrapperWidth = wrapperRect.width;
+      // Calculate webcam section width as percentage (it's on the right side)
+      const webcamWidth = ((wrapperRect.right - e.clientX) / wrapperWidth) * 100;
+      // Clamp between 15% and 50%
+      const clampedWidth = Math.min(Math.max(webcamWidth, 15), 50);
+      setScreenShareWebcamWidth(clampedWidth);
+    };
+
+    const handleMouseUp = () => {
+      if (isResizingWebcam) {
+        setIsResizingWebcam(false);
+        localStorage.setItem('screenShareWebcamWidth', screenShareWebcamWidth.toString());
+      }
+    };
+
+    if (isResizingWebcam) {
+      document.addEventListener('mousemove', handleMouseMove);
+      document.addEventListener('mouseup', handleMouseUp);
+      document.body.style.cursor = 'ew-resize';
+      document.body.style.userSelect = 'none';
+    }
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseup', handleMouseUp);
+      document.body.style.cursor = '';
+      document.body.style.userSelect = '';
+    };
+  }, [isResizingWebcam, screenShareWebcamWidth]);
 
   // Connect notesService to user and reload notes when user changes
   useEffect(() => {
@@ -753,7 +806,7 @@ function ScriptureView() {
           // Don't add space before punctuation or if text already ends with space
           if (idx === 0) return text;
           const prevText = kjvsVerse.phrases[idx - 1].text;
-          if (prevText.endsWith(' ') || /^[,;:.!?'\-]/.test(text)) return text;
+          if (prevText.endsWith(' ') || /^[,;:.!?'-]/.test(text)) return text;
           return ' ' + text;
         })
         .join('');
@@ -1353,6 +1406,7 @@ function ScriptureView() {
           webcamFullscreen={webcamFullscreen}
           screenShareEnabled={screenShareEnabled}
           screenShareWithVerses={screenShareWithVerses}
+          screenShareWithWebcam={screenShareWithWebcam}
           darkMode={darkMode}
           theme={theme}
           onToggleProtoSinaitic={() => setUseProtoSinaitic(!useProtoSinaitic)}
@@ -1361,6 +1415,7 @@ function ScriptureView() {
           onToggleWebcamFullscreen={() => setWebcamFullscreen(!webcamFullscreen)}
           onToggleScreenShare={() => setScreenShareEnabled(!screenShareEnabled)}
           onToggleScreenShareWithVerses={() => setScreenShareWithVerses(!screenShareWithVerses)}
+          onToggleScreenShareWithWebcam={() => setScreenShareWithWebcam(!screenShareWithWebcam)}
           onToggleDarkMode={() => setTheme(prev => prev === 'light' ? 'dark' : prev === 'dark' ? 'sepia' : 'light')}
           onSetTheme={setTheme}
           // History props
@@ -1408,19 +1463,47 @@ function ScriptureView() {
         <div className={`content-with-webcam ${(webcamFullscreen && webcamEnabled) || screenShareEnabled ? 'webcam-fullscreen' : ''}`}>
           {screenShareEnabled ? (
             <div
-              className={`screen-share-fullscreen-wrapper ${screenShareWithVerses ? 'with-verses' : ''} ${isResizingScreenShare ? 'resizing' : ''}`}
+              className={`screen-share-fullscreen-wrapper ${screenShareWithVerses ? 'with-verses' : ''} ${screenShareWithWebcam ? 'with-webcam' : ''} ${isResizingScreenShare || isResizingWebcam ? 'resizing' : ''}`}
               ref={screenShareWrapperRef}
             >
               <div
-                className={`screen-share-section ${screenShareWithVerses ? 'half-width' : 'full-width'}`}
-                style={screenShareWithVerses ? { width: `${100 - screenShareVersesWidth}%` } : undefined}
+                className={`screen-share-section ${screenShareWithVerses ? 'half-width' : screenShareWithWebcam ? 'with-webcam-width' : 'full-width'}`}
+                style={
+                  screenShareWithVerses
+                    ? { width: `${100 - screenShareVersesWidth}%` }
+                    : screenShareWithWebcam
+                    ? { width: `${100 - screenShareWebcamWidth}%` }
+                    : undefined
+                }
               >
                 <ScreenShareDisplay
                   isVisible={screenShareEnabled}
                   isFullscreen={true}
                   onShareStopped={() => setScreenShareEnabled(false)}
+                  showWebcam={screenShareWithWebcam}
+                  onToggleWebcam={() => setScreenShareWithWebcam(!screenShareWithWebcam)}
                 />
               </div>
+              {/* Webcam section next to screen share */}
+              {screenShareWithWebcam && !screenShareWithVerses && (
+                <>
+                  <div
+                    className="screen-share-webcam-divider"
+                    onMouseDown={handleWebcamResizeStart}
+                    title="Drag to resize"
+                  />
+                  <div
+                    className="screen-share-webcam-section"
+                    style={{ width: `${screenShareWebcamWidth}%` }}
+                  >
+                    <WebcamDisplay
+                      isVisible={true}
+                      showSettings={false}
+                      isFullscreen={false}
+                    />
+                  </div>
+                </>
+              )}
               {screenShareWithVerses && (
                 <>
                   <div
@@ -1432,6 +1515,64 @@ function ScriptureView() {
                     className="screen-share-verses-section"
                     style={{ width: `${screenShareVersesWidth}%` }}
                   >
+                    {/* Navigation header for screen share verses */}
+                    <div className="screen-share-verses-nav">
+                      <button
+                        className="screen-share-nav-btn"
+                        onClick={() => {
+                          if (currentChapter > 1) {
+                            loadChapter(currentBookId, currentChapter - 1);
+                          } else {
+                            const currentBookIndex = BIBLE_BOOKS.findIndex(b => b.id === currentBookId);
+                            if (currentBookIndex > 0) {
+                              const prevBook = BIBLE_BOOKS[currentBookIndex - 1];
+                              loadChapter(prevBook.id, prevBook.chapters);
+                            }
+                          }
+                        }}
+                        title="Previous Chapter"
+                      >
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                        </svg>
+                      </button>
+                      <div className="screen-share-nav-title">
+                        <span
+                          className="screen-share-nav-book clickable"
+                          onClick={() => setScreenShareNavModalOpen(true)}
+                          title="Click to select book"
+                        >
+                          {chapter?.bookName || ''}
+                        </span>
+                        <span
+                          className="screen-share-nav-chapter clickable"
+                          onClick={() => setScreenShareChapterSelectorOpen(true)}
+                          title="Click to select chapter"
+                        >
+                          {currentChapter}
+                        </span>
+                      </div>
+                      <button
+                        className="screen-share-nav-btn"
+                        onClick={() => {
+                          const currentBook = BIBLE_BOOKS.find(b => b.id === currentBookId);
+                          if (currentBook && currentChapter < currentBook.chapters) {
+                            loadChapter(currentBookId, currentChapter + 1);
+                          } else {
+                            const currentBookIndex = BIBLE_BOOKS.findIndex(b => b.id === currentBookId);
+                            if (currentBookIndex < BIBLE_BOOKS.length - 1) {
+                              const nextBook = BIBLE_BOOKS[currentBookIndex + 1];
+                              loadChapter(nextBook.id, 1);
+                            }
+                          }
+                        }}
+                        title="Next Chapter"
+                      >
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                          <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                        </svg>
+                      </button>
+                    </div>
                     <ChapterDisplay
                       chapter={chapter}
                       loading={loading}
@@ -1449,6 +1590,30 @@ function ScriptureView() {
                       studyMode={studyMode}
                       currentBookId={currentBookId}
                       textSize={textSize}
+                    />
+
+                    {/* Screen Share Navigation Modals */}
+                    <ChapterSelector
+                      isOpen={screenShareChapterSelectorOpen}
+                      onClose={() => setScreenShareChapterSelectorOpen(false)}
+                      bookName={chapter?.bookName || ''}
+                      totalChapters={BIBLE_BOOKS.find(b => b.id === currentBookId)?.chapters || 1}
+                      currentChapter={currentChapter}
+                      onChapterSelect={(chapterNum) => {
+                        loadChapter(currentBookId, chapterNum);
+                        setScreenShareChapterSelectorOpen(false);
+                      }}
+                    />
+
+                    <NavigationModal
+                      isOpen={screenShareNavModalOpen}
+                      onClose={() => setScreenShareNavModalOpen(false)}
+                      onNavigate={(navBookId, navChapter) => {
+                        loadChapter(navBookId, navChapter);
+                        setScreenShareNavModalOpen(false);
+                      }}
+                      currentBookId={currentBookId}
+                      currentChapter={currentChapter}
                     />
                   </div>
                 </>

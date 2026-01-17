@@ -66,6 +66,21 @@
   transform: translateY(0);
 }
 
+.screen-share-btn.webcam {
+  background: rgba(124, 58, 237, 0.3);
+  border-color: rgba(124, 58, 237, 0.5);
+}
+
+.screen-share-btn.webcam:hover {
+  background: rgba(124, 58, 237, 0.4);
+}
+
+.screen-share-btn.webcam.active {
+  background: rgba(124, 58, 237, 0.6);
+  border-color: rgba(124, 58, 237, 0.8);
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.4);
+}
+
 /* Sharing Indicator */
 .sharing-indicator {
   display: flex;

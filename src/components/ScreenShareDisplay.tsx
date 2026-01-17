@@ -5,9 +5,17 @@ interface ScreenShareDisplayProps {
   isVisible: boolean;
   isFullscreen?: boolean;
   onShareStopped?: () => void;
+  showWebcam?: boolean;
+  onToggleWebcam?: () => void;
 }
 
-const ScreenShareDisplay: React.FC<ScreenShareDisplayProps> = ({ isVisible, isFullscreen = false, onShareStopped }) => {
+const ScreenShareDisplay: React.FC<ScreenShareDisplayProps> = ({
+  isVisible,
+  isFullscreen = false,
+  onShareStopped,
+  showWebcam = false,
+  onToggleWebcam,
+}) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const [isSharing, setIsSharing] = useState(false);
@@ -99,6 +107,15 @@ const ScreenShareDisplay: React.FC<ScreenShareDisplayProps> = ({ isVisible, isFu
         <h3>📺 Screen Share</h3>
         {isSharing && (
           <div className="screen-share-controls">
+            {onToggleWebcam && (
+              <button
+                className={`screen-share-btn webcam ${showWebcam ? 'active' : ''}`}
+                onClick={onToggleWebcam}
+                title={showWebcam ? 'Hide camera' : 'Show camera'}
+              >
+                {showWebcam ? '📹 Hide Camera' : '📷 Show Camera'}
+              </button>
+            )}
             <button
               className="screen-share-btn restart"
               onClick={handleRestartShare}
