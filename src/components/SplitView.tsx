@@ -66,6 +66,7 @@ const SplitView: React.FC<SplitViewProps> = ({
     };
 
     loadAllChapters();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bookId, chapterNum]);
 
   // Handle translation change for a pane

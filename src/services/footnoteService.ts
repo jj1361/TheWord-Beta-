@@ -5,7 +5,7 @@
  */
 
 import { PATHS } from '../config/paths';
-import { FootnoteEntry, FootnoteType, BookFootnotes, ChapterFootnotes } from '../types/bible';
+import { FootnoteEntry, FootnoteType, BookFootnotes } from '../types/bible';
 
 // Book ID to filename mapping (lowercase, no spaces)
 const BOOK_ID_TO_FILENAME: Record<number, string> = {

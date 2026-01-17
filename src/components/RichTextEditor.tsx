@@ -196,6 +196,7 @@ const RichTextEditor: React.FC<RichTextEditorProps> = ({
 
     editor.addEventListener('mousedown', handleMouseDown);
     return () => editor.removeEventListener('mousedown', handleMouseDown);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleInput = useCallback(() => {

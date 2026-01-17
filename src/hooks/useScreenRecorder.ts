@@ -261,6 +261,7 @@ export function useScreenRecorder() {
 
       setState(prev => ({ ...prev, error: errorMessage }));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cleanup, mixAudioStreams, startTimer]);
 
   // Stop recording and return the blob

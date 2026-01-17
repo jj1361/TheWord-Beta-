@@ -467,15 +467,6 @@ const RightPanel: React.FC<RightPanelProps> = ({
     }
   };
 
-  const handleCrossRefSelectAll = () => {
-    const allKeys = new Set(displayedCrossRefs.map(ref => ref.refKey));
-    setSelectedCrossRefVerses(allKeys);
-  };
-
-  const handleCrossRefUnselectAll = () => {
-    setSelectedCrossRefVerses(new Set());
-  };
-
   const handleCrossRefCopy = async () => {
     const selectedRefs = displayedCrossRefs.filter(ref => selectedCrossRefVerses.has(ref.refKey));
     if (selectedRefs.length === 0) return;
@@ -494,14 +485,8 @@ const RightPanel: React.FC<RightPanelProps> = ({
   };
 
   const totalCrossRefs = crossRefs.reduce((sum, entry) => sum + entry.refs.length, 0);
-  const allCrossRefsSelected = displayedCrossRefs.length > 0 && selectedCrossRefVerses.size === displayedCrossRefs.length;
-
-  // User cross reference handlers
-  const handleDisplaySettingsChange = (key: keyof CrossRefDisplaySettings, value: boolean) => {
-    const newSettings = { ...displaySettings, [key]: value };
-    setDisplaySettings(newSettings);
-    userCrossRefService.saveDisplaySettings(newSettings);
-  };
+  // allCrossRefsSelected - reserved for future select all UI feature
+  // handleDisplaySettingsChange - reserved for future display settings UI
 
   const handleOpenCategoryModal = (category?: CrossRefCategory) => {
     if (category) {
